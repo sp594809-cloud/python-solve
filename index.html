@@ -191,30 +191,63 @@
     }
     async function handleInstallClick() {
       if (isStandalone()) {
-        openInstallModal("<p>✅ App is already installed.</p>", "OK", closeInstallModal);
+        openInstallModal("<p>✅ App is already installed on this device.</p>", "OK", closeInstallModal);
         return;
       }
+      // DIRECT native install (Android Chrome, Windows/Mac Chrome & Edge)
       if (deferredPrompt) {
-        deferredPrompt.prompt();
-        await deferredPrompt.userChoice;
-        deferredPrompt = null;
-        document.getElementById("pwaInstallBanner")?.classList.add("hidden");
+        try {
+          deferredPrompt.prompt();
+          const result = await deferredPrompt.userChoice;
+          deferredPrompt = null;
+          document.getElementById("pwaInstallBanner")?.classList.add("hidden");
+          if (result && result.outcome === "accepted" && typeof showToast === "function") {
+            showToast("✅ App installed!");
+          }
+        } catch (err) {
+          console.warn("Install prompt failed", err);
+        }
         return;
       }
+      // iPhone — Apple blocks one-tap install
       if (isIos()) {
-        openInstallModal(`<p><strong>Install on iPhone / iPad:</strong></p>
-          <ol style="padding-left:20px;line-height:1.8"><li>Tap <strong>Share</strong> (square with arrow)</li>
-          <li>Tap <strong>Add to Home Screen</strong></li><li>Tap <strong>Add</strong></li></ol>`, "Got it", closeInstallModal);
+        openInstallModal(
+          `<p style="margin-bottom:10px"><strong>iPhone / iPad</strong></p>
+           <p style="color:#94a3b8;margin-bottom:12px;font-size:0.9rem">Apple does not allow one-tap install. Quick path:</p>
+           <ol style="padding-left:20px;line-height:1.9;margin:0">
+             <li>Tap <strong>Share</strong> at the bottom</li>
+             <li>Tap <strong>Add to Home Screen</strong></li>
+             <li>Tap <strong>Add</strong></li>
+           </ol>`,
+          "Got it", closeInstallModal);
         return;
       }
       if (isSafari()) {
-        openInstallModal(`<p><strong>Mac Safari:</strong> File → Add to Dock<br>Or use Chrome/Edge for one-click install.</p>`, "Got it", closeInstallModal);
+        openInstallModal(
+          `<p><strong>Safari on Mac</strong></p>
+           <p style="margin-top:8px">File → <strong>Add to Dock</strong></p>
+           <p style="margin-top:10px;color:#94a3b8;font-size:0.9rem">Tip: Use Chrome or Edge for one-tap Install.</p>`,
+          "Got it", closeInstallModal);
         return;
       }
-      openInstallModal(`<p><strong>Install:</strong></p><ul style="padding-left:20px;line-height:1.8">
-        <li>Chrome/Edge: install icon in address bar</li>
-        <li>Android: Menu → Install app</li>
-        <li>iPhone: Safari → Share → Add to Home Screen</li></ul>`, "Got it", closeInstallModal);
+      openInstallModal(
+        `<p style="margin-bottom:10px"><strong>Preparing install…</strong></p>
+         <p style="color:#94a3b8;font-size:0.92rem;line-height:1.6">
+           If no popup appears:<br>
+           • Chrome/Edge: install icon in the address bar<br>
+           • Android: menu → Install app<br>
+           • Wait 2–3 seconds and tap Install again
+         </p>`,
+        "Try again",
+        async function () {
+          closeInstallModal();
+          if (deferredPrompt) {
+            deferredPrompt.prompt();
+            await deferredPrompt.userChoice;
+            deferredPrompt = null;
+          }
+        }
+      );
     }
     document.getElementById("pwaInstallConfirm")?.addEventListener("click", () => handleInstallClick());
     document.getElementById("pwaInstallDismiss")?.addEventListener("click", () => {
@@ -227,12 +260,18 @@
     });
 
     function openWelcomeScreen() {
-      document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+      document.querySelectorAll(".screen").forEach(s => {
+        s.classList.remove("active");
+        s.style.removeProperty("display");
+      });
       document.getElementById("welcomeScreen").classList.add("active");
       closeSidebarOnMobile();
     }
     function openLeaderboardScreen() {
-      document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+      document.querySelectorAll(".screen").forEach(s => {
+        s.classList.remove("active");
+        s.style.removeProperty("display");
+      });
       document.getElementById("conceptScreen").classList.add("active");
       document.getElementById("conceptNumber").textContent = "🏆";
       document.getElementById("conceptTitle").textContent = "Live Class Leaderboard & Rankings";
