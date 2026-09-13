@@ -89,7 +89,6 @@ function updateProgressUI() {
   }
 }
 
-
 function getDailyMission() {
   const missions = [
     { text: "Complete the Variables concept + 3 Practice Book questions", action: () => openConcept(0) },
