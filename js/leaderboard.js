@@ -5,14 +5,32 @@
 let currentStudent = null;
 
 // Initialize Student Session on App Startup
-function initStudentSession() {
+async function initStudentSession() {
   currentStudent = getLocalStudentData();
-  
+
   if (!currentStudent) {
     showLoginModal();
-  } else {
-    updateTopNavStudentInfo();
+    return;
   }
+
+  // Refresh from cloud so phone/laptop stay in sync
+  try {
+    const cloud = await fetchStudentFromCloud(currentStudent.enrollment);
+    if (cloud) {
+      currentStudent.points = Math.max(currentStudent.points || 0, cloud.points || 0);
+      currentStudent.mcqsSolved = Math.max(currentStudent.mcqsSolved || 0, cloud.mcqsSolved || 0);
+      currentStudent.codeCompleted = Math.max(currentStudent.codeCompleted || 0, cloud.codeCompleted || 0);
+      // Prefer the name that was used most recently in cloud if local is empty-ish
+      if (cloud.name && cloud.name.trim()) {
+        currentStudent.name = cloud.name;
+      }
+      saveLocalStudentData(currentStudent);
+    }
+  } catch (e) {
+    console.warn("Could not refresh student from cloud", e);
+  }
+
+  updateTopNavStudentInfo();
 }
 
 // Show Student Login Modal
@@ -77,8 +95,8 @@ function showLoginModal() {
   }
 }
 
-// Handle Login Form Submission
-function handleStudentLogin(e) {
+// Handle Login Form Submission – now async and cloud-aware
+async function handleStudentLogin(e) {
   e.preventDefault();
   const enrollment = document.getElementById("loginEnrollment").value.trim();
   const name = document.getElementById("loginName").value.trim();
@@ -94,24 +112,82 @@ function handleStudentLogin(e) {
     return;
   }
 
-  const existing = getLocalStudentData();
-  currentStudent = {
-    enrollment: enrollment,
-    name: name,
-    points: existing && existing.enrollment === enrollment ? (existing.points || 0) : 0,
-    mcqsSolved: existing && existing.enrollment === enrollment ? (existing.mcqsSolved || 0) : 0,
-    codeCompleted: existing && existing.enrollment === enrollment ? (existing.codeCompleted || 0) : 0,
-    solvedMcqIds: existing && existing.enrollment === enrollment ? (existing.solvedMcqIds || []) : [],
-    completedCodeIds: existing && existing.enrollment === enrollment ? (existing.completedCodeIds || []) : []
-  };
+  // Show loading state on button
+  const btn = e.target.querySelector('button[type="submit"]');
+  const originalBtnText = btn ? btn.innerHTML : '';
+  if (btn) {
+    btn.disabled = true;
+    btn.innerHTML = '⏳ Restoring progress…';
+  }
 
-  syncStudentToCloud(currentStudent);
-  updateTopNavStudentInfo();
+  try {
+    const localExisting = getLocalStudentData();
+    const cloudExisting = await fetchStudentFromCloud(enrollment);
 
-  const modal = document.getElementById("studentLoginModal");
-  if (modal) modal.style.display = "none";
+    // Start with local data if same enrollment, otherwise clean slate
+    let base = {
+      enrollment: enrollment,
+      name: name,
+      points: 0,
+      mcqsSolved: 0,
+      codeCompleted: 0,
+      solvedMcqIds: [],
+      completedCodeIds: []
+    };
 
-  showToast(`Welcome ${name}! Logged in with Enrollment ${enrollment} 🎉`);
+    if (localExisting && localExisting.enrollment === enrollment) {
+      base.points = localExisting.points || 0;
+      base.mcqsSolved = localExisting.mcqsSolved || 0;
+      base.codeCompleted = localExisting.codeCompleted || 0;
+      base.solvedMcqIds = localExisting.solvedMcqIds || [];
+      base.completedCodeIds = localExisting.completedCodeIds || [];
+    }
+
+    // Merge with cloud – ALWAYS take the higher numbers (prevents wipe on new device)
+    if (cloudExisting) {
+      base.points = Math.max(base.points, cloudExisting.points || 0);
+      base.mcqsSolved = Math.max(base.mcqsSolved, cloudExisting.mcqsSolved || 0);
+      base.codeCompleted = Math.max(base.codeCompleted, cloudExisting.codeCompleted || 0);
+      // Keep the name user just typed (or fall back to cloud)
+      if (!name && cloudExisting.name) base.name = cloudExisting.name;
+    }
+
+    currentStudent = base;
+
+    // Persist + sync (sync itself also protects max points)
+    await syncStudentToCloud(currentStudent);
+    updateTopNavStudentInfo();
+
+    const modal = document.getElementById("studentLoginModal");
+    if (modal) modal.style.display = "none";
+
+    const ptsMsg = currentStudent.points > 0
+      ? ` Restored ${currentStudent.points} points from previous device.`
+      : '';
+    showToast(`Welcome ${currentStudent.name}! Logged in with Enrollment ${enrollment}.${ptsMsg} 🎉`);
+  } catch (err) {
+    console.error("Login error:", err);
+    showToast("Login issue – using local data. Check internet.");
+    // Still allow offline login
+    currentStudent = {
+      enrollment,
+      name,
+      points: (getLocalStudentData()?.enrollment === enrollment ? (getLocalStudentData().points || 0) : 0),
+      mcqsSolved: 0,
+      codeCompleted: 0,
+      solvedMcqIds: [],
+      completedCodeIds: []
+    };
+    saveLocalStudentData(currentStudent);
+    updateTopNavStudentInfo();
+    const modal = document.getElementById("studentLoginModal");
+    if (modal) modal.style.display = "none";
+  } finally {
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = originalBtnText;
+    }
+  }
 }
 
 // Update Top Bar with Student Badge & Points
@@ -205,7 +281,31 @@ async function renderLiveLeaderboard() {
     </div>
   `;
 
-  const list = await fetchCloudLeaderboard();
+  let list = await fetchCloudLeaderboard();
+
+  // Guarantee current user appears even if somehow missing from cloud list
+  if (currentStudent && currentStudent.enrollment) {
+    const meIdx = list.findIndex(i => i.enrollment === currentStudent.enrollment);
+    if (meIdx === -1) {
+      list.push({
+        enrollment: currentStudent.enrollment,
+        name: currentStudent.name,
+        points: currentStudent.points || 0,
+        mcqsSolved: currentStudent.mcqsSolved || 0,
+        codeCompleted: currentStudent.codeCompleted || 0
+      });
+      list.sort((a, b) => (b.points || 0) - (a.points || 0));
+      list = list.map((item, idx) => ({ ...item, rank: idx + 1 }));
+    } else {
+      // Update rank entry with latest local points if higher
+      list[meIdx].points = Math.max(list[meIdx].points || 0, currentStudent.points || 0);
+      list[meIdx].mcqsSolved = Math.max(list[meIdx].mcqsSolved || 0, currentStudent.mcqsSolved || 0);
+      list[meIdx].codeCompleted = Math.max(list[meIdx].codeCompleted || 0, currentStudent.codeCompleted || 0);
+      list.sort((a, b) => (b.points || 0) - (a.points || 0));
+      list = list.map((item, idx) => ({ ...item, rank: idx + 1 }));
+    }
+  }
+
   const loading = document.getElementById("leaderboardLoading");
   const box = document.getElementById("leaderboardTableBox");
   const body = document.getElementById("leaderboardBody");
@@ -237,7 +337,7 @@ async function renderLiveLeaderboard() {
     `;
   });
 
-  body.innerHTML = html;
+  body.innerHTML = html || `<tr><td colspan="6" style="padding:30px;text-align:center;color:#94a3b8">No students yet. Solve some questions!</td></tr>`;
 }
 
 // Anti-Paste Protection Helper
