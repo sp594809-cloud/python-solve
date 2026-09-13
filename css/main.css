@@ -18,6 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
   color: var(--text);
   min-height: 100vh;
   overflow-x: hidden;
-  padding-bottom: 70px; /* space for mobile bottom nav */
+  padding-bottom: 70px;
 }
 
 /* ========== TOP NAV ========== */
@@ -114,6 +115,7 @@ body {
   color: var(--text-muted);
   font-size: 1.2rem;
   cursor: pointer;
+  padding: 8px;
 }
 
 .phase-header {
@@ -159,17 +161,19 @@ body {
   content: "✅ ";
 }
 
-/* Overlay for mobile sidebar */
+/* Overlay for mobile sidebar - CRITICAL: pointer-events none when hidden */
 .sidebar-overlay {
   display: none;
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.55);
   z-index: 80;
+  pointer-events: none;
 }
 
 .sidebar-overlay.show {
   display: block;
+  pointer-events: auto;
 }
 
 /* ========== MAIN CONTENT ========== */
@@ -179,6 +183,8 @@ body {
   overflow-y: auto;
   max-width: 1100px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .screen {
@@ -219,7 +225,6 @@ body {
   line-height: 1.5;
 }
 
-/* Primary Action Cards */
 .primary-actions {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -290,7 +295,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* Secondary Learning Section */
 .secondary-section {
   background: #0f172a;
   border: 1px solid #1e293b;
@@ -609,6 +613,7 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
   flex: 1;
+  min-height: 48px;
 }
 
 .mobile-nav-item small {
@@ -626,12 +631,13 @@ body {
   background: transparent;
   color: #94a3b8;
   border: none;
-  padding: 6px 14px;
+  padding: 8px 14px;
   border-radius: 99px;
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
+  min-height: 40px;
 }
 
 .pb-filter-btn:hover {
@@ -650,19 +656,23 @@ body {
   color: #e2e8f0;
   border: 1px solid #334155;
   border-radius: 10px;
-  padding: 12px 16px;
-  font-size: 0.92rem;
+  padding: 14px 16px;
+  font-size: 0.95rem;
   text-align: left;
   cursor: pointer;
   transition: all 0.2s ease;
   width: 100%;
+  min-height: 48px;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
 }
 
-.pb-opt-btn:hover:not(:disabled) {
+.pb-opt-btn:hover:not(:disabled),
+.pb-opt-btn:active:not(:disabled) {
   background: #1e293b;
   border-color: #3b82f6;
   color: #ffffff;
-  transform: translateY(-1px);
 }
 
 .pb-sol-btn {
@@ -670,14 +680,17 @@ body {
   color: #38bdf8;
   border: 1px dashed #0284c7;
   border-radius: 99px;
-  padding: 6px 16px;
+  padding: 10px 16px;
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
+  min-height: 44px;
+  touch-action: manipulation;
 }
 
-.pb-sol-btn:hover {
+.pb-sol-btn:hover,
+.pb-sol-btn:active {
   background: #0284c7;
   color: #ffffff;
   border-style: solid;
@@ -725,6 +738,17 @@ body {
   .toast {
     bottom: 80px;
   }
+
+  /* MCQ options: 1 column on phone so they are easy to tap */
+  .pb-opt-btn {
+    padding: 16px;
+    font-size: 1rem;
+    min-height: 52px;
+  }
+
+  .step-content {
+    padding: 14px;
+  }
 }
 
 @media (min-width: 901px) {
@@ -741,6 +765,6 @@ body {
     grid-template-columns: 1fr;
   }
   .step-content {
-    padding: 16px;
+    padding: 12px;
   }
 }
