@@ -49,19 +49,19 @@ function showLoginModal() {
         <div style="font-size: 2.8rem; margin-bottom: 10px">🐍</div>
         <h2 style="color: #f8fafc; font-size: 1.5rem; margin-bottom: 6px">LJIET Python Hub Login</h2>
         <p style="color: #94a3b8; font-size: 0.88rem; margin-bottom: 22px">
-          Enter your college Enrollment Number (exactly 14 characters) & Name to compete on the Live Class Leaderboard!
+          Enter your college Enrollment Number (exactly 12 characters) & Name to compete on the Live Class Leaderboard!
         </p>
 
         <form onsubmit="handleStudentLogin(event)">
           <div style="text-align: left; margin-bottom: 14px">
             <label style="color: #c7d2fe; font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 6px">Enrollment Number <span style="color:#f87171">*</span></label>
             <input type="text" id="loginEnrollment" required 
-                   placeholder="e.g. 22012011001234" 
-                   maxlength="14"
-                   minlength="14"
-                   pattern="[A-Za-z0-9]{14}"
+                   placeholder="e.g. 220120110012" 
+                   maxlength="12"
+                   minlength="12"
+                   pattern="[A-Za-z0-9]{12}"
                    style="width: 100%; padding: 12px 16px; background: #020617; border: 1px solid #334155; border-radius: 10px; color: #f8fafc; font-size: 1rem; font-family: inherit; letter-spacing: 1px" />
-            <div id="enrollError" style="color:#f87171; font-size:0.78rem; margin-top:5px; display:none">Enrollment must be exactly 14 characters (letters or numbers).</div>
+            <div id="enrollError" style="color:#f87171; font-size:0.78rem; margin-top:5px; display:none">Enrollment must be exactly 12 characters (letters or numbers).</div>
           </div>
 
           <div style="text-align: left; margin-bottom: 22px">
@@ -82,7 +82,7 @@ function showLoginModal() {
     enrollInput.addEventListener("input", function() {
       const val = this.value.trim();
       const err = document.getElementById("enrollError");
-      if (val.length > 0 && val.length !== 14) {
+      if (val.length > 0 && val.length !== 12) {
         err.style.display = "block";
         this.style.borderColor = "#ef4444";
       } else {
@@ -103,12 +103,12 @@ async function handleStudentLogin(e) {
 
   if (!enrollment || !name) return;
 
-  // Strict 14 character rule
-  if (enrollment.length !== 14) {
+  // Strict 12 character rule
+  if (enrollment.length !== 12) {
     const err = document.getElementById("enrollError");
     if (err) err.style.display = "block";
     document.getElementById("loginEnrollment").style.borderColor = "#ef4444";
-    showToast("Enrollment number must be exactly 14 characters!");
+    showToast("Enrollment number must be exactly 12 characters!");
     return;
   }
 
