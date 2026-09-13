@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LJIET Python Hub & Practice Portal 🐍</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/playgrounds.css" />
+  <!-- Pyodide WebAssembly Python Engine -->
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
+  <!-- Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <div class="logo" onclick="openWelcomeScreen()" style="cursor:pointer">
+      <span class="logo-icon">🐍</span>
+      <span class="logo-text">LJIET Python Hub</span>
+    </div>
+    <div class="nav-progress">
+      <button class="btn-secondary" onclick="openPracticeBook()" style="padding:6px 14px; font-size:0.85rem; border-radius:99px">📘 Practice Book (210 Qs)</button>
+      <button class="btn-secondary" onclick="openLeaderboardScreen()" style="padding:6px 14px; font-size:0.85rem; border-radius:99px; background:#312e81; border-color:#6366f1; color:#c7d2fe">🏆 Live Leaderboard</button>
+    </div>
+    <!-- Student Profile Badge inserted dynamically -->
+  </nav>
+
+  <div class="app-container">
+    <!-- Sidebar - Navigation & Concept List -->
+    <aside class="sidebar" id="sidebar">
+      <div class="phase-header phase1-active">CORE NAVIGATION</div>
+      <ul class="concept-list">
+        <li onclick="openPracticeBook()" style="color:#c4b5fd; font-weight:700">
+          📘 Practice Book (All 210 Qs)
+        </li>
+        <li onclick="openLeaderboardScreen()" style="color:#facc15; font-weight:700">
+          🏆 Live Class Leaderboard
+        </li>
+        <li onclick="openWelcomeScreen()" style="color:#818cf8">
+          🏠 Main Dashboard
+        </li>
+      </ul>
+
+      <div class="phase-header" style="color:#22c55e; margin-top:20px">LEARN PYTHON</div>
+      <ul class="concept-list" id="conceptList">
+        <!-- Filled by JS -->
+      </ul>
+
+      <div class="phase-header" style="color:#86efac; margin-top:16px">SPECIAL ADVENTURES</div>
+      <ul class="concept-list">
+        <li onclick="window.location.href='loops-adventure.html'" style="color:#86efac">
+          🌲 Forest of Loops
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="mainContent">
+      <!-- Main Dashboard Screen -->
+      <section id="welcomeScreen" class="screen active">
+        <div class="welcome-hero" style="max-width:900px; margin:0 auto">
+          <h1 style="font-size:2.2rem">LJIET Student Python Learning & Exam Portal 🐍</h1>
+          <p class="subtitle" style="font-size:1.05rem; margin-bottom:28px">
+            Solve college <strong>Practice Book MCQs (Q1 to Q210)</strong>, compete on the <strong>Live Class Leaderboard</strong>, and master Python coding!
+          </p>
+
+          <!-- 4 LARGE MAIN PILLARS -->
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap:20px; margin-bottom:32px; text-align:left">
+            
+            <!-- Pillar 1: Practice Book -->
+            <div onclick="openPracticeBook()" style="background:linear-gradient(135deg,#1e1b4b,#0f172a); border:1px solid #6366f1; border-radius:18px; padding:24px; cursor:pointer; transition:transform 0.2s; box-shadow:0 10px 30px rgba(0,0,0,0.4)" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px">
+                <span style="font-size:2.2rem">📘</span>
+                <span style="background:#4f46e5; color:#fff; font-size:0.75rem; padding:4px 10px; border-radius:99px; font-weight:700">CORE FOCUS</span>
+              </div>
+              <h3 style="color:#c7d2fe; font-size:1.3rem; margin-bottom:8px">Solve Practice Book MCQs & Code</h3>
+              <p style="color:#94a3b8; font-size:0.9rem; line-height:1.5">
+                All 210 digitized questions from Unit 1, 2 & 3. Includes step-by-step solution explanations and in-browser anti-paste Python editor!
+              </p>
+            </div>
+
+            <!-- Pillar 2: Live Leaderboard -->
+            <div onclick="openLeaderboardScreen()" style="background:linear-gradient(135deg,#312e81,#0f172a); border:1px solid #eab308; border-radius:18px; padding:24px; cursor:pointer; transition:transform 0.2s; box-shadow:0 10px 30px rgba(0,0,0,0.4)" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px">
+                <span style="font-size:2.2rem">🏆</span>
+                <span style="background:#eab308; color:#000; font-size:0.75rem; padding:4px 10px; border-radius:99px; font-weight:800">LIVE SYNC</span>
+              </div>
+              <h3 style="color:#fef08a; font-size:1.3rem; margin-bottom:8px">Class Leaderboard & Ranks</h3>
+              <p style="color:#94a3b8; font-size:0.9rem; line-height:1.5">
+                Compare your rank with 200–500+ classmates in real time. Win points for solving MCQs (+10 pts) and completing coding tasks (+50 pts)!
+              </p>
+            </div>
+
+            <!-- Pillar 3: Learn Python -->
+            <div onclick="startLearning()" style="background:linear-gradient(135deg,#064e3b,#0f172a); border:1px solid #22c55e; border-radius:18px; padding:24px; cursor:pointer; transition:transform 0.2s; box-shadow:0 10px 30px rgba(0,0,0,0.4)" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px">
+                <span style="font-size:2.2rem">🎓</span>
+                <span style="background:#16a34a; color:#fff; font-size:0.75rem; padding:4px 10px; border-radius:99px; font-weight:700">CONCEPT HUB</span>
+              </div>
+              <h3 style="color:#86efac; font-size:1.3rem; margin-bottom:8px">Learn Python Concepts</h3>
+              <p style="color:#94a3b8; font-size:0.9rem; line-height:1.5">
+                Visual magic boxes, interactive variables, predict-the-output drills, and the interactive Forest of Loops adventure!
+              </p>
+            </div>
+
+            <!-- Pillar 4: Daily Tasks & Anti-Paste Sandbox -->
+            <div onclick="openDailyMission()" style="background:linear-gradient(135deg,#1e293b,#0f172a); border:1px solid #38bdf8; border-radius:18px; padding:24px; cursor:pointer; transition:transform 0.2s; box-shadow:0 10px 30px rgba(0,0,0,0.4)" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px">
+                <span style="font-size:2.2rem">🎯</span>
+                <span style="background:#0284c7; color:#fff; font-size:0.75rem; padding:4px 10px; border-radius:99px; font-weight:700">MANUAL TYPING</span>
+              </div>
+              <h3 style="color:#7dd3fc; font-size:1.3rem; margin-bottom:8px">Daily Tasks & Anti-Paste Sandbox</h3>
+              <p style="color:#94a3b8; font-size:0.9rem; line-height:1.5">
+                Practice coding tasks with Anti-Paste protection enforced. Build true code syntax muscle memory by typing line-by-line!
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap">
+            <button class="btn-primary big" onclick="openPracticeBook()" style="background:linear-gradient(135deg,#4f46e5,#2563eb)">
+              📘 Start Practice Book (All 210 Qs) →
+            </button>
+            <button class="btn-secondary" onclick="openLeaderboardScreen()" style="border-color:#facc15; color:#facc15">
+              🏆 View Live Class Leaderboard
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Concept Screen (template) -->
+      <section id="conceptScreen" class="screen">
+        <div class="concept-header">
+          <div class="concept-meta">
+            <span class="concept-number" id="conceptNumber">01</span>
+            <h2 id="conceptTitle">Variables</h2>
+          </div>
+          <div class="concept-progress">
+            <span id="stepIndicator">1 / 8</span>
+          </div>
+        </div>
+
+        <!-- Learning Steps Tabs -->
+        <div class="step-tabs" id="stepTabs">
+          <button class="step-tab active" data-step="why">🧠 Why?</button>
+          <button class="step-tab" data-step="see">👀 See It</button>
+          <button class="step-tab" data-step="play">🖐 Play</button>
+          <button class="step-tab" data-step="predict">🤔 Predict</button>
+          <button class="step-tab" data-step="code">💻 Code</button>
+          <button class="step-tab" data-step="break">🐛 Break</button>
+          <button class="step-tab" data-step="apply">🚀 Apply</button>
+          <button class="step-tab" data-step="master">✅ Master</button>
+        </div>
+
+        <!-- Step Content -->
+        <div class="step-content" id="stepContent">
+          <!-- Dynamically filled -->
+        </div>
+
+        <div class="step-navigation">
+          <button class="btn-secondary" id="prevStepBtn" onclick="prevStep()">← Back</button>
+          <button class="btn-primary" id="nextStepBtn" onclick="nextStep()">Next →</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Toast notifications -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/supabase-config.js"></script>
+  <script src="js/leaderboard.js"></script>
+  <script src="js/concepts-data.js"></script>
+  <script src="js/practice-book-questions.js"></script>
+  <script src="js/playgrounds.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    // Initialize student session & Supabase on page load
+    document.addEventListener("DOMContentLoaded", function() {
+      initSupabase();
+      initStudentSession();
+    });
+
+    function openWelcomeScreen() {
+      document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+      document.getElementById("welcomeScreen").classList.add("active");
+    }
+
+    function openLeaderboardScreen() {
+      document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+      document.getElementById("conceptScreen").classList.add("active");
+      document.getElementById("conceptNumber").textContent = "🏆";
+      document.getElementById("conceptTitle").textContent = "Live Class Leaderboard & Rankings";
+      document.getElementById("stepTabs").style.display = "none";
+      document.querySelector(".step-navigation").style.display = "none";
+      renderLiveLeaderboard();
+    }
+  </script>
+</body>
+</html>
