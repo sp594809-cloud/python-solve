@@ -1,4 +1,4 @@
-const CACHE_NAME = "ljiet-python-hub-v2";
+const CACHE_NAME = "ljiet-python-hub-v3";
 const ASSETS = [
   "./",
   "./index.html",
@@ -6,6 +6,7 @@ const ASSETS = [
   "./css/main.css",
   "./css/playgrounds.css",
   "./js/app.js",
+  "./js/app-fixes.js",
   "./js/leaderboard.js",
   "./js/supabase-config.js",
   "./js/concepts-data.js",
