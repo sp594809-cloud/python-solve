@@ -27,35 +27,89 @@ function initSupabase() {
   }
 }
 
-// Save or Update Student Profile & Score in Database
+/**
+ * Fetch a single student record from Supabase by enrollment number.
+ * Returns null if not found or offline.
+ */
+async function fetchStudentFromCloud(enrollment) {
+  if (!supabaseClient || !enrollment) return null;
+  try {
+    const { data, error } = await supabaseClient
+      .from('leaderboard')
+      .select('*')
+      .eq('enrollment', enrollment)
+      .maybeSingle();
+
+    if (error || !data) return null;
+
+    return {
+      enrollment: data.enrollment,
+      name: data.name || '',
+      points: data.points || 0,
+      mcqsSolved: data.mcqs_solved || 0,
+      codeCompleted: data.code_completed || 0,
+      // detailed IDs stay local-only (table does not store them yet)
+      solvedMcqIds: [],
+      completedCodeIds: []
+    };
+  } catch (err) {
+    console.warn("fetchStudentFromCloud failed:", err);
+    return null;
+  }
+}
+
+/**
+ * Save / update student. Always keeps the HIGHER points value
+ * so a new device logging in with 0 cannot wipe a previous score.
+ */
 async function syncStudentToCloud(studentData) {
   if (!studentData || !studentData.enrollment) return;
 
   // Always update local storage first
   saveLocalStudentData(studentData);
 
-  // Sync to Supabase cloud if connected
-  if (supabaseClient) {
-    try {
-      const { data, error } = await supabaseClient
-        .from('leaderboard')
-        .upsert({
-          enrollment: studentData.enrollment,
-          name: studentData.name,
-          points: studentData.points || 0,
-          mcqs_solved: studentData.mcqsSolved || 0,
-          code_completed: studentData.codeCompleted || 0,
-          updated_at: new Date().toISOString()
-        }, { onConflict: 'enrollment' });
+  if (!supabaseClient) return;
 
-      if (error) {
-        console.warn("Supabase sync notice:", error.message);
-      } else {
-        console.log("☁️ Score synced to Supabase Cloud Leaderboard!");
-      }
-    } catch (err) {
-      console.warn("Cloud sync offline fallback active:", err);
+  try {
+    // Protect against overwriting a higher cloud score
+    const existing = await fetchStudentFromCloud(studentData.enrollment);
+    const finalPoints = Math.max(
+      studentData.points || 0,
+      (existing && existing.points) || 0
+    );
+    const finalMcqs = Math.max(
+      studentData.mcqsSolved || 0,
+      (existing && existing.mcqsSolved) || 0
+    );
+    const finalCode = Math.max(
+      studentData.codeCompleted || 0,
+      (existing && existing.codeCompleted) || 0
+    );
+
+    // Keep local object in sync with the protected values
+    studentData.points = finalPoints;
+    studentData.mcqsSolved = finalMcqs;
+    studentData.codeCompleted = finalCode;
+    saveLocalStudentData(studentData);
+
+    const { error } = await supabaseClient
+      .from('leaderboard')
+      .upsert({
+        enrollment: studentData.enrollment,
+        name: studentData.name || (existing && existing.name) || 'Student',
+        points: finalPoints,
+        mcqs_solved: finalMcqs,
+        code_completed: finalCode,
+        updated_at: new Date().toISOString()
+      }, { onConflict: 'enrollment' });
+
+    if (error) {
+      console.warn("Supabase sync notice:", error.message);
+    } else {
+      console.log("☁️ Score synced to Supabase Cloud Leaderboard! Points:", finalPoints);
     }
+  } catch (err) {
+    console.warn("Cloud sync offline fallback active:", err);
   }
 }
 
@@ -90,14 +144,18 @@ async function fetchCloudLeaderboard() {
 
 // Local Storage Fallback Engine
 function getLocalStudentData() {
-  const data = localStorage.getItem('ljiet_student_profile');
-  return data ? JSON.parse(data) : null;
+  try {
+    const data = localStorage.getItem('ljiet_student_profile');
+    return data ? JSON.parse(data) : null;
+  } catch {
+    return null;
+  }
 }
 
 function saveLocalStudentData(studentData) {
   localStorage.setItem('ljiet_student_profile', JSON.stringify(studentData));
-  
-  // Update mock global registry for local demo
+
+  // Update mock global registry for local demo / offline
   let globalList = JSON.parse(localStorage.getItem('ljiet_all_students_registry') || '[]');
   const idx = globalList.findIndex(s => s.enrollment === studentData.enrollment);
   if (idx >= 0) {
@@ -110,7 +168,7 @@ function saveLocalStudentData(studentData) {
 
 function getCombinedLocalLeaderboard() {
   let list = JSON.parse(localStorage.getItem('ljiet_all_students_registry') || '[]');
-  
+
   if (list.length === 0) {
     list = [
       { enrollment: "22012011001", name: "Rahul Sharma", points: 840, mcqsSolved: 62, codeCompleted: 8 },
