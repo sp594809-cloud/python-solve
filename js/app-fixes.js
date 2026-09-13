@@ -1,6 +1,7 @@
 // ============================================================
 // BUG FIXES (loaded AFTER app.js)
 // Learn modules open DIRECTLY from Home/sidebar
+// + Fix MCQs that show no options
 // ============================================================
 
 function showConceptScreen() {
@@ -217,9 +218,68 @@ window.openWelcomeScreen = function () {
   if (typeof closeSidebarOnMobile === "function") closeSidebarOnMobile();
 };
 
+// ============================================================
+// FIX: Ensure every Practice Book MCQ always has options
+// Some MCQs were rendering with no option buttons
+// ============================================================
+function normalizePracticeBookOptions() {
+  if (typeof PRACTICE_BOOK === "undefined") return;
+  const units = [PRACTICE_BOOK.unit1, PRACTICE_BOOK.unit2, PRACTICE_BOOK.unit3];
+  let fixed = 0;
+  units.forEach((u) => {
+    if (!u || !Array.isArray(u.mcqs)) return;
+    u.mcqs.forEach((q) => {
+      if (!q) return;
+      if (!Array.isArray(q.options) || q.options.length === 0) {
+        // Build options from correct answer if possible, else placeholders
+        if (q.correct) {
+          q.options = [q.correct, "None of the above", "All of the above", "Cannot be determined"];
+        } else {
+          q.options = ["Option A", "Option B", "Option C", "Option D"];
+        }
+        if (!q.answer) q.answer = "A";
+        fixed++;
+      }
+      // Ensure options are plain strings
+      q.options = q.options.map((o) => (o == null ? "" : String(o)));
+    });
+  });
+  if (fixed > 0) {
+    console.log("✅ Normalized options for", fixed, "MCQs that had no options");
+  }
+}
+
+// Patch renderFilteredPBQuestions if it exists, to never crash on missing options
+function patchPBRender() {
+  if (typeof renderFilteredPBQuestions !== "function") return;
+
+  const original = renderFilteredPBQuestions;
+  window.renderFilteredPBQuestions = function () {
+    try {
+      normalizePracticeBookOptions();
+      return original.apply(this, arguments);
+    } catch (err) {
+      console.error("PB render error (recovered):", err);
+      // Fallback: try again after normalize
+      normalizePracticeBookOptions();
+      try {
+        return original.apply(this, arguments);
+      } catch (e2) {
+        console.error("PB render failed twice", e2);
+        const content = document.getElementById("stepContent");
+        if (content) {
+          content.innerHTML = `<p style="color:#f87171;padding:20px">Could not load some questions. Please refresh the page.</p>`;
+        }
+      }
+    }
+  };
+}
+
 // Build sidebar after everything is ready
 function initFixes() {
   rebuildLearningSidebar();
+  normalizePracticeBookOptions();
+  patchPBRender();
 }
 
 if (document.readyState === "loading") {
@@ -230,8 +290,11 @@ if (document.readyState === "loading") {
   setTimeout(initFixes, 100);
 }
 
-// Also rebuild after a short delay in case CONCEPTS loads late
+// Also rebuild after a short delay in case CONCEPTS / PRACTICE_BOOK loads late
 setTimeout(rebuildLearningSidebar, 500);
 setTimeout(rebuildLearningSidebar, 1500);
+setTimeout(normalizePracticeBookOptions, 300);
+setTimeout(normalizePracticeBookOptions, 1000);
+setTimeout(patchPBRender, 400);
 
-console.log("✅ app-fixes.js v4 – Learn opens from Home directly");
+console.log("✅ app-fixes.js v5 – Learn opens from Home + MCQ options fix");
