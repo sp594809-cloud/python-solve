@@ -10,7 +10,7 @@
   <meta name="description" content="LJIET Python Hub - Solve Practice Book 210 Questions, Live Leaderboard & Learning Path" />
   <title>LJIET Python Hub & Practice Portal 🐍</title>
   <link rel="manifest" href="manifest.json" />
-  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f40d.png" />
+  <link rel="apple-touch-icon" href="./icons/icon.svg" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/playgrounds.css" />
   <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
@@ -211,11 +211,11 @@
       }
       if (isIos()) {
         openInstallModal(
-          `<p style="margin-bottom:10px"><strong>iPhone / iPad</strong></p>
-           <p style="color:#94a3b8;margin-bottom:12px;font-size:0.9rem">Apple does not allow one-tap install. Quick path:</p>
-           <ol style="padding-left:20px;line-height:1.9;margin:0">
-             <li>Tap <strong>Share</strong> at the bottom</li>
-             <li>Tap <strong>Add to Home Screen</strong></li>
+          `<p style="margin-bottom:10px"><strong>📱 iPhone / iPad</strong></p>
+           <p style="color:#94a3b8;margin-bottom:12px;font-size:0.9rem">Safari does not allow one-tap install. Do this:</p>
+           <ol style="padding-left:20px;line-height:1.9;margin:0;color:#e2e8f0">
+             <li>Tap the <strong>Share</strong> button (square with arrow)</li>
+             <li>Scroll and tap <strong>Add to Home Screen</strong></li>
              <li>Tap <strong>Add</strong></li>
            </ol>`,
           "Got it", closeInstallModal);
@@ -224,28 +224,34 @@
       if (isSafari()) {
         openInstallModal(
           `<p><strong>Safari on Mac</strong></p>
-           <p style="margin-top:8px">File → <strong>Add to Dock</strong></p>
-           <p style="margin-top:10px;color:#94a3b8;font-size:0.9rem">Tip: Use Chrome or Edge for one-tap Install.</p>`,
+           <p style="margin-top:8px;color:#e2e8f0">Menu: <strong>File → Add to Dock</strong></p>
+           <p style="margin-top:10px;color:#94a3b8;font-size:0.9rem">Or open this site in <strong>Chrome / Edge</strong> for easier install.</p>`,
           "Got it", closeInstallModal);
         return;
       }
+      const isAndroid = /android/i.test(navigator.userAgent);
       openInstallModal(
-        `<p style="margin-bottom:10px"><strong>Preparing install…</strong></p>
-         <p style="color:#94a3b8;font-size:0.92rem;line-height:1.6">
-           If no popup appears:<br>
-           • Chrome/Edge: install icon in the address bar<br>
-           • Android: menu → Install app<br>
-           • Wait 2–3 seconds and tap Install again
-         </p>`,
-        "Try again",
-        async function () {
-          closeInstallModal();
-          if (deferredPrompt) {
-            deferredPrompt.prompt();
-            await deferredPrompt.userChoice;
-            deferredPrompt = null;
-          }
-        }
+        `<p style="margin-bottom:12px"><strong>📲 How to install this app</strong></p>
+         <p style="color:#94a3b8;font-size:0.9rem;margin-bottom:12px">The automatic install popup is not available right now. Install manually:</p>
+         <div style="background:#1e293b;border-radius:12px;padding:14px;line-height:1.8;color:#e2e8f0;font-size:0.92rem">
+           ${isAndroid
+             ? `<p><strong>Android Chrome</strong></p>
+                <ol style="padding-left:18px;margin:8px 0 0 0">
+                  <li>Tap the <strong>⋮</strong> menu (top right)</li>
+                  <li>Tap <strong>Install app</strong> or <strong>Add to Home screen</strong></li>
+                  <li>Confirm <strong>Install</strong></li>
+                </ol>`
+             : `<p><strong>Chrome / Edge (computer)</strong></p>
+                <ol style="padding-left:18px;margin:8px 0 0 0">
+                  <li>Look at the <strong>address bar</strong> (right side)</li>
+                  <li>Click the <strong>Install</strong> / computer icon</li>
+                  <li>Or open menu <strong>⋮ → Cast, save, and share → Install page as app</strong></li>
+                </ol>`
+           }
+         </div>
+         <p style="margin-top:12px;color:#64748b;font-size:0.8rem">You can keep using the website normally even without installing.</p>`,
+        "OK",
+        closeInstallModal
       );
     }
     document.getElementById("pwaInstallConfirm")?.addEventListener("click", () => handleInstallClick());
