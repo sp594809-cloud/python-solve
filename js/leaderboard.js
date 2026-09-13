@@ -269,7 +269,7 @@ async function renderLiveLeaderboard() {
             <tr style="background: #1e293b; color: #a5b4fc; border-bottom: 1px solid #334155">
               <th style="padding: 12px 14px; width: 70px">Rank</th>
               <th style="padding: 12px 14px">Name</th>
-              <th style="padding: 12px 14px">Mobile</th>
+              <th style="padding: 12px 14px">Mobile Number</th>
               <th style="padding: 12px 14px; text-align: center">MCQs</th>
               <th style="padding: 12px 14px; text-align: center">Code</th>
               <th style="padding: 12px 14px; text-align: right">Points</th>
@@ -381,7 +381,7 @@ function openStudentProfileModal() {
 
       <div style="background:#1e293b; border-radius:12px; padding:14px; margin-bottom:14px">
         <div style="font-size:1.15rem; font-weight:700; color:#f8fafc">${currentStudent.name}</div>
-        <div style="color:#94a3b8; font-size:0.88rem; font-family:monospace; margin-top:4px">Mobile: ${currentStudent.enrollment}</div>
+        <div style="color:#94a3b8; font-size:0.88rem; font-family:monospace; margin-top:4px">Mobile Number: ${currentStudent.enrollment}</div>
       </div>
 
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px">
