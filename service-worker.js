@@ -1,4 +1,4 @@
-const CACHE_NAME = "ljiet-python-hub-v4";
+const CACHE_NAME = "ljiet-python-hub-v5";
 const ASSETS = [
   "./",
   "./index.html",
@@ -11,8 +11,10 @@ const ASSETS = [
   "./js/supabase-config.js",
   "./js/concepts-data.js",
   "./js/practice-book-questions.js",
+  "./js/option-html-fix.js",
   "./js/playgrounds.js",
-  "./manifest.json"
+  "./manifest.json",
+  "./icons/icon.svg"
 ];
 
 self.addEventListener("install", (event) => {
