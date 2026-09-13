@@ -3,6 +3,8 @@
   "short_name": "LJIET Python",
   "description": "Solve Practice Book (210 Questions), Live Class Leaderboard & Python Learning Path",
   "start_url": "./",
+  "scope": "./",
+  "id": "./",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#0f172a",
