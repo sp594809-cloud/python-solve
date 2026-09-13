@@ -1,5 +1,6 @@
 // ============================================================
 // STUDENT AUTHENTICATION, LEADERBOARD & ANTI-PASTE ENGINE
+// Login now uses Mobile Number + Name (no enrollment number)
 // ============================================================
 
 let currentStudent = null;
@@ -20,7 +21,6 @@ async function initStudentSession() {
       currentStudent.points = Math.max(currentStudent.points || 0, cloud.points || 0);
       currentStudent.mcqsSolved = Math.max(currentStudent.mcqsSolved || 0, cloud.mcqsSolved || 0);
       currentStudent.codeCompleted = Math.max(currentStudent.codeCompleted || 0, cloud.codeCompleted || 0);
-      // Prefer the name that was used most recently in cloud if local is empty-ish
       if (cloud.name && cloud.name.trim()) {
         currentStudent.name = cloud.name;
       }
@@ -33,7 +33,7 @@ async function initStudentSession() {
   updateTopNavStudentInfo();
 }
 
-// Show Student Login Modal
+// Show Student Login Modal (Mobile + Name)
 function showLoginModal() {
   let modal = document.getElementById("studentLoginModal");
   if (!modal) {
@@ -49,19 +49,20 @@ function showLoginModal() {
         <div style="font-size: 2.8rem; margin-bottom: 10px">🐍</div>
         <h2 style="color: #f8fafc; font-size: 1.5rem; margin-bottom: 6px">LJIET Python Hub Login</h2>
         <p style="color: #94a3b8; font-size: 0.88rem; margin-bottom: 22px">
-          Enter your college Enrollment Number (exactly 12 characters) & Name to compete on the Live Class Leaderboard!
+          Enter your Mobile Number & Name to compete on the Live Class Leaderboard!
         </p>
 
         <form onsubmit="handleStudentLogin(event)">
           <div style="text-align: left; margin-bottom: 14px">
-            <label style="color: #c7d2fe; font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 6px">Enrollment Number <span style="color:#f87171">*</span></label>
-            <input type="text" id="loginEnrollment" required 
-                   placeholder="e.g. 220120110012" 
-                   maxlength="12"
-                   minlength="12"
-                   pattern="[A-Za-z0-9]{12}"
+            <label style="color: #c7d2fe; font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 6px">Mobile Number <span style="color:#f87171">*</span></label>
+            <input type="tel" id="loginMobile" required 
+                   placeholder="e.g. 9876543210" 
+                   maxlength="10"
+                   minlength="10"
+                   pattern="[0-9]{10}"
+                   inputmode="numeric"
                    style="width: 100%; padding: 12px 16px; background: #020617; border: 1px solid #334155; border-radius: 10px; color: #f8fafc; font-size: 1rem; font-family: inherit; letter-spacing: 1px" />
-            <div id="enrollError" style="color:#f87171; font-size:0.78rem; margin-top:5px; display:none">Enrollment must be exactly 12 characters (letters or numbers).</div>
+            <div id="mobileError" style="color:#f87171; font-size:0.78rem; margin-top:5px; display:none">Mobile number must be exactly 10 digits.</div>
           </div>
 
           <div style="text-align: left; margin-bottom: 22px">
@@ -77,12 +78,14 @@ function showLoginModal() {
     `;
     document.body.appendChild(div);
 
-    // Live validation
-    const enrollInput = document.getElementById("loginEnrollment");
-    enrollInput.addEventListener("input", function() {
+    // Live validation for 10-digit mobile
+    const mobileInput = document.getElementById("loginMobile");
+    mobileInput.addEventListener("input", function() {
+      // Allow only digits
+      this.value = this.value.replace(/\D/g, '').slice(0, 10);
       const val = this.value.trim();
-      const err = document.getElementById("enrollError");
-      if (val.length > 0 && val.length !== 12) {
+      const err = document.getElementById("mobileError");
+      if (val.length > 0 && val.length !== 10) {
         err.style.display = "block";
         this.style.borderColor = "#ef4444";
       } else {
@@ -95,20 +98,20 @@ function showLoginModal() {
   }
 }
 
-// Handle Login Form Submission – now async and cloud-aware
+// Handle Login Form Submission – Mobile + Name
 async function handleStudentLogin(e) {
   e.preventDefault();
-  const enrollment = document.getElementById("loginEnrollment").value.trim();
+  const mobile = document.getElementById("loginMobile").value.trim();
   const name = document.getElementById("loginName").value.trim();
 
-  if (!enrollment || !name) return;
+  if (!mobile || !name) return;
 
-  // Strict 12 character rule
-  if (enrollment.length !== 12) {
-    const err = document.getElementById("enrollError");
+  // Strict 10 digit mobile rule
+  if (!/^[0-9]{10}$/.test(mobile)) {
+    const err = document.getElementById("mobileError");
     if (err) err.style.display = "block";
-    document.getElementById("loginEnrollment").style.borderColor = "#ef4444";
-    showToast("Enrollment number must be exactly 12 characters!");
+    document.getElementById("loginMobile").style.borderColor = "#ef4444";
+    showToast("Mobile number must be exactly 10 digits!");
     return;
   }
 
@@ -122,11 +125,11 @@ async function handleStudentLogin(e) {
 
   try {
     const localExisting = getLocalStudentData();
-    const cloudExisting = await fetchStudentFromCloud(enrollment);
+    const cloudExisting = await fetchStudentFromCloud(mobile);
 
-    // Start with local data if same enrollment, otherwise clean slate
+    // Start with local data if same mobile, otherwise clean slate
     let base = {
-      enrollment: enrollment,
+      enrollment: mobile,   // store mobile in enrollment field (unique key in DB)
       name: name,
       points: 0,
       mcqsSolved: 0,
@@ -135,7 +138,7 @@ async function handleStudentLogin(e) {
       completedCodeIds: []
     };
 
-    if (localExisting && localExisting.enrollment === enrollment) {
+    if (localExisting && localExisting.enrollment === mobile) {
       base.points = localExisting.points || 0;
       base.mcqsSolved = localExisting.mcqsSolved || 0;
       base.codeCompleted = localExisting.codeCompleted || 0;
@@ -143,18 +146,16 @@ async function handleStudentLogin(e) {
       base.completedCodeIds = localExisting.completedCodeIds || [];
     }
 
-    // Merge with cloud – ALWAYS take the higher numbers (prevents wipe on new device)
+    // Merge with cloud – ALWAYS take the higher numbers
     if (cloudExisting) {
       base.points = Math.max(base.points, cloudExisting.points || 0);
       base.mcqsSolved = Math.max(base.mcqsSolved, cloudExisting.mcqsSolved || 0);
       base.codeCompleted = Math.max(base.codeCompleted, cloudExisting.codeCompleted || 0);
-      // Keep the name user just typed (or fall back to cloud)
       if (!name && cloudExisting.name) base.name = cloudExisting.name;
     }
 
     currentStudent = base;
 
-    // Persist + sync (sync itself also protects max points)
     await syncStudentToCloud(currentStudent);
     updateTopNavStudentInfo();
 
@@ -164,15 +165,14 @@ async function handleStudentLogin(e) {
     const ptsMsg = currentStudent.points > 0
       ? ` Restored ${currentStudent.points} points from previous device.`
       : '';
-    showToast(`Welcome ${currentStudent.name}! Logged in with Enrollment ${enrollment}.${ptsMsg} 🎉`);
+    showToast(`Welcome ${currentStudent.name}! Logged in with ${mobile}.${ptsMsg} 🎉`);
   } catch (err) {
     console.error("Login error:", err);
     showToast("Login issue – using local data. Check internet.");
-    // Still allow offline login
     currentStudent = {
-      enrollment,
+      enrollment: mobile,
       name,
-      points: (getLocalStudentData()?.enrollment === enrollment ? (getLocalStudentData().points || 0) : 0),
+      points: (getLocalStudentData()?.enrollment === mobile ? (getLocalStudentData().points || 0) : 0),
       mcqsSolved: 0,
       codeCompleted: 0,
       solvedMcqIds: [],
@@ -269,7 +269,7 @@ async function renderLiveLeaderboard() {
             <tr style="background: #1e293b; color: #a5b4fc; border-bottom: 1px solid #334155">
               <th style="padding: 12px 14px; width: 70px">Rank</th>
               <th style="padding: 12px 14px">Name</th>
-              <th style="padding: 12px 14px">Enrollment</th>
+              <th style="padding: 12px 14px">Mobile</th>
               <th style="padding: 12px 14px; text-align: center">MCQs</th>
               <th style="padding: 12px 14px; text-align: center">Code</th>
               <th style="padding: 12px 14px; text-align: right">Points</th>
@@ -297,7 +297,6 @@ async function renderLiveLeaderboard() {
       list.sort((a, b) => (b.points || 0) - (a.points || 0));
       list = list.map((item, idx) => ({ ...item, rank: idx + 1 }));
     } else {
-      // Update rank entry with latest local points if higher
       list[meIdx].points = Math.max(list[meIdx].points || 0, currentStudent.points || 0);
       list[meIdx].mcqsSolved = Math.max(list[meIdx].mcqsSolved || 0, currentStudent.mcqsSolved || 0);
       list[meIdx].codeCompleted = Math.max(list[meIdx].codeCompleted || 0, currentStudent.codeCompleted || 0);
@@ -382,7 +381,7 @@ function openStudentProfileModal() {
 
       <div style="background:#1e293b; border-radius:12px; padding:14px; margin-bottom:14px">
         <div style="font-size:1.15rem; font-weight:700; color:#f8fafc">${currentStudent.name}</div>
-        <div style="color:#94a3b8; font-size:0.88rem; font-family:monospace; margin-top:4px">Enrollment: ${currentStudent.enrollment}</div>
+        <div style="color:#94a3b8; font-size:0.88rem; font-family:monospace; margin-top:4px">Mobile: ${currentStudent.enrollment}</div>
       </div>
 
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px">

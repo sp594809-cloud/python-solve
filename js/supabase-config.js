@@ -28,27 +28,27 @@ function initSupabase() {
 }
 
 /**
- * Fetch a single student record from Supabase by enrollment number.
+ * Fetch a single student record from Supabase by mobile number.
+ * (Stored in the 'enrollment' column which is the unique key)
  * Returns null if not found or offline.
  */
-async function fetchStudentFromCloud(enrollment) {
-  if (!supabaseClient || !enrollment) return null;
+async function fetchStudentFromCloud(mobile) {
+  if (!supabaseClient || !mobile) return null;
   try {
     const { data, error } = await supabaseClient
       .from('leaderboard')
       .select('*')
-      .eq('enrollment', enrollment)
+      .eq('enrollment', mobile)
       .maybeSingle();
 
     if (error || !data) return null;
 
     return {
-      enrollment: data.enrollment,
+      enrollment: data.enrollment,   // this field now holds mobile number
       name: data.name || '',
       points: data.points || 0,
       mcqsSolved: data.mcqs_solved || 0,
       codeCompleted: data.code_completed || 0,
-      // detailed IDs stay local-only (table does not store them yet)
       solvedMcqIds: [],
       completedCodeIds: []
     };
@@ -61,6 +61,7 @@ async function fetchStudentFromCloud(enrollment) {
 /**
  * Save / update student. Always keeps the HIGHER points value
  * so a new device logging in with 0 cannot wipe a previous score.
+ * Mobile number is stored in the 'enrollment' column (unique key).
  */
 async function syncStudentToCloud(studentData) {
   if (!studentData || !studentData.enrollment) return;
@@ -95,7 +96,7 @@ async function syncStudentToCloud(studentData) {
     const { error } = await supabaseClient
       .from('leaderboard')
       .upsert({
-        enrollment: studentData.enrollment,
+        enrollment: studentData.enrollment,  // mobile number stored here
         name: studentData.name || (existing && existing.name) || 'Student',
         points: finalPoints,
         mcqs_solved: finalMcqs,
@@ -126,7 +127,7 @@ async function fetchCloudLeaderboard() {
       if (!error && data && data.length > 0) {
         return data.map((item, idx) => ({
           rank: idx + 1,
-          enrollment: item.enrollment,
+          enrollment: item.enrollment,  // mobile number
           name: item.name,
           points: item.points || 0,
           mcqsSolved: item.mcqs_solved || 0,
@@ -171,11 +172,11 @@ function getCombinedLocalLeaderboard() {
 
   if (list.length === 0) {
     list = [
-      { enrollment: "22012011001", name: "Rahul Sharma", points: 840, mcqsSolved: 62, codeCompleted: 8 },
-      { enrollment: "22012011045", name: "Priya Patel", points: 790, mcqsSolved: 55, codeCompleted: 9 },
-      { enrollment: "22012011112", name: "Aman Verma", points: 650, mcqsSolved: 48, codeCompleted: 6 },
-      { enrollment: "22012011089", name: "Neha Shah", points: 580, mcqsSolved: 42, codeCompleted: 5 },
-      { enrollment: "22012011204", name: "Karan Mehta", points: 490, mcqsSolved: 35, codeCompleted: 4 }
+      { enrollment: "9876543210", name: "Rahul Sharma", points: 840, mcqsSolved: 62, codeCompleted: 8 },
+      { enrollment: "9123456780", name: "Priya Patel", points: 790, mcqsSolved: 55, codeCompleted: 9 },
+      { enrollment: "9988776655", name: "Aman Verma", points: 650, mcqsSolved: 48, codeCompleted: 6 },
+      { enrollment: "9012345678", name: "Neha Shah", points: 580, mcqsSolved: 42, codeCompleted: 5 },
+      { enrollment: "9876501234", name: "Karan Mehta", points: 490, mcqsSolved: 35, codeCompleted: 4 }
     ];
   }
 
