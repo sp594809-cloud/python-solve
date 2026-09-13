@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#4f46e5" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="LJIET Python" />
+  <meta name="description" content="LJIET Python Hub - Solve Practice Book 210 Questions, Live Leaderboard & Learning Path" />
+  <title>LJIET Python Hub & Practice Portal</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="./icons/icon.svg" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/playgrounds.css" />
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logo" onclick="openWelcomeScreen()" style="cursor:pointer">
+      <span class="logo-icon">🐍</span>
+      <span class="logo-text">LJIET Python Hub</span>
+    </div>
+    <div class="nav-progress">
+      <button class="btn-secondary nav-main-btn" onclick="openPracticeBook()">📘 Practice Book</button>
+      <button class="btn-secondary nav-main-btn" onclick="openLeaderboardScreen()" style="background:#312e81; border-color:#6366f1; color:#c7d2fe">🏆 Leaderboard</button>
+      <button class="btn-secondary nav-main-btn" onclick="openLearningPathNav()" style="background:#14532d; border-color:#22c55e; color:#86efac">📚 Learn</button>
+      <button id="installPwaBtn" class="btn-secondary install-btn" onclick="handleInstallClick()">⬇️ Install App</button>
+    </div>
+  </nav>
+
+  <nav class="mobile-bottom-nav" id="mobileBottomNav">
+    <button onclick="openPracticeBook()" class="mobile-nav-item" id="mobNavPractice" data-nav="practice"><span>📘</span><small>Practice</small></button>
+    <button onclick="openLeaderboardScreen()" class="mobile-nav-item" id="mobNavRanks" data-nav="ranks"><span>🏆</span><small>Ranks</small></button>
+    <button onclick="openLearningPathNav()" class="mobile-nav-item" id="mobNavLearn" data-nav="learn"><span>📚</span><small>Learn</small></button>
+    <button onclick="handleInstallClick()" class="mobile-nav-item" id="mobNavInstall" data-nav="install"><span>⬇️</span><small>Install</small></button>
+  </nav>
+
+  <div class="app-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span>Learning Path</span>
+        <button class="sidebar-close" onclick="toggleSidebar()">✕</button>
+      </div>
+      <div class="phase-header phase1-active">MAIN FOCUS</div>
+      <ul class="concept-list">
+        <li onclick="openPracticeBook(); closeSidebarOnMobile()" style="color:#c4b5fd; font-weight:700">📘 Practice Book (210 Qs)</li>
+        <li onclick="openLeaderboardScreen(); closeSidebarOnMobile()" style="color:#facc15; font-weight:700">🏆 Live Leaderboard</li>
+      </ul>
+      <div class="phase-header" style="color:#22c55e; margin-top:16px">LEARN PYTHON
+        <span id="learningProgressBadge" style="font-size:0.7rem; background:#166534; color:#86efac; padding:2px 8px; border-radius:99px; margin-left:6px">0%</span>
+      </div>
+      <ul class="concept-list" id="conceptList"></ul>
+      <div class="phase-header" style="color:#86efac; margin-top:12px">ADVENTURES</div>
+      <ul class="concept-list">
+        <li onclick="window.location.href='loops-adventure.html'" style="color:#86efac">🌲 Forest of Loops</li>
+      </ul>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+    <main class="main-content" id="mainContent">
+      <section id="welcomeScreen" class="screen active">
+        <div class="welcome-hero">
+          <h1>LJIET Python Practice & Exam Portal 🐍</h1>
+          <p class="subtitle">Focus on <strong>Practice Book (Q1–Q210)</strong> and compete on the <strong>Live Class Leaderboard</strong></p>
+          <div class="primary-actions">
+            <div class="primary-card" onclick="openPracticeBook()">
+              <div class="primary-card-top"><span class="primary-icon">📘</span><span class="primary-badge">CORE FOCUS</span></div>
+              <h3>Practice Book (210 Questions)</h3>
+              <p>All Unit 1, 2 & 3 questions with step-by-step solutions + anti-paste Python editor.</p>
+              <button class="btn-primary">Start Solving →</button>
+            </div>
+            <div class="primary-card leaderboard-card" onclick="openLeaderboardScreen()">
+              <div class="primary-card-top"><span class="primary-icon">🏆</span><span class="primary-badge gold">LIVE SYNC</span></div>
+              <h3>Class Leaderboard</h3>
+              <p>Compare ranks with classmates. Earn points for MCQs (+10) and coding tasks (+50).</p>
+              <button class="btn-secondary" style="border-color:#facc15; color:#facc15">View Rankings →</button>
+            </div>
+          </div>
+          <div class="secondary-section">
+            <div class="secondary-header">
+              <span>📚 Optional Learning Path</span>
+              <span id="welcomeProgressText" class="progress-text">0% mastered</span>
+            </div>
+            <div class="progress-bar-thin"><div class="progress-fill" id="welcomeProgress" style="width:0%"></div></div>
+            <p class="secondary-desc">Concepts, visual playgrounds & Forest of Loops are in the side panel.</p>
+            <div class="secondary-btns">
+              <button class="btn-secondary small" onclick="openLearningPathNav()">📚 Start Learning Path</button>
+              <button class="btn-secondary small" onclick="openDailyMission()">🎯 Daily Mission</button>
+              <button class="btn-secondary small" onclick="handleInstallClick()">⬇️ Install App</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="conceptScreen" class="screen">
+        <div class="concept-header">
+          <div class="concept-meta">
+            <span class="concept-number" id="conceptNumber">01</span>
+            <h2 id="conceptTitle">Variables</h2>
+          </div>
+          <div class="concept-progress"><span id="stepIndicator">1 / 8</span></div>
+        </div>
+        <div class="step-tabs" id="stepTabs">
+          <button class="step-tab active" data-step="why">🧠 Why?</button>
+          <button class="step-tab" data-step="see">👀 See It</button>
+          <button class="step-tab" data-step="play">🖐 Play</button>
+          <button class="step-tab" data-step="predict">🤔 Predict</button>
+          <button class="step-tab" data-step="code">💻 Code</button>
+          <button class="step-tab" data-step="break">🐛 Break</button>
+          <button class="step-tab" data-step="apply">🚀 Apply</button>
+          <button class="step-tab" data-step="master">✅ Master</button>
+        </div>
+        <div class="step-content" id="stepContent"></div>
+        <div class="step-navigation">
+          <button class="btn-secondary" id="prevStepBtn" onclick="prevStep()">← Back</button>
+          <button class="btn-primary" id="nextStepBtn" onclick="nextStep()">Next →</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <div id="pwaInstallModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:10000; align-items:center; justify-content:center; padding:20px; backdrop-filter:blur(8px);">
+    <div style="background:#0f172a; border:1px solid #6366f1; border-radius:20px; width:100%; max-width:420px; padding:24px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <h3 style="color:#a5b4fc; margin:0;">⬇️ Install LJIET Python Hub</h3>
+        <button onclick="closeInstallModal()" style="background:none; border:none; color:#94a3b8; font-size:1.5rem; cursor:pointer;">&times;</button>
+      </div>
+      <div id="installModalBody" style="color:#e2e8f0; font-size:0.95rem; line-height:1.6;"></div>
+      <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
+        <button id="installModalPrimary" class="btn-primary" style="flex:1;">OK</button>
+        <button onclick="closeInstallModal()" class="btn-secondary" style="flex:1;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="pwaInstallBanner" class="pwa-banner hidden">
+    <div class="pwa-banner-content">
+      <span>📱 Install app for faster access offline</span>
+      <div>
+        <button id="pwaInstallConfirm" class="btn-primary small">Install</button>
+        <button id="pwaInstallDismiss" class="btn-secondary small">Later</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/supabase-config.js"></script>
+  <script src="js/leaderboard.js"></script>
+  <script src="js/concepts-data.js"></script>
+  <script src="js/practice-book-questions.js"></script>
+  <script src="js/option-html-fix.js"></script>
+  <script src="js/playgrounds.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/app-fixes.js"></script>
+
+  <script>
+    let deferredPrompt = null;
+    function isIos() {
+      return /iphone|ipad|ipod/i.test(navigator.userAgent) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    }
+    function isStandalone() {
+      return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+    }
+    function isSafari() {
+      return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    }
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+      });
+    }
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      document.getElementById("pwaInstallBanner")?.classList.remove("hidden");
+    });
+    function closeInstallModal() {
+      document.getElementById("pwaInstallModal").style.display = "none";
+    }
+    function openInstallModal(htmlBody, primaryLabel, primaryFn) {
+      const m = document.getElementById("pwaInstallModal");
+      const body = document.getElementById("installModalBody");
+      const primary = document.getElementById("installModalPrimary");
+      body.innerHTML = htmlBody;
+      primary.textContent = primaryLabel || "OK";
+      primary.onclick = primaryFn || closeInstallModal;
+      m.style.display = "flex";
+    }
+    async function handleInstallClick() {
+      if (isStandalone()) {
+        openInstallModal("<p>✅ App is already installed on this device.</p>", "OK", closeInstallModal);
+        return;
+      }
+      if (deferredPrompt) {
+        try {
+          deferredPrompt.prompt();
+          const result = await deferredPrompt.userChoice;
+          deferredPrompt = null;
+          document.getElementById("pwaInstallBanner")?.classList.add("hidden");
+          if (result && result.outcome === "accepted" && typeof showToast === "function") {
+            showToast("✅ App installed!");
+          }
+        } catch (err) {
+          console.warn("Install prompt failed", err);
+        }
+        return;
+      }
+      if (isIos()) {
+        openInstallModal(
+          `<p style="margin-bottom:10px"><strong>📱 iPhone / iPad</strong></p>
+           <p style="color:#94a3b8;margin-bottom:12px;font-size:0.9rem">Safari does not allow one-tap install. Do this:</p>
+           <ol style="padding-left:20px;line-height:1.9;margin:0;color:#e2e8f0">
+             <li>Tap the <strong>Share</strong> button (square with arrow)</li>
+             <li>Scroll and tap <strong>Add to Home Screen</strong></li>
+             <li>Tap <strong>Add</strong></li>
+           </ol>`,
+          "Got it", closeInstallModal);
+        return;
+      }
+      if (isSafari()) {
+        openInstallModal(
+          `<p><strong>Safari on Mac</strong></p>
+           <p style="margin-top:8px;color:#e2e8f0">Menu: <strong>File → Add to Dock</strong></p>
+           <p style="margin-top:10px;color:#94a3b8;font-size:0.9rem">Or open this site in <strong>Chrome / Edge</strong> for easier install.</p>`,
+          "Got it", closeInstallModal);
+        return;
+      }
+      const isAndroid = /android/i.test(navigator.userAgent);
+      openInstallModal(
+        `<p style="margin-bottom:12px"><strong>📲 How to install this app</strong></p>
+         <p style="color:#94a3b8;font-size:0.9rem;margin-bottom:12px">The automatic install popup is not available right now. Install manually:</p>
+         <div style="background:#1e293b;border-radius:12px;padding:14px;line-height:1.8;color:#e2e8f0;font-size:0.92rem">
+           ${isAndroid
+             ? `<p><strong>Android Chrome</strong></p>
+                <ol style="padding-left:18px;margin:8px 0 0 0">
+                  <li>Tap the <strong>⋮</strong> menu (top right)</li>
+                  <li>Tap <strong>Install app</strong> or <strong>Add to Home screen</strong></li>
+                  <li>Confirm <strong>Install</strong></li>
+                </ol>`
+             : `<p><strong>Chrome / Edge (computer)</strong></p>
+                <ol style="padding-left:18px;margin:8px 0 0 0">
+                  <li>Look at the <strong>address bar</strong> (right side)</li>
+                  <li>Click the <strong>Install</strong> / computer icon</li>
+                  <li>Or open menu <strong>⋮ → Cast, save, and share → Install page as app</strong></li>
+                </ol>`
+           }
+         </div>
+         <p style="margin-top:12px;color:#64748b;font-size:0.8rem">You can keep using the website normally even without installing.</p>`,
+        "OK",
+        closeInstallModal
+      );
+    }
+    document.getElementById("pwaInstallConfirm")?.addEventListener("click", () => handleInstallClick());
+    document.getElementById("pwaInstallDismiss")?.addEventListener("click", () => {
+      document.getElementById("pwaInstallBanner")?.classList.add("hidden");
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      initSupabase();
+      initStudentSession();
+    });
+
+    function openWelcomeScreen() {
+      document.querySelectorAll(".screen").forEach(s => {
+        s.classList.remove("active");
+        s.style.removeProperty("display");
+      });
+      document.getElementById("welcomeScreen").classList.add("active");
+      closeSidebarOnMobile();
+    }
+    function openLeaderboardScreen() {
+      document.querySelectorAll(".screen").forEach(s => {
+        s.classList.remove("active");
+        s.style.removeProperty("display");
+      });
+      document.getElementById("conceptScreen").classList.add("active");
+      document.getElementById("conceptNumber").textContent = "🏆";
+      document.getElementById("conceptTitle").textContent = "Live Class Leaderboard & Rankings";
+      document.getElementById("stepTabs").style.display = "none";
+      document.querySelector(".step-navigation").style.display = "none";
+      renderLiveLeaderboard();
+      closeSidebarOnMobile();
+      if (typeof setMobileNavActive === "function") setMobileNavActive("ranks");
+    }
+    function setMobileNavActive(name) {
+      document.querySelectorAll(".mobile-nav-item").forEach((b) => b.classList.remove("active"));
+      const map = { practice: "mobNavPractice", ranks: "mobNavRanks", learn: "mobNavLearn", install: "mobNavInstall" };
+      const el = document.getElementById(map[name]);
+      if (el) el.classList.add("active");
+    }
+    function openLearningPathNav() {
+      if (window.innerWidth <= 900) {
+        const sb = document.getElementById("sidebar");
+        const ov = document.getElementById("sidebarOverlay");
+        if (sb) sb.classList.add("open");
+        if (ov) ov.classList.add("show");
+        setMobileNavActive("learn");
+        if (typeof showToast === "function") showToast("📚 Pick a topic from the list");
+      } else {
+        if (typeof startLearning === "function") startLearning();
+        else if (typeof openConcept === "function") openConcept(0);
+        setMobileNavActive("learn");
+      }
+    }
+    function toggleSidebar() {
+      document.getElementById("sidebar")?.classList.toggle("open");
+      document.getElementById("sidebarOverlay")?.classList.toggle("show");
+    }
+    function closeSidebarOnMobile() {
+      if (window.innerWidth <= 900) {
+        document.getElementById("sidebar")?.classList.remove("open");
+        document.getElementById("sidebarOverlay")?.classList.remove("show");
+      }
+    }
+  </script>
+</body>
+</html>
