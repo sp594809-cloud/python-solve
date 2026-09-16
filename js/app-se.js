@@ -20,7 +20,7 @@ function updateSubjectUI() {
     btn.style.borderColor = active ? (btn.getAttribute("data-subject-btn") === "se" ? "#f59e0b" : "#6366f1") : "#334155";
   });
   const logoText = document.querySelector(".logo-text");
-  if (logoText) logoText.textContent = "LJIET Learning App";
+  if (logoText) logoText.textContent = "LJIET Learning Hub";
   const logoIcon = document.querySelector(".logo-icon");
   if (logoIcon) logoIcon.textContent = isSE ? "📐" : "🐍";
 }
