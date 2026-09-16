@@ -25,7 +25,7 @@ function updateSubjectUI() {
     btn.style.borderColor = active ? (btn.getAttribute("data-subject-btn") === "se" ? "#f59e0b" : "#6366f1") : "#334155";
   });
   const logoText = document.querySelector(".logo-text");
-  if (logoText) logoText.textContent = isSE ? "LJIET SE Hub" : "LJIET Python Hub";
+  if (logoText) logoText.textContent = "LJIET Learning App";
   const logoIcon = document.querySelector(".logo-icon");
   if (logoIcon) logoIcon.textContent = isSE ? "📐" : "🐍";
 }
@@ -93,11 +93,11 @@ function renderSEPracticeBookHub() {
   const total = getSEAllMcqs().length;
   let html = '<div style="background:linear-gradient(135deg,#422006,#0f172a);border:1px solid #f59e0b;border-radius:16px;padding:20px;margin-bottom:20px">' +
     '<h2 style="color:#fcd34d;margin:0 0 8px;font-size:1.35rem">📐 Software Engineering Practice Book</h2>' +
-    '<p style="color:#94a3b8;margin:0;font-size:0.9rem">LJIET CE Related Branches · SEM-I 2026 · <strong style="color:#fde68a">' + total + ' MCQs</strong> with answers</p>' +
+    '<p style="color:#94a3b8;margin:0;font-size:0.9rem">LJIET · SEM-I · <strong style="color:#fde68a">' + total + ' MCQs</strong> · points go to shared leaderboard</p>' +
     '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">' +
     '<button class="btn-primary small" onclick="renderSEUnitList()">All Units</button>' +
     '<button class="btn-secondary small" onclick="renderSEAllMcqs()">Practice All MCQs</button>' +
-    '<button class="btn-secondary small" onclick="selectPythonSubject()">← Back to Python</button></div></div><div style="display:grid;gap:12px">';
+    '<button class="btn-secondary small" onclick="selectPythonSubject()">← Python</button></div></div><div style="display:grid;gap:12px">';
   units.forEach((u) => {
     const n = (u.mcqs || []).length;
     html += '<div onclick="renderSEUnit(' + u.unit + ')" style="background:#1e293b;border:1px solid #334155;border-radius:12px;padding:16px;cursor:pointer">' +
@@ -168,8 +168,11 @@ window.checkSEAnswer = function (qid, letter, correctLetter) {
     if (L === correctLetter) { btn.style.borderColor = "#22c55e"; btn.style.background = "rgba(34,197,94,0.15)"; }
     else if (L === letter && !ok) { btn.style.borderColor = "#ef4444"; btn.style.background = "rgba(239,68,68,0.15)"; }
   });
+  if (ok && typeof addStudentPoints === "function") {
+    addStudentPoints(10, "se-" + qid);
+  }
   fb.innerHTML = ok
-    ? '<div style="background:rgba(34,197,94,0.15);border:1px solid #22c55e;padding:12px;border-radius:10px;color:#86efac">✅ Correct!</div>'
+    ? '<div style="background:rgba(34,197,94,0.15);border:1px solid #22c55e;padding:12px;border-radius:10px;color:#86efac">✅ Correct! +10 points</div>'
     : '<div style="background:rgba(239,68,68,0.15);border:1px solid #ef4444;padding:12px;border-radius:10px;color:#fca5a5">❌ Wrong. Correct answer is <strong>' + correctLetter + '</strong></div>';
 };
 
