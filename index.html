@@ -87,7 +87,7 @@
             <div class="primary-card" onclick="openSEPracticeBook()" style="border-color:#f59e0b;background:linear-gradient(135deg,#422006,#0f172a)">
               <div class="primary-card-top"><span class="primary-icon">📐</span><span class="primary-badge" style="background:#d97706">NEW</span></div>
               <h3 style="color:#fcd34d">Software Engineering</h3>
-              <p>LJIET SE Practice Book – process models, Agile, SRS, DFD, UML, testing, SQA & SCM MCQs.</p>
+              <p>LJIET SE Practice Book – process models, Agile, SRS, testing, SQA & SCM MCQs.</p>
               <button class="btn-secondary" style="border-color:#f59e0b;color:#fcd34d">Open SE Practice →</button>
             </div>
           </div>
@@ -165,8 +165,7 @@
   <script src="js/playgrounds.js"></script>
   <script src="js/app.js"></script>
   <script src="js/app-fixes.js"></script>
-  <script src="js/se-practice-part1.js"></script>
-  <script src="js/se-practice-part2.js"></script>
+  <script src="js/se-practice-book.js"></script>
   <script src="js/app-se.js"></script>
 
   <script>
@@ -177,9 +176,6 @@
     }
     function isStandalone() {
       return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
-    }
-    function isSafari() {
-      return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     }
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
