@@ -90,7 +90,7 @@
             <div class="primary-card" onclick="openSEPracticeBook()" style="border-color:#f59e0b;background:linear-gradient(135deg,#422006,#0f172a)">
               <div class="primary-card-top"><span class="primary-icon">📐</span><span class="primary-badge" style="background:#d97706">SE</span></div>
               <h3 style="color:#fcd34d">Software Engineering</h3>
-              <p>SE Practice Book – process, Agile, SRS, testing, SQA & SCM MCQs (~177).</p>
+              <p>SE Practice Book – ~177 MCQs · process, Agile, SRS, testing, SQA.</p>
               <button class="btn-secondary" style="border-color:#f59e0b;color:#fcd34d">Open SE Practice →</button>
             </div>
           </div>
@@ -168,6 +168,9 @@
   <script src="js/playgrounds.js"></script>
   <script src="js/app.js"></script>
   <script src="js/app-fixes.js"></script>
+  <script src="js/se-unit1.js"></script>
+  <script src="js/se-unit2.js"></script>
+  <script src="js/se-units-345.js"></script>
   <script src="js/se-practice-book.js"></script>
   <script src="js/app-se.js"></script>
 
@@ -231,10 +234,6 @@
     function openWelcomeScreen() {
       document.querySelectorAll(".screen").forEach(s => { s.classList.remove("active"); s.style.removeProperty("display"); });
       document.getElementById("welcomeScreen").classList.add("active");
-      const tabs = document.getElementById("stepTabs");
-      const nav = document.querySelector(".step-navigation");
-      if (tabs) tabs.style.display = "";
-      if (nav) nav.style.display = "";
       closeSidebarOnMobile();
     }
     function openLeaderboardScreen() {
