@@ -12,7 +12,6 @@ const SUPABASE_CONFIG = {
 
 let supabaseClient = null;
 
-// Initialize Supabase Client (uses serviceKey for direct full RLS bypass permissions)
 function initSupabase() {
   const activeKey = SUPABASE_CONFIG.serviceKey || SUPABASE_CONFIG.anonKey;
   if (typeof supabase !== "undefined" && SUPABASE_CONFIG.url && activeKey) {
@@ -27,10 +26,19 @@ function initSupabase() {
   }
 }
 
+/** Generate permanent Account ID (hard to guess) e.g. PY-K7M2NQ */
+function generateAccountId() {
+  const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  let id = "";
+  for (let i = 0; i < 6; i++) {
+    id += chars[Math.floor(Math.random() * chars.length)];
+  }
+  return "PY-" + id;
+}
+
 /**
  * Fetch a single student record from Supabase by mobile number.
  * (Stored in the 'enrollment' column which is the unique key)
- * Returns null if not found or offline.
  */
 async function fetchStudentFromCloud(mobile) {
   if (!supabaseClient || !mobile) return null;
@@ -44,8 +52,9 @@ async function fetchStudentFromCloud(mobile) {
     if (error || !data) return null;
 
     return {
-      enrollment: data.enrollment,   // this field now holds mobile number
+      enrollment: data.enrollment,
       name: data.name || '',
+      accountId: data.account_id || null,
       points: data.points || 0,
       mcqsSolved: data.mcqs_solved || 0,
       codeCompleted: data.code_completed || 0,
@@ -59,20 +68,18 @@ async function fetchStudentFromCloud(mobile) {
 }
 
 /**
- * Save / update student. Always keeps the HIGHER points value
- * so a new device logging in with 0 cannot wipe a previous score.
- * Mobile number is stored in the 'enrollment' column (unique key).
+ * Save / update student. Always keeps the HIGHER points value.
+ * NAME LOCK: once name exists in cloud, cannot be overwritten by another login.
+ * Account ID is generated once and permanent.
  */
 async function syncStudentToCloud(studentData) {
   if (!studentData || !studentData.enrollment) return;
 
-  // Always update local storage first
   saveLocalStudentData(studentData);
 
   if (!supabaseClient) return;
 
   try {
-    // Protect against overwriting a higher cloud score
     const existing = await fetchStudentFromCloud(studentData.enrollment);
     const finalPoints = Math.max(
       studentData.points || 0,
@@ -87,35 +94,49 @@ async function syncStudentToCloud(studentData) {
       (existing && existing.codeCompleted) || 0
     );
 
-    // Keep local object in sync with the protected values
     studentData.points = finalPoints;
     studentData.mcqsSolved = finalMcqs;
     studentData.codeCompleted = finalCode;
+
+    // NAME LOCK: once a name exists in cloud, never let another login overwrite it
+    const lockedName = (existing && existing.name && existing.name.trim())
+      ? existing.name.trim()
+      : (studentData.name || 'Student');
+    studentData.name = lockedName;
+
+    // Permanent Account ID: keep existing, or create once
+    let accountId = studentData.accountId || (existing && existing.accountId) || null;
+    if (!accountId) {
+      accountId = generateAccountId();
+    }
+    studentData.accountId = accountId;
+
     saveLocalStudentData(studentData);
+
+    const payload = {
+      enrollment: studentData.enrollment,
+      name: lockedName,
+      points: finalPoints,
+      mcqs_solved: finalMcqs,
+      code_completed: finalCode,
+      updated_at: new Date().toISOString()
+    };
+    if (accountId) payload.account_id = accountId;
 
     const { error } = await supabaseClient
       .from('leaderboard')
-      .upsert({
-        enrollment: studentData.enrollment,  // mobile number stored here
-        name: studentData.name || (existing && existing.name) || 'Student',
-        points: finalPoints,
-        mcqs_solved: finalMcqs,
-        code_completed: finalCode,
-        updated_at: new Date().toISOString()
-      }, { onConflict: 'enrollment' });
+      .upsert(payload, { onConflict: 'enrollment' });
 
     if (error) {
       console.warn("Supabase sync notice:", error.message);
     } else {
-      console.log("☁️ Score synced to Supabase Cloud Leaderboard! Points:", finalPoints);
+      console.log("☁️ Score synced to Supabase Cloud Leaderboard! Points:", finalPoints, "ID:", accountId);
     }
   } catch (err) {
     console.warn("Cloud sync offline fallback active:", err);
   }
 }
 
-// Fetch Global Class Leaderboard from Supabase
-// Limit raised to 1000 so full class (400+) can appear (was hard-capped at 100)
 async function fetchCloudLeaderboard() {
   if (supabaseClient) {
     try {
@@ -128,7 +149,7 @@ async function fetchCloudLeaderboard() {
       if (!error && data && data.length > 0) {
         return data.map((item, idx) => ({
           rank: idx + 1,
-          enrollment: item.enrollment,  // mobile number
+          enrollment: item.enrollment,
           name: item.name,
           points: item.points || 0,
           mcqsSolved: item.mcqs_solved || 0,
@@ -139,12 +160,9 @@ async function fetchCloudLeaderboard() {
       console.warn("Using local fallback leaderboard");
     }
   }
-
-  // Fallback to local combined leaderboard
   return getCombinedLocalLeaderboard();
 }
 
-// Local Storage Fallback Engine
 function getLocalStudentData() {
   try {
     const data = localStorage.getItem('ljiet_student_profile');
@@ -156,8 +174,6 @@ function getLocalStudentData() {
 
 function saveLocalStudentData(studentData) {
   localStorage.setItem('ljiet_student_profile', JSON.stringify(studentData));
-
-  // Update mock global registry for local demo / offline
   let globalList = JSON.parse(localStorage.getItem('ljiet_all_students_registry') || '[]');
   const idx = globalList.findIndex(s => s.enrollment === studentData.enrollment);
   if (idx >= 0) {
@@ -170,7 +186,6 @@ function saveLocalStudentData(studentData) {
 
 function getCombinedLocalLeaderboard() {
   let list = JSON.parse(localStorage.getItem('ljiet_all_students_registry') || '[]');
-
   if (list.length === 0) {
     list = [
       { enrollment: "9876543210", name: "Rahul Sharma", points: 840, mcqsSolved: 62, codeCompleted: 8 },
@@ -180,9 +195,7 @@ function getCombinedLocalLeaderboard() {
       { enrollment: "9876501234", name: "Karan Mehta", points: 490, mcqsSolved: 35, codeCompleted: 4 }
     ];
   }
-
   list.sort((a, b) => (b.points || 0) - (a.points || 0));
-
   return list.map((item, index) => ({
     rank: index + 1,
     enrollment: item.enrollment,
