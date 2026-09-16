@@ -1,7 +1,4 @@
-// ============================================================
 // Software Engineering subject + Practice Book hub
-// ============================================================
-
 window.CURRENT_SUBJECT = window.CURRENT_SUBJECT || "python";
 
 function setSubject(subject) {
@@ -9,14 +6,12 @@ function setSubject(subject) {
   try { localStorage.setItem("ljiet_subject", subject); } catch (e) {}
   updateSubjectUI();
 }
-
 function loadSavedSubject() {
   try {
     const s = localStorage.getItem("ljiet_subject");
     if (s === "se" || s === "python") window.CURRENT_SUBJECT = s;
   } catch (e) {}
 }
-
 function updateSubjectUI() {
   const isSE = window.CURRENT_SUBJECT === "se";
   document.querySelectorAll("[data-subject-btn]").forEach((btn) => {
@@ -29,36 +24,26 @@ function updateSubjectUI() {
   const logoIcon = document.querySelector(".logo-icon");
   if (logoIcon) logoIcon.textContent = isSE ? "📐" : "🐍";
 }
-
 function selectPythonSubject() {
   setSubject("python");
   if (typeof openWelcomeScreen === "function") openWelcomeScreen();
-  else if (typeof showWelcomeScreenFixed === "function") showWelcomeScreenFixed();
 }
-
 function selectSESubject() {
   setSubject("se");
   openSEPracticeBook();
 }
-
 function openSEPracticeBook() {
   setSubject("se");
   try {
-    if (typeof showConceptScreen === "function") showConceptScreen();
-    else {
-      document.querySelectorAll(".screen").forEach((s) => {
-        s.classList.remove("active");
-        s.style.removeProperty("display");
-      });
-      document.getElementById("conceptScreen")?.classList.add("active");
-    }
-    if (typeof showStepTabs === "function") showStepTabs(false);
-    else {
-      const tabs = document.getElementById("stepTabs");
-      const nav = document.querySelector(".step-navigation");
-      if (tabs) tabs.style.display = "none";
-      if (nav) nav.style.display = "none";
-    }
+    document.querySelectorAll(".screen").forEach((s) => {
+      s.classList.remove("active");
+      s.style.removeProperty("display");
+    });
+    document.getElementById("conceptScreen")?.classList.add("active");
+    const tabs = document.getElementById("stepTabs");
+    const nav = document.querySelector(".step-navigation");
+    if (tabs) tabs.style.display = "none";
+    if (nav) nav.style.display = "none";
     const numEl = document.getElementById("conceptNumber");
     const titleEl = document.getElementById("conceptTitle");
     if (numEl) numEl.textContent = "📐";
@@ -69,19 +54,36 @@ function openSEPracticeBook() {
     console.error("openSEPracticeBook:", err);
   }
 }
-
+function normalizeSEQuestion(q, unitNum, unitTitle, idx) {
+  const options = q.options || [];
+  let ans = q.answer;
+  let letter;
+  if (typeof ans === "number") letter = String.fromCharCode(65 + ans);
+  else letter = String(ans || "A").toUpperCase().charAt(0);
+  const ansIdx = letter.charCodeAt(0) - 65;
+  return {
+    id: q.id || ("se-" + unitNum + "-" + (idx + 1)),
+    srNo: q.srNo != null ? q.srNo : (idx + 1),
+    question: q.question || q.q || "",
+    options: options,
+    answer: letter,
+    correct: q.correct || options[ansIdx] || "",
+    explanation: q.explanation || "",
+    unit: unitNum,
+    unitTitle: unitTitle || ""
+  };
+}
 function getSEAllMcqs() {
   if (typeof SE_PRACTICE_BOOK === "undefined") return [];
   const all = [];
   Object.keys(SE_PRACTICE_BOOK).forEach((k) => {
     const u = SE_PRACTICE_BOOK[k];
     if (u && Array.isArray(u.mcqs)) {
-      u.mcqs.forEach((q) => all.push(Object.assign({}, q, { unit: u.unit, unitTitle: u.title })));
+      u.mcqs.forEach((q, idx) => all.push(normalizeSEQuestion(q, u.unit, u.title, idx)));
     }
   });
   return all;
 }
-
 function renderSEPracticeBookHub() {
   const content = document.getElementById("stepContent");
   if (!content) return;
@@ -93,7 +95,7 @@ function renderSEPracticeBookHub() {
   const total = getSEAllMcqs().length;
   let html = '<div style="background:linear-gradient(135deg,#422006,#0f172a);border:1px solid #f59e0b;border-radius:16px;padding:20px;margin-bottom:20px">' +
     '<h2 style="color:#fcd34d;margin:0 0 8px;font-size:1.35rem">📐 Software Engineering Practice Book</h2>' +
-    '<p style="color:#94a3b8;margin:0;font-size:0.9rem">LJIET · SEM-I · <strong style="color:#fde68a">' + total + ' MCQs</strong> · points go to shared leaderboard</p>' +
+    '<p style="color:#94a3b8;margin:0;font-size:0.9rem">LJIET · <strong style="color:#fde68a">' + total + ' MCQs</strong> · shared leaderboard (+10 each)</p>' +
     '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">' +
     '<button class="btn-primary small" onclick="renderSEUnitList()">All Units</button>' +
     '<button class="btn-secondary small" onclick="renderSEAllMcqs()">Practice All MCQs</button>' +
@@ -109,9 +111,7 @@ function renderSEPracticeBookHub() {
   html += '</div>';
   content.innerHTML = html;
 }
-
 function renderSEUnitList() { renderSEPracticeBookHub(); }
-
 function renderSEUnit(unitNum) {
   const content = document.getElementById("stepContent");
   if (!content || typeof SE_PRACTICE_BOOK === "undefined") return;
@@ -120,26 +120,22 @@ function renderSEUnit(unitNum) {
   let html = '<div style="margin-bottom:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">' +
     '<button class="btn-secondary small" onclick="renderSEPracticeBookHub()">← Units</button>' +
     '<h3 style="color:#fcd34d;margin:0">' + u.title + '</h3>' +
-    '<span style="color:#94a3b8;font-size:0.85rem">' + (u.mcqs||[]).length + ' questions</span></div>' +
-    '<div id="seQuestionsList" style="display:grid;gap:14px">';
-  (u.mcqs || []).forEach((q, i) => { html += renderSEMcqCard(q, i); });
+    '<span style="color:#94a3b8;font-size:0.85rem">' + (u.mcqs||[]).length + ' questions</span></div><div style="display:grid;gap:14px">';
+  (u.mcqs || []).forEach((q, i) => { html += renderSEMcqCard(normalizeSEQuestion(q, u.unit, u.title, i), i); });
   html += '</div>';
   content.innerHTML = html;
 }
-
 function renderSEAllMcqs() {
   const content = document.getElementById("stepContent");
   if (!content) return;
   const all = getSEAllMcqs();
   let html = '<div style="margin-bottom:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">' +
     '<button class="btn-secondary small" onclick="renderSEPracticeBookHub()">← Units</button>' +
-    '<h3 style="color:#fcd34d;margin:0">All SE MCQs (' + all.length + ')</h3></div>' +
-    '<div id="seQuestionsList" style="display:grid;gap:14px">';
+    '<h3 style="color:#fcd34d;margin:0">All SE MCQs (' + all.length + ')</h3></div><div style="display:grid;gap:14px">';
   all.forEach((q, i) => { html += renderSEMcqCard(q, i); });
   html += '</div>';
   content.innerHTML = html;
 }
-
 function renderSEMcqCard(q, i) {
   const opts = (q.options || []).map((o, oi) => {
     const letter = String.fromCharCode(65 + oi);
@@ -156,7 +152,6 @@ function renderSEMcqCard(q, i) {
     '<div>' + opts + '</div><div id="se-fb-' + q.id + '" style="display:none;margin-top:10px"></div>' +
     '<button type="button" class="pb-sol-btn" style="margin-top:8px" onclick="showSESolution(\'' + q.id + '\')">Show solution</button></div>';
 }
-
 window.checkSEAnswer = function (qid, letter, correctLetter) {
   const fb = document.getElementById("se-fb-" + qid);
   if (!fb) return;
@@ -168,14 +163,11 @@ window.checkSEAnswer = function (qid, letter, correctLetter) {
     if (L === correctLetter) { btn.style.borderColor = "#22c55e"; btn.style.background = "rgba(34,197,94,0.15)"; }
     else if (L === letter && !ok) { btn.style.borderColor = "#ef4444"; btn.style.background = "rgba(239,68,68,0.15)"; }
   });
-  if (ok && typeof addStudentPoints === "function") {
-    addStudentPoints(10, "se-" + qid);
-  }
+  if (ok && typeof addStudentPoints === "function") addStudentPoints(10, "se-" + qid);
   fb.innerHTML = ok
     ? '<div style="background:rgba(34,197,94,0.15);border:1px solid #22c55e;padding:12px;border-radius:10px;color:#86efac">✅ Correct! +10 points</div>'
     : '<div style="background:rgba(239,68,68,0.15);border:1px solid #ef4444;padding:12px;border-radius:10px;color:#fca5a5">❌ Wrong. Correct answer is <strong>' + correctLetter + '</strong></div>';
 };
-
 window.showSESolution = function (qid) {
   const all = getSEAllMcqs();
   const q = all.find((x) => x.id === qid);
@@ -186,11 +178,10 @@ window.showSESolution = function (qid) {
     '<strong style="color:#fcd34d">Answer: (' + q.answer + ') ' + q.correct + '</strong>' +
     '<p style="margin:8px 0 0;color:#94a3b8;font-size:0.9rem">' + (q.explanation || "") + '</p></div>';
 };
-
 loadSavedSubject();
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", function () { setTimeout(updateSubjectUI, 100); });
 } else {
   setTimeout(updateSubjectUI, 100);
 }
-console.log("✅ app-se.js loaded – Software Engineering subject ready");
+console.log("✅ app-se.js ready");
