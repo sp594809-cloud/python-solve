@@ -115,6 +115,7 @@ async function syncStudentToCloud(studentData) {
 }
 
 // Fetch Global Class Leaderboard from Supabase
+// Limit raised to 1000 so full class (400+) can appear (was hard-capped at 100)
 async function fetchCloudLeaderboard() {
   if (supabaseClient) {
     try {
@@ -122,7 +123,7 @@ async function fetchCloudLeaderboard() {
         .from('leaderboard')
         .select('*')
         .order('points', { ascending: false })
-        .limit(100);
+        .limit(1000);
 
       if (!error && data && data.length > 0) {
         return data.map((item, idx) => ({
