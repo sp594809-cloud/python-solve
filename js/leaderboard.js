@@ -1,6 +1,6 @@
 // ============================================================
 // STUDENT AUTHENTICATION, LEADERBOARD & ANTI-PASTE ENGINE
-// Login: Mobile Number + Name | Daily streak like Snapchat
+// Login: Mobile + Name | Permanent Account ID | Name lock
 // ============================================================
 
 let currentStudent = null;
@@ -21,6 +21,11 @@ async function initStudentSession() {
       currentStudent.codeCompleted = Math.max(currentStudent.codeCompleted || 0, cloud.codeCompleted || 0);
       if (cloud.name && cloud.name.trim()) {
         currentStudent.name = cloud.name;
+      }
+      if (cloud.accountId) {
+        currentStudent.accountId = cloud.accountId;
+      } else if (!currentStudent.accountId && typeof generateAccountId === "function") {
+        currentStudent.accountId = generateAccountId();
       }
       saveLocalStudentData(currentStudent);
     }
@@ -47,7 +52,7 @@ function showLoginModal() {
         <div style="font-size: 2.8rem; margin-bottom: 10px">🐍</div>
         <h2 style="color: #f8fafc; font-size: 1.5rem; margin-bottom: 6px">LJIET Python Hub Login</h2>
         <p style="color: #94a3b8; font-size: 0.88rem; margin-bottom: 22px">
-          Enter your Mobile Number & Name to compete on the Live Class Leaderboard!
+          Enter your Mobile Number & Name. You get a permanent Account ID.
         </p>
         <form onsubmit="handleStudentLogin(event)">
           <div style="text-align: left; margin-bottom: 14px">
@@ -108,6 +113,7 @@ async function handleStudentLogin(e) {
     let base = {
       enrollment: mobile,
       name: name,
+      accountId: null,
       points: 0,
       mcqsSolved: 0,
       codeCompleted: 0,
@@ -126,12 +132,23 @@ async function handleStudentLogin(e) {
       base.streak = localExisting.streak || 0;
       base.lastStreakDate = localExisting.lastStreakDate || null;
       base.longestStreak = localExisting.longestStreak || 0;
+      base.accountId = localExisting.accountId || null;
+      if (localExisting.name) base.name = localExisting.name;
     }
     if (cloudExisting) {
       base.points = Math.max(base.points, cloudExisting.points || 0);
       base.mcqsSolved = Math.max(base.mcqsSolved, cloudExisting.mcqsSolved || 0);
       base.codeCompleted = Math.max(base.codeCompleted, cloudExisting.codeCompleted || 0);
-      if (!name && cloudExisting.name) base.name = cloudExisting.name;
+      // NAME LOCK: existing cloud name always wins
+      if (cloudExisting.name && cloudExisting.name.trim()) {
+        base.name = cloudExisting.name.trim();
+      }
+      if (cloudExisting.accountId) {
+        base.accountId = cloudExisting.accountId;
+      }
+    }
+    if (!base.accountId && typeof generateAccountId === "function") {
+      base.accountId = generateAccountId();
     }
     currentStudent = base;
     await syncStudentToCloud(currentStudent);
@@ -139,13 +156,15 @@ async function handleStudentLogin(e) {
     const modal = document.getElementById("studentLoginModal");
     if (modal) modal.style.display = "none";
     const ptsMsg = currentStudent.points > 0 ? ` Restored ${currentStudent.points} points from previous device.` : '';
-    showToast(`Welcome ${currentStudent.name}! Logged in with ${mobile}.${ptsMsg} 🎉`);
+    const idMsg = currentStudent.accountId ? ` Account ID: ${currentStudent.accountId}` : '';
+    showToast(`Welcome ${currentStudent.name}!${idMsg}${ptsMsg} 🎉`);
     try { checkAndUpdateStreak("login"); } catch (e) {}
   } catch (err) {
     console.error("Login error:", err);
     showToast("Login issue – using local data. Check internet.");
     currentStudent = {
       enrollment: mobile, name,
+      accountId: (typeof generateAccountId === "function" ? generateAccountId() : null),
       points: (getLocalStudentData()?.enrollment === mobile ? (getLocalStudentData().points || 0) : 0),
       mcqsSolved: 0, codeCompleted: 0, solvedMcqIds: [], completedCodeIds: [],
       streak: 0, lastStreakDate: null, longestStreak: 0
@@ -159,10 +178,6 @@ async function handleStudentLogin(e) {
   }
 }
 
-// ============================================================
-// DAILY STREAK (Snapchat-style)
-// +5 pts when you earn a day | +15 bonus every 7 days
-// ============================================================
 const STREAK_DAILY_POINTS = 5;
 const STREAK_WEEKLY_BONUS = 15;
 
@@ -235,6 +250,7 @@ function updateTopNavStudentInfo() {
   const streakHtml = streak > 0
     ? "<span style=\"color:#fb923c; font-weight:800\" title=\"Daily streak\">🔥 " + streak + "</span>"
     : "";
+  infoBadge.title = currentStudent.accountId ? ("Account ID: " + currentStudent.accountId) : "Student profile";
   infoBadge.innerHTML =
     "<span style=\"color:#c7d2fe; font-weight:700\">👤 " + currentStudent.name.split(" ")[0] + "</span>" +
     streakHtml +
@@ -279,7 +295,7 @@ async function renderLiveLeaderboard() {
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px">
         <div>
           <h2 style="color: #c7d2fe; font-size: 1.35rem; margin-bottom: 4px">🏆 LJIET Class Leaderboard</h2>
-          <p style="color: #94a3b8; font-size: 0.88rem">Real-time rankings synced via Supabase · Open daily for 🔥 streak points</p>
+          <p style="color: #94a3b8; font-size: 0.88rem">Real-time rankings · Open daily for 🔥 streak points</p>
         </div>
         <button onclick="renderLiveLeaderboard()" class="btn-primary" style="background:#2563eb; font-size:0.82rem; padding:8px 16px">🔄 Refresh</button>
       </div>
@@ -385,6 +401,8 @@ function openStudentProfileModal() {
       <div style="background:#1e293b; border-radius:12px; padding:14px; margin-bottom:14px">
         <div style="font-size:1.15rem; font-weight:700; color:#f8fafc">${currentStudent.name}</div>
         <div style="color:#94a3b8; font-size:0.88rem; font-family:monospace; margin-top:4px">Mobile Number: ${currentStudent.enrollment}</div>
+        <div style="color:#a5b4fc; font-size:0.95rem; font-family:monospace; margin-top:8px; font-weight:800; letter-spacing:0.5px">🆔 Account ID: ${currentStudent.accountId || "—"}</div>
+        <div style="color:#64748b; font-size:0.75rem; margin-top:4px">Permanent ID — name cannot be changed by others</div>
         <div style="color:#fb923c; font-size:0.9rem; margin-top:8px; font-weight:700">🔥 Streak: ${st} day${st === 1 ? "" : "s"}${best > st ? " (best " + best + ")" : ""}</div>
       </div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px">
@@ -397,7 +415,7 @@ function openStudentProfileModal() {
           <div style="font-size:0.78rem; color:#94a3b8">MCQs Solved</div>
         </div>
       </div>
-      <p style="color:#64748b; font-size:0.8rem; margin-bottom:12px">Open the app every day to keep your streak. +5 pts/day · +15 every 7 days.</p>
+      <p style="color:#64748b; font-size:0.8rem; margin-bottom:12px">Open daily for streak. +5 pts/day · +15 every 7 days. Keep your Account ID private.</p>
       <button onclick="showLoginModal(); document.getElementById('studentProfileModal').style.display='none'" style="width:100%; padding:10px; background:#334155; color:#e2e8f0; border:none; border-radius:8px; cursor:pointer">
         🔄 Switch Account / Re-login
       </button>
