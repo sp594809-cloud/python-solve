@@ -1,7 +1,7 @@
 {
-  "name": "LJIET Python Hub",
-  "short_name": "LJIET Python",
-  "description": "Solve Practice Book (210 Questions), Live Class Leaderboard & Python Learning Path",
+  "name": "LJIET Learning Hub",
+  "short_name": "LJIET Hub",
+  "description": "LJIET Learning Hub – Python & SE Practice Books, Leaderboard",
   "start_url": "./index.html",
   "scope": "./",
   "id": "./index.html",
