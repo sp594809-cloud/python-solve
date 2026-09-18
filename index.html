@@ -163,6 +163,7 @@
 
   <script src="js/supabase-config.js"></script>
   <script src="js/leaderboard.js"></script>
+  <script src="js/notifications.js"></script>
   <script src="js/concepts-data.js"></script>
   <script src="js/practice-book-questions.js"></script>
   <script src="js/playgrounds.js"></script>
@@ -230,6 +231,14 @@
     document.addEventListener("DOMContentLoaded", function () {
       if (typeof initSupabase === "function") initSupabase();
       if (typeof initStudentSession === "function") initStudentSession();
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.addEventListener("message", function (ev) {
+          const d = ev.data || {};
+          if (d.type === "ljiet-notif-click" && d.action === "leaderboard" && typeof openLeaderboardScreen === "function") {
+            openLeaderboardScreen();
+          }
+        });
+      }
     });
     function openWelcomeScreen() {
       document.querySelectorAll(".screen").forEach(s => { s.classList.remove("active"); s.style.removeProperty("display"); });
