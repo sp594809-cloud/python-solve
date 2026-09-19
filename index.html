@@ -21,7 +21,7 @@
       <span class="logo-text">LJIET Learning Hub</span>
     </div>
     <div class="nav-progress">
-      <button type="button" id="navHomeBtn" class="btn-secondary nav-main-btn nav-home-btn" onclick="openWelcomeScreen()" title="Home">🏠 Home</button>
+      <button type="button" class="btn-secondary nav-main-btn nav-home-btn" onclick="openWelcomeScreen()" title="Home">🏠 Home</button>
       <button class="btn-secondary nav-main-btn" onclick="openPracticeBook()">📘 Practice Book</button>
       <button class="btn-secondary nav-main-btn" onclick="openSem3PracticeBook()" style="border-color:#22c55e;color:#86efac">📗 SEM-3 PB</button>
       <button class="btn-secondary nav-main-btn" onclick="openSEPracticeBook()" style="border-color:#f59e0b;color:#fcd34d">📐 SE</button>
@@ -32,24 +32,21 @@
   </nav>
 
   <nav class="mobile-bottom-nav" id="mobileBottomNav">
-    <button onclick="openWelcomeScreen()" class="mobile-nav-item" id="mobNavHome" data-nav="home"><span>🏠</span><small>Home</small></button>
-    <button onclick="openPracticeBook()" class="mobile-nav-item" id="mobNavPractice" data-nav="practice"><span>📘</span><small>Python</small></button>
-    <button onclick="openSem3PracticeBook()" class="mobile-nav-item" id="mobNavSem3" data-nav="sem3"><span>📗</span><small>SEM-3</small></button>
-    <button onclick="openSEPracticeBook()" class="mobile-nav-item" id="mobNavSE" data-nav="se"><span>📐</span><small>SE</small></button>
-    <button onclick="openLeaderboardScreen()" class="mobile-nav-item" id="mobNavLeader" data-nav="leader"><span>🏆</span><small>Rank</small></button>
+    <button onclick="openWelcomeScreen()" class="mobile-nav-item"><span>🏠</span><small>Home</small></button>
+    <button onclick="openPracticeBook()" class="mobile-nav-item"><span>📘</span><small>Python</small></button>
+    <button onclick="openSem3PracticeBook()" class="mobile-nav-item"><span>📗</span><small>SEM-3</small></button>
+    <button onclick="openSEPracticeBook()" class="mobile-nav-item"><span>📐</span><small>SE</small></button>
+    <button onclick="openLeaderboardScreen()" class="mobile-nav-item"><span>🏆</span><small>Rank</small></button>
   </nav>
 
   <div id="sidebarOverlay" class="sidebar-overlay" onclick="typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()"></div>
   <aside id="sidebar" class="sidebar">
-    <div class="sidebar-header">
-      <span>Menu</span>
-      <button onclick="typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()">✕</button>
-    </div>
+    <div class="sidebar-header"><span>Menu</span><button onclick="typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()">✕</button></div>
     <ul class="sidebar-menu" id="conceptList">
-      <li onclick="openWelcomeScreen(); typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()" style="color:#e2e8f0; font-weight:700">🏠 Home</li>
-      <li onclick="openPracticeBook(); typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()" style="color:#c4b5fd; font-weight:700">📘 Python Practice Book</li>
-      <li onclick="openSem3PracticeBook(); typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()" style="color:#86efac; font-weight:700">📗 SEM-3 Practice Book</li>
-      <li onclick="openSEPracticeBook(); typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()" style="color:#fcd34d; font-weight:700">📐 SE Practice Book</li>
+      <li onclick="openWelcomeScreen(); typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()">🏠 Home</li>
+      <li onclick="openPracticeBook(); typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()">📘 Python Practice Book</li>
+      <li onclick="openSem3PracticeBook(); typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()">📗 SEM-3 Practice Book</li>
+      <li onclick="openSEPracticeBook(); typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()">📐 SE Practice Book</li>
       <li onclick="openLeaderboardScreen(); typeof closeSidebarOnMobile==='function'&&closeSidebarOnMobile()">🏆 Leaderboard</li>
     </ul>
   </aside>
@@ -60,8 +57,8 @@
         <h1>LJIET Learning Hub</h1>
         <p class="subtitle">Choose your subject · Practice book MCQs · Live class leaderboard</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:16px 0">
-          <button data-subject-btn="python" class="btn-primary" onclick="typeof selectPythonSubject==='function'?selectPythonSubject():openPracticeBook()" style="min-width:160px">🐍 Python</button>
-          <button data-subject-btn="se" class="btn-secondary" onclick="typeof selectSESubject==='function'?selectSESubject():openSEPracticeBook()" style="min-width:160px;border-color:#f59e0b;color:#fcd34d">📐 Software Engineering</button>
+          <button class="btn-primary" onclick="typeof selectPythonSubject==='function'?selectPythonSubject():openPracticeBook()" style="min-width:160px">🐍 Python</button>
+          <button class="btn-secondary" onclick="typeof selectSESubject==='function'?selectSESubject():openSEPracticeBook()" style="min-width:160px;border-color:#f59e0b;color:#fcd34d">📐 Software Engineering</button>
         </div>
         <div class="primary-cards">
           <div class="primary-card" onclick="openPracticeBook()">
@@ -101,6 +98,7 @@
 
   <script src="js/supabase-config.js"></script>
   <script src="js/leaderboard.js"></script>
+  <script src="js/leaderboard-fix.js"></script>
   <script src="js/notifications.js"></script>
   <script src="js/concepts-data.js"></script>
   <script src="js/practice-book-questions.js"></script>
@@ -111,7 +109,6 @@
   <script src="js/sem3-unit5.js"></script>
   <script src="js/sem3-practice-book.js"></script>
   <script src="js/playgrounds.js"></script>
-  <!-- Full original app (ranking, learning path, PB UI) from last good commit -->
   <script src="https://cdn.jsdelivr.net/gh/sp594809-cloud/python-solve@f95c6076891117adf6984dd31cde3d6101bc69b1/js/app.js"></script>
   <script>
   window.pbActiveBook = window.pbActiveBook || "sem1";
@@ -128,16 +125,6 @@
     document.querySelectorAll(".screen").forEach(function(s){ s.classList.remove("active"); s.style.removeProperty("display"); });
     var w = document.getElementById("welcomeScreen");
     if (w) w.classList.add("active");
-  }
-  function openLeaderboardScreen() {
-    document.querySelectorAll(".screen").forEach(function(s){ s.classList.remove("active"); s.style.removeProperty("display"); });
-    var c = document.getElementById("conceptScreen");
-    if (c) c.classList.add("active");
-    var n = document.getElementById("conceptNumber"); if (n) n.textContent = "🏆";
-    var t = document.getElementById("conceptTitle"); if (t) t.textContent = "Live Class Leaderboard & Rankings";
-    var tabs = document.getElementById("stepTabs"); if (tabs) tabs.style.display = "none";
-    var nav = document.querySelector(".step-navigation"); if (nav) nav.style.display = "none";
-    if (typeof renderLiveLeaderboard === "function") renderLiveLeaderboard();
   }
   </script>
   <script src="js/app-fixes.js"></script>
