@@ -1,6 +1,6 @@
 (function(){
   var p=window.__APP_B64||[];
-  if(p.length<5){console.error("LJIET: app parts missing", p.length); return;}
+  if(p.length<8){console.error("LJIET: app parts missing", p.length); return;}
   try{
     var bin=atob(p.join(""));
     var code=decodeURIComponent(Array.prototype.map.call(bin,function(c){
