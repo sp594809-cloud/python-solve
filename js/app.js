@@ -1,4 +1,4 @@
-// LJIET Learning Hub - App Core (restored + SEM-3)
+// LJIET Learning Hub - App Core (SEM-I + SEM-3 MCQ & Coding)
 let pbCurrentUnit = "all";
 let pbCurrentType = "all";
 let pbSearchQuery = "";
@@ -45,7 +45,7 @@ function renderPracticeBookHub() {
   content.innerHTML = `
     <div style="background:linear-gradient(135deg,#1e1b4b,#0f172a);border:1px solid #4338ca;border-radius:16px;padding:20px;margin-bottom:24px">
       <h2 style="color:#c7d2fe;margin:0 0 12px;font-size:1.3rem">${isSem3 ? "📗 SEM-III Python Practice Book (FCSP-1)" : "📘 LJIET Python-I Practice Book (SEM-I)"}</h2>
-      <p style="color:#94a3b8;margin-bottom:16px">MCQs with answers. Earn +10 points on correct answers.</p>
+      <p style="color:#94a3b8;margin-bottom:16px">MCQs (+10 pts) and coding problems with model solutions.</p>
       <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px">
         <button class="pb-filter-btn ${!isSem3?'active':''}" onclick="setPBBook('sem1')">📘 SEM-I</button>
         <button class="pb-filter-btn ${isSem3?'active':''}" onclick="setPBBook('sem3')" style="${isSem3?'border-color:#22c55e;color:#86efac':''}">📗 SEM-3</button>
@@ -56,6 +56,11 @@ function renderPracticeBookHub() {
         <button class="pb-filter-btn ${pbCurrentUnit==='3'?'active':''}" onclick="setPBUnit('3')">Unit 3</button>
         ${isSem3 ? `<button class="pb-filter-btn ${pbCurrentUnit==='4'?'active':''}" onclick="setPBUnit('4')">Unit 4</button>
         <button class="pb-filter-btn ${pbCurrentUnit==='5'?'active':''}" onclick="setPBUnit('5')">Unit 5</button>` : ""}
+      </div>
+      <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap">
+        <button class="pb-filter-btn ${pbCurrentType==='all'?'active':''}" onclick="setPBType('all')">All</button>
+        <button class="pb-filter-btn ${pbCurrentType==='mcq'?'active':''}" onclick="setPBType('mcq')">MCQ only</button>
+        <button class="pb-filter-btn ${pbCurrentType==='code'?'active':''}" onclick="setPBType('code')">Code only</button>
       </div>
       <input type="search" placeholder="Search questions..." oninput="onPBSearch(this.value)"
         style="width:100%;max-width:400px;padding:10px 14px;border-radius:10px;border:1px solid #334155;background:#0f172a;color:#e2e8f0" />
@@ -79,7 +84,7 @@ function renderFilteredPBQuestions() {
   let total = 0;
   units.forEach(function(u) {
     if (!u || !u.mcqs) return;
-    const mcqs = u.mcqs.filter(function(q) {
+    const mcqs = (pbCurrentType === "code" ? [] : (u.mcqs||[])).filter(function(q) {
       if (!pbSearchQuery) return true;
       return (q.question||"").toLowerCase().includes(pbSearchQuery) ||
         (q.options||[]).some(function(o){ return String(o).toLowerCase().includes(pbSearchQuery); });
@@ -92,8 +97,7 @@ function renderFilteredPBQuestions() {
       const sid = "sol-" + (q.id||"").replace(/[^a-zA-Z0-9]/g,"_");
       const opts = (q.options||[]).map(function(o,i) {
         const letter = "ABCD"[i];
-        return `<button onclick="checkPBAnswer('${q.id}','${letter}','${sid}')" class="pb-opt-btn" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 14px;border-radius:10px;border:1px solid #334155;background:#0f172a;color:#e2e8f0;cursor:pointer">
-          <strong>${letter})</strong> ${o}</button>`;
+        return `<button onclick="checkPBAnswer('${q.id}','${letter}','${sid}')" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 14px;border-radius:10px;border:1px solid #334155;background:#0f172a;color:#e2e8f0;cursor:pointer"><strong>${letter})</strong> ${o}</button>`;
       }).join("");
       html += `<div style="background:#0f172a;border:1px solid #1e293b;border-radius:14px;padding:14px;margin-bottom:12px">
         <div style="font-size:0.75rem;color:#818cf8;margin-bottom:6px">${q.id||""} · Sr ${q.srNo||""}</div>
@@ -104,7 +108,35 @@ function renderFilteredPBQuestions() {
     });
     html += "</div>";
   });
-  if (!total) html = "<p style='color:#94a3b8;text-align:center;padding:40px'>No questions found. Open SEM-3 or SEM-I and pick a unit.</p>";
+  units.forEach(function(u) {
+    if (!u || !u.coding || !u.coding.length) return;
+    if (pbCurrentType === "mcq") return;
+    const codes = u.coding.filter(function(q) {
+      if (!pbSearchQuery) return true;
+      return (q.question||"").toLowerCase().includes(pbSearchQuery) || (q.topic||"").toLowerCase().includes(pbSearchQuery);
+    });
+    if (!codes.length) return;
+    total += codes.length;
+    html += `<div style="margin-bottom:24px;border:1px solid #166534;border-radius:16px;padding:16px">
+      <h3 style="color:#86efac;margin-bottom:12px">${u.title||("Unit "+u.unit)} — Coding <span style="font-size:0.8rem;background:#052e16;color:#86efac;padding:2px 8px;border-radius:99px">${codes.length} problems</span></h3>`;
+    codes.forEach(function(q) {
+      const sid = "code-sol-" + (q.id||"").replace(/[^a-zA-Z0-9]/g,"_");
+      html += `<div style="background:#020617;border:1px solid #166534;border-radius:14px;padding:14px;margin-bottom:12px">
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:8px">
+          <span style="font-size:0.75rem;color:#4ade80;background:#052e16;padding:2px 8px;border-radius:6px">${q.id||""} · ${q.topic||"Coding"}</span>
+          <span style="font-size:0.75rem;color:#facc15;background:#713f1244;padding:2px 8px;border-radius:6px">${q.marks||3} Marks</span>
+        </div>
+        <div style="color:#f8fafc;margin-bottom:10px;white-space:pre-wrap;line-height:1.5">${q.question||""}</div>
+        <button onclick="(function(){var e=document.getElementById('${sid}');e.style.display=e.style.display==='none'?'block':'none';})()" style="background:#16a34a;color:#fff;border:none;padding:8px 14px;border-radius:8px;cursor:pointer">💡 View Model Solution</button>
+        <div id="${sid}" style="display:none;margin-top:12px;background:#0f172a;border:1px solid #22c55e;border-radius:12px;padding:12px">
+          <div style="color:#4ade80;font-weight:700;margin-bottom:6px">Solution</div>
+          <pre style="background:#020617;color:#38bdf8;padding:12px;border-radius:8px;overflow-x:auto;font-size:0.85rem;white-space:pre-wrap">${String(q.solution||"").replace(/&/g,"&").replace(/</g,"<")}</pre>
+        </div>
+      </div>`;
+    });
+    html += "</div>";
+  });
+  if (!total) html = "<p style='color:#94a3b8;text-align:center;padding:40px'>No questions found.</p>";
   container.innerHTML = html;
 }
 
@@ -118,14 +150,11 @@ function checkPBAnswer(qid, letter, sid) {
   if (!el || !found) return;
   el.style.display = "block";
   if (letter === found.answer) {
-    el.style.background = "#052e16";
-    el.style.borderColor = "#22c55e";
+    el.style.background = "#052e16"; el.style.borderColor = "#22c55e";
     el.innerHTML = "✅ Correct! " + found.answer + ") " + (found.correct||"");
     if (typeof awardPoints === "function") awardPoints(10, "mcq");
-    else if (typeof addStudentPoints === "function") addStudentPoints(10);
   } else {
-    el.style.background = "#450a0a";
-    el.style.borderColor = "#ef4444";
+    el.style.background = "#450a0a"; el.style.borderColor = "#ef4444";
     el.innerHTML = "❌ Wrong. Correct is " + found.answer + ") " + (found.correct||"");
   }
 }
@@ -133,6 +162,5 @@ function checkPBAnswer(qid, letter, sid) {
 function selectPythonSubject() { openPracticeBook(); }
 function selectSESubject() { if (typeof openSEPracticeBook === "function") openSEPracticeBook(); }
 function openLearningPathNav() { openWelcomeScreen(); }
-function handleInstallClick() { alert("Use browser menu → Install app / Add to Home Screen"); }
-
-console.log("LJIET app core loaded (SEM-I + SEM-3 PB)");
+function handleInstallClick() { alert("Use browser menu → Install app"); }
+console.log("LJIET app core loaded (SEM-I + SEM-3 MCQ & Coding)");
