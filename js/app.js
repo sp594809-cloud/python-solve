@@ -1,14 +1,10 @@
-(function () {
-  var parts = window.__APP_B64 || [];
-  if (parts.length < 4) { console.error("app b64 parts missing", parts.length); return; }
-  var b64 = parts.join("");
-  try {
-    var bin = atob(b64);
-    var code = bin;
-    try { code = decodeURIComponent(escape(bin)); } catch (e) {}
-    (0, eval)(code);
-    console.log("app.js restored from parts");
-  } catch (e) {
-    console.error("app restore failed", e);
-  }
+(function(){
+  var p=window.__APP_B64||[];
+  if(p.length<5){console.error("app parts",p.length);return;}
+  try{
+    var bin=atob(p.join(""));
+    var code=decodeURIComponent(Array.prototype.map.call(bin,function(c){return"%"+("00"+c.charCodeAt(0).toString(16)).slice(-2);}).join(""));
+    (0,eval)(code);
+    console.log("app.js OK");
+  }catch(e){console.error(e);}
 })();
