@@ -12,6 +12,7 @@
   <link rel="apple-touch-icon" href="./icons/icon.svg" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/playgrounds.css" />
+  <link rel="stylesheet" href="css/quiz-mode.css" />
   <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
@@ -22,58 +23,45 @@
       <span class="logo-text">LJIET Learning Hub</span>
     </div>
     <div class="nav-progress">
-      <button type="button" id="navHomeBtn" class="btn-secondary nav-main-btn nav-home-btn" onclick="openWelcomeScreen()" title="Home" aria-label="Home">🏠 Home</button>
+      <button type="button" id="navHomeBtn" class="btn-secondary nav-main-btn nav-home-btn" onclick="openWelcomeScreen()">🏠 Home</button>
       <button class="btn-secondary nav-main-btn" onclick="typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()">📘 Practice Book</button>
       <button class="btn-secondary nav-main-btn" onclick="typeof openSem3PracticeBook==='function'&&openSem3PracticeBook()" style="border-color:#22c55e;color:#86efac">📗 SEM-3</button>
       <button class="btn-secondary nav-main-btn" onclick="openSEPracticeBook()" style="border-color:#f59e0b;color:#fcd34d">📐 SE</button>
-      <button class="btn-secondary nav-main-btn" onclick="openLeaderboardScreen()" style="background:#312e81; border-color:#6366f1; color:#c7d2fe">🏆 Leaderboard</button>
-      <button class="btn-secondary nav-main-btn" onclick="openLearningPathNav()" style="background:#14532d; border-color:#22c55e; color:#86efac">📚 Learn</button>
-      <button id="installPwaBtn" class="btn-secondary install-btn install-btn-quiet" onclick="handleInstallClick()" title="Install app" aria-label="Install app">⬇️</button>
+      <button class="btn-secondary nav-main-btn" onclick="openLeaderboardScreen()" style="background:#312e81;border-color:#6366f1;color:#c7d2fe">🏆 Leaderboard</button>
+      <button class="btn-secondary nav-main-btn" onclick="openLearningPathNav()" style="background:#14532d;border-color:#22c55e;color:#86efac">📚 Learn</button>
+      <button id="installPwaBtn" class="btn-secondary install-btn install-btn-quiet" onclick="handleInstallClick()" title="Install app">⬇️</button>
     </div>
   </nav>
 
   <nav class="mobile-bottom-nav" id="mobileBottomNav">
-    <button type="button" class="mobile-nav-item" data-nav="home" onclick="openWelcomeScreen()" aria-label="Home">
-      <span class="mobile-nav-icon">🏠</span><span class="mobile-nav-label">Home</span>
-    </button>
-    <button type="button" class="mobile-nav-item" data-nav="practice" onclick="typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()" aria-label="Practice Book">
-      <span class="mobile-nav-icon">📘</span><span class="mobile-nav-label">Practice</span>
-    </button>
-    <button type="button" class="mobile-nav-item" data-nav="sem3" onclick="typeof openSem3PracticeBook==='function'&&openSem3PracticeBook()" aria-label="SEM-3">
-      <span class="mobile-nav-icon">📗</span><span class="mobile-nav-label">SEM-3</span>
-    </button>
-    <button type="button" class="mobile-nav-item" data-nav="se" onclick="openSEPracticeBook()" aria-label="SE">
-      <span class="mobile-nav-icon">📐</span><span class="mobile-nav-label">SE</span>
-    </button>
-    <button type="button" class="mobile-nav-item" data-nav="leaderboard" onclick="openLeaderboardScreen()" aria-label="Leaderboard">
-      <span class="mobile-nav-icon">🏆</span><span class="mobile-nav-label">Rank</span>
-    </button>
+    <button type="button" class="mobile-nav-item" onclick="openWelcomeScreen()"><span class="mobile-nav-icon">🏠</span><span class="mobile-nav-label">Home</span></button>
+    <button type="button" class="mobile-nav-item" onclick="typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()"><span class="mobile-nav-icon">📘</span><span class="mobile-nav-label">Practice</span></button>
+    <button type="button" class="mobile-nav-item" onclick="typeof openSem3PracticeBook==='function'&&openSem3PracticeBook()"><span class="mobile-nav-icon">📗</span><span class="mobile-nav-label">SEM-3</span></button>
+    <button type="button" class="mobile-nav-item" onclick="openSEPracticeBook()"><span class="mobile-nav-icon">📐</span><span class="mobile-nav-label">SE</span></button>
+    <button type="button" class="mobile-nav-item" onclick="openLeaderboardScreen()"><span class="mobile-nav-icon">🏆</span><span class="mobile-nav-label">Rank</span></button>
   </nav>
 
   <div class="app-container">
     <aside class="sidebar" id="sidebar">
-      <div class="sidebar-header">
-        <span>Learning Path</span>
-        <button class="sidebar-close" onclick="toggleSidebar()">✕</button>
-      </div>
+      <div class="sidebar-header"><span>Learning Path</span><button class="sidebar-close" onclick="toggleSidebar()">✕</button></div>
       <div class="phase-header phase1-active">MAIN FOCUS</div>
       <ul class="concept-list">
-        <li onclick="openWelcomeScreen(); closeSidebarOnMobile()" style="color:#e2e8f0; font-weight:700">🏠 Home (Subjects)</li>
-        <li onclick="(typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()); closeSidebarOnMobile()" style="color:#c4b5fd; font-weight:700">📘 Python Practice Book</li>
-        <li onclick="typeof openSem3PracticeBook==='function'&&openSem3PracticeBook(); closeSidebarOnMobile()" style="color:#86efac; font-weight:700">📗 SEM-3 Practice Book</li>
-        <li onclick="openSEPracticeBook(); closeSidebarOnMobile()" style="color:#fcd34d; font-weight:700">📐 SE Practice Book</li>
-        <li onclick="openLeaderboardScreen(); closeSidebarOnMobile()" style="color:#facc15; font-weight:700">🏆 Live Leaderboard</li>
+        <li onclick="openWelcomeScreen(); closeSidebarOnMobile()" style="color:#e2e8f0;font-weight:700">🏠 Home (Subjects)</li>
+        <li onclick="(typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()); closeSidebarOnMobile()" style="color:#c4b5fd;font-weight:700">📘 Python Practice Book</li>
+        <li onclick="typeof openSem3PracticeBook==='function'&&openSem3PracticeBook(); closeSidebarOnMobile()" style="color:#86efac;font-weight:700">📗 SEM-3 Practice Book</li>
+        <li onclick="openSEPracticeBook(); closeSidebarOnMobile()" style="color:#fcd34d;font-weight:700">📐 SE Practice Book</li>
+        <li onclick="openLeaderboardScreen(); closeSidebarOnMobile()" style="color:#facc15;font-weight:700">🏆 Live Leaderboard</li>
+        <li onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',10); closeSidebarOnMobile()" style="color:#7dd3fc;font-weight:700">📝 Quick Quiz</li>
       </ul>
-      <div class="phase-header" style="color:#22c55e; margin-top:16px">LEARN PYTHON
-        <span id="learningProgressBadge" style="font-size:0.7rem; background:#166534; color:#86efac; padding:2px 8px; border-radius:99px; margin-left:6px">0%</span>
+      <div class="phase-header" style="color:#22c55e;margin-top:16px">LEARN PYTHON
+        <span id="learningProgressBadge" style="font-size:0.7rem;background:#166534;color:#86efac;padding:2px 8px;border-radius:99px;margin-left:6px">0%</span>
       </div>
       <ul class="concept-list" id="conceptList"></ul>
-      <div class="phase-header" style="color:#86efac; margin-top:12px">ADVENTURES</div>
+      <div class="phase-header" style="color:#86efac;margin-top:12px">ADVENTURES</div>
       <ul class="concept-list">
         <li onclick="window.location.href='loops-adventure.html'" style="color:#86efac">🌲 Forest of Loops</li>
       </ul>
     </aside>
-
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
 
     <main class="main-content">
@@ -82,10 +70,11 @@
       <section id="welcomeScreen" class="screen active">
         <div class="welcome-hero">
           <h1>LJIET Learning Hub</h1>
-          <p class="subtitle">Choose your subject · Practice book MCQs · Live class leaderboard</p>
+          <p class="subtitle">Choose your subject · Practice book MCQs · Live class leaderboard · Timed quizzes</p>
           <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:22px">
             <button data-subject-btn="python" class="btn-primary" onclick="selectPythonSubject()" style="min-width:160px">🐍 Python</button>
             <button data-subject-btn="se" class="btn-secondary" onclick="selectSESubject()" style="min-width:160px;border-color:#f59e0b;color:#fcd34d">📐 Software Engineering</button>
+            <button class="btn-secondary" onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',10)" style="min-width:160px;border-color:#0ea5e9;color:#7dd3fc">📝 Quick Quiz (10 Q)</button>
           </div>
           <div class="primary-actions">
             <div class="primary-card" onclick="typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()">
@@ -151,6 +140,7 @@
   <script src="js/playgrounds.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/sp594809-cloud/python-solve@f95c6076891117adf6984dd31cde3d6101bc69b1/js/app.js"></script>
   <script src="js/pb-sem3-bridge.js"></script>
+  <script src="js/quiz-mode.js"></script>
   <script src="js/app-fixes.js"></script>
   <script src="js/se-unit1.js"></script>
   <script src="js/se-unit2.js"></script>
@@ -158,9 +148,21 @@
   <script src="js/se-practice-book.js"></script>
   <script src="js/app-se.js"></script>
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./service-worker.js').catch(function(){});
+  /* SESSION_BOOT – keep student login across reloads */
+  (function(){
+    function bootSession(){
+      try {
+        if (typeof initSupabase === "function") initSupabase();
+        if (typeof initStudentSession === "function") initStudentSession();
+      } catch(e) { console.warn("session boot", e); }
     }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bootSession);
+    else bootSession();
+    setTimeout(bootSession, 400);
+  })();
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js').catch(function(){});
+  }
   </script>
 </body>
 </html>
