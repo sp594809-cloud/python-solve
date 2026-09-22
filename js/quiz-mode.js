@@ -1,5 +1,9 @@
-/** Modern Quiz Mode: Start → Quiz → Results + session-aware points */
+/** Modern Quiz Mode + HTML-safe options */
 (function () {
+  function escapeHtml(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
   var QZ = { pool: [], answers: {}, index: 0, startedAt: 0, timerId: null, timeLimitSec: 900, remaining: 900, bookLabel: "", unitLabel: "", reviewMode: false };
 
   function ensureSession() {
@@ -96,7 +100,7 @@
       '<button type="button" class="qz-back" onclick="typeof openWelcomeScreen===\'function\'&&openWelcomeScreen()">‹</button>' +
       '<div class="qz-title">Start Quiz</div><div style="width:40px"></div></div>' +
       '<p style="color:#94a3b8;font-size:0.9rem;margin-bottom:14px">Put your understanding to test by answering a few MCQs.</p>' +
-      '<div class="qz-hero"><h2>' + QZ.unitLabel + '</h2><div class="qz-meta">Subject: ' + QZ.bookLabel + '<br>Chapter: ' + QZ.unitLabel + '</div></div>' +
+      '<div class="qz-hero"><h2>' + escapeHtml(QZ.unitLabel) + '</h2><div class="qz-meta">Subject: ' + escapeHtml(QZ.bookLabel) + '<br>Chapter: ' + escapeHtml(QZ.unitLabel) + '</div></div>' +
       '<div class="qz-stats-row"><span><strong>Total Questions:</strong> ' + String(QZ.pool.length).padStart(2,"0") + '</span></div>' +
       '<div class="qz-stats-row"><span><strong>Total Time:</strong> ' + minutes + ' min</span></div>' +
       '<div class="qz-instructions"><strong style="color:#cbd5e1">Instructions:</strong><br>Use Next / Previous to move. Submit when done. Each correct answer earns +10 points.</div>' +
@@ -124,17 +128,17 @@
         if (letter === q.answer) cls += " correct";
         else if (selected === letter && letter !== q.answer) cls += " wrong";
       }
-      return '<button type="button" class="' + cls + '" onclick="quizSelectOption(\'' + q.id + '\',\'' + letter + '\')"><strong>' + letter + '.</strong> ' + o + '</button>';
+      return '<button type="button" class="' + cls + '" onclick="quizSelectOption(\'' + q.id + '\',\'' + letter + '\')"><strong>' + letter + '.</strong> ' + escapeHtml(o) + '</button>';
     }).join("");
     content.innerHTML =
       '<div class="qz-screen"><div class="qz-topbar">' +
       '<button type="button" class="qz-back" onclick="quizModeExit()">‹</button><div class="qz-title">Quiz</div>' +
       (QZ.reviewMode ? '<div></div>' : '<button type="button" class="qz-submit-btn" onclick="quizModeSubmit()">Submit</button>') +
-      '</div><div class="qz-card" style="padding:12px 14px"><div style="font-weight:700;color:#f8fafc">' + QZ.unitLabel +
-      '</div><div class="qz-meta">' + QZ.bookLabel + ' · <span class="qz-timer">⏱ <span id="qzTimerText">' + fmtTime(QZ.remaining) +
+      '</div><div class="qz-card" style="padding:12px 14px"><div style="font-weight:700;color:#f8fafc">' + escapeHtml(QZ.unitLabel) +
+      '</div><div class="qz-meta">' + escapeHtml(QZ.bookLabel) + ' · <span class="qz-timer">⏱ <span id="qzTimerText">' + fmtTime(QZ.remaining) +
       '</span></span></div><div class="qz-progress-wrap"><div class="qz-progress-fill" style="width:' + pct + '%"></div></div></div>' +
       '<div class="qz-qnum">Q.' + (QZ.index + 1) + '/' + QZ.pool.length + '</div>' +
-      '<div class="qz-question">' + (q.question || '') + '</div>' + opts +
+      '<div class="qz-question">' + escapeHtml(q.question || '') + '</div>' + opts +
       '<div class="qz-nav"><button type="button" class="qz-btn-ghost" onclick="quizPrev()"' + (QZ.index === 0 ? ' disabled' : '') +
       '>Previous</button><button type="button" class="qz-btn-next" onclick="quizNext()">' +
       (QZ.index >= QZ.pool.length - 1 ? (QZ.reviewMode ? 'Finish' : 'Submit') : 'Next') + '</button></div></div>';
@@ -178,7 +182,7 @@
     content.innerHTML =
       '<div class="qz-screen"><div class="qz-topbar">' +
       '<button type="button" class="qz-back" onclick="quizModeExit()">‹</button><div class="qz-title">Quiz Result</div><div style="width:40px"></div></div>' +
-      '<div class="qz-card"><div style="font-weight:700">' + QZ.unitLabel + '</div><div class="qz-meta">' + QZ.bookLabel + '</div></div>' +
+      '<div class="qz-card"><div style="font-weight:700">' + escapeHtml(QZ.unitLabel) + '</div><div class="qz-meta">' + escapeHtml(QZ.bookLabel) + '</div></div>' +
       '<div class="qz-score-ring" style="--pct:' + pct + '%"><div class="qz-score-inner"><strong>' + correct + '/' + total + '</strong><span>your score</span></div></div>' +
       '<p style="text-align:center;margin:8px 0 16px;color:#cbd5e1">' +
       (passed ? 'Congratulations! You have <span style="color:#4ade80;font-weight:700">passed</span> this test with ' + pct + '%.' :
