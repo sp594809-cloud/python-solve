@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#4f46e5" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>LJIET Learning Hub</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="css/main.css" />
@@ -22,8 +21,8 @@
     </div>
     <div class="nav-progress">
       <button type="button" class="btn-secondary nav-main-btn nav-home-btn" onclick="openWelcomeScreen()">🏠 Home</button>
-      <button class="btn-secondary nav-main-btn" onclick="typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()">📘 SEM-I</button>
-      <button class="btn-secondary nav-main-btn" onclick="typeof openSem3PracticeBook==='function'&&openSem3PracticeBook()">📗 SEM-3</button>
+      <button class="btn-secondary nav-main-btn" onclick="openSem1PracticeBook()">📘 SEM-I</button>
+      <button class="btn-secondary nav-main-btn" onclick="openSem3PracticeBook()">📗 SEM-3</button>
       <button class="btn-secondary nav-main-btn" onclick="openSEPracticeBook()">📐 SE</button>
       <button class="btn-secondary nav-main-btn" onclick="openLeaderboardScreen()">🏆 Rank</button>
       <button class="btn-secondary nav-main-btn" onclick="openLearningPathNav()">📚 Learn</button>
@@ -41,8 +40,8 @@
       <div class="phase-header">MAIN FOCUS</div>
       <ul class="concept-list">
         <li onclick="openWelcomeScreen(); closeSidebarOnMobile()">🏠 Home</li>
-        <li onclick="(typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()); closeSidebarOnMobile()">📘 Python SEM-I</li>
-        <li onclick="typeof openSem3PracticeBook==='function'&&openSem3PracticeBook(); closeSidebarOnMobile()">📗 Python SEM-3</li>
+        <li onclick="openSem1PracticeBook(); closeSidebarOnMobile()">📘 Python SEM-I</li>
+        <li onclick="openSem3PracticeBook(); closeSidebarOnMobile()">📗 Python SEM-3</li>
         <li onclick="openSEPracticeBook(); closeSidebarOnMobile()">📐 SE Practice</li>
         <li onclick="openLeaderboardScreen(); closeSidebarOnMobile()">🏆 Leaderboard</li>
         <li onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',10); closeSidebarOnMobile()">📝 Quick Quiz</li>
@@ -65,26 +64,26 @@
             <button type="button" class="bw-play" onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',10)">PLAY</button>
           </div>
           <div class="bw-section-title">Jump Back In</div>
-          <div class="bw-jump" onclick="typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()">
+          <div class="bw-jump" onclick="openSem1PracticeBook()">
             <div class="bw-jump-icon">📘</div>
             <div class="bw-jump-info"><strong>Python Practice Book</strong><div class="prog"><i style="width:35%"></i></div></div>
-            <button type="button" class="bw-jump-play" onclick="event.stopPropagation(); typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()">▶</button>
+            <button type="button" class="bw-jump-play" onclick="event.stopPropagation(); openSem1PracticeBook()">▶</button>
           </div>
           <div class="bw-section-title">Categories</div>
           <div class="bw-cats">
-            <button type="button" class="bw-cat python" onclick="typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()"><span class="icon">🐍</span> Python SEM-I</button>
-            <button type="button" class="bw-cat sem3" onclick="typeof openSem3PracticeBook==='function'&&openSem3PracticeBook()"><span class="icon">📗</span> Python SEM-3</button>
+            <button type="button" class="bw-cat python" onclick="openSem1PracticeBook()"><span class="icon">🐍</span> Python SEM-I</button>
+            <button type="button" class="bw-cat sem3" onclick="openSem3PracticeBook()"><span class="icon">📗</span> Python SEM-3</button>
             <button type="button" class="bw-cat se" onclick="openSEPracticeBook()"><span class="icon">📐</span> Software Eng.</button>
             <button type="button" class="bw-cat rank" onclick="openLeaderboardScreen()"><span class="icon">🏆</span> Leaderboard</button>
           </div>
           <div class="bw-section-title">Practice Paths</div>
           <div class="bw-unit-list">
-            <div class="bw-unit" onclick="typeof openSem1PracticeBook==='function'?openSem1PracticeBook():openPracticeBook()">
+            <div class="bw-unit" onclick="openSem1PracticeBook()">
               <div class="bw-unit-icon">📘</div>
               <div class="bw-unit-body"><strong>Python SEM-I (210 Qs)</strong><div class="bw-unit-meta"><span class="bw-badge med">CORE</span> Units 1–3</div></div>
               <div class="bw-score">OPEN<br><b>→</b></div>
             </div>
-            <div class="bw-unit" onclick="typeof openSem3PracticeBook==='function'&&openSem3PracticeBook()">
+            <div class="bw-unit" onclick="openSem3PracticeBook()">
               <div class="bw-unit-icon">📗</div>
               <div class="bw-unit-body"><strong>Python SEM-3 FCSP-1</strong><div class="bw-unit-meta"><span class="bw-badge hard">SEM-III</span> Units 1–5</div></div>
               <div class="bw-score">OPEN<br><b>→</b></div>
@@ -125,6 +124,7 @@
   <script src="js/supabase-config.js"></script>
   <script src="js/leaderboard.js"></script>
   <script src="js/leaderboard-fix.js"></script>
+  <script src="js/leaderboard-name-fix.js"></script>
   <script src="js/notifications.js"></script>
   <script src="js/concepts-data.js"></script>
   <script src="js/practice-book-questions.js"></script>
