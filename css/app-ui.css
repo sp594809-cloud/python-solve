@@ -90,7 +90,6 @@ body.sidebar-open .sidebar-overlay { display: block; }
   display: flex; flex-direction: column; align-items: center; gap: 2px;
   color: var(--muted); font-size: 0.65rem; font-weight: 700; min-width: 56px;
 }
-.mobile-nav-icon { font-size: 1.15rem; }
 .mobile-nav-item.home-pill {
   background: var(--primary); color: #fff; border-radius: 999px;
   padding: 10px 18px; flex-direction: row; gap: 6px;
@@ -172,9 +171,8 @@ body.sidebar-open .sidebar-overlay { display: block; }
 .bw-unit {
   background: var(--card); border-radius: 16px; padding: 14px 16px;
   display: flex; align-items: center; gap: 12px;
-  border: 1px solid #e2e8f0; cursor: pointer; box-shadow: 0 2px 8px rgba(15,23,42,.04);
+  border: 1px solid #e2e8f0; cursor: pointer;
 }
-.bw-unit:hover { border-color: #c7d2fe; }
 .bw-unit-icon {
   width: 42px; height: 42px; border-radius: 12px;
   background: #ecfdf5; color: #16a34a;
@@ -214,4 +212,85 @@ body.sidebar-open .sidebar-overlay { display: block; }
   margin: -8px;
   padding: 16px !important;
   min-height: 70vh;
+}
+
+/* Learning path – fix empty dark box after light theme */
+.why-box, .question-box, .step-content, .think-card {
+  color: #0f172a !important;
+}
+.step-content h3, .step-content h4, .step-content p, .step-content li,
+.step-content strong, .concept-header, .concept-title {
+  color: #0f172a !important;
+}
+.step-content [style*="background:#0f172a"],
+.step-content [style*="background: #0f172a"],
+.step-content [style*="background:#020617"] {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #0f172a !important;
+}
+.step-content pre, .step-content code {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+.step-content .option-list li {
+  background: #fff !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #0f172a !important;
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+.step-content .option-list li:hover,
+.step-content .option-list li.selected {
+  border-color: #4f46e5 !important;
+  background: #eef2ff !important;
+}
+#mentalVisual, #playArea, .var-box-area {
+  min-height: 80px;
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px;
+  color: #0f172a !important;
+}
+.var-box {
+  background: #fff !important;
+  border: 2px solid #4f46e5 !important;
+  color: #0f172a !important;
+  border-radius: 12px;
+  padding: 12px 18px;
+  display: inline-block;
+}
+.var-name { color: #4f46e5 !important; font-weight: 800; }
+.var-value { color: #0f172a !important; font-size: 1.2rem; font-weight: 700; }
+
+/* Jupyter-style cell */
+.jl-cell {
+  background: #1e1e2e;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  margin: 12px 0;
+  overflow: hidden;
+}
+.jl-cell-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 12px; background: #0f172a; color: #94a3b8; font-size: 0.8rem;
+}
+.jl-run {
+  background: #22c55e; color: #fff; border: none; border-radius: 8px;
+  padding: 6px 14px; font-weight: 700; cursor: pointer; font-size: 0.85rem;
+}
+.jl-input {
+  width: 100%; min-height: 100px; border: none; resize: vertical;
+  background: #1e1e2e; color: #e2e8f0; font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.9rem; padding: 12px; outline: none;
+}
+.jl-output {
+  background: #0b1220; color: #86efac; font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.85rem; padding: 12px; min-height: 40px; white-space: pre-wrap;
+  border-top: 1px solid #334155;
 }
