@@ -1,11 +1,13 @@
 // ============================================================
 // STUDENT AUTHENTICATION, LEADERBOARD & ANTI-PASTE ENGINE
 // Login: Mobile + Name | Permanent Account ID | Name lock
+// Progress is localStorage-first so tab switches never reset counts
 // ============================================================
 
 let currentStudent = null;
 
 async function initStudentSession() {
+  // Always start from localStorage (source of truth for this device)
   currentStudent = getLocalStudentData();
 
   if (!currentStudent) {
@@ -16,6 +18,7 @@ async function initStudentSession() {
   try {
     const cloud = await fetchStudentFromCloud(currentStudent.enrollment);
     if (cloud) {
+      // Never let cloud overwrite a higher local value
       currentStudent.points = Math.max(currentStudent.points || 0, cloud.points || 0);
       currentStudent.mcqsSolved = Math.max(currentStudent.mcqsSolved || 0, cloud.mcqsSolved || 0);
       currentStudent.codeCompleted = Math.max(currentStudent.codeCompleted || 0, cloud.codeCompleted || 0);
@@ -35,6 +38,14 @@ async function initStudentSession() {
 
   updateTopNavStudentInfo();
   try { checkAndUpdateStreak("session"); } catch (e) { console.warn(e); }
+}
+
+/** Ensure currentStudent is never null when we have local data */
+function ensureCurrentStudent() {
+  if (!currentStudent) {
+    currentStudent = getLocalStudentData();
+  }
+  return currentStudent;
 }
 
 function showLoginModal() {
@@ -151,7 +162,7 @@ async function handleStudentLogin(e) {
       base.accountId = generateAccountId();
     }
     currentStudent = base;
-    await syncStudentToCloud(currentStudent);
+    await syncStudentToCloud(currentStudent, true); // force immediate on login
     updateTopNavStudentInfo();
     const modal = document.getElementById("studentLoginModal");
     if (modal) modal.style.display = "none";
@@ -192,7 +203,7 @@ function yesterdayDateKey() {
 }
 
 function checkAndUpdateStreak(reason) {
-  if (!currentStudent) return null;
+  if (!ensureCurrentStudent()) return null;
   const today = todayDateKey();
   const yesterday = yesterdayDateKey();
   let streak = currentStudent.streak || 0;
@@ -235,7 +246,7 @@ function checkAndUpdateStreak(reason) {
 }
 
 function updateTopNavStudentInfo() {
-  if (!currentStudent) return;
+  if (!ensureCurrentStudent()) return;
   const navContainer = document.querySelector(".top-nav");
   if (!navContainer) return;
   let infoBadge = document.getElementById("navStudentBadge");
@@ -258,16 +269,18 @@ function updateTopNavStudentInfo() {
 }
 
 function addStudentPoints(pts, mcqId = null, codeId = null) {
-  if (!currentStudent) {
+  if (!ensureCurrentStudent()) {
     showLoginModal();
     return;
   }
+  let changed = false;
   if (mcqId) {
     if (!currentStudent.solvedMcqIds) currentStudent.solvedMcqIds = [];
     if (!currentStudent.solvedMcqIds.includes(mcqId)) {
       currentStudent.solvedMcqIds.push(mcqId);
       currentStudent.mcqsSolved = (currentStudent.mcqsSolved || 0) + 1;
       currentStudent.points = (currentStudent.points || 0) + pts;
+      changed = true;
       showToast("+" + pts + " Points earned! 🎯");
     }
   } else if (codeId) {
@@ -276,18 +289,36 @@ function addStudentPoints(pts, mcqId = null, codeId = null) {
       currentStudent.completedCodeIds.push(codeId);
       currentStudent.codeCompleted = (currentStudent.codeCompleted || 0) + 1;
       currentStudent.points = (currentStudent.points || 0) + pts;
+      changed = true;
       showToast("🎉 Coding Task Completed! +" + pts + " Points!");
     }
   } else {
+    // Legacy path (no id) – still award points but do NOT touch mcqsSolved
     currentStudent.points = (currentStudent.points || 0) + pts;
+    changed = true;
     showToast("+" + pts + " Points earned!");
   }
-  try { checkAndUpdateStreak("solve"); } catch (e) {}
-  syncStudentToCloud(currentStudent);
-  updateTopNavStudentInfo();
+  if (changed) {
+    try { checkAndUpdateStreak("solve"); } catch (e) {}
+    // Instant local save + debounced cloud (handled inside syncStudentToCloud)
+    syncStudentToCloud(currentStudent);
+    updateTopNavStudentInfo();
+    if (typeof refreshHomeProfile === "function") refreshHomeProfile();
+  }
 }
 
 async function renderLiveLeaderboard() {
+  // Re-hydrate from localStorage so we never show 0 after a tab switch
+  ensureCurrentStudent();
+  if (currentStudent) {
+    const local = getLocalStudentData();
+    if (local && local.enrollment === currentStudent.enrollment) {
+      currentStudent.points = Math.max(currentStudent.points || 0, local.points || 0);
+      currentStudent.mcqsSolved = Math.max(currentStudent.mcqsSolved || 0, local.mcqsSolved || 0);
+      currentStudent.codeCompleted = Math.max(currentStudent.codeCompleted || 0, local.codeCompleted || 0);
+    }
+  }
+
   const content = document.getElementById("stepContent");
   if (!content) return;
   content.innerHTML = `
@@ -380,7 +411,7 @@ function attachAntiPasteProtection(textareaElement) {
 }
 
 function openStudentProfileModal() {
-  if (!currentStudent) return;
+  if (!ensureCurrentStudent()) return;
   let modal = document.getElementById("studentProfileModal");
   if (!modal) {
     const div = document.createElement("div");
