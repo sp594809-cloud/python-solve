@@ -1,15 +1,15 @@
 /**
  * Practice Book bridge: SEM-I + SEM-3 + FSD-1
- * HTML-escape options so <class int> shows
+ * Shows coding figure images (table diagrams) when imageUrl is set
  * Awards points with unique mcqId so progress is saved & never resets
  */
 (function () {
   function escapeHtml(s) {
     return String(s == null ? "" : s)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+      .replace(/&/g, "&")
+      .replace(/</g, "<")
+      .replace(/>/g, ">")
+      .replace(/"/g, """);
   }
   if (typeof window.pbActiveBook === "undefined") window.pbActiveBook = "sem1";
   if (typeof window.pbCurrentUnit === "undefined") window.pbCurrentUnit = "all";
@@ -128,7 +128,7 @@
       if (!mcqs.length && !coding.length) return;
       total += mcqs.length + coding.length;
       html += '<div style="margin-bottom:24px;border:1px solid #334155;border-radius:16px;padding:20px">' +
-        '<h3 style="color:#a5b4fc">' + escapeHtml(u.title || ('Unit ' + u.unit)) + ' · ' + mcqs.length + ' MCQ</h3>';
+        '<h3 style="color:#a5b4fc">' + escapeHtml(u.title || ('Unit ' + u.unit)) + ' · ' + mcqs.length + ' MCQ · ' + coding.length + ' Code</h3>';
       mcqs.forEach(function (item) {
         var sid = "sol-" + String(item.id || "").replace(/[^a-zA-Z0-9]/g, "_");
         var opts = (item.options || []).map(function (o, i) {
@@ -142,11 +142,20 @@
       });
       coding.forEach(function (item) {
         var sid = "code-" + String(item.id || "").replace(/[^a-zA-Z0-9]/g, "_");
+        var imgHtml = "";
+        if (item.imageUrl) {
+          imgHtml = '<div style="margin:12px 0;text-align:center;background:#0f172a;border:1px solid #334155;border-radius:10px;padding:12px">' +
+            '<img src="' + escapeHtml(item.imageUrl) + '" alt="' + escapeHtml(item.imageAlt || 'Question figure') + '" ' +
+            'style="max-width:100%;height:auto;border-radius:8px;border:1px solid #475569" loading="lazy" />' +
+            (item.imageAlt ? '<div style="color:#94a3b8;font-size:0.75rem;margin-top:6px">' + escapeHtml(item.imageAlt) + '</div>' : '') +
+            '</div>';
+        }
         html += '<div style="background:#020617;border:1px solid #166534;border-radius:14px;padding:14px;margin-bottom:12px">' +
           '<div style="color:#4ade80;font-size:0.75rem">' + escapeHtml(item.id || "") + ' · ' + escapeHtml(item.topic || "Code") + (item.marks ? ' · ' + item.marks + ' marks' : '') + '</div>' +
           '<div style="color:#f8fafc;margin:8px 0;white-space:pre-wrap">' + escapeHtml(item.question || "") + '</div>' +
+          imgHtml +
           '<button type="button" onclick="(function(){var e=document.getElementById(\'' + sid + '\');e.style.display=e.style.display===\'none\'?\'block\':\'none\';})()" style="background:#16a34a;color:#fff;border:none;padding:8px 14px;border-radius:8px;cursor:pointer">View Solution</button>' +
-          '<div id="' + sid + '" style="display:none;margin-top:12px"><pre style="color:#38bdf8;white-space:pre-wrap">' + escapeHtml(item.solution || "") + '</pre></div></div>';
+          '<div id="' + sid + '" style="display:none;margin-top:12px"><pre style="color:#38bdf8;white-space:pre-wrap;overflow-x:auto;font-size:0.85rem">' + escapeHtml(item.solution || "") + '</pre></div></div>';
       });
       html += '</div>';
     });
@@ -182,5 +191,5 @@
     }
   };
 
-  console.log("pb-sem3-bridge loaded (SEM-I + SEM-3 + FSD-1 + unique mcqId)");
+  console.log("pb-sem3-bridge loaded (FSD-1 images + unique mcqId)");
 })();
