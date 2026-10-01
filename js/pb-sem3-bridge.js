@@ -1,5 +1,5 @@
 /**
- * Practice Book bridge: SEM-I + SEM-3
+ * Practice Book bridge: SEM-I + SEM-3 + FSD-1
  * HTML-escape options so <class int> shows
  * Awards points with unique mcqId so progress is saved & never resets
  */
@@ -17,12 +17,19 @@
   if (typeof window.pbSearchQuery === "undefined") window.pbSearchQuery = "";
 
   function getBook() {
+    if (window.pbActiveBook === "fsd1" && typeof PRACTICE_BOOK_FSD1 !== "undefined") return PRACTICE_BOOK_FSD1;
     if (window.pbActiveBook === "sem3" && typeof PRACTICE_BOOK_SEM3 !== "undefined") return PRACTICE_BOOK_SEM3;
     return typeof PRACTICE_BOOK !== "undefined" ? PRACTICE_BOOK : null;
   }
   function isSem3() { return window.pbActiveBook === "sem3"; }
+  function isFsd1() { return window.pbActiveBook === "fsd1"; }
+  function maxUnits() {
+    if (isFsd1()) return 10;
+    if (isSem3()) return 5;
+    return 3;
+  }
   function unitList(BOOK) {
-    var units = [], max = isSem3() ? 5 : 3;
+    var units = [], max = maxUnits();
     for (var u = 1; u <= max; u++) {
       if (window.pbCurrentUnit === "all" || window.pbCurrentUnit === String(u))
         if (BOOK["unit" + u]) units.push(BOOK["unit" + u]);
@@ -41,7 +48,10 @@
     if (c) { c.classList.add("active"); c.style.display = "block"; }
     var num = document.getElementById("conceptNumber");
     var title = document.getElementById("conceptTitle");
-    if (isSem3()) {
+    if (isFsd1()) {
+      if (num) num.textContent = "🌐";
+      if (title) title.textContent = "FSD-1 Practice Book (Full Stack JS)";
+    } else if (isSem3()) {
       if (num) num.textContent = "📗";
       if (title) title.textContent = "SEM-III Python Practice Book (FCSP-1)";
     } else {
@@ -55,6 +65,7 @@
 
   window.openSem1PracticeBook = function () { window.pbActiveBook = "sem1"; window.pbCurrentUnit = "all"; openPBScreen(); };
   window.openSem3PracticeBook = function () { window.pbActiveBook = "sem3"; window.pbCurrentUnit = "all"; openPBScreen(); };
+  window.openFsd1PracticeBook = function () { window.pbActiveBook = "fsd1"; window.pbCurrentUnit = "all"; openPBScreen(); };
   window.openPracticeBook = function () { window.pbActiveBook = "sem1"; openPBScreen(); };
 
   window.renderPracticeBookHub = function () {
@@ -65,24 +76,28 @@
       content.innerHTML = "<p style='color:#ef4444;padding:24px'>Practice Book data not loaded.</p>";
       return;
     }
-    var sem3 = isSem3();
+    var sem3 = isSem3(), fsd1 = isFsd1();
     var mcqCount = 0, codeCount = 0;
     Object.keys(BOOK).forEach(function (k) {
       if (BOOK[k] && BOOK[k].mcqs) mcqCount += BOOK[k].mcqs.length;
       if (BOOK[k] && BOOK[k].coding) codeCount += BOOK[k].coding.length;
     });
+    var accent = fsd1 ? "#0ea5e9" : (sem3 ? "#166534" : "#4338ca");
+    var titleColor = fsd1 ? "#7dd3fc" : (sem3 ? "#86efac" : "#c7d2fe");
+    var bookTitle = fsd1 ? "🌐 FSD-1 Full Stack JS Practice Book" : (sem3 ? "📗 SEM-III Python Practice Book" : "📘 LJIET Python-I Practice Book");
     var unitBtns = '<button class="pb-filter-btn ' + (window.pbCurrentUnit === "all" ? "active" : "") + '" onclick="setPBUnit(\'all\')">All Units</button>';
-    var maxU = sem3 ? 5 : 3;
+    var maxU = maxUnits();
     for (var u = 1; u <= maxU; u++)
-      unitBtns += '<button class="pb-filter-btn ' + (window.pbCurrentUnit === String(u) ? "active" : "") + '" onclick="setPBUnit(\'' + u + '\')">Unit ' + u + '</button>';
+      if (BOOK["unit" + u])
+        unitBtns += '<button class="pb-filter-btn ' + (window.pbCurrentUnit === String(u) ? "active" : "") + '" onclick="setPBUnit(\'' + u + '\')">Unit ' + u + '</button>';
     content.innerHTML =
-      '<div style="background:linear-gradient(135deg,#1e1b4b,#0f172a);border:1px solid ' + (sem3 ? "#166534" : "#4338ca") + ';border-radius:16px;padding:20px;margin-bottom:24px">' +
-      '<h2 style="color:' + (sem3 ? "#86efac" : "#c7d2fe") + ';margin:0;font-size:1.35rem">' +
-      (sem3 ? "📗 SEM-III Python Practice Book" : "📘 LJIET Python-I Practice Book") + '</h2>' +
-      '<p style="color:#94a3b8">' + mcqCount + ' MCQs' + (codeCount ? ' · ' + codeCount + ' Coding' : '') + '</p>' +
+      '<div style="background:linear-gradient(135deg,#1e1b4b,#0f172a);border:1px solid ' + accent + ';border-radius:16px;padding:20px;margin-bottom:24px">' +
+      '<h2 style="color:' + titleColor + ';margin:0;font-size:1.35rem">' + bookTitle + '</h2>' +
+      '<p style="color:#94a3b8">' + mcqCount + ' MCQs' + (codeCount ? ' · ' + codeCount + ' Coding/Descriptive' : '') + '</p>' +
       '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">' +
-      '<button class="pb-filter-btn ' + (!sem3 ? 'active' : '') + '" onclick="openSem1PracticeBook()">📘 SEM-I</button>' +
-      '<button class="pb-filter-btn ' + (sem3 ? 'active' : '') + '" onclick="openSem3PracticeBook()">📗 SEM-3</button></div>' +
+      '<button class="pb-filter-btn ' + (!sem3 && !fsd1 ? 'active' : '') + '" onclick="openSem1PracticeBook()">📘 SEM-I</button>' +
+      '<button class="pb-filter-btn ' + (sem3 ? 'active' : '') + '" onclick="openSem3PracticeBook()">📗 SEM-3</button>' +
+      '<button class="pb-filter-btn ' + (fsd1 ? 'active' : '') + '" onclick="openFsd1PracticeBook()">🌐 FSD-1</button></div>' +
       '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">' + unitBtns + '</div>' +
       '<div style="margin-top:12px">' +
       '<button class="pb-filter-btn ' + (window.pbCurrentType === 'all' ? 'active' : '') + '" onclick="setPBType(\'all\')">All</button> ' +
@@ -128,14 +143,14 @@
       coding.forEach(function (item) {
         var sid = "code-" + String(item.id || "").replace(/[^a-zA-Z0-9]/g, "_");
         html += '<div style="background:#020617;border:1px solid #166534;border-radius:14px;padding:14px;margin-bottom:12px">' +
-          '<div style="color:#4ade80;font-size:0.75rem">' + escapeHtml(item.id || "") + ' · ' + escapeHtml(item.topic || "Code") + '</div>' +
+          '<div style="color:#4ade80;font-size:0.75rem">' + escapeHtml(item.id || "") + ' · ' + escapeHtml(item.topic || "Code") + (item.marks ? ' · ' + item.marks + ' marks' : '') + '</div>' +
           '<div style="color:#f8fafc;margin:8px 0;white-space:pre-wrap">' + escapeHtml(item.question || "") + '</div>' +
           '<button type="button" onclick="(function(){var e=document.getElementById(\'' + sid + '\');e.style.display=e.style.display===\'none\'?\'block\':\'none\';})()" style="background:#16a34a;color:#fff;border:none;padding:8px 14px;border-radius:8px;cursor:pointer">View Solution</button>' +
           '<div id="' + sid + '" style="display:none;margin-top:12px"><pre style="color:#38bdf8;white-space:pre-wrap">' + escapeHtml(item.solution || "") + '</pre></div></div>';
       });
       html += '</div>';
     });
-    if (!total) html = "<p style='color:#94a3b8;text-align:center;padding:40px'>No questions.</p>";
+    if (!total) html = "<p style='color:#94a3b8;text-align:center;padding:40px'>No questions loaded for this unit yet. More units coming soon.</p>";
     container.innerHTML = html;
   };
 
@@ -149,13 +164,17 @@
         (PRACTICE_BOOK[k].mcqs || []).forEach(function (item) { if (item.id === qid) found = item; });
       });
     }
+    if (!found && typeof PRACTICE_BOOK_FSD1 !== "undefined") {
+      Object.keys(PRACTICE_BOOK_FSD1).forEach(function (k) {
+        (PRACTICE_BOOK_FSD1[k].mcqs || []).forEach(function (item) { if (item.id === qid) found = item; });
+      });
+    }
     var el = document.getElementById(sid);
     if (!el || !found) return;
     el.style.display = "block";
     if (letter === found.answer) {
       el.style.background = "#052e16"; el.style.border = "1px solid #22c55e"; el.style.color = "#86efac";
       el.innerHTML = "✅ Correct! " + found.answer + ") " + escapeHtml(found.correct || "");
-      // CRITICAL FIX: pass unique question id so mcqsSolved increments & is saved
       if (typeof addStudentPoints === "function") addStudentPoints(10, qid);
     } else {
       el.style.background = "#450a0a"; el.style.border = "1px solid #ef4444"; el.style.color = "#fca5a5";
@@ -163,5 +182,5 @@
     }
   };
 
-  console.log("pb-sem3-bridge loaded (HTML-safe options + unique mcqId)");
+  console.log("pb-sem3-bridge loaded (SEM-I + SEM-3 + FSD-1 + unique mcqId)");
 })();
