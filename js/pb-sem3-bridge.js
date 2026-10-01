@@ -6,10 +6,10 @@
 (function () {
   function escapeHtml(s) {
     return String(s == null ? "" : s)
-      .replace(/&/g, "&")
-      .replace(/</g, "<")
-      .replace(/>/g, ">")
-      .replace(/"/g, """);
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/\"/g, "&quot;");
   }
   if (typeof window.pbActiveBook === "undefined") window.pbActiveBook = "sem1";
   if (typeof window.pbCurrentUnit === "undefined") window.pbCurrentUnit = "all";
@@ -133,7 +133,7 @@
         var sid = "sol-" + String(item.id || "").replace(/[^a-zA-Z0-9]/g, "_");
         var opts = (item.options || []).map(function (o, i) {
           var letter = "ABCD"[i];
-          return '<button type="button" onclick="checkPBAnswerBridge(\'' + item.id + '\',\'' + letter + '\',\'' + sid + '\')" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 14px;border-radius:10px;border:1px solid #334155;background:#0f172a;color:#e2e8f0;cursor:pointer"><strong>' + letter + ')</strong> ' + escapeHtml(o) + '</button>';
+          return '<button type="button" onclick="checkPBAnswerBridge(\'' + item.id + '\',\'' + letter + '\',\'' + sid + '\')" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 14px;border:1px solid #334155;border-radius:10px;background:#1e293b;color:#e2e8f0;cursor:pointer">' + letter + '. ' + escapeHtml(o) + '</button>';
         }).join("");
         html += '<div style="background:#0f172a;border:1px solid #1e293b;border-radius:14px;padding:14px;margin-bottom:12px">' +
           '<div style="font-size:0.75rem;color:#818cf8">' + escapeHtml(item.id || "") + ' · Sr ' + (item.srNo || "") + '</div>' +
@@ -154,7 +154,7 @@
           '<div style="color:#4ade80;font-size:0.75rem">' + escapeHtml(item.id || "") + ' · ' + escapeHtml(item.topic || "Code") + (item.marks ? ' · ' + item.marks + ' marks' : '') + '</div>' +
           '<div style="color:#f8fafc;margin:8px 0;white-space:pre-wrap">' + escapeHtml(item.question || "") + '</div>' +
           imgHtml +
-          '<button type="button" onclick="(function(){var e=document.getElementById(\'' + sid + '\');e.style.display=e.style.display===\'none\'?\'block\':\'none\';})()" style="background:#16a34a;color:#fff;border:none;padding:8px 14px;border-radius:8px;cursor:pointer">View Solution</button>' +
+          '<button type="button" onclick="(function(){var e=document.getElementById(\'' + sid + '\');e.style.display=e.style.display===\'none\'?\'block\':\'none\';})()" style="background:#16a34a;color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer">Show solution</button>' +
           '<div id="' + sid + '" style="display:none;margin-top:12px"><pre style="color:#38bdf8;white-space:pre-wrap;overflow-x:auto;font-size:0.85rem">' + escapeHtml(item.solution || "") + '</pre></div></div>';
       });
       html += '</div>';
