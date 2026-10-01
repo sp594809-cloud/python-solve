@@ -101,6 +101,24 @@
     else if (typeof openPracticeBook === "function") openPracticeBook();
   };
 
+  window.openFsd1PracticeBook = function () {
+    window.pbActiveBook = "fsd1";
+    window.pbCurrentUnit = "all";
+    var w = document.getElementById("welcomeScreen");
+    var c = document.getElementById("conceptScreen");
+    if (w) { w.classList.remove("active"); w.style.removeProperty("display"); }
+    if (c) { c.classList.add("active"); c.style.display = "block"; }
+    var num = document.getElementById("conceptNumber");
+    var title = document.getElementById("conceptTitle");
+    if (num) num.textContent = "🌐";
+    if (title) title.textContent = "FSD-1 Full Stack JavaScript Practice Book";
+    var tabs = document.getElementById("stepTabs"); if (tabs) tabs.style.display = "none";
+    var nav = document.querySelector(".step-navigation"); if (nav) nav.style.display = "none";
+    closeSidebarOnMobile();
+    if (typeof window.renderPracticeBookHub === "function") window.renderPracticeBookHub();
+    else if (typeof openPracticeBook === "function") openPracticeBook();
+  };
+
   window.addEventListener("load", function () {
     setTimeout(function () {
       window.openSem3PracticeBook = showSem3Screen;
