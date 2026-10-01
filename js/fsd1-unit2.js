@@ -1,1 +1,1 @@
-// Unit 2 placeholder - full content loading
+PLACEHOLDER_WILL_REPLACE
