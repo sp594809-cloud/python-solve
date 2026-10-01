@@ -1,4 +1,6 @@
-/** Modern Quiz Mode + HTML-safe options */
+/** Modern Quiz Mode + HTML-safe options
+ *  Awards points with unique question IDs so mcqsSolved is correct
+ */
 (function () {
   function escapeHtml(s) {
     return String(s == null ? "" : s)
@@ -136,7 +138,7 @@
       (QZ.reviewMode ? '<div></div>' : '<button type="button" class="qz-submit-btn" onclick="quizModeSubmit()">Submit</button>') +
       '</div><div class="qz-card" style="padding:12px 14px"><div style="font-weight:700;color:#f8fafc">' + escapeHtml(QZ.unitLabel) +
       '</div><div class="qz-meta">' + escapeHtml(QZ.bookLabel) + ' · <span class="qz-timer">⏱ <span id="qzTimerText">' + fmtTime(QZ.remaining) +
-      '</span></span></div><div class="qz-progress-wrap"><div class="qz-progress-fill" style="width:' + pct + '%"></div></div></div>' +
+      '</span></span></div><div class="qz-progress-wrap"><div class="qz-progress-fill" style="width:' + pct + '%"></div></div>' +
       '<div class="qz-qnum">Q.' + (QZ.index + 1) + '/' + QZ.pool.length + '</div>' +
       '<div class="qz-question">' + escapeHtml(q.question || '') + '</div>' + opts +
       '<div class="qz-nav"><button type="button" class="qz-btn-ghost" onclick="quizPrev()"' + (QZ.index === 0 ? ' disabled' : '') +
@@ -160,9 +162,13 @@
   function finishQuiz() {
     stopTimer();
     var correct = 0, wrong = 0;
+    var correctIds = [];
     QZ.pool.forEach(function (q) {
       var a = QZ.answers[q.id];
-      if (a && a === q.answer) correct++; else wrong++;
+      if (a && a === q.answer) {
+        correct++;
+        if (q.id) correctIds.push(q.id);
+      } else wrong++;
     });
     var total = QZ.pool.length;
     var pct = total ? Math.round((correct / total) * 100) : 0;
@@ -170,8 +176,11 @@
     if (elapsed < 0) elapsed = QZ.timeLimitSec - QZ.remaining;
     var avg = total ? Math.round(elapsed / total) : 0;
     var passed = pct >= 40;
-    if (!QZ.reviewMode && correct > 0 && typeof addStudentPoints === 'function') {
-      for (var i = 0; i < correct; i++) addStudentPoints(10, 'mcq');
+    // CRITICAL FIX: award each correct question with its unique id
+    if (!QZ.reviewMode && correctIds.length > 0 && typeof addStudentPoints === 'function') {
+      correctIds.forEach(function (qid) {
+        addStudentPoints(10, qid);
+      });
     }
     try {
       localStorage.setItem('ljiet_last_quiz', JSON.stringify({ book: QZ.bookLabel, unit: QZ.unitLabel, correct: correct, total: total, pct: pct, at: Date.now() }));
@@ -208,5 +217,5 @@
   };
 
   document.addEventListener('DOMContentLoaded', ensureSession);
-  console.log('quiz-mode.js loaded');
+  console.log('quiz-mode.js loaded (unique mcqIds)');
 })();

@@ -1,14 +1,15 @@
 /**
  * Practice Book bridge: SEM-I + SEM-3
  * HTML-escape options so <class int> shows
+ * Awards points with unique mcqId so progress is saved & never resets
  */
 (function () {
   function escapeHtml(s) {
     return String(s == null ? "" : s)
-      .replace(/&/g, "&")
-      .replace(/</g, "<")
-      .replace(/>/g, ">")
-      .replace(/"/g, """);
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
   }
   if (typeof window.pbActiveBook === "undefined") window.pbActiveBook = "sem1";
   if (typeof window.pbCurrentUnit === "undefined") window.pbCurrentUnit = "all";
@@ -154,12 +155,13 @@
     if (letter === found.answer) {
       el.style.background = "#052e16"; el.style.border = "1px solid #22c55e"; el.style.color = "#86efac";
       el.innerHTML = "✅ Correct! " + found.answer + ") " + escapeHtml(found.correct || "");
-      if (typeof addStudentPoints === "function") addStudentPoints(10);
+      // CRITICAL FIX: pass unique question id so mcqsSolved increments & is saved
+      if (typeof addStudentPoints === "function") addStudentPoints(10, qid);
     } else {
       el.style.background = "#450a0a"; el.style.border = "1px solid #ef4444"; el.style.color = "#fca5a5";
       el.innerHTML = "❌ Wrong. Correct is " + found.answer + ") " + escapeHtml(found.correct || "");
     }
   };
 
-  console.log("pb-sem3-bridge loaded (HTML-safe options)");
+  console.log("pb-sem3-bridge loaded (HTML-safe options + unique mcqId)");
 })();
