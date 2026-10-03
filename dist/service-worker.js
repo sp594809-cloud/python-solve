@@ -8,6 +8,8 @@ const ASSETS = [
   "./probability/styles.css",
   "./probability/app.js",
   "./probability/data/chapter-3.js",
+  "./probability/chapter-4.html",
+  "./probability/data/chapter-4.js",
   "./css/main.css",
   "./css/design-system.css",
   "./css/app-ui.css",

@@ -1,0 +1,898 @@
+[
+  {
+    "id": 281,
+    "unit": 4,
+    "question": "The coefficient of correlation between two\nvariables x and y is 0.48. The covariance is 36. The\nvariance of x is 16. The standard deviation of y is:",
+    "key": "18.75\nPage 2",
+    "marks": "1\n23 of 68",
+    "page": 23,
+    "bounds": [
+      95,
+      1065.692,
+      350,
+      1148
+    ]
+  },
+  {
+    "id": 282,
+    "unit": 4,
+    "question": "Calculate the correlation coefficient between the\nfollowing values:\nX: 3, 5, 1, 7, 5.\nY: 4, 3, 0, 8, 2",
+    "key": "0.8",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      139.81200000000013,
+      350,
+      203.77199999999993
+    ]
+  },
+  {
+    "id": 283,
+    "unit": 4,
+    "question": "The values of correlation coefficient lie in the\ninterval:",
+    "key": "[-1, 1]",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      203.77199999999993,
+      350,
+      235.93200000000002
+    ]
+  },
+  {
+    "id": 284,
+    "unit": 4,
+    "question": "What is the value of correlation coefficient\nwhich is not possible?",
+    "key": "1.2",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      235.93200000000002,
+      350,
+      273.49199999999996
+    ]
+  },
+  {
+    "id": 285,
+    "unit": 4,
+    "question": "If six hand writings were ranked by two judges in a\ncompetition and the rankings are as follows:\nJudge\n6 5 4 3 2 1\n1\nJudge\n1 2 3 4 5 6\n2",
+    "key": "-1",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      273.49199999999996,
+      350,
+      368.2919999999999
+    ]
+  },
+  {
+    "id": 286,
+    "unit": 4,
+    "question": "Calculate the rank correlation coefficient, if two\njudges in a beauty contest ranked the entries as\nfollows\nJudge 1 2 3 4 5\nX\nJudge 5 4 3 2 1\nY",
+    "key": "-1",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      368.2919999999999,
+      350,
+      489.52199999999993
+    ]
+  },
+  {
+    "id": 287,
+    "unit": 4,
+    "question": "If the sum of the squares of difference of ranks of 6\ncandidates in two criteria is 21, the rank correlation\ncoefficient is_______.",
+    "key": "0.4",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      489.52199999999993,
+      350,
+      539.082
+    ]
+  },
+  {
+    "id": 288,
+    "unit": 4,
+    "question": "The two lines of regression are 8𝑥 − 10𝑦 = 66 and\n40𝑥 − 18𝑦 = 214, and variance of 𝑥 series is 9.\nWhat is the standard deviation of 𝑦 series?",
+    "key": "d 4",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      539.082,
+      350,
+      589.362
+    ]
+  },
+  {
+    "id": 289,
+    "unit": 4,
+    "question": "The two regression lines are given by 𝑥 − 𝑦 + 1 =\n0 and 2𝑥 − 𝑦 + 4 = 0. The two regression lines\npass through the point:",
+    "key": "(−3,−2)",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      589.362,
+      350,
+      638.082
+    ]
+  },
+  {
+    "id": 290,
+    "unit": 4,
+    "question": "If two regression coefficients are -0.1 and -0.9, then\ncorrelation coefficient is,",
+    "key": "n −0.3",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      638.082,
+      350,
+      670.262
+    ]
+  },
+  {
+    "id": 291,
+    "unit": 4,
+    "question": "If two regression coefficients are -0.4 and -0.9, then\nthe correlation coefficient is,",
+    "key": "n -0.6",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      670.262,
+      350,
+      702.5419999999999
+    ]
+  },
+  {
+    "id": 292,
+    "unit": 4,
+    "question": "If two regression coefficients are -0.8 and -0.2,\nwhat would be the value of coefficient of\ncorrelation?",
+    "key": "−0.4",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      702.5419999999999,
+      350,
+      750.662
+    ]
+  },
+  {
+    "id": 293,
+    "unit": 4,
+    "question": "The two regression lines of a sample are 𝑥 + 6𝑦 =\n6 and 3𝑥 + 2𝑦 = 10. Then coefficient of\ncorrelation between x and y is",
+    "key": "−1/3",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      750.662,
+      350,
+      799.382
+    ]
+  },
+  {
+    "id": 294,
+    "unit": 4,
+    "question": "The two regression lines x and y always intersect at\npoints",
+    "key": "( x , y )",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      799.382,
+      350,
+      831.662
+    ]
+  },
+  {
+    "id": 295,
+    "unit": 4,
+    "question": "If 𝑟 = 0 then the regression coefficients are",
+    "key": "0",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      831.662,
+      350,
+      848.342
+    ]
+  },
+  {
+    "id": 296,
+    "unit": 4,
+    "question": "The regression lines of a sample are 𝑥 + 6𝑦 = 6\nand 3𝑥 + 2𝑦 = 10. Find the sample means 𝑥̅ and 𝑦̅.",
+    "key": "(3,0.5)\n.",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      848.342,
+      350,
+      881.102
+    ]
+  },
+  {
+    "id": 297,
+    "unit": 4,
+    "question": "If the two lines of regression are 4𝑥 − 5𝑦 + 30 = 0\nand 20𝑥 − 9𝑦 − 107 = 0 which of these are lines\nof regression of x on y?",
+    "key": "0 20𝑥\n− 9𝑦\n− 107\n= 0",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      881.102,
+      350,
+      938.012
+    ]
+  },
+  {
+    "id": 298,
+    "unit": 4,
+    "question": "From the following data calculate the regression\ncoefficient b ?\nyx\nX 6 2 10 4 8\nY 9 11 5 8 7",
+    "key": "−0.65",
+    "marks": "1",
+    "page": 24,
+    "bounds": [
+      95,
+      938.012,
+      350,
+      1010.492
+    ]
+  },
+  {
+    "id": 299,
+    "unit": 4,
+    "question": "If the difference between the rank of the 4\nobservations is 2.5,0.5,−1.5, −1.5 then\nSpearman’s rank correlation coefficient equals to\n_____.",
+    "key": "None of\nthese\nPage 2",
+    "marks": "1\n24 of 68",
+    "page": 24,
+    "bounds": [
+      95,
+      1010.492,
+      350,
+      1148
+    ]
+  },
+  {
+    "id": 300,
+    "unit": 4,
+    "question": "Obtain the two regression lines from the following\ndata and hence find the correlation coefficient.\nx 6 2 10 4 8\ny 9 11 5 8 7",
+    "key": "",
+    "marks": "4",
+    "page": 25,
+    "bounds": [
+      95,
+      139.81200000000013,
+      350,
+      209.77199999999993
+    ]
+  },
+  {
+    "id": 301,
+    "unit": 4,
+    "question": "Find the line of regression of y on x.\nx 1.53 1.78 2.60 2.95 3.42\ny 33.5 36.3 40.0 45.8 53.5",
+    "key": "",
+    "marks": "3",
+    "page": 25,
+    "bounds": [
+      95,
+      209.77199999999993,
+      350,
+      269.89199999999994
+    ]
+  },
+  {
+    "id": 302,
+    "unit": 4,
+    "question": "Calculate the coefficient of correlation and obtain\nthe lines of regression for the following:\nX 1 2 3 4 5 6 7 8 9\nY 9 8 10 12 11 13 14 16 15",
+    "key": "",
+    "marks": "4",
+    "page": 25,
+    "bounds": [
+      95,
+      269.89199999999994,
+      350,
+      336.13199999999995
+    ]
+  },
+  {
+    "id": 303,
+    "unit": 4,
+    "question": "Find correlation coefficient for the data given\nbelow.\nx 4 5 9 14 18 22 24\ny 16 22 11 16 7 3 17",
+    "key": "",
+    "marks": "3",
+    "page": 25,
+    "bounds": [
+      95,
+      336.13199999999995,
+      350,
+      406.602
+    ]
+  },
+  {
+    "id": 304,
+    "unit": 4,
+    "question": "Calculate the co-efficient of correlation between the\ngiven series of data for x and y in the following\ntable:\nx 54 57 55 57 56 52 59\ny 36 35 32 34 36 38 35",
+    "key": "e",
+    "marks": "3",
+    "page": 25,
+    "bounds": [
+      95,
+      406.602,
+      350,
+      487.00199999999995
+    ]
+  },
+  {
+    "id": 305,
+    "unit": 4,
+    "question": "Let 3x + 2y = 26 and 6x + y = 31, be the two\nregression lines. (i) Find the mean value and\ncorrelation coefficient between x and y (ii) if the\nvariance of y is 4 find the standard deviation of x.",
+    "key": "",
+    "marks": "4",
+    "page": 25,
+    "bounds": [
+      95,
+      487.00199999999995,
+      350,
+      550.962
+    ]
+  },
+  {
+    "id": 306,
+    "unit": 4,
+    "question": "Find the coefficient of correlation from the data:\nx = 7, 8, 9, 11, 10, 13, 12\ny = 1, 2, 3, 4, 5, 6, 7",
+    "key": "",
+    "marks": "3",
+    "page": 25,
+    "bounds": [
+      95,
+      550.962,
+      350,
+      599.082
+    ]
+  },
+  {
+    "id": 307,
+    "unit": 4,
+    "question": "Given 𝑛 = 10, 𝜎 = 5.4,𝜎 = 6.2 and the sum of\n𝑋 𝑌\nthe product of the deviations from the mean of x\nand y is 66. Find correlation coefficient.",
+    "key": "",
+    "marks": "3",
+    "page": 25,
+    "bounds": [
+      95,
+      599.082,
+      350,
+      647.442
+    ]
+  },
+  {
+    "id": 308,
+    "unit": 4,
+    "question": "The coefficient of rank correlation of the marks\nobtained by 10 students in physics and chemistry\nwas found to be 0.5. It was later discovered that the\ndifference in ranks in the two subjects obtained by\none of the students was wrongly taken as 3 instead\nof 7. Find the correct coefficient of the rank\ncorrelation.",
+    "key": "",
+    "marks": "4",
+    "page": 25,
+    "bounds": [
+      95,
+      647.442,
+      350,
+      759.0619999999999
+    ]
+  },
+  {
+    "id": 309,
+    "unit": 4,
+    "question": "Obtain the correlation coefficient for the following\ndata:\n𝑥 100 98 78 85 110 93 80\n𝑦 85 90 70 72 95 81 74",
+    "key": "",
+    "marks": "4",
+    "page": 25,
+    "bounds": [
+      95,
+      759.0619999999999,
+      350,
+      827.342
+    ]
+  },
+  {
+    "id": 310,
+    "unit": 4,
+    "question": "Calculate the correlation coefficient between x and\ny from the following data:\n𝑛 = 10, ∑𝑥 = 140, ∑𝑦 = 150,\n∑(𝑥 − 10)2 = 180, ∑(𝑦 − 15)2 = 215, ∑(𝑥 −\n10)(𝑦 − 15) = 60.",
+    "key": "",
+    "marks": "4",
+    "page": 25,
+    "bounds": [
+      95,
+      827.342,
+      350,
+      908.222
+    ]
+  },
+  {
+    "id": 311,
+    "unit": 4,
+    "question": "The following table shows how 10 students were\nranked according to their achievements in both the\nlaboratory and lecture portions of a python course.\nFind the coefficient of rank correlation.\nLabo 8 3 9 2 7 10 4 6 1 5\nrator\ny\nLect 9 5 10 1 8 7 3 4 2 6\nure",
+    "key": "e\ne\n.\nPage 2",
+    "marks": "3\n25 of 68",
+    "page": 25,
+    "bounds": [
+      95,
+      908.222,
+      350,
+      1148
+    ]
+  },
+  {
+    "id": 312,
+    "unit": 4,
+    "question": "Determine the correlation coefficient between\ntemperature (inoC ) and ice cream sales (in $).\ne\nr\nu\nt\na 2 4 9 2 5 1 4 1 4 1 6 2\nr e 4. 6. 1. 5. 8. 2. 9. 5. 3. 8. 2. 7.\np 1 1 1 1 1 2 1 2 2 1 2 1\nm\ne\nT\n𝑠\ne\nl\na\ns\n5 5 5 2 6 2 2 4 4 1 5 8\nm\n1 2 8 3 0 2 1 1 4 2 4 0\na 2 3 1 3 4 5 4 6 5 4 4 4\ne\nr\nc\ne\nc\nI",
+    "key": "2\n7.\n1\n8\n0\n4",
+    "marks": "3",
+    "page": 26,
+    "bounds": [
+      95,
+      139.81200000000013,
+      350,
+      312.37199999999996
+    ]
+  },
+  {
+    "id": 313,
+    "unit": 4,
+    "question": "Calculate the coefficient of correlation for the\nfollowing pairs of x and y:\n𝑥 17 19 21 26 20 28 26 27\n𝑦 23 27 25 26 27 25 30 33",
+    "key": "",
+    "marks": "4",
+    "page": 26,
+    "bounds": [
+      95,
+      312.37199999999996,
+      350,
+      385.722
+    ]
+  },
+  {
+    "id": 314,
+    "unit": 4,
+    "question": "Find the regression coefficient of y on x for the\nfollowing data:\n𝑥 1 2 3 4 5\n𝑦 160 180 140 180 200",
+    "key": "",
+    "marks": "4",
+    "page": 26,
+    "bounds": [
+      95,
+      385.722,
+      350,
+      456.52199999999993
+    ]
+  },
+  {
+    "id": 315,
+    "unit": 4,
+    "question": "The ranks of same 16 students in Maths and MOS\nare as follows:\nMa 1 1 1 1 1 1 1\n1 2 3 4 5 6 7 8 9\nths 0 1 2 3 4 5 6\nM 1 1 1 1 1 1 1\n1 3 4 5 7 2 6 8 9\nOS 0 1 5 4 2 6 3\nCalculate the rank correlation coefficient for\nproficiencies of this group in given subjects.",
+    "key": "",
+    "marks": "4",
+    "page": 26,
+    "bounds": [
+      95,
+      456.52199999999993,
+      350,
+      585.4019999999999
+    ]
+  },
+  {
+    "id": 316,
+    "unit": 4,
+    "question": "Obtain the correlation coefficient for the following\ndata:\n𝑥 58 64 51 74 88 91\n𝑦 12 18 15 41 46 52",
+    "key": "g",
+    "marks": "4",
+    "page": 26,
+    "bounds": [
+      95,
+      585.4019999999999,
+      350,
+      653.102
+    ]
+  },
+  {
+    "id": 317,
+    "unit": 4,
+    "question": "The following table gives the marks obtained by 11\nstudents in Mathematics and Physics translation,\nFind the rank correlation coefficient.\nMathema 4 4 5 6 7 8 8 8 8 9 9\ntics 0 6 4 0 0 0 2 5 5 0 5\nPhysics 4 4 5 4 4 7 5 7 6 4 7\n5 5 0 3 0 5 5 2 5 2 0",
+    "key": "",
+    "marks": "3",
+    "page": 26,
+    "bounds": [
+      95,
+      653.102,
+      350,
+      773.462
+    ]
+  },
+  {
+    "id": 318,
+    "unit": 4,
+    "question": "The number of bacterial cells(y) per unit volume in\na culture at different hours(x) is given below:\nx 0 1 2 3 4 5 6 7 8 9\n4 4 8 9 12 16 19 21 24 27\ny\n3 6 2 8 3 7 9 3 5 2\nFit a line of regression of y on x and x on y.\nestimate the number of bacterial cells after 15\nhours.",
+    "key": "",
+    "marks": "4",
+    "page": 26,
+    "bounds": [
+      95,
+      773.462,
+      350,
+      910.502
+    ]
+  },
+  {
+    "id": 319,
+    "unit": 4,
+    "question": "Find the coefficient of correlation by spearman’s\nmethod from the following data:\nIQ 10 8 10 10 9 10 9 11 11 11\n𝑋 6 6 0 1 9 3 7 3 2 0\n𝑖\nHou 2 2\n7 0 27 50 29 12 6 17\nrs 𝑌 8 0\n𝑖\nThe above data shows the correlation between the\nIQ of a person and number of hours spent in front\nof the TV per week by person.",
+    "key": "",
+    "marks": "4",
+    "page": 26,
+    "bounds": [
+      95,
+      910.502,
+      350,
+      1055.8519999999999
+    ]
+  },
+  {
+    "id": 320,
+    "unit": 4,
+    "question": "Obtain the rank correlation coefficient from the\nfollowing data:\n𝑥 10 12 10 15 13 12 10\n𝑦 14 13 12 10 13 12 11",
+    "key": "Page 2",
+    "marks": "4\n26 of 68",
+    "page": 26,
+    "bounds": [
+      95,
+      1055.8519999999999,
+      350,
+      1148
+    ]
+  },
+  {
+    "id": 321,
+    "unit": 4,
+    "question": "Following are the scores of ten students in class and\ntheir IQ:\nSco 3 4 2 5 8 9 6 5 4 5\nre 5 0 5 5 5 0 5 5 5 0\nIQ 1 1 1 1 1 1 1 1 1 1\n0 0 1 4 5 3 0 2 4 1\n0 0 0 0 0 0 0 0 0 0\nCalculate the rank correlation co-efficient between\nthe score and IQ.",
+    "key": "",
+    "marks": "4",
+    "page": 27,
+    "bounds": [
+      95,
+      139.81200000000013,
+      350,
+      284.5319999999999
+    ]
+  },
+  {
+    "id": 322,
+    "unit": 4,
+    "question": "Nine competitors in the reality show India’s Got\nTalent ranked by two judges in the following order.\nCalculate the Spearman’s rank correlation\ncoefficient.\nCompetitors A B C D E F G H I\nKiran Kher 1 6 2 7 3 8 4 9 5\nKaran Johar 5 2 6 8 7 1 3 9 4",
+    "key": "",
+    "marks": "3",
+    "page": 27,
+    "bounds": [
+      95,
+      284.5319999999999,
+      350,
+      404.682
+    ]
+  },
+  {
+    "id": 323,
+    "unit": 4,
+    "question": "Find the correlation coefficient from the following\ndata:\n5 5 5 6 6 6 6 6 6 5\nX\n0 0 5 0 5 5 5 0 0 0\n1 1 1 1 1 1 1 1 1 1\nY\n1 3 4 6 6 5 5 4 3 3",
+    "key": "",
+    "marks": "4",
+    "page": 27,
+    "bounds": [
+      95,
+      404.682,
+      350,
+      510.76199999999994
+    ]
+  },
+  {
+    "id": 324,
+    "unit": 4,
+    "question": "Raw material used in the production of a synthetic\nfibre is stored in a place which has no humidity\ncontrol. Measurements of the relative humidity in\nthe storage place and the moisture content of a\nsample of the raw material (both in %) on 7 days\nyielded the following results:\nHu\nmid\n42 35 50 43 48 62 31\nity\n(x):\nMo\nistu\nre\n12 8 14 9 11 16 7\ncon\ntent\n(y):\nFind the lines of regression of y on x and x on y.",
+    "key": "c\ny\nn\na\ns",
+    "marks": "4",
+    "page": 27,
+    "bounds": [
+      95,
+      510.76199999999994,
+      350,
+      782.582
+    ]
+  },
+  {
+    "id": 325,
+    "unit": 4,
+    "question": "Compute the coefficient of correlation between X\nand Y using the following data:\nX 2 4 5 6 8 11\nY 18 12 10 8 7 5",
+    "key": "",
+    "marks": "3",
+    "page": 27,
+    "bounds": [
+      95,
+      782.582,
+      350,
+      865.1419999999999
+    ]
+  },
+  {
+    "id": 326,
+    "unit": 4,
+    "question": "Find the Correlation coefficient and lines of\nregression from the following data:\nx 57 58 59 59 60 61 62 64\ny 67 68 65 68 72 72 69 71\nFind the value of y when x = 66",
+    "key": "",
+    "marks": "4",
+    "page": 27,
+    "bounds": [
+      95,
+      865.1419999999999,
+      350,
+      952.292
+    ]
+  },
+  {
+    "id": 327,
+    "unit": 4,
+    "question": "Obtain both the lines of regression for the following\ndata and hence find the correlation coefficient.\n𝑥 60 34 40 50 45 41 22 43\n𝑦 75 32 34 40 45 33 12 30",
+    "key": "g",
+    "marks": "4",
+    "page": 27,
+    "bounds": [
+      95,
+      952.292,
+      350,
+      1028.732
+    ]
+  },
+  {
+    "id": 328,
+    "unit": 4,
+    "question": "Obtain both the lines of regression for the following\ndata and hence find the correlation coefficient.\n𝑥 25 28 35 32 31 36 29 38 34 32\n𝑦 43 46 49 41 36 32 31 30 33 39",
+    "key": "g\nPage 2",
+    "marks": "4\n27 of 68",
+    "page": 27,
+    "bounds": [
+      95,
+      1028.732,
+      350,
+      1148
+    ]
+  },
+  {
+    "id": 329,
+    "unit": 4,
+    "question": "Obtain the two lines of regression for the following\ndata:\nSal\n190 240 250 300 310 335 300\nes\nAd\nvert\nisin\ng\n5 10 15 20 20 30 30\nexp\nend\nitur\ne",
+    "key": "",
+    "marks": "4",
+    "page": 28,
+    "bounds": [
+      95,
+      139.81200000000013,
+      350,
+      340.692
+    ]
+  },
+  {
+    "id": 330,
+    "unit": 4,
+    "question": "The following data gives the age and blood\npressure (BP) of 10 sports persons.\nN\na\nA B C D E F G H I J\nm\ne\nA\nge\n42 36 55 58 35 65 60 50 48 51\n(\nX)\nB\nP 11 10 10 10 11\n98 93 85 82 99\n(Y 0 5 8 2 8\n)\n(1) Find the regression equation of 𝑌 on 𝑋 and 𝑋\non 𝑌.\n(2) Find the correlation coefficient.",
+    "key": "",
+    "marks": "4",
+    "page": 28,
+    "bounds": [
+      95,
+      340.692,
+      350,
+      600.762
+    ]
+  },
+  {
+    "id": 331,
+    "unit": 4,
+    "question": "Find the regression equation showing the capacity\nutilization on production from the following data:\nStandard\nAverage\nDeviation\nProduction\n(in lakh 35.6 10.5\nunits)\nCapacity\nutilization 84.8 8.5\n(in %)\nCorrelation\n𝑟 = 0.62\nCoefficient\nEstimate the production when capacity utilization is\n70%.",
+    "key": "s",
+    "marks": "4",
+    "page": 28,
+    "bounds": [
+      95,
+      600.762,
+      350,
+      825.902
+    ]
+  },
+  {
+    "id": 332,
+    "unit": 4,
+    "question": "From the following results, obtain the two\nregression equations and estimate the yield when\nthe rainfall is 29 cm and the rainfall, when the yield\nis 600 kg:\nYield in kg. Rainfall in\ncm\nMean 508.4 26.7\nSD 36.8 4.6\nThe coefficient of correlation between yield and\nrainfall is 0.52.",
+    "key": "d",
+    "marks": "4",
+    "page": 28,
+    "bounds": [
+      95,
+      825.902,
+      350,
+      1012.7719999999999
+    ]
+  },
+  {
+    "id": 333,
+    "unit": 4,
+    "question": "Given that 𝑛 = 25, ∑𝑋 = 125,∑𝑋2 = 650,∑𝑌 =\n100,∑𝑌2 = 460 𝑎𝑛𝑑 ∑𝑋𝑌 = 508. It was later\ndiscovered at the time of checking that he had\ncopied down two pairs as (6,14) and (8,6) while\nthe correct pairs were (8,12) and (6,8). Obtain the\ncorrect value of the correlation coefficient.",
+    "key": "Page 2",
+    "marks": "4\n28 of 68",
+    "page": 28,
+    "bounds": [
+      95,
+      1012.7719999999999,
+      350,
+      1148
+    ]
+  },
+  {
+    "id": 334,
+    "unit": 4,
+    "question": "From the following data of the marks obtained by 8\nstudents in Computer Networking (CN) and\nCompiler Design (CD) papers, compute rank\ncoefficient of correlation.\nCN 15 20 28 12 40 60 20 80\nCD 40 30 50 30 20 10 30 60",
+    "key": "",
+    "marks": "4",
+    "page": 29,
+    "bounds": [
+      95,
+      139.81200000000013,
+      350,
+      261.25199999999995
+    ]
+  },
+  {
+    "id": 335,
+    "unit": 4,
+    "question": "The coefficient of rank correlation of marks\nobtained by 10 students in English and Economics\nwas found to be 0.6. It was later discovered that the\ndifference in ranks in the two subjects obtained by\none of the students was wrongly taken as 7 instead\nof 1. Find the correct coefficient of rank\ncorrelation.",
+    "key": "",
+    "marks": "4",
+    "page": 29,
+    "bounds": [
+      95,
+      261.25199999999995,
+      350,
+      372.852
+    ]
+  },
+  {
+    "id": 336,
+    "unit": 4,
+    "question": "Compute the coefficient of rank correlation\nbetween Economics marks and Statistics marks as\ngiven below:\nEcon 80 56 50 48 50 62 60\nomic\ns\nmark\ns\nStati 90 75 75 65 65 50 65\nstics\nmark\ns",
+    "key": "",
+    "marks": "4",
+    "page": 29,
+    "bounds": [
+      95,
+      372.852,
+      350,
+      567.1619999999999
+    ]
+  },
+  {
+    "id": 337,
+    "unit": 4,
+    "question": "In partially destroyed laboratory record of an\nanalysis of correlation data, the following results are\neligible.\n• Variance of x, 2 = 9\nx\n• Two line of regressions: 8𝑥 − 10𝑦 + 66 =\n0, 40𝑥 − 18𝑦 = 214.\nFrom the above obtain mean values of x and y, the\nstandard deviation of y and correlation coefficient.",
+    "key": "n\ne\n=",
+    "marks": "4",
+    "page": 29,
+    "bounds": [
+      95,
+      567.1619999999999,
+      350,
+      703.862
+    ]
+  },
+  {
+    "id": 338,
+    "unit": 4,
+    "question": "Psychological tests of intelligence and of\nengineering ability were applied to 10 students as\nper the following data. Find the coefficient of\ncorrelation.\nIn\nte\n1 1 1 1 1\nlli 9 9 9 9 9\n0 0 0 0 0\nge 9 8 6 3 2\n5 4 2 1 0\nnc\ne\nab 1 1 1 1\n9 9 9 9 9 9\nili 0 0 0 0\n8 5 6 2 7 4\nty 1 3 0 4",
+    "key": "",
+    "marks": "4",
+    "page": 29,
+    "bounds": [
+      95,
+      703.862,
+      350,
+      922.0519999999999
+    ]
+  },
+  {
+    "id": 339,
+    "unit": 4,
+    "question": "In a college, IT department has arranged one\ncompetition for IT students to develop an efficient\nprogram to solve a problem. Ten students took part\nin the competition and ranked by two judges given\nin the following table. Find the degree of agreement\nbetween the two judges using Rank correlation\ncoefficient. (J=Judge)\nJ-1 3 5 8 4 7 10 2 1 6 9\nJ-2 6 4 9 8 1 2 3 10 5 7",
+    "key": "t\nPage 2",
+    "marks": "3\n29 of 68",
+    "page": 29,
+    "bounds": [
+      95,
+      922.0519999999999,
+      350,
+      1148
+    ]
+  },
+  {
+    "id": 340,
+    "unit": 4,
+    "question": "Calculate the Co-efficient of correlation from the\nfollowing data:\nx 12 9 8 10 11 13 7\ny 14 8 6 9 11 12 3",
+    "key": "",
+    "marks": "3",
+    "page": 30,
+    "bounds": [
+      95,
+      139.81200000000013,
+      350,
+      210.25199999999995
+    ]
+  },
+  {
+    "id": 341,
+    "unit": 4,
+    "question": "Calculate the correlation coefficient between the\nfollowing values of demand and the corresponding\nprice of a commodity:\nDe\nma 65 66 67 67 68 69 70 72\nnd\nPri\n67 68 65 68 72 72 69 71\nce",
+    "key": "",
+    "marks": "4",
+    "page": 30,
+    "bounds": [
+      95,
+      210.25199999999995,
+      350,
+      347.65199999999993
+    ]
+  },
+  {
+    "id": 342,
+    "unit": 4,
+    "question": "Ten competitors in a musical test were ranked by\nthe three judges A, B and C in the following order:\nR 1 6 5 1 3 2 4 9 7 8\nan 0\nk\nb\ny\nA\nR 3 5 8 4 7 1 2 1 6 9\nan 0\nk\nb\ny\nB\nR 6 4 9 8 1 2 3 1 5 7\nan 0\nk\nb\ny\nC\nUsing the rank correlation method, find which pair\nof judges has the nearest approach to common\nliking in music.",
+    "key": "",
+    "marks": "3",
+    "page": 30,
+    "bounds": [
+      95,
+      347.65199999999993,
+      350,
+      715.1419999999999
+    ]
+  },
+  {
+    "id": 343,
+    "unit": 4,
+    "question": "Obtain the rank correlation coefficient from the\nfollowing data:\nx 10 12 18 18 15 40\ny 12 18 25 25 50 25",
+    "key": "",
+    "marks": "3",
+    "page": 30,
+    "bounds": [
+      95,
+      715.1419999999999,
+      350,
+      781.982
+    ]
+  },
+  {
+    "id": 344,
+    "unit": 4,
+    "question": "If the two lines of regression are 4𝑥 − 5𝑦 + 30 = 0\nand 20𝑥 − 9𝑦 − 107 = 0, which of these are lines\nof regression of 𝑥 on 𝑦 and 𝑦 on 𝑥? Find 𝑟 and 𝜎\n𝑦\nwhen 𝜎 = 3.\n𝑥",
+    "key": "0",
+    "marks": "4",
+    "page": 30,
+    "bounds": [
+      95,
+      781.982,
+      350,
+      848.582
+    ]
+  }
+]
