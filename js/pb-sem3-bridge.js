@@ -25,7 +25,7 @@
   function isFsd1() { return window.pbActiveBook === "fsd1"; }
   function maxUnits() {
     if (isFsd1()) return 10;
-    if (isSem3()) return 5;
+    if (isSem3()) return 10;
     return 3;
   }
   function unitList(BOOK) {

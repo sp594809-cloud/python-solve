@@ -1,5 +1,22 @@
-const CACHE_NAME = "ljiet-learning-hub-v8-shared-ui";
+const CACHE_NAME = "ljiet-learning-hub-v9-complete-python";
 const ASSETS = [
+  "./python/",
+  "./python/index.html",
+  "./python/styles.css",
+  "./python/app.js",
+  "./python/runner.js",
+  "./js/python-books-route.js",
+  "./js/sem3-unit1.js",
+  "./js/sem3-unit2.js",
+  "./js/sem3-unit3.js",
+  "./js/sem3-unit4.js",
+  "./js/sem3-unit5.js",
+  "./js/sem3-unit6.js",
+  "./js/sem3-unit7.js",
+  "./js/sem3-unit8.js",
+  "./js/sem3-unit9.js",
+  "./js/sem3-unit10.js",
+  "./js/sem3-practice-book.js",
   "./",
   "./index.html",
   "./loops-adventure.html",

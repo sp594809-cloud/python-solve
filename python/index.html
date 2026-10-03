@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Python Practice Books | LJIET Learning Hub</title>
+  <link rel="icon" href="../icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="../index.html"><span class="brand-icon">Py</span>LJIET Learning Hub</a><nav aria-label="Main navigation"><a href="../index.html">Home</a><a class="current" href="?book=sem3">Python</a><a href="../probability/">P&amp;S</a></nav></header>
+  <main>
+    <section class="intro"><div class="eyebrow">THE COMPLETE PRACTICE COLLECTION</div><h1>Every question.<br>One clear solution.</h1><p>Learn the logic, read the full code, and practise at your pace.<br>Original question numbers. Simple explanations.</p><div class="book-switch" aria-label="Choose semester"><button type="button" data-book="sem1">Semester I <span>210 questions</span></button><button type="button" data-book="sem3">Semester III <span>734 questions</span></button></div></section>
+    <section class="workspace" aria-label="Practice book">
+      <aside class="unit-nav"><div class="aside-heading">CHAPTERS</div><div id="units"></div><div class="aside-note"><strong>Study your way</strong><p>Open an answer when you need it. Mark questions as studied to keep your place.</p><a href="../index.html">← Back to learning hub</a></div></aside>
+      <div class="book-content"><div class="book-heading"><div><div class="eyebrow" id="semesterLabel"></div><h2 id="unitTitle">Loading practice book…</h2><p id="coverage"></p></div><button type="button" id="downloadAll" class="outline">Download code ZIP ↓</button></div>
+        <div class="progress-row"><span id="progressLabel">0 studied</span><progress id="progress" value="0" max="1" aria-label="Study progress"></progress></div>
+        <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Search question, topic, or Q number" aria-label="Search questions"></label><select id="type" aria-label="Filter question type"><option value="all">All questions</option><option value="mcq">MCQs</option><option value="code">Code &amp; algorithms</option></select><button type="button" id="studiedOnly" class="outline" aria-pressed="false">Studied</button></div>
+        <div class="list-info"><span id="resultCount" aria-live="polite"></span><label><input type="checkbox" id="expandAll"> Expand this page</label></div>
+        <div id="questions"></div><nav id="pagination" aria-label="Question pages"></nav>
+        <p class="source-note" id="sourceNote"></p>
+      </div>
+    </section>
+  </main>
+  <footer>Python practice, explained simply. <a href="../index.html">LJIET Learning Hub ↗</a></footer>
+  <div id="status" role="status" aria-live="polite"></div>
+  <script src="../js/practice-book-questions.js"></script>
+  <script src="../js/sem3-unit1.js"></script><script src="../js/sem3-unit2.js"></script><script src="../js/sem3-unit3.js"></script><script src="../js/sem3-unit4.js"></script><script src="../js/sem3-unit5.js"></script><script src="../js/sem3-unit6.js"></script><script src="../js/sem3-unit7.js"></script><script src="../js/sem3-unit8.js"></script><script src="../js/sem3-unit9.js"></script><script src="../js/sem3-unit10.js"></script><script src="../js/sem3-practice-book.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

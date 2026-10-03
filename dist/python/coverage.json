@@ -1,0 +1,18 @@
+{
+  "sem1": {
+    "questions": 210,
+    "source": "Existing repository bank; no Semester I PDF supplied",
+    "units": 3
+  },
+  "sem3": {
+    "questions": 734,
+    "mcqs": 511,
+    "coding": 223,
+    "units": 10,
+    "source": "PB_Python-I_SEM III_2026 (1).pdf",
+    "numberRange": [
+      1,
+      734
+    ]
+  }
+}

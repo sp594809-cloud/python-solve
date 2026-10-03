@@ -1,0 +1,1715 @@
+{
+  "files": {
+    "friends.txt": "Friends are crazy, Friends are naughty !\nFriends are honest, Friends are best !\nFriends are like keygen, friends are like license key !\nWe are nothing without friends, Life is not possible without friends !\n",
+    "file1.txt": "Friends are crazy, Friends are naughty !\nFriends are honest, Friends are best !\n",
+    "file2.txt": "Another line\n",
+    "Story.txt": "INDIA IS MY COUNTRY",
+    "python1.txt": "Friends are honest\n",
+    "python2.txt": "Friends 6re honest\n",
+    "mbox-short.txt": "From a@example.com now\nFrom b@example.com now\nFrom a@example.com later\n",
+    "newlogfile.txt": "Guido Rossum 14:22 14:37\nDennis Ritchie 11:23 13:05\nY M 08:05 10:23\n"
+  },
+  "questions": {
+    "sem1:23": {
+      "inputs": [
+        "5",
+        "4"
+      ],
+      "output": "Area = 20.0\n"
+    },
+    "sem1:24": {
+      "inputs": [
+        "80",
+        "100"
+      ],
+      "output": "Percentage: 80.0\n"
+    },
+    "sem1:25": {
+      "inputs": [
+        "0"
+      ],
+      "output": "0.0\u00b0C = 32.0\u00b0F\n"
+    },
+    "sem1:26": {
+      "inputs": [
+        "0"
+      ],
+      "output": "Zero\n"
+    },
+    "sem1:27": {
+      "inputs": [
+        "2",
+        "5"
+      ],
+      "output": "Smallest is 2.0\n"
+    },
+    "sem1:28": {
+      "inputs": [
+        "2",
+        "5"
+      ],
+      "output": "Swapped: a=5, b=2\n"
+    },
+    "sem1:29": {
+      "inputs": [
+        "2",
+        "8",
+        "4"
+      ],
+      "output": "Maximum is 8.0\n"
+    },
+    "sem1:30": {
+      "inputs": [
+        "2",
+        "8",
+        "4"
+      ],
+      "output": "Descending: 8.0, 4.0, 2.0\n"
+    },
+    "sem1:31": {
+      "inputs": [],
+      "output": "1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99 "
+    },
+    "sem1:32": {
+      "inputs": [
+        "3"
+      ],
+      "output": "Sum of series = 9\n"
+    },
+    "sem1:33": {
+      "inputs": [
+        "153"
+      ],
+      "output": "Armstrong\n"
+    },
+    "sem1:34": {
+      "inputs": [
+        "3700"
+      ],
+      "output": "1 hr, 1 minute, 40 second\n"
+    },
+    "sem1:35": {
+      "inputs": [
+        "2000"
+      ],
+      "output": "Leap Year\n"
+    },
+    "sem1:36": {
+      "inputs": [
+        "5"
+      ],
+      "output": "120\n"
+    },
+    "sem1:37": {
+      "inputs": [
+        "7"
+      ],
+      "output": "0 1 1 2 3 5 8 "
+    },
+    "sem1:38": {
+      "inputs": [
+        "121"
+      ],
+      "output": "Palindrome\n"
+    },
+    "sem1:91": {
+      "inputs": [
+        "2",
+        "3"
+      ],
+      "output": "Sum = 5.0\n"
+    },
+    "sem1:92": {
+      "inputs": [
+        "2"
+      ],
+      "output": "Area = 12.57\n"
+    },
+    "sem1:93": {
+      "inputs": [
+        "3",
+        "4"
+      ],
+      "output": "Area = 6.0\n"
+    },
+    "sem1:94": {
+      "inputs": [
+        "3",
+        "5",
+        "4"
+      ],
+      "output": "Trapezoid Area = 16.0\n"
+    },
+    "sem1:95": {
+      "inputs": [
+        "2",
+        "3"
+      ],
+      "output": "Volume=37.70, Area=62.83\n"
+    },
+    "sem1:96": {
+      "inputs": [
+        "1",
+        "32"
+      ],
+      "output": "0.0\n"
+    },
+    "sem1:97": {
+      "inputs": [
+        "8",
+        "/",
+        "2"
+      ],
+      "output": "4.0\n"
+    },
+    "sem1:98": {
+      "inputs": [
+        "370"
+      ],
+      "output": "years=1, months=0 and days=5\n"
+    },
+    "sem1:99": {
+      "inputs": [
+        "6"
+      ],
+      "output": "minutes = 360 and seconds = 21600\n"
+    },
+    "sem1:100": {
+      "inputs": [
+        "2",
+        "1024"
+      ],
+      "output": "10\n"
+    },
+    "sem1:178": {
+      "inputs": [
+        "7"
+      ],
+      "output": "Number is ODD\n"
+    },
+    "sem1:179": {
+      "inputs": [
+        "-3"
+      ],
+      "output": "Negative\n"
+    },
+    "sem1:180": {
+      "inputs": [
+        "4",
+        "9",
+        "5"
+      ],
+      "output": "9.0\n"
+    },
+    "sem1:181": {
+      "inputs": [
+        "123456789"
+      ],
+      "output": "945\n"
+    },
+    "sem1:182": {
+      "inputs": [
+        "2000"
+      ],
+      "output": "Leap year\n"
+    },
+    "sem1:183": {
+      "inputs": [
+        "10"
+      ],
+      "output": "Sum = 55\n"
+    },
+    "sem1:184": {
+      "inputs": [
+        "10"
+      ],
+      "output": "Average = 5.5\n"
+    },
+    "sem1:185": {
+      "inputs": [
+        "1",
+        "10",
+        "2"
+      ],
+      "output": "4\n"
+    },
+    "sem1:186": {
+      "inputs": [],
+      "output": "0\n1\n2\n4\n5\n"
+    },
+    "sem1:187": {
+      "inputs": [
+        "7"
+      ],
+      "output": "7 x 1 = 7\n7 x 2 = 14\n7 x 3 = 21\n7 x 4 = 28\n7 x 5 = 35\n7 x 6 = 42\n7 x 7 = 49\n7 x 8 = 56\n7 x 9 = 63\n7 x 10 = 70\n"
+    },
+    "sem1:188": {
+      "inputs": [
+        "5"
+      ],
+      "output": "120\n"
+    },
+    "sem1:189": {
+      "inputs": [
+        "7"
+      ],
+      "output": "0 1 1 2 3 5 8 "
+    },
+    "sem1:190": {
+      "inputs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "output": "Average = 5.5\n"
+    },
+    "sem1:191": {
+      "inputs": [
+        "12340"
+      ],
+      "output": "4321\n"
+    },
+    "sem1:192": {
+      "inputs": [
+        "153"
+      ],
+      "output": "Armstrong\n"
+    },
+    "sem1:193": {
+      "inputs": [
+        "17"
+      ],
+      "output": "Prime\n"
+    },
+    "sem1:194": {
+      "inputs": [
+        "1",
+        "20"
+      ],
+      "output": "2 3 5 7 11 13 17 19 "
+    },
+    "sem1:195": {
+      "inputs": [],
+      "output": "* \n* * \n* * * \n* * * * \n"
+    },
+    "sem1:196": {
+      "inputs": [],
+      "output": "* * * * \n* * * \n* * \n* \n"
+    },
+    "sem1:197": {
+      "inputs": [],
+      "output": "1 2 3 4 5 \n1 2 3 4 \n1 2 3 \n1 2 \n1 \n"
+    },
+    "sem1:198": {
+      "inputs": [],
+      "output": "1 \n1 2 \n1 2 3 \n1 2 3 4 \n"
+    },
+    "sem1:199": {
+      "inputs": [],
+      "output": "1 \n2 2 \n3 3 3 \n4 4 4 4 \n"
+    },
+    "sem1:200": {
+      "inputs": [],
+      "output": "* \n# # \n* * * \n# # # # \n"
+    },
+    "sem1:201": {
+      "inputs": [],
+      "output": "1 \n0 1 \n1 0 1 \n0 1 0 1 \n"
+    },
+    "sem1:202": {
+      "inputs": [
+        "A",
+        "1"
+      ],
+      "output": "Gross: 110100.0, Annual: 1321200.0, Tax: 142800.0\n"
+    },
+    "sem1:203": {
+      "inputs": [],
+      "output": "1 2 3 4 5 6 7 8 9 "
+    },
+    "sem1:204": {
+      "inputs": [
+        "80",
+        "65",
+        "98",
+        "70",
+        "93",
+        "130",
+        "95",
+        "50",
+        "40",
+        "75",
+        "72"
+      ],
+      "output": "Invalid score; enter again\nHighest: 98.0\nLowest: 40.0\nAverage: 73.8\nSecond largest: 95.0\nAverage after dropping two lowest: 81.0\n"
+    },
+    "sem1:205": {
+      "inputs": [
+        "9259"
+      ],
+      "output": "0360\n"
+    },
+    "sem1:206": {
+      "inputs": [
+        "2022"
+      ],
+      "output": "2022-04-17\n"
+    },
+    "sem1:207": {
+      "inputs": [
+        "15",
+        "10"
+      ],
+      "output": "GCD = 5\n"
+    },
+    "sem1:208": {
+      "inputs": [
+        "4",
+        "1",
+        "5",
+        "QUIT"
+      ],
+      "output": "Sum: 10.0 Average: 3.3333333333333335\nMinimum: 1.0 Maximum: 5.0\n"
+    },
+    "sem1:209": {
+      "inputs": [
+        "5",
+        "5"
+      ],
+      "output": "Studio rent: 315.0\nApartment rent: 400\n"
+    },
+    "sem1:210": {
+      "inputs": [
+        "-1",
+        "-5",
+        "9",
+        "2",
+        "4",
+        "6",
+        "stop"
+      ],
+      "output": "Even max, min, average: 6 2 4.0\nOdd max, min, average: 9 -5 1.0\n"
+    },
+    "sem3:49": {
+      "inputs": [
+        "2",
+        "3"
+      ],
+      "output": "Sum = 5.0\n"
+    },
+    "sem3:50": {
+      "inputs": [
+        "2"
+      ],
+      "output": "Area = 12.566370614359172\n"
+    },
+    "sem3:51": {
+      "inputs": [
+        "3",
+        "4"
+      ],
+      "output": "Area = 6.0\n"
+    },
+    "sem3:52": {
+      "inputs": [
+        "3",
+        "5",
+        "4"
+      ],
+      "output": "Area = 16.0\n"
+    },
+    "sem3:53": {
+      "inputs": [
+        "2",
+        "3"
+      ],
+      "output": "Volume = 37.69911184307752\nSurface Area = 62.83185307179586\n"
+    },
+    "sem3:54": {
+      "inputs": [
+        "F",
+        "32"
+      ],
+      "output": "Celsius = 0.0\n"
+    },
+    "sem3:55": {
+      "inputs": [
+        "8",
+        "/",
+        "2"
+      ],
+      "output": "4.0\n"
+    },
+    "sem3:56": {
+      "inputs": [
+        "370"
+      ],
+      "output": "years=1, months=0, days=5\n"
+    },
+    "sem3:57": {
+      "inputs": [
+        "6"
+      ],
+      "output": "minutes = 360\nseconds = 21600\n"
+    },
+    "sem3:58": {
+      "inputs": [
+        "2",
+        "1024"
+      ],
+      "output": "10\n"
+    },
+    "sem3:59": {
+      "inputs": [
+        "987"
+      ],
+      "output": "1 2 1 3 7\n"
+    },
+    "sem3:142": {
+      "inputs": [
+        "7"
+      ],
+      "output": "Number is ODD\n"
+    },
+    "sem3:143": {
+      "inputs": [
+        "-3"
+      ],
+      "output": "Negative\n"
+    },
+    "sem3:144": {
+      "inputs": [
+        "4",
+        "9",
+        "5"
+      ],
+      "output": "9.0\n"
+    },
+    "sem3:145": {
+      "inputs": [
+        "3",
+        "3",
+        "3"
+      ],
+      "output": "27\n"
+    },
+    "sem3:146": {
+      "inputs": [
+        "1",
+        "20"
+      ],
+      "output": "1 7 10 13 19 "
+    },
+    "sem3:147": {
+      "inputs": [
+        "123456789"
+      ],
+      "output": "945\n"
+    },
+    "sem3:148": {
+      "inputs": [
+        "2000"
+      ],
+      "output": "Leap year\n"
+    },
+    "sem3:149": {
+      "inputs": [
+        "10"
+      ],
+      "output": "Sum = 55\n"
+    },
+    "sem3:150": {
+      "inputs": [
+        "10"
+      ],
+      "output": "Average = 5.5\n"
+    },
+    "sem3:151": {
+      "inputs": [
+        "1",
+        "10",
+        "2"
+      ],
+      "output": "4\n"
+    },
+    "sem3:152": {
+      "inputs": [],
+      "output": "0\n1\n2\n4\n5\n"
+    },
+    "sem3:153": {
+      "inputs": [
+        "7"
+      ],
+      "output": "7 x 1 = 7\n7 x 2 = 14\n7 x 3 = 21\n7 x 4 = 28\n7 x 5 = 35\n7 x 6 = 42\n7 x 7 = 49\n7 x 8 = 56\n7 x 9 = 63\n7 x 10 = 70\n"
+    },
+    "sem3:154": {
+      "inputs": [
+        "5"
+      ],
+      "output": "120\n"
+    },
+    "sem3:155": {
+      "inputs": [
+        "7"
+      ],
+      "output": "0 1 1 2 3 5 8 "
+    },
+    "sem3:156": {
+      "inputs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "output": "Average = 5.5\n"
+    },
+    "sem3:157": {
+      "inputs": [
+        "12340"
+      ],
+      "output": "4321\n"
+    },
+    "sem3:158": {
+      "inputs": [
+        "153"
+      ],
+      "output": "Armstrong\n"
+    },
+    "sem3:159": {
+      "inputs": [
+        "17"
+      ],
+      "output": "Prime\n"
+    },
+    "sem3:160": {
+      "inputs": [
+        "1",
+        "20"
+      ],
+      "output": "2 3 5 7 11 13 17 19 "
+    },
+    "sem3:161": {
+      "inputs": [],
+      "output": "* \n* * \n* * * \n* * * * \n"
+    },
+    "sem3:162": {
+      "inputs": [],
+      "output": "* * * * \n* * * \n* * \n* \n"
+    },
+    "sem3:163": {
+      "inputs": [],
+      "output": "* \n* * \n* * * \n* * * * \n"
+    },
+    "sem3:164": {
+      "inputs": [],
+      "output": "* * * * \n* * * \n* * \n* \n"
+    },
+    "sem3:165": {
+      "inputs": [],
+      "output": "1 2 3 4 5 \n1 2 3 4 \n1 2 3 \n1 2 \n1 \n"
+    },
+    "sem3:166": {
+      "inputs": [],
+      "output": "1 \n1 2 \n1 2 3 \n1 2 3 4 \n"
+    },
+    "sem3:167": {
+      "inputs": [],
+      "output": "1 \n2 2 \n3 3 3 \n4 4 4 4 \n"
+    },
+    "sem3:168": {
+      "inputs": [],
+      "output": "* \n# # \n* * * \n# # # # \n"
+    },
+    "sem3:169": {
+      "inputs": [],
+      "output": "1 \n0 1 \n1 0 1 \n0 1 0 1 \n"
+    },
+    "sem3:170": {
+      "inputs": [],
+      "output": "1 \n1 2 \n1 2 3 \n1 2 3 4 \n"
+    },
+    "sem3:171": {
+      "inputs": [],
+      "output": "1 \n2 2 \n3 3 3 \n4 4 4 4 \n"
+    },
+    "sem3:172": {
+      "inputs": [],
+      "output": "* \n# # \n* * * \n# # # # \n"
+    },
+    "sem3:173": {
+      "inputs": [
+        "A",
+        "1"
+      ],
+      "output": "Gross Pay: 110100.0\nAnnual income: 1321200.0\nIncome Tax: 142800.0\n"
+    },
+    "sem3:174": {
+      "inputs": [],
+      "output": "1 2 3 4 5 6 7 8 9 "
+    },
+    "sem3:175": {
+      "inputs": [
+        "80",
+        "65",
+        "98",
+        "70",
+        "93",
+        "130",
+        "95",
+        "50",
+        "40",
+        "75",
+        "72"
+      ],
+      "output": "Invalid score; enter again\nHighest: 98.0\nLowest: 40.0\nAverage: 73.8\nSecond largest: 95.0\nAverage after dropping two lowest: 81.0\n"
+    },
+    "sem3:176": {
+      "inputs": [
+        "9259"
+      ],
+      "output": "Encoded: 360\n"
+    },
+    "sem3:177": {
+      "inputs": [
+        "123456"
+      ],
+      "output": "623451\n"
+    },
+    "sem3:178": {
+      "inputs": [],
+      "output": "*                 * \n* *             * * \n* * *         * * * \n* * * *     * * * * \n* * * * * * * * * * \n* * * *     * * * * \n* * *         * * * \n* *             * * \n*                 * \n"
+    },
+    "sem3:179": {
+      "inputs": [
+        "2022"
+      ],
+      "output": "2022-04-17\n"
+    },
+    "sem3:180": {
+      "inputs": [
+        "15",
+        "10"
+      ],
+      "output": "GCD = 5\n"
+    },
+    "sem3:181": {
+      "inputs": [
+        "4",
+        "1",
+        "5",
+        "QUIT"
+      ],
+      "output": "Sum: 10.0 Average: 3.3333333333333335\nMinimum: 1.0 Maximum: 5.0\n"
+    },
+    "sem3:182": {
+      "inputs": [
+        "5",
+        "5"
+      ],
+      "output": "Studio rent: 315.0\nApartment rent: 400\n"
+    },
+    "sem3:183": {
+      "inputs": [
+        "2"
+      ],
+      "output": "111112\n111121\n111211\n112111\n121111\n211111\n"
+    },
+    "sem3:184": {
+      "inputs": [
+        "-1",
+        "-5",
+        "9",
+        "2",
+        "4",
+        "6",
+        "stop"
+      ],
+      "output": "Even max, min, average: 6 2 4.0\nOdd max, min, average: 9 -5 1.0\n"
+    },
+    "sem3:185": {
+      "inputs": [
+        "3",
+        "2",
+        "1",
+        "3",
+        "4",
+        "1",
+        "0",
+        "12"
+      ],
+      "output": "Base: 22000 Travel: 8000 Hotel: 6000\nFood: 4000 Sightseeing: 0 Seasonal: 9000.0\nBefore discount: 49000.0 Discount: 3430.0000000000005 GST: 8202.6\nFinal per person: 53772.6\nFamily total: 161317.8\n"
+    },
+    "sem3:215": {
+      "inputs": [
+        "32",
+        "100"
+      ],
+      "output": "0.0\n212.0\n"
+    },
+    "sem3:216": {
+      "inputs": [
+        "5"
+      ],
+      "output": "120\n"
+    },
+    "sem3:217": {
+      "inputs": [
+        "3",
+        "1",
+        "5"
+      ],
+      "output": "True\n"
+    },
+    "sem3:218": {
+      "inputs": [
+        "10"
+      ],
+      "output": "0 1 1 2 3 5 8 "
+    },
+    "sem3:219": {
+      "inputs": [
+        "2",
+        "5"
+      ],
+      "output": "5.0\n"
+    },
+    "sem3:220": {
+      "inputs": [
+        "3",
+        "4"
+      ],
+      "output": "3 Odd\n4 Even\n"
+    },
+    "sem3:221": {
+      "inputs": [
+        "153"
+      ],
+      "output": "Armstrong\n"
+    },
+    "sem3:222": {
+      "inputs": [],
+      "output": "1\n2\n3\n4\n5\n"
+    },
+    "sem3:223": {
+      "inputs": [
+        "8",
+        "2",
+        "/"
+      ],
+      "output": "4.0\n"
+    },
+    "sem3:224": {
+      "inputs": [
+        "10"
+      ],
+      "output": "Sum and average: (55, 5.5)\n"
+    },
+    "sem3:225": {
+      "inputs": [
+        "5"
+      ],
+      "output": "120\n"
+    },
+    "sem3:226": {
+      "inputs": [
+        "12340"
+      ],
+      "output": "4321\n"
+    },
+    "sem3:227": {
+      "inputs": [
+        "9",
+        "10"
+      ],
+      "output": "Approximate square root: 3.0\n"
+    },
+    "sem3:295": {
+      "inputs": [
+        "madam"
+      ],
+      "output": "Palindrome\n"
+    },
+    "sem3:296": {
+      "inputs": [
+        "hello"
+      ],
+      "output": "5\n"
+    },
+    "sem3:297": {
+      "inputs": [
+        "hello"
+      ],
+      "output": "5\n"
+    },
+    "sem3:298": {
+      "inputs": [
+        "Hello Pyth@n is 100% easy"
+      ],
+      "output": "Uppercase: 2 Lowercase: 14 Digits: 3\n"
+    },
+    "sem3:299": {
+      "inputs": [],
+      "output": "40\n30\n10\n"
+    },
+    "sem3:300": {
+      "inputs": [
+        "hello",
+        "1"
+      ],
+      "output": "hllo\n"
+    },
+    "sem3:301": {
+      "inputs": [
+        "hello"
+      ],
+      "output": "hlo\n"
+    },
+    "sem3:302": {
+      "inputs": [
+        "Hello hello HELLO",
+        "hello"
+      ],
+      "output": "Positions: [0, 6, 12]\nCount: 3\n"
+    },
+    "sem3:303": {
+      "inputs": [
+        "abc123xyz"
+      ],
+      "output": "Sum: 6\nAverage: 2.0\n"
+    },
+    "sem3:304": {
+      "inputs": [
+        "hello"
+      ],
+      "output": "olleh\n"
+    },
+    "sem3:305": {
+      "inputs": [
+        "This is a simple test"
+      ],
+      "output": "This\nis\nsimple\ntest\n"
+    },
+    "sem3:306": {
+      "inputs": [
+        "python"
+      ],
+      "output": "pytHON\n"
+    },
+    "sem3:307": {
+      "inputs": [
+        "python is fun"
+      ],
+      "output": "PythoN IS FuN\n"
+    },
+    "sem3:308": {
+      "inputs": [
+        "abcde"
+      ],
+      "output": "bcd\n"
+    },
+    "sem3:309": {
+      "inputs": [
+        "hello",
+        "olleh"
+      ],
+      "output": "Balanced\n"
+    },
+    "sem3:310": {
+      "inputs": [
+        "a-b-c"
+      ],
+      "output": "['a', 'b', 'c']\n"
+    },
+    "sem3:311": {
+      "inputs": [
+        "1 4 2"
+      ],
+      "output": "Maximum: 4 Minimum: 1\n"
+    },
+    "sem3:312": {
+      "inputs": [
+        "1 2 3 4"
+      ],
+      "output": "(2, 4)\n"
+    },
+    "sem3:313": {
+      "inputs": [
+        "1 2 3 4"
+      ],
+      "output": "Even sum: 6\nOdd sum: 4\n"
+    },
+    "sem3:314": {
+      "inputs": [
+        "12345",
+        "3"
+      ],
+      "output": "45123\n"
+    },
+    "sem3:315": {
+      "inputs": [
+        "Hello Pyth@n is 100% easy"
+      ],
+      "output": "Uppercase: 2 Lowercase: 14 Digits: 3\n"
+    },
+    "sem3:316": {
+      "inputs": [
+        "Ram@_f1234"
+      ],
+      "output": "Valid Password\n"
+    },
+    "sem3:317": {
+      "inputs": [
+        "Mr. Ed"
+      ],
+      "output": "mR. eD\n"
+    },
+    "sem3:318": {
+      "inputs": [
+        "LJIET ENG",
+        "3"
+      ],
+      "output": "OMLHW HQJ\n"
+    },
+    "sem3:319": {
+      "inputs": [
+        "hello",
+        "olleh"
+      ],
+      "output": "Balanced\n"
+    },
+    "sem3:400": {
+      "inputs": [
+        "2 1 6 4"
+      ],
+      "output": "1\n"
+    },
+    "sem3:401": {
+      "inputs": [
+        "5"
+      ],
+      "output": "5 16 8 4 2 1 "
+    },
+    "sem3:431": {
+      "inputs": [
+        "1 2 3 4"
+      ],
+      "output": "[2, 4]\n"
+    },
+    "sem3:432": {
+      "inputs": [
+        "1 2 3 4"
+      ],
+      "output": "4\n"
+    },
+    "sem3:433": {
+      "inputs": [
+        "1 2 3 4"
+      ],
+      "output": "3\n"
+    },
+    "sem3:434": {
+      "inputs": [
+        "10 0 3 -4 2 1"
+      ],
+      "output": "4\n"
+    },
+    "sem3:435": {
+      "inputs": [
+        "1 2 3 4"
+      ],
+      "output": "[4, 2, 3, 1]\n"
+    },
+    "sem3:436": {
+      "inputs": [
+        "1 2 3 4"
+      ],
+      "output": "10\n"
+    },
+    "sem3:437": {
+      "inputs": [
+        "1 2 3 4"
+      ],
+      "output": "10\n"
+    },
+    "sem3:438": {
+      "inputs": [
+        "1 2 3 4"
+      ],
+      "output": "[4, 3, 2, 1]\n"
+    },
+    "sem3:439": {
+      "inputs": [
+        "{\"a\":1}",
+        "{\"b\":2}"
+      ],
+      "output": "{'a': 1, 'b': 2}\n"
+    },
+    "sem3:440": {
+      "inputs": [
+        "2 4 -6 -9 11 -12 14 -5 17"
+      ],
+      "output": "Positive sum: 48\nNegative sum: -32\n"
+    },
+    "sem3:441": {
+      "inputs": [
+        "1 -2 3 -4"
+      ],
+      "output": "[-2, -4, 1, 3]\n"
+    },
+    "sem3:442": {
+      "inputs": [
+        "13 19 247 1"
+      ],
+      "output": "[13, 19, 247]\n"
+    },
+    "sem3:443": {
+      "inputs": [
+        "4 6 6 4 2 2 4 8 5 8"
+      ],
+      "output": "{4: [4, 4, 4], 6: [6, 6], 2: [2, 2], 8: [8, 8], 5: [5]}\n"
+    },
+    "sem3:444": {
+      "inputs": [
+        "3",
+        "1 2 3",
+        "4 5 6",
+        "7 8 9"
+      ],
+      "output": "7 4 1\n8 5 2\n9 6 3\n"
+    },
+    "sem3:445": {
+      "inputs": [
+        "python pythonprogramming pythonlist"
+      ],
+      "output": "python\n"
+    },
+    "sem3:446": {
+      "inputs": [
+        "secret message",
+        "4"
+      ],
+      "output": "Encrypted: seegetsec srma\nDecrypted: secret message\n{'s': ['secret'], 'm': ['message']}\n"
+    },
+    "sem3:447": {
+      "inputs": [
+        "1 2 3"
+      ],
+      "output": "1 2 3\n1 3 2\n2 1 3\n2 3 1\n3 1 2\n3 2 1\nUnique count: 3\nProduct: 6\nSum: 6\n"
+    },
+    "sem3:448": {
+      "inputs": [],
+      "output": "('1', '2', '3', '4')\n[10, 20, 30, 40]\n24\n2\n1\n-1\n"
+    },
+    "sem3:449": {
+      "inputs": [
+        "2 4 -6 -9 11 -12 14 -5 17"
+      ],
+      "output": "Positive sum: 48\nNegative sum: -32\n"
+    },
+    "sem3:450": {
+      "inputs": [
+        "Password1"
+      ],
+      "output": "Valid\n"
+    },
+    "sem3:451": {
+      "inputs": [
+        "Dog the quick brown fox jumps over the lazy dog"
+      ],
+      "output": "{'dog': 2, 'the': 2, 'quick': 1, 'brown': 1, 'fox': 1, 'jumps': 1, 'over': 1, 'lazy': 1}\n"
+    },
+    "sem3:452": {
+      "inputs": [
+        "R@m@3fa1tu9e$"
+      ],
+      "output": "Valid Password\nnum = 319\nthree hundred and nineteen\n"
+    },
+    "sem3:453": {
+      "inputs": [
+        "abc xyz aba 2112 123451 12345"
+      ],
+      "output": "3\n"
+    },
+    "sem3:454": {
+      "inputs": [
+        "5 5 2 5 8"
+      ],
+      "output": "Original: [5, 5, 2, 5, 8] Index: 0 After removal: [5, 2, 5, 8]\nOriginal: [5, 5, 2, 5, 8] Index: 1 After removal: [5, 2, 5, 8]\nSpecial elements: 2\n"
+    },
+    "sem3:455": {
+      "inputs": [
+        "Hi hello how are you"
+      ],
+      "output": "{'H': ['Hi'], 'h': ['hello', 'how'], 'a': ['are'], 'y': ['you']}\n"
+    },
+    "sem3:456": {
+      "inputs": [
+        "student0",
+        "Student@0",
+        "New@Password1"
+      ],
+      "output": "{'student0': 'New@Password1', 'student1': 'Student@11', 'student2': 'Student@121', 'student3': 'Student@052', 'student4': 'Student@01278', 'student5': 'Student@0125', 'Student6': 'Student@042', 'student7': 'Student@07800', 'student8': 'Student@012'}\nstudent1 Student@11\nstudent2 Student@121\nstudent3 Student@052\nStudent6 Student@042\nstudent8 Student@012\nstudent5 Student@0125\nstudent0 New@Password1\nstudent4 Student@01278\nstudent7 Student@07800\n"
+    },
+    "sem3:457": {
+      "inputs": [
+        "1 13 2 3 4"
+      ],
+      "output": "8\n"
+    },
+    "sem3:458": {
+      "inputs": [
+        "1 2 3 4 5",
+        "2"
+      ],
+      "output": "[3, 4, 5, 1, 2]\n"
+    },
+    "sem3:459": {
+      "inputs": [
+        "2 4 6 8 10"
+      ],
+      "output": "[2, 10, 4, 8, 6]\n"
+    },
+    "sem3:460": {
+      "inputs": [
+        "Computers 2025 are far more powerful and efficient!!"
+      ],
+      "output": "sretupmoC 5202 era raf erom lufrewop dna !!tneiciffe\n{'Computers': 9, '2025': 4, 'are': 3, 'far': 3, 'more': 4, 'powerful': 8, 'and': 3, 'efficient!!': 11}\n['Computers', 'powerful', 'efficient!!']\n{'vowels': 16, 'consonants': 23, 'digits': 4, 'special': 9}\nHighest categories: ['consonants']\nMost unique letters: ['computers']\n"
+    },
+    "sem3:461": {
+      "inputs": [
+        "{[()]}"
+      ],
+      "output": "Valid\n"
+    },
+    "sem3:470": {
+      "inputs": [
+        "Krish",
+        "19"
+      ],
+      "output": ""
+    },
+    "sem3:471": {
+      "inputs": [
+        "Ahmedabad Surat"
+      ],
+      "output": "Ahmedabad Surat\n"
+    },
+    "sem3:472": {
+      "inputs": [],
+      "output": "Lines: 4\n"
+    },
+    "sem3:473": {
+      "inputs": [],
+      "output": "Friends are crazy, Friends are naughty !\nFriends are like keygen, friends are like license key !\n"
+    },
+    "sem3:474": {
+      "inputs": [
+        "friends.txt"
+      ],
+      "output": "Words: 36\nStatements: 4\n"
+    },
+    "sem3:475": {
+      "inputs": [
+        "friends.txt"
+      ],
+      "output": ""
+    },
+    "sem3:476": {
+      "inputs": [
+        "file1.txt",
+        "copy.txt"
+      ],
+      "output": ""
+    },
+    "sem3:477": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:478": {
+      "inputs": [],
+      "output": "Lines: 4\n"
+    },
+    "sem3:479": {
+      "inputs": [
+        "Friends",
+        "."
+      ],
+      "output": "friends.txt 1 Friends are crazy, Friends are naughty !\nfriends.txt 2 Friends are honest, Friends are best !\nfriends.txt 3 Friends are like keygen, friends are like license key !\npython1.txt 1 Friends are honest\nfile1.txt 1 Friends are crazy, Friends are naughty !\nfile1.txt 2 Friends are honest, Friends are best !\npython2.txt 1 Friends 6re honest\n"
+    },
+    "sem3:480": {
+      "inputs": [
+        "friends.txt"
+      ],
+      "output": "Friends are crazy, Friends are naughty !\nFriends are honest, Friends are best !\nFriends are like keygen, friends are like license key !\nWe are nothing without friends, Life is not possible without friends !\n"
+    },
+    "sem3:481": {
+      "inputs": [],
+      "output": "! tseb era sdneirF ,tsenoh era sdneirF\n! ythguan era sdneirF ,yzarc era sdneirF\n! TSEB ERA SDNEIRF ,TSENOH ERA SDNEIRF\n! YTHGUAN ERA SDNEIRF ,YZARC ERA SDNEIRF\nVowels = 22\n! YTHGUAN ERA SDNEIRF ,YZARC ERA SDNEIRF\n"
+    },
+    "sem3:482": {
+      "inputs": [
+        "friends.txt"
+      ],
+      "output": "[]\n"
+    },
+    "sem3:483": {
+      "inputs": [],
+      "output": "AIDNI SI MY COUNTRY\n"
+    },
+    "sem3:484": {
+      "inputs": [
+        "friends.txt"
+      ],
+      "output": "Spaces: 32\nWords: 36\nCharacters: 207\n"
+    },
+    "sem3:485": {
+      "inputs": [],
+      "output": "Friends are crazy, Friends are naughty !\nFriends are honest, Friends are best !\n\n"
+    },
+    "sem3:486": {
+      "inputs": [
+        "Hi Friends",
+        "how are you",
+        "I am fine",
+        "END"
+      ],
+      "output": "Hi Friends\nI am fine\n"
+    },
+    "sem3:487": {
+      "inputs": [],
+      "output": "Line: 1 Column: 9\n"
+    },
+    "sem3:488": {
+      "inputs": [],
+      "output": "{'a@example.com': 2, 'b@example.com': 1}\na@example.com 2\n"
+    },
+    "sem3:489": {
+      "inputs": [],
+      "output": "GR 14:22 14:37\nDR 11:23 13:05\nYM 08:05 10:23\nUsers online at least 1 hour:\nDR 11:23 13:05 (1h 42m)\nYM 08:05 10:23 (2h 18m)\n"
+    },
+    "sem3:502": {
+      "inputs": [
+        "Hello World"
+      ],
+      "output": "HELLO WORLD\nhello world\ndlroW olleH\n11\n"
+    },
+    "sem3:503": {
+      "inputs": [],
+      "output": "Current directory: /tmp/python-question-zjwtvgy4\nContents: ['subdirectory']\n"
+    },
+    "sem3:504": {
+      "inputs": [
+        "8",
+        "2"
+      ],
+      "output": "10.0 6.0 16.0\n4.0\n"
+    },
+    "sem3:505": {
+      "inputs": [],
+      "output": "This\n"
+    },
+    "sem3:536": {
+      "inputs": [],
+      "output": "Krish 80\nPatel 95\n"
+    },
+    "sem3:537": {
+      "inputs": [],
+      "output": "20\n"
+    },
+    "sem3:538": {
+      "inputs": [
+        "2"
+      ],
+      "output": "Area: 12.566370614359172 Perimeter: 12.566370614359172\n"
+    },
+    "sem3:539": {
+      "inputs": [
+        "2"
+      ],
+      "output": "Result: 5.0\n"
+    },
+    "sem3:540": {
+      "inputs": [
+        "19"
+      ],
+      "output": "Age: 19\n"
+    },
+    "sem3:541": {
+      "inputs": [
+        "19"
+      ],
+      "output": "19\n"
+    },
+    "sem3:542": {
+      "inputs": [
+        "3",
+        "A",
+        "1",
+        "100",
+        "100",
+        "B",
+        "2",
+        "90",
+        "90",
+        "C",
+        "3",
+        "80",
+        "80",
+        "2",
+        "2",
+        "3",
+        "2"
+      ],
+      "output": "{'name': 'A', 'roll': 1, 'marks1': 100.0, 'marks2': 100.0}\n{'name': 'B', 'roll': 2, 'marks1': 90.0, 'marks2': 90.0}\n{'name': 'C', 'roll': 3, 'marks1': 80.0, 'marks2': 80.0}\nFound: {'name': 'B', 'roll': 2, 'marks1': 90.0, 'marks2': 90.0}\nDeleted: True\n{'name': 'A', 'roll': 1, 'marks1': 100.0, 'marks2': 100.0}\n{'name': 'C', 'roll': 3, 'marks1': 80.0, 'marks2': 80.0}\nUpdated: True\n{'name': 'A', 'roll': 1, 'marks1': 100.0, 'marks2': 100.0}\n{'name': 'C', 'roll': 2, 'marks1': 80.0, 'marks2': 80.0}\n"
+    },
+    "sem3:543": {
+      "inputs": [],
+      "output": "Krish 1\nsmall ['corn'] ['mozzarella'] 120\nlarge ['olives', 'onion'] ['feta'] 320\nTotal: 440\n"
+    },
+    "sem3:544": {
+      "inputs": [
+        "apple banana find dictionary set tuple list malayalam nayan grind apricot"
+      ],
+      "output": "['apple', 'tuple', 'nayan', 'grind']\n['apple', 'apricot']\n['find', 'grind']\n['malayalam', 'nayan']\n['banana']\n['set', 'tuple', 'list']\n"
+    },
+    "sem3:545": {
+      "inputs": [
+        "3",
+        "milk",
+        "30",
+        "apple",
+        "35",
+        "gems",
+        "40",
+        "2",
+        "3",
+        "4"
+      ],
+      "output": "milk 30.0\napple 35.0\ngems 40.0\nITEM PRICE QUANTITY SUBTOTAL\nmilk 30.0 2 60.0\napple 35.0 3 105.0\ngems 40.0 4 160.0\nTotal: 325.0\n"
+    },
+    "sem3:546": {
+      "inputs": [],
+      "output": "2.23606797749979\nPoint(2, 3)\nPoint(2, -3)\n7.0710678118654755\n"
+    },
+    "sem3:547": {
+      "inputs": [],
+      "output": "Song One Artist A Compilation\nSong Two Artist B Compilation\n"
+    },
+    "sem3:548": {
+      "inputs": [],
+      "output": "1\n5\n4\n[3, 2]\n"
+    },
+    "sem3:549": {
+      "inputs": [
+        "1",
+        "1234",
+        "1000",
+        "3",
+        "1234",
+        "5",
+        "1234",
+        "500",
+        "4",
+        "1234",
+        "200",
+        "3",
+        "1234",
+        "0"
+      ],
+      "output": "1000.0\n1300.0\n"
+    },
+    "sem3:550": {
+      "inputs": [],
+      "output": "123 Krish 1000\n123 Krish 1300\n"
+    },
+    "sem3:647": {
+      "inputs": [],
+      "output": "Python 1 ['Author A'] Publisher 1234567890 2026\nCourse: FCSP\n"
+    },
+    "sem3:648": {
+      "inputs": [],
+      "output": "A 40000\nSubject: Python\nB 30000\nDepartment: Administration\n"
+    },
+    "sem3:649": {
+      "inputs": [],
+      "output": "Guide: Dr C c@example.com\nA a@example.com\nB b@example.com\nGuide: Dr C c@example.com\nB b@example.com\n"
+    },
+    "sem3:650": {
+      "inputs": [],
+      "output": "C initialized\nA initialized\nB initialized\n['C', 'A', 'B', 'object']\n"
+    },
+    "sem3:651": {
+      "inputs": [],
+      "output": "Point(3, -4)\n"
+    },
+    "sem3:652": {
+      "inputs": [],
+      "output": "5/6\n"
+    },
+    "sem3:653": {
+      "inputs": [],
+      "output": "1/2\n"
+    },
+    "sem3:654": {
+      "inputs": [
+        "0",
+        "0",
+        "3",
+        "4"
+      ],
+      "output": "5.0\n"
+    },
+    "sem3:655": {
+      "inputs": [
+        "0",
+        "0",
+        "3",
+        "6"
+      ],
+      "output": "2.0\n"
+    },
+    "sem3:656": {
+      "inputs": [
+        "1",
+        "A",
+        "19",
+        "80",
+        "2",
+        "B",
+        "20",
+        "80"
+      ],
+      "output": "1 A 19 80.0\n2 B 20 80.0\n"
+    },
+    "sem3:657": {
+      "inputs": [],
+      "output": "True False\n"
+    },
+    "sem3:658": {
+      "inputs": [],
+      "output": "False\nTrue\nTrue\n"
+    },
+    "sem3:659": {
+      "inputs": [],
+      "output": "[[100 110]\n [120 130]\n [140 150]\n [160 170]\n [180 190]]\n"
+    },
+    "sem3:660": {
+      "inputs": [],
+      "output": "[33 66 99]\n"
+    },
+    "sem3:661": {
+      "inputs": [],
+      "output": "[[ 6 12]\n [30 36]\n [54 60]]\n"
+    },
+    "sem3:662": {
+      "inputs": [],
+      "output": "Columns ordered by second row: [[73 43 34]\n [12 22 82]\n [66 94 53]]\nRows ordered by second column: [[82 22 12]\n [34 43 73]\n [53 94 66]]\n"
+    },
+    "sem3:663": {
+      "inputs": [],
+      "output": "[82 94 73]\n[34 12 53]\n"
+    },
+    "sem3:664": {
+      "inputs": [],
+      "output": "Fahrenheit: [ 0.   12.   45.21 34.   99.91 32.  ]\nCelsius: [-17.77777778 -11.11111111   7.33888889   1.11111111  37.72777778\n   0.        ]\nSorted: [-17.77777778 -11.11111111   0.           1.11111111   7.33888889\n  37.72777778]\nPosition of zero: (array([2]),)\n"
+    },
+    "sem3:665": {
+      "inputs": [],
+      "output": "[[ 1  2  3  4]\n [ 5  6  7  8]\n [ 9 10 11 12]]\n[[[ 1  2  3]\n  [ 4  5  6]]\n\n [[ 7  8  9]\n  [10 11 12]]]\n"
+    },
+    "sem3:666": {
+      "inputs": [],
+      "output": "Call received by Respondent 0\nAssigned: True\nCall ended\n"
+    },
+    "sem3:667": {
+      "inputs": [],
+      "output": "5500.0\n500\n"
+    },
+    "sem3:668": {
+      "inputs": [],
+      "output": "20 6 12.566370614359172\nTrue\n['Circle', 'Shape', 'ABC', 'object']\n"
+    },
+    "sem3:669": {
+      "inputs": [],
+      "output": "35000 29000 10000\nTrue\n"
+    },
+    "sem3:670": {
+      "inputs": [],
+      "output": "Hello from Parent\nHello from Child\n"
+    },
+    "sem3:671": {
+      "inputs": [],
+      "output": "2 3 [[0, 0, 0], [0, 0, 0]]\n"
+    },
+    "sem3:672": {
+      "inputs": [],
+      "output": "['Z', 'K1', 'C', 'K3', 'A', 'K2', 'B', 'D', 'E', 'object']\n"
+    },
+    "sem3:673": {
+      "inputs": [
+        "1",
+        "John",
+        "25000"
+      ],
+      "output": "ID: 1 Name: John Basic: 25000.0\nDA: 8750.0 HRA: 4250.0 PF: 3000.0 Total perks: 10000.0\nTotal salary: 35000.0\n"
+    },
+    "sem3:704": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:705": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:706": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:707": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:708": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:709": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:710": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:711": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:712": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:713": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:714": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:715": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:716": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:717": {
+      "inputs": [
+        "100",
+        "200",
+        "300",
+        "400",
+        "500"
+      ],
+      "output": ""
+    },
+    "sem3:718": {
+      "inputs": [
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80",
+        "80"
+      ],
+      "output": ""
+    },
+    "sem3:719": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:720": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:721": {
+      "inputs": [],
+      "output": "[[13 10  9 33 41]\n [63 46 90 42 87]\n [39 76 13 29 72]\n [82  9 29 78 36]\n [67 61 59 36 92]]\n[[13 10  9 33 41]\n [63 46 90 42 87]\n [39 76 13 29 72]\n [82  9 29 78 36]\n [67 61 59 36 92]\n [77 83 98 95 89]\n [92 71 52 61 53]]\n[[ 13  10   9  33  41 106]\n [ 63  46  90  42  87 328]\n [ 39  76  13  29  72 229]\n [ 82   9  29  78  36 234]\n [ 67  61  59  36  92 315]\n [ 77  83  98  95  89 442]\n [ 92  71  52  61  53 329]]\n"
+    },
+    "sem3:722": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:723": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:724": {
+      "inputs": [],
+      "output": "Maximum T20-3: 99\nMinimum Yuvraj: 13\n[[ 31  12  19  53 115]\n [ 67  48  95  83 293]\n [ 59  67  13  59 198]\n [ 62  29  99  88 278]\n [ 87  91  69  76 323]]\n"
+    },
+    "sem3:725": {
+      "inputs": [
+        "3",
+        "4",
+        "0 1 2 3",
+        "4 5 6 7",
+        "8 9 10 11",
+        "0",
+        "1"
+      ],
+      "output": "Original: [[ 0  1  2  3]\n [ 4  5  6  7]\n [ 8  9 10 11]]\nAfter swapping: [[ 1  0  2  3]\n [ 5  4  6  7]\n [ 9  8 10 11]]\n"
+    },
+    "sem3:726": {
+      "inputs": [],
+      "output": "Weekly average duration: [45.714285714285715, 47.142857142857146, 46.42857142857143, 47.857142857142854]\nWeekly average calories: [227.14285714285714, 234.28571428571428, 230.0, 237.14285714285714]\n"
+    },
+    "sem3:727": {
+      "inputs": [],
+      "output": ""
+    },
+    "sem3:728": {
+      "inputs": [],
+      "output": "Maximum Q4: 38\n[[12 18 15 20]\n [22 25 28 30]\n [10 14 13 16]\n [30 35 33 38]\n [18 20 22 25]\n [25 28 30 35]\n [14 18 20 22]]\nMinimum product 7: 14\n[[ 12  18  15  20  65]\n [ 22  25  28  30 105]\n [ 10  14  13  16  53]\n [ 30  35  33  38 136]\n [ 18  20  22  25  85]\n [ 25  28  30  35 118]\n [ 14  18  20  22  74]]\n"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "programs": 282,
+  "compiled": 282,
+  "sampleExecutionsPassed": 276,
+  "streamlitSyntaxOnly": 6,
+  "expectedOutputAssertions": 24,
+  "domChecks": {
+    "status": "passed",
+    "checks": [
+      "734 questions and 10 units",
+      "20-question pagination",
+      "search Q734",
+      "complete Streamlit solution",
+      "guarded exponent solution",
+      "local study progress",
+      "MCQ grading/reveal",
+      "Semester I algorithm and SVG",
+      "all unit10 coding questions",
+      "unit ZIP",
+      "multiple-file ZIP",
+      "escaped search/reset",
+      "original source figures",
+      "transposition encryption",
+      "correct odd indices"
+    ]
+  },
+  "limitations": [
+    "Six Streamlit programs were syntax checked; Streamlit is not installed in the validation environment.",
+    "The browser preview timed out, so visual layout and the Pyodide browser runner were not verified.",
+    "Semester I coverage is based on the repository bank; no Semester I source PDF was supplied."
+  ]
+}
