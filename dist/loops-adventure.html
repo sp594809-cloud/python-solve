@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌲 Forest of Loops – Python Adventure</title>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
+  <style>
+    :root {
+      --bg: #0c1222;
+      --card: #151c2e;
+      --primary: #22c55e;
+      --accent: #a3e635;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --purple: #8b5cf6;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(ellipse at 20% 50%, rgba(34,197,94,0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(139,92,246,0.08) 0%, transparent 50%);
+    }
+
+    /* HEADER */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 28px;
+      background: rgba(12,18,34,0.9);
+      border-bottom: 1px solid #1e293b;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+    }
+    .location { font-size: 1.15rem; font-weight: 700; }
+    .location span { color: var(--primary); }
+    .stats { display: flex; gap: 18px; font-size: 0.9rem; color: var(--muted); }
+    .stats strong { color: var(--accent); }
+
+    /* MAIN LAYOUT */
+    .adventure {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px 80px;
+    }
+
+    /* MISSION INTRO */
+    .mission-card {
+      background: linear-gradient(135deg, #14532d 0%, #052e16 100%);
+      border: 1px solid #166534;
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+    .mission-card h1 { font-size: 1.8rem; margin-bottom: 8px; }
+    .mission-card p { color: #86efac; font-size: 1.05rem; line-height: 1.5; }
+
+    /* PROGRESS PATH */
+    .path {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 36px;
+      position: relative;
+      padding: 0 10px;
+    }
+    .path::before {
+      content: '';
+      position: absolute;
+      top: 22px;
+      left: 40px;
+      right: 40px;
+      height: 4px;
+      background: #1e293b;
+      z-index: 0;
+    }
+    .path-step {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #1e293b;
+      border: 3px solid #334155;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .path-step.done { background: var(--primary); border-color: var(--primary); color: #052e16; }
+    .path-step.active { background: var(--accent); border-color: var(--accent); color: #052e16; transform: scale(1.15); box-shadow: 0 0 20px rgba(163,230,53,0.4); }
+    .path-step.locked { opacity: 0.4; cursor: not-allowed; }
+
+    /* CHALLENGE CARD */
+    .challenge {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 32px;
+      border: 1px solid #1e293b;
+      min-height: 420px;
+      animation: fadeIn 0.35s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .challenge-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .challenge-type {
+      background: rgba(34,197,94,0.15);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 99px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .challenge h2 { font-size: 1.4rem; margin-bottom: 8px; }
+    .challenge .desc { color: var(--muted); margin-bottom: 24px; line-height: 1.5; }
+
+    /* FLIP CARD */
+    .flip-area { perspective: 1200px; margin: 24px 0; }
+    .flip-card {
+      width: 100%;
+      min-height: 180px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+      cursor: pointer;
+    }
+    .flip-card.flipped { transform: rotateY(180deg); }
+    .flip-face {
+      position: absolute;
+      width: 100%;
+      min-height: 180px;
+      backface-visibility: hidden;
+      border-radius: 16px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .flip-front {
+      background: linear-gradient(145deg, #1e293b, #0f172a);
+      border: 2px solid #334155;
+    }
+    .flip-back {
+      background: linear-gradient(145deg, #14532d, #052e16);
+      border: 2px solid #166534;
+      transform: rotateY(180deg);
+    }
+    .flip-front h3 { font-size: 1.25rem; margin-bottom: 12px; }
+    .flip-hint { font-size: 0.9rem; color: var(--muted); margin-top: 16px; }
+
+    /* OPTIONS */
+    .options { list-style: none; margin: 16px 0; }
+    .options li {
+      background: #0f172a;
+      margin: 10px 0;
+      padding: 16px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .options li:hover { border-color: var(--primary); }
+    .options li.selected { border-color: var(--primary); background: rgba(34,197,94,0.1); }
+    .options li.correct { border-color: var(--primary); background: rgba(34,197,94,0.2); }
+    .options li.wrong { border-color: var(--danger); background: rgba(239,68,68,0.15); }
+
+    /* ARRANGE STEPS */
+    .steps-area {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .step-item {
+      background: #0f172a;
+      padding: 14px 18px;
+      border-radius: 12px;
+      border: 2px solid #334155;
+      cursor: grab;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: all 0.2s;
+    }
+    .step-item:active { cursor: grabbing; }
+    .step-item .num {
+      background: #334155;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .step-item.correct-pos { border-color: var(--primary); }
+
+    /* VISUALIZER */
+    .loop-viz {
+      background: #0f172a;
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .loop-status { font-size: 1.2rem; color: var(--accent); margin-bottom: 16px; min-height: 28px; }
+    .loop-track {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      min-height: 160px;
+    }
+    .loop-node {
+      background: #1e293b;
+      border: 2px solid #334155;
+      border-radius: 12px;
+      padding: 10px 24px;
+      font-weight: 600;
+      opacity: 0.35;
+      transition: all 0.35s;
+    }
+    .loop-node.active {
+      opacity: 1;
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #052e16;
+      transform: scale(1.06);
+      box-shadow: 0 0 24px rgba(34,197,94,0.4);
+    }
+    .viz-controls { display: flex; gap: 12px; justify-content: center; margin-top: 20px; }
+    .viz-controls button {
+      background: var(--primary);
+      color: #052e16;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .viz-controls button.secondary { background: #334155; color: var(--text); }
+
+    /* CODE AREA */
+    .code-box {
+      background: #020617;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #1e293b;
+      margin: 16px 0;
+    }
+    .code-box textarea {
+      width: 100%;
+      min-height: 130px;
+      background: transparent;
+      color: #e2e8f0;
+      border: none;
+      padding: 16px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      resize: vertical;
+    }
+    .code-box textarea:focus { outline: none; }
+    .code-actions {
+      display: flex;
+      gap: 10px;
+      padding: 12px 16px;
+      background: #0f172a;
+      border-top: 1px solid #1e293b;
+    }
+    .output {
+      background: #020617;
+      color: #86efac;
+      padding: 14px 16px;
+      font-family: monospace;
+      font-size: 0.9rem;
+      min-height: 50px;
+      white-space: pre-wrap;
+      border-top: 1px solid #1e293b;
+    }
+
+    /* BUTTONS */
+    .btn {
+      background: var(--primary);
+      color: #052e16;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 99px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(34,197,94,0.35); }
+    .btn.secondary { background: #334155; color: var(--text); }
+    .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; box-shadow: none; }
+    .nav-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 28px;
+    }
+
+    /* BOSS */
+    .boss-banner {
+      background: linear-gradient(135deg, #7f1d1d, #450a0a);
+      border: 1px solid #991b1b;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .boss-banner h3 { color: #fca5a5; font-size: 1.3rem; }
+
+    /* FEEDBACK */
+    .feedback {
+      margin-top: 16px;
+      padding: 16px;
+      border-radius: 12px;
+      display: none;
+    }
+    .feedback.show { display: block; }
+    .feedback.good { background: rgba(34,197,94,0.15); border: 1px solid var(--primary); }
+    .feedback.bad { background: rgba(239,68,68,0.12); border: 1px solid var(--danger); }
+
+    /* SKILL BAR */
+    .skill-panel {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      border: 1px solid #1e293b;
+    }
+    .skill-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 8px 0;
+      font-size: 0.9rem;
+    }
+    .skill-bar {
+      flex: 1;
+      height: 8px;
+      background: #1e293b;
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .skill-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border-radius: 99px;
+      transition: width 0.6s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="location">🌲 <span>Forest of Loops</span></div>
+    <div class="stats">
+      <div>⭐ XP: <strong id="xp">0</strong></div>
+      <div>🧠 Loop Skill: <strong id="skill">0%</strong></div>
+    </div>
+  </div>
+
+  <div class="adventure">
+    <!-- MISSION -->
+    <div class="mission-card" id="missionIntro">
+      <h1>🌲 Forest of Loops</h1>
+      <p>A robot needs your help to collect 10 apples.<br>
+         It can only do the same action again and again…<br>
+         <strong>Can you teach it how to use a loop?</strong></p>
+      <br>
+      <button class="btn" onclick="startAdventure()">Start Mission →</button>
+    </div>
+
+    <!-- SKILL PANEL (hidden at start) -->
+    <div class="skill-panel" id="skillPanel" style="display:none">
+      <div style="font-size:0.85rem;color:var(--muted);margin-bottom:6px">Your Loop Skills</div>
+      <div class="skill-row">
+        <span style="width:110px">Understanding</span>
+        <div class="skill-bar"><div class="skill-fill" id="skUnderstand" style="width:0%"></div></div>
+      </div>
+      <div class="skill-row">
+        <span style="width:110px">Prediction</span>
+        <div class="skill-bar"><div class="skill-fill" id="skPredict" style="width:0%"></div></div>
+      </div>
+      <div class="skill-row">
+        <span style="width:110px">Sequencing</span>
+        <div class="skill-bar"><div class="skill-fill" id="skSequence" style="width:0%"></div></div>
+      </div>
+      <div class="skill-row">
+        <span style="width:110px">Coding</span>
+        <div class="skill-bar"><div class="skill-fill" id="skCode" style="width:0%"></div></div>
+      </div>
+    </div>
+
+    <!-- PATH -->
+    <div class="path" id="path" style="display:none">
+      <div class="path-step active" data-step="0" title="Understand">1</div>
+      <div class="path-step locked" data-step="1" title="Choose Logic">2</div>
+      <div class="path-step locked" data-step="2" title="Arrange">3</div>
+      <div class="path-step locked" data-step="3" title="Visualize">4</div>
+      <div class="path-step locked" data-step="4" title="Predict">5</div>
+      <div class="path-step locked" data-step="5" title="Code">6</div>
+      <div class="path-step locked" data-step="6" title="Boss">👑</div>
+    </div>
+
+    <!-- CHALLENGE AREA -->
+    <div class="challenge" id="challengeArea" style="display:none">
+      <!-- filled by JS -->
+    </div>
+  </div>
+
+  <script>
+    // ============================================================
+    // FOREST OF LOOPS – Complete Concept Experience
+    // ============================================================
+
+    let currentStep = 0;
+    let xp = 0;
+    let skills = { understand: 0, predict: 0, sequence: 0, code: 0 };
+    let pyodide = null;
+
+    const STEPS = [
+      { id: "understand", type: "Concept Card", title: "What is a loop?" },
+      { id: "logic", type: "Logic Card", title: "Which action should repeat?" },
+      { id: "arrange", type: "Arrange the Steps", title: "Put the steps in order" },
+      { id: "visualize", type: "Visualizer", title: "Watch the loop work" },
+      { id: "predict", type: "Predict Card", title: "What will this print?" },
+      { id: "code", type: "Code Challenge", title: "Teach the robot" },
+      { id: "boss", type: "👑 Boss Battle", title: "Multiplication Table" }
+    ];
+
+    async function initPy() {
+      if (pyodide) return;
+      try {
+        pyodide = await loadPyodide();
+      } catch(e) { console.log("Pyodide loading..."); }
+    }
+    initPy();
+
+    function startAdventure() {
+      document.getElementById("missionIntro").style.display = "none";
+      document.getElementById("skillPanel").style.display = "block";
+      document.getElementById("path").style.display = "flex";
+      document.getElementById("challengeArea").style.display = "block";
+      renderStep(0);
+    }
+
+    function addXP(amount, skill) {
+      xp += amount;
+      document.getElementById("xp").textContent = xp;
+      if (skill && skills[skill] < 100) {
+        skills[skill] = Math.min(100, skills[skill] + amount * 2);
+        updateSkills();
+      }
+    }
+
+    function updateSkills() {
+      document.getElementById("skUnderstand").style.width = skills.understand + "%";
+      document.getElementById("skPredict").style.width = skills.predict + "%";
+      document.getElementById("skSequence").style.width = skills.sequence + "%";
+      document.getElementById("skCode").style.width = skills.code + "%";
+      const avg = Math.round((skills.understand + skills.predict + skills.sequence + skills.code) / 4);
+      document.getElementById("skill").textContent = avg + "%";
+    }
+
+    function unlockNext() {
+      const steps = document.querySelectorAll(".path-step");
+      if (currentStep < steps.length - 1) {
+        steps[currentStep].classList.remove("active");
+        steps[currentStep].classList.add("done");
+        currentStep++;
+        steps[currentStep].classList.remove("locked");
+        steps[currentStep].classList.add("active");
+        renderStep(currentStep);
+      }
+    }
+
+    function renderStep(idx) {
+      const area = document.getElementById("challengeArea");
+      const s = STEPS[idx];
+
+      if (s.id === "understand") renderUnderstand(area);
+      else if (s.id === "logic") renderLogic(area);
+      else if (s.id === "arrange") renderArrange(area);
+      else if (s.id === "visualize") renderVisualize(area);
+      else if (s.id === "predict") renderPredict(area);
+      else if (s.id === "code") renderCode(area);
+      else if (s.id === "boss") renderBoss(area);
+    }
+
+    // ---------- 1. UNDERSTAND (Concept Card) ----------
+    function renderUnderstand(area) {
+      area.innerHTML = `
+        <div class="challenge-header">
+          <span class="challenge-type">🧠 Concept Card</span>
+          <span style="color:var(--muted)">1 / 7</span>
+        </div>
+        <h2>What is a loop?</h2>
+        <p class="desc">Think first. Then flip the card.</p>
+
+        <div class="flip-area">
+          <div class="flip-card" id="flip1" onclick="this.classList.toggle('flipped')">
+            <div class="flip-face flip-front">
+              <h3>A robot needs to pick 10 apples.<br>It can only do one action at a time.</h3>
+              <p style="margin-top:12px;color:var(--muted)">What should the robot do?</p>
+              <div class="flip-hint">Click to flip →</div>
+            </div>
+            <div class="flip-face flip-back">
+              <h3>A loop means:</h3>
+              <p style="font-size:1.15rem;margin-top:10px;line-height:1.5">
+                “Do the same action again and again<br>while something is still true.”
+              </p>
+              <p style="margin-top:16px;color:#86efac">
+                Pick apple → Pick apple → Pick apple … (10 times)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-row">
+          <div></div>
+          <button class="btn" onclick="addXP(15,'understand'); unlockNext()">I understand →</button>
+        </div>
+      `;
+    }
+
+    // ---------- 2. LOGIC ----------
+    function renderLogic(area) {
+      area.innerHTML = `
+        <div class="challenge-header">
+          <span class="challenge-type">🧩 Logic Card</span>
+          <span style="color:var(--muted)">2 / 7</span>
+        </div>
+        <h2>Which action should repeat?</h2>
+        <p class="desc">The robot must collect 10 apples. What is the repeating action?</p>
+
+        <ul class="options" id="logicOpts">
+          <li onclick="selectLogic(this, false)">Walk to the forest</li>
+          <li onclick="selectLogic(this, true)">Pick one apple</li>
+          <li onclick="selectLogic(this, false)">Count all apples at the end</li>
+          <li onclick="selectLogic(this, false)">Go home</li>
+        </ul>
+        <div class="feedback" id="logicFeedback"></div>
+
+        <div class="nav-row">
+          <button class="btn secondary" onclick="currentStep=0; renderStep(0)">← Back</button>
+          <button class="btn" id="logicNext" disabled onclick="unlockNext()">Next →</button>
+        </div>
+      `;
+    }
+
+    window.selectLogic = function(el, correct) {
+      document.querySelectorAll("#logicOpts li").forEach(li => {
+        li.classList.remove("selected","correct","wrong");
+      });
+      el.classList.add("selected");
+      const fb = document.getElementById("logicFeedback");
+      fb.classList.add("show");
+      if (correct) {
+        el.classList.add("correct");
+        fb.className = "feedback show good";
+        fb.innerHTML = "✅ Yes! “Pick one apple” is the action that must repeat 10 times.";
+        addXP(20, "understand");
+        document.getElementById("logicNext").disabled = false;
+      } else {
+        el.classList.add("wrong");
+        fb.className = "feedback show bad";
+        fb.innerHTML = "Not this one. Which small action happens again and again?";
+      }
+    };
+
+    // ---------- 3. ARRANGE STEPS ----------
+    function renderArrange(area) {
+      const steps = [
+        { id: 1, text: "Start with apple count = 0" },
+        { id: 2, text: "While count < 10" },
+        { id: 3, text: "Pick one apple" },
+        { id: 4, text: "Add 1 to count" },
+        { id: 5, text: "When count reaches 10 → stop" }
+      ];
+      // shuffle
+      const shuffled = [...steps].sort(() => Math.random() - 0.5);
+
+      area.innerHTML = `
+        <div class="challenge-header">
+          <span class="challenge-type">📐 Arrange the Steps</span>
+          <span style="color:var(--muted)">3 / 7</span>
+        </div>
+        <h2>Put the steps in the correct order</h2>
+        <p class="desc">Click the steps in the order the robot should think.</p>
+
+        <div class="steps-area" id="stepsArea">
+          ${shuffled.map((s,i) => `
+            <div class="step-item" data-id="${s.id}" onclick="pickStep(this)">
+              <div class="num">${i+1}</div>
+              <div>${s.text}</div>
+            </div>
+          `).join("")}
+        </div>
+        <div class="feedback" id="arrangeFeedback"></div>
+
+        <div class="nav-row">
+          <button class="btn secondary" onclick="renderArrange(document.getElementById('challengeArea'))">Shuffle again</button>
+          <button class="btn" id="arrangeNext" disabled onclick="addXP(25,'sequence'); unlockNext()">Looks good →</button>
+        </div>
+      `;
+      window._arrangeOrder = [];
+    }
+
+    window.pickStep = function(el) {
+      if (el.classList.contains("correct-pos")) return;
+      window._arrangeOrder.push(Number(el.dataset.id));
+      el.classList.add("correct-pos");
+      el.querySelector(".num").textContent = window._arrangeOrder.length;
+
+      if (window._arrangeOrder.length === 5) {
+        const correct = [1,2,3,4,5];
+        const ok = window._arrangeOrder.every((v,i) => v === correct[i]);
+        const fb = document.getElementById("arrangeFeedback");
+        fb.classList.add("show");
+        if (ok) {
+          fb.className = "feedback show good";
+          fb.innerHTML = "✅ Perfect order! This is exactly how a loop thinks.";
+          document.getElementById("arrangeNext").disabled = false;
+        } else {
+          fb.className = "feedback show bad";
+          fb.innerHTML = "Not quite. Think: What must happen first? What keeps repeating? When do we stop?";
+          // reset after short delay
+          setTimeout(() => renderArrange(document.getElementById("challengeArea")), 1800);
+        }
+      }
+    };
+
+    // ---------- 4. VISUALIZER ----------
+    function renderVisualize(area) {
+      area.innerHTML = `
+        <div class="challenge-header">
+          <span class="challenge-type">👀 Visualizer</span>
+          <span style="color:var(--muted)">4 / 7</span>
+        </div>
+        <h2>Watch the loop collect apples</h2>
+        <p class="desc">Press Play or Step to see the loop work one apple at a time.</p>
+
+        <div class="loop-viz">
+          <div class="loop-status" id="loopStatus">Ready…</div>
+          <div class="loop-track" id="loopTrack"></div>
+          <div class="viz-controls">
+            <button onclick="vizPlay()">▶ Play</button>
+            <button class="secondary" onclick="vizStep()">Step →</button>
+            <button class="secondary" onclick="vizReset()">Reset</button>
+          </div>
+        </div>
+
+        <div class="nav-row">
+          <button class="btn secondary" onclick="currentStep=2; renderStep(2)">← Back</button>
+          <button class="btn" onclick="addXP(15,'understand'); unlockNext()">I saw it →</button>
+        </div>
+      `;
+
+      window._vizCount = 0;
+      window._vizRunning = false;
+      drawVizTrack();
+    }
+
+    function drawVizTrack() {
+      const track = document.getElementById("loopTrack");
+      track.innerHTML = "";
+      for (let i = 1; i <= 5; i++) {
+        const div = document.createElement("div");
+        div.className = "loop-node" + (i === window._vizCount ? " active" : "");
+        div.textContent = i <= window._vizCount
+          ? `🍎 Apple ${i} collected  (count = ${i})`
+          : `… waiting`;
+        track.appendChild(div);
+      }
+    }
+
+    window.vizStep = function() {
+      if (window._vizCount < 5) {
+        window._vizCount++;
+        document.getElementById("loopStatus").textContent = `Picking apple ${window._vizCount}…`;
+        drawVizTrack();
+        if (window._vizCount === 5) {
+          document.getElementById("loopStatus").textContent = "🎉 All 5 apples collected! Loop finished.";
+        }
+      }
+    };
+
+    window.vizReset = function() {
+      window._vizCount = 0;
+      window._vizRunning = false;
+      document.getElementById("loopStatus").textContent = "Ready…";
+      drawVizTrack();
+    };
+
+    window.vizPlay = async function() {
+      if (window._vizRunning) return;
+      window._vizRunning = true;
+      vizReset();
+      for (let i = 1; i <= 5; i++) {
+        if (!window._vizRunning) break;
+        window._vizCount = i;
+        document.getElementById("loopStatus").textContent = `Picking apple ${i}…`;
+        drawVizTrack();
+        await new Promise(r => setTimeout(r, 700));
+      }
+      document.getElementById("loopStatus").textContent = "🎉 All 5 apples collected! Loop finished.";
+      window._vizRunning = false;
+    };
+
+    // ---------- 5. PREDICT ----------
+    function renderPredict(area) {
+      area.innerHTML = `
+        <div class="challenge-header">
+          <span class="challenge-type">🔮 Predict Card</span>
+          <span style="color:var(--muted)">5 / 7</span>
+        </div>
+        <h2>What will this code print?</h2>
+        <p class="desc">Read the code carefully. Don’t run it yet. Predict!</p>
+
+        <pre style="background:#020617;padding:18px;border-radius:12px;margin:16px 0;overflow-x:auto">for i in range(1, 4):
+    print("Apple", i)</pre>
+
+        <ul class="options" id="predictOpts">
+          <li onclick="selectPredict(this, false)">Apple 1   Apple 2   Apple 3   Apple 4</li>
+          <li onclick="selectPredict(this, true)">Apple 1   Apple 2   Apple 3</li>
+          <li onclick="selectPredict(this, false)">Apple 0   Apple 1   Apple 2</li>
+          <li onclick="selectPredict(this, false)">Nothing</li>
+        </ul>
+        <div class="feedback" id="predictFeedback"></div>
+
+        <div class="nav-row">
+          <button class="btn secondary" onclick="currentStep=3; renderStep(3)">← Back</button>
+          <button class="btn" id="predictNext" disabled onclick="unlockNext()">Next →</button>
+        </div>
+      `;
+    }
+
+    window.selectPredict = function(el, correct) {
+      document.querySelectorAll("#predictOpts li").forEach(li => li.classList.remove("selected","correct","wrong"));
+      el.classList.add("selected");
+      const fb = document.getElementById("predictFeedback");
+      fb.classList.add("show");
+      if (correct) {
+        el.classList.add("correct");
+        fb.className = "feedback show good";
+        fb.innerHTML = "✅ Correct! range(1, 4) gives 1, 2, 3. It stops <strong>before</strong> 4.";
+        addXP(25, "predict");
+        document.getElementById("predictNext").disabled = false;
+      } else {
+        el.classList.add("wrong");
+        fb.className = "feedback show bad";
+        fb.innerHTML = "Not quite. Remember: range(start, stop) stops <em>before</em> the stop number.";
+      }
+    };
+
+    // ---------- 6. CODE ----------
+    function renderCode(area) {
+      area.innerHTML = `
+        <div class="challenge-header">
+          <span class="challenge-type">💻 Code Challenge</span>
+          <span style="color:var(--muted)">6 / 7</span>
+        </div>
+        <h2>Teach the robot to collect 5 apples</h2>
+        <p class="desc">Write a loop that prints “Picked apple 1” … “Picked apple 5”</p>
+
+        <div class="code-box">
+          <textarea id="codeInput"># Write your loop here
+for i in range(1, 6):
+    print("Picked apple", i)
+</textarea>
+          <div class="code-actions">
+            <button class="btn" onclick="runCode()">▶ Run</button>
+            <button class="btn secondary" onclick="showHint()">Hint</button>
+          </div>
+          <div class="output" id="codeOutput">Output will appear here…</div>
+        </div>
+        <div class="feedback" id="codeFeedback"></div>
+
+        <div class="nav-row">
+          <button class="btn secondary" onclick="currentStep=4; renderStep(4)">← Back</button>
+          <button class="btn" id="codeNext" disabled onclick="addXP(30,'code'); unlockNext()">I did it! → Boss Battle</button>
+        </div>
+      `;
+    }
+
+    window.runCode = async function() {
+      const code = document.getElementById("codeInput").value;
+      const out = document.getElementById("codeOutput");
+      out.textContent = "Running…";
+      try {
+        if (!pyodide) await initPy();
+        pyodide.runPython(`
+import sys
+from io import StringIO
+sys.stdout = StringIO()
+        `);
+        pyodide.runPython(code);
+        const result = pyodide.runPython("sys.stdout.getvalue()");
+        out.textContent = result || "(no output)";
+
+        // simple check
+        if (result.includes("Picked apple 1") && result.includes("Picked apple 5")) {
+          document.getElementById("codeFeedback").className = "feedback show good";
+          document.getElementById("codeFeedback").innerHTML = "✅ Great! The robot collected the apples using a loop.";
+          document.getElementById("codeNext").disabled = false;
+          addXP(20, "code");
+        }
+      } catch(e) {
+        out.textContent = "❌ " + e.message;
+      }
+    };
+
+    window.showHint = function() {
+      document.getElementById("codeFeedback").className = "feedback show good";
+      document.getElementById("codeFeedback").innerHTML = "💡 Hint: Use <code>for i in range(1, 6):</code> and then print inside the loop.";
+    };
+
+    // ---------- 7. BOSS BATTLE ----------
+    function renderBoss(area) {
+      area.innerHTML = `
+        <div class="boss-banner">
+          <h3>👑 BOSS BATTLE</h3>
+          <p style="color:#fca5a5;margin-top:6px">Prove you can use loops on your own</p>
+        </div>
+
+        <div class="challenge-header">
+          <span class="challenge-type">👑 Boss</span>
+          <span style="color:var(--muted)">Final</span>
+        </div>
+        <h2>Multiplication Table</h2>
+        <p class="desc">
+          Write a program that prints the multiplication table of 7<br>
+          from 7 × 1 = 7  up to  7 × 10 = 70
+        </p>
+
+        <div class="code-box">
+          <textarea id="bossInput"># Boss Battle – Multiplication table of 7
+# Example line: 7 x 3 = 21
+
+</textarea>
+          <div class="code-actions">
+            <button class="btn" onclick="runBoss()">▶ Run</button>
+            <button class="btn secondary" onclick="bossHint()">Hint</button>
+          </div>
+          <div class="output" id="bossOutput">Output will appear here…</div>
+        </div>
+        <div class="feedback" id="bossFeedback"></div>
+
+        <div class="nav-row">
+          <button class="btn secondary" onclick="currentStep=5; renderStep(5)">← Back</button>
+          <button class="btn" id="bossNext" disabled onclick="finishAdventure()">Victory! 🎉</button>
+        </div>
+      `;
+    }
+
+    window.runBoss = async function() {
+      const code = document.getElementById("bossInput").value;
+      const out = document.getElementById("bossOutput");
+      out.textContent = "Running…";
+      try {
+        if (!pyodide) await initPy();
+        pyodide.runPython(`
+import sys
+from io import StringIO
+sys.stdout = StringIO()
+        `);
+        pyodide.runPython(code);
+        const result = pyodide.runPython("sys.stdout.getvalue()");
+        out.textContent = result || "(no output)";
+
+        if (result.includes("7") && result.includes("70") && (result.match(/=/g) || []).length >= 8) {
+          document.getElementById("bossFeedback").className = "feedback show good";
+          document.getElementById("bossFeedback").innerHTML = "🏆 BOSS DEFEATED! You can now use loops independently.";
+          document.getElementById("bossNext").disabled = false;
+          addXP(50, "code");
+        } else {
+          document.getElementById("bossFeedback").className = "feedback show bad";
+          document.getElementById("bossFeedback").innerHTML = "Not complete yet. Make sure you print all lines from 7×1 to 7×10.";
+        }
+      } catch(e) {
+        out.textContent = "❌ " + e.message;
+      }
+    };
+
+    window.bossHint = function() {
+      document.getElementById("bossFeedback").className = "feedback show good";
+      document.getElementById("bossFeedback").innerHTML = "💡 Use a loop with range(1, 11) and print: <code>print(\"7 x\", i, \"=\", 7*i)</code>";
+    };
+
+    function finishAdventure() {
+      document.getElementById("challengeArea").innerHTML = `
+        <div style="text-align:center;padding:40px 20px">
+          <div style="font-size:4rem">🏆</div>
+          <h2 style="margin:16px 0">Forest of Loops Cleared!</h2>
+          <p style="color:var(--muted);margin-bottom:24px;line-height:1.6">
+            You went from “What is a loop?” to solving a real problem on your own.<br>
+            That is real programming skill.
+          </p>
+          <div class="skill-panel" style="max-width:400px;margin:0 auto 24px">
+            <div class="skill-row"><span style="width:110px">Understanding</span><div class="skill-bar"><div class="skill-fill" style="width:${skills.understand}%"></div></div></div>
+            <div class="skill-row"><span style="width:110px">Prediction</span><div class="skill-bar"><div class="skill-fill" style="width:${skills.predict}%"></div></div></div>
+            <div class="skill-row"><span style="width:110px">Sequencing</span><div class="skill-bar"><div class="skill-fill" style="width:${skills.sequence}%"></div></div></div>
+            <div class="skill-row"><span style="width:110px">Coding</span><div class="skill-bar"><div class="skill-fill" style="width:${skills.code}%"></div></div></div>
+          </div>
+          <p style="margin-bottom:24px">Total XP earned: <strong style="color:var(--accent)">${xp}</strong></p>
+          <button class="btn" onclick="location.href='index.html'">← Back to Python World</button>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+(function(){
+  var p=window.__APP_B64||[];
+  if(p.length<8){console.error("LJIET: app parts missing", p.length); return;}
+  try{
+    var bin=atob(p.join(""));
+    var code=decodeURIComponent(Array.prototype.map.call(bin,function(c){
+      return "%"+("00"+c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(""));
+    (0,eval)(code);
+    console.log("LJIET full app restored OK");
+  }catch(e){console.error("LJIET app restore failed", e);}
+})();

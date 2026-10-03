@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#4f46e5" />
+  <title>LJIET Learning Hub</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/playgrounds.css" />
+  <link rel="stylesheet" href="css/quiz-mode.css" />
+  <link rel="stylesheet" href="css/app-ui.css" />
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logo" onclick="openWelcomeScreen()" style="cursor:pointer">
+      <span class="logo-icon">🐍</span>
+      <span class="logo-text">LJIET Learning Hub</span>
+    </div>
+    <div class="nav-progress">
+      <button type="button" class="btn-secondary nav-main-btn nav-home-btn" onclick="openWelcomeScreen()">🏠 Home</button>
+      <button class="btn-secondary nav-main-btn" onclick="openSem1PracticeBook()">📘 SEM-I</button>
+      <button class="btn-secondary nav-main-btn" onclick="openSem3PracticeBook()">📗 SEM-3</button>
+      <button class="btn-secondary nav-main-btn" onclick="openFsd1PracticeBook()">🌐 FSD-1</button>
+      <a class="btn-secondary nav-main-btn" href="probability/">P&amp;S Chapter 3</a>
+      <button class="btn-secondary nav-main-btn" onclick="openSEPracticeBook()">📐 SE</button>
+      <button class="btn-secondary nav-main-btn" onclick="openLeaderboardScreen()">🏆 Rank</button>
+      <button class="btn-secondary nav-main-btn" onclick="openLearningPathNav()">📚 Learn</button>
+    </div>
+  </nav>
+  <nav class="mobile-bottom-nav" id="mobileBottomNav">
+    <button type="button" class="mobile-nav-item home-pill" onclick="openWelcomeScreen()"><span>🏠</span> HOME</button>
+    <button type="button" class="mobile-nav-item" onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',10)"><span>📝</span><span>Quiz</span></button>
+    <button type="button" class="mobile-nav-item" onclick="openLeaderboardScreen()"><span>🏆</span><span>Rank</span></button>
+    <button type="button" class="mobile-nav-item" onclick="openLeaderboardScreen()"><span>👤</span><span>Profile</span></button>
+  </nav>
+  <div class="app-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header"><span>Menu</span><button type="button" onclick="toggleSidebar()">✕</button></div>
+      <div class="phase-header">MAIN FOCUS</div>
+      <ul class="concept-list">
+        <li onclick="openWelcomeScreen(); closeSidebarOnMobile()">🏠 Home</li>
+        <li onclick="openSem1PracticeBook(); closeSidebarOnMobile()">📘 Python SEM-I</li>
+        <li onclick="openSem3PracticeBook(); closeSidebarOnMobile()">📗 Python SEM-3</li>
+        <li onclick="openFsd1PracticeBook(); closeSidebarOnMobile()">🌐 FSD-1 (Full Stack JS)</li>
+        <li><a href="probability/" style="color:inherit;text-decoration:none;display:block">P&amp;S Chapter 3 · Worked Solutions</a></li>
+        <li onclick="openSEPracticeBook(); closeSidebarOnMobile()">📐 SE Practice</li>
+        <li onclick="openLeaderboardScreen(); closeSidebarOnMobile()">🏆 Leaderboard</li>
+        <li onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',10); closeSidebarOnMobile()">📝 Quick Quiz</li>
+        <li onclick="openLearningPathNav(); closeSidebarOnMobile()">📚 Learning Path</li>
+      </ul>
+      <div class="phase-header">LEARN PYTHON</div>
+      <ul class="concept-list" id="conceptList"></ul>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+    <main class="main-content">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+      <section id="welcomeScreen" class="screen active">
+        <div class="bw-home">
+          <div class="bw-header">
+            <div><h1>LJIET Hub</h1><div class="sub">READY TO LEARN?</div></div>
+            <div class="bw-avatar" id="bwAvatar" onclick="openLeaderboardScreen()">?</div>
+          </div>
+          <div class="bw-challenge">
+            <div><span class="tag">🔥 Daily · 10 Q</span><h2>Daily Challenge</h2></div>
+            <button type="button" class="bw-play" onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',10)">PLAY</button>
+          </div>
+          <div class="bw-section-title">Jump Back In</div>
+          <div class="bw-jump" onclick="openSem1PracticeBook()">
+            <div class="bw-jump-icon">📘</div>
+            <div class="bw-jump-info"><strong>Python Practice Book</strong><div class="prog"><i style="width:35%"></i></div></div>
+            <button type="button" class="bw-jump-play" onclick="event.stopPropagation(); openSem1PracticeBook()">▶</button>
+          </div>
+          <div class="bw-section-title">Categories</div>
+          <div class="bw-cats">
+            <button type="button" class="bw-cat python" onclick="openSem1PracticeBook()"><span class="icon">🐍</span> Python SEM-I</button>
+            <button type="button" class="bw-cat sem3" onclick="openSem3PracticeBook()"><span class="icon">📗</span> Python SEM-3</button>
+            <button type="button" class="bw-cat se" onclick="openFsd1PracticeBook()"><span class="icon">🌐</span> FSD-1</button>
+            <button type="button" class="bw-cat rank" onclick="openLeaderboardScreen()"><span class="icon">🏆</span> Leaderboard</button>
+          </div>
+          <div class="bw-section-title">Practice Paths</div>
+          <div class="bw-unit-list">
+            <a class="bw-unit" href="probability/" style="color:inherit;text-decoration:none">
+              <div class="bw-unit-icon">P&amp;S</div>
+              <div class="bw-unit-body"><strong>Probability &amp; Statistics</strong><div class="bw-unit-meta">Chapter 3 · Q205–Q280 · 76 worked solutions</div></div>
+              <div class="bw-score">OPEN<br><b>→</b></div>
+            </a>
+            <div class="bw-unit" onclick="openSem1PracticeBook()">
+              <div class="bw-unit-icon">📘</div>
+              <div class="bw-unit-body"><strong>Python SEM-I (210 Qs)</strong><div class="bw-unit-meta"><span class="bw-badge med">CORE</span> Units 1–3</div></div>
+              <div class="bw-score">OPEN<br><b>→</b></div>
+            </div>
+            <div class="bw-unit" onclick="openSem3PracticeBook()">
+              <div class="bw-unit-icon">📗</div>
+              <div class="bw-unit-body"><strong>Python SEM-3 FCSP-1</strong><div class="bw-unit-meta"><span class="bw-badge hard">SEM-III</span> Units 1–5</div></div>
+              <div class="bw-score">OPEN<br><b>→</b></div>
+            </div>
+            <div class="bw-unit" onclick="openFsd1PracticeBook()">
+              <div class="bw-unit-icon">🌐</div>
+              <div class="bw-unit-body"><strong>FSD-1 Full Stack JS</strong><div class="bw-unit-meta"><span class="bw-badge med">FSD</span> Units 1–10 · Practice Book</div></div>
+              <div class="bw-score">OPEN<br><b>→</b></div>
+            </div>
+            <div class="bw-unit" onclick="openSEPracticeBook()">
+              <div class="bw-unit-icon">📐</div>
+              <div class="bw-unit-body"><strong>SE Practice Book</strong><div class="bw-unit-meta"><span class="bw-badge easy">SE</span> ~177 MCQs</div></div>
+              <div class="bw-score">OPEN<br><b>→</b></div>
+            </div>
+            <div class="bw-unit" onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',15)">
+              <div class="bw-unit-icon">📝</div>
+              <div class="bw-unit-body"><strong>Timed Quiz Mode</strong><div class="bw-unit-meta"><span class="bw-badge med">15 Q</span> Score · timer</div></div>
+              <div class="bw-score">PLAY<br><b>→</b></div>
+            </div>
+          </div>
+          <p style="text-align:center;color:#94a3b8;font-size:0.8rem;margin:24px 0 8px">Points: <strong id="bwPoints">0</strong> · <span id="bwUserName">Student</span></p>
+        </div>
+      </section>
+      <section id="conceptScreen" class="screen">
+        <div class="concept-header">
+          <div class="concept-meta">
+            <span id="conceptNumber" class="concept-number">01</span>
+            <h2 id="conceptTitle" class="concept-title">Loading...</h2>
+          </div>
+          <div class="concept-progress-bar"><div id="conceptProgressFill" class="concept-progress-fill"></div></div>
+        </div>
+        <div id="stepTabs" class="step-tabs"></div>
+        <div id="stepContent" class="step-content"></div>
+        <div class="step-navigation" style="display:none">
+          <button id="prevStepBtn" class="btn-secondary" onclick="prevStep()">← Previous</button>
+          <button id="nextStepBtn" class="btn-primary" onclick="nextStep()">Next →</button>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div id="toast" class="toast" hidden></div>
+  <script src="js/ui-boot.js"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/leaderboard.js"></script>
+  <script src="js/leaderboard-fix.js"></script>
+  <script src="js/leaderboard-name-fix.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/concepts-data.js"></script>
+  <script src="js/practice-book-questions.js"></script>
+  <script src="js/sem3-unit1.js"></script>
+  <script src="js/sem3-unit2.js"></script>
+  <script src="js/sem3-unit3.js"></script>
+  <script src="js/sem3-unit4.js"></script>
+  <script src="js/sem3-unit5.js"></script>
+  <script src="js/sem3-practice-book.js"></script>
+  <script src="js/fsd1-unit1.js"></script>
+  <script src="js/fsd1-unit2.js"></script>
+  <script src="js/fsd1-unit2-coding.js"></script>
+  <script src="js/fsd1-practice-book.js"></script>
+  <script src="js/playgrounds.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/sp594809-cloud/python-solve@f95c6076891117adf6984dd31cde3d6101bc69b1/js/app.js"></script>
+  <script src="js/pb-sem3-bridge.js"></script>
+  <script src="js/escape-mcq-fix.js"></script>
+  <script src="js/quiz-mode.js"></script>
+  <script src="js/jupyter-lite-cell.js"></script>
+  <script src="js/app-fixes.js"></script>
+  <script src="js/se-unit1.js"></script>
+  <script src="js/se-unit2.js"></script>
+  <script src="js/se-units-345.js"></script>
+  <script src="js/se-practice-book.js"></script>
+  <script src="js/app-se.js"></script>
+  <script src="js/sem3-open.js"></script>
+  <script>
+  (function(){
+    function boot(){
+      try {
+        if (typeof initSupabase === "function") initSupabase();
+        if (typeof initStudentSession === "function") {
+          Promise.resolve(initStudentSession()).then(function(){
+            if (typeof refreshHomeProfile === "function") refreshHomeProfile();
+          });
+        }
+      } catch(e) {}
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+    else boot();
+    setTimeout(boot, 500);
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register("./service-worker.js").catch(function(){});
+  })();
+  </script>
+</body>
+</html>
