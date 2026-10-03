@@ -13,6 +13,7 @@ const ASSETS = [
   "./css/main.css",
   "./css/design-system.css",
   "./css/app-ui.css",
+  "./css/colorful-ui.css",
   "./css/adventure-ui.css",
   "./js/theme-switcher.js",
   "./js/navigation-ui.js",

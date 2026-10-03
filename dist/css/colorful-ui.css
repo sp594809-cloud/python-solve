@@ -1,0 +1,40 @@
+/* Subject identity through cheerful, accessible color accents. */
+.bw-cat.python{--subject:var(--accent-blue);--subject-soft:var(--accent-blue-soft)}
+.bw-cat.sem3{--subject:var(--accent-purple);--subject-soft:var(--accent-purple-soft)}
+.bw-cat.fsd{--subject:var(--accent-teal);--subject-soft:var(--accent-teal-soft)}
+.bw-cat.ps{--subject:var(--accent-orange);--subject-soft:var(--accent-orange-soft)}
+.bw-cat.se{--subject:var(--accent-pink);--subject-soft:var(--accent-pink-soft)}
+.bw-cat.learn{--subject:var(--accent-green);--subject-soft:var(--accent-green-soft)}
+.bw-cat{position:relative;overflow:hidden;background:linear-gradient(145deg,var(--subject-soft),var(--card) 76%);border-color:color-mix(in srgb,var(--subject) 25%,var(--border));box-shadow:var(--shadow)}
+.bw-cat:focus-visible{outline-color:var(--subject)}
+.bw-cat .icon{width:42px;height:42px;background:var(--subject);color:#fff;border-radius:12px;font-size:15px;box-shadow:0 4px 12px color-mix(in srgb,var(--subject) 20%,transparent)}
+.bw-cat:hover{border-color:var(--subject);box-shadow:0 9px 22px color-mix(in srgb,var(--subject) 12%,transparent)}
+.bw-cat.ps{border-top:0;padding-top:21px}.bw-cat.ps:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--subject)}
+.bw-section-title{display:flex;align-items:center;gap:10px}.bw-section-title:before{content:"";height:20px;width:4px;background:linear-gradient(180deg,#ef7e57,#df54a6,#655ce9);border-radius:9px}
+.bw-challenge{background:linear-gradient(112deg,#5054d9 0%,#7151db 54%,#9b4dc5 100%);border:0;box-shadow:0 12px 28px rgba(94,74,203,.2);position:relative;overflow:hidden}
+.bw-challenge .tag{display:inline-flex;align-items:center;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.16);color:#fff}
+.bw-play{box-shadow:0 4px 14px rgba(28,24,80,.18)}
+.bw-avatar{border:0;background:linear-gradient(140deg,#ffcb87,#ff879d);color:#662758;box-shadow:0 4px 14px rgba(220,99,145,.18)}
+.bw-unit:nth-child(4n+1) .bw-unit-icon{background:var(--accent-blue-soft);border-color:transparent;color:var(--accent-blue)}
+.bw-unit:nth-child(4n+2) .bw-unit-icon{background:var(--accent-pink-soft);border-color:transparent;color:var(--accent-pink)}
+.bw-unit:nth-child(4n+3) .bw-unit-icon{background:var(--accent-teal-soft);border-color:transparent;color:var(--accent-teal)}
+.bw-unit:nth-child(4n) .bw-unit-icon{background:var(--accent-purple-soft);border-color:transparent;color:var(--accent-purple)}
+.bw-unit{box-shadow:var(--shadow)}
+.nav-symbol{color:var(--accent-purple)}.concept-list li:nth-child(2n) .nav-symbol{color:var(--accent-blue)}
+.concept-list li.active{background:var(--primary-soft);box-shadow:inset 3px 0 0 var(--primary)}
+.concept-number{display:inline-grid;min-width:36px;min-height:36px;place-items:center;border-radius:10px;background:var(--accent-purple-soft);color:var(--accent-purple)}
+.step-tab.active,.pb-filter-btn.active{background:var(--primary);border-color:var(--primary);color:#fff;box-shadow:0 4px 10px color-mix(in srgb,var(--primary) 22%,transparent)}
+.step-tab:hover,.pb-filter-btn:hover,.pb-sol-btn:hover{border-color:var(--accent-purple);color:var(--accent-purple)}
+.pb-opt-btn:hover:not(:disabled),.option-list li:hover{border-color:var(--accent-blue)}
+.pb-sol-btn{background:var(--accent-green-soft);border-color:color-mix(in srgb,var(--accent-green) 28%,var(--border));color:var(--accent-green)}
+.step-navigation .btn-primary,.bw-play{transition:transform .15s,box-shadow .15s}.step-navigation .btn-primary:hover,.bw-play:hover{transform:translateY(-1px)}
+.qz-primary,.qz-secondary,.qz-btn-next{background:linear-gradient(110deg,#4f57df,#7954df)}
+.jl-run{background:linear-gradient(110deg,#4f57df,#7954df)}
+.marks-badge{background:var(--accent-purple-soft);color:var(--accent-purple)}
+.reader-heading .eyebrow{color:var(--accent-purple)}
+.chapter-switch a[aria-current=page]{background:var(--primary);color:#fff;border-color:var(--primary);box-shadow:0 4px 12px color-mix(in srgb,var(--primary) 22%,transparent)}
+.question-card{box-shadow:var(--shadow)}
+.final-answer{border-left-color:var(--accent-teal);background:var(--accent-teal-soft)}.final-answer>div{color:var(--accent-teal)}
+.formula{background:var(--accent-blue-soft)}
+.reader-nav button:not(:disabled):hover{background:var(--primary-soft)}
+@media(prefers-reduced-motion:reduce){.bw-cat,.bw-play,.step-navigation .btn-primary{transition:none}}
