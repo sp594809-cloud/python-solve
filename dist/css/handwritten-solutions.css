@@ -1,0 +1,94 @@
+/* Handwriting-style worked mathematics on a blank white sheet. */
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
+
+.handwritten-solution {
+  --paper-ink: #171717;
+  --paper-rule: #d8d8d8;
+  font-family: "Kalam", "Segoe Print", "Bradley Hand", cursive;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.85;
+  color: var(--paper-ink);
+  background: #fff;
+  border: 1px solid var(--paper-rule);
+  border-radius: 3px;
+  box-shadow: 0 4px 18px rgb(0 0 0 / 7%);
+  padding: clamp(20px, 4vw, 44px);
+  margin-top: 28px;
+  color-scheme: light;
+}
+#solution.handwritten-solution { padding-top: clamp(20px, 4vw, 44px); }
+.handwritten-solution h3,
+.handwritten-solution h4,
+.handwritten-solution p,
+.handwritten-solution .formula,
+.handwritten-solution .final-answer p,
+.handwritten-solution table,
+.handwritten-solution caption {
+  font-family: inherit;
+  color: var(--paper-ink);
+  letter-spacing: normal;
+}
+#solution.handwritten-solution h3 {
+  display: inline-block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.65;
+  padding-bottom: 3px;
+  margin-bottom: 28px;
+  border-bottom: 2px solid var(--paper-ink);
+}
+.handwritten-solution .step { margin-bottom: 30px; }
+.handwritten-solution .step h4 { font-size: 1.375rem; font-weight: 700; line-height: 1.8; }
+.handwritten-solution .step p { font-size: 1.375rem; line-height: 1.85; }
+.handwritten-solution .formula {
+  font-size: 1.5rem;
+  line-height: 1.9;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  padding: 8px 0 8px 16px;
+  overflow-wrap: anywhere;
+}
+.handwritten-solution .final-answer {
+  color: var(--paper-ink);
+  background: #fff;
+  border: 2px solid var(--paper-ink);
+  border-radius: 3px;
+  padding: 16px 20px;
+}
+.handwritten-solution .final-answer > div {
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  color: var(--paper-ink);
+}
+.handwritten-solution .final-answer p { font-size: 1.5rem; line-height: 1.8; }
+.handwritten-solution .table-wrap { border-color: var(--paper-rule); border-radius: 2px; }
+.handwritten-solution table { font-size: 1.125rem; line-height: 1.65; }
+.handwritten-solution thead,
+.handwritten-solution th,
+.handwritten-solution td { color: var(--paper-ink); background: #fff; border-color: var(--paper-rule); }
+.handwritten-solution caption { font-size: 1.125rem; border-color: var(--paper-rule); }
+.handwritten-solution .solution-note {
+  background: #fff;
+  color: var(--paper-ink);
+  border-color: var(--paper-ink);
+  border-radius: 0;
+  font-size: 1.125rem;
+}
+@media (max-width: 700px) {
+  #solution.handwritten-solution { margin-left: -8px; margin-right: -8px; padding: 22px 16px; }
+  #solution.handwritten-solution h3 { font-size: 1.5rem; }
+  .handwritten-solution .step p,
+  .handwritten-solution .step h4 { font-size: 1.25rem; }
+  .handwritten-solution .formula,
+  .handwritten-solution .final-answer p { font-size: 1.375rem; }
+  .handwritten-solution .formula { padding-left: 6px; }
+}
+@media print {
+  #solution.handwritten-solution { border: 0; box-shadow: none; padding: 16px 0; margin: 0; }
+  .handwritten-solution .step,
+  .handwritten-solution .final-answer { break-inside: avoid; }
+}

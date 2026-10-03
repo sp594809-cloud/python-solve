@@ -1,5 +1,6 @@
-const CACHE_NAME = "ljiet-learning-hub-v9-complete-python";
+const CACHE_NAME = "ljiet-learning-hub-handwriting-20261003";
 const ASSETS = [
+  "./css/handwritten-solutions.css",
   "./python/",
   "./python/index.html",
   "./python/styles.css",
