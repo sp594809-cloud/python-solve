@@ -2,39 +2,42 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3159d7">
 <meta name="description" content="Chapter 3 of the LJIET Probability and Stochastic Processes practice book: 76 worked solutions for Q205–Q280.">
-<title>Chapter 3 · Probability Practice Book</title>
+<title>Chapter 3 · LJIET Learning Hub</title>
+<link rel="stylesheet" href="../css/design-system.css">
 <link rel="stylesheet" href="styles.css">
+<script src="../js/theme-switcher.js"></script>
 <script src="data/chapter-3.js" defer></script>
 <script src="app.js" defer></script>
 </head>
-<body>
+<body class="ps-page">
 <a class="skip-link" href="#question-title">Skip to question</a>
-<header class="site-header">
- <a class="brand" href="./">PROBABILITY &amp; STOCHASTIC PROCESSES<span>L.J. Institute · Semester III</span></a>
- <a class="hub-link" href="../index.html">← Learning Hub</a>
+<header class="hub-header">
+ <a class="hub-brand" href="../"><span class="brand-mark">LH</span><span>LJIET Hub<small>Your study workspace</small></span></a>
+ <div class="header-actions"><a class="header-link" href="../" aria-label="Return to the learning hub">Home</a><button class="theme-toggle" id="themeToggleBtn" type="button" onclick="toggleTheme()">Dark mode</button></div>
 </header>
 <div class="layout">
- <aside class="sidebar" aria-label="Chapter 3 question navigation">
-  <div class="chapter-title">CHAPTER 03</div>
-  <h1>Descriptive statistics<br>&amp; moments</h1>
-  <p class="chapter-meta">76 worked solutions · Q205–Q280</p>
+ <aside class="sidebar" aria-label="Probability practice navigation">
+  <div class="ps-workspace-nav"><div class="eyebrow">WORKSPACE</div><a href="../">Overview</a><a href="../#sem1">Python · Semester I</a><a href="../#sem3">Python · Semester III</a><a href="../#fsd1">Full stack development</a><a href="./" aria-current="page">Probability &amp; statistics</a><a href="../#se">Software engineering</a></div>
+  <div class="chapter-title eyebrow">CHAPTER 03</div>
+  <h1>Statistics &amp; moments</h1>
+  <p class="chapter-meta">76 worked solutions<br>Q205–Q280</p>
   <label for="mobile-question">Choose a question</label>
   <select id="mobile-question" aria-label="Choose a Chapter 3 question"></select>
   <nav id="question-list" aria-label="Questions"></nav>
-  <a class="source-link" href="practice-book.pdf" target="_blank" rel="noopener">Open original practice book ↗</a>
+  <a class="source-link" href="practice-book.pdf" target="_blank" rel="noopener">Original practice book</a>
  </aside>
  <main id="main-content">
-  <div class="reader-meta"><span id="position"></span><span>Chapter 3</span></div>
+  <div class="reader-heading"><div class="eyebrow">PROBABILITY &amp; STOCHASTIC PROCESSES</div><h2>Chapter 3 practice</h2><p>Read the question. Work it out. Check each step.</p></div>
+  <div class="reader-meta"><span id="position"></span><span>Semester III</span></div>
   <article class="question-card">
-   <div class="question-meta"><span id="marks"></span><a id="pdf-page" target="_blank" rel="noopener"></a></div>
+   <div class="question-meta"><span id="marks" class="marks-badge"></span><a id="pdf-page" target="_blank" rel="noopener"></a></div>
    <h2 id="question-title" tabindex="-1">Loading question…</h2>
    <p id="question-text"></p>
    <div id="given-table"></div>
-   <button type="button" id="show-solution" class="primary" aria-expanded="false" aria-controls="solution">Show solution →</button>
+   <button type="button" id="show-solution" class="primary" aria-expanded="false" aria-controls="solution">Show solution</button>
    <section id="solution" hidden aria-label="Worked solution">
     <h3>Step-by-step solution</h3>
     <div id="steps"></div>
@@ -43,8 +46,8 @@
     <aside class="solution-note" id="note" hidden></aside>
    </section>
   </article>
-  <nav class="reader-nav" aria-label="Previous and next question"><button id="previous" type="button">← Previous question</button><button id="next" type="button">Next question →</button></nav>
-  <p class="reader-footer">Original book numbering preserved. Population SD is used; grouped estimates use class midpoints. Other chapters will be added separately.</p>
+  <nav class="reader-nav" aria-label="Previous and next question"><button id="previous" type="button">Previous question</button><button id="next" type="button">Next question</button></nav>
+  <p class="reader-footer">Population SD is used. Grouped estimates use class midpoints. Questions follow the original practice book.</p>
   <p id="announcement" class="sr-only" aria-live="polite"></p>
  </main>
 </div>

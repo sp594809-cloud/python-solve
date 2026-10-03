@@ -1,6 +1,6 @@
 'use strict';
 (() => {
- const book = window.PROBABILITY_CHAPTER_3;
+ const book = window.PROBABILITY_BOOK_DATA || window.PROBABILITY_CHAPTER_3;
  const byId = new Map(book.questions.map(q => [q.id, q]));
  const ids = book.questions.map(q => q.id);
  const $ = id => document.getElementById(id);
@@ -26,23 +26,23 @@
   $('question-text').textContent=q.question;
   $('position').textContent='Question '+(index+1)+' of '+ids.length;
   $('marks').textContent=q.marks+' '+(q.marks===1?'mark':'marks');
-  $('pdf-page').textContent='PDF page '+q.page+' ↗';$('pdf-page').href='practice-book.pdf#page='+q.page;
+  $('pdf-page').textContent='PDF page '+q.page+' · source';$('pdf-page').href='practice-book.pdf#page='+q.page;
   $('given-table').innerHTML=table(q.table,'Given data');
   $('steps').innerHTML=q.steps.map((s,i)=>'<div class="step"><h4>'+(i+1)+'. '+escape(s.title)+'</h4>'+(s.text?'<p>'+escape(s.text)+'</p>':'')+(s.formula?'<div class="formula">'+escape(s.formula)+'</div>':'')+'</div>').join('');
   $('calculation-table').innerHTML=table(q.conversionTable,'Converted frequencies')+table(q.workingTable,'Calculation table');
   $('answer').textContent=q.answer;
   $('note').hidden=!q.note;$('note').innerHTML=q.note?'<strong>Note about the question</strong>'+escape(q.note):'';
-  $('solution').hidden=true;$('show-solution').setAttribute('aria-expanded','false');$('show-solution').textContent='Show solution →';
+  $('solution').hidden=true;$('show-solution').setAttribute('aria-expanded','false');$('show-solution').textContent='Show solution';
   $('previous').disabled=index===0;$('next').disabled=index===ids.length-1;
   for(const link of list.children){if(link.hash==='#q'+id)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}
   selector.value=id;
-  document.title='Q'+id+' · Chapter 3 · Probability Practice Book';
+  document.title='Q'+id+' · Chapter '+book.chapter+' · Probability Practice Book';
   $('announcement').textContent='Question '+id+' selected. Solution hidden.';
   if(focus){$('question-title').focus({preventScroll:true});$('main-content').scrollIntoView({block:'start',behavior:'instant'});}
  }
  function navigate(id){location.hash='q'+id;}
  function route(){const match=location.hash.match(/^#q(\d+)$/);const id=match?Number(match[1]):ids[0];const valid=byId.has(id)?id:ids[0];if(id!==valid)history.replaceState(null,'','#q'+valid);show(valid);}
- $('show-solution').addEventListener('click',()=>{const open=$('solution').hidden;$('solution').hidden=!open;$('show-solution').setAttribute('aria-expanded',String(open));$('show-solution').textContent=open?'Hide solution ↑':'Show solution →';$('announcement').textContent=open?'Solution shown for question '+current:'Solution hidden';});
+ $('show-solution').addEventListener('click',()=>{const open=$('solution').hidden;$('solution').hidden=!open;$('show-solution').setAttribute('aria-expanded',String(open));$('show-solution').textContent=open?'Hide solution':'Show solution';$('announcement').textContent=open?'Solution shown for question '+current:'Solution hidden';});
  $('previous').addEventListener('click',()=>navigate(ids[ids.indexOf(current)-1]));
  $('next').addEventListener('click',()=>navigate(ids[ids.indexOf(current)+1]));
  selector.addEventListener('change',()=>navigate(Number(selector.value)));
