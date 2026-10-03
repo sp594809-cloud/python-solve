@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="css/quiz-mode.css" />
   <link rel="stylesheet" href="css/design-system.css" />
   <link rel="stylesheet" href="css/app-ui.css" />
-  <link rel="stylesheet" href="css/colorful-ui.css" />
   <script src="js/theme-switcher.js"></script>
   <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -47,8 +46,7 @@
         <li data-view="rank"><button type="button" onclick="openLeaderboardScreen();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">▥</span>Leaderboard</button></li>
         <li data-view="learn"><button type="button" onclick="openLearningPathNav();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">&lt;&gt;</span>Learning path</button></li>
       </ul>
-      <div class="phase-header">PYTHON CONCEPTS</div>
-      <ul class="concept-list" id="conceptList"></ul>
+      <ul class="concept-list" id="conceptList" hidden aria-hidden="true"></ul>
       <div class="sidebar-footer">L.J. Institute<br>Practice. Understand. Repeat.</div>
     </aside>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
