@@ -76,11 +76,11 @@
     }
 
     var html =
-      '<div style="background:linear-gradient(135deg,#14532d,#0f172a);border:1px solid #22c55e;border-radius:16px;padding:20px;margin-bottom:20px">' +
-      '<h2 style="color:#86efac;margin:0 0 8px">📗 SEM-III Practice Book (FCSP-1)</h2>' +
-      '<p style="color:#94a3b8;margin:0">SEM-3 only — not SEM-I. ' +
+      '<div style="background:var(--primary-soft);border:1px solid #22c55e;border-radius:16px;padding:20px;margin-bottom:20px">' +
+      '<h2 style="color:var(--success);margin:0 0 8px">📗 SEM-III Practice Book (FCSP-1)</h2>' +
+      '<p style="color:var(--muted);margin:0">' +
       total +
-      " MCQs · question ids start with <strong style=\"color:#86efac\">S3-</strong></p>" +
+      " MCQs · Units 1–5</p>" +
       '<div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:6px" id="sem3UnitFilters">' +
       unitBtns +
       "</div></div><div id=\"sem3McqList\">";
@@ -89,8 +89,8 @@
       var unit = B[k];
       if (!unit || !unit.mcqs || !unit.mcqs.length) return;
       html +=
-        '<div style="margin-bottom:20px;border:1px solid #334155;border-radius:14px;padding:16px;background:#0f172a">' +
-        '<h3 style="color:#86efac;margin:0 0 12px">' +
+        '<div style="margin-bottom:20px;border:1px solid var(--border);border-radius:14px;padding:16px;background:var(--bg)">' +
+        '<h3 style="color:var(--success);margin:0 0 12px">' +
         escapeHtml(unit.title || k) +
         " · " +
         unit.mcqs.length +
@@ -108,7 +108,7 @@
               letter +
               '" data-sid="' +
               sid +
-              '" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 14px;border-radius:10px;border:1px solid #334155;background:#1e293b;color:#e2e8f0;cursor:pointer"><strong>' +
+              '" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer"><strong>' +
               letter +
               ")</strong> " +
               escapeHtml(o) +
@@ -118,13 +118,13 @@
           .join("");
 
         html +=
-          '<div style="background:#020617;border:1px solid #1e293b;border-radius:12px;padding:12px;margin-bottom:10px">' +
-          '<div style="font-size:0.75rem;color:#4ade80">' +
+          '<div style="background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:10px">' +
+          '<div style="font-size:0.75rem;color:var(--success)">' +
           escapeHtml(item.id || "") +
           " · Sr " +
           (item.srNo || "") +
           "</div>" +
-          '<div style="color:#f8fafc;margin:8px 0;white-space:pre-wrap">' +
+          '<div style="color:var(--text);margin:8px 0;white-space:pre-wrap">' +
           escapeHtml(item.question || "") +
           "</div>" +
           opts +
@@ -136,13 +136,13 @@
       (unit.coding || []).forEach(function (item) {
         var cid = "s3code-" + String(item.id || "").replace(/[^a-zA-Z0-9]/g, "_");
         html +=
-          '<div style="background:#052e16;border:1px solid #166534;border-radius:12px;padding:12px;margin-bottom:10px">' +
-          '<div style="color:#4ade80;font-size:0.75rem">' +
+          '<div style="background:var(--success-soft);border:1px solid #166534;border-radius:12px;padding:12px;margin-bottom:10px">' +
+          '<div style="color:var(--success);font-size:0.75rem">' +
           escapeHtml(item.id || "") +
           " · " +
           escapeHtml(item.topic || "Code") +
           "</div>" +
-          '<div style="color:#f8fafc;margin:8px 0;white-space:pre-wrap">' +
+          '<div style="color:var(--text);margin:8px 0;white-space:pre-wrap">' +
           escapeHtml(item.question || "") +
           "</div>" +
           '<button type="button" onclick="(function(){var e=document.getElementById(\'' +
@@ -150,7 +150,7 @@
           '\');e.style.display=e.style.display===\'none\'?\'block\':\'none\';})()" style="background:#16a34a;color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer">View Solution</button>' +
           '<pre id="' +
           cid +
-          '" style="display:none;color:#38bdf8;white-space:pre-wrap;margin-top:10px">' +
+          '" style="display:none;color:var(--primary);white-space:pre-wrap;margin-top:10px">' +
           escapeHtml(item.solution || "") +
           "</pre></div>";
       });
@@ -207,16 +207,6 @@
   }
 
   window.openSem3PracticeBook = openSem3;
-
-  window.addEventListener("load", function () {
-    setTimeout(function () {
-      window.openSem3PracticeBook = openSem3;
-      console.log("SEM-3 locked. MCQ count:", countSem3());
-    }, 500);
-    setTimeout(function () {
-      window.openSem3PracticeBook = openSem3;
-    }, 1500);
-  });
 
   console.log("sem3-open.js loaded");
 })();

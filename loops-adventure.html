@@ -63,7 +63,7 @@
       text-align: center;
     }
     .mission-card h1 { font-size: 1.8rem; margin-bottom: 8px; }
-    .mission-card p { color: #86efac; font-size: 1.05rem; line-height: 1.5; }
+    .mission-card p { color:var(--success); font-size: 1.05rem; line-height: 1.5; }
 
     /* PROGRESS PATH */
     .path {
@@ -80,14 +80,14 @@
       left: 40px;
       right: 40px;
       height: 4px;
-      background: #1e293b;
+      background:var(--card);
       z-index: 0;
     }
     .path-step {
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      background: #1e293b;
+      background:var(--card);
       border: 3px solid #334155;
       display: flex;
       align-items: center;
@@ -171,7 +171,7 @@
     /* OPTIONS */
     .options { list-style: none; margin: 16px 0; }
     .options li {
-      background: #0f172a;
+      background:var(--bg);
       margin: 10px 0;
       padding: 16px 20px;
       border-radius: 12px;
@@ -192,7 +192,7 @@
       margin: 20px 0;
     }
     .step-item {
-      background: #0f172a;
+      background:var(--bg);
       padding: 14px 18px;
       border-radius: 12px;
       border: 2px solid #334155;
@@ -204,7 +204,7 @@
     }
     .step-item:active { cursor: grabbing; }
     .step-item .num {
-      background: #334155;
+      background:var(--bg-elevated);
       width: 28px;
       height: 28px;
       border-radius: 50%;
@@ -218,7 +218,7 @@
 
     /* VISUALIZER */
     .loop-viz {
-      background: #0f172a;
+      background:var(--bg);
       border-radius: 16px;
       padding: 24px;
       text-align: center;
@@ -233,7 +233,7 @@
       min-height: 160px;
     }
     .loop-node {
-      background: #1e293b;
+      background:var(--card);
       border: 2px solid #334155;
       border-radius: 12px;
       padding: 10px 24px;
@@ -259,7 +259,7 @@
       font-weight: 700;
       cursor: pointer;
     }
-    .viz-controls button.secondary { background: #334155; color: var(--text); }
+    .viz-controls button.secondary { background:var(--bg-elevated); color: var(--text); }
 
     /* CODE AREA */
     .code-box {
@@ -273,7 +273,7 @@
       width: 100%;
       min-height: 130px;
       background: transparent;
-      color: #e2e8f0;
+      color:var(--text);
       border: none;
       padding: 16px;
       font-family: 'Courier New', monospace;
@@ -286,12 +286,12 @@
       display: flex;
       gap: 10px;
       padding: 12px 16px;
-      background: #0f172a;
+      background:var(--bg);
       border-top: 1px solid #1e293b;
     }
     .output {
       background: #020617;
-      color: #86efac;
+      color:var(--success);
       padding: 14px 16px;
       font-family: monospace;
       font-size: 0.9rem;
@@ -313,7 +313,7 @@
       transition: all 0.2s;
     }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(34,197,94,0.35); }
-    .btn.secondary { background: #334155; color: var(--text); }
+    .btn.secondary { background:var(--bg-elevated); color: var(--text); }
     .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; box-shadow: none; }
     .nav-row {
       display: flex;
@@ -330,7 +330,7 @@
       text-align: center;
       margin-bottom: 20px;
     }
-    .boss-banner h3 { color: #fca5a5; font-size: 1.3rem; }
+    .boss-banner h3 { color:var(--danger); font-size: 1.3rem; }
 
     /* FEEDBACK */
     .feedback {
@@ -361,7 +361,7 @@
     .skill-bar {
       flex: 1;
       height: 8px;
-      background: #1e293b;
+      background:var(--card);
       border-radius: 99px;
       overflow: hidden;
     }
@@ -372,8 +372,12 @@
       transition: width 0.6s ease;
     }
   </style>
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/adventure-ui.css">
+  <script src="js/theme-switcher.js"></script>
 </head>
 <body>
+  <header class="hub-header"><a class="hub-brand" href="./"><span class="brand-mark">LH</span><span>LJIET Hub<small>Your study workspace</small></span></a><div class="header-actions"><a class="header-link" href="./">Home</a><button class="theme-toggle" id="themeToggleBtn" type="button" onclick="toggleTheme()">Dark mode</button></div></header>
   <div class="top-bar">
     <div class="location">🌲 <span>Forest of Loops</span></div>
     <div class="stats">
@@ -532,7 +536,7 @@
               <p style="font-size:1.15rem;margin-top:10px;line-height:1.5">
                 “Do the same action again and again<br>while something is still true.”
               </p>
-              <p style="margin-top:16px;color:#86efac">
+              <p style="margin-top:16px;color:var(--success)">
                 Pick apple → Pick apple → Pick apple … (10 times)
               </p>
             </div>
@@ -843,7 +847,7 @@ sys.stdout = StringIO()
       area.innerHTML = `
         <div class="boss-banner">
           <h3>👑 BOSS BATTLE</h3>
-          <p style="color:#fca5a5;margin-top:6px">Prove you can use loops on your own</p>
+          <p style="color:var(--danger);margin-top:6px">Prove you can use loops on your own</p>
         </div>
 
         <div class="challenge-header">

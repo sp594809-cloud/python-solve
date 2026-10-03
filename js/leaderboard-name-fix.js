@@ -3,17 +3,17 @@
   function fixNames() {
     var box = document.getElementById("leaderboardTableBox");
     if (!box) return;
-    box.style.setProperty("background", "#0f172a", "important");
+    box.style.setProperty("background", "var(--card)", "important");
     box.querySelectorAll("td").forEach(function (td) {
       if (td.cellIndex === 1) {
-        td.style.setProperty("color", "#f8fafc", "important");
+        td.style.setProperty("color", "var(--text)", "important");
         td.style.setProperty("font-weight", "700", "important");
       } else if (td.cellIndex !== 0) {
-        td.style.setProperty("color", "#e2e8f0", "important");
+        td.style.setProperty("color", "var(--text)", "important");
       }
     });
     box.querySelectorAll("th").forEach(function (th) {
-      th.style.setProperty("color", "#a5b4fc", "important");
+      th.style.setProperty("color", "var(--muted)", "important");
     });
   }
   var tries = 0;

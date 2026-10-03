@@ -3,117 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#4f46e5" />
+  <meta name="theme-color" content="#3159d7" />
+  <meta name="description" content="LJIET study workspace: Python, full stack development, software engineering and probability practice books." />
   <title>LJIET Learning Hub</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/playgrounds.css" />
   <link rel="stylesheet" href="css/quiz-mode.css" />
+  <link rel="stylesheet" href="css/design-system.css" />
   <link rel="stylesheet" href="css/app-ui.css" />
+  <script src="js/theme-switcher.js"></script>
   <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-  <nav class="top-nav">
-    <div class="logo" onclick="openWelcomeScreen()" style="cursor:pointer">
-      <span class="logo-icon">🐍</span>
-      <span class="logo-text">LJIET Learning Hub</span>
+  <a class="skip-link" href="#mainContent">Skip to study content</a>
+  <header class="hub-header">
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="menu-toggle" type="button" onclick="toggleSidebar()" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false">☰</button>
+      <a class="hub-brand" href="./" onclick="event.preventDefault();openWelcomeScreen()"><span class="brand-mark">LH</span><span>LJIET Hub<small>Your study workspace</small></span></a>
     </div>
-    <div class="nav-progress">
-      <button type="button" class="btn-secondary nav-main-btn nav-home-btn" onclick="openWelcomeScreen()">🏠 Home</button>
-      <button class="btn-secondary nav-main-btn" onclick="openSem1PracticeBook()">📘 SEM-I</button>
-      <button class="btn-secondary nav-main-btn" onclick="openSem3PracticeBook()">📗 SEM-3</button>
-      <button class="btn-secondary nav-main-btn" onclick="openFsd1PracticeBook()">🌐 FSD-1</button>
-      <a class="btn-secondary nav-main-btn" href="probability/">P&amp;S Chapter 3</a>
-      <button class="btn-secondary nav-main-btn" onclick="openSEPracticeBook()">📐 SE</button>
-      <button class="btn-secondary nav-main-btn" onclick="openLeaderboardScreen()">🏆 Rank</button>
-      <button class="btn-secondary nav-main-btn" onclick="openLearningPathNav()">📚 Learn</button>
-    </div>
-  </nav>
-  <nav class="mobile-bottom-nav" id="mobileBottomNav">
-    <button type="button" class="mobile-nav-item home-pill" onclick="openWelcomeScreen()"><span>🏠</span> HOME</button>
-    <button type="button" class="mobile-nav-item" onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',10)"><span>📝</span><span>Quiz</span></button>
-    <button type="button" class="mobile-nav-item" onclick="openLeaderboardScreen()"><span>🏆</span><span>Rank</span></button>
-    <button type="button" class="mobile-nav-item" onclick="openLeaderboardScreen()"><span>👤</span><span>Profile</span></button>
+    <div class="header-actions"><button class="theme-toggle" id="themeToggleBtn" type="button" onclick="toggleTheme()">Dark mode</button></div>
+  </header>
+  <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Main navigation">
+    <button type="button" class="mobile-nav-item active" data-view="home" onclick="openWelcomeScreen()"><span aria-hidden="true">⌂</span><span>Home</span></button>
+    <button type="button" class="mobile-nav-item" data-view="quiz" onclick="startUnitQuiz('sem1','all',10)"><span aria-hidden="true">✓</span><span>Quiz</span></button>
+    <a class="mobile-nav-item" href="probability/" style="text-decoration:none"><span aria-hidden="true">∑</span><span>P&amp;S</span></a>
+    <button type="button" class="mobile-nav-item" data-view="rank" onclick="openLeaderboardScreen()"><span aria-hidden="true">▥</span><span>Rank</span></button>
   </nav>
   <div class="app-container">
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-header"><span>Menu</span><button type="button" onclick="toggleSidebar()">✕</button></div>
-      <div class="phase-header">MAIN FOCUS</div>
+    <aside class="sidebar" id="sidebar" aria-label="Study navigation">
+      <div class="sidebar-header"><span>Study workspace</span><button type="button" onclick="closeSidebarOnMobile()" aria-label="Close navigation">×</button></div>
+      <div class="phase-header">WORKSPACE</div>
       <ul class="concept-list">
-        <li onclick="openWelcomeScreen(); closeSidebarOnMobile()">🏠 Home</li>
-        <li onclick="openSem1PracticeBook(); closeSidebarOnMobile()">📘 Python SEM-I</li>
-        <li onclick="openSem3PracticeBook(); closeSidebarOnMobile()">📗 Python SEM-3</li>
-        <li onclick="openFsd1PracticeBook(); closeSidebarOnMobile()">🌐 FSD-1 (Full Stack JS)</li>
-        <li><a href="probability/" style="color:inherit;text-decoration:none;display:block">P&amp;S Chapter 3 · Worked Solutions</a></li>
-        <li onclick="openSEPracticeBook(); closeSidebarOnMobile()">📐 SE Practice</li>
-        <li onclick="openLeaderboardScreen(); closeSidebarOnMobile()">🏆 Leaderboard</li>
-        <li onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',10); closeSidebarOnMobile()">📝 Quick Quiz</li>
-        <li onclick="openLearningPathNav(); closeSidebarOnMobile()">📚 Learning Path</li>
+        <li data-view="home" class="active"><button type="button" onclick="openWelcomeScreen();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">⌂</span>Overview</button></li>
+        <li data-view="sem1"><button type="button" onclick="openSem1PracticeBook();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">Py</span>Python · Semester I</button></li>
+        <li data-view="sem3"><button type="button" onclick="openSem3PracticeBook();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">Py</span>Python · Semester III</button></li>
+        <li data-view="fsd1"><button type="button" onclick="openFsd1PracticeBook();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">JS</span>Full stack development</button></li>
+        <li data-view="ps"><a href="probability/"><span class="nav-symbol" aria-hidden="true">∑</span>Probability & statistics</a></li>
+        <li data-view="se"><button type="button" onclick="openSEPracticeBook();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">SE</span>Software engineering</button></li>
+        <li data-view="quiz"><button type="button" onclick="startUnitQuiz('sem1','all',10);closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">✓</span>Quick quiz</button></li>
+        <li data-view="rank"><button type="button" onclick="openLeaderboardScreen();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">▥</span>Leaderboard</button></li>
+        <li data-view="learn"><button type="button" onclick="openLearningPathNav();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">&lt;&gt;</span>Learning path</button></li>
       </ul>
-      <div class="phase-header">LEARN PYTHON</div>
+      <div class="phase-header">PYTHON CONCEPTS</div>
       <ul class="concept-list" id="conceptList"></ul>
+      <div class="sidebar-footer">L.J. Institute<br>Practice. Understand. Repeat.</div>
     </aside>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
-    <main class="main-content">
-      <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
-      <section id="welcomeScreen" class="screen active">
+    <main class="main-content" id="mainContent" tabindex="-1">
+      <section id="welcomeScreen" class="screen active" aria-label="Study overview">
         <div class="bw-home">
           <div class="bw-header">
-            <div><h1>LJIET Hub</h1><div class="sub">READY TO LEARN?</div></div>
-            <div class="bw-avatar" id="bwAvatar" onclick="openLeaderboardScreen()">?</div>
+            <div><div class="eyebrow">YOUR WORKSPACE</div><h1>What will you learn today?</h1><div class="sub">Choose a subject and pick up your practice.</div></div>
+            <button class="bw-avatar" id="bwAvatar" type="button" onclick="openStudentProfileModal()" aria-label="Open your student profile">?</button>
           </div>
           <div class="bw-challenge">
-            <div><span class="tag">🔥 Daily · 10 Q</span><h2>Daily Challenge</h2></div>
-            <button type="button" class="bw-play" onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',10)">PLAY</button>
+            <div><span class="tag">10 QUESTIONS · PYTHON I</span><h2>A little practice, every day.</h2><p>Test your understanding with a quick quiz.</p></div>
+            <button type="button" class="bw-play" onclick="startUnitQuiz('sem1','all',10)">Start quiz</button>
           </div>
-          <div class="bw-section-title">Jump Back In</div>
-          <div class="bw-jump" onclick="openSem1PracticeBook()">
-            <div class="bw-jump-icon">📘</div>
-            <div class="bw-jump-info"><strong>Python Practice Book</strong><div class="prog"><i style="width:35%"></i></div></div>
-            <button type="button" class="bw-jump-play" onclick="event.stopPropagation(); openSem1PracticeBook()">▶</button>
-          </div>
-          <div class="bw-section-title">Categories</div>
+          <h2 class="bw-section-title">Your subjects</h2>
           <div class="bw-cats">
-            <button type="button" class="bw-cat python" onclick="openSem1PracticeBook()"><span class="icon">🐍</span> Python SEM-I</button>
-            <button type="button" class="bw-cat sem3" onclick="openSem3PracticeBook()"><span class="icon">📗</span> Python SEM-3</button>
-            <button type="button" class="bw-cat se" onclick="openFsd1PracticeBook()"><span class="icon">🌐</span> FSD-1</button>
-            <button type="button" class="bw-cat rank" onclick="openLeaderboardScreen()"><span class="icon">🏆</span> Leaderboard</button>
+            <button type="button" class="bw-cat python" onclick="openSem1PracticeBook()"><span class="icon" aria-hidden="true">Py</span><span>Python · Semester I</span><small>Units 1–3 · 210 questions</small></button>
+            <button type="button" class="bw-cat sem3" onclick="openSem3PracticeBook()"><span class="icon" aria-hidden="true">Py</span><span>Python · Semester III</span><small>FCSP-1 · Units 1–5</small></button>
+            <button type="button" class="bw-cat fsd" onclick="openFsd1PracticeBook()"><span class="icon" aria-hidden="true">JS</span><span>Full stack development</span><small>FSD-1 · Units 1–10</small></button>
+            <a class="bw-cat ps" href="probability/"><span class="icon" aria-hidden="true">∑</span><span>Probability &amp; statistics</span><small>Chapter 3 · 76 worked solutions</small></a>
+            <button type="button" class="bw-cat se" onclick="openSEPracticeBook()"><span class="icon" aria-hidden="true">SE</span><span>Software engineering</span><small>Practice book · MCQs</small></button>
+            <button type="button" class="bw-cat learn" onclick="openLearningPathNav()"><span class="icon" aria-hidden="true">&lt;&gt;</span><span>Learn Python</span><small>Concepts · Interactive exercises</small></button>
           </div>
-          <div class="bw-section-title">Practice Paths</div>
+          <h2 class="bw-section-title">Practice your way</h2>
           <div class="bw-unit-list">
-            <a class="bw-unit" href="probability/" style="color:inherit;text-decoration:none">
-              <div class="bw-unit-icon">P&amp;S</div>
-              <div class="bw-unit-body"><strong>Probability &amp; Statistics</strong><div class="bw-unit-meta">Chapter 3 · Q205–Q280 · 76 worked solutions</div></div>
-              <div class="bw-score">OPEN<br><b>→</b></div>
-            </a>
-            <div class="bw-unit" onclick="openSem1PracticeBook()">
-              <div class="bw-unit-icon">📘</div>
-              <div class="bw-unit-body"><strong>Python SEM-I (210 Qs)</strong><div class="bw-unit-meta"><span class="bw-badge med">CORE</span> Units 1–3</div></div>
-              <div class="bw-score">OPEN<br><b>→</b></div>
-            </div>
-            <div class="bw-unit" onclick="openSem3PracticeBook()">
-              <div class="bw-unit-icon">📗</div>
-              <div class="bw-unit-body"><strong>Python SEM-3 FCSP-1</strong><div class="bw-unit-meta"><span class="bw-badge hard">SEM-III</span> Units 1–5</div></div>
-              <div class="bw-score">OPEN<br><b>→</b></div>
-            </div>
-            <div class="bw-unit" onclick="openFsd1PracticeBook()">
-              <div class="bw-unit-icon">🌐</div>
-              <div class="bw-unit-body"><strong>FSD-1 Full Stack JS</strong><div class="bw-unit-meta"><span class="bw-badge med">FSD</span> Units 1–10 · Practice Book</div></div>
-              <div class="bw-score">OPEN<br><b>→</b></div>
-            </div>
-            <div class="bw-unit" onclick="openSEPracticeBook()">
-              <div class="bw-unit-icon">📐</div>
-              <div class="bw-unit-body"><strong>SE Practice Book</strong><div class="bw-unit-meta"><span class="bw-badge easy">SE</span> ~177 MCQs</div></div>
-              <div class="bw-score">OPEN<br><b>→</b></div>
-            </div>
-            <div class="bw-unit" onclick="typeof startUnitQuiz==='function'&&startUnitQuiz('sem1','all',15)">
-              <div class="bw-unit-icon">📝</div>
-              <div class="bw-unit-body"><strong>Timed Quiz Mode</strong><div class="bw-unit-meta"><span class="bw-badge med">15 Q</span> Score · timer</div></div>
-              <div class="bw-score">PLAY<br><b>→</b></div>
-            </div>
+            <a class="bw-unit" href="probability/"><span class="bw-unit-icon" aria-hidden="true">∑</span><span class="bw-unit-body"><strong>Chapter 3 worked solutions</strong><span class="bw-unit-meta" style="display:block">Statistics &amp; moments · Q205–Q280</span></span><span class="bw-score">Open</span></a>
+            <button type="button" class="bw-unit" onclick="startUnitQuiz('sem1','all',15)"><span class="bw-unit-icon" aria-hidden="true">✓</span><span class="bw-unit-body"><strong>Timed Python quiz</strong><span class="bw-unit-meta" style="display:block">15 questions · Score &amp; review</span></span><span class="bw-score">Start</span></button>
+            <button type="button" class="bw-unit" onclick="openSem1PracticeBook()"><span class="bw-unit-icon" aria-hidden="true">Py</span><span class="bw-unit-body"><strong>Python coding practice</strong><span class="bw-unit-meta" style="display:block">Read, write and run your code</span></span><span class="bw-score">Open</span></button>
+            <button type="button" class="bw-unit" onclick="openLeaderboardScreen()"><span class="bw-unit-icon" aria-hidden="true">▥</span><span class="bw-unit-body"><strong>Your class leaderboard</strong><span class="bw-unit-meta" style="display:block">Check points &amp; class rankings</span></span><span class="bw-score">View</span></button>
           </div>
-          <p style="text-align:center;color:#94a3b8;font-size:0.8rem;margin:24px 0 8px">Points: <strong id="bwPoints">0</strong> · <span id="bwUserName">Student</span></p>
+          <p class="home-profile"><span id="bwUserName">Student</span> · <strong id="bwPoints">0</strong> points</p>
         </div>
       </section>
       <section id="conceptScreen" class="screen">
@@ -153,7 +118,7 @@
   <script src="js/fsd1-unit2-coding.js"></script>
   <script src="js/fsd1-practice-book.js"></script>
   <script src="js/playgrounds.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/sp594809-cloud/python-solve@f95c6076891117adf6984dd31cde3d6101bc69b1/js/app.js"></script>
+  <script src="js/app.js"></script>
   <script src="js/pb-sem3-bridge.js"></script>
   <script src="js/escape-mcq-fix.js"></script>
   <script src="js/quiz-mode.js"></script>
@@ -165,6 +130,7 @@
   <script src="js/se-practice-book.js"></script>
   <script src="js/app-se.js"></script>
   <script src="js/sem3-open.js"></script>
+  <script src="js/navigation-ui.js"></script>
   <script>
   (function(){
     function boot(){

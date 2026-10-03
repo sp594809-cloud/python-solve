@@ -94,18 +94,18 @@ function renderSEPracticeBookHub() {
   const units = Object.keys(SE_PRACTICE_BOOK).map((k) => SE_PRACTICE_BOOK[k]);
   const total = getSEAllMcqs().length;
   let html = '<div style="background:linear-gradient(135deg,#422006,#0f172a);border:1px solid #f59e0b;border-radius:16px;padding:20px;margin-bottom:20px">' +
-    '<h2 style="color:#fcd34d;margin:0 0 8px;font-size:1.35rem">📐 Software Engineering Practice Book</h2>' +
-    '<p style="color:#94a3b8;margin:0;font-size:0.9rem">LJIET · <strong style="color:#fde68a">' + total + ' MCQs</strong> · shared leaderboard (+10 each)</p>' +
+    '<h2 style="color:var(--warning);margin:0 0 8px;font-size:1.35rem">📐 Software Engineering Practice Book</h2>' +
+    '<p style="color:var(--muted);margin:0;font-size:0.9rem">LJIET · <strong style="color:#fde68a">' + total + ' MCQs</strong> · shared leaderboard (+10 each)</p>' +
     '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">' +
     '<button class="btn-primary small" onclick="renderSEUnitList()">All Units</button>' +
     '<button class="btn-secondary small" onclick="renderSEAllMcqs()">Practice All MCQs</button>' +
     '<button class="btn-secondary small" onclick="selectPythonSubject()">← Python</button></div></div><div style="display:grid;gap:12px">';
   units.forEach((u) => {
     const n = (u.mcqs || []).length;
-    html += '<div onclick="renderSEUnit(' + u.unit + ')" style="background:#1e293b;border:1px solid #334155;border-radius:12px;padding:16px;cursor:pointer">' +
+    html += '<div onclick="renderSEUnit(' + u.unit + ')" style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;cursor:pointer">' +
       '<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><div>' +
-      '<div style="color:#fcd34d;font-weight:700;font-size:1rem">' + u.title + '</div>' +
-      '<div style="color:#94a3b8;font-size:0.85rem;margin-top:4px">' + n + ' MCQs · Unit ' + u.unit + '</div></div>' +
+      '<div style="color:var(--warning);font-weight:700;font-size:1rem">' + u.title + '</div>' +
+      '<div style="color:var(--muted);font-size:0.85rem;margin-top:4px">' + n + ' MCQs · Unit ' + u.unit + '</div></div>' +
       '<span style="background:#78350f;color:#fde68a;padding:4px 12px;border-radius:99px;font-size:0.8rem;font-weight:700">Open →</span></div></div>';
   });
   html += '</div>';
@@ -119,8 +119,8 @@ function renderSEUnit(unitNum) {
   if (!u) return;
   let html = '<div style="margin-bottom:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">' +
     '<button class="btn-secondary small" onclick="renderSEPracticeBookHub()">← Units</button>' +
-    '<h3 style="color:#fcd34d;margin:0">' + u.title + '</h3>' +
-    '<span style="color:#94a3b8;font-size:0.85rem">' + (u.mcqs||[]).length + ' questions</span></div><div style="display:grid;gap:14px">';
+    '<h3 style="color:var(--warning);margin:0">' + u.title + '</h3>' +
+    '<span style="color:var(--muted);font-size:0.85rem">' + (u.mcqs||[]).length + ' questions</span></div><div style="display:grid;gap:14px">';
   (u.mcqs || []).forEach((q, i) => { html += renderSEMcqCard(normalizeSEQuestion(q, u.unit, u.title, i), i); });
   html += '</div>';
   content.innerHTML = html;
@@ -131,7 +131,7 @@ function renderSEAllMcqs() {
   const all = getSEAllMcqs();
   let html = '<div style="margin-bottom:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">' +
     '<button class="btn-secondary small" onclick="renderSEPracticeBookHub()">← Units</button>' +
-    '<h3 style="color:#fcd34d;margin:0">All SE MCQs (' + all.length + ')</h3></div><div style="display:grid;gap:14px">';
+    '<h3 style="color:var(--warning);margin:0">All SE MCQs (' + all.length + ')</h3></div><div style="display:grid;gap:14px">';
   all.forEach((q, i) => { html += renderSEMcqCard(q, i); });
   html += '</div>';
   content.innerHTML = html;
@@ -144,11 +144,11 @@ function renderSEMcqCard(q, i) {
       '" onclick="checkSEAnswer(\'' + q.id + '\',\'' + letter + '\',\'' + ans + '\')" style="display:block;width:100%;text-align:left;margin-bottom:8px">' +
       letter + '. ' + o + '</button>';
   }).join("");
-  return '<div style="background:#0f172a;border:1px solid #334155;border-radius:14px;padding:16px" id="se-card-' + q.id + '">' +
+  return '<div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:16px" id="se-card-' + q.id + '">' +
     '<div style="display:flex;justify-content:space-between;gap:8px;margin-bottom:10px;flex-wrap:wrap">' +
-    '<span style="background:#312e81;color:#c7d2fe;padding:2px 10px;border-radius:99px;font-size:0.75rem;font-weight:700">Q' + q.srNo + '</span>' +
-    '<span style="color:#64748b;font-size:0.75rem">Unit ' + (q.unit || "") + '</span></div>' +
-    '<p style="color:#e2e8f0;margin:0 0 12px;line-height:1.5;font-size:0.95rem">' + q.question + '</p>' +
+    '<span style="background:#312e81;color:var(--primary);padding:2px 10px;border-radius:99px;font-size:0.75rem;font-weight:700">Q' + q.srNo + '</span>' +
+    '<span style="color:var(--muted);font-size:0.75rem">Unit ' + (q.unit || "") + '</span></div>' +
+    '<p style="color:var(--text);margin:0 0 12px;line-height:1.5;font-size:0.95rem">' + q.question + '</p>' +
     '<div>' + opts + '</div><div id="se-fb-' + q.id + '" style="display:none;margin-top:10px"></div>' +
     '<button type="button" class="pb-sol-btn" style="margin-top:8px" onclick="showSESolution(\'' + q.id + '\')">Show solution</button></div>';
 }
@@ -165,8 +165,8 @@ window.checkSEAnswer = function (qid, letter, correctLetter) {
   });
   if (ok && typeof addStudentPoints === "function") addStudentPoints(10, "se-" + qid);
   fb.innerHTML = ok
-    ? '<div style="background:rgba(34,197,94,0.15);border:1px solid #22c55e;padding:12px;border-radius:10px;color:#86efac">✅ Correct! +10 points</div>'
-    : '<div style="background:rgba(239,68,68,0.15);border:1px solid #ef4444;padding:12px;border-radius:10px;color:#fca5a5">❌ Wrong. Correct answer is <strong>' + correctLetter + '</strong></div>';
+    ? '<div style="background:rgba(34,197,94,0.15);border:1px solid #22c55e;padding:12px;border-radius:10px;color:var(--success)">✅ Correct! +10 points</div>'
+    : '<div style="background:rgba(239,68,68,0.15);border:1px solid #ef4444;padding:12px;border-radius:10px;color:var(--danger)">❌ Wrong. Correct answer is <strong>' + correctLetter + '</strong></div>';
 };
 window.showSESolution = function (qid) {
   const all = getSEAllMcqs();
@@ -174,9 +174,9 @@ window.showSESolution = function (qid) {
   const fb = document.getElementById("se-fb-" + qid);
   if (!q || !fb) return;
   fb.style.display = "block";
-  fb.innerHTML = '<div style="background:#1e293b;border:1px solid #475569;padding:12px;border-radius:10px;color:#e2e8f0">' +
-    '<strong style="color:#fcd34d">Answer: (' + q.answer + ') ' + q.correct + '</strong>' +
-    '<p style="margin:8px 0 0;color:#94a3b8;font-size:0.9rem">' + (q.explanation || "") + '</p></div>';
+  fb.innerHTML = '<div style="background:var(--card);border:1px solid var(--border);padding:12px;border-radius:10px;color:var(--text)">' +
+    '<strong style="color:var(--warning)">Answer: (' + q.answer + ') ' + q.correct + '</strong>' +
+    '<p style="margin:8px 0 0;color:var(--muted);font-size:0.9rem">' + (q.explanation || "") + '</p></div>';
 };
 loadSavedSubject();
 if (document.readyState === "loading") {

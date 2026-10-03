@@ -55,7 +55,7 @@ function renderVariablePlayground(container, data) {
       <button onclick="changeVarValue()">Change Value</button>
       <button onclick="addNewVar()" style="background:#22c55e">+ New Box</button>
     </div>
-    <p style="text-align:center;color:#94a3b8;margin-top:12px;font-size:0.9rem">
+    <p style="text-align:center;color:var(--muted);margin-top:12px;font-size:0.9rem">
       Change the number and watch the box update. This is exactly what a variable does!
     </p>
   </div>`;
@@ -103,7 +103,7 @@ function renderStringPlayground(container, data) {
   }
 
   html += `</div>
-    <p style="text-align:center;color:#94a3b8;margin-top:16px" id="stringInfo">
+    <p style="text-align:center;color:var(--muted);margin-top:16px" id="stringInfo">
       Click a letter to see its position (index)
     </p>
   </div>`;
@@ -147,7 +147,7 @@ function renderListPlayground(container, data) {
         <button onclick="listPop()" style="background:#ef4444">Remove Last</button>
         <button onclick="listSort()" style="background:#22c55e">Sort</button>
       </div>
-      <p style="text-align:center;color:#94a3b8;margin-top:12px;font-size:0.9rem">
+      <p style="text-align:center;color:var(--muted);margin-top:12px;font-size:0.9rem">
         Current list length: <strong>${items.length}</strong> &nbsp;|&nbsp;
         In Python: <code>mylist.append(value)</code>
       </p>
@@ -185,7 +185,7 @@ function renderDecisionTree(container, data) {
     <div class="playground-title">🖐 Decision Tree – Change the value and watch the path</div>
     <div class="decision-tree">
       <div class="tree-node" id="treeStart">age = <span id="treeAgeVal">20</span></div>
-      <div style="font-size:1.5rem;color:#64748b">↓</div>
+      <div style="font-size:1.5rem;color:var(--muted)">↓</div>
       <div class="tree-node condition" id="treeCondition">${data.condition || "age >= 18"}?</div>
       <div class="tree-branches">
         <div class="tree-branch">
@@ -386,17 +386,17 @@ function renderDictionaryPlayground(container, data) {
       <div class="playground-title">🖐 Dictionary – Click a key to highlight its value</div>
       <table style="width:100%;border-collapse:collapse;margin:16px 0">
         <thead>
-          <tr style="background:#1e293b">
-            <th style="padding:12px;text-align:left;border:1px solid #334155">KEY (name tag)</th>
-            <th style="padding:12px;text-align:left;border:1px solid #334155">VALUE</th>
+          <tr style="background:var(--card)">
+            <th style="padding:12px;text-align:left;border:1px solid var(--border)">KEY (name tag)</th>
+            <th style="padding:12px;text-align:left;border:1px solid var(--border)">VALUE</th>
           </tr>
         </thead>
         <tbody id="dictBody">`;
 
     entries.forEach(([k, v], i) => {
       html += `<tr class="dict-row" onclick="highlightDict(${i})" style="cursor:pointer">
-        <td style="padding:12px;border:1px solid #334155;color:#a5b4fc">${k}</td>
-        <td style="padding:12px;border:1px solid #334155" id="dictVal${i}">${v}</td>
+        <td style="padding:12px;border:1px solid var(--border);color:var(--primary)">${k}</td>
+        <td style="padding:12px;border:1px solid var(--border)" id="dictVal${i}">${v}</td>
       </tr>`;
     });
 
@@ -406,7 +406,7 @@ function renderDictionaryPlayground(container, data) {
         <input type="text" id="dictVal" placeholder="New value" style="width:100px" />
         <button onclick="dictAdd()" style="background:#22c55e">+ Add</button>
       </div>
-      <p style="text-align:center;color:#94a3b8;margin-top:12px;font-size:0.9rem" id="dictInfo">
+      <p style="text-align:center;color:var(--muted);margin-top:12px;font-size:0.9rem" id="dictInfo">
         Click any row. In Python you write: <code>student["key"]</code>
       </p>
     </div>`;
@@ -455,7 +455,7 @@ function renderClassDemo(container) {
         <div class="var-box"><div class="var-name">dog1</div><div class="var-value">Buddy</div></div>
         <div class="var-box"><div class="var-name">dog2</div><div class="var-value">Lucy</div></div>
       </div>
-      <p style="color:#94a3b8;margin-top:16px">One factory can make many objects. Each object has its own data.</p>
+      <p style="color:var(--muted);margin-top:16px">One factory can make many objects. Each object has its own data.</p>
     </div>
   </div>`;
 }
@@ -485,10 +485,10 @@ function renderSystemDemo(container) {
 function renderGuiDemo(container) {
   container.innerHTML = `<div class="playground-container">
     <div class="playground-title">🖐 GUI = Window with buttons</div>
-    <div style="background:#1e293b;border:2px solid #475569;border-radius:12px;padding:24px;max-width:320px;margin:20px auto;text-align:center">
+    <div style="background:var(--card);border:2px solid var(--border);border-radius:12px;padding:24px;max-width:320px;margin:20px auto;text-align:center">
       <div style="font-weight:700;margin-bottom:16px">My First Window</div>
       <button style="background:#6366f1;color:white;border:none;padding:10px 24px;border-radius:8px;cursor:pointer">Click me</button>
-      <p style="color:#94a3b8;margin-top:16px;font-size:0.9rem">This is the idea of a GUI (from Book A)</p>
+      <p style="color:var(--muted);margin-top:16px;font-size:0.9rem">This is the idea of a GUI (from Book A)</p>
     </div>
   </div>`;
 }

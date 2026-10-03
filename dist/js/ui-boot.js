@@ -51,7 +51,7 @@
     var el = document.getElementById("bwAvatar");
     var pts = document.getElementById("bwPoints");
     var name = document.getElementById("bwUserName");
-    var st = window.currentStudent;
+    var st = typeof currentStudent !== "undefined" ? currentStudent : window.currentStudent;
     if (st) {
       if (el) el.textContent = (st.name || "?").charAt(0).toUpperCase();
       if (name) name.textContent = (st.name || "Student").split(" ")[0];
@@ -121,7 +121,6 @@
 
   window.addEventListener("load", function () {
     setTimeout(function () {
-      window.openSem3PracticeBook = showSem3Screen;
       if (typeof refreshHomeProfile === "function") refreshHomeProfile();
     }, 400);
   });

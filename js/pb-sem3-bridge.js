@@ -82,8 +82,8 @@
       if (BOOK[k] && BOOK[k].mcqs) mcqCount += BOOK[k].mcqs.length;
       if (BOOK[k] && BOOK[k].coding) codeCount += BOOK[k].coding.length;
     });
-    var accent = fsd1 ? "#0ea5e9" : (sem3 ? "#166534" : "#4338ca");
-    var titleColor = fsd1 ? "#7dd3fc" : (sem3 ? "#86efac" : "#c7d2fe");
+    var accent = "var(--border)";
+    var titleColor = 'var(--primary)';
     var bookTitle = fsd1 ? "🌐 FSD-1 Full Stack JS Practice Book" : (sem3 ? "📗 SEM-III Python Practice Book" : "📘 LJIET Python-I Practice Book");
     var unitBtns = '<button class="pb-filter-btn ' + (window.pbCurrentUnit === "all" ? "active" : "") + '" onclick="setPBUnit(\'all\')">All Units</button>';
     var maxU = maxUnits();
@@ -91,9 +91,9 @@
       if (BOOK["unit" + u])
         unitBtns += '<button class="pb-filter-btn ' + (window.pbCurrentUnit === String(u) ? "active" : "") + '" onclick="setPBUnit(\'' + u + '\')">Unit ' + u + '</button>';
     content.innerHTML =
-      '<div style="background:linear-gradient(135deg,#1e1b4b,#0f172a);border:1px solid ' + accent + ';border-radius:16px;padding:20px;margin-bottom:24px">' +
+      '<div style="background:var(--primary-soft);border:1px solid ' + accent + ';border-radius:16px;padding:20px;margin-bottom:24px">' +
       '<h2 style="color:' + titleColor + ';margin:0;font-size:1.35rem">' + bookTitle + '</h2>' +
-      '<p style="color:#94a3b8">' + mcqCount + ' MCQs' + (codeCount ? ' · ' + codeCount + ' Coding/Descriptive' : '') + '</p>' +
+      '<p style="color:var(--muted)">' + mcqCount + ' MCQs' + (codeCount ? ' · ' + codeCount + ' Coding/Descriptive' : '') + '</p>' +
       '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">' +
       '<button class="pb-filter-btn ' + (!sem3 && !fsd1 ? 'active' : '') + '" onclick="openSem1PracticeBook()">📘 SEM-I</button>' +
       '<button class="pb-filter-btn ' + (sem3 ? 'active' : '') + '" onclick="openSem3PracticeBook()">📗 SEM-3</button>' +
@@ -127,39 +127,39 @@
       });
       if (!mcqs.length && !coding.length) return;
       total += mcqs.length + coding.length;
-      html += '<div style="margin-bottom:24px;border:1px solid #334155;border-radius:16px;padding:20px">' +
-        '<h3 style="color:#a5b4fc">' + escapeHtml(u.title || ('Unit ' + u.unit)) + ' · ' + mcqs.length + ' MCQ · ' + coding.length + ' Code</h3>';
+      html += '<div style="margin-bottom:24px;border:1px solid var(--border);border-radius:16px;padding:20px">' +
+        '<h3 style="color:var(--primary)">' + escapeHtml(u.title || ('Unit ' + u.unit)) + ' · ' + mcqs.length + ' MCQ · ' + coding.length + ' Code</h3>';
       mcqs.forEach(function (item) {
         var sid = "sol-" + String(item.id || "").replace(/[^a-zA-Z0-9]/g, "_");
         var opts = (item.options || []).map(function (o, i) {
           var letter = "ABCD"[i];
-          return '<button type="button" onclick="checkPBAnswerBridge(\'' + item.id + '\',\'' + letter + '\',\'' + sid + '\')" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 14px;border:1px solid #334155;border-radius:10px;background:#1e293b;color:#e2e8f0;cursor:pointer">' + letter + '. ' + escapeHtml(o) + '</button>';
+          return '<button type="button" onclick="checkPBAnswerBridge(\'' + item.id + '\',\'' + letter + '\',\'' + sid + '\')" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 14px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--text);cursor:pointer">' + letter + '. ' + escapeHtml(o) + '</button>';
         }).join("");
-        html += '<div style="background:#0f172a;border:1px solid #1e293b;border-radius:14px;padding:14px;margin-bottom:12px">' +
-          '<div style="font-size:0.75rem;color:#818cf8">' + escapeHtml(item.id || "") + ' · Sr ' + (item.srNo || "") + '</div>' +
-          '<div style="color:#f8fafc;margin:8px 0;white-space:pre-wrap">' + escapeHtml(item.question || "") + '</div>' +
+        html += '<div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px">' +
+          '<div style="font-size:0.75rem;color:var(--primary)">' + escapeHtml(item.id || "") + ' · Sr ' + (item.srNo || "") + '</div>' +
+          '<div style="color:var(--text);margin:8px 0;white-space:pre-wrap">' + escapeHtml(item.question || "") + '</div>' +
           opts + '<div id="' + sid + '" style="display:none;margin-top:10px;padding:12px;border-radius:10px"></div></div>';
       });
       coding.forEach(function (item) {
         var sid = "code-" + String(item.id || "").replace(/[^a-zA-Z0-9]/g, "_");
         var imgHtml = "";
         if (item.imageUrl) {
-          imgHtml = '<div style="margin:12px 0;text-align:center;background:#0f172a;border:1px solid #334155;border-radius:10px;padding:12px">' +
+          imgHtml = '<div style="margin:12px 0;text-align:center;background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px">' +
             '<img src="' + escapeHtml(item.imageUrl) + '" alt="' + escapeHtml(item.imageAlt || 'Question figure') + '" ' +
-            'style="max-width:100%;height:auto;border-radius:8px;border:1px solid #475569" loading="lazy" />' +
-            (item.imageAlt ? '<div style="color:#94a3b8;font-size:0.75rem;margin-top:6px">' + escapeHtml(item.imageAlt) + '</div>' : '') +
+            'style="max-width:100%;height:auto;border-radius:8px;border:1px solid var(--border)" loading="lazy" />' +
+            (item.imageAlt ? '<div style="color:var(--muted);font-size:0.75rem;margin-top:6px">' + escapeHtml(item.imageAlt) + '</div>' : '') +
             '</div>';
         }
-        html += '<div style="background:#020617;border:1px solid #166534;border-radius:14px;padding:14px;margin-bottom:12px">' +
-          '<div style="color:#4ade80;font-size:0.75rem">' + escapeHtml(item.id || "") + ' · ' + escapeHtml(item.topic || "Code") + (item.marks ? ' · ' + item.marks + ' marks' : '') + '</div>' +
-          '<div style="color:#f8fafc;margin:8px 0;white-space:pre-wrap">' + escapeHtml(item.question || "") + '</div>' +
+        html += '<div style="background:var(--bg);border:1px solid #166534;border-radius:14px;padding:14px;margin-bottom:12px">' +
+          '<div style="color:var(--success);font-size:0.75rem">' + escapeHtml(item.id || "") + ' · ' + escapeHtml(item.topic || "Code") + (item.marks ? ' · ' + item.marks + ' marks' : '') + '</div>' +
+          '<div style="color:var(--text);margin:8px 0;white-space:pre-wrap">' + escapeHtml(item.question || "") + '</div>' +
           imgHtml +
           '<button type="button" onclick="(function(){var e=document.getElementById(\'' + sid + '\');e.style.display=e.style.display===\'none\'?\'block\':\'none\';})()" style="background:#16a34a;color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer">Show solution</button>' +
-          '<div id="' + sid + '" style="display:none;margin-top:12px"><pre style="color:#38bdf8;white-space:pre-wrap;overflow-x:auto;font-size:0.85rem">' + escapeHtml(item.solution || "") + '</pre></div></div>';
+          '<div id="' + sid + '" style="display:none;margin-top:12px"><pre style="color:var(--primary);white-space:pre-wrap;overflow-x:auto;font-size:0.85rem">' + escapeHtml(item.solution || "") + '</pre></div></div>';
       });
       html += '</div>';
     });
-    if (!total) html = "<p style='color:#94a3b8;text-align:center;padding:40px'>No questions loaded for this unit yet. More units coming soon.</p>";
+    if (!total) html = "<p style='color:var(--muted);text-align:center;padding:40px'>No questions loaded for this unit yet. More units coming soon.</p>";
     container.innerHTML = html;
   };
 

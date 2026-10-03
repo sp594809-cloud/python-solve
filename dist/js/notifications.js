@@ -230,16 +230,16 @@ function showNotifSoftPrompt() {
     "padding:20px;background:rgba(15,23,42,0.88);backdrop-filter:blur(8px);";
   overlay.innerHTML =
     '<div role="dialog" aria-modal="true" aria-labelledby="ljietNotifTitle" style="' +
-    "background:#0f172a;border:1px solid #6366f1;border-radius:20px;width:100%;max-width:400px;" +
+    "background:var(--bg);border:1px solid #6366f1;border-radius:20px;width:100%;max-width:400px;" +
     'padding:28px 24px;text-align:center;box-shadow:0 25px 50px rgba(0,0,0,0.7);">' +
     '<div style="font-size:3rem;margin-bottom:10px">🔔</div>' +
-    '<h2 id="ljietNotifTitle" style="color:#f8fafc;font-size:1.35rem;margin:0 0 10px">Allow notifications?</h2>' +
-    '<p style="color:#94a3b8;font-size:0.92rem;line-height:1.55;margin:0 0 18px">' +
-    "Get a popup when your <strong style=\"color:#c7d2fe\">rank changes</strong>, when someone is " +
-    '<strong style=\"color:#fcd34d\">ahead of you</strong>, for <strong style=\"color:#86efac\">MCQ reminders</strong>, ' +
+    '<h2 id="ljietNotifTitle" style="color:var(--text);font-size:1.35rem;margin:0 0 10px">Allow notifications?</h2>' +
+    '<p style="color:var(--muted);font-size:0.92rem;line-height:1.55;margin:0 0 18px">' +
+    "Get a popup when your <strong style=\"color:var(--primary)\">rank changes</strong>, when someone is " +
+    '<strong style=\"color:var(--warning)\">ahead of you</strong>, for <strong style=\"color:var(--success)\">MCQ reminders</strong>, ' +
     "and for class <strong style=\"color:#f9a8d4\">challenges</strong>." +
     "</p>" +
-    '<ul style="text-align:left;color:#cbd5e1;font-size:0.85rem;margin:0 0 22px;padding-left:18px;line-height:1.7">' +
+    '<ul style="text-align:left;color:var(--text);font-size:0.85rem;margin:0 0 22px;padding-left:18px;line-height:1.7">' +
     "<li>🏆 Rank up / rank drop alerts</li>" +
     "<li>⚡ Who is ahead of you on the leaderboard</li>" +
     "<li>📘 Daily solve MCQs reminder</li>" +
@@ -251,7 +251,7 @@ function showNotifSoftPrompt() {
     "✓ Allow notifications</button>" +
     '<button type="button" id="ljietNotifLater" class="btn-secondary" style="' +
     'width:100%;padding:12px;font-size:0.9rem;border-radius:12px;cursor:pointer">Not now</button>' +
-    '<p style="color:#64748b;font-size:0.75rem;margin:14px 0 0">You can change this anytime in browser settings.</p>' +
+    '<p style="color:var(--muted);font-size:0.75rem;margin:14px 0 0">You can change this anytime in browser settings.</p>' +
     "</div>";
   document.body.appendChild(overlay);
 

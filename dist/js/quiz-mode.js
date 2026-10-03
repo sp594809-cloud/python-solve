@@ -101,11 +101,11 @@
       '<div class="qz-screen"><div class="qz-topbar">' +
       '<button type="button" class="qz-back" onclick="typeof openWelcomeScreen===\'function\'&&openWelcomeScreen()">‹</button>' +
       '<div class="qz-title">Start Quiz</div><div style="width:40px"></div></div>' +
-      '<p style="color:#94a3b8;font-size:0.9rem;margin-bottom:14px">Put your understanding to test by answering a few MCQs.</p>' +
+      '<p style="color:var(--muted);font-size:0.9rem;margin-bottom:14px">Put your understanding to test by answering a few MCQs.</p>' +
       '<div class="qz-hero"><h2>' + escapeHtml(QZ.unitLabel) + '</h2><div class="qz-meta">Subject: ' + escapeHtml(QZ.bookLabel) + '<br>Chapter: ' + escapeHtml(QZ.unitLabel) + '</div></div>' +
       '<div class="qz-stats-row"><span><strong>Total Questions:</strong> ' + String(QZ.pool.length).padStart(2,"0") + '</span></div>' +
       '<div class="qz-stats-row"><span><strong>Total Time:</strong> ' + minutes + ' min</span></div>' +
-      '<div class="qz-instructions"><strong style="color:#cbd5e1">Instructions:</strong><br>Use Next / Previous to move. Submit when done. Each correct answer earns +10 points.</div>' +
+      '<div class="qz-instructions"><strong style="color:var(--text)">Instructions:</strong><br>Use Next / Previous to move. Submit when done. Each correct answer earns +10 points.</div>' +
       '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px">' +
       '<span class="qz-timer">⏱ ' + fmtTime(minutes * 60) + '</span>' +
       '<button type="button" class="qz-primary" style="width:auto;min-width:140px" onclick="quizModeBegin()">Start Quiz</button></div></div>';
@@ -136,7 +136,7 @@
       '<div class="qz-screen"><div class="qz-topbar">' +
       '<button type="button" class="qz-back" onclick="quizModeExit()">‹</button><div class="qz-title">Quiz</div>' +
       (QZ.reviewMode ? '<div></div>' : '<button type="button" class="qz-submit-btn" onclick="quizModeSubmit()">Submit</button>') +
-      '</div><div class="qz-card" style="padding:12px 14px"><div style="font-weight:700;color:#f8fafc">' + escapeHtml(QZ.unitLabel) +
+      '</div><div class="qz-card" style="padding:12px 14px"><div style="font-weight:700;color:var(--text)">' + escapeHtml(QZ.unitLabel) +
       '</div><div class="qz-meta">' + escapeHtml(QZ.bookLabel) + ' · <span class="qz-timer">⏱ <span id="qzTimerText">' + fmtTime(QZ.remaining) +
       '</span></span></div><div class="qz-progress-wrap"><div class="qz-progress-fill" style="width:' + pct + '%"></div></div>' +
       '<div class="qz-qnum">Q.' + (QZ.index + 1) + '/' + QZ.pool.length + '</div>' +
@@ -193,8 +193,8 @@
       '<button type="button" class="qz-back" onclick="quizModeExit()">‹</button><div class="qz-title">Quiz Result</div><div style="width:40px"></div></div>' +
       '<div class="qz-card"><div style="font-weight:700">' + escapeHtml(QZ.unitLabel) + '</div><div class="qz-meta">' + escapeHtml(QZ.bookLabel) + '</div></div>' +
       '<div class="qz-score-ring" style="--pct:' + pct + '%"><div class="qz-score-inner"><strong>' + correct + '/' + total + '</strong><span>your score</span></div></div>' +
-      '<p style="text-align:center;margin:8px 0 16px;color:#cbd5e1">' +
-      (passed ? 'Congratulations! You have <span style="color:#4ade80;font-weight:700">passed</span> this test with ' + pct + '%.' :
+      '<p style="text-align:center;margin:8px 0 16px;color:var(--text)">' +
+      (passed ? 'Congratulations! You have <span style="color:var(--success);font-weight:700">passed</span> this test with ' + pct + '%.' :
         'Keep practicing. You scored <span style="color:#facc15;font-weight:700">' + pct + '%</span>.') +
       '</p><div class="qz-result-grid">' +
       '<div class="qz-stat ok"><strong>' + correct + '</strong><span>Correct Answers</span></div>' +

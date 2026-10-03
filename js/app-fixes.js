@@ -154,11 +154,11 @@ function openThinkLab() {
     if (content) content.innerHTML = "<p>Think Lab data not loaded.</p>";
     return;
   }
-  let html = `<p style="color:#94a3b8;margin-bottom:24px">${THINK_LAB.description}</p>`;
+  let html = `<p style="color:var(--muted);margin-bottom:24px">${THINK_LAB.description}</p>`;
   THINK_LAB.categories.forEach((cat) => {
     html += `<div class="think-card"><h3>${cat.title}</h3>`;
     cat.levels.forEach((level) => {
-      html += `<div style="margin:16px 0;padding:16px;background:#0f172a;border-radius:12px">
+      html += `<div style="margin:16px 0;padding:16px;background:var(--bg);border-radius:12px">
         <p class="think-question">${level.question}</p>`;
       if (level.options) {
         html += `<ul class="option-list">${level.options
@@ -273,7 +273,7 @@ function patchPBRender() {
         console.error("PB render failed twice", e2);
         const content = document.getElementById("stepContent");
         if (content) {
-          content.innerHTML = `<p style="color:#f87171;padding:20px">Could not load some questions. Please refresh the page.</p>`;
+          content.innerHTML = `<p style="color:var(--danger);padding:20px">Could not load some questions. Please refresh the page.</p>`;
         }
       }
     }
@@ -343,27 +343,27 @@ function renderNotebookCells() {
   let html = "";
   nbCells.forEach((code, i) => {
     html += `
-      <div class="nb-cell" data-cell="${i}" style="margin-bottom:14px;border:1px solid #334155;border-radius:12px;overflow:hidden;background:#020617">
-        <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 12px;background:#1e293b;border-bottom:1px solid #334155">
-          <span style="color:#a5b4fc;font-size:0.8rem;font-weight:700">In [${i + 1}]:</span>
+      <div class="nb-cell" data-cell="${i}" style="margin-bottom:14px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--bg)">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 12px;background:var(--card);border-bottom:1px solid #334155">
+          <span style="color:var(--primary);font-size:0.8rem;font-weight:700">In [${i + 1}]:</span>
           <div style="display:flex;gap:6px">
             <button type="button" onclick="runNotebookCell(${i})" style="background:#2563eb;color:#fff;border:none;padding:4px 10px;border-radius:6px;font-size:0.75rem;cursor:pointer">▶ Run</button>
-            <button type="button" onclick="deleteNotebookCell(${i})" style="background:#334155;color:#fca5a5;border:none;padding:4px 10px;border-radius:6px;font-size:0.75rem;cursor:pointer" ${nbCells.length <= 1 ? "disabled" : ""}>✕</button>
+            <button type="button" onclick="deleteNotebookCell(${i})" style="background:var(--bg-elevated);color:var(--danger);border:none;padding:4px 10px;border-radius:6px;font-size:0.75rem;cursor:pointer" ${nbCells.length <= 1 ? "disabled" : ""}>✕</button>
           </div>
         </div>
         <textarea class="nb-cell-input" data-cell-index="${i}" rows="${Math.max(3, Math.min(12, (code || "").split("\n").length + 1))}"
-          style="width:100%;background:#020617;color:#38bdf8;font-family:'Fira Code',Consolas,monospace;padding:12px 14px;border:none;font-size:0.92rem;line-height:1.55;resize:vertical;box-sizing:border-box;outline:none"
+          style="width:100%;background:var(--bg);color:var(--primary);font-family:'Fira Code',Consolas,monospace;padding:12px 14px;border:none;font-size:0.92rem;line-height:1.55;resize:vertical;box-sizing:border-box;outline:none"
           placeholder="# Write Python code here...\n# Tab = indent (4 spaces)">${(code || "").replace(/</g, "&lt;")}</textarea>
       </div>`;
   });
 
   html += `
     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px;margin-bottom:8px">
-      <button type="button" onclick="addNotebookCell()" style="background:#312e81;color:#c7d2fe;border:1px solid #6366f1;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:0.85rem">➕ Add Cell</button>
+      <button type="button" onclick="addNotebookCell()" style="background:#312e81;color:var(--primary);border:1px solid #6366f1;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:0.85rem">➕ Add Cell</button>
       <button type="button" onclick="runAllNotebookCells()" class="btn-primary" style="background:#2563eb;padding:8px 16px;font-size:0.85rem">▶ Run All Cells</button>
-      <button type="button" onclick="resetNotebookCells()" style="background:#334155;color:#e2e8f0;border:none;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:0.85rem">🔄 Reset</button>
+      <button type="button" onclick="resetNotebookCells()" style="background:var(--bg-elevated);color:var(--text);border:none;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:0.85rem">🔄 Reset</button>
     </div>
-    <p style="color:#64748b;font-size:0.78rem;margin:0 0 8px 0">💡 Tip: Use <b>Tab</b> for indent, <b>Shift+Tab</b> to un-indent. Cells are joined with blank lines automatically (like Jupyter).</p>
+    <p style="color:var(--muted);font-size:0.78rem;margin:0 0 8px 0">💡 Tip: Use <b>Tab</b> for indent, <b>Shift+Tab</b> to un-indent. Cells are joined with blank lines automatically (like Jupyter).</p>
   `;
 
   host.innerHTML = html;
