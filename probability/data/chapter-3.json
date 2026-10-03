@@ -1,0 +1,4121 @@
+{
+  "chapter": 3,
+  "title": "Descriptive Statistics & Moments",
+  "range": [
+    205,
+    280
+  ],
+  "questions": [
+    {
+      "id": 205,
+      "unit": 3,
+      "question": "If mean and mode of some data are 4 and 10 respectively, its median will be:",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "Use the empirical relation for a moderately skewed distribution.",
+          "formula": "Mode ≈ 3 Median − 2 Mean"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "Median ≈ (10 + 2×4)/3 = 6"
+        }
+      ],
+      "answer": "6 (empirical estimate)",
+      "note": "Mean and mode alone do not uniquely determine the exact median. The question expects the empirical relation."
+    },
+    {
+      "id": 206,
+      "unit": 3,
+      "question": "Find the median of the given set of numbers 2, 6, 6, 8, 4, 2, 7, 9.",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Arrange in ascending order",
+          "text": "Always sort before choosing the middle value.",
+          "formula": "2, 2, 4, 6, 6, 7, 8, 9"
+        },
+        {
+          "title": "Find the middle",
+          "text": "For an odd count take the middle observation; for an even count average the two middle observations.",
+          "formula": "N = 8; median = (6 + 6) / 2 = 6"
+        }
+      ],
+      "answer": "6"
+    },
+    {
+      "id": 207,
+      "unit": 3,
+      "question": "Mean of observations 5, 7, 8, 2, 6, 𝑥, 7, 9, 2, 5 is 5.4 then 𝑥 is ___.",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "There are 10 observations, so the required total is 10×5.4=54.",
+          "formula": "Mean = Σx / N"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "54 = 51 + x ⇒ x = 3"
+        }
+      ],
+      "answer": "3"
+    },
+    {
+      "id": 208,
+      "unit": 3,
+      "question": "If the median of the distribution 6, 8, 10, 16, x, 22, 25, 30 is 18, then the value of x is,",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "Use the printed ascending order of the 8 observations.",
+          "formula": "Median = (4th value + 5th value)/2"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "18 = (16 + x)/2 ⇒ x = 36 − 16 = 20"
+        }
+      ],
+      "answer": "20"
+    },
+    {
+      "id": 209,
+      "unit": 3,
+      "question": "Find the median of the data set: 6,3,8,2,9,1.",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Arrange in ascending order",
+          "text": "Always sort before choosing the middle value.",
+          "formula": "1, 2, 3, 6, 8, 9"
+        },
+        {
+          "title": "Find the middle",
+          "text": "For an odd count take the middle observation; for an even count average the two middle observations.",
+          "formula": "N = 6; median = (3 + 6) / 2 = 4.5"
+        }
+      ],
+      "answer": "4.5"
+    },
+    {
+      "id": 210,
+      "unit": 3,
+      "question": "A variable X takes values 2,9,3,7,5,4,3,2,10. What is the median?",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Arrange in ascending order",
+          "text": "Always sort before choosing the middle value.",
+          "formula": "2, 2, 3, 3, 4, 5, 7, 9, 10"
+        },
+        {
+          "title": "Find the middle",
+          "text": "For an odd count take the middle observation; for an even count average the two middle observations.",
+          "formula": "N = 9; median = 4"
+        }
+      ],
+      "answer": "4"
+    },
+    {
+      "id": 211,
+      "unit": 3,
+      "question": "The mode of a distribution is 24 and the mean is 60. What is its median?",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "",
+          "formula": "Median ≈ (Mode + 2 Mean)/3"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "Median ≈ (24 + 2×60)/3 = 48"
+        }
+      ],
+      "answer": "48 (empirical estimate)",
+      "note": "This uses the empirical mean–median–mode relation, not an exact identity."
+    },
+    {
+      "id": 212,
+      "unit": 3,
+      "question": "The following observations 8, 11,12,𝑥 + 6,17,18,23 are arranged in ascending order. The median of the data is 15. Find the value of x.",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "",
+          "formula": "Median of 7 sorted observations = 4th value"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "x + 6 = 15 ⇒ x = 9"
+        }
+      ],
+      "answer": "9"
+    },
+    {
+      "id": 213,
+      "unit": 3,
+      "question": "Find the median of the marks of 130 students.",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 130"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 50–60. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 65; L = 50; cf = 22; f = 60; h = 10"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 50 + [(65 − 22)/60] × 10 = 343/6 (≈ 57.1667)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "20–30",
+          "30–40",
+          "40–50",
+          "50–60",
+          "60–70",
+          "70–80"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "0",
+            "4",
+            "18",
+            "60",
+            "33",
+            "15"
+          ],
+          [
+            "Midpoint",
+            "25",
+            "35",
+            "45",
+            "55",
+            "65",
+            "75"
+          ],
+          [
+            "Cumulative frequency",
+            "0",
+            "4",
+            "22",
+            "82",
+            "115",
+            "130"
+          ]
+        ]
+      },
+      "answer": "Median = 343/6 (≈ 57.1667)",
+      "note": "The calculation is 57.1666…, which rounds to 57.17. The printed key 57.16 appears to truncate."
+    },
+    {
+      "id": 214,
+      "unit": 3,
+      "question": "If the median of the distribution 10, 12, 13, 16, x, 20, 25, 30 is 18, then the value of x is,",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "",
+          "formula": "Median = (16 + x)/2"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "18 = (16 + x)/2 ⇒ x = 20"
+        }
+      ],
+      "answer": "20"
+    },
+    {
+      "id": 215,
+      "unit": 3,
+      "question": "If the median of the data 13, 17, (p+1), (p+5), 24, 27 is 21, then p is equal to",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "The six observations are in ascending order.",
+          "formula": "Median = [(p+1) + (p+5)]/2"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "21 = p + 3 ⇒ p = 18"
+        }
+      ],
+      "answer": "18"
+    },
+    {
+      "id": 216,
+      "unit": 3,
+      "question": "The median of the following observations 46, 64, 87, 41, 58, 77, 35, 90, 55, 92, 33 is 58. If 92 is replaced by 99 and 41 by 43 in the above data. The new median is,",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Arrange in ascending order",
+          "text": "Always sort before choosing the middle value.",
+          "formula": "33, 35, 43, 46, 55, 58, 64, 77, 87, 90, 99"
+        },
+        {
+          "title": "Find the middle",
+          "text": "For an odd count take the middle observation; for an even count average the two middle observations.",
+          "formula": "N = 11; median = 58"
+        }
+      ],
+      "answer": "58"
+    },
+    {
+      "id": 217,
+      "unit": 3,
+      "question": "The median of the set {𝑥 + 1, 𝑥 + 2,𝑥 + 3, 𝑥 + 4,𝑥 + 5,𝑥 + 6} is,",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "",
+          "formula": "Median = (3rd value + 4th value)/2"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "[(x+3) + (x+4)]/2 = x + 3.5"
+        }
+      ],
+      "answer": "x + 3.5"
+    },
+    {
+      "id": 218,
+      "unit": 3,
+      "question": "The median of a set of 9 distinct observations is 20.5. If each of the largest 4 observation of the set is increased by 2, then the median of the new set",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Identify the median",
+          "text": "For 9 sorted observations the median is the 5th value.",
+          "formula": "Median = x₍₅₎ = 20.5"
+        },
+        {
+          "title": "Check the changes",
+          "text": "Only the 6th, 7th, 8th and 9th values increase. None crosses below the unchanged 5th value.",
+          "formula": "New median = 20.5"
+        }
+      ],
+      "answer": "20.5 (unchanged)"
+    },
+    {
+      "id": 219,
+      "unit": 3,
+      "question": "For the following distribution, N=100 and median=32. Find x and y.",
+      "marks": 1,
+      "page": 16,
+      "steps": [
+        {
+          "title": "Use the total frequency",
+          "text": "The known frequencies add to 75.",
+          "formula": "x + y = 100 − 75 = 25"
+        },
+        {
+          "title": "Apply the median formula",
+          "text": "The median 32 lies in 30–40. L=30, h=10, f=30 and cf=10+x+25.",
+          "formula": "32 = 30 + [(50−35−x)/30]×10"
+        },
+        {
+          "title": "Solve the unknown frequencies",
+          "text": "",
+          "formula": "6 = 15 − x ⇒ x = 9; y = 25 − 9 = 16"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50",
+          "50–60"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "10",
+            "x",
+            "25",
+            "30",
+            "y",
+            "10"
+          ]
+        ]
+      },
+      "answer": "x = 9; y = 16"
+    },
+    {
+      "id": 220,
+      "unit": 3,
+      "question": "Find the mode of the following grouped distribution.",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 50"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 12, in class 60–80. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 60; h = 20; f₀ = 10; f₁ = 12; f₂ = 6"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 60 + [(12−10)/(24−10−6)] × 20 = 65"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–20",
+          "20–40",
+          "40–60",
+          "60–80",
+          "80–100",
+          "100–120",
+          "120–140"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "6",
+            "8",
+            "10",
+            "12",
+            "6",
+            "5",
+            "3"
+          ],
+          [
+            "Midpoint",
+            "10",
+            "30",
+            "50",
+            "70",
+            "90",
+            "110",
+            "130"
+          ],
+          [
+            "Cumulative frequency",
+            "6",
+            "14",
+            "24",
+            "36",
+            "42",
+            "47",
+            "50"
+          ]
+        ]
+      },
+      "answer": "Mode = 65"
+    },
+    {
+      "id": 221,
+      "unit": 3,
+      "question": "Runs scored by batsman in 5 one day matches are 50, 60, 42, 68, and 20. The standard deviation is",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Calculate the mean",
+          "text": "Use the given values, or class midpoints for grouped data.",
+          "formula": "N = 5; Σfx = 240; mean = Σfx/N = 48"
+        },
+        {
+          "title": "Calculate the variance",
+          "text": "This practice book uses the population variance, dividing by N.",
+          "formula": "Σfx² = 12888; σ² = Σfx²/N − mean² = 1368/5 (≈ 273.6)"
+        },
+        {
+          "title": "Take the square root",
+          "text": "Standard deviation has the same unit as the original observations.",
+          "formula": "σ = √(1368/5 (≈ 273.6)) = 16.540859"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "50",
+          "60",
+          "42",
+          "68",
+          "20"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        ]
+      },
+      "answer": "16.540859"
+    },
+    {
+      "id": 222,
+      "unit": 3,
+      "question": "The mode of this distribution is 36. Find the missing frequency f.",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Locate the modal class",
+          "text": "Mode 36 lies in 30–40. The modal frequency is 16; the preceding frequency is f and the next is 12.",
+          "formula": "L = 30; h = 10"
+        },
+        {
+          "title": "Substitute in the mode formula",
+          "text": "",
+          "formula": "36 = 30 + [(16−f)/(32−f−12)]×10"
+        },
+        {
+          "title": "Solve",
+          "text": "",
+          "formula": "0.6(20−f) = 16−f ⇒ 12−0.6f = 16−f ⇒ 0.4f = 4 ⇒ f = 10"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50",
+          "50–60",
+          "60–70"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "8",
+            "10",
+            "f",
+            "16",
+            "12",
+            "6",
+            "7"
+          ]
+        ]
+      },
+      "answer": "f = 10"
+    },
+    {
+      "id": 223,
+      "unit": 3,
+      "question": "What is the mode of the observations 1, 2, 3, 5, 7, 5, 9, 5, 10, 10.",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Count the repetitions",
+          "text": "The number 5 appears 3 times. The number 10 appears twice and all others appear once.",
+          "formula": "Frequency(5) = 3"
+        },
+        {
+          "title": "Choose the most frequent value",
+          "text": "The mode is the observation with the highest frequency.",
+          "formula": "Mode = 5"
+        }
+      ],
+      "answer": "5"
+    },
+    {
+      "id": 224,
+      "unit": 3,
+      "question": "For a distribution with mean, mode and standard deviation 25, 26 and 5 respectively, Karl Pearson’s coefficient of skewness equals to:",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "",
+          "formula": "Karl Pearson skewness = (Mean − Mode)/SD"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "(25 − 26)/5 = −0.2"
+        }
+      ],
+      "answer": "−0.2"
+    },
+    {
+      "id": 225,
+      "unit": 3,
+      "question": "For four observations -1, 0, 1, 4, the measure of kurtosis equals",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "Deviations from the mean are −2,−1,0,3.",
+          "formula": "β₂ = μ₄ / μ₂²"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "Mean=1; μ₂=7/2 (≈ 3.5); μ₄=49/2 (≈ 24.5); β₂=2"
+        }
+      ],
+      "answer": "2",
+      "note": "The exact Pearson kurtosis is 2. Excess kurtosis is 2−3=−1."
+    },
+    {
+      "id": 226,
+      "unit": 3,
+      "question": "If the standard deviation of 0, 1, 2, 3,…,9 is k, then the standard deviation of 10, 11, 12, 13,….,19 will be",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "Adding a constant shifts the mean by the same amount; deviations from the mean stay unchanged.",
+          "formula": "SD(X + a) = SD(X)"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "Each observation increases by 10, so the new SD remains k."
+        }
+      ],
+      "answer": "k"
+    },
+    {
+      "id": 227,
+      "unit": 3,
+      "question": "The mean and variance of 10 observations are given to be 4 and 2 respectively. If every observation is multiplied by 2, the mean and the variance of the new series will be respectively.",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "",
+          "formula": "E(2X)=2E(X); Var(2X)=4Var(X)"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "New mean = 2×4 = 8; new variance = 4×2 = 8"
+        }
+      ],
+      "answer": "Mean = 8; variance = 8"
+    },
+    {
+      "id": 228,
+      "unit": 3,
+      "question": "Runs scored by batsman in 5 one day matches are 50, 70, 82, 93, and 20. The standard deviation is ______",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Calculate the mean",
+          "text": "Use the given values, or class midpoints for grouped data.",
+          "formula": "N = 5; Σfx = 315; mean = Σfx/N = 63"
+        },
+        {
+          "title": "Calculate the variance",
+          "text": "This practice book uses the population variance, dividing by N.",
+          "formula": "Σfx² = 23173; σ² = Σfx²/N − mean² = 3328/5 (≈ 665.6)"
+        },
+        {
+          "title": "Take the square root",
+          "text": "Standard deviation has the same unit as the original observations.",
+          "formula": "σ = √(3328/5 (≈ 665.6)) = 25.799225"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "50",
+          "70",
+          "82",
+          "93",
+          "20"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        ]
+      },
+      "answer": "25.799225",
+      "note": "The calculated value is 25.7992…, which rounds to 25.80. The printed key 25.79 truncates it."
+    },
+    {
+      "id": 229,
+      "unit": 3,
+      "question": "The standard deviation of 1, 4, 7, 2, 6 is",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Calculate the mean",
+          "text": "Use the given values, or class midpoints for grouped data.",
+          "formula": "N = 5; Σfx = 20; mean = Σfx/N = 4"
+        },
+        {
+          "title": "Calculate the variance",
+          "text": "This practice book uses the population variance, dividing by N.",
+          "formula": "Σfx² = 106; σ² = Σfx²/N − mean² = 26/5 (≈ 5.2)"
+        },
+        {
+          "title": "Take the square root",
+          "text": "Standard deviation has the same unit as the original observations.",
+          "formula": "σ = √(26/5 (≈ 5.2)) = 2.2803509"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "1",
+          "4",
+          "7",
+          "2",
+          "6"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        ]
+      },
+      "answer": "2.2803509"
+    },
+    {
+      "id": 230,
+      "unit": 3,
+      "question": "The first four moments of a distribution about the value 4 of the variables are 1,4,10 and 45. What is the third moment about mean (𝜇 ) 3",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "Here m₁,m₂,m₃ are moments of X−4. Centre this shifted variable by its own mean m₁.",
+          "formula": "μ₃ = m₃ − 3m₂m₁ + 2m₁³"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "μ₃ = 10 − 3×4×1 + 2×1³ = 0"
+        }
+      ],
+      "answer": "0"
+    },
+    {
+      "id": 231,
+      "unit": 3,
+      "question": "For a moderately skewed distribution of retail price for men’s shoes, it is found that the mean price is 20 Rs. and the median price is 17 Rs. If the coefficient of variation is 20%, then the Pearson’s coefficient of skewness is ______.",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "Use the median-based Pearson coefficient.",
+          "formula": "CV = 100σ/Mean; Sk = 3(Mean − Median)/σ"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "σ = 20×20/100 = 4; Sk = 3(20−17)/4 = 2.25"
+        }
+      ],
+      "answer": "2.25",
+      "note": "The numerical result follows the supplied values, but 2.25 is unusually large for the description “moderately skewed”."
+    },
+    {
+      "id": 232,
+      "unit": 3,
+      "question": "Compare the skewness of marks in Sections A and B, each containing 100 students.",
+      "marks": 3,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Use Pearson’s coefficient",
+          "text": "Compare magnitudes of (mean−mode)/SD, not only the signs.",
+          "formula": "Sk(A) = (55−58.72)/15.4 ≈ −0.241558"
+        },
+        {
+          "title": "Calculate section B",
+          "text": "",
+          "formula": "Sk(B) = (53−48.83)/15.4 ≈ 0.270779"
+        },
+        {
+          "title": "Compare absolute values",
+          "text": "A is negatively skewed; B is positively skewed. B has the larger absolute coefficient.",
+          "formula": "|Sk(B)| > |Sk(A)|"
+        }
+      ],
+      "answer": "Section B is more skewed",
+      "table": {
+        "headers": [
+          "Section",
+          "Mean",
+          "Standard deviation",
+          "Mode"
+        ],
+        "rows": [
+          [
+            "A",
+            "55",
+            "15.4",
+            "58.72"
+          ],
+          [
+            "B",
+            "53",
+            "15.4",
+            "48.83"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 233,
+      "unit": 3,
+      "question": "The average grade of male students in the class was 6.2 and that of females was 7.3. The mean grade of all the students was 6.53. Find the percentage of male and female students.",
+      "marks": 3,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "Let p be the male proportion. The female proportion is 1−p.",
+          "formula": "Combined mean = 6.2p + 7.3(1−p)"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "6.53 = 7.3−1.1p ⇒ p = 0.77/1.1 = 0.7"
+        }
+      ],
+      "answer": "Males: 70%; females: 30%"
+    },
+    {
+      "id": 234,
+      "unit": 3,
+      "question": "Find the arithmetic mean for the following frequency distribution.",
+      "marks": 1,
+      "page": 17,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "Multiply each value by its frequency before adding.",
+          "formula": "Mean = Σfx/Σf"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "Σf = 60; Σfx = 3245; mean = 3245/60 = 649/12 (≈ 54.0833)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "35",
+          "45",
+          "55",
+          "60",
+          "75",
+          "80"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "12",
+            "18",
+            "10",
+            "6",
+            "3",
+            "11"
+          ]
+        ]
+      },
+      "answer": "649/12 (≈ 54.0833)"
+    },
+    {
+      "id": 235,
+      "unit": 3,
+      "question": "Find the average wage paid to the construction workers.",
+      "marks": 3,
+      "page": 18,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "Multiply each value by its frequency before adding.",
+          "formula": "Mean = Σfx/Σf"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "Σf = 25; Σfx = 7700; mean = 7700/25 = 308"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "100",
+          "200",
+          "300",
+          "400",
+          "500"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "3",
+            "5",
+            "6",
+            "9",
+            "2"
+          ]
+        ]
+      },
+      "answer": "308"
+    },
+    {
+      "id": 236,
+      "unit": 3,
+      "question": "Find the arithmetic mean of marks for the following grouped data.",
+      "marks": 3,
+      "page": 18,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 100"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 2820; mean = Σfx/N = 141/5 (≈ 28.2)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50",
+          "50–60"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "12",
+            "18",
+            "27",
+            "20",
+            "15",
+            "8"
+          ],
+          [
+            "Midpoint",
+            "5",
+            "15",
+            "25",
+            "35",
+            "45",
+            "55"
+          ],
+          [
+            "Cumulative frequency",
+            "12",
+            "30",
+            "57",
+            "77",
+            "92",
+            "100"
+          ]
+        ]
+      },
+      "answer": "Mean = 141/5 (≈ 28.2)"
+    },
+    {
+      "id": 237,
+      "unit": 3,
+      "question": "Calculate the mean daily earnings, in rupees, of the employees.",
+      "marks": 3,
+      "page": 18,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "Multiply each value by its frequency before adding.",
+          "formula": "Mean = Σfx/Σf"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "Σf = 175; Σfx = 34040; mean = 34040/175 = 6808/35 (≈ 194.514)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "100",
+          "120",
+          "140",
+          "160",
+          "180",
+          "200",
+          "220"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "3",
+            "6",
+            "10",
+            "15",
+            "24",
+            "42",
+            "75"
+          ]
+        ]
+      },
+      "answer": "6808/35 (≈ 194.514)"
+    },
+    {
+      "id": 238,
+      "unit": 3,
+      "question": "Calculate the mean for this grouped frequency distribution.",
+      "marks": 3,
+      "page": 18,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 77"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 1956; mean = Σfx/N = 1956/77 (≈ 25.4026)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–8",
+          "8–16",
+          "16–24",
+          "24–32",
+          "32–40",
+          "40–48"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "8",
+            "7",
+            "16",
+            "24",
+            "15",
+            "7"
+          ],
+          [
+            "Midpoint",
+            "4",
+            "12",
+            "20",
+            "28",
+            "36",
+            "44"
+          ],
+          [
+            "Cumulative frequency",
+            "8",
+            "15",
+            "31",
+            "55",
+            "70",
+            "77"
+          ]
+        ]
+      },
+      "answer": "Mean = 1956/77 (≈ 25.4026)"
+    },
+    {
+      "id": 239,
+      "unit": 3,
+      "question": "Find the mean size of capital, in lakh rupees, from this less-than cumulative distribution.",
+      "marks": 4,
+      "page": 18,
+      "steps": [
+        {
+          "title": "Convert less-than totals to frequencies",
+          "text": "Subtract successive cumulative totals 20,27,29,38,48,53. Assume capital starts at 0 lakhs.",
+          "formula": "f = 20, 7, 2, 9, 10, 5"
+        },
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 53"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 1295/2 (≈ 647.5); mean = Σfx/N = 1295/106 (≈ 12.217)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Capital (₹ lakh)",
+          "<5",
+          "<10",
+          "<15",
+          "<20",
+          "<25",
+          "<30"
+        ],
+        "rows": [
+          [
+            "Cumulative frequency",
+            "20",
+            "27",
+            "29",
+            "38",
+            "48",
+            "53"
+          ]
+        ]
+      },
+      "answer": "Mean = 1295/106 (≈ 12.217)",
+      "conversionTable": {
+        "headers": [
+          "Class",
+          "0–5",
+          "5–10",
+          "10–15",
+          "15–20",
+          "20–25",
+          "25–30"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "20",
+            "7",
+            "2",
+            "9",
+            "10",
+            "5"
+          ],
+          [
+            "Midpoint",
+            "5/2 (≈ 2.5)",
+            "15/2 (≈ 7.5)",
+            "25/2 (≈ 12.5)",
+            "35/2 (≈ 17.5)",
+            "45/2 (≈ 22.5)",
+            "55/2 (≈ 27.5)"
+          ],
+          [
+            "Cumulative frequency",
+            "20",
+            "27",
+            "29",
+            "38",
+            "48",
+            "53"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 240,
+      "unit": 3,
+      "question": "Find the mean marks of 60 students from the more-than cumulative distribution.",
+      "marks": 4,
+      "page": 18,
+      "steps": [
+        {
+          "title": "Convert more-than totals to frequencies",
+          "text": "Subtract consecutive cumulative counts 60,56,40,20,10,3. The final class is taken as 50–60.",
+          "formula": "f = 4,16,20,10,7,3"
+        },
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 60"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 1590; mean = Σfx/N = 53/2 (≈ 26.5)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Marks",
+          ">0",
+          ">10",
+          ">20",
+          ">30",
+          ">40",
+          ">50"
+        ],
+        "rows": [
+          [
+            "Cumulative frequency",
+            "60",
+            "56",
+            "40",
+            "20",
+            "10",
+            "3"
+          ]
+        ]
+      },
+      "answer": "Mean = 53/2 (≈ 26.5)",
+      "conversionTable": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50",
+          "50–60"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "4",
+            "16",
+            "20",
+            "10",
+            "7",
+            "3"
+          ],
+          [
+            "Midpoint",
+            "5",
+            "15",
+            "25",
+            "35",
+            "45",
+            "55"
+          ],
+          [
+            "Cumulative frequency",
+            "4",
+            "20",
+            "40",
+            "50",
+            "57",
+            "60"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 241,
+      "unit": 3,
+      "question": "Find the median of the data 2, 8, 4, 6, 10, 12, 4, 8, 14, 16.",
+      "marks": 2,
+      "page": 18,
+      "steps": [
+        {
+          "title": "Arrange in ascending order",
+          "text": "Always sort before choosing the middle value.",
+          "formula": "2, 4, 4, 6, 8, 8, 10, 12, 14, 16"
+        },
+        {
+          "title": "Find the middle",
+          "text": "For an odd count take the middle observation; for an even count average the two middle observations.",
+          "formula": "N = 10; median = (8 + 8) / 2 = 8"
+        }
+      ],
+      "answer": "8"
+    },
+    {
+      "id": 242,
+      "unit": 3,
+      "question": "Find the median for this discrete frequency distribution.",
+      "marks": 1,
+      "page": 18,
+      "steps": [
+        {
+          "title": "Calculate the total and median positions",
+          "text": "",
+          "formula": "N = 120; middle positions = 60th and 61st"
+        },
+        {
+          "title": "Use cumulative frequencies",
+          "text": "The cumulative frequency is 45 at x=4 and 65 at x=5. Both middle observations are 5.",
+          "formula": "Median = (5+5)/2 = 5"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "8",
+            "10",
+            "11",
+            "16",
+            "20",
+            "25",
+            "15",
+            "9",
+            "6"
+          ],
+          [
+            "Cumulative frequency",
+            "8",
+            "18",
+            "29",
+            "45",
+            "65",
+            "90",
+            "105",
+            "114",
+            "120"
+          ]
+        ]
+      },
+      "answer": "5"
+    },
+    {
+      "id": 243,
+      "unit": 3,
+      "question": "Find the median daily wage, in rupees.",
+      "marks": 3,
+      "page": 19,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 44"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 30–40. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 22; L = 30; cf = 13; f = 13; h = 10"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 30 + [(22 − 13)/13] × 10 = 480/13 (≈ 36.9231)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50",
+          "50–60"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "5",
+            "8",
+            "13",
+            "10",
+            "8"
+          ],
+          [
+            "Midpoint",
+            "15",
+            "25",
+            "35",
+            "45",
+            "55"
+          ],
+          [
+            "Cumulative frequency",
+            "5",
+            "13",
+            "26",
+            "36",
+            "44"
+          ]
+        ]
+      },
+      "answer": "Median = 480/13 (≈ 36.9231)"
+    },
+    {
+      "id": 244,
+      "unit": 3,
+      "question": "Find the median from the following grouped distribution of foreign visitors.",
+      "marks": 3,
+      "page": 19,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 100"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 20–30. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 50; L = 20; cf = 30; f = 27; h = 10"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 20 + [(50 − 30)/27] × 10 = 740/27 (≈ 27.4074)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50",
+          "50–60"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "12",
+            "18",
+            "27",
+            "20",
+            "17",
+            "6"
+          ],
+          [
+            "Midpoint",
+            "5",
+            "15",
+            "25",
+            "35",
+            "45",
+            "55"
+          ],
+          [
+            "Cumulative frequency",
+            "12",
+            "30",
+            "57",
+            "77",
+            "94",
+            "100"
+          ]
+        ]
+      },
+      "answer": "Median = 740/27 (≈ 27.4074)"
+    },
+    {
+      "id": 245,
+      "unit": 3,
+      "question": "The median is 24. Find the missing frequency x.",
+      "marks": 3,
+      "page": 19,
+      "steps": [
+        {
+          "title": "Express the total",
+          "text": "Median 24 lies in 20–30. Known frequencies add to 65.",
+          "formula": "N = 65+x; L = 20; cf = 35; f = x; h = 10"
+        },
+        {
+          "title": "Apply the median formula",
+          "text": "",
+          "formula": "24 = 20 + [((65+x)/2 −35)/x]×10"
+        },
+        {
+          "title": "Solve",
+          "text": "",
+          "formula": "4 = 5(x−5)/x ⇒ 4x = 5x−25 ⇒ x = 25"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "15",
+            "20",
+            "x",
+            "14",
+            "16"
+          ]
+        ]
+      },
+      "answer": "x = 25"
+    },
+    {
+      "id": 246,
+      "unit": 3,
+      "question": "Find the median marks of these 50 students.",
+      "marks": 3,
+      "page": 19,
+      "steps": [
+        {
+          "title": "Make class boundaries",
+          "text": "The classes contain whole-number scores. Subtract 0.5 from each lower limit and add 0.5 to each upper limit to make continuous boundaries.",
+          "formula": "N = 50; continuous boundaries: 9.5, 14.5, 19.5, 24.5, 29.5, 34.5, 39.5, 44.5, 49.5"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 25–29. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 25; L = 49/2 (≈ 24.5); cf = 20; f = 5; h = 5"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 49/2 (≈ 24.5) + [(25 − 20)/5] × 5 = 59/2 (≈ 29.5)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "10–14",
+          "15–19",
+          "20–24",
+          "25–29",
+          "30–34",
+          "35–39",
+          "40–44",
+          "45–49"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "4",
+            "6",
+            "10",
+            "5",
+            "7",
+            "3",
+            "9",
+            "6"
+          ],
+          [
+            "Midpoint",
+            "12",
+            "17",
+            "22",
+            "27",
+            "32",
+            "37",
+            "42",
+            "47"
+          ],
+          [
+            "Cumulative frequency",
+            "4",
+            "10",
+            "20",
+            "25",
+            "32",
+            "35",
+            "44",
+            "50"
+          ]
+        ]
+      },
+      "answer": "Median = 59/2 (≈ 29.5)"
+    },
+    {
+      "id": 247,
+      "unit": 3,
+      "question": "Daily wages of 900 workers have median ₹59.25. Find the frequencies missing from 40–50 and 60–70.",
+      "marks": 4,
+      "page": 19,
+      "steps": [
+        {
+          "title": "Use total frequency",
+          "text": "",
+          "formula": "x+y = 900−120−200−185 = 395"
+        },
+        {
+          "title": "Use the median class",
+          "text": "59.25 lies in 50–60. L=50, h=10, f=200 and cf=120+x.",
+          "formula": "59.25 = 50 + [(450−120−x)/200]×10"
+        },
+        {
+          "title": "Solve both values",
+          "text": "",
+          "formula": "185 = 330−x ⇒ x = 145; y = 395−145 = 250"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "30–40",
+          "40–50",
+          "50–60",
+          "60–70",
+          "70–80"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "120",
+            "x",
+            "200",
+            "y",
+            "185"
+          ]
+        ]
+      },
+      "answer": "40–50: 145; 60–70: 250"
+    },
+    {
+      "id": 248,
+      "unit": 3,
+      "question": "Find X and Y when the median is 46 and total frequency is 229.",
+      "marks": 4,
+      "page": 19,
+      "steps": [
+        {
+          "title": "Use total frequency",
+          "text": "",
+          "formula": "X+Y = 229−(12+30+65+25+18) = 79"
+        },
+        {
+          "title": "Use the supplied median",
+          "text": "The median class is 40–50; N/2=114.5, L=40, cf=42+X, f=65.",
+          "formula": "46 = 40 + [(114.5−42−X)/65]×10"
+        },
+        {
+          "title": "Solve and check",
+          "text": "",
+          "formula": "39 = 72.5−X ⇒ X = 33.5; Y = 79−33.5 = 45.5"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50",
+          "50–60",
+          "60–70",
+          "70–80"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "12",
+            "30",
+            "X",
+            "65",
+            "Y",
+            "25",
+            "18"
+          ]
+        ]
+      },
+      "answer": "X = 33.5; Y = 45.5 (inconsistent as counts)",
+      "note": "Literal grouped-data interpolation gives fractional frequencies, which cannot be counts. The printed data contain an inconsistency. Using the alternative (N+1)/2 convention gives X=34,Y=45, but that is not the usual grouped-median formula."
+    },
+    {
+      "id": 249,
+      "unit": 3,
+      "question": "Find the mean and median of this grouped distribution.",
+      "marks": 1,
+      "page": 19,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 95"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 8775; mean = Σfx/N = 1755/19 (≈ 92.3684)"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 90–120. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 95/2 (≈ 47.5); L = 90; cf = 43; f = 27; h = 30"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 90 + [(95/2 (≈ 47.5) − 43)/27] × 30 = 95"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–30",
+          "30–60",
+          "60–90",
+          "90–120",
+          "120–150",
+          "150–180"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "8",
+            "13",
+            "22",
+            "27",
+            "18",
+            "7"
+          ],
+          [
+            "Midpoint",
+            "15",
+            "45",
+            "75",
+            "105",
+            "135",
+            "165"
+          ],
+          [
+            "Cumulative frequency",
+            "8",
+            "21",
+            "43",
+            "70",
+            "88",
+            "95"
+          ]
+        ]
+      },
+      "answer": "Mean = 1755/19 (≈ 92.3684); Median = 95"
+    },
+    {
+      "id": 250,
+      "unit": 3,
+      "question": "Find the mode of this discrete frequency distribution.",
+      "marks": 2,
+      "page": 20,
+      "steps": [
+        {
+          "title": "Compare the frequencies",
+          "text": "For x=1,2,3,4 the frequencies are 4,7,10,8.",
+          "formula": "Largest frequency = 10 at x = 3"
+        },
+        {
+          "title": "State the mode",
+          "text": "",
+          "formula": "Mode = 3"
+        }
+      ],
+      "answer": "3",
+      "table": {
+        "headers": [
+          "Values",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "4",
+            "7",
+            "10",
+            "8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 251,
+      "unit": 3,
+      "question": "Find the mode of this grouped frequency distribution.",
+      "marks": 3,
+      "page": 20,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 89"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 45, in class 0–10. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 0; h = 10; f₀ = 0; f₁ = 45; f₂ = 20"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 0 + [(45−0)/(90−0−20)] × 10 = 45/7 (≈ 6.42857)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "45",
+            "20",
+            "14",
+            "7",
+            "3"
+          ],
+          [
+            "Midpoint",
+            "5",
+            "15",
+            "25",
+            "35",
+            "45"
+          ],
+          [
+            "Cumulative frequency",
+            "45",
+            "65",
+            "79",
+            "86",
+            "89"
+          ]
+        ]
+      },
+      "answer": "Mode = 45/7 (≈ 6.42857)",
+      "note": "The modal class is at the edge. The interpolated mode uses a zero frequency for the absent neighbouring class; it is an estimate under that convention."
+    },
+    {
+      "id": 252,
+      "unit": 3,
+      "question": "Find the mode of this grouped frequency distribution.",
+      "marks": 3,
+      "page": 20,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 84"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 25, in class 40–50. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 40; h = 10; f₀ = 12; f₁ = 25; f₂ = 18"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 40 + [(25−12)/(50−12−18)] × 10 = 93/2 (≈ 46.5)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50",
+          "50–60",
+          "60–70"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "4",
+            "7",
+            "8",
+            "12",
+            "25",
+            "18",
+            "10"
+          ],
+          [
+            "Midpoint",
+            "5",
+            "15",
+            "25",
+            "35",
+            "45",
+            "55",
+            "65"
+          ],
+          [
+            "Cumulative frequency",
+            "4",
+            "11",
+            "19",
+            "31",
+            "56",
+            "74",
+            "84"
+          ]
+        ]
+      },
+      "answer": "Mode = 93/2 (≈ 46.5)"
+    },
+    {
+      "id": 253,
+      "unit": 3,
+      "question": "This incomplete frequency distribution has mode 1376 and total frequency 360. Find x and y.",
+      "marks": 4,
+      "page": 20,
+      "steps": [
+        {
+          "title": "Use the total frequency",
+          "text": "",
+          "formula": "x+y = 360−(14+22+124+32+15+5) = 148"
+        },
+        {
+          "title": "Use the mode formula",
+          "text": "Mode 1376 lies in 1200–1600. L=1200, h=400, f₁=124, f₀=x, f₂=y.",
+          "formula": "1376 = 1200 + [(124−x)/(248−x−y)]×400"
+        },
+        {
+          "title": "Substitute the total and solve",
+          "text": "",
+          "formula": "176/400 = (124−x)/100 ⇒ 44 = 124−x ⇒ x = 80; y = 68"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–400",
+          "400–800",
+          "800–1200",
+          "1200–1600",
+          "1600–2000",
+          "2000–2400",
+          "2400–2800",
+          "2800–3200"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "14",
+            "22",
+            "x",
+            "124",
+            "y",
+            "32",
+            "15",
+            "5"
+          ]
+        ]
+      },
+      "answer": "x = 80; y = 68"
+    },
+    {
+      "id": 254,
+      "unit": 3,
+      "question": "Find the mode of the marks obtained by these 60 students.",
+      "marks": 3,
+      "page": 20,
+      "steps": [
+        {
+          "title": "Make class boundaries",
+          "text": "The classes contain whole-number scores. Subtract 0.5 from each lower limit and add 0.5 to each upper limit to make continuous boundaries.",
+          "formula": "N = 60; continuous boundaries: 29.5, 34.5, 39.5, 44.5, 49.5, 54.5, 59.5, 64.5"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 18, in class 45–49. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 89/2 (≈ 44.5); h = 5; f₀ = 12; f₁ = 18; f₂ = 14"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 89/2 (≈ 44.5) + [(18−12)/(36−12−14)] × 5 = 95/2 (≈ 47.5)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "30–34",
+          "35–39",
+          "40–44",
+          "45–49",
+          "50–54",
+          "55–59",
+          "60–64"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "3",
+            "5",
+            "12",
+            "18",
+            "14",
+            "6",
+            "2"
+          ],
+          [
+            "Midpoint",
+            "32",
+            "37",
+            "42",
+            "47",
+            "52",
+            "57",
+            "62"
+          ],
+          [
+            "Cumulative frequency",
+            "3",
+            "8",
+            "20",
+            "38",
+            "52",
+            "58",
+            "60"
+          ]
+        ]
+      },
+      "answer": "Mode = 95/2 (≈ 47.5)"
+    },
+    {
+      "id": 255,
+      "unit": 3,
+      "question": "For 300 working days, the table gives telegraphic transfers per day. Calculate mean, median and mode.",
+      "marks": 1,
+      "page": 20,
+      "steps": [
+        {
+          "title": "Check the actual total",
+          "text": "The printed frequencies sum to 300, matching the stated number of days.",
+          "formula": "N = 300"
+        },
+        {
+          "title": "Calculate the mean",
+          "text": "",
+          "formula": "Σfx = 949; mean = 949/300 = 949/300 (≈ 3.16333)"
+        },
+        {
+          "title": "Find median and mode",
+          "text": "Both the 150th and 151st observations have x=3. The highest frequency, 95, also occurs at x=3.",
+          "formula": "Median = 3; mode = 3"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "10",
+            "35",
+            "45",
+            "95",
+            "64",
+            "32",
+            "10",
+            "9"
+          ],
+          [
+            "Cumulative frequency",
+            "10",
+            "45",
+            "90",
+            "185",
+            "249",
+            "281",
+            "291",
+            "300"
+          ]
+        ]
+      },
+      "answer": "Mean = 949/300 (≈ 3.16333); median = 3; mode = 3"
+    },
+    {
+      "id": 256,
+      "unit": 3,
+      "question": "The table gives scores out of 60 in an aptitude test. Calculate mean, median and mode.",
+      "marks": 3,
+      "page": 21,
+      "steps": [
+        {
+          "title": "Make class boundaries",
+          "text": "The classes contain whole-number scores. Subtract 0.5 from each lower limit and add 0.5 to each upper limit to make continuous boundaries.",
+          "formula": "N = 40; continuous boundaries: 0.5, 10.5, 20.5, 30.5, 40.5, 50.5, 60.5"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 1220; mean = Σfx/N = 61/2 (≈ 30.5)"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 31–40. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 20; L = 61/2 (≈ 30.5); cf = 19; f = 10; h = 10"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 61/2 (≈ 30.5) + [(20 − 19)/10] × 10 = 63/2 (≈ 31.5)"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 10, in class 31–40. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 61/2 (≈ 30.5); h = 10; f₀ = 8; f₁ = 10; f₂ = 7"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 61/2 (≈ 30.5) + [(10−8)/(20−8−7)] × 10 = 69/2 (≈ 34.5)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "1–10",
+          "11–20",
+          "21–30",
+          "31–40",
+          "41–50",
+          "51–60"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "5",
+            "6",
+            "8",
+            "10",
+            "7",
+            "4"
+          ],
+          [
+            "Midpoint",
+            "11/2 (≈ 5.5)",
+            "31/2 (≈ 15.5)",
+            "51/2 (≈ 25.5)",
+            "71/2 (≈ 35.5)",
+            "91/2 (≈ 45.5)",
+            "111/2 (≈ 55.5)"
+          ],
+          [
+            "Cumulative frequency",
+            "5",
+            "11",
+            "19",
+            "29",
+            "36",
+            "40"
+          ]
+        ]
+      },
+      "answer": "Mean = 61/2 (≈ 30.5); Median = 63/2 (≈ 31.5); Mode = 69/2 (≈ 34.5)"
+    },
+    {
+      "id": 257,
+      "unit": 3,
+      "question": "Calculate mean, median and mode of this grouped distribution.",
+      "marks": 3,
+      "page": 21,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 50"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 2000; mean = Σfx/N = 40"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 35–45. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 25; L = 35; cf = 16; f = 17; h = 10"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 35 + [(25 − 16)/17] × 10 = 685/17 (≈ 40.2941)"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 17, in class 35–45. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 35; h = 10; f₀ = 10; f₁ = 17; f₂ = 14"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 35 + [(17−10)/(34−10−14)] × 10 = 42"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "15–25",
+          "25–35",
+          "35–45",
+          "45–55",
+          "55–65",
+          "65–75"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "6",
+            "10",
+            "17",
+            "14",
+            "1",
+            "2"
+          ],
+          [
+            "Midpoint",
+            "20",
+            "30",
+            "40",
+            "50",
+            "60",
+            "70"
+          ],
+          [
+            "Cumulative frequency",
+            "6",
+            "16",
+            "33",
+            "47",
+            "48",
+            "50"
+          ]
+        ]
+      },
+      "answer": "Mean = 40; Median = 685/17 (≈ 40.2941); Mode = 42"
+    },
+    {
+      "id": 258,
+      "unit": 3,
+      "question": "An insurance company recorded accident claims in thousand rupees. Find mean, median and mode.",
+      "marks": 4,
+      "page": 21,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 200"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 1294; mean = Σfx/N = 647/100 (≈ 6.47)"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 5–7. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 100; L = 5; cf = 53; f = 75; h = 2"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 5 + [(100 − 53)/75] × 2 = 469/75 (≈ 6.25333)"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 75, in class 5–7. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 5; h = 2; f₀ = 47; f₁ = 75; f₂ = 46"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 5 + [(75−47)/(150−47−46)] × 2 = 341/57 (≈ 5.98246)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "1–3",
+          "3–5",
+          "5–7",
+          "7–9",
+          "9–11",
+          "11–13"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "6",
+            "47",
+            "75",
+            "46",
+            "18",
+            "8"
+          ],
+          [
+            "Midpoint",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          [
+            "Cumulative frequency",
+            "6",
+            "53",
+            "128",
+            "174",
+            "192",
+            "200"
+          ]
+        ]
+      },
+      "answer": "Mean = 647/100 (≈ 6.47); Median = 469/75 (≈ 6.25333); Mode = 341/57 (≈ 5.98246)",
+      "note": "Amounts are in thousand rupees, so the reported mean, median and mode use the same unit."
+    },
+    {
+      "id": 259,
+      "unit": 3,
+      "question": "Find mean, median and mode for this discrete frequency distribution.",
+      "marks": 4,
+      "page": 21,
+      "steps": [
+        {
+          "title": "Calculate the weighted mean",
+          "text": "",
+          "formula": "N = 50; Σfx = 220; mean = 22/5 (≈ 4.4)"
+        },
+        {
+          "title": "Find the median",
+          "text": "The cumulative count reaches 19 at x=3 and 29 at x=4. The 25th and 26th observations are both 4.",
+          "formula": "Median = 4"
+        },
+        {
+          "title": "Find the mode",
+          "text": "The highest frequency is 10, at x=4.",
+          "formula": "Mode = 4"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "4",
+            "7",
+            "8",
+            "10",
+            "6",
+            "6",
+            "4",
+            "2",
+            "2",
+            "1"
+          ],
+          [
+            "Cumulative frequency",
+            "4",
+            "11",
+            "19",
+            "29",
+            "35",
+            "41",
+            "45",
+            "47",
+            "49",
+            "50"
+          ]
+        ]
+      },
+      "answer": "Mean = 22/5 (≈ 4.4); median = 4; mode = 4"
+    },
+    {
+      "id": 260,
+      "unit": 3,
+      "question": "Find the median from the more-than cumulative table for a test out of 60.",
+      "marks": 4,
+      "page": 21,
+      "steps": [
+        {
+          "title": "Convert more-than totals",
+          "text": "The number with marks above 60 is 0. Subtract adjacent counts 50,44,32,21,12,5,0.",
+          "formula": "f = 6,12,11,9,7,5"
+        },
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 50"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 20–30. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 25; L = 20; cf = 18; f = 11; h = 10"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 20 + [(25 − 18)/11] × 10 = 290/11 (≈ 26.3636)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Marks",
+          ">0",
+          ">10",
+          ">20",
+          ">30",
+          ">40",
+          ">50"
+        ],
+        "rows": [
+          [
+            "Cumulative frequency",
+            "50",
+            "44",
+            "32",
+            "21",
+            "12",
+            "5"
+          ]
+        ]
+      },
+      "answer": "Median = 290/11 (≈ 26.3636)",
+      "conversionTable": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50",
+          "50–60"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "6",
+            "12",
+            "11",
+            "9",
+            "7",
+            "5"
+          ],
+          [
+            "Midpoint",
+            "5",
+            "15",
+            "25",
+            "35",
+            "45",
+            "55"
+          ],
+          [
+            "Cumulative frequency",
+            "6",
+            "18",
+            "29",
+            "38",
+            "45",
+            "50"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 261,
+      "unit": 3,
+      "question": "Find the median from this less-than cumulative distribution.",
+      "marks": 1,
+      "page": 21,
+      "steps": [
+        {
+          "title": "Read and convert the cumulative table",
+          "text": "The less-than cumulative counts are 29,224,465,582,634,644,650,653,655. Several counts wrap onto two lines in the original PDF. Assume the first class starts at 0.",
+          "formula": "Class frequencies = 29, 195, 241, 117, 52, 10, 6, 3, 2"
+        },
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 655"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 10–15. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 655/2 (≈ 327.5); L = 10; cf = 224; f = 241; h = 5"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 10 + [(655/2 (≈ 327.5) − 224)/241] × 5 = 5855/482 (≈ 12.1473)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Marks",
+          "<5",
+          "<10",
+          "<15",
+          "<20",
+          "<25",
+          "<30",
+          "<35",
+          "<40",
+          "<45"
+        ],
+        "rows": [
+          [
+            "Cumulative frequency",
+            "29",
+            "224",
+            "465",
+            "582",
+            "634",
+            "644",
+            "650",
+            "653",
+            "655"
+          ]
+        ]
+      },
+      "answer": "Median = 5855/482 (≈ 12.1473)",
+      "conversionTable": {
+        "headers": [
+          "Class",
+          "0–5",
+          "5–10",
+          "10–15",
+          "15–20",
+          "20–25",
+          "25–30",
+          "30–35",
+          "35–40",
+          "40–45"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "29",
+            "195",
+            "241",
+            "117",
+            "52",
+            "10",
+            "6",
+            "3",
+            "2"
+          ],
+          [
+            "Midpoint",
+            "5/2 (≈ 2.5)",
+            "15/2 (≈ 7.5)",
+            "25/2 (≈ 12.5)",
+            "35/2 (≈ 17.5)",
+            "45/2 (≈ 22.5)",
+            "55/2 (≈ 27.5)",
+            "65/2 (≈ 32.5)",
+            "75/2 (≈ 37.5)",
+            "85/2 (≈ 42.5)"
+          ],
+          [
+            "Cumulative frequency",
+            "29",
+            "224",
+            "465",
+            "582",
+            "634",
+            "644",
+            "650",
+            "653",
+            "655"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 262,
+      "unit": 3,
+      "question": "Find mean, median and mode for this grouped distribution.",
+      "marks": 5,
+      "page": 22,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 148"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 9422; mean = Σfx/N = 4711/74 (≈ 63.6622)"
+        },
+        {
+          "title": "Find the median class",
+          "text": "The cumulative frequency first reaches N/2 in class 62–65. Here L is its lower boundary, cf is the cumulative frequency before it, f is its frequency and h is its width.",
+          "formula": "N/2 = 74; L = 62; cf = 55; f = 36; h = 3"
+        },
+        {
+          "title": "Calculate the median",
+          "text": "Interpolate within the median class.",
+          "formula": "Median = L + [(N/2 − cf)/f]h = 62 + [(74 − 55)/36] × 3 = 763/12 (≈ 63.5833)"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 36, in class 62–65. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 62; h = 3; f₀ = 30; f₁ = 36; f₂ = 28"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 62 + [(36−30)/(72−30−28)] × 3 = 443/7 (≈ 63.2857)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "50–53",
+          "53–56",
+          "56–59",
+          "59–62",
+          "62–65",
+          "65–68",
+          "68–71",
+          "71–74",
+          "74–77"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "3",
+            "8",
+            "14",
+            "30",
+            "36",
+            "28",
+            "16",
+            "10",
+            "3"
+          ],
+          [
+            "Midpoint",
+            "103/2 (≈ 51.5)",
+            "109/2 (≈ 54.5)",
+            "115/2 (≈ 57.5)",
+            "121/2 (≈ 60.5)",
+            "127/2 (≈ 63.5)",
+            "133/2 (≈ 66.5)",
+            "139/2 (≈ 69.5)",
+            "145/2 (≈ 72.5)",
+            "151/2 (≈ 75.5)"
+          ],
+          [
+            "Cumulative frequency",
+            "3",
+            "11",
+            "25",
+            "55",
+            "91",
+            "119",
+            "135",
+            "145",
+            "148"
+          ]
+        ]
+      },
+      "answer": "Mean = 4711/74 (≈ 63.6622); Median = 763/12 (≈ 63.5833); Mode = 443/7 (≈ 63.2857)"
+    },
+    {
+      "id": 263,
+      "unit": 3,
+      "question": "Find the standard deviation of this frequency distribution.",
+      "marks": 3,
+      "page": 22,
+      "steps": [
+        {
+          "title": "Calculate the mean",
+          "text": "Use the given values, or class midpoints for grouped data.",
+          "formula": "N = 25; Σfx = 350; mean = Σfx/N = 14"
+        },
+        {
+          "title": "Calculate the variance",
+          "text": "This practice book uses the population variance, dividing by N.",
+          "formula": "Σfx² = 6250; σ² = Σfx²/N − mean² = 54"
+        },
+        {
+          "title": "Take the square root",
+          "text": "Standard deviation has the same unit as the original observations.",
+          "formula": "σ = √(54) = 7.3484692"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "7",
+            "4",
+            "6",
+            "3",
+            "5"
+          ]
+        ]
+      },
+      "answer": "7.3484692"
+    },
+    {
+      "id": 264,
+      "unit": 3,
+      "question": "Find the standard deviation from this grouped distribution.",
+      "marks": 3,
+      "page": 22,
+      "steps": [
+        {
+          "title": "Calculate the mean",
+          "text": "Use the given values, or class midpoints for grouped data.",
+          "formula": "N = 10; Σfx = 142; mean = Σfx/N = 71/5 (≈ 14.2)"
+        },
+        {
+          "title": "Calculate the variance",
+          "text": "This practice book uses the population variance, dividing by N.",
+          "formula": "Σfx² = 2092; σ² = Σfx²/N − mean² = 189/25 (≈ 7.56)"
+        },
+        {
+          "title": "Take the square root",
+          "text": "Standard deviation has the same unit as the original observations.",
+          "formula": "σ = √(189/25 (≈ 7.56)) = 2.7495454"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "9–11",
+          "12–14",
+          "15–17",
+          "18–20"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "2",
+            "3",
+            "4",
+            "1"
+          ]
+        ]
+      },
+      "answer": "2.7495454"
+    },
+    {
+      "id": 265,
+      "unit": 3,
+      "question": "Calculate the first four moments about (i) assumed mean 25, (ii) the actual mean, and (iii) zero, for the following grouped distribution.",
+      "marks": 5,
+      "page": 22,
+      "steps": [
+        {
+          "title": "Find the mean",
+          "text": "If data are grouped, use class midpoints.",
+          "formula": "N = 10; Σfx = 220; mean = 22"
+        },
+        {
+          "title": "Moments about the chosen origin",
+          "text": "For origin a=25, use mᵣ(a)=Σf(x−a)ʳ/N. These are not central unless a equals the mean.",
+          "formula": "m1(25) = -3; m2(25) = 90; m3(25) = -900; m4(25) = 21000"
+        },
+        {
+          "title": "Moments about the actual mean",
+          "text": "Set d=x−mean. Calculate Σfd, Σfd², Σfd³ and Σfd⁴, then divide each sum by N. The first central moment is always 0.",
+          "formula": "μ1 = 0; μ2 = 81; μ3 = -144; μ4 = 14817"
+        },
+        {
+          "title": "Moments about zero",
+          "text": "Raw moments use powers of x itself: m′ᵣ=Σfxʳ/N.",
+          "formula": "m′1 = 22; m′2 = 565; m′3 = 15850; m′4 = 471625"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "1",
+            "3",
+            "4",
+            "2"
+          ],
+          [
+            "Midpoint",
+            "5",
+            "15",
+            "25",
+            "35"
+          ]
+        ]
+      },
+      "answer": "About 25: -3, 90, -900, 21000; Central moments: 0, 81, -144, 14817; Raw moments: 22, 565, 15850, 471625",
+      "workingTable": {
+        "headers": [
+          "x",
+          "f",
+          "d = x − 22",
+          "fd^1",
+          "fd^2",
+          "fd^3",
+          "fd^4"
+        ],
+        "rows": [
+          [
+            "5",
+            "1",
+            "-17",
+            "-17",
+            "289",
+            "-4913",
+            "83521"
+          ],
+          [
+            "15",
+            "3",
+            "-7",
+            "-21",
+            "147",
+            "-1029",
+            "7203"
+          ],
+          [
+            "25",
+            "4",
+            "3",
+            "12",
+            "36",
+            "108",
+            "324"
+          ],
+          [
+            "35",
+            "2",
+            "13",
+            "26",
+            "338",
+            "4394",
+            "57122"
+          ],
+          [
+            "Total",
+            "10",
+            "—",
+            "0",
+            "810",
+            "-1440",
+            "148170"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 266,
+      "unit": 3,
+      "question": "Find the first three moments about the mean.",
+      "marks": 4,
+      "page": 22,
+      "steps": [
+        {
+          "title": "Find the mean",
+          "text": "If data are grouped, use class midpoints.",
+          "formula": "N = 50; Σfx = 529; mean = 529/50 (≈ 10.58)"
+        },
+        {
+          "title": "Moments about the actual mean",
+          "text": "Set d=x−mean. Calculate Σfd, Σfd², Σfd³ and Σfd⁴, then divide each sum by N. The first central moment is always 0.",
+          "formula": "μ1 = 0; μ2 = 69309/2500 (≈ 27.7236); μ3 = 7459557/31250 (≈ 238.706)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "5",
+          "7",
+          "10",
+          "18",
+          "26"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "5",
+            "14",
+            "22",
+            "6",
+            "3"
+          ]
+        ]
+      },
+      "answer": "Central moments: 0, 69309/2500 (≈ 27.7236), 7459557/31250 (≈ 238.706)",
+      "workingTable": {
+        "headers": [
+          "x",
+          "f",
+          "d = x − 529/50 (≈ 10.58)",
+          "fd^1",
+          "fd^2",
+          "fd^3"
+        ],
+        "rows": [
+          [
+            "5",
+            "5",
+            "-279/50 (≈ -5.58)",
+            "-279/10 (≈ -27.9)",
+            "77841/500 (≈ 155.682)",
+            "-21717639/25000 (≈ -868.706)"
+          ],
+          [
+            "7",
+            "14",
+            "-179/50 (≈ -3.58)",
+            "-1253/25 (≈ -50.12)",
+            "224287/1250 (≈ 179.43)",
+            "-40147373/62500 (≈ -642.358)"
+          ],
+          [
+            "10",
+            "22",
+            "-29/50 (≈ -0.58)",
+            "-319/25 (≈ -12.76)",
+            "9251/1250 (≈ 7.4008)",
+            "-268279/62500 (≈ -4.29246)"
+          ],
+          [
+            "18",
+            "6",
+            "371/50 (≈ 7.42)",
+            "1113/25 (≈ 44.52)",
+            "412923/1250 (≈ 330.338)",
+            "153194433/62500 (≈ 2451.11)"
+          ],
+          [
+            "26",
+            "3",
+            "771/50 (≈ 15.42)",
+            "2313/50 (≈ 46.26)",
+            "1783323/2500 (≈ 713.329)",
+            "1374942033/125000 (≈ 10999.5)"
+          ],
+          [
+            "Total",
+            "50",
+            "—",
+            "0",
+            "69309/50 (≈ 1386.18)",
+            "7459557/625 (≈ 11935.3)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 267,
+      "unit": 3,
+      "question": "Calculate the first four moments about the mean.",
+      "marks": 4,
+      "page": 22,
+      "steps": [
+        {
+          "title": "Find the mean",
+          "text": "If data are grouped, use class midpoints.",
+          "formula": "N = 256; Σfx = 1024; mean = 4"
+        },
+        {
+          "title": "Moments about the actual mean",
+          "text": "Set d=x−mean. Calculate Σfd, Σfd², Σfd³ and Σfd⁴, then divide each sum by N. The first central moment is always 0.",
+          "formula": "μ1 = 0; μ2 = 2; μ3 = 0; μ4 = 11"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "1",
+            "8",
+            "28",
+            "56",
+            "70",
+            "56",
+            "28",
+            "8",
+            "1"
+          ]
+        ]
+      },
+      "answer": "Central moments: 0, 2, 0, 11",
+      "workingTable": {
+        "headers": [
+          "x",
+          "f",
+          "d = x − 4",
+          "fd^1",
+          "fd^2",
+          "fd^3",
+          "fd^4"
+        ],
+        "rows": [
+          [
+            "0",
+            "1",
+            "-4",
+            "-4",
+            "16",
+            "-64",
+            "256"
+          ],
+          [
+            "1",
+            "8",
+            "-3",
+            "-24",
+            "72",
+            "-216",
+            "648"
+          ],
+          [
+            "2",
+            "28",
+            "-2",
+            "-56",
+            "112",
+            "-224",
+            "448"
+          ],
+          [
+            "3",
+            "56",
+            "-1",
+            "-56",
+            "56",
+            "-56",
+            "56"
+          ],
+          [
+            "4",
+            "70",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "5",
+            "56",
+            "1",
+            "56",
+            "56",
+            "56",
+            "56"
+          ],
+          [
+            "6",
+            "28",
+            "2",
+            "56",
+            "112",
+            "224",
+            "448"
+          ],
+          [
+            "7",
+            "8",
+            "3",
+            "24",
+            "72",
+            "216",
+            "648"
+          ],
+          [
+            "8",
+            "1",
+            "4",
+            "4",
+            "16",
+            "64",
+            "256"
+          ],
+          [
+            "Total",
+            "256",
+            "—",
+            "0",
+            "512",
+            "0",
+            "2816"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 268,
+      "unit": 3,
+      "question": "Calculate the first four moments about the mean.",
+      "marks": 4,
+      "page": 22,
+      "steps": [
+        {
+          "title": "Find the mean",
+          "text": "If data are grouped, use class midpoints.",
+          "formula": "N = 40; Σfx = 560; mean = 14"
+        },
+        {
+          "title": "Moments about the actual mean",
+          "text": "Set d=x−mean. Calculate Σfd, Σfd², Σfd³ and Σfd⁴, then divide each sum by N. The first central moment is always 0.",
+          "formula": "μ1 = 0; μ2 = 34; μ3 = 81/2 (≈ 40.5); μ4 = 2707"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "6",
+            "10",
+            "14",
+            "6",
+            "4"
+          ]
+        ]
+      },
+      "answer": "Central moments: 0, 34, 81/2 (≈ 40.5), 2707",
+      "workingTable": {
+        "headers": [
+          "x",
+          "f",
+          "d = x − 14",
+          "fd^1",
+          "fd^2",
+          "fd^3",
+          "fd^4"
+        ],
+        "rows": [
+          [
+            "5",
+            "6",
+            "-9",
+            "-54",
+            "486",
+            "-4374",
+            "39366"
+          ],
+          [
+            "10",
+            "10",
+            "-4",
+            "-40",
+            "160",
+            "-640",
+            "2560"
+          ],
+          [
+            "15",
+            "14",
+            "1",
+            "14",
+            "14",
+            "14",
+            "14"
+          ],
+          [
+            "20",
+            "6",
+            "6",
+            "36",
+            "216",
+            "1296",
+            "7776"
+          ],
+          [
+            "25",
+            "4",
+            "11",
+            "44",
+            "484",
+            "5324",
+            "58564"
+          ],
+          [
+            "Total",
+            "40",
+            "—",
+            "0",
+            "1360",
+            "1620",
+            "108280"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 269,
+      "unit": 3,
+      "question": "Obtain the first four moments about an arbitrary origin for the grouped scores.",
+      "marks": 4,
+      "page": 22,
+      "steps": [
+        {
+          "title": "Find the mean",
+          "text": "If data are grouped, use class midpoints.",
+          "formula": "N = 50; Σfx = 3650; mean = 73"
+        },
+        {
+          "title": "Moments about the chosen origin",
+          "text": "For origin a=75, use mᵣ(a)=Σf(x−a)ʳ/N. These are not central unless a equals the mean.",
+          "formula": "m1(75) = -2; m2(75) = 136; m3(75) = -680; m4(75) = 42400"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Score",
+          "50–60",
+          "60–70",
+          "70–80",
+          "80–90",
+          "90–100"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "8",
+            "11",
+            "18",
+            "9",
+            "4"
+          ],
+          [
+            "Midpoint",
+            "55",
+            "65",
+            "75",
+            "85",
+            "95"
+          ]
+        ]
+      },
+      "answer": "About 75: -2, 136, -680, 42400",
+      "note": "The question does not specify an arbitrary origin. We choose a=75; moments about a different origin will have different values.",
+      "workingTable": {
+        "headers": [
+          "x",
+          "f",
+          "d = x − 75",
+          "fd^1",
+          "fd^2",
+          "fd^3",
+          "fd^4"
+        ],
+        "rows": [
+          [
+            "55",
+            "8",
+            "-20",
+            "-160",
+            "3200",
+            "-64000",
+            "1280000"
+          ],
+          [
+            "65",
+            "11",
+            "-10",
+            "-110",
+            "1100",
+            "-11000",
+            "110000"
+          ],
+          [
+            "75",
+            "18",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "85",
+            "9",
+            "10",
+            "90",
+            "900",
+            "9000",
+            "90000"
+          ],
+          [
+            "95",
+            "4",
+            "20",
+            "80",
+            "1600",
+            "32000",
+            "640000"
+          ],
+          [
+            "Total",
+            "50",
+            "—",
+            "-100",
+            "6800",
+            "-34000",
+            "2120000"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 270,
+      "unit": 3,
+      "question": "Calculate the first four moments about the mean, and also β₁ and β₂.",
+      "marks": 5,
+      "page": 22,
+      "steps": [
+        {
+          "title": "Find the mean",
+          "text": "If data are grouped, use class midpoints.",
+          "formula": "N = 125; Σfx = 500; mean = 4"
+        },
+        {
+          "title": "Moments about the actual mean",
+          "text": "Set d=x−mean. Calculate Σfd, Σfd², Σfd³ and Σfd⁴, then divide each sum by N. The first central moment is always 0.",
+          "formula": "μ1 = 0; μ2 = 4; μ3 = 0; μ4 = 188/5 (≈ 37.6)"
+        },
+        {
+          "title": "Moments about zero",
+          "text": "Raw moments use powers of x itself: m′ᵣ=Σfxʳ/N.",
+          "formula": "m′1 = 4; m′2 = 20; m′3 = 112; m′4 = 3388/5 (≈ 677.6)"
+        },
+        {
+          "title": "Calculate skewness and kurtosis",
+          "text": "β₁ is the squared moment coefficient of skewness; β₂ is Pearson kurtosis.",
+          "formula": "β₁ = μ₃²/μ₂³ = 0; β₂ = μ₄/μ₂² = 47/20 (≈ 2.35)"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "5",
+            "10",
+            "15",
+            "20",
+            "25",
+            "20",
+            "15",
+            "10",
+            "5"
+          ]
+        ]
+      },
+      "answer": "Central moments: 0, 4, 0, 188/5 (≈ 37.6); Raw moments: 4, 20, 112, 3388/5 (≈ 677.6); β₁ = 0; β₂ = 47/20 (≈ 2.35)",
+      "workingTable": {
+        "headers": [
+          "x",
+          "f",
+          "d = x − 4",
+          "fd^1",
+          "fd^2",
+          "fd^3",
+          "fd^4"
+        ],
+        "rows": [
+          [
+            "0",
+            "5",
+            "-4",
+            "-20",
+            "80",
+            "-320",
+            "1280"
+          ],
+          [
+            "1",
+            "10",
+            "-3",
+            "-30",
+            "90",
+            "-270",
+            "810"
+          ],
+          [
+            "2",
+            "15",
+            "-2",
+            "-30",
+            "60",
+            "-120",
+            "240"
+          ],
+          [
+            "3",
+            "20",
+            "-1",
+            "-20",
+            "20",
+            "-20",
+            "20"
+          ],
+          [
+            "4",
+            "25",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "5",
+            "20",
+            "1",
+            "20",
+            "20",
+            "20",
+            "20"
+          ],
+          [
+            "6",
+            "15",
+            "2",
+            "30",
+            "60",
+            "120",
+            "240"
+          ],
+          [
+            "7",
+            "10",
+            "3",
+            "30",
+            "90",
+            "270",
+            "810"
+          ],
+          [
+            "8",
+            "5",
+            "4",
+            "20",
+            "80",
+            "320",
+            "1280"
+          ],
+          [
+            "Total",
+            "125",
+            "—",
+            "0",
+            "500",
+            "0",
+            "4700"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 271,
+      "unit": 3,
+      "question": "The quantities of water (in litres) supplied by municipal corporation on ten consecutive days in certain area are shown below: 218.2, 199.7, 207.3, 185.4, 213.7, 184.7, 179.5, 194.4, 224.3, 203.5. Evaluate the mean & the first four central moments of the water (in litres) of that area.",
+      "marks": 1,
+      "page": 22,
+      "steps": [
+        {
+          "title": "Find the mean",
+          "text": "If data are grouped, use class midpoints.",
+          "formula": "N = 10; Σfx = 20107/10 (≈ 2010.7); mean = 20107/100 (≈ 201.07)"
+        },
+        {
+          "title": "Moments about the actual mean",
+          "text": "Set d=x−mean. Calculate Σfd, Σfd², Σfd³ and Σfd⁴, then divide each sum by N. The first central moment is always 0.",
+          "formula": "μ1 = 0; μ2 = 2062461/10000 (≈ 206.246); μ3 = 31587219/250000 (≈ 126.349); μ4 = 7548559248537/100000000 (≈ 75485.6)"
+        }
+      ],
+      "answer": "Central moments: 0, 2062461/10000 (≈ 206.246), 31587219/250000 (≈ 126.349), 7548559248537/100000000 (≈ 75485.6)",
+      "note": "The mean is in litres; the rth central moment has units litres to the power r.",
+      "workingTable": {
+        "headers": [
+          "x",
+          "f",
+          "d = x − 20107/100 (≈ 201.07)",
+          "fd^1",
+          "fd^2",
+          "fd^3",
+          "fd^4"
+        ],
+        "rows": [
+          [
+            "1091/5 (≈ 218.2)",
+            "1",
+            "1713/100 (≈ 17.13)",
+            "1713/100 (≈ 17.13)",
+            "2934369/10000 (≈ 293.437)",
+            "5026574097/1000000 (≈ 5026.57)",
+            "8610521428161/100000000 (≈ 86105.2)"
+          ],
+          [
+            "1997/10 (≈ 199.7)",
+            "1",
+            "-137/100 (≈ -1.37)",
+            "-137/100 (≈ -1.37)",
+            "18769/10000 (≈ 1.8769)",
+            "-2571353/1000000 (≈ -2.57135)",
+            "352275361/100000000 (≈ 3.52275)"
+          ],
+          [
+            "2073/10 (≈ 207.3)",
+            "1",
+            "623/100 (≈ 6.23)",
+            "623/100 (≈ 6.23)",
+            "388129/10000 (≈ 38.8129)",
+            "241804367/1000000 (≈ 241.804)",
+            "150644120641/100000000 (≈ 1506.44)"
+          ],
+          [
+            "927/5 (≈ 185.4)",
+            "1",
+            "-1567/100 (≈ -15.67)",
+            "-1567/100 (≈ -15.67)",
+            "2455489/10000 (≈ 245.549)",
+            "-3847751263/1000000 (≈ -3847.75)",
+            "6029426229121/100000000 (≈ 60294.3)"
+          ],
+          [
+            "2137/10 (≈ 213.7)",
+            "1",
+            "1263/100 (≈ 12.63)",
+            "1263/100 (≈ 12.63)",
+            "1595169/10000 (≈ 159.517)",
+            "2014698447/1000000 (≈ 2014.7)",
+            "2544564138561/100000000 (≈ 25445.6)"
+          ],
+          [
+            "1847/10 (≈ 184.7)",
+            "1",
+            "-1637/100 (≈ -16.37)",
+            "-1637/100 (≈ -16.37)",
+            "2679769/10000 (≈ 267.977)",
+            "-4386781853/1000000 (≈ -4386.78)",
+            "7181161893361/100000000 (≈ 71811.6)"
+          ],
+          [
+            "359/2 (≈ 179.5)",
+            "1",
+            "-2157/100 (≈ -21.57)",
+            "-2157/100 (≈ -21.57)",
+            "4652649/10000 (≈ 465.265)",
+            "-10035763893/1000000 (≈ -10035.8)",
+            "21647142717201/100000000 (≈ 216471)"
+          ],
+          [
+            "972/5 (≈ 194.4)",
+            "1",
+            "-667/100 (≈ -6.67)",
+            "-667/100 (≈ -6.67)",
+            "444889/10000 (≈ 44.4889)",
+            "-296740963/1000000 (≈ -296.741)",
+            "197926222321/100000000 (≈ 1979.26)"
+          ],
+          [
+            "2243/10 (≈ 224.3)",
+            "1",
+            "2323/100 (≈ 23.23)",
+            "2323/100 (≈ 23.23)",
+            "5396329/10000 (≈ 539.633)",
+            "12535672267/1000000 (≈ 12535.7)",
+            "29120366676241/100000000 (≈ 291204)"
+          ],
+          [
+            "407/2 (≈ 203.5)",
+            "1",
+            "243/100 (≈ 2.43)",
+            "243/100 (≈ 2.43)",
+            "59049/10000 (≈ 5.9049)",
+            "14348907/1000000 (≈ 14.3489)",
+            "3486784401/100000000 (≈ 34.8678)"
+          ],
+          [
+            "Total",
+            "10",
+            "—",
+            "0",
+            "2062461/1000 (≈ 2062.46)",
+            "31587219/25000 (≈ 1263.49)",
+            "7548559248537/10000000 (≈ 754856)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": 272,
+      "unit": 3,
+      "question": "Calculate Karl Pearson’s coefficient of skewness for this grouped distribution.",
+      "marks": 4,
+      "page": 23,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 300"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 33280; mean = Σfx/N = 1664/15 (≈ 110.933)"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 70, in class 130–140. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 130; h = 10; f₀ = 60; f₁ = 70; f₂ = 0"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 130 + [(70−60)/(140−60−0)] × 10 = 525/4 (≈ 131.25)"
+        },
+        {
+          "title": "Calculate standard deviation",
+          "text": "Use population SD and the class midpoints.",
+          "formula": "σ² = Σf(x−mean)²/N = 111929/225 (≈ 497.462); σ = 22.303861"
+        },
+        {
+          "title": "Calculate Pearson skewness",
+          "text": "A negative value indicates a longer left tail; a positive value indicates a longer right tail.",
+          "formula": "Sk = (mean−mode)/σ = (1664/15 (≈ 110.933)−525/4 (≈ 131.25))/22.303861 = -0.91090357"
+        },
+        {
+          "title": "Median-based alternative",
+          "text": "This avoids assigning a frequency to an absent class, but is a different Pearson formula.",
+          "formula": "Median = 116; 3(mean−median)/σ = -0.68149635"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "40–50",
+          "50–60",
+          "60–70",
+          "70–80",
+          "80–90",
+          "90–100",
+          "100–110",
+          "110–120",
+          "120–130",
+          "130–140"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "5",
+            "6",
+            "8",
+            "10",
+            "25",
+            "30",
+            "36",
+            "50",
+            "60",
+            "70"
+          ],
+          [
+            "Midpoint",
+            "45",
+            "55",
+            "65",
+            "75",
+            "85",
+            "95",
+            "105",
+            "115",
+            "125",
+            "135"
+          ],
+          [
+            "Cumulative frequency",
+            "5",
+            "11",
+            "19",
+            "29",
+            "54",
+            "84",
+            "120",
+            "170",
+            "230",
+            "300"
+          ]
+        ]
+      },
+      "answer": "-0.91090357",
+      "note": "The highest frequency is in the last class, so interpolation of its mode needs a convention. Taking the following frequency as zero gives the coefficient shown. The median-based Pearson estimate is also displayed."
+    },
+    {
+      "id": 273,
+      "unit": 3,
+      "question": "Find Karl Pearson’s coefficient of skewness for these marks.",
+      "marks": 3,
+      "page": 23,
+      "steps": [
+        {
+          "title": "Find the mean and mode",
+          "text": "The highest frequency is 25 at marks 22.",
+          "formula": "N = 80; Σfx = 1831; mean = 1831/80 (≈ 22.8875); mode = 22"
+        },
+        {
+          "title": "Find population standard deviation",
+          "text": "",
+          "formula": "σ² = 24959/6400 (≈ 3.89984); σ = 1.9748022"
+        },
+        {
+          "title": "Calculate Karl Pearson’s coefficient",
+          "text": "",
+          "formula": "Sk = (mean−mode)/σ = 0.4494121"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Values",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "7",
+            "12",
+            "25",
+            "10",
+            "8",
+            "6",
+            "8",
+            "3",
+            "1"
+          ]
+        ]
+      },
+      "answer": "0.4494121"
+    },
+    {
+      "id": 274,
+      "unit": 3,
+      "question": "Find Karl Pearson’s coefficient of skewness for this grouped distribution.",
+      "marks": 4,
+      "page": 23,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 100"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 2530; mean = Σfx/N = 253/10 (≈ 25.3)"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 30, in class 20–30. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 20; h = 10; f₀ = 20; f₁ = 30; f₂ = 25"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 20 + [(30−20)/(60−20−25)] × 10 = 80/3 (≈ 26.6667)"
+        },
+        {
+          "title": "Calculate standard deviation",
+          "text": "Use population SD and the class midpoints.",
+          "formula": "σ² = Σf(x−mean)²/N = 14491/100 (≈ 144.91); σ = 12.037857"
+        },
+        {
+          "title": "Calculate Pearson skewness",
+          "text": "A negative value indicates a longer left tail; a positive value indicates a longer right tail.",
+          "formula": "Sk = (mean−mode)/σ = (253/10 (≈ 25.3)−80/3 (≈ 26.6667))/12.037857 = -0.11353073"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "0–10",
+          "10–20",
+          "20–30",
+          "30–40",
+          "40–50"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "13",
+            "20",
+            "30",
+            "25",
+            "12"
+          ],
+          [
+            "Midpoint",
+            "5",
+            "15",
+            "25",
+            "35",
+            "45"
+          ],
+          [
+            "Cumulative frequency",
+            "13",
+            "33",
+            "63",
+            "88",
+            "100"
+          ]
+        ]
+      },
+      "answer": "-0.11353073"
+    },
+    {
+      "id": 275,
+      "unit": 3,
+      "question": "For the profits of 1000 companies, in thousand rupees, calculate the coefficient of skewness.",
+      "marks": 4,
+      "page": 23,
+      "steps": [
+        {
+          "title": "Prepare the data",
+          "text": "Use midpoints for the mean and cumulative frequencies to locate the median class.",
+          "formula": "N = Σf = 1000"
+        },
+        {
+          "title": "Find the mean",
+          "text": "Multiply each midpoint by its frequency and add the products.",
+          "formula": "Σfx = 177860; mean = Σfx/N = 8893/50 (≈ 177.86)"
+        },
+        {
+          "title": "Find the modal class",
+          "text": "The highest frequency is 327, in class 180–200. f₁ is this frequency, f₀ is the preceding frequency, and f₂ is the following frequency.",
+          "formula": "L = 180; h = 20; f₀ = 194; f₁ = 327; f₂ = 208"
+        },
+        {
+          "title": "Calculate the mode",
+          "text": "Use the grouped-data mode formula.",
+          "formula": "Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)]h = 180 + [(327−194)/(654−194−208)] × 20 = 1715/9 (≈ 190.556)"
+        },
+        {
+          "title": "Calculate standard deviation",
+          "text": "Use population SD and the class midpoints.",
+          "formula": "σ² = Σf(x−mean)²/N = 1586551/2500 (≈ 634.62); σ = 25.191673"
+        },
+        {
+          "title": "Calculate Pearson skewness",
+          "text": "A negative value indicates a longer left tail; a positive value indicates a longer right tail.",
+          "formula": "Sk = (mean−mode)/σ = (8893/50 (≈ 177.86)−1715/9 (≈ 190.556))/25.191673 = -0.50395841"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class",
+          "100–120",
+          "120–140",
+          "140–160",
+          "160–180",
+          "180–200",
+          "200–220",
+          "220–240"
+        ],
+        "rows": [
+          [
+            "Frequency",
+            "17",
+            "53",
+            "199",
+            "194",
+            "327",
+            "208",
+            "2"
+          ],
+          [
+            "Midpoint",
+            "110",
+            "130",
+            "150",
+            "170",
+            "190",
+            "210",
+            "230"
+          ],
+          [
+            "Cumulative frequency",
+            "17",
+            "70",
+            "269",
+            "463",
+            "790",
+            "998",
+            "1000"
+          ]
+        ]
+      },
+      "answer": "-0.50395841"
+    },
+    {
+      "id": 276,
+      "unit": 3,
+      "question": "The first three moments of distribution about the value two of the variables are 1, 16 and −40. Show that the mean = 3, variance = 15 and 𝜇 = −86. 3",
+      "marks": 3,
+      "page": 23,
+      "steps": [
+        {
+          "title": "Recover the mean",
+          "text": "The first moment of X−2 is 1.",
+          "formula": "Mean = 2+1 = 3"
+        },
+        {
+          "title": "Calculate the variance",
+          "text": "",
+          "formula": "μ₂ = m₂−m₁² = 16−1² = 15"
+        },
+        {
+          "title": "Calculate the third central moment",
+          "text": "",
+          "formula": "μ₃ = m₃−3m₂m₁+2m₁³ = −40−3×16×1+2×1³ = −86"
+        }
+      ],
+      "answer": "Mean = 3; variance = 15; μ₃ = −86"
+    },
+    {
+      "id": 277,
+      "unit": 3,
+      "question": "The first four raw moments of distribution are 2, 136,320 and 40000. Calculate the first four moments about mean. Also find skewness.",
+      "marks": 3,
+      "page": 23,
+      "steps": [
+        {
+          "title": "Identify the raw moments",
+          "text": "Raw moments are about zero; the first is the mean.",
+          "formula": "m′₁ = 2; m′₂ = 136; m′₃ = 320; m′₄ = 40000"
+        },
+        {
+          "title": "Convert to central moments",
+          "text": "",
+          "formula": "μ₁ = 0; μ₂ = 136−2² = 132; μ₃ = 320−3×136×2+2×2³ = −480"
+        },
+        {
+          "title": "Calculate the fourth central moment",
+          "text": "",
+          "formula": "μ₄ = 40000−4×320×2+6×136×2²−3×2⁴ = 40656"
+        },
+        {
+          "title": "Calculate moment skewness",
+          "text": "Its negative sign means negative skewness. β₁ removes the sign because it is squared.",
+          "formula": "γ₁ = μ₃/μ₂^(3/2) ≈ -0.31650483; β₁ = μ₃²/μ₂³ = 400/3993 (≈ 0.100175)"
+        }
+      ],
+      "answer": "μ₁=0; μ₂=132; μ₃=-480; μ₄=40656; γ₁≈-0.31650483"
+    },
+    {
+      "id": 278,
+      "unit": 3,
+      "question": "First three moments of a distribution about 3 are 2, 70,150 respectively. Find those moments about 4.",
+      "marks": 3,
+      "page": 23,
+      "steps": [
+        {
+          "title": "Shift the origin",
+          "text": "Let Y=X−3. Then X−4=Y−1. The given moments are E(Y)=2,E(Y²)=70,E(Y³)=150.",
+          "formula": "New moments = E[(Y−1)ʳ]"
+        },
+        {
+          "title": "First and second moments",
+          "text": "",
+          "formula": "m₁(4) = 2−1 = 1; m₂(4) = 70−2×2+1 = 67"
+        },
+        {
+          "title": "Third moment",
+          "text": "",
+          "formula": "m₃(4) = 150−3×70+3×2−1 = −55"
+        }
+      ],
+      "answer": "Moments about 4: 1, 67, −55"
+    },
+    {
+      "id": 279,
+      "unit": 3,
+      "question": "In a distribution, the 𝑚𝑒𝑎𝑛 = 65,𝑚𝑒𝑑𝑖𝑎𝑛 = 70,𝑐𝑜𝑒𝑓𝑓𝑖𝑐𝑖𝑒𝑛𝑡 𝑜𝑓 𝑠𝑘𝑒𝑤𝑛𝑒𝑠𝑠 = −0.6. find mode and coefficient of variation.",
+      "marks": 3,
+      "page": 23,
+      "steps": [
+        {
+          "title": "Find the standard deviation",
+          "text": "Use the median-based Pearson coefficient.",
+          "formula": "−0.6 = 3(65−70)/σ = −15/σ ⇒ σ = 25"
+        },
+        {
+          "title": "Estimate the mode",
+          "text": "The empirical mean–median–mode relation gives the requested mode.",
+          "formula": "Mode ≈ 3×70−2×65 = 80"
+        },
+        {
+          "title": "Calculate coefficient of variation",
+          "text": "",
+          "formula": "CV = 100σ/Mean = 100×25/65 ≈ 38.4615%"
+        }
+      ],
+      "answer": "Mode ≈ 80; CV ≈ 38.4615%",
+      "note": "The mode is an empirical estimate, because the distribution itself is not supplied."
+    },
+    {
+      "id": 280,
+      "unit": 3,
+      "question": "For a group of 10 items, ∑𝑥 = 452,∑𝑥2 = 24270, and mode = 43.7. Find the Karl Pearson’s coefficient of skewness.",
+      "marks": 3,
+      "page": 23,
+      "steps": [
+        {
+          "title": "Choose the formula",
+          "text": "",
+          "formula": "Sk = (Mean − Mode)/σ"
+        },
+        {
+          "title": "Substitute and simplify",
+          "text": "",
+          "formula": "Mean=452/10=45.2; σ²=24270/10−45.2²=9599/25 (≈ 383.96); σ=19.594897; Sk=(45.2−43.7)/σ=0.076550542"
+        }
+      ],
+      "answer": "0.076550542"
+    }
+  ]
+}

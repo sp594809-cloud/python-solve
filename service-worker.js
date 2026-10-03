@@ -1,8 +1,13 @@
-const CACHE_NAME = "ljiet-learning-hub-v6";
+const CACHE_NAME = "ljiet-learning-hub-v7-ps-chapter3";
 const ASSETS = [
   "./",
   "./index.html",
   "./loops-adventure.html",
+  "./probability/",
+  "./probability/index.html",
+  "./probability/styles.css",
+  "./probability/app.js",
+  "./probability/data/chapter-3.js",
   "./css/main.css",
   "./css/playgrounds.css",
   "./js/app.js",
