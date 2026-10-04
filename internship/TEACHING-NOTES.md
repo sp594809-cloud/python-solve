@@ -1,21 +1,21 @@
 # Python for Internship
 
-A complete first version of a 16-week practice course. It complements Python I and Python III practice books. It does not replace faculty review, professional work experience or a complete textbook.
+A beginner-first second version of a 16-week practice course. It complements Python I and Python III practice books. It does not replace faculty review, professional work experience or a complete textbook.
 
 ## Weekly routine (15–20 hours suggested)
 
-1. **Understand and predict — 3 hours:** read the three lesson explanations, trace examples on paper and open the official references. Write down unfamiliar terms. Predictions repeat the central concept within a week on purpose; they are not graded completion.
+1. **Understand and predict — 3 hours:** read the guided lesson explanations, trace examples on paper and open the official references. Write down unfamiliar terms. Predictions repeat the central concept within a week on purpose; they are not graded completion.
 2. **Write and debug — 4 hours:** implement each starter, run it and inspect failed cases. Change inputs, add your own tests and explain what would break. Rebuild one function the following day without reading it.
 3. **Build — 6–8 hours:** download the weekly project. Run the reference demo, then create your own version or add a meaningful feature. Keep references closed during the first attempt.
 4. **Review and transfer — 2–3 hours:** write setup instructions, commit changes, explain the code to someone and try an unfamiliar requirement. Every fourth week has an independent checkpoint challenge.
 
-The three short browser exercises introduce a week's ideas; the projects, official reading, independent variations and review supply the sustained practice. Advance at your own pace. Work submitted by copying a reference should be identified as assisted.
+The 100 core lessons introduce the ideas in sequence; 12 earlier challenges are now optional stretch work after Week 4. The guided lessons contain original explanations, worked outputs, line-by-line walkthroughs and common mistakes. W3Schools topic pages provide optional reading, not copied course content. Browser exercises introduce a week's ideas; the projects, official reading, independent variations and review supply the sustained practice. Advance at your own pace. Work submitted by copying a reference should be identified as assisted.
 
 ## Learning outcomes and project progression
 
 | Weeks | Skills | Evidence students should create |
 |---|---|---|
-| 1–4 | Types, expressions, conditions, loops, collections, functions, boundary tests | Quiz, expense tool, contact book, budget planner |
+| 1–4 | Types, expressions, conditions, loops, collections, functions, boundary tests | Study profile and bill, study-day tool, subject tracker, budget planner |
 | 5–8 | Exceptions, files, CSV/JSON, parameterized SQLite, classes, fixtures, tests, Git | Notes CLI, records importer, inventory tool, tested package with commits |
 | 9–12 | Semantic HTML, responsive CSS, JS events, HTTP validation, FastAPI, fetch, deployment boundaries | Portfolio, local task API/dashboard, deployment instructions and device checks |
 | 13–16 | Dataset inspection, leakage prevention, pipelines, baseline and held-out evaluation, retrieval attribution | Dataset report, small classifier, notes search, API + AI support-desk capstone |
@@ -46,6 +46,23 @@ The three short browser exercises introduce a week's ideas; the projects, offici
 
 Browser Python uses a reusable Pyodide 0.26.2 worker with fresh globals per run. SQLite and scikit-learn are loaded on demand. The runtime needs first-load internet access, uses temporary virtual files, does not run a listening FastAPI server, and has a 120-second stop/restart limit. Downloadable kits run web APIs on a laptop.
 
-Authoring: `python internship/tools/build_course.py` then `python internship/tools/build_projects.py`.
+## Notebook and video learning
 
-Validation: `python internship/tools/verify_course.py` (requires FastAPI, httpx and scikit-learn in the test environment); `node internship/tools/verify_ui.cjs` (requires jsdom). Tests cover 135 Python reference cases, incomplete starters, runnable project demos, actual FastAPI routes, editable-code execution requests, local persistence, assistance, failed/stale checks, navigation cancellation, HTML isolation and project self-review rules. The same 135 reference cases are also checked in the pinned Pyodide runtime before publication. Physical device and visual browser QA are still needed.
+JupyterLite provides actual editable notebook cells in the app, with four-space indentation, line numbers, and 108 Python lesson notebooks plus a getting-started notebook. Four HTML lessons use the isolated web preview. Auto-indent helps with spacing; it cannot prevent every Python error. The guided example and independent answer are separate so experimenting with an example never earns completion.
+
+Notebook variables persist across cells. Restart and Run All when checking reproducibility. Download a `.ipynb` backup; notebook files are stored separately from course drafts in browser storage. Import the student answer into the matching course lesson and run its checks to record progress. Notebook assertions do not automatically mark course completion, and printed-output tasks ask for manual comparison in notebooks before the course checks them automatically. The notebook kernel downloads Pyodide on first use; it needs internet access and cannot host the FastAPI project server.
+
+Every lesson has selected YouTube links, creator attribution and guidance on what to watch. English resources include Harvard CS50, Corey Schafer, StatQuest and freeCodeCamp. Hindi support includes CodeWithHarry fundamentals and Git. A Hindi filter states when a topic-specific Hindi video is unavailable. Videos are supplementary: predict, watch a short section, then code without copying. Older recordings may differ from current package interfaces; follow the pinned project requirements and linked official docs.
+
+## Rebuilding
+
+Run `python internship/tools/build_course.py`, `python internship/tools/build_projects.py`, then `python internship/tools/build_notebooks.py`. Install `internship/notebook-requirements.txt` into a dedicated build environment, then run:
+
+```sh
+jupyter lite build --lite-dir internship/jupyter-config --contents ../notebook-content --output-dir internship/notebooks --apps lab --no-sourcemaps --no-unused-shared-packages --force
+node build-ui.mjs
+```
+
+Keep generated notebook assets and licenses together. The app service worker leaves the JupyterLite scope to its own worker.
+
+Validation: `python internship/tools/verify_course.py` (requires FastAPI, httpx and scikit-learn in the test environment); `node internship/tools/verify_ui.cjs` (requires jsdom). Tests cover 288 Python reference cases, incomplete starters, runnable project demos, actual FastAPI routes, editable-code execution requests, local persistence, assistance, failed/stale checks, navigation cancellation, HTML isolation and project self-review rules. The same 288 reference cases are also checked in the pinned Pyodide runtime before publication. Physical device and visual browser QA are still needed.

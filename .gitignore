@@ -4,3 +4,5 @@ probability/tools/solutions.tsv
 
 __pycache__/
 *.pyc
+
+.jupyterlite.doit.db*

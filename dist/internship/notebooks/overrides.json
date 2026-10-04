@@ -1,0 +1,8 @@
+{
+ "@jupyterlab/notebook-extension:tracker": {
+  "codeCellConfig": {"lineNumbers": true, "autoClosingBrackets": true, "tabSize": 4, "insertSpaces": true}
+ },
+ "@jupyterlab/notebook-extension:panel": {
+  "toolbar": [{"name":"download","label":"Download notebook","args":{},"command":"docmanager:download","icon":"ui-components:download","rank":50}]
+ }
+}

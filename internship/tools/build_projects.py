@@ -122,6 +122,10 @@ if __name__=="__main__":
     import argparse
     p=argparse.ArgumentParser();p.add_argument("query",nargs="?",default="lists order");print(search(p.parse_args().query) or "No matching source")
 '''}
+# The first projects use only concepts already taught in their week.
+projects[1]='name = "Asha"\nminutes = 20\nprice = 25\nquantity = 3\ntotal = price * quantity\nchange = 100 - total\nprint(f"{name}: {minutes} minutes of Python")\nprint("Bill:", total, "Change:", change)\n'
+projects[2]='name = "  Asha  ".strip()\nscore = 65\nif score >= 80:\n    advice = "Try a new challenge"\nelif score >= 40:\n    advice = "Practise one weak topic"\nelse:\n    advice = "Review the worked example"\nprint(f"{name}: {advice}")\n'
+projects[3]='scores = {"Python": 8, "Maths": 6, "English": 7}\ntotal = 0\nfor subject, score in scores.items():\n    total += score\n    if score < 7:\n        print("Revise:", subject)\nprint("Total:", total)\nprint("Distinct subjects:", len(set(scores)))\n'
 portfolio='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Python portfolio</title><style>body{font:18px system-ui;margin:auto;max-width:960px;padding:24px;background:#f2f6fa;color:#173044}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}article{background:white;padding:20px;border-radius:16px}button:focus-visible,a:focus-visible{outline:3px solid #06735d}</style><main><h1>My Python portfolio</h1><p>Replace this page with your own projects and honest learning notes.</p><section class="cards"><article><h2>Notes app</h2><p>File handling and validation.</p></article><article><h2>Ticket classifier</h2><p>A small model trained on synthetic data.</p></article></section><h2>Study sessions</h2><p id="count">0</p><button id="add">Add session</button><form><label for="email">Your email</label><input id="email" type="email" required><button>Contact (demo only)</button></form></main><script>let n=0;document.querySelector('#add').addEventListener('click',()=>document.querySelector('#count').textContent=++n);document.querySelector('form').addEventListener('submit',e=>{e.preventDefault();alert('Demo form: no message is sent.')});</script></html>'''
 api='''from pathlib import Path
 from fastapi import FastAPI, HTTPException
@@ -233,9 +237,14 @@ for week in course['weeks']:
   ext='html' if lesson['language']=='html' else 'py';name=lesson['id']
   files[f'exercises/{name}.{ext}']=lesson['starter'];files[f'reference/{name}.{ext}']=lesson['reference']
   if ext=='py':
-   checks='\n'.join(t['code'] for t in lesson['tests'])
+   checks='\n'.join(t['code'] for t in lesson['tests'] if 'code' in t)
    files[f'reference/test_{name}.py']=lesson['reference']+'\n'+checks+'\nprint("Checks passed")\n'
   brief+=f"\n## {lesson['title']}\n{lesson['goal']}\n\n{lesson['teach']}\n\nTry exercises/{name}.{ext} before reading reference/{name}.{ext}.\n"
+ for lesson in ls:
+  if lesson.get('walkthrough'):
+   brief+='\n### '+lesson['title']+' — walkthrough\n'+'\n'.join('- '+line for line in lesson['walkthrough'])+'\n\nExpected output: '+lesson['expectedOutput']+'\n\nCommon mistake: '+lesson['commonMistake']+'\n'
+  if lesson.get('videos'):
+   v=lesson['videos'][0];brief+='\nWatch: ['+v['title']+']('+v['url']+') — '+v['creator']+' ('+v['language']+'). '+v['focus']+'\n'
  files['README.md']=brief;files['.gitignore']='.venv/\n__pycache__/\n.env\n*.sqlite\n'
  target=R/'projects'/f'week-{n:02d}.zip'
  with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as z:

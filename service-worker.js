@@ -1,9 +1,10 @@
-const CACHE_NAME = "ljiet-study-python-internship-20261004-v6";
+const CACHE_NAME = "ljiet-study-python-foundations-notebooks-20261004-v7";
 const ASSETS = [
   "./internship/",
   "./internship/index.html",
   "./internship/styles.css",
   "./internship/app.js",
+  "./internship/learning-ui.js",
   "./internship/worker.js",
   "./internship/curriculum.js",
   "./assets/study-buddies.svg",
@@ -82,7 +83,7 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k)))
+      Promise.all(keys.filter((k) => k.startsWith("ljiet-study-") && k !== CACHE_NAME).map((k) => caches.delete(k)))
     )
   );
   self.clients.claim();
@@ -90,6 +91,8 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
+  // JupyterLite owns its scoped worker and virtual file requests.
+  if (new URL(event.request.url).pathname.includes("/internship/notebooks/")) return;
   event.respondWith(
     caches.match(event.request).then((cached) => {
       const network = fetch(event.request)

@@ -12,7 +12,8 @@ self.onmessage=async({data})=>{
   const globals=runtime.runPython('dict()');let results=[];
   try{
    await runtime.runPythonAsync(code,{globals});
-   for(const test of tests||[]){try{await runtime.runPythonAsync(test.code,{globals});results.push({label:test.label,pass:true});}catch(e){results.push({label:test.label,pass:false,error:String(e).slice(-1800)});}}
+   const studentOutput=output.trim();
+   for(const test of tests||[]){try{if('outputEquals' in test){if(studentOutput!==test.outputEquals)throw new Error('Expected output: '+test.outputEquals+'; received: '+studentOutput);}else await runtime.runPythonAsync(test.code,{globals});results.push({label:test.label,pass:true});}catch(e){results.push({label:test.label,pass:false,error:String(e).slice(-1800)});}}
   }finally{globals.destroy();}
   self.postMessage({id,type:'done',output,results});
  }catch(e){self.postMessage({id,type:'error',error:String(e).slice(-3000),output});}

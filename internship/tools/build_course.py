@@ -308,8 +308,24 @@ for lesson in LESSONS:
  if lesson['id']=='w06-l3': lesson['packages']=['sqlite3']
  code,options,correct,explanation=P[lesson['week']-1]
  lesson['prediction']=dict(code=code,options=options,correct=correct,explanation=explanation)
+# Teaching comes before challenges. Earlier IDs remain for saved links/progress.
+from foundations import LESSONS as FOUNDATIONS
+from resources import attach, VIDEOS
+for lesson in LESSONS:
+ lesson['level']='stretch' if lesson['week']<=4 else 'practice'
+ lesson['prerequisite']='Complete the guided lessons through Week 4 before attempting this optional challenge.' if lesson['week']<=4 else 'Complete this week’s guided lessons first.'
+LESSONS=sorted(FOUNDATIONS+LESSONS,key=lambda l:(l['week'],0 if l['level']=='guided' else 1,l['id']))
+# Rotate answer positions so prediction is not a repeated first-button exercise.
+for i,lesson in enumerate(LESSONS):
+ if lesson['level']=='guided':
+  p=lesson['prediction'];shift=i%len(p['options']);p['options']=p['options'][-shift:]+p['options'][:-shift] if shift else p['options'];p['correct']=shift
+attach(LESSONS)
+W[0]=('Your first Python instructions','Study profile and stationery bill','Read and write small scripts using print, variables, types and arithmetic.',['Print a study profile using named variables.','Calculate a stationery bill and change.','Change the quantities and explain the new result.'])
+W[1]=('Strings and decisions','Study-day decision tool','Clean text and choose branches with comparisons and boolean rules.',['Clean a student name and build a readable message.','Choose a study message from a score using if/elif/else.','Test values just below and at each boundary.'])
+W[2]=('Collections and repetition','Subject tracker','Use lists, loops, tuples, sets and dictionaries before writing functions.',['Store subjects and scores in a dictionary.','Loop to calculate a total and identify a low score.','Test an empty collection and duplicate names.'])
+W[3]=('Functions and debugging','Budget planner','Turn scripts into reusable functions and check boundary cases.',['Separate input, calculation and display.','Write a budget summary with small functions.','Explain one bug and keep a regression test.'])
 weeks=[dict(number=i,title=t,project=p,outcome=o,requirements=req,download=f'projects/week-{i:02d}.zip',checkpoint=i%4==0) for i,(t,p,o,req) in enumerate(W,1)]
-course=dict(version=1,title='Python for Internship',weeks=weeks,lessons=LESSONS)
+course=dict(version=2,title='Python for Internship',weeks=weeks,lessons=LESSONS,notebookVideo=VIDEOS['notebook'])
 (R/'curriculum.json').write_text(json.dumps(course,ensure_ascii=False,indent=2),encoding='utf-8')
 (R/'curriculum.js').write_text('window.INTERNSHIP_COURSE = '+json.dumps(course,ensure_ascii=False)+';\n',encoding='utf-8')
-print(f'Authored {len(LESSONS)} lessons across {len(weeks)} weeks')
+print(f'Authored {len(LESSONS)} lessons across {len(weeks)} weeks: 64 guided, 36 practice, 12 optional stretch')
