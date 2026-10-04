@@ -29,7 +29,7 @@
   <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Main navigation">
     <button type="button" class="mobile-nav-item active" data-view="home" onclick="openWelcomeScreen()"><span aria-hidden="true">⌂</span><span>Home</span></button>
     <button type="button" class="mobile-nav-item" data-view="quiz" onclick="startUnitQuiz('sem1','all',10)"><span aria-hidden="true">✓</span><span>Quiz</span></button>
-    <a class="mobile-nav-item" href="probability/" style="text-decoration:none"><span aria-hidden="true">∑</span><span>P&amp;S</span></a>
+    <button type="button" class="mobile-nav-item" id="subjects-nav" onclick="openSubjectsMenu()" aria-controls="sidebar" aria-expanded="false"><span aria-hidden="true">▤</span><span>Subjects</span></button>
     <button type="button" class="mobile-nav-item" data-view="rank" onclick="openLeaderboardScreen()"><span aria-hidden="true">▥</span><span>Rank</span></button>
   </nav>
   <div class="app-container">
@@ -38,12 +38,27 @@
       <div class="phase-header">WORKSPACE</div>
       <ul class="concept-list">
         <li data-view="home" class="active"><button type="button" onclick="openWelcomeScreen();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">⌂</span>Overview</button></li>
-        <li data-view="sem1"><button type="button" onclick="openSem1PracticeBook();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">Py</span>Python · Semester I</button></li>
-        <li data-view="sem3"><button type="button" onclick="openSem3PracticeBook();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">Py</span>Python · Semester III</button></li>
-        <li data-view="fsd1"><a href="study/?subject=fsd"><span class="nav-symbol" aria-hidden="true">JS</span>Full stack development</a></li>
-        <li data-view="maths"><a href="maths/"><span class="nav-symbol" aria-hidden="true">∫</span>Mathematics I · Units 6–8</a></li>
-        <li data-view="ps"><a href="probability/"><span class="nav-symbol" aria-hidden="true">∑</span>Probability & statistics</a></li>
-        <li data-view="se"><a href="study/?subject=se"><span class="nav-symbol" aria-hidden="true">SE</span>Software engineering</a></li>
+      </ul>
+      <div class="semester-navigation" aria-label="Subjects by semester">
+        <details class="semester-menu" id="semester-menu-1" data-menu-semester="1">
+          <summary><span class="semester-badge">01</span><span>Semester 1<small>3 available subjects</small></span></summary>
+          <ul class="concept-list semester-subjects">
+            <li data-view="sem1"><a href="python/?book=sem1"><span class="nav-symbol" aria-hidden="true">Py</span>Python I</a></li>
+            <li data-view="maths"><a href="maths/"><span class="nav-symbol" aria-hidden="true">∫</span>Mathematics I</a></li>
+            <li data-view="se"><a href="study/?subject=se"><span class="nav-symbol" aria-hidden="true">SE</span>Software engineering</a></li>
+          </ul>
+        </details>
+        <details class="semester-menu" id="semester-menu-3" data-menu-semester="3">
+          <summary><span class="semester-badge">03</span><span>Semester 3<small>3 available subjects</small></span></summary>
+          <ul class="concept-list semester-subjects">
+            <li data-view="sem3"><a href="python/?book=sem3"><span class="nav-symbol" aria-hidden="true">Py</span>Python III</a></li>
+            <li data-view="fsd1"><a href="study/?subject=fsd"><span class="nav-symbol" aria-hidden="true">JS</span>Full stack development</a></li>
+            <li data-view="ps"><a href="probability/"><span class="nav-symbol" aria-hidden="true">∑</span>Probability &amp; statistics</a></li>
+          </ul>
+        </details>
+      </div>
+      <div class="phase-header">PRACTICE</div>
+      <ul class="concept-list">
         <li data-view="quiz"><button type="button" onclick="startUnitQuiz('sem1','all',10);closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">✓</span>Quick quiz</button></li>
         <li data-view="rank"><button type="button" onclick="openLeaderboardScreen();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">▥</span>Leaderboard</button></li>
         <li data-view="learn"><button type="button" onclick="openLearningPathNav();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">&lt;&gt;</span>Learning path</button></li>
