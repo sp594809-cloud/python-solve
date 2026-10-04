@@ -1,0 +1,2288 @@
+[
+  {
+    "id": 643,
+    "unit": 6,
+    "page": 29,
+    "sourceText": "Find:∫cos 5xdx"
+  },
+  {
+    "id": 644,
+    "unit": 6,
+    "page": 29,
+    "sourceText": "Find:∫secଶxdx"
+  },
+  {
+    "id": 645,
+    "unit": 6,
+    "page": 29,
+    "sourceText": "න\n1\nxଶ+ 4x+ 13 d= ___________"
+  },
+  {
+    "id": 646,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "න\ndx\n1 + cos x= __________"
+  },
+  {
+    "id": 647,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫cos xdx"
+  },
+  {
+    "id": 648,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫tan xdx"
+  },
+  {
+    "id": 649,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫sin xdx"
+  },
+  {
+    "id": 650,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫cot xdx"
+  },
+  {
+    "id": 651,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find:∫ඥ(3x−1)(x+ 2) dx."
+  },
+  {
+    "id": 652,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find:  ∫(2 x−1 )ଶ. xିଵdx"
+  },
+  {
+    "id": 653,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫√25 −xଶdx."
+  },
+  {
+    "id": 654,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫3 sec଻xtanxdx."
+  },
+  {
+    "id": 655,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫\nଶ௫యାଶ଴௫ିଵ\n௫మାଵ଴\ndx"
+  },
+  {
+    "id": 656,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫√xଶ+ 9 dx"
+  },
+  {
+    "id": 657,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫\nଵ\n௫మାସ௫ାଽdx"
+  },
+  {
+    "id": 658,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫\n௫\n(௫ିଵ)(௫ିଶ) dx"
+  },
+  {
+    "id": 659,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫\nଵ\n√ଽ୶మିଵ଺dx"
+  },
+  {
+    "id": 660,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find:  ∫\nଵ\n୶మାହ୶ା଺dx"
+  },
+  {
+    "id": 661,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫\nଵ\n√ଵ଺୶మାଵdx"
+  },
+  {
+    "id": 662,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find:  ∫\nଵ\n௫మି௫ି଺dx"
+  },
+  {
+    "id": 663,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫4ହ௫ାଶdx"
+  },
+  {
+    "id": 664,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫√4xଶ+ 4x−15dx"
+  },
+  {
+    "id": 665,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫\nଵ\n√ସ௫మିସ௫ିହdx"
+  },
+  {
+    "id": 666,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Solve: ∫e(ହ௫ିଷ) dx"
+  },
+  {
+    "id": 667,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find:  ∫\nଵ\nଵି௖௢௦ଶ௫dx"
+  },
+  {
+    "id": 668,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find:  ʃ ቀ\n௫\n௔+\n௔\n௫+ x௔+ a௫+ 5ቁdx"
+  },
+  {
+    "id": 669,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find:  ʃ\n௫య\n௫మିଽdx"
+  },
+  {
+    "id": 670,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find:  ʃ\n௫మିଵ଴\n௫మାଽdx"
+  },
+  {
+    "id": 671,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find:  ʃ\nଵ\n√଼ିଶ௫ି௫మdx"
+  },
+  {
+    "id": 672,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫\nଵ\n√ଶହ௫మିଵdx"
+  },
+  {
+    "id": 673,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫ඥ(x−4)(x+ 4) dx"
+  },
+  {
+    "id": 674,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫\nଵ\nଷ௫మାହdx"
+  },
+  {
+    "id": 675,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫\n௫య\n௫మିଵ଺dx"
+  },
+  {
+    "id": 676,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫7ଽ௫ିଶdx"
+  },
+  {
+    "id": 677,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Solve: ∫√xଶ−4 dx"
+  },
+  {
+    "id": 678,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Solve: ∫3ହ௫ାଶdx"
+  },
+  {
+    "id": 679,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫\n௫య\n(௫ିଶ)(௫ାଷ) dx"
+  },
+  {
+    "id": 680,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫eଷ௫cos 2xdx"
+  },
+  {
+    "id": 681,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Solve :  ∫cos 4xcos 2xsin xdx"
+  },
+  {
+    "id": 682,
+    "unit": 6,
+    "page": 30,
+    "sourceText": "Find: ∫√16 −xଶdx."
+  },
+  {
+    "id": 683,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Evaluate:  ∫ඥ(1 −sin2x) dx"
+  },
+  {
+    "id": 684,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Evaluate: ∫\n௦௘௖మ௫\n√௧௔௡మ௫ାସdx"
+  },
+  {
+    "id": 685,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Evaluate: ∫\nଶ௫ାଷ\n௫యିଷ௫ାଶdx"
+  },
+  {
+    "id": 686,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "The value of  ∫log x(log x+ 2)dx=\n_________."
+  },
+  {
+    "id": 687,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Find: ∫xଶlogxdx"
+  },
+  {
+    "id": 688,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Find: ∫xଷcos 2xdx"
+  },
+  {
+    "id": 689,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Find: ∫xଶe௫dx"
+  },
+  {
+    "id": 690,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Find: ∫xଶsin xdx"
+  },
+  {
+    "id": 691,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Find: ∫xଶsin2xdx"
+  },
+  {
+    "id": 692,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Find: ∫xsin xdx"
+  },
+  {
+    "id": 693,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Evaluate: ∫eଶ௫sin(3x) dx"
+  },
+  {
+    "id": 694,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Find: ∫xଶcos7xdx"
+  },
+  {
+    "id": 695,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Evaluate: ∫൫1 + √xଶ+ 1൯2xdx"
+  },
+  {
+    "id": 696,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Find: ∫(2x−1)ଶcosnxdx"
+  },
+  {
+    "id": 697,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "The value of ∫∫3ydxdy over the triagle the \nvertices (−1,1), (0,0) and (1,1)"
+  },
+  {
+    "id": 698,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "∫∫\nଵ\n௫௬dxdy\nଶ\nଵ\nଶ\nଵ\n = _________"
+  },
+  {
+    "id": 699,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "What does the region of  ∫∫dxdy\n଺\nଶ\nସ\nଵ\n  \nrepresent?"
+  },
+  {
+    "id": 700,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "∫∫\ne\n೤\nೣ\n௫మ\n଴\ndydx\nଶ\n଴\nis equal to ___________"
+  },
+  {
+    "id": 701,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "නනe\n௫௬\nൗdxdy= ___________________\n௬\n଴\nଵ\n଴"
+  },
+  {
+    "id": 702,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "The values of ∫∫(3xଶ−2yଶ)dxdy\nଵ\n଴\nଵ\n଴\nis -----\n-----"
+  },
+  {
+    "id": 703,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "The value of ∫∫\n୪୬௫\n௫dydx\n௫\n଴\nଶ\nଵ\n =____."
+  },
+  {
+    "id": 704,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "The region ∫\n∫dxdy\nସ\nଵ\nଶ\nିଵ\n represents_______."
+  },
+  {
+    "id": 705,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "What does the region of  ∫∫dxdy\n଻\nଷ\nହ\nଶ\n   \nrepresent?"
+  },
+  {
+    "id": 706,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Evaluate: ∫∫(1 + 3xy)dxdy\nଵ\nିଵ\nଶ\nଵ"
+  },
+  {
+    "id": 707,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "∫∫\nxydydx\n௫మ\n௫\nଵ\n଴\n=___."
+  },
+  {
+    "id": 708,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Evaluate ∫∫\n(xଶ+ yଶ)\n√௫\n଴\nଵ\n଴\ndydx"
+  },
+  {
+    "id": 709,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Evaluate ∫∫\nௗ௫ௗ௬\nቀ√ଵି௫మඥଵି௬మቁ\nଵ\n଴\nଵ\n଴"
+  },
+  {
+    "id": 710,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Evaluate: ∫\n∫(1 −6xଶy) dxdy\nଶ\n଴\nଵ\nିଵ\n."
+  },
+  {
+    "id": 711,
+    "unit": 6,
+    "page": 31,
+    "sourceText": "Evaluate the integral  ∫∫\n(xଶ+\nඥଵି௬మ\n଴\nଵ\n଴\nyଶ) dxdy"
+  },
+  {
+    "id": 712,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate: ∫∫\nௗ௬ௗ௫\n(ଵା௫మା௬మ)\n√ଵା௫మ\n଴\nଵ\n଴"
+  },
+  {
+    "id": 713,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate the integral ∫∫xydxdy\nଶ\n௬\nଶ\nଵ\n."
+  },
+  {
+    "id": 714,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate: ∫∫(1 + 3xy)dxdy\nଵ\n଴\nଶ\nଵ\n."
+  },
+  {
+    "id": 715,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫(xଶ+ yଶ) dA\n௫\n଴\nଵ\n଴\n , where dA \nindicates small area in xy−plane."
+  },
+  {
+    "id": 716,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate: ∫∫e\n೤\nೣ\n௫\n଴\nଵ\n଴\ndydx"
+  },
+  {
+    "id": 717,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫\nxଶydxdy\nଵା௬మ\n௬\nଵ\n଴"
+  },
+  {
+    "id": 718,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫(1 + xy)dydx\n௫\n௫మ\nଵ\n଴"
+  },
+  {
+    "id": 719,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate: ∫∫\ne\n௬௫\nൗdydx\n௫మ\n଴\nସ\n଴"
+  },
+  {
+    "id": 720,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate: ∫∫xcos xydydx\nଶ\nଵ\nగ\nഏ\nమ"
+  },
+  {
+    "id": 721,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate: ∫∫xydydx\nଶ\nଵ\nଵ\n଴"
+  },
+  {
+    "id": 722,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate: ∫∫\nxe௫మା௬\nଷ௫మ\nଶ௫మ\nସ\nଵ\ndydx"
+  },
+  {
+    "id": 723,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate: ∫∫(xଶ\nଵ\n଴\n+ 3yଶ)dydx\nଷ\n଴\n."
+  },
+  {
+    "id": 724,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate: ∫∫(1 + 6xy)dxdy\nଵ\n଴\n଺\nଷ"
+  },
+  {
+    "id": 725,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate: ∫∫(1 + 8xଶy)dxdy\nଵ\n଴\n଺\nଷ"
+  },
+  {
+    "id": 726,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate  ∫∫(x+ y) dydx\nோ\n  R is the region \nbounded by x= 0, x= 2, y= x, y= x+ 2"
+  },
+  {
+    "id": 727,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫\nxydA\nோ\n , where R is the region \nbounded by x  axis, ordinate x= 2a and \nthe curve xଶ= 4ay"
+  },
+  {
+    "id": 728,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫\neଶ௫ାଷ௬dA\nோ\n where R is triangle \nbounded by x= 0, y= 0, x+ y= 1."
+  },
+  {
+    "id": 729,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫(xଶ+ yଶ) dxdyover the region \nbounded by the lines y= 4x, x+ y= 3, y=\n0, y= 2"
+  },
+  {
+    "id": 730,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Sketch the region of integration and evaluate \nit:  ∫∫\nଷ\nଶe௬/√௫dydx\n√௫\n଴\nସ\nଵ"
+  },
+  {
+    "id": 731,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫(y−2xଶ)dA\nோ\n where R is the \nregion bounded by |x| + | y| = 1."
+  },
+  {
+    "id": 732,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫(xy) dxdy where the region R \nis bounded by yଶ+ xଶ−2x= 0, yଶ=\n2x, y= x"
+  },
+  {
+    "id": 733,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫(2x−yଶ)dA;\nோ\n over the \ntriangular region R enclosed between the \nlines y= −x+ 1, y= x+ 1 & y= 3."
+  },
+  {
+    "id": 734,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫(xଶ)dA\nோ\n, where R is the region \nin the first quadrant bounded by the \nhyperbola xy= 16 and the lines y=\nx, y= 0 andx= 8."
+  },
+  {
+    "id": 735,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Integrate f(x, y) = xଶ+ yଶ   over the \ntriangular region with vertices \n(0,0), (1,0), and(0,1)."
+  },
+  {
+    "id": 736,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Sketch the triangle R in the xy−plane \nbounded by the x−axis, the line y= 2x,\nandthelinex= 1. Evaluate ∫∫\nୱ୧୬௫\n௫\nோ\ndA"
+  },
+  {
+    "id": 737,
+    "unit": 6,
+    "page": 32,
+    "sourceText": "Evaluate ∫∫xdA\nோ\n, where R is the region \nbounded by the parabolas yଶ= 4x  and \nxଶ= 4y."
+  },
+  {
+    "id": 738,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫∫ydxdy over the region \nbounded by in the first quadrant. y= xଶ, x=\n0, x+ y= 2"
+  },
+  {
+    "id": 739,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫∫ydxdy where A is the region \nbounded by the parabolas 4x= yଶ, xଶ= 4y"
+  },
+  {
+    "id": 740,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫∫(x+ 2y)dA,\n஽\n  where D is the \nregion   bounded by the parabolas y= 2xଶ \nand y= x+ 1."
+  },
+  {
+    "id": 741,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫∫\nඥxy−yଶ\n௦\ndxdy Where S is a \ntriangle with vertices (0, 0) , (10, 1) , (1, 1)."
+  },
+  {
+    "id": 742,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫∫xy(x+ y)dA\n.\nோ\n over the area \nbetween y= xଶandy= x."
+  },
+  {
+    "id": 743,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫∫x\n.\nோ\nydA over the area between \ny= xଶandy= x"
+  },
+  {
+    "id": 744,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫∫(6xଶ+ 2y)dxdy over the region \nR bounded between y= xଶandy= 4."
+  },
+  {
+    "id": 745,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫∫ysin(xy) dA,\n.\nோ\n where R is the \nregion bounded by x= 1, x= 2, y= 0 and \ny=\nగ\nଶ."
+  },
+  {
+    "id": 746,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫xy\nோ\ndydx, where R is the positive \nquadrant of the circle xଶ+ yଶ= aଶ."
+  },
+  {
+    "id": 747,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫∫(xଶ−yଶ)dxdy over the \ntriangle with vertices (0,1), (1,1), (1,2)"
+  },
+  {
+    "id": 748,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Find ∫∫y\n.\nோ\ndA , where R is the region \nenclosed by the parabola y= xଶand the line \ny= x+ 2."
+  },
+  {
+    "id": 749,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Change the order of integration and then \nevaluate:∫\n∫\nyଶ\n√௔మି௫మ\n௫\ndA\nೌ\n√మ\n଴"
+  },
+  {
+    "id": 750,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate the integral ∫∫e௫మdxdy\nଵ\n೤\nమ\nଶ\n଴\n by \nchanging the order of integration."
+  },
+  {
+    "id": 751,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate∫\n∫\n௘ష೤\n௬\nஶ\n௫\ndA\nஶ\n଴\n by changing the order \nof integration."
+  },
+  {
+    "id": 752,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate the iterated integral \n∫∫sin(yଶ) dydx\nଵ\n௫\nଵ\n଴\n ."
+  },
+  {
+    "id": 753,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate ∫∫\nxy\nଶି୶\n௫మ\ndA\nଵ\n଴\n by changing the \norder of integration."
+  },
+  {
+    "id": 754,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Change the order of integration and evaluate  \n∫∫\n௘೤\n(௘೤ାଵ)ඥଵି௫మି௬మdydx\n√ଵି௫మ\n଴\nଵ\n଴\n."
+  },
+  {
+    "id": 755,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Sketch the region of integration, reverse the \norder of integration and evaluate the integral    \n∫∫\n௫௘మ೤\nସି௬dydx\nସି௫మ\n଴\nଶ\n଴"
+  },
+  {
+    "id": 756,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate:∫∫\nxydxdy\nଶ௬\n௬ିଶ\nଶ\n଴\n by changing the \norder of integration."
+  },
+  {
+    "id": 757,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Change the order of integration and then \nevaluate:∫\n∫xe\nషೣమ\n೤dydx\n௫\n଴\nஶ\n଴"
+  },
+  {
+    "id": 758,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Sketch the region of integration. Also \nChange the order of integration and evaluate \nthe integral ∫∫\ndxdy\n√௬\n௬\nଵ\n଴"
+  },
+  {
+    "id": 759,
+    "unit": 6,
+    "page": 33,
+    "sourceText": "Evaluate:∫∫\ndxdy\n௔ାඥ௔మି௬మ\n௔ିඥ௔మି௬మ\n௔\n଴\n                           \nBy changing the order of integration."
+  },
+  {
+    "id": 760,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate:∫\n∫\ndydx\nଶ√௔௫\nೣమ\nరೌ\nସ௔\n଴\n    By changing the \norder of integration."
+  },
+  {
+    "id": 761,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Change the order of Integrations and hence \nevaluate: ∫∫\ne௬మdydx\nଶ\nଶ௫\nଵ\n଴\n."
+  },
+  {
+    "id": 762,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Sketch the region of integration and evaluate \nby reversing the order of integration. \n∫∫\nxdydx\n଺ିଶ௫\nଷ\nయ\nమ\n଴"
+  },
+  {
+    "id": 763,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate: ∫∫\n(x+ y)dxdy\nඥସି௬\nଵ\nଷ\n଴\n  By \nchanging the order of integration."
+  },
+  {
+    "id": 764,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate: ∫∫\n௫\nඥ(௫మା௬మ) dydx\n√ଶି௫మ\n௫\nଵ\n଴\n \nby changing the order of integration."
+  },
+  {
+    "id": 765,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Change the order of integration and evaluate \n∫∫\n௫\n௫మା௬మdxdy\n௔\n௬\n௔\n଴"
+  },
+  {
+    "id": 766,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate:∫∫\n௬మௗ௬ௗ௫\nඥ௬రି௔మ௫మ\n௔\n√௔௫\n௔\n଴\n by changing the \norder to integration."
+  },
+  {
+    "id": 767,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate: ∫\n∫\n(xଶ+ yଶ)dA\nଷ௔ି௫\nೣమ\nరೌ\nଶ௔\n଴\nby \nchanging the order of integration."
+  },
+  {
+    "id": 768,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate: ∫\n∫(yଶ−xଶ)eି௬\n௬\nି௬\ndxdy\nஶ\n଴\n by \nchanging the order of integration."
+  },
+  {
+    "id": 769,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "By changing the order of the integration, \nevaluate: ∫∫\n௫\n௫మା௬మdxdy\nଷ\n௬\nଷ\n଴\n."
+  },
+  {
+    "id": 770,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate the integral by the changing the \norder of integration.∫∫\n√xସ+ 1\nଶ\n√௬\nయ\n଼\n଴\ndxdy"
+  },
+  {
+    "id": 771,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Sketch the region of integration, reverse the \norder of integration and evaluate the integral    \n∫\n∫\n௫௘೤\nଷି௬dydx\nଷି௫మ\n଴\n√ଷ\n଴"
+  },
+  {
+    "id": 772,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate ∫∫\nଵା௫మ\n√ଵି௫మඥଵି௫మି௬మ\nඥଵିସ௬మ\n଴\nభ\nమ\n଴\ndxdy,  \nusing change of order."
+  },
+  {
+    "id": 773,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Change the order of integration and evaluate \n∫∫\nୡ୭ୱషభ௫\nඥଵି௫మି௬మ√ଵି௫మdxdy\nඥଵି௬మ\n଴\nଵ\n଴"
+  },
+  {
+    "id": 774,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate by changing the order of the \nintegral ∫\n∫\nxydA\n௬ାଵ\n೤మ\nమିଷ\nସ\nିଶ"
+  },
+  {
+    "id": 775,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Sketch the region of integration. Also \nChange the order of integration and evaluate \nthe integral ∫∫\ndydx\n√௫\n௫\nଵ\n଴"
+  },
+  {
+    "id": 776,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "∫∫rdrdθ\nଵ\n଴\nഏ\nర\n଴\n = ____"
+  },
+  {
+    "id": 777,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "The curve r= 2 is _____"
+  },
+  {
+    "id": 778,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "∫∫\nrdrdθ\nୱ୧୬ఏ\n଴\nగ\n଴\n = ____"
+  },
+  {
+    "id": 779,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "නන\nrହ\nଶୡ୭ୱఏ\n଴\nగ\nଶ\n଴\ndrdθ= ________________"
+  },
+  {
+    "id": 780,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate the integral     \n∫\n∫\nrଶcosθdrdθ\nଵି௦௜௡ఏ\n଴\nగ/ଶ\n଴"
+  },
+  {
+    "id": 781,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate: ∫\neି௫మ\nஶ\n଴\ndx"
+  },
+  {
+    "id": 782,
+    "unit": 6,
+    "page": 34,
+    "sourceText": "Evaluate: ∫∫\nrdrdθ\n௔(ଵା௖௢௦ఏ)\n଴\nగ\n଴"
+  },
+  {
+    "id": 783,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate:∫∫\nrଶsin θdrdθ\n(ଵି௖௢௦ఏ)\n଴\nగ\n଴"
+  },
+  {
+    "id": 784,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate ∫∫rsin θdrdθ\nோ\n over the area \nbounded by the cardioid r= a(1 + cos θ) \nabove the initial line."
+  },
+  {
+    "id": 785,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate ∫∫\nsinθ dA\nୖ\n  , where R is the \nregion in the first quadrant that is outside the \ncircle  r= 2 and inside the cardioids  r=\n2(1 + cosθ)."
+  },
+  {
+    "id": 786,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate ∫∫rଷ\nோ\nsin2 θdrdθ over the area \nbounded in the first quadrant between the \ncircles r= 2 andr= 4"
+  },
+  {
+    "id": 787,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate ∫∫rଷdrdθ over the area bounded \nbetween the circles r= 2 cos θ and r=\n4 cos θ."
+  },
+  {
+    "id": 788,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate ∫∫r√aଶ−rଶdrdθ over the upper \nhalf of the circle  r= acosθ."
+  },
+  {
+    "id": 789,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate: ∫∫\n௥ௗ௥ௗఏ\n√௔మା௥మ\n.\nோ\n Where R is a loop of \nrଶ= aଶcos2θ."
+  },
+  {
+    "id": 790,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate ∫∫rsinθdrdθ\n஺\n over the area of \nthe curve r=\n(ଵା௖௢௦ఏ)\nଶ\n above the initial line."
+  },
+  {
+    "id": 791,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate:∫\n∫\neି൫௫మା௬మ൯\nஶ\n଴\ndxdy.\nஶ\n଴"
+  },
+  {
+    "id": 792,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Integrate f(x, y) =\n୪୬(௫మା௬మ)\nඥ௫మା௬మ over the region \n1 ≤xଶ+ yଶ≤e   by changing to polar \ncoordinates."
+  },
+  {
+    "id": 793,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Change the Cartesian integral \n∫∫\neି(௫మା௬మ)dydx\n√ଵି௫మ\n଴\nଵ\n଴\n into an equivalent \npolar integral. Then evaluate the same."
+  },
+  {
+    "id": 794,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Change to polar coordinates and then \nevaluate: ∫∫\n௫\n௫మା௬మdxdy\n௔\n௬\n௔\n଴"
+  },
+  {
+    "id": 795,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate the integral ∫∫ඥxଶ+ yଶdydx\n௫\n଴\nଵ\n଴\n \nBy changing into the polar coordinates."
+  },
+  {
+    "id": 796,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Change into polar coordinates and hence. \nevaluate:∫∫\nyଶdydx\n√௔మି௫మ\nି√௔మି௫మ\n௔\n଴\n."
+  },
+  {
+    "id": 797,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate:∫∫dxdy\nଵ\n଴\nଵ\n଴\n by changing to polar \nco-ordinates."
+  },
+  {
+    "id": 798,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate∫∫\nyଶඥxଶ+ yଶdxdy\nඥ௔మି௬మ\n଴\n௔\n଴\n, by \nchanging into polar coordinates."
+  },
+  {
+    "id": 799,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Change into polar co-ordinate and evaluate \n∫∫\neି(௫మା௬మ)dydx\n√௔మି௫మ\n଴\n௔\n଴"
+  },
+  {
+    "id": 800,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate the integral ∫\n∫\n௫మି௬మ\n௫మା௬మ\n௬\n೤మ\nరೌ\ndxdy\nସ௔\n଴\n \nby transforming into Polar coordinates."
+  },
+  {
+    "id": 801,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate ∫∫\n(xଶ+ yଶ)\n√௔మି௫మ\n଴\n௔\n଴\ndydx by \nchanging into polar coordinates where a> 0"
+  },
+  {
+    "id": 802,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate ∫∫(xଶ+ yଶ)xdxdy\n.\nோ\n over the \npositive quadrant of the circle xଶ+ yଶ= aଶ  \nby polar coordinates."
+  },
+  {
+    "id": 803,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Use polar coordinates to evaluate \n∫∫(x+\n.\nோ\ny)dxdy over the positive quadrant \nof the circle xଶ+ yଶ= aଶ"
+  },
+  {
+    "id": 804,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate ∫∫\n(xଶ+ yଶ)\n√ସି௫మ\n଴\ndydx\nଶ\n଴\n by \nchanging into the polar coordinates."
+  },
+  {
+    "id": 805,
+    "unit": 6,
+    "page": 35,
+    "sourceText": "Evaluate the integrals \n∫\n∫\nଵ\n(ଵା௫మା௬మ)మdx\nஶ\n଴\ndy\nஶ\n଴\n by changing into \npolar co-ordinates"
+  },
+  {
+    "id": 806,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate ∫∫\n(xଶ+ yଶ) dydx\n√ଶି௫మ\n௫\nଵ\n଴\n by \nchanging to polar coordinates."
+  },
+  {
+    "id": 807,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate:∫∫\n(xଶ+ yଶ)dydx\n√ଶ௫ି௫మ\n௫\nଵ\n଴\n   by \nchanging into polar coordinates."
+  },
+  {
+    "id": 808,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "If u= x−y& v= x+ y then the value of \nthe J=\nడ(௫,௬)\nడ(௨,௩) is____________"
+  },
+  {
+    "id": 809,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate ∫∫(xଶ+ yଶ)\n.\nோ\ndA by changing the \nvariables, where R is the region lying in the \nfirst quadrant and bounded by the hyperbolas \nxଶ−yଶ= 1, xଶ−yଶ= 9, xy=\n2 andxy= 4."
+  },
+  {
+    "id": 810,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate   ∫∫\nଶ௫ି௬\nଶ\n೤\nమାଵ\n೤\nమ\ndxdy\nସ\n଴\nby applying \nthe transformations u=\nଶ௫ି௬\nଶ\n, v=\n௬\nଶ.  Draw \nboth the regions."
+  },
+  {
+    "id": 811,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate ∫∫(y−x)dxdy\n.\nா\n, over the region E \nin the XY-plane bounded by the straight lines \ny= x−3, y= x+ 1, 3y+ x=\n5, 3y+ x= 7."
+  },
+  {
+    "id": 812,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate  ∫∫[(xଶ−yଶ)]ଶdA over the area \nbounded by the lines |x| + |y| = 1, using the \ntransformations x+ y= u; x−y= v."
+  },
+  {
+    "id": 813,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate ∫∫[(x+ y)]ଶdxdy where R is the \nparallelogram in the xy-plane with vertices \n(1,0), (3,1), (2,2), (0,1) using the \ntransformation u= x+ yand v= x−2y"
+  },
+  {
+    "id": 814,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate the integral∫∫\ne\n೤\nೣశ೤\nଵି௫\n଴\ndydx\nଵ\n଴\n by \nchanging the variables x+ y= u, y= uv"
+  },
+  {
+    "id": 815,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate \n∫∫\nඥx+ y(y−2x)ଶdydx\nଵି௫\n଴\nଵ\n଴\n \nusing change of variables x+ y= u \nand y−2x= v"
+  },
+  {
+    "id": 816,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate∫∫xdxdy\n.\nோ\n,   R is the triangle \n(0,0), (1,0) & (1,1) using transformations \nx= u, y= uv."
+  },
+  {
+    "id": 817,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Using the transformation −y= u, x+ y= v \n, evaluate ∫∫cos ቀ\n௫ି௬\n௫ା௬ቁdxdy over the region \nbounded by vertices (0,0), (1,0)& (0,1)."
+  },
+  {
+    "id": 818,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate ∫∫(xଶ+ yଶ)\n.\nோ\ndA by changing the \nvariables, where R is the region lying in the \nfirst quadrant and bounded by the hyperbolas \nxଶ −yଶ = 1, xଶ − yଶ = 2, xy =\n2 and xy= 4. Where   xଶ −yଶ= u, 2xy=\nv."
+  },
+  {
+    "id": 819,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate ∫∫(x+ y)e௫మି௬మdA\nோ\n, Where R is \nthe region bounded by lines x−y= 0, x−\ny= 2, x+ y= 0 \nand \nx+ y= 3 \nusing \ntransformation x−y= u and x+ y= v"
+  },
+  {
+    "id": 820,
+    "unit": 6,
+    "page": 36,
+    "sourceText": "Evaluate ∫∫\n௬మ\n௫dxdy\n஽\n, where D is the region \nbetween the parabolas x= 1 −yଶ and x=\n3(1 −yଶ). Use the change of variables \n(x, y) = (v(1 −uଶ), u)."
+  },
+  {
+    "id": 821,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Using the transformation x+ y= u& x−\ny= v  evaluate ∫∫\nsin ቀ\n௫ା௬\nଶቁ\nோ\n∙\ncos ቀ\n௫ି௬\nଶቁdA,  where R is the triangular \nregion with vertices (0,0), (2,0), (1,1)."
+  },
+  {
+    "id": 822,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "∫∫∫e௫ା௬ା௭\nଵ\n଴\ndxdydz\nଵ\n଴\nଵ\n଴\n="
+  },
+  {
+    "id": 823,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "The value of ∫∫∫dzdydx\n௬\n଴\n௫\n଴\nଵ\n଴"
+  },
+  {
+    "id": 824,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "නනනxyଶzdzdydx\nଶ\nଵ\n= ________________\nଷ\nଵ\nଶ\n଴"
+  },
+  {
+    "id": 825,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate  , ∫∫∫ඥxଶ+ yଶ\n.\n஽\ndVwhere D is the \nsolid bounded by the surfaces xଶ+ yଶ=\nzଶ, z= 0, z= 1."
+  },
+  {
+    "id": 826,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate: ∫∫∫(1 + xyz)dxdydz.\nସ\n଴\nସ\n଴\nସ\n଴"
+  },
+  {
+    "id": 827,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate: ∫∫\n∫\n(e௭)dzdydx.\n௫ା௬\n଴\nଵି௫\n଴\nଵ\n଴"
+  },
+  {
+    "id": 828,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate the integral∫∫∫\nxyzdxdydz\n௬௭\n଴\n௭\nଵ\nଶ\n଴\n."
+  },
+  {
+    "id": 829,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate:∫∫\n∫\n(rଶcosଶθ+\nଶగ\n଴\n√௭\n଴\nଵ\n଴\nzଶ)rdθdrdz."
+  },
+  {
+    "id": 830,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate:∫∫\n∫\ndzdydx\nଶି௫ି௬\n଴\nଶି௫\n଴\nଵ\n଴\n."
+  },
+  {
+    "id": 831,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate:∫∫\n∫\nzdzdydx\nଵି௫ି௬\n଴\nଵି௫\n଴\nଵ\n଴"
+  },
+  {
+    "id": 832,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate:∫∫\n∫\nxyzdzdydx\n√௫௬\n଴\nଵ\nଵ/௫\nଷ\nଵ\n."
+  },
+  {
+    "id": 833,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate the integral  ∫∫∫\nxyzdxdydz\n௬௭\n଴\nଶ\n଴\nଶ\n଴\n."
+  },
+  {
+    "id": 834,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate the triple \nintegral.∫∫∫ysin zdxdydz\nగ\n଴\nగ\n଴\nଵ\n଴"
+  },
+  {
+    "id": 835,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate:∫∫\n∫\nxdzdydx\n(௫ା௬)మ\nଵ\nଵି௫\n଴\nଵ\n଴\n."
+  },
+  {
+    "id": 836,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate∫∫∫zଶdxdydz over the region \ncommon to the sphere xଶ+ yଶ+ zଶ= 4 and \nthe cylinder xଶ+ yଶ= 2x"
+  },
+  {
+    "id": 837,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate:∫∫∫(x−2y+ z) dxdydz  over the \nregion R where R: 0 ≤x≤1, 0 ≤y≤\nxଶ, 0 ≤z≤x+ y"
+  },
+  {
+    "id": 838,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate: ∫∫\n∫\nlogzdzdxdy\n௘ೣ\nଵ\n௟௢௚௬\nଵ\n௘\nଵ"
+  },
+  {
+    "id": 839,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate:∫∫∫\n(x+ y+ z)dzdxdy.\n௫ାଶ௬\n଴\n௬\n଴\nଵ\n଴"
+  },
+  {
+    "id": 840,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate:∫∫∫\ne௫ା௬ା௭dzdydx\n௫ା௬\n଴\n௫\n଴\n௔\n଴\n."
+  },
+  {
+    "id": 841,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate: ∫∫∫\nydzdxdy\n௫ା௬\n଴\n௬\n଴\nଵ\n଴\n."
+  },
+  {
+    "id": 842,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate:∫\n∫\n∫\nzdzdydx\n√௫ା௬\n௭ୀ଴\n௫\n௬ୀ଴\nଵ\n௫ୀ଴\n."
+  },
+  {
+    "id": 843,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate ∫\n∫∫(xz−yଷ) dzdydx\nଵ\n଴\nଶ\n଴\nଵ\nିଵ\n."
+  },
+  {
+    "id": 844,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate ∫∫∫xyzdxdydz over the positive \noctant of the sphere xଶ+ yଶ+ zଶ= 4"
+  },
+  {
+    "id": 845,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate: ∫∫\n∫\nଵ\n(௫ା௬ା௭ାଵ)య\nଵି௫ି௬\n଴\nଵି௫\n଴\nଵ\n଴\ndzdydx"
+  },
+  {
+    "id": 846,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate ∫∫\n∫\ndzdydx\n௫ା௬\n଴\nଵି௫\n଴\nଵ\n଴"
+  },
+  {
+    "id": 847,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Evaluate∫∫∫\n(x+ y+ z)dzdxdy\n௫ା௬\n௫ି௬\n௬\n଴\nଶ\n଴"
+  },
+  {
+    "id": 848,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Find the area of region R enclosed by the \nline y= x, x= 1 andthex−axis."
+  },
+  {
+    "id": 849,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Find the area of the circle  xଶ+ yଶ=\n1 using double integration"
+  },
+  {
+    "id": 850,
+    "unit": 6,
+    "page": 37,
+    "sourceText": "Find the area between parabolas xଶ=\n4ayand yଶ= 4axwhere a is constant."
+  },
+  {
+    "id": 851,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Find the area of the region R enclosed by the \nparabola the line y= xଶand y= x+ 2."
+  },
+  {
+    "id": 852,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Evaluate ∫∫(x+ y)ଶ\n.\n.\ndxdy over the curve \nbounded by the ellipse \n௫మ\n௔మ+\n௬మ\n௕మ= 1"
+  },
+  {
+    "id": 853,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Using double integration find area of an \nellipse \n௫మ\n௔మ+\n௬మ\n௕మ= 1"
+  },
+  {
+    "id": 854,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Find the area of region enclosed by y=\nxଶ, y= 2x−xଶ"
+  },
+  {
+    "id": 855,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Evaluate ∫∫(xy) dA\n஽\n, where D is the region \nbounded by the line y= x−1 and parabola \nyଶ= 2x+ 6"
+  },
+  {
+    "id": 856,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Evaluate ∫∫\nଶ௫௬ఱ\nඥଵା௫మ௬మି௬రdxdy over the \ntriangle with vertices (0,0), (1,1), (0,1)"
+  },
+  {
+    "id": 857,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Find the area between the rectangular \nhyperbola 3xy= 2 and the line 12x+ y=\n6."
+  },
+  {
+    "id": 858,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Find the area common to r= aand   r=\n2acosθ; a> 0"
+  },
+  {
+    "id": 859,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Find the area common to the cardioid r=\na(1 + cosθ), r= a(1 −cosθ)."
+  },
+  {
+    "id": 860,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Using double integrations, find the area \nenclosed by the cardioid r= a(1 + cosθ)."
+  },
+  {
+    "id": 861,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Find the area lying inside the cardioid r=\na(1 + cosθ).and outside the region of the \ncircle r= a, by double integration."
+  },
+  {
+    "id": 862,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Find the area outside the circle r=\n2acosѲ and inside the cardioid r=\na(1 + cosѲ)."
+  },
+  {
+    "id": 863,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Evaluate the area between the circles r=\n2cosθand r= 4cosθ, using double \nintegration."
+  },
+  {
+    "id": 864,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Find the area common to both of the circles \nr= sin θand r= cos θ"
+  },
+  {
+    "id": 865,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Find the area lying inside the circle r=\nasinθ and outside the cardioids r= a(1 −\ncosθ)"
+  },
+  {
+    "id": 866,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Evaluate ∫∫rଷdrdθ over the area bounded \nbetween the circles r= 4 cos θ and r=\n9 cos θ."
+  },
+  {
+    "id": 867,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Change into spherical polar coordinates and \nhence \nevaluate \n∫∫\n∫\nௗ௭ௗ௬ௗ௫\nඥ௔మି௫మି௬మି௭మ\nඥ௔మି௫మି௬మ\n଴\n√௔మି௫మ\n଴\n௔\n଴"
+  },
+  {
+    "id": 868,
+    "unit": 6,
+    "page": 38,
+    "sourceText": "Evaluate  , ∫∫∫zඥxଶ+ yଶ\n.\n஽\ndVwhere D is \nthe solid bounded by the surfaces xଶ+\nyଶ= 3z, z= 3."
+  },
+  {
+    "id": 869,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "If aሬ⃗ = 2ı⃗−3ȷ⃗+ kሬ⃗ then the |aሬ⃗|=_____"
+  },
+  {
+    "id": 870,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "ıത× ȷ̅ is ____"
+  },
+  {
+    "id": 871,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "If uത = 6ı̅ -3ȷ̅  + 2kത then |u| is"
+  },
+  {
+    "id": 872,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "If  aത.bത = 0 then angle between aത and bത is"
+  },
+  {
+    "id": 873,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "If aത= 2ı̂ + 3ȷ̂ −k෠, bത= −ı̂ + 2ȷ̂ −4k෠ and \nc̅ = ı̂ + ȷ̂ + k෠ , then ൫aത× bത൯∙(aത× c) =\n_______"
+  },
+  {
+    "id": 874,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "For which value of k are u= (k, k, 1) and \nv= (k, 5,6) is orthogonal?"
+  },
+  {
+    "id": 875,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "If r= tଷi+ ቀ2tଷ−\nଵ\nହ௧మቁj then show that \nr×\nௗ௥\nௗ௧= k෠"
+  },
+  {
+    "id": 876,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "Give parametric representations of each of \nthe following curves: -\n\n \n1) The line 9x−5y= 7 \n2) The parabola y= (x−2)ଶ \nThe circle xଶ+ yଶ= 4"
+  },
+  {
+    "id": 877,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the arc length of the curve  r̅(t) = (1 +\n3tଶ)ı̂ + (4 + 4tଷ)ȷ̂ from t=0 to t=1."
+  },
+  {
+    "id": 878,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the length of arc of the curve r̅(t) =\nଶ√ଶ\nଷt\nయ\nమı̂ +\n௧మ\nଶȷ̂ + (t+ 3)k෠  between t= 0 and \nt= 2"
+  },
+  {
+    "id": 879,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the length of the arc of the curve y=\nlog sec x from x= 0 to x=\nగ\nଷ."
+  },
+  {
+    "id": 880,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the arc length of the portion of the \ncircular helix r̅(t) = cos t ı̂ + sin t ȷ̂ + tk෠ \nfrom t=0 to t=π."
+  },
+  {
+    "id": 881,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "The shape of a cable from an antenna tower \nis given by the equation y=\nସ\nଷx\nయ\nమ from x= 0 \nto x= 20. Find the total length of the cable."
+  },
+  {
+    "id": 882,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "The value of |∇φ|  if φ= 2xzସ−xଶy at (2,-\n2,-1) is"
+  },
+  {
+    "id": 883,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If φ= x+ y+ z, then the value of grad at \n(1, 2,\n1)\n\nis \n(a)\n0\n(b)\n1\n(c)\n2\n(d)\n3(e)√2(f)√"
+  },
+  {
+    "id": 884,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If ∅= 3xଶy−yଷzଶ then grad \n∅at point (1, −2,1) is________"
+  },
+  {
+    "id": 885,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If ∅= xଶ+ yଶ+ zଶ, then the value of \n|gradφ| at (1,2, −2) is"
+  },
+  {
+    "id": 886,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If ∅= xଶ+ yଶ+ zଶ, then the value of \n|grad∅| at ቀ1, −1,\nଵ\nଶቁ is"
+  },
+  {
+    "id": 887,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If ∅= xyz, then the value of |gradφ| at \n(1,2, −1) is"
+  },
+  {
+    "id": 888,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If r̅ = xı̅ + yȷ̅ + zk,ഥ Prove that ∇ଶr௡=\nn(n+ 1)r௡ିଶ"
+  },
+  {
+    "id": 889,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Prove that ∇ଶf(r) = f ᇱᇱ(r) +\nଶ\n୰f ᇱ(r)"
+  },
+  {
+    "id": 890,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If  ∅= 3xଶy−yଷzଶ, find gradφat the point \n(1,-2,-1)."
+  },
+  {
+    "id": 891,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find a unit vector normal to the surface xଷ+\nyଷ+ 3xyz= 3 at thepoint (1, 2, −1)"
+  },
+  {
+    "id": 892,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If r̅ = x ıത + yȷ̅ + zkത, show that ∇logr=\nଵ\n௥r̂ \n.Where r̂ is unit vector."
+  },
+  {
+    "id": 893,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the gradient of f(x, y, z) = 2zଷ−\n3(xଶ+ yଶ)z+ tanିଵ(xz) at (1,1,1)."
+  },
+  {
+    "id": 894,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find values of constants λ and μ so that the \nsurfaces λxଶ−μyz= (λ+ 2)xand4xଶy+\nzଷintersect orthogonally at the point (1, -1,2)."
+  },
+  {
+    "id": 895,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Let r̅ = xı̂ + yȷ̂ + zk෠, r= |r̅| and aത=\naଵı̂ + aଶȷ̂ + aଷk෠is a constant vector.  \nProve that ∇ቀ\n௔ത.௥̅\n௥೙ቁ=\n௔ത\n௥೙−\n௡(௔ത.௥̅)\n௥೙శమr̅"
+  },
+  {
+    "id": 896,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the angle between the normal to the \nsurfaces xy= zଶat P(1,1,1) and Q(4,1,2)."
+  },
+  {
+    "id": 897,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the angle between the surfaces xଶ+\nyଶ+ zଶ= 9 and  z= xଶ+ yଶ−3 at the \npoint      (2,-1,2)."
+  },
+  {
+    "id": 898,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "The directional derivative of f(x, y) =\nxyଶ−yଷ at P(2,2) in the direction of θ=\nగ\nସ \nis ____"
+  },
+  {
+    "id": 899,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "The magnitude of the maximum directional \nderivative of the function 2x+ y+ 2z at the \npoint (1,0,0) is"
+  },
+  {
+    "id": 900,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Define gradient of a function. Use it to find \ndirectional derivative of f(x, y, z) = xଷ−\nxyଶ−z at P(1,1,0) in the direction of aത=\n2ı̂ −3ȷ̂ + 6k෠"
+  },
+  {
+    "id": 901,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of  ∅= xyଶ+\nyzଷat(2, −1,1)in the direction of the normal \nto the surfacexlogz−yଶ= −4  \nat(−1,2,1)."
+  },
+  {
+    "id": 902,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of \n\n\n1\n2\n2\n2 2\n1\n = \nx\ny\nz\n\n\n\n at point \nP(1, -1, 1) in the direction of \n\na = i + j + k\n\n"
+  },
+  {
+    "id": 903,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of \nf(x, y, z) = cos xy+ e௬௭+ ln xz at a point \nP(1, 0, 1/2 ) in the direction uത= ı̂ + 2ȷ̂ +\n2k෠"
+  },
+  {
+    "id": 904,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of the \ndivergence of Fത( x, y, z) = xyଶı̂ + zyଶȷ̂ +\n xzଶk෠at the point (2, 0, 3) in the direction of \nthe outer normal to the sphere xଶ+ yଶ+\nzଶ= 14 at the point (3,2,1)."
+  },
+  {
+    "id": 905,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the direction in which the directional \nderivative of ∅=\n୶మି௬మ\n௫௬ at (1,1) is zero."
+  },
+  {
+    "id": 906,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of f(x, y, z) =\n2xଶ+ 3yଶ+ zଶ at point P(2,1,3) in the \ndirection of aሬ⃗= [1,0, −2]."
+  },
+  {
+    "id": 907,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the derivative of f(x, y) = xଶsin 2y at \nthe point ቀ1,\n஠\nଶቁ in the direction of  v = 3i −\n4j."
+  },
+  {
+    "id": 908,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of xଶyଶzଶ at \n(1,1,-1) along a direction equally inclined \nwith coordinate axes."
+  },
+  {
+    "id": 909,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of ∅=\n4xzଷ−3xଶyzଶ at the point (2,-1,2) in the \ndirection 2ı̅ + 3ȷ̅ + 6kത"
+  },
+  {
+    "id": 910,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the derivative of f(x, y) = x e୷+ cosxy  \nat the point (2,0) in the direction of A=\n3i−4j."
+  },
+  {
+    "id": 911,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of ∅= xଶ−\nyଶ+ 2zଶ at the point P (1,2,3) in the \ndirection of the line PQwhere Q is the point \n(5,0,4)."
+  },
+  {
+    "id": 912,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of \nf(x, y, z) = xଷ−xyଶ−zat (1,1,0) in the \ndirection of 2i−3j+ 6k"
+  },
+  {
+    "id": 913,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of the function \nf(x, y, z) = xyଶ+ yzଷ at the point (2,-1,1) \nin the direction of the vector ı̂ + 2ȷ̂ + 2k෠."
+  },
+  {
+    "id": 914,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find directional derivative of the function \nf(x, y) = ax+ by; a,b are \nconstants, at the point P(0,0)which makes an \nangle of 30଴with positive x-axis."
+  },
+  {
+    "id": 915,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of the \ndivergence of Fത( x, y, z) = xyı̂ + xyଶȷ̂ +\nzଶk෠at the point (2, 1, 2) in the direction of \n\n \nthe outer normal to the sphere xଶ+ yଶ+\nzଶ= 9."
+  },
+  {
+    "id": 916,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Find the directional derivative of the scalar \npoint function f= 3eଶ௫ି௬ା௭ \n at the point A(1,1, −1) in the direction \ntowards the point B(−3,5,6)"
+  },
+  {
+    "id": 917,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Find the directional derivative D௨f(x, y) if \nf(x, y) = xଷ−3xy+ 4yଶ and u is the unit \nvector given by angle θ=\nగ\n଺. What is \nD௨f(1,2)?"
+  },
+  {
+    "id": 918,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "The temperature at any point in space is \ngiven by T= xy+ yz+ zx. Determine the \nderivative of T in the direction of the vector \n3i ̂ – 4k ̂ at the point (1,1,1)."
+  },
+  {
+    "id": 919,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Find directional derivative of the function  \nφ=\n௫\n௫మା௬మ   at the point P(0,2) which makes \nan angle of 30଴with positive x-axis."
+  },
+  {
+    "id": 920,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If r = xi + yj + zk  then div (r) is"
+  },
+  {
+    "id": 921,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "The \ndivergence \nof \nFത= xyzı̂ + 3xଶyȷ̂ +\n(xzଶ−yଶz)k෠ is"
+  },
+  {
+    "id": 922,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If  Fത = xı̅ + yȷ̅ + zkതthen  ∇.Fത at (1,1,1) is"
+  },
+  {
+    "id": 923,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Find the value of ‘a’ if F= (x+ 3y)i+\n(y−2z)j+ (az+ x)k  is solenodial"
+  },
+  {
+    "id": 924,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "For vector point function F⃗, divergence of F⃗ \nis obtained by"
+  },
+  {
+    "id": 925,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If divuത= 0 then uത is said to be"
+  },
+  {
+    "id": 926,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If φ= tanିଵቀ\n௬\n௫ቁ then div(gradφ) is"
+  },
+  {
+    "id": 927,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If Fത= (x + 3yଶ)ı̂ + (2y + 2zଶ)ȷ̂ +(xଶ+\naz)k෠ is solenoidal then the constant a is \n______."
+  },
+  {
+    "id": 928,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If Fത= (bx+ 4yଶz)ı̂ + (xଷsin z−3y)ȷ̂ −\n(e௫+ 4 cos xଶy)k෠ is solenoidal,then b=\n______"
+  },
+  {
+    "id": 929,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "The value of ‘a’ is____, if F= (2x+ 3y)i+\n(3y+ 2z)j+ (az+ x)k  is solenoidal"
+  },
+  {
+    "id": 930,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If  a= 2xı̂ + 3yȷ̂ + 4zk෠ and u =xଶ+yଶ+ zଶ \n,then div(ua) at (1,1,1) is _______."
+  },
+  {
+    "id": 931,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Fത  is solenoidal vector, If div(Fത)  is  _____"
+  },
+  {
+    "id": 932,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If ∅= xyz −2yଶz + xଶzଶ, Find div(grad ∅) \nat the point (2,4,1)."
+  },
+  {
+    "id": 933,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Find the value of the constant λ such that the \nvector field defined by F = (2xଶyଶ+ zଶ)i +\n(3xyଷ−xଶz)j + (λxyଶz +\nxy)k is solenoidal."
+  },
+  {
+    "id": 934,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Determine whether the vector field uത= yଶı̂ +\n2xyȷ̂ −zଶk෠ is solenoidal at a point (1,2,1)."
+  },
+  {
+    "id": 935,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Let r= xı̂ + yȷ̂ + zk෠, r= |r̅|and aതis a \nconstant vector. Find the value of divቀ\n௔ത×௥̅\n௥೙ቁ"
+  },
+  {
+    "id": 936,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If \n \nr= xı̂ + yȷ̂ + zk෠, \nShow \nthat \ndiv(gradr௡) = n(n+ 1)r௡ିଶ."
+  },
+  {
+    "id": 937,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If  r= xı̂ + yȷ̂ + zk෠, Show that Div(r௡r) =\n(n+ 3)r௡."
+  },
+  {
+    "id": 938,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If  r̅ = xı̂ + yȷ̂ + zk෠, r= |r̅| and aത= aଵı̂ +\naଶȷ̂ + aଷk෠andbത= bଵı̂ + bଶȷ̂ + bଷk෠  are \nconstant vectors.  \nProve that aത∙∇ቀbത∙∇\nଵ\n୰ቁ=\nଷ(௔∙ഥ௥̅)(௕∙ഥ௥̅)\n௥ఱ\n−\n௔ത∙௕ത\n௥య"
+  },
+  {
+    "id": 939,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Find divergence and curl of vሬ⃗= xyz[x, y, z]."
+  },
+  {
+    "id": 940,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "The velocity vectorv̅ = rᇱഥ(t) = xଷk෠of a fluid \nmotion is given. Is the flow irrotational? \nIncompressible?"
+  },
+  {
+    "id": 941,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Find div F\n and curl F\n, where Fത=\ngrad(xଷ+ yଷ+ zଷ−3xy)"
+  },
+  {
+    "id": 942,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If Fത is conservative field then curlFത = \n___________"
+  },
+  {
+    "id": 943,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If Fഥ is irrotational then"
+  },
+  {
+    "id": 944,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "The value of curl (grad ∅) , where ∅= 2xଶ−\n3yଶ+ 4zଶ is"
+  },
+  {
+    "id": 945,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If f(x, y, z) = xyzthen Curl(grad f)="
+  },
+  {
+    "id": 946,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If F⃗(x, y, z) = xı̂ + yȷ̂ + zk෠ then curl F⃗ is \n____"
+  },
+  {
+    "id": 947,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If curl of \n\n\n\n\n\n\n2\n2\n2xy 3yz i + x  + axz - 4z\nj + 3xy + 2byz k\n\n\n\n is \nzero then value of a and b is"
+  },
+  {
+    "id": 948,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "The value of curl(grad∅), where ∅=\n2xଶ−3yଶ+ 4zଶ is_________"
+  },
+  {
+    "id": 949,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "What is the value of curl(aത× r̅)? Where \nr̅ = xı̂ + yȷ̂ + zk෠"
+  },
+  {
+    "id": 950,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Show \nthat \nF= (yi−xj)\nxଶ+ yଶ\n൘\n \nis \nirrotational."
+  },
+  {
+    "id": 951,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Find curl Fሬ⃗  at the point (2,0,3) , if Fሬ⃗=\nz eଶ୶୷ı̂ + 2xy cosy ȷ̂ + (x + 2y)k෠."
+  },
+  {
+    "id": 952,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Find curl F, if F= (yଶcosx+ zଷ)i+\n(2ysinx−4)j+ 3xzଶk. Whether \nF is \nirrotational?"
+  },
+  {
+    "id": 953,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Prove that Fത= (zଶ+ 2x+ 3y)ı̂ + (3x+\n2y+ z)ȷ̂ + (y+ 2zx)k෠ is irrotational. Also \nfind scalar potential ∅ such that Fത= grad∅ \nand ∅(1,1,0) = 4"
+  },
+  {
+    "id": 954,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Show that Fത= (yଶ−zଶ+ 3yz−2x)ı̂ +\n(3xz+ 2xy)ȷ̂ + (3xy−2xz+ 2z)k෠ is both \nsolenoidal and irrotational"
+  },
+  {
+    "id": 955,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Find constants a,b,c, so that V= (x+ 2y+\naz)i+ (bx−3y−z)j+ (4x+ cy+\n\n \n2z) is irrotational. Also, find scalar potential \nfunction."
+  },
+  {
+    "id": 956,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Find the divergence and curl of Vሬ⃗= e௫௬௭൫ı̂ +\nȷ̂ + k෠൯ at the point (1,2,3)."
+  },
+  {
+    "id": 957,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Calculate the curl of the vector F= xyzı̂ +\n3xଶyȷ̂ + (xzଶ−yଶz)k෠"
+  },
+  {
+    "id": 958,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Prove that ∇× (∇× A̅) = ∇(∇∙A̅) −∇ଶA̅ , \nfor any vector A̅ = Aଵı̂ + Aଶȷ̂ + Aଷk෠."
+  },
+  {
+    "id": 959,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "A vector field is given by Fሬ⃗= (xଶ+\nxyଶ)ıሬ⃗+ (yଶ+ xଶy)ȷ⃗.Find \nthe \nscalar \npotential. Show that Fሬ⃗ is irrotational."
+  },
+  {
+    "id": 960,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Show that the vector field F= (ysinz−\nsinx)i+ (xsinz+ 2yz)j+ (xycosz+\ny2)kis \nconservative \nand \nfind \nthe \ncorresponding scalar potential."
+  },
+  {
+    "id": 961,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Show \nthat \nFത= 2xyzı̅ + (xଶz+ 2y)ȷ̅ +\nxଶykത  is conservative. Find its scalar \npotential function ∅."
+  },
+  {
+    "id": 962,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Show that F= (e௫cosy+ yz)i+ (xz−\ne௫siny)j+ (xy+ z)k is conservative and \nfind the potential function."
+  },
+  {
+    "id": 963,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Show that the F⃗= (6xy+ zଷ)i+ (3xଶ−\nz)j+ (3xzଶ−y)k \nirrotational. Find the scalar ∅such that F⃗=\n∇∅."
+  },
+  {
+    "id": 964,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Prove \nF= (yଶcosx+ zଷ)ı̂ +\n(2ysinx−4)ȷ̂ + 3xzଶk෠ that is irrotational \nand find its scalar potential."
+  },
+  {
+    "id": 965,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Check \nwhether \nthe \nvector \nfield F\nതതത=\ne௬ାଶ௭ı̂ + xe௬ାଶ௭ȷ̂ + 2xe௬ାଶ௭k෠ \nis \nconservative or not. If yes, find the scalar \npotential function Φ(x, y, z) such that F̅ = \ngrad Φ."
+  },
+  {
+    "id": 966,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Show that F= (xଶ−yz)ı̂ + (yଶ−zx)ȷ̂ +\n(zଶ−xy)k෠ is conservative. Find its scalar \npotential ∅."
+  },
+  {
+    "id": 967,
+    "unit": 8,
+    "page": 43,
+    "sourceText": "If the value of the line integral ∮F.ഥ\n.\nୡ\n dr̅ does \nnot depend on path C then Fത is"
+  },
+  {
+    "id": 968,
+    "unit": 8,
+    "page": 43,
+    "sourceText": "If Fሜ= 3xyı̂ −yଶȷ̂; evaluate ∫Fሜ. dr̄\n௖\n Where c \nis the arc of the Parabola y= 2xଶ  from (0, \n0) to (1, 2)."
+  },
+  {
+    "id": 969,
+    "unit": 8,
+    "page": 43,
+    "sourceText": "Line integral along straight line from (1,0) to \n(1,2) for Fത= 2ı̂ + ȷ̂ is _______."
+  },
+  {
+    "id": 970,
+    "unit": 8,
+    "page": 43,
+    "sourceText": "Evaluate  ∫ydx + xdy + zdz,\n.\nୡ\n  where C is \ngiven \nby \n \nx = cos t, y = sin t, z = tଶ,  \n0 ≤t≤2π."
+  },
+  {
+    "id": 971,
+    "unit": 8,
+    "page": 43,
+    "sourceText": "If  Fሜ= (2xy+ zଷ)i+ xଶj+ 3xzଶk . Show \nthat ∮\nF⃗. dr\nሬሬሬሬ⃗\n஼\n is independent of path of \nintegration. Hence find the integral when C is \nany path joining (1, −2,1) and (3,1,4)"
+  },
+  {
+    "id": 972,
+    "unit": 8,
+    "page": 43,
+    "sourceText": "Evaluate  ∫F.ሜdr̄\n௖\nwhere F⃗= (xଶ+ yଶ)i+\n(xଶ−yଶ)j+ zଶk along the boundary of the \ntriangle with vertices (1,1,0), (0,1,0), (0,0,0)."
+  },
+  {
+    "id": 973,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "Evaluate ∮Fഥ. dr\nതതത\n.\n௖\nwhere Fሜ= (xଶ−yଶ)ı̂ +\n2xyȷ̂ and C is the curve given by the \nparametric \nequation \nC: r(t) = tଶı̂ +\ntȷ̂; 0 ≤t≤2 ."
+  },
+  {
+    "id": 974,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "Integrate f(x, y, z) = x−yzଶ over the \ncurve C= Cଵ+ Cଶ , where Cଵis the line \nsegment joining (0,0,1) to(1,1,0) and Cଶ  is \nthe curve y= xଶ joining (1,1,0) to(2,4,0)."
+  },
+  {
+    "id": 975,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "Evaluate ∫\nFത. dr̅\n௖\n, where Fത= (xଶ+ yଶ)i−\n2xyjWhere, C is the rectangle in XY-plane \nbounded by y= 0, x= a, y= b, x= 0"
+  },
+  {
+    "id": 976,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "∫\n(xyଶ+ yଷ)dx+ (xଶy+ 3xyଶ)dy\n(ଷ,ସ)\n(ଵ,ଶ)\n \nis \nindependent of path joining the points (1, 2) \nand (3,4). Hence, evaluate the integral."
+  },
+  {
+    "id": 977,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "Evaluate ∫\nFത. dr̅\n௖\nalong the parabola yଶ= x \nbetween the points (0,0) and (1,1), where Fത=\nxଶı̂ + xyȷ̂ ."
+  },
+  {
+    "id": 978,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "Evaluate ∫Fത. dr̅\n௖\nalong the curve  xଶ+ yଶ=\n1, z=1 in the positive direction from (0,1,1) to \n(1,0,1) \nwhere \nFത= (yz+ 2x)ı̂ + xzȷ̂ +\n(xy+ 2z)k෠"
+  },
+  {
+    "id": 979,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "Evaluate ∫\nFത. dr̅\n௖\n, where Fത= (xଶ+ xy)ı̂ +\n(xଶ+ yଶ)ȷො Where, C is the rectangle in XY-\nplane bounded by y= ±1, x= ±1."
+  },
+  {
+    "id": 980,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "If  Fത= (2xy+ zଷ)i+ xଶj+ 3xzଶk .Show \nthat ∫F.ሜdr̄\n௖\n is independent of path of \nintegration. Hence find the integral when C is \nany path joining (1, −2,1) and (4,2,5)"
+  },
+  {
+    "id": 981,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "If  F⃗= (yଶ+ 2xz)ı̂ + (zଶ+ 2xy)ȷ̂ + (xଶ+\n2yz)k෠ .Show that ∮\nF⃗. dr\nሬሬሬሬ⃗\n஼\n is independent of \npath of integration. Hence find the integral \nwhen C is any path joining (1,0,1) \nand (1,2,3)."
+  },
+  {
+    "id": 982,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "If F⃗= 5xyı̂ + 2yȷ̂, evaluate ∫\nF⃗\n஼\n. dr\nሬሬሬሬ⃗ where \nC is the part of the curve y= xଷ between x=\n1 and x= 2."
+  },
+  {
+    "id": 983,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "If  F⃗= (2xy+ zଶ)i+ xଶj+ 2xzk .Show \nthat ∮\nF⃗. dr\nሬሬሬሬ⃗\n஼\n is independent of path of \nintegration. Hence find the integral when C is \nany path joining (1, −2,1) and (3,1,4)"
+  },
+  {
+    "id": 984,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "Show that ∫\nFത. dr̅\n(ଶ,ଶ,ଶ)\n(ଵ,ଵ,ଵ)\n is independent of path \nfor \nF= (xଶ−yz)ı̂ + (yଶ−zx)ȷ̂ + (zଶ−\nxy)k෠. Hence evaluate the integral."
+  },
+  {
+    "id": 985,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "If Fത=\n௬పି௫ఫ\n௫మା௬మ, evaluate ∫Fത. dr̅\n.\n஼\n , where C is \nthe circle xଶ+ yଶ= 1 traversed counter-\nclockwise."
+  },
+  {
+    "id": 986,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "If Fത= (xଶ−yz)ı̂ + (yଶ−zx)ȷ̂ + (zଶ−\nxy)k෠, then  \n(i) prove that Fത is conservative \n(ii) find its scalar potential ∅ \nfind ∮\nFത\n஼\n∙dr̅ , along any path joining (1,1,0) \nand (2,0,1)"
+  },
+  {
+    "id": 987,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "Evaluate∫(2xଶ−yଶ)dx+ (xଶ+ yଶ)dy\n௖\n \nwhere C is the boundary of the area enclosed \nby the x-axis and the upper half of the circle \nxଶ+ yଶ= aଶ."
+  },
+  {
+    "id": 988,
+    "unit": 8,
+    "page": 44,
+    "sourceText": "Find the work done when a force  Fത=\n(xଶ−yଶ+ x)i −(2xy + y)j moves a particle \n\n \nin the XY plane from (0,0) to (1,1) along the \nparabola yଶ= x."
+  },
+  {
+    "id": 989,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find the work done by Fത= (y−xଶ) i+\n(z−yଶ) j+ (x−zଶ) k over the curve  \nr(t) = ti+ tଶj+ tଷk; 0 ≤t≤1, \nfrom \n(0,0,0) to (1,1,1)."
+  },
+  {
+    "id": 990,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find the work done when a force Fത =(2xଶyi +\n3xyj)  moves a particle in the XY plane from \n(0,0) to (1,4) along the parabola y= 4 xଶ"
+  },
+  {
+    "id": 991,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find the work done when a force Fത = (xଶ−\nyଶ+ 2x)i−(2xy+ y)j moves a particle in \nthe xy plane from (0,0) to (1,1) along the \nparabola yଶ= x. Is the workdone different \nwhen the path is straight line y= x?"
+  },
+  {
+    "id": 992,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find the work done by the force Fത=\n(3xଶ−3x)i+ 3zj+ k along the straight line \nr(t) = ti+ tj+ tk, 0 ≤t≤1."
+  },
+  {
+    "id": 993,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find the work done in moving a particle in the \nforce \nfield \nFത= 3xଶi+ (2xz−y)j+ zk \nalong the straight line from (0,0,0) to (2,1,3)."
+  },
+  {
+    "id": 994,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "If  ∫\ne௫ି௬ା௭మ(dx−dy+ 2zdz)\n௖\n . Show that \n∮\nF⃗. dr\nሬሬሬሬ⃗\n஼\n is independent of path of integration. \nHence find its scalar potential ∅ and find the \nwork done in moving a particle under this \nforce field from A(0,-1,1) to B(2,4,0)."
+  },
+  {
+    "id": 995,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find the work done by the force Fത= xı̂ −\nzȷ̂ + 2yk෠ in displacing the particle along the \ntriangle OAB, where   OA: 0 ≤x≤1, y=\nx, z= 0\nAB: 0 ≤z≤1, x= 1, y= 1  \nBO: 0 ≤x≤1, y= z= x"
+  },
+  {
+    "id": 996,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find the work done by the force Fത= xଶyi+\n௫య\nଷj+ xyk along the curve cos ti+ sin tj+\n(2 sinଶt−1)k, 0 ≤t≤2π."
+  },
+  {
+    "id": 997,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Using line integral, evaluate the work done by \nthe force Fത= (2y+ 3)ı̂ + xzȷ̂ + (yz−x)k෠ \nwhen it moves a particle from point (0, 0, 0) \nto (2, 1, 1) along the curve x= 2tଶ, y=\nt, z= tଷ."
+  },
+  {
+    "id": 998,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find the work done in moving a particle in the \nforce \nfield \nFത= 3xଶı̂ + (2xz−y)ȷ̂ + zk෠ \nalong the curve xଶ= 4y and 3xଷ= 8z from \nx= 0 to x= 2"
+  },
+  {
+    "id": 999,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find constants a, b, c, so that vത= (x+\n2y+ az)i+ (bx−3y−z)j+ (4x+\n cy +  2z)k is irrotational. Also, find scalar \npotential function and the work done in \nmoving a particle under this force field from \n(1, 1, 0) to (2, 0, 1)"
+  },
+  {
+    "id": 1000,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find the work done by the force Fത= 16yı̂ +\n(3xଶ+ 2)ȷ̂ in moving a particle once round \nthe right half of the ellipse xଶ+ yଶaଶ= aଶ \nfrom (0,1) to (0, −1)."
+  },
+  {
+    "id": 1001,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "Find the work done in moving a particle along \nthe straight-line segments joining the points \n(0,0,0) to (1,0,0) then to (1,1,0) and finally to \n(1,1,1) under the force field Fത= (3xଶ+\n6y)ı̂ −14yzȷ̂ + 20xzଶk෠"
+  },
+  {
+    "id": 1002,
+    "unit": 8,
+    "page": 45,
+    "sourceText": "If Fത= 4ı̂ + 0ȷ̂ , the flux of Fതthrough the \nline segment from (4,0) to \n(0,4) =___________"
+  },
+  {
+    "id": 1003,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "If Fത= (2x−y+ 2z) ıത+ (x + y−z)ȷ̅ +\n(3x −2y −5z)kത calculate circulation of Fത \nalong the circle in the xyplane of 2 unit radius \nand center at the origin."
+  },
+  {
+    "id": 1004,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "If Fത= 2ı̅ + 0ȷ̅ calculate the flux of \nFതthrough the line segment from (3,0) to (0,3)"
+  },
+  {
+    "id": 1005,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Find \nthe \nflux \nof \nFത= 3xyıത+ (x −\ny)ȷ̅ through the parabolic arc y= xଶ between \n(-1,1) and (4,16)"
+  },
+  {
+    "id": 1006,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Find the flux of Fത= 3xıത+ 5yȷ̅ through the \ncircle  xଶ+ yଶ= 1"
+  },
+  {
+    "id": 1007,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Find flux of Fത= xଶı̂ −yȷ̂ through circle of \nradius 3 units and centre at origin."
+  },
+  {
+    "id": 1008,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Verify Green’s theorem for vector function \nFሬ⃗= (yଶ−7y)ı̂ + (2xy + 2x)ȷ̂ and curve \nC: xଶ+ yଶ= 1."
+  },
+  {
+    "id": 1009,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Verify \nGreen’s \ntheorem \nfor \n∮(3 xଶ−\n8 yଶ)dx + (4y −6xy)dy and the path is \nboundary of the triangle with vertices (0,0), \n(1,0) and (0,1)."
+  },
+  {
+    "id": 1010,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "State Green’s theorem and also evaluate the \nintegral ∮(6y + x)dx + (y + 2x)dy where C: \nthe circle (x−2)ଶ+ (y−3)ଶ= 4."
+  },
+  {
+    "id": 1011,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Use Green’s theorem to evaluate ∫[xଶy dx +\n.\nୡ\nyଷdy],where C is the closed path formed by  \ny = x and y = xଷ from (0,0) to (1,1)."
+  },
+  {
+    "id": 1012,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Using Green’s theorem evaluate ∮xydy −\n.\nୡ\nyଶdx  where C is the square cut from the first \nquadrant by the lines x = 1 and y = 1."
+  },
+  {
+    "id": 1013,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Verify Green’s theorem for Fሬ⃗= xଶı̂ + xyȷ̂  \nunder the square bounded by x = 0, x = 1,\ny = 0, y = 1."
+  },
+  {
+    "id": 1014,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Verify Green’s theorem for the function Fሬ⃗=\n(x+ y)i+ 2xyj and C is the rectangle in the \nxy-plane bounded by x= 0, y= 0, x=\na, y= b."
+  },
+  {
+    "id": 1015,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Using Green’s theorem evaluate \nර(3xଶ−8yଶ)dx+ (4y−6xy)dy\nwhere C is the boundary of the region \nbounded by                          yଶ=\nxandxଶ= y"
+  },
+  {
+    "id": 1016,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "State the Green’s theorem and use it to \nevaluate the integral ∮yଶdx+ xଶdy, where \nc is the triangle bounded by x= 0, x+\ny= 1 , y= 0."
+  },
+  {
+    "id": 1017,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Verify Green’s theorem for  ∮[(y−\n.\n஼\nsin x) dx+ cos xdy : where C is the plane \ntriangle enclosed         by the lines  y=\n0 , x=\nగ\nଶ, y=\nଶ௫\nగ"
+  },
+  {
+    "id": 1018,
+    "unit": 8,
+    "page": 46,
+    "sourceText": "Verify Green’s theorem for the function Fሬ⃗=\n(xଶ+ yଶ)ı̂ −2xyȷ̂, where C is the \nrectangle in the xy-plane bounded by y=\n0, y= b, x= 0 and x= a."
+  },
+  {
+    "id": 1019,
+    "unit": 8,
+    "page": 47,
+    "sourceText": "Verify Green’s theorem for the field  Fത=\n(x−y)ı̂ + xȷ̂  and the region R bounded by \nthe unit circle C: r(t) = (cost)ı̂ +\n(sint)ȷ̂ ;     0 ≤t≤2π. \nOR \nVerify Green’s Theorem for F= (x−y)i+\nxj and C is xଶ+ yଶ= 1"
+  },
+  {
+    "id": 1020,
+    "unit": 8,
+    "page": 47,
+    "sourceText": "Using Green’s theorem evaluate \n∫(xଶydx+ xଶdy)\n஼\n where C is the boundary \nof the triangle whose vertices are \n(0,0), (1,0), (1,1)."
+  },
+  {
+    "id": 1021,
+    "unit": 8,
+    "page": 47,
+    "sourceText": "Verify Green’s theorem in the xy-plane for \n∮(xy+ yଶ)dx+ xଶdy where C is the closed \ncurve of the region bounded by y=\nxandy= xଶ."
+  },
+  {
+    "id": 1022,
+    "unit": 8,
+    "page": 47,
+    "sourceText": "Verify Green’s theorem for ∮[(xଶ−\n2xy)dx+ (xଶy+ 3)dy], Where, C is the \nboundary of the region bounded by y= xଶ \nand the line y= x"
+  },
+  {
+    "id": 1023,
+    "unit": 8,
+    "page": 47,
+    "sourceText": "Using Green’s theorem find \n∮(\nଵ\n௬dx+\nଵ\n௫dy) where C is the boundary of \nthe region bounded by the parabola  y= √x \nand the lines x= 1, x= 4, y= 1"
+  }
+]

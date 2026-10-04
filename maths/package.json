@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "node tools/verify_reader.cjs"
+  },
+  "devDependencies": {
+    "katex": "0.16.11",
+    "jsdom": "26.1.0"
+  }
+}

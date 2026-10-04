@@ -14,3 +14,5 @@ Build the static distribution with `node build-ui.mjs`.
 Validate coverage and Python syntax with `python3 scripts/verify-python-bank.py`.
 For sample executions, install NumPy and Matplotlib, then run `python3 scripts/verify-python-bank.py --execute`.
 Six Streamlit answers were syntax checked; their server UI requires Streamlit locally. Visual browser preview was unavailable during validation. See `python/verification.json` for the checks and limitations.
+
+Mathematics I Chapters 6–8 are at `maths/`: all 381 questions (Q643–Q1023), 141 diagrams, original PDF question images and worked steps on handwriting-style white pages. Validate the reader with `cd maths && npm install && npm test`.

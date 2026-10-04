@@ -1,5 +1,10 @@
-const CACHE_NAME = "ljiet-learning-hub-handwriting-20261003";
+const CACHE_NAME = "ljiet-learning-hub-maths-20261004";
 const ASSETS = [
+  "./maths/",
+  "./maths/index.html",
+  "./maths/styles.css",
+  "./maths/app.js",
+  "./maths/data/solutions.js",
   "./css/handwritten-solutions.css",
   "./python/",
   "./python/index.html",

@@ -1,0 +1,3585 @@
+[
+  {
+    "id": 869,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "If aሬ⃗ = 2ı⃗−3ȷ⃗+ kሬ⃗ then the |aሬ⃗|=_____",
+    "answer": "\\sqrt{14}",
+    "steps": [
+      {
+        "title": "Square and add the components",
+        "math": "14",
+        "text": ""
+      },
+      {
+        "title": "Take the nonnegative square root",
+        "math": "\\sqrt{14}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-38.webp",
+        "y": 1685.41,
+        "height": 81.92,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 870,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "ıത× ȷ̅ is ____",
+    "answer": "\\hat k",
+    "steps": [
+      {
+        "title": "Use the right-handed unit-vector rule",
+        "math": "\\hat i\\times\\hat j=\\hat k",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-38.webp",
+        "y": 1771.33,
+        "height": 48.8,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 871,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "If uത = 6ı̅ -3ȷ̅  + 2kത then |u| is",
+    "answer": "7",
+    "steps": [
+      {
+        "title": "Square and add the components",
+        "math": "49",
+        "text": ""
+      },
+      {
+        "title": "Take the nonnegative square root",
+        "math": "7",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-38.webp",
+        "y": 1824.13,
+        "height": 48.8,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 872,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "If  aത.bത = 0 then angle between aത and bത is",
+    "answer": "\\frac{\\pi}{2}",
+    "steps": [
+      {
+        "title": "Use the dot-product formula",
+        "math": "a\\cdot b=|a||b|\\cos\\theta=0",
+        "text": ""
+      },
+      {
+        "title": "For nonzero vectors",
+        "math": "\\cos\\theta=0\\Rightarrow\\theta=\\pi/2",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The angle is undefined if either vector is zero. The printed choices do not include π/2, so select “none of these” for the MCQ.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-38.webp",
+        "y": 1876.93,
+        "height": 48.56,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 873,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "If aത= 2ı̂ + 3ȷ̂ −k෠, bത= −ı̂ + 2ȷ̂ −4k෠ and \nc̅ = ı̂ + ȷ̂ + k෠ , then ൫aത× bത൯∙(aത× c) =\n_______",
+    "answer": "-74",
+    "steps": [
+      {
+        "title": "Calculate a × b",
+        "math": "\\left[\\begin{matrix}-10\\\\9\\\\7\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate a × c",
+        "math": "\\left[\\begin{matrix}4\\\\-3\\\\-1\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "-74",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-38.webp",
+        "y": 1929.49,
+        "height": 88.16,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 874,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "For which value of k are u= (k, k, 1) and \nv= (k, 5,6) is orthogonal?",
+    "answer": "\\left( -2, \\  -3\\right)",
+    "steps": [
+      {
+        "title": "Orthogonality means zero dot product",
+        "math": "k^2+5k+6=0",
+        "text": ""
+      },
+      {
+        "title": "Factor the quadratic",
+        "math": "(k+2)(k+3)=0\\Rightarrow k=-2,-3",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-38.webp",
+        "y": 2021.65,
+        "height": 55.04,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 875,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "If r= tଷi+ ቀ2tଷ−\nଵ\nହ௧మቁj then show that \nr×\nௗ௥\nௗ௧= k෠",
+    "answer": "\\left( 0, \\  0, \\  1\\right)",
+    "steps": [
+      {
+        "title": "Differentiate r(t)",
+        "math": "\\left[\\begin{matrix}3 t^{2}\\\\6 t^{2} + \\frac{2}{5 t^{3}}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate r × r′",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\1\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The curve is defined for t ≠ 0.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-38.webp",
+        "y": 2080.69,
+        "height": 81.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 876,
+    "unit": 7,
+    "page": 38,
+    "sourceText": "Give parametric representations of each of \nthe following curves: -\n\n \n1) The line 9x−5y= 7 \n2) The parabola y= (x−2)ଶ \nThe circle xଶ+ yଶ= 4",
+    "answer": "\\text{The three parameterizations are given above.}",
+    "steps": [
+      {
+        "title": "Line 9x − 5y = 7",
+        "math": "r(t)=(t,(9t-7)/5)",
+        "text": ""
+      },
+      {
+        "title": "Parabola y = (x − 2)²",
+        "math": "r(t)=(t,(t-2)^2)",
+        "text": ""
+      },
+      {
+        "title": "Circle x² + y² = 4",
+        "math": "r(t)=(2\\cos t,2\\sin t),\\quad0\\le t\\le2\\pi",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-38.webp",
+        "y": 2165.89,
+        "height": 142.11,
+        "width": 458,
+        "pageHeight": 2382
+      },
+      {
+        "image": "pages/page-39.webp",
+        "y": 280,
+        "height": 70.69,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 877,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the arc length of the curve  r̅(t) = (1 +\n3tଶ)ı̂ + (4 + 4tଷ)ȷ̂ from t=0 to t=1.",
+    "answer": "- \\frac{1}{2} + \\frac{5 \\sqrt{5}}{2}",
+    "steps": [
+      {
+        "title": "Differentiate the curve",
+        "math": "\\left[\\begin{matrix}6 t\\\\12 t^{2}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate the speed",
+        "math": "\\sqrt{144 t^{2} + 36} \\left|{t}\\right|",
+        "text": ""
+      },
+      {
+        "title": "Integrate speed over the interval",
+        "math": "\\int\\limits_{0}^{1} \\sqrt{144 t^{2} + 36} \\left|{t}\\right|\\, dt",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the arc length",
+        "math": "- \\frac{1}{2} + \\frac{5 \\sqrt{5}}{2}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 352.69,
+        "height": 53.6,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 878,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the length of arc of the curve r̅(t) =\nଶ√ଶ\nଷt\nయ\nమı̂ +\n௧మ\nଶȷ̂ + (t+ 3)k෠  between t= 0 and \nt= 2",
+    "answer": "4",
+    "steps": [
+      {
+        "title": "Differentiate the curve",
+        "math": "\\left[\\begin{matrix}\\sqrt{2} \\sqrt{t}\\\\t\\\\1\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate the speed",
+        "math": "\\sqrt{t^{2} + 2 t + 1}",
+        "text": ""
+      },
+      {
+        "title": "Integrate speed over the interval",
+        "math": "\\int\\limits_{0}^{2} \\sqrt{t^{2} + 2 t + 1}\\, dt",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the arc length",
+        "math": "4",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 410.29,
+        "height": 98.72,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 879,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the length of the arc of the curve y=\nlog sec x from x= 0 to x=\nగ\nଷ.",
+    "answer": "\\log{\\left(\\sqrt{3} + 2 \\right)}",
+    "steps": [
+      {
+        "title": "Differentiate the curve",
+        "math": "\\left[\\begin{matrix}1\\\\\\tan{\\left(t \\right)}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate the speed",
+        "math": "\\frac{1}{\\left|{\\cos{\\left(t \\right)}}\\right|}",
+        "text": ""
+      },
+      {
+        "title": "Integrate speed over the interval",
+        "math": "\\int\\limits_{0}^{\\frac{\\pi}{3}} \\frac{1}{\\left|{\\cos{\\left(t \\right)}}\\right|}\\, dt",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the arc length",
+        "math": "\\log{\\left(\\sqrt{3} + 2 \\right)}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 513.01,
+        "height": 63.44,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 880,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the arc length of the portion of the \ncircular helix r̅(t) = cos t ı̂ + sin t ȷ̂ + tk෠ \nfrom t=0 to t=π.",
+    "answer": "\\sqrt{2} \\pi",
+    "steps": [
+      {
+        "title": "Differentiate the curve",
+        "math": "\\left[\\begin{matrix}- \\sin{\\left(t \\right)}\\\\\\cos{\\left(t \\right)}\\\\1\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate the speed",
+        "math": "\\sqrt{2}",
+        "text": ""
+      },
+      {
+        "title": "Integrate speed over the interval",
+        "math": "\\int\\limits_{0}^{\\pi} \\sqrt{2}\\, dt",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the arc length",
+        "math": "\\sqrt{2} \\pi",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 580.45,
+        "height": 82.88,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 881,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "The shape of a cable from an antenna tower \nis given by the equation y=\nସ\nଷx\nయ\nమ from x= 0 \nto x= 20. Find the total length of the cable.",
+    "answer": "\\frac{364}{3}",
+    "steps": [
+      {
+        "title": "Differentiate the curve",
+        "math": "\\left[\\begin{matrix}1\\\\2 \\sqrt{t}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate the speed",
+        "math": "\\sqrt{4 t + 1}",
+        "text": ""
+      },
+      {
+        "title": "Integrate speed over the interval",
+        "math": "\\int\\limits_{0}^{20} \\sqrt{4 t + 1}\\, dt",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the arc length",
+        "math": "\\frac{364}{3}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 667.33,
+        "height": 98.24,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 882,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "The value of |∇φ|  if φ= 2xzସ−xଶy at (2,-\n2,-1) is",
+    "answer": "2 \\sqrt{93}",
+    "steps": [
+      {
+        "title": "Differentiate the scalar function",
+        "math": "\\nabla f=(f_x,f_y,f_z)",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}- 2 x y + 2 z^{4}\\\\- x^{2}\\\\8 x z^{3}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}10\\\\-4\\\\-16\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate its magnitude",
+        "math": "2 \\sqrt{93}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 769.57,
+        "height": 53.12,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 883,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If φ= x+ y+ z, then the value of grad at \n(1, 2,\n1)\n\nis \n(a)\n0\n(b)\n1\n(c)\n2\n(d)\n3(e)√2(f)√",
+    "answer": "\\left[\\begin{matrix}1\\\\1\\\\1\\end{matrix}\\right]",
+    "steps": [
+      {
+        "title": "Differentiate the scalar function",
+        "math": "\\nabla f=(f_x,f_y,f_z)",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}1\\\\1\\\\1\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}1\\\\1\\\\1\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The gradient is the vector (1,1,1); if the MCQ intended its magnitude, that magnitude is √3.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 826.69,
+        "height": 106.64,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 884,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If ∅= 3xଶy−yଷzଶ then grad \n∅at point (1, −2,1) is________",
+    "answer": "\\left[\\begin{matrix}-12\\\\-9\\\\16\\end{matrix}\\right]",
+    "steps": [
+      {
+        "title": "Differentiate the scalar function",
+        "math": "\\nabla f=(f_x,f_y,f_z)",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}6 x y\\\\3 x^{2} - 3 y^{2} z^{2}\\\\- 2 y^{3} z\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}-12\\\\-9\\\\16\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 937.33,
+        "height": 63.92,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 885,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If ∅= xଶ+ yଶ+ zଶ, then the value of \n|gradφ| at (1,2, −2) is",
+    "answer": "6",
+    "steps": [
+      {
+        "title": "Differentiate the scalar function",
+        "math": "\\nabla f=(f_x,f_y,f_z)",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}2 x\\\\2 y\\\\2 z\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}2\\\\4\\\\-4\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate its magnitude",
+        "math": "6",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1005.25,
+        "height": 53.36,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 886,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If ∅= xଶ+ yଶ+ zଶ, then the value of \n|grad∅| at ቀ1, −1,\nଵ\nଶቁ is",
+    "answer": "3",
+    "steps": [
+      {
+        "title": "Differentiate the scalar function",
+        "math": "\\nabla f=(f_x,f_y,f_z)",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}2 x\\\\2 y\\\\2 z\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}2\\\\-2\\\\1\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate its magnitude",
+        "math": "3",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1062.61,
+        "height": 68.48,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 887,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If ∅= xyz, then the value of |gradφ| at \n(1,2, −1) is",
+    "answer": "3",
+    "steps": [
+      {
+        "title": "Differentiate the scalar function",
+        "math": "\\nabla f=(f_x,f_y,f_z)",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}y z\\\\x z\\\\x y\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}-2\\\\-1\\\\2\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Calculate its magnitude",
+        "math": "3",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1135.09,
+        "height": 53.36,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 888,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If r̅ = xı̅ + yȷ̅ + zk,ഥ Prove that ∇ଶr௡=\nn(n+ 1)r௡ିଶ",
+    "answer": "n r^{n - 2} \\left(n + 1\\right)",
+    "steps": [
+      {
+        "title": "Differentiate a radial function",
+        "math": "\\nabla f(r)=f\\prime(r)\\,\\frac{(x,y,z)}r",
+        "text": ""
+      },
+      {
+        "title": "Sum the second derivatives",
+        "math": "\\nabla^2 f(r)=f\\prime\\prime(r)\\frac{x^2+y^2+z^2}{r^2}+f\\prime(r)\\left(\\frac3r-\\frac{x^2+y^2+z^2}{r^3}\\right)",
+        "text": ""
+      },
+      {
+        "title": "Use x² + y² + z² = r²",
+        "math": "\\nabla^2 f(r)=f\\prime\\prime(r)+2f\\prime(r)/r",
+        "text": ""
+      },
+      {
+        "title": "Set f(r) = rⁿ",
+        "math": "f\\prime=nr^{n-1},\\quad f\\prime\\prime=n(n-1)r^{n-2};\\quad\\nabla^2r^n=n(n+1)r^{n-2}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "Identity holds for r > 0.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1192.45,
+        "height": 83.36,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 889,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Prove that ∇ଶf(r) = f ᇱᇱ(r) +\nଶ\n୰f ᇱ(r)",
+    "answer": "f\\prime\\prime(r)+2f\\prime(r)/r",
+    "steps": [
+      {
+        "title": "Differentiate a radial function",
+        "math": "\\nabla f(r)=f\\prime(r)\\,\\frac{(x,y,z)}r",
+        "text": ""
+      },
+      {
+        "title": "Sum the second derivatives",
+        "math": "\\nabla^2 f(r)=f\\prime\\prime(r)\\frac{x^2+y^2+z^2}{r^2}+f\\prime(r)\\left(\\frac3r-\\frac{x^2+y^2+z^2}{r^3}\\right)",
+        "text": ""
+      },
+      {
+        "title": "Use x² + y² + z² = r²",
+        "math": "\\nabla^2 f(r)=f\\prime\\prime(r)+2f\\prime(r)/r",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "r > 0 and f is twice differentiable.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1279.81,
+        "height": 61.52,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 890,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If  ∅= 3xଶy−yଷzଶ, find gradφat the point \n(1,-2,-1).",
+    "answer": "\\left[\\begin{matrix}-12\\\\-9\\\\-16\\end{matrix}\\right]",
+    "steps": [
+      {
+        "title": "Differentiate the scalar function",
+        "math": "\\nabla f=(f_x,f_y,f_z)",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}6 x y\\\\3 x^{2} - 3 y^{2} z^{2}\\\\- 2 y^{3} z\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}-12\\\\-9\\\\-16\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1345.33,
+        "height": 81.44,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 891,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find a unit vector normal to the surface xଷ+\nyଷ+ 3xyz= 3 at thepoint (1, 2, −1)",
+    "answer": "\\left[\\begin{matrix}- \\frac{\\sqrt{14}}{14}\\\\\\frac{3 \\sqrt{14}}{14}\\\\\\frac{\\sqrt{14}}{7}\\end{matrix}\\right]",
+    "steps": [
+      {
+        "title": "Differentiate the scalar function",
+        "math": "\\nabla f=(f_x,f_y,f_z)",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}3 x^{2} + 3 y z\\\\3 x z + 3 y^{2}\\\\3 x y\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}-3\\\\9\\\\6\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize",
+        "math": "\\left[\\begin{matrix}- \\frac{\\sqrt{14}}{14}\\\\\\frac{3 \\sqrt{14}}{14}\\\\\\frac{\\sqrt{14}}{7}\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1430.77,
+        "height": 82.16,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 892,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "If r̅ = x ıത + yȷ̅ + zkത, show that ∇logr=\nଵ\n௥r̂ \n.Where r̂ is unit vector.",
+    "answer": "\\hat r/r",
+    "steps": [
+      {
+        "title": "Apply the chain rule",
+        "math": "\\nabla\\ln r=\\frac1r\\nabla r=\\frac1r\\frac{\\vec r}r=\\frac{\\hat r}r",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1516.93,
+        "height": 93.92,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 893,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the gradient of f(x, y, z) = 2zଷ−\n3(xଶ+ yଶ)z+ tanିଵ(xz) at (1,1,1).",
+    "answer": "\\left[\\begin{matrix}- \\frac{11}{2}\\\\-6\\\\\\frac{1}{2}\\end{matrix}\\right]",
+    "steps": [
+      {
+        "title": "Differentiate the scalar function",
+        "math": "\\nabla f=(f_x,f_y,f_z)",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}- 6 x z + \\frac{z}{x^{2} z^{2} + 1}\\\\- 6 y z\\\\- 3 x^{2} + \\frac{x}{x^{2} z^{2} + 1} - 3 y^{2} + 6 z^{2}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}- \\frac{11}{2}\\\\-6\\\\\\frac{1}{2}\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1614.85,
+        "height": 82.16,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 894,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find values of constants λ and μ so that the \nsurfaces λxଶ−μyz= (λ+ 2)xand4xଶy+\nzଷintersect orthogonally at the point (1, -1,2).",
+    "answer": "\\left( \\frac{5}{2}, \\  1\\right)",
+    "steps": [
+      {
+        "title": "Use the point in the first surface",
+        "math": "\\lambda+2\\mu=\\lambda+2\\Rightarrow\\mu=1",
+        "text": ""
+      },
+      {
+        "title": "Calculate both normals at (1,−1,2)",
+        "math": "n_1=(\\lambda-2,-2,1),\\quad n_2=(-8,4,12)",
+        "text": ""
+      },
+      {
+        "title": "Set their dot product to zero",
+        "math": "-8(\\lambda-2)-8+12=0\\Rightarrow\\lambda=5/2",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1701.01,
+        "height": 114.08,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 895,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Let r̅ = xı̂ + yȷ̂ + zk෠, r= |r̅| and aത=\naଵı̂ + aଶȷ̂ + aଷk෠is a constant vector.  \nProve that ∇ቀ\n௔ത.௥̅\n௥೙ቁ=\n௔ത\n௥೙−\n௡(௔ത.௥̅)\n௥೙శమr̅",
+    "answer": "\\frac a{r^n}-\\frac{n(a\\cdot\\vec r)\\vec r}{r^{n+2}}",
+    "steps": [
+      {
+        "title": "Use the product rule",
+        "math": "\\nabla[(a\\cdot\\vec r)r^{-n}]=r^{-n}\\nabla(a\\cdot\\vec r)+(a\\cdot\\vec r)\\nabla r^{-n}",
+        "text": ""
+      },
+      {
+        "title": "Differentiate each factor",
+        "math": "\\nabla(a\\cdot\\vec r)=a,\\quad\\nabla r^{-n}=-n\\vec r/r^{n+2}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1819.09,
+        "height": 128.72,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 896,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the angle between the normal to the \nsurfaces xy= zଶat P(1,1,1) and Q(4,1,2).",
+    "answer": "\\operatorname{acos}{\\left(\\frac{13 \\sqrt{22}}{66} \\right)}",
+    "steps": [
+      {
+        "title": "First normal",
+        "math": "\\left[\\begin{matrix}1\\\\1\\\\-2\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Second normal",
+        "math": "\\left[\\begin{matrix}1\\\\4\\\\-4\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Compute the cosine of the angle",
+        "math": "\\frac{13 \\sqrt{22}}{66}",
+        "text": ""
+      },
+      {
+        "title": "Take arccos",
+        "math": "\\operatorname{acos}{\\left(\\frac{13 \\sqrt{22}}{66} \\right)}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 1951.81,
+        "height": 53.12,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 897,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "Find the angle between the surfaces xଶ+\nyଶ+ zଶ= 9 and  z= xଶ+ yଶ−3 at the \npoint      (2,-1,2).",
+    "answer": "\\operatorname{acos}{\\left(\\frac{8 \\sqrt{21}}{63} \\right)}",
+    "steps": [
+      {
+        "title": "Calculate the normals",
+        "math": "n_1=(4,-2,4),\\quad n_2=(-4,2,1)",
+        "text": ""
+      },
+      {
+        "title": "Use the acute surface angle",
+        "math": "\\cos\\theta=\\frac{|n_1\\cdot n_2|}{|n_1||n_2|}=\\frac8{3\\sqrt{21}}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The angle between the specifically oriented normals has cosine −8/(3√21); the conventional acute angle between surfaces uses the absolute value.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 2008.93,
+        "height": 81.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 898,
+    "unit": 7,
+    "page": 39,
+    "sourceText": "The directional derivative of f(x, y) =\nxyଶ−yଷ at P(2,2) in the direction of θ=\nగ\nସ \nis ____",
+    "answer": "0",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}y^{2}\\\\2 x y - 3 y^{2}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}4\\\\-4\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{\\sqrt{2}}{2}\\\\\\frac{\\sqrt{2}}{2}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "0",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-39.webp",
+        "y": 2094.13,
+        "height": 213.87,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 899,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "The magnitude of the maximum directional \nderivative of the function 2x+ y+ 2z at the \npoint (1,0,0) is",
+    "answer": "3",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}2\\\\1\\\\2\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Maximum directional derivative is gradient magnitude",
+        "math": "\\max D_uf=|\\nabla f|=\\sqrt{4+1+4}=3",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 266.77,
+        "height": 80.48,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 900,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Define gradient of a function. Use it to find \ndirectional derivative of f(x, y, z) = xଷ−\nxyଶ−z at P(1,1,0) in the direction of aത=\n2ı̂ −3ȷ̂ + 6k෠",
+    "answer": "\\frac{4}{7}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}3 x^{2} - y^{2}\\\\- 2 x y\\\\-1\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}2\\\\-2\\\\-1\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{2}{7}\\\\- \\frac{3}{7}\\\\\\frac{6}{7}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{4}{7}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 351.25,
+        "height": 111.68,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 901,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of  ∅= xyଶ+\nyzଷat(2, −1,1)in the direction of the normal \nto the surfacexlogz−yଶ= −4  \nat(−1,2,1).",
+    "answer": "\\frac{15 \\sqrt{17}}{17}",
+    "steps": [
+      {
+        "title": "Find the normal at the separate surface point",
+        "math": "\\nabla(x\\ln z-y^2)|_{(-1,2,1)}=(0,-4,-1)",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}y^{2}\\\\2 x y + z^{3}\\\\3 y z^{2}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}1\\\\-3\\\\-3\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}0\\\\- \\frac{4 \\sqrt{17}}{17}\\\\- \\frac{\\sqrt{17}}{17}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{15 \\sqrt{17}}{17}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 466.93,
+        "height": 142.88,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 902,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of \n\n\n1\n2\n2\n2 2\n1\n = \nx\ny\nz\n\n\n\n at point \nP(1, -1, 1) in the direction of \n\na = i + j + k\n\n",
+    "answer": "- \\frac{1}{9}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}- \\frac{x}{\\left(x^{2} + y^{2} + z^{2}\\right)^{\\frac{3}{2}}}\\\\- \\frac{y}{\\left(x^{2} + y^{2} + z^{2}\\right)^{\\frac{3}{2}}}\\\\- \\frac{z}{\\left(x^{2} + y^{2} + z^{2}\\right)^{\\frac{3}{2}}}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}- \\frac{\\sqrt{3}}{9}\\\\\\frac{\\sqrt{3}}{9}\\\\- \\frac{\\sqrt{3}}{9}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{\\sqrt{3}}{3}\\\\\\frac{\\sqrt{3}}{3}\\\\\\frac{\\sqrt{3}}{3}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "- \\frac{1}{9}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 613.81,
+        "height": 170.72,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 903,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of \nf(x, y, z) = cos xy+ e௬௭+ ln xz at a point \nP(1, 0, 1/2 ) in the direction uത= ı̂ + 2ȷ̂ +\n2k෠",
+    "answer": "2",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}- y \\sin{\\left(x y \\right)} + \\frac{1}{x}\\\\- x \\sin{\\left(x y \\right)} + z e^{y z}\\\\y e^{y z} + \\frac{1}{z}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}1\\\\\\frac{1}{2}\\\\2\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{1}{3}\\\\\\frac{2}{3}\\\\\\frac{2}{3}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "2",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 788.53,
+        "height": 111.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 904,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of the \ndivergence of Fത( x, y, z) = xyଶı̂ + zyଶȷ̂ +\n xzଶk෠at the point (2, 0, 3) in the direction of \nthe outer normal to the sphere xଶ+ yଶ+\nzଶ= 14 at the point (3,2,1).",
+    "answer": "\\frac{17 \\sqrt{14}}{7}",
+    "steps": [
+      {
+        "title": "Take the divergence first",
+        "math": "\\nabla\\cdot F=y^2+2yz+2xz",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}2 z\\\\2 y + 2 z\\\\2 x + 2 y\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}6\\\\6\\\\4\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{3 \\sqrt{14}}{14}\\\\\\frac{\\sqrt{14}}{7}\\\\\\frac{\\sqrt{14}}{14}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{17 \\sqrt{14}}{7}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 903.73,
+        "height": 140.24,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 905,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the direction in which the directional \nderivative of ∅=\n୶మି௬మ\n௫௬ at (1,1) is zero.",
+    "answer": "u=\\pm(1,1)/\\sqrt2",
+    "steps": [
+      {
+        "title": "Find the gradient at (1,1)",
+        "math": "\\nabla\\phi=(2,-2)",
+        "text": ""
+      },
+      {
+        "title": "A zero directional derivative requires perpendicularity",
+        "math": "2u_x-2u_y=0\\Rightarrow u_x=u_y;\\quad u=\\pm(1,1)/\\sqrt2",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 1047.97,
+        "height": 72.32,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 906,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of f(x, y, z) =\n2xଶ+ 3yଶ+ zଶ at point P(2,1,3) in the \ndirection of aሬ⃗= [1,0, −2].",
+    "answer": "- \\frac{4 \\sqrt{5}}{5}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}4 x\\\\6 y\\\\2 z\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}8\\\\6\\\\6\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{\\sqrt{5}}{5}\\\\0\\\\- \\frac{2 \\sqrt{5}}{5}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "- \\frac{4 \\sqrt{5}}{5}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 1124.29,
+        "height": 81.68,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 907,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the derivative of f(x, y) = xଶsin 2y at \nthe point ቀ1,\n஠\nଶቁ in the direction of  v = 3i −\n4j.",
+    "answer": "\\frac{8}{5}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}2 x \\sin{\\left(2 y \\right)}\\\\2 x^{2} \\cos{\\left(2 y \\right)}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}0\\\\-2\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{3}{5}\\\\- \\frac{4}{5}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{8}{5}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 1209.97,
+        "height": 96.56,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 908,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of xଶyଶzଶ at \n(1,1,-1) along a direction equally inclined \nwith coordinate axes.",
+    "answer": "\\frac{2 \\sqrt{3}}{3}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}2 x y^{2} z^{2}\\\\2 x^{2} y z^{2}\\\\2 x^{2} y^{2} z\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}2\\\\2\\\\-2\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{\\sqrt{3}}{3}\\\\\\frac{\\sqrt{3}}{3}\\\\\\frac{\\sqrt{3}}{3}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{2 \\sqrt{3}}{3}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 1310.53,
+        "height": 80.48,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 909,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of ∅=\n4xzଷ−3xଶyzଶ at the point (2,-1,2) in the \ndirection 2ı̅ + 3ȷ̅ + 6kത",
+    "answer": "\\frac{880}{7}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}- 6 x y z^{2} + 4 z^{3}\\\\- 3 x^{2} z^{2}\\\\- 6 x^{2} y z + 12 x z^{2}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}80\\\\-48\\\\144\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{2}{7}\\\\\\frac{3}{7}\\\\\\frac{6}{7}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{880}{7}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 1395.01,
+        "height": 83.12,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 910,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the derivative of f(x, y) = x e୷+ cosxy  \nat the point (2,0) in the direction of A=\n3i−4j.",
+    "answer": "-1",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}- y \\sin{\\left(x y \\right)} + e^{y}\\\\x e^{y} - x \\sin{\\left(x y \\right)}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}1\\\\2\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{3}{5}\\\\- \\frac{4}{5}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "-1",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 1482.13,
+        "height": 141.68,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 911,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of ∅= xଶ−\nyଶ+ 2zଶ at the point P (1,2,3) in the \ndirection of the line PQwhere Q is the point \n(5,0,4).",
+    "answer": "\\frac{4 \\sqrt{21}}{3}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}2 x\\\\- 2 y\\\\4 z\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}2\\\\-4\\\\12\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{4 \\sqrt{21}}{21}\\\\- \\frac{2 \\sqrt{21}}{21}\\\\\\frac{\\sqrt{21}}{21}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{4 \\sqrt{21}}{3}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 1627.81,
+        "height": 108.8,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 912,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of \nf(x, y, z) = xଷ−xyଶ−zat (1,1,0) in the \ndirection of 2i−3j+ 6k",
+    "answer": "\\frac{4}{7}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}3 x^{2} - y^{2}\\\\- 2 x y\\\\-1\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}2\\\\-2\\\\-1\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{2}{7}\\\\- \\frac{3}{7}\\\\\\frac{6}{7}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{4}{7}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 1740.61,
+        "height": 81.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 913,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of the function \nf(x, y, z) = xyଶ+ yzଷ at the point (2,-1,1) \nin the direction of the vector ı̂ + 2ȷ̂ + 2k෠.",
+    "answer": "- \\frac{11}{3}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}y^{2}\\\\2 x y + z^{3}\\\\3 y z^{2}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}1\\\\-3\\\\-3\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{1}{3}\\\\\\frac{2}{3}\\\\\\frac{2}{3}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "- \\frac{11}{3}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 1825.81,
+        "height": 83.36,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 914,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find directional derivative of the function \nf(x, y) = ax+ by; a,b are \nconstants, at the point P(0,0)which makes an \nangle of 30଴with positive x-axis.",
+    "answer": "\\frac{\\sqrt{3} a}{2} + \\frac{b}{2}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}a\\\\b\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}a\\\\b\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{\\sqrt{3}}{2}\\\\\\frac{1}{2}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{\\sqrt{3} a}{2} + \\frac{b}{2}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 1913.17,
+        "height": 108.8,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 915,
+    "unit": 7,
+    "page": 40,
+    "sourceText": "Find the directional derivative of the \ndivergence of Fത( x, y, z) = xyı̂ + xyଶȷ̂ +\nzଶk෠at the point (2, 1, 2) in the direction of \n\n \nthe outer normal to the sphere xଶ+ yଶ+\nzଶ= 9.",
+    "answer": "\\frac{13}{3}",
+    "steps": [
+      {
+        "title": "Take the divergence and sphere normal first",
+        "math": "\\nabla\\cdot F=y+2xy+2z;\\quad n=(2,1,2)/3",
+        "text": ""
+      },
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}2 y\\\\2 x + 1\\\\2\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}2\\\\5\\\\2\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{2}{3}\\\\\\frac{1}{3}\\\\\\frac{2}{3}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{13}{3}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-40.webp",
+        "y": 2025.97,
+        "height": 282.03,
+        "width": 458,
+        "pageHeight": 2382
+      },
+      {
+        "image": "pages/page-41.webp",
+        "y": 280,
+        "height": 90.85,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 916,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Find the directional derivative of the scalar \npoint function f= 3eଶ௫ି௬ା௭ \n at the point A(1,1, −1) in the direction \ntowards the point B(−3,5,6)",
+    "answer": "- \\frac{5}{3}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}6 e^{2 x - y + z}\\\\- 3 e^{2 x - y + z}\\\\3 e^{2 x - y + z}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}6\\\\-3\\\\3\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}- \\frac{4}{9}\\\\\\frac{4}{9}\\\\\\frac{7}{9}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "- \\frac{5}{3}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 372.85,
+        "height": 157.28,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 917,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Find the directional derivative D௨f(x, y) if \nf(x, y) = xଷ−3xy+ 4yଶ and u is the unit \nvector given by angle θ=\nగ\n଺. What is \nD௨f(1,2)?",
+    "answer": "\\frac{13}{2} - \\frac{3 \\sqrt{3}}{2}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}3 x^{2} - 3 y\\\\- 3 x + 8 y\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}-3\\\\13\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Directional derivative at a general point",
+        "math": "D_uf=\\frac{\\sqrt3}{2}(3x^2-3y)+\\frac12(-3x+8y)",
+        "text": ""
+      },
+      {
+        "title": "Directional derivative at a general point",
+        "math": "D_uf=\\frac{\\sqrt3}{2}(3x^2-3y)+\\frac12(-3x+8y)",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{\\sqrt{3}}{2}\\\\\\frac{1}{2}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{13}{2} - \\frac{3 \\sqrt{3}}{2}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 534.13,
+        "height": 196.16,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 918,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "The temperature at any point in space is \ngiven by T= xy+ yz+ zx. Determine the \nderivative of T in the direction of the vector \n3i ̂ – 4k ̂ at the point (1,1,1).",
+    "answer": "- \\frac{2}{5}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}y + z\\\\x + z\\\\x + y\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}2\\\\2\\\\2\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{3}{5}\\\\0\\\\- \\frac{4}{5}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "- \\frac{2}{5}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 734.29,
+        "height": 184.16,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 919,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Find directional derivative of the function  \nφ=\n௫\n௫మା௬మ   at the point P(0,2) which makes \nan angle of 30଴with positive x-axis.",
+    "answer": "\\frac{\\sqrt{3}}{8}",
+    "steps": [
+      {
+        "title": "Calculate the gradient",
+        "math": "\\left[\\begin{matrix}- \\frac{2 x^{2}}{\\left(x^{2} + y^{2}\\right)^{2}} + \\frac{1}{x^{2} + y^{2}}\\\\- \\frac{2 x y}{\\left(x^{2} + y^{2}\\right)^{2}}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate at the point",
+        "math": "\\left[\\begin{matrix}\\frac{1}{4}\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Normalize the given direction",
+        "math": "\\left[\\begin{matrix}\\frac{\\sqrt{3}}{2}\\\\\\frac{1}{2}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Take the dot product",
+        "math": "\\frac{\\sqrt{3}}{8}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 922.45,
+        "height": 156.32,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 920,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If r = xi + yj + zk  then div (r) is",
+    "answer": "3",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "3",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1082.77,
+        "height": 59.12,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 921,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "The \ndivergence \nof \nFത= xyzı̂ + 3xଶyȷ̂ +\n(xzଶ−yଶz)k෠ is",
+    "answer": "3 x^{2} + 2 x z - y^{2} + y z",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "3 x^{2} + 2 x z - y^{2} + y z",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}- 2 y z\\\\x y - z^{2}\\\\x \\left(6 y - z\\right)\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1145.89,
+        "height": 114.08,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 922,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If  Fത = xı̅ + yȷ̅ + zkതthen  ∇.Fത at (1,1,1) is",
+    "answer": "3",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "3",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1263.97,
+        "height": 82.4,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 923,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Find the value of ‘a’ if F= (x+ 3y)i+\n(y−2z)j+ (az+ x)k  is solenodial",
+    "answer": "-2",
+    "steps": [
+      {
+        "title": "Set the divergence equal to zero",
+        "math": "1+1+a=0\\Rightarrow a=-2",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1350.37,
+        "height": 61.76,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 924,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "For vector point function F⃗, divergence of F⃗ \nis obtained by",
+    "answer": "P_x+Q_y+R_z",
+    "steps": [
+      {
+        "title": "Add the component derivatives",
+        "math": "\\operatorname{div}F=\\partial P/\\partial x+\\partial Q/\\partial y+\\partial R/\\partial z",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1416.13,
+        "height": 65.12,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 925,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If divuത= 0 then uത is said to be",
+    "answer": "\\text{Solenoidal: divergence equals zero.}",
+    "steps": [
+      {
+        "title": "Use the definition",
+        "math": "F\\text{ is solenoidal}\\Longleftrightarrow\\nabla\\cdot F=0",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1485.25,
+        "height": 61.04,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 926,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If φ= tanିଵቀ\n௬\n௫ቁ then div(gradφ) is",
+    "answer": "0",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "0",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The derivatives are local, away from the origin and the chosen arctangent branch boundary.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1550.29,
+        "height": 48.8,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 927,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If Fത= (x + 3yଶ)ı̂ + (2y + 2zଶ)ȷ̂ +(xଶ+\naz)k෠ is solenoidal then the constant a is \n______.",
+    "answer": "-3",
+    "steps": [
+      {
+        "title": "Compute the divergence and set it to zero",
+        "math": "1+2+a=0",
+        "text": ""
+      },
+      {
+        "title": "Solve for the constant",
+        "math": "-3",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1603.09,
+        "height": 96.32,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 928,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If Fത= (bx+ 4yଶz)ı̂ + (xଷsin z−3y)ȷ̂ −\n(e௫+ 4 cos xଶy)k෠ is solenoidal,then b=\n______",
+    "answer": "3",
+    "steps": [
+      {
+        "title": "Compute the divergence and set it to zero",
+        "math": "b-3=0",
+        "text": ""
+      },
+      {
+        "title": "Solve for the constant",
+        "math": "3",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1703.41,
+        "height": 96.8,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 929,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "The value of ‘a’ is____, if F= (2x+ 3y)i+\n(3y+ 2z)j+ (az+ x)k  is solenoidal",
+    "answer": "-5",
+    "steps": [
+      {
+        "title": "Compute the divergence and set it to zero",
+        "math": "2+3+a=0",
+        "text": ""
+      },
+      {
+        "title": "Solve for the constant",
+        "math": "-5",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1804.21,
+        "height": 61.52,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 930,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If  a= 2xı̂ + 3yȷ̂ + 4zk෠ and u =xଶ+yଶ+ zଶ \n,then div(ua) at (1,1,1) is _______.",
+    "answer": "45",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "13 x^{2} + 15 y^{2} + 17 z^{2}",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}2 y z\\\\- 4 x z\\\\2 x y\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the divergence at the point",
+        "math": "45",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the curl at the point",
+        "math": "\\left[\\begin{matrix}2\\\\-4\\\\2\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1869.73,
+        "height": 63.92,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 931,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Fത  is solenoidal vector, If div(Fത)  is  _____",
+    "answer": "\\text{Solenoidal: divergence equals zero.}",
+    "steps": [
+      {
+        "title": "Use the definition",
+        "math": "F\\text{ is solenoidal}\\Longleftrightarrow\\nabla\\cdot F=0",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1937.65,
+        "height": 48.8,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 932,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "If ∅= xyz −2yଶz + xଶzଶ, Find div(grad ∅) \nat the point (2,4,1).",
+    "answer": "6",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "2 x^{2} + 2 z^{2} - 4 z",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the divergence at the point",
+        "math": "6",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the curl at the point",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 1990.45,
+        "height": 62.0,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 933,
+    "unit": 7,
+    "page": 41,
+    "sourceText": "Find the value of the constant λ such that the \nvector field defined by F = (2xଶyଶ+ zଶ)i +\n(3xyଷ−xଶz)j + (λxyଶz +\nxy)k is solenoidal.",
+    "answer": "-13",
+    "steps": [
+      {
+        "title": "Compute the divergence and set it to zero",
+        "math": "(4+9+\\lambda)xy^2=0",
+        "text": ""
+      },
+      {
+        "title": "Solve for the constant",
+        "math": "-13",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-41.webp",
+        "y": 2056.45,
+        "height": 251.55,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 934,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Determine whether the vector field uത= yଶı̂ +\n2xyȷ̂ −zଶk෠ is solenoidal at a point (1,2,1).",
+    "answer": "0",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "2 x - 2 z",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the divergence at the point",
+        "math": "0",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the curl at the point",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The divergence vanishes at the stated point; the field is not solenoidal everywhere, since div F = 2x−2z.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 266.77,
+        "height": 64.16,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 935,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Let r= xı̂ + yȷ̂ + zk෠, r= |r̅|and aതis a \nconstant vector. Find the value of divቀ\n௔ത×௥̅\n௥೙ቁ",
+    "answer": "0",
+    "steps": [
+      {
+        "title": "Apply the product rule",
+        "math": "\\nabla\\cdot[(a\\times\\vec r)r^{-n}]=r^{-n}\\nabla\\cdot(a\\times\\vec r)+(a\\times\\vec r)\\cdot\\nabla r^{-n}",
+        "text": ""
+      },
+      {
+        "title": "Both terms vanish",
+        "math": "\\nabla\\cdot(a\\times\\vec r)=0,\\quad(a\\times\\vec r)\\cdot\\vec r=0",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "r > 0.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 334.93,
+        "height": 79.04,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 936,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If \n \nr= xı̂ + yȷ̂ + zk෠, \nShow \nthat \ndiv(gradr௡) = n(n+ 1)r௡ିଶ.",
+    "answer": "n r^{n - 2} \\left(n + 1\\right)",
+    "steps": [
+      {
+        "title": "Differentiate a radial function",
+        "math": "\\nabla f(r)=f\\prime(r)\\,\\frac{(x,y,z)}r",
+        "text": ""
+      },
+      {
+        "title": "Sum the second derivatives",
+        "math": "\\nabla^2 f(r)=f\\prime\\prime(r)\\frac{x^2+y^2+z^2}{r^2}+f\\prime(r)\\left(\\frac3r-\\frac{x^2+y^2+z^2}{r^3}\\right)",
+        "text": ""
+      },
+      {
+        "title": "Use x² + y² + z² = r²",
+        "math": "\\nabla^2 f(r)=f\\prime\\prime(r)+2f\\prime(r)/r",
+        "text": ""
+      },
+      {
+        "title": "Set f(r) = rⁿ",
+        "math": "f\\prime=nr^{n-1},\\quad f\\prime\\prime=n(n-1)r^{n-2};\\quad\\nabla^2r^n=n(n+1)r^{n-2}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "Identity holds for r > 0.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 417.97,
+        "height": 72.08,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 937,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If  r= xı̂ + yȷ̂ + zk෠, Show that Div(r௡r) =\n(n+ 3)r௡.",
+    "answer": "r^{n} \\left(n + 3\\right)",
+    "steps": [
+      {
+        "title": "Use the divergence product rule",
+        "math": "\\nabla\\cdot(r^n\\vec r)=r^n\\nabla\\cdot\\vec r+\\vec r\\cdot\\nabla r^n",
+        "text": ""
+      },
+      {
+        "title": "Substitute the radial derivatives",
+        "math": "=3r^n+n r^{n-2}(x^2+y^2+z^2)=(n+3)r^n",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 494.05,
+        "height": 72.32,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 938,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If  r̅ = xı̂ + yȷ̂ + zk෠, r= |r̅| and aത= aଵı̂ +\naଶȷ̂ + aଷk෠andbത= bଵı̂ + bଶȷ̂ + bଷk෠  are \nconstant vectors.  \nProve that aത∙∇ቀbത∙∇\nଵ\n୰ቁ=\nଷ(௔∙ഥ௥̅)(௕∙ഥ௥̅)\n௥ఱ\n−\n௔ത∙௕ത\n௥య",
+    "answer": "3(a\\cdot\\vec r)(b\\cdot\\vec r)/r^5-(a\\cdot b)/r^3",
+    "steps": [
+      {
+        "title": "Calculate the first directional derivative",
+        "math": "b\\cdot\\nabla(1/r)=-(b\\cdot\\vec r)/r^3",
+        "text": ""
+      },
+      {
+        "title": "Differentiate again in direction a",
+        "math": "a\\cdot\\nabla[-(b\\cdot\\vec r)r^{-3}]=-(a\\cdot b)r^{-3}+3(a\\cdot\\vec r)(b\\cdot\\vec r)r^{-5}",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 570.37,
+        "height": 175.28,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 939,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Find divergence and curl of vሬ⃗= xyz[x, y, z].",
+    "answer": "\\left( 6 x y z, \\  \\left[\\begin{matrix}x \\left(- y^{2} + z^{2}\\right)\\\\y \\left(x^{2} - z^{2}\\right)\\\\z \\left(- x^{2} + y^{2}\\right)\\end{matrix}\\right]\\right)",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "6 x y z",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}x \\left(- y^{2} + z^{2}\\right)\\\\y \\left(x^{2} - z^{2}\\right)\\\\z \\left(- x^{2} + y^{2}\\right)\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 749.65,
+        "height": 48.8,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 940,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "The velocity vectorv̅ = rᇱഥ(t) = xଷk෠of a fluid \nmotion is given. Is the flow irrotational? \nIncompressible?",
+    "answer": "\\left( 0, \\  \\left[\\begin{matrix}0\\\\- 3 x^{2}\\\\0\\end{matrix}\\right]\\right)",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "0",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\- 3 x^{2}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "div v = 0, so the flow is incompressible. curl v = (0,−3x²,0), so it is not irrotational throughout space.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 802.45,
+        "height": 99.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 941,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Find div F\n and curl F\n, where Fത=\ngrad(xଷ+ yଷ+ zଷ−3xy)",
+    "answer": "\\left( 6 x + 6 y + 6 z, \\  \\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]\\right)",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "6 x + 6 y + 6 z",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 905.65,
+        "height": 72.32,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 942,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If Fത is conservative field then curlFത = \n___________",
+    "answer": "\\vec 0",
+    "steps": [
+      {
+        "title": "Use equality of mixed second partial derivatives",
+        "math": "\\nabla\\times(\\nabla\\phi)=0",
+        "text": ""
+      },
+      {
+        "title": "Apply the field definition",
+        "math": "\\text{Conservative or irrotational fields have curl }0",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The scalar potential is twice differentiable on the domain.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 981.97,
+        "height": 72.08,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 943,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If Fഥ is irrotational then",
+    "answer": "\\vec 0",
+    "steps": [
+      {
+        "title": "Use equality of mixed second partial derivatives",
+        "math": "\\nabla\\times(\\nabla\\phi)=0",
+        "text": ""
+      },
+      {
+        "title": "Apply the field definition",
+        "math": "\\text{Conservative or irrotational fields have curl }0",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The scalar potential is twice differentiable on the domain.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1058.05,
+        "height": 80.48,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 944,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "The value of curl (grad ∅) , where ∅= 2xଶ−\n3yଶ+ 4zଶ is",
+    "answer": "\\vec 0",
+    "steps": [
+      {
+        "title": "Use equality of mixed second partial derivatives",
+        "math": "\\nabla\\times(\\nabla\\phi)=0",
+        "text": ""
+      },
+      {
+        "title": "Apply the field definition",
+        "math": "\\text{Conservative or irrotational fields have curl }0",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The scalar potential is twice differentiable on the domain.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1142.53,
+        "height": 72.32,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 945,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If f(x, y, z) = xyzthen Curl(grad f)=",
+    "answer": "\\vec 0",
+    "steps": [
+      {
+        "title": "Use equality of mixed second partial derivatives",
+        "math": "\\nabla\\times(\\nabla\\phi)=0",
+        "text": ""
+      },
+      {
+        "title": "Apply the field definition",
+        "math": "\\text{Conservative or irrotational fields have curl }0",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The scalar potential is twice differentiable on the domain.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1218.85,
+        "height": 48.56,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 946,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If F⃗(x, y, z) = xı̂ + yȷ̂ + zk෠ then curl F⃗ is \n____",
+    "answer": "\\vec 0",
+    "steps": [
+      {
+        "title": "Use equality of mixed second partial derivatives",
+        "math": "\\nabla\\times(\\nabla\\phi)=0",
+        "text": ""
+      },
+      {
+        "title": "Apply the field definition",
+        "math": "\\text{Conservative or irrotational fields have curl }0",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The scalar potential is twice differentiable on the domain.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1271.41,
+        "height": 72.32,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 947,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "If curl of \n\n\n\n\n\n\n2\n2\n2xy 3yz i + x  + axz - 4z\nj + 3xy + 2byz k\n\n\n\n is \nzero then value of a and b is",
+    "answer": "\\left( 3, \\  -4\\right)",
+    "steps": [
+      {
+        "title": "Compute the curl components",
+        "math": "\\nabla\\times F=((3-a)x+(2b+8)z,0,(a-3)z)",
+        "text": ""
+      },
+      {
+        "title": "Set every coefficient to zero",
+        "math": "a=3,\\quad2b+8=0\\Rightarrow b=-4",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1347.73,
+        "height": 99.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 948,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "The value of curl(grad∅), where ∅=\n2xଶ−3yଶ+ 4zଶ is_________",
+    "answer": "\\vec 0",
+    "steps": [
+      {
+        "title": "Use equality of mixed second partial derivatives",
+        "math": "\\nabla\\times(\\nabla\\phi)=0",
+        "text": ""
+      },
+      {
+        "title": "Apply the field definition",
+        "math": "\\text{Conservative or irrotational fields have curl }0",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The scalar potential is twice differentiable on the domain.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1450.93,
+        "height": 72.08,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 949,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "What is the value of curl(aത× r̅)? Where \nr̅ = xı̂ + yȷ̂ + zk෠",
+    "answer": "2a",
+    "steps": [
+      {
+        "title": "Expand curl of a cross product",
+        "math": "\\nabla\\times(a\\times\\vec r)=a(\\nabla\\cdot\\vec r)-(a\\cdot\\nabla)\\vec r",
+        "text": ""
+      },
+      {
+        "title": "Use constant a",
+        "math": "=3a-a=2a",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1527.01,
+        "height": 131.84,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 950,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Show \nthat \nF= (yi−xj)\nxଶ+ yଶ\n൘\n \nis \nirrotational.",
+    "answer": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "0",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The field is defined only when x²+y² ≠ 0. It is locally irrotational, but not globally conservative on the punctured plane.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1662.85,
+        "height": 72.32,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 951,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Find curl Fሬ⃗  at the point (2,0,3) , if Fሬ⃗=\nz eଶ୶୷ı̂ + 2xy cosy ȷ̂ + (x + 2y)k෠.",
+    "answer": "\\left[\\begin{matrix}2\\\\0\\\\-12\\end{matrix}\\right]",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "- 2 x y \\sin{\\left(y \\right)} + 2 x \\cos{\\left(y \\right)} + 2 y z e^{2 x y}",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}2\\\\e^{2 x y} - 1\\\\- 2 x z e^{2 x y} + 2 y \\cos{\\left(y \\right)}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the divergence at the point",
+        "math": "4",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the curl at the point",
+        "math": "\\left[\\begin{matrix}2\\\\0\\\\-12\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1739.17,
+        "height": 72.08,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 952,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Find curl F, if F= (yଶcosx+ zଷ)i+\n(2ysinx−4)j+ 3xzଶk. Whether \nF is \nirrotational?",
+    "answer": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "6 x z - y^{2} \\sin{\\left(x \\right)} + 2 \\sin{\\left(x \\right)}",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1815.25,
+        "height": 99.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 953,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Prove that Fത= (zଶ+ 2x+ 3y)ı̂ + (3x+\n2y+ z)ȷ̂ + (y+ 2zx)k෠ is irrotational. Also \nfind scalar potential ∅ such that Fത= grad∅ \nand ∅(1,1,0) = 4",
+    "answer": "x^{2} + 3 x y + x z^{2} + y^{2} + y z - 1",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "2 x + 4",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Integrate P with respect to x",
+        "math": "\\phi=\\int P\\,dx+g(y,z)",
+        "text": ""
+      },
+      {
+        "title": "Match phi_y = Q and phi_z = R",
+        "math": "x^{2} + 3 x y + x z^{2} + y^{2} + y z - 1",
+        "text": ""
+      },
+      {
+        "title": "Check the potential by differentiating it",
+        "math": "\\left[\\begin{matrix}2 x + 3 y + z^{2}\\\\3 x + 2 y + z\\\\2 x z + y\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "The condition φ(1,1,0)=4 fixes the constant to −1; do not add an arbitrary extra constant to this specific potential.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 1918.45,
+        "height": 126.32,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 954,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Show that Fത= (yଶ−zଶ+ 3yz−2x)ı̂ +\n(3xz+ 2xy)ȷ̂ + (3xy−2xz+ 2z)k෠ is both \nsolenoidal and irrotational",
+    "answer": "- x^{2} + x y^{2} + 3 x y z - x z^{2} + z^{2} + C",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "0",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Integrate P with respect to x",
+        "math": "\\phi=\\int P\\,dx+g(y,z)",
+        "text": ""
+      },
+      {
+        "title": "Match phi_y = Q and phi_z = R",
+        "math": "- x^{2} + x y^{2} + 3 x y z - x z^{2} + z^{2}",
+        "text": ""
+      },
+      {
+        "title": "Check the potential by differentiating it",
+        "math": "\\left[\\begin{matrix}- 2 x + y^{2} + 3 y z - z^{2}\\\\2 x y + 3 x z\\\\3 x y - 2 x z + 2 z\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 2048.77,
+        "height": 99.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 955,
+    "unit": 7,
+    "page": 42,
+    "sourceText": "Find constants a,b,c, so that V= (x+ 2y+\naz)i+ (bx−3y−z)j+ (4x+ cy+\n\n \n2z) is irrotational. Also, find scalar potential \nfunction.",
+    "answer": "a=4,\\ b=2,\\ c=-1;\\quad\\phi=x^2/2+2xy+4xz-3y^2/2-yz+z^2+C",
+    "steps": [
+      {
+        "title": "Calculate the curl",
+        "math": "\\nabla\\times V=(c+1,a-4,b-2)",
+        "text": ""
+      },
+      {
+        "title": "Set it to zero",
+        "math": "a=4,\\ b=2,\\ c=-1",
+        "text": ""
+      },
+      {
+        "title": "Integrate the components",
+        "math": "\\phi=x^2/2+2xy+4xz-3y^2/2-yz+z^2+C",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-42.webp",
+        "y": 2151.97,
+        "height": 156.03,
+        "width": 458,
+        "pageHeight": 2382
+      },
+      {
+        "image": "pages/page-43.webp",
+        "y": 280,
+        "height": 59.89,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 956,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Find the divergence and curl of Vሬ⃗= e௫௬௭൫ı̂ +\nȷ̂ + k෠൯ at the point (1,2,3).",
+    "answer": "\\left( 11 e^{6}, \\  \\left[\\begin{matrix}e^{6}\\\\- 4 e^{6}\\\\3 e^{6}\\end{matrix}\\right]\\right)",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "\\left(x y + x z + y z\\right) e^{x y z}",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}x \\left(- y + z\\right) e^{x y z}\\\\y \\left(x - z\\right) e^{x y z}\\\\z \\left(- x + y\\right) e^{x y z}\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the divergence at the point",
+        "math": "11 e^{6}",
+        "text": ""
+      },
+      {
+        "title": "Evaluate the curl at the point",
+        "math": "\\left[\\begin{matrix}e^{6}\\\\- 4 e^{6}\\\\3 e^{6}\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 341.89,
+        "height": 72.08,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 957,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Calculate the curl of the vector F= xyzı̂ +\n3xଶyȷ̂ + (xzଶ−yଶz)k෠",
+    "answer": "\\left[\\begin{matrix}- 2 y z\\\\x y - z^{2}\\\\x \\left(6 y - z\\right)\\end{matrix}\\right]",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "3 x^{2} + 2 x z - y^{2} + y z",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}- 2 y z\\\\x y - z^{2}\\\\x \\left(6 y - z\\right)\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 417.97,
+        "height": 131.12,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 958,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Prove that ∇× (∇× A̅) = ∇(∇∙A̅) −∇ଶA̅ , \nfor any vector A̅ = Aଵı̂ + Aଶȷ̂ + Aଷk෠.",
+    "answer": "\\nabla(\\nabla\\cdot A)-\\nabla^2A",
+    "steps": [
+      {
+        "title": "Expand a representative component",
+        "math": "[\\nabla\\times(\\nabla\\times A)]_x=\\partial_y(\\partial_xA_y-\\partial_yA_x)-\\partial_z(\\partial_zA_x-\\partial_xA_z)",
+        "text": ""
+      },
+      {
+        "title": "Regroup the mixed derivatives",
+        "math": "=\\partial_x(\\partial_xA_x+\\partial_yA_y+\\partial_zA_z)-(\\partial_{xx}+\\partial_{yy}+\\partial_{zz})A_x",
+        "text": ""
+      },
+      {
+        "title": "The same calculation holds in y and z",
+        "math": "\\nabla\\times(\\nabla\\times A)=\\nabla(\\nabla\\cdot A)-\\nabla^2A",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "note": "Assume the components have continuous second derivatives.",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 553.09,
+        "height": 72.08,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 959,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "A vector field is given by Fሬ⃗= (xଶ+\nxyଶ)ıሬ⃗+ (yଶ+ xଶy)ȷ⃗.Find \nthe \nscalar \npotential. Show that Fሬ⃗ is irrotational.",
+    "answer": "\\frac{x^{3}}{3} + \\frac{x^{2} y^{2}}{2} + \\frac{y^{3}}{3} + C",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "x^{2} + 2 x + y^{2} + 2 y",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Integrate P with respect to x",
+        "math": "\\phi=\\int P\\,dx+g(y,z)",
+        "text": ""
+      },
+      {
+        "title": "Match phi_y = Q and phi_z = R",
+        "math": "\\frac{x^{3}}{3} + \\frac{x^{2} y^{2}}{2} + \\frac{y^{3}}{3}",
+        "text": ""
+      },
+      {
+        "title": "Check the potential by differentiating it",
+        "math": "\\left[\\begin{matrix}x^{2} + x y^{2}\\\\x^{2} y + y^{2}\\\\0\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 629.17,
+        "height": 99.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 960,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Show that the vector field F= (ysinz−\nsinx)i+ (xsinz+ 2yz)j+ (xycosz+\ny2)kis \nconservative \nand \nfind \nthe \ncorresponding scalar potential.",
+    "answer": "x y \\sin{\\left(z \\right)} + y^{2} z + \\cos{\\left(x \\right)} + C",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "- x y \\sin{\\left(z \\right)} + 2 z - \\cos{\\left(x \\right)}",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Integrate P with respect to x",
+        "math": "\\phi=\\int P\\,dx+g(y,z)",
+        "text": ""
+      },
+      {
+        "title": "Match phi_y = Q and phi_z = R",
+        "math": "x y \\sin{\\left(z \\right)} + y^{2} z + \\cos{\\left(x \\right)}",
+        "text": ""
+      },
+      {
+        "title": "Check the potential by differentiating it",
+        "math": "\\left[\\begin{matrix}y \\sin{\\left(z \\right)} - \\sin{\\left(x \\right)}\\\\x \\sin{\\left(z \\right)} + 2 y z\\\\x y \\cos{\\left(z \\right)} + y^{2}\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 732.37,
+        "height": 126.32,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 961,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Show \nthat \nFത= 2xyzı̅ + (xଶz+ 2y)ȷ̅ +\nxଶykത  is conservative. Find its scalar \npotential function ∅.",
+    "answer": "x^{2} y z + y^{2} + C",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "2 y z + 2",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Integrate P with respect to x",
+        "math": "\\phi=\\int P\\,dx+g(y,z)",
+        "text": ""
+      },
+      {
+        "title": "Match phi_y = Q and phi_z = R",
+        "math": "x^{2} y z + y^{2}",
+        "text": ""
+      },
+      {
+        "title": "Check the potential by differentiating it",
+        "math": "\\left[\\begin{matrix}2 x y z\\\\x^{2} z + 2 y\\\\x^{2} y\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 862.69,
+        "height": 99.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 962,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Show that F= (e௫cosy+ yz)i+ (xz−\ne௫siny)j+ (xy+ z)k is conservative and \nfind the potential function.",
+    "answer": "x y z + \\frac{z^{2}}{2} + e^{x} \\cos{\\left(y \\right)} + C",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "1",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Integrate P with respect to x",
+        "math": "\\phi=\\int P\\,dx+g(y,z)",
+        "text": ""
+      },
+      {
+        "title": "Match phi_y = Q and phi_z = R",
+        "math": "x y z + \\frac{z^{2}}{2} + e^{x} \\cos{\\left(y \\right)}",
+        "text": ""
+      },
+      {
+        "title": "Check the potential by differentiating it",
+        "math": "\\left[\\begin{matrix}y z + e^{x} \\cos{\\left(y \\right)}\\\\x z - e^{x} \\sin{\\left(y \\right)}\\\\x y + z\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 965.89,
+        "height": 99.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 963,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Show that the F⃗= (6xy+ zଷ)i+ (3xଶ−\nz)j+ (3xzଶ−y)k \nirrotational. Find the scalar ∅such that F⃗=\n∇∅.",
+    "answer": "3 x^{2} y + x z^{3} - y z + C",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "6 x z + 6 y",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Integrate P with respect to x",
+        "math": "\\phi=\\int P\\,dx+g(y,z)",
+        "text": ""
+      },
+      {
+        "title": "Match phi_y = Q and phi_z = R",
+        "math": "3 x^{2} y + x z^{3} - y z",
+        "text": ""
+      },
+      {
+        "title": "Check the potential by differentiating it",
+        "math": "\\left[\\begin{matrix}6 x y + z^{3}\\\\3 x^{2} - z\\\\3 x z^{2} - y\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 1069.09,
+        "height": 132.8,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 964,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Prove \nF= (yଶcosx+ zଷ)ı̂ +\n(2ysinx−4)ȷ̂ + 3xzଶk෠ that is irrotational \nand find its scalar potential.",
+    "answer": "x z^{3} + y^{2} \\sin{\\left(x \\right)} - 4 y + C",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "6 x z - y^{2} \\sin{\\left(x \\right)} + 2 \\sin{\\left(x \\right)}",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Integrate P with respect to x",
+        "math": "\\phi=\\int P\\,dx+g(y,z)",
+        "text": ""
+      },
+      {
+        "title": "Match phi_y = Q and phi_z = R",
+        "math": "x z^{3} + y^{2} \\sin{\\left(x \\right)} - 4 y",
+        "text": ""
+      },
+      {
+        "title": "Check the potential by differentiating it",
+        "math": "\\left[\\begin{matrix}y^{2} \\cos{\\left(x \\right)} + z^{3}\\\\2 y \\sin{\\left(x \\right)} - 4\\\\3 x z^{2}\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 1205.89,
+        "height": 99.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 965,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Check \nwhether \nthe \nvector \nfield F\nതതത=\ne௬ାଶ௭ı̂ + xe௬ାଶ௭ȷ̂ + 2xe௬ାଶ௭k෠ \nis \nconservative or not. If yes, find the scalar \npotential function Φ(x, y, z) such that F̅ = \ngrad Φ.",
+    "answer": "x e^{y + 2 z} + C",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "5 x e^{y + 2 z}",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Integrate P with respect to x",
+        "math": "\\phi=\\int P\\,dx+g(y,z)",
+        "text": ""
+      },
+      {
+        "title": "Match phi_y = Q and phi_z = R",
+        "math": "x e^{y + 2 z}",
+        "text": ""
+      },
+      {
+        "title": "Check the potential by differentiating it",
+        "math": "\\left[\\begin{matrix}e^{y + 2 z}\\\\x e^{y + 2 z}\\\\2 x e^{y + 2 z}\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 1309.09,
+        "height": 153.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  },
+  {
+    "id": 966,
+    "unit": 7,
+    "page": 43,
+    "sourceText": "Show that F= (xଶ−yz)ı̂ + (yଶ−zx)ȷ̂ +\n(zଶ−xy)k෠ is conservative. Find its scalar \npotential ∅.",
+    "answer": "\\frac{x^{3}}{3} - x y z + \\frac{y^{3}}{3} + \\frac{z^{3}}{3} + C",
+    "steps": [
+      {
+        "title": "Use the definitions",
+        "math": "\\nabla\\cdot F=P_x+Q_y+R_z;\\quad\\nabla\\times F=(R_y-Q_z,\\ P_z-R_x,\\ Q_x-P_y)",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: divergence",
+        "math": "2 x + 2 y + 2 z",
+        "text": ""
+      },
+      {
+        "title": "Differentiate the components: curl",
+        "math": "\\left[\\begin{matrix}0\\\\0\\\\0\\end{matrix}\\right]",
+        "text": ""
+      },
+      {
+        "title": "Integrate P with respect to x",
+        "math": "\\phi=\\int P\\,dx+g(y,z)",
+        "text": ""
+      },
+      {
+        "title": "Match phi_y = Q and phi_z = R",
+        "math": "\\frac{x^{3}}{3} - x y z + \\frac{y^{3}}{3} + \\frac{z^{3}}{3}",
+        "text": ""
+      },
+      {
+        "title": "Check the potential by differentiating it",
+        "math": "\\left[\\begin{matrix}x^{2} - y z\\\\- x z + y^{2}\\\\- x y + z^{2}\\end{matrix}\\right]",
+        "text": ""
+      }
+    ],
+    "status": "solved",
+    "sourceCrops": [
+      {
+        "image": "pages/page-43.webp",
+        "y": 1466.29,
+        "height": 99.2,
+        "width": 458,
+        "pageHeight": 2382
+      }
+    ]
+  }
+]
