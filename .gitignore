@@ -1,3 +1,6 @@
 probability/tools/solutions.tsv
 .sites-runtime/
 .sites-checkout/
+
+__pycache__/
+*.pyc

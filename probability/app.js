@@ -21,7 +21,7 @@
  }
  function show(id,focus=false){
   const q=byId.get(id);if(!q)return;
-  current=id;if(window.StudyTools&&$('prob-study-tools'))window.StudyTools.mount($('prob-study-tools'),'ps:'+id); const index=ids.indexOf(id);
+  current=id;if(window.SolutionGuidance)window.SolutionGuidance.render(q);if(window.StudyTools&&$('prob-study-tools'))window.StudyTools.mount($('prob-study-tools'),'ps:'+id); const index=ids.indexOf(id);
   $('question-title').textContent='Question '+id;
   $('question-text').textContent=q.question;
   $('position').textContent='Question '+(index+1)+' of '+ids.length;

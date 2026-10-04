@@ -27,7 +27,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": null
   },
   {
     "id": 968,
@@ -330,7 +338,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 969,
@@ -633,7 +651,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 970,
@@ -936,7 +964,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 971,
@@ -1234,7 +1272,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 972,
@@ -2025,7 +2073,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 973,
@@ -2328,7 +2386,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 974,
@@ -2896,7 +2964,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 975,
@@ -3931,7 +4009,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 976,
@@ -4229,7 +4317,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 977,
@@ -4532,7 +4630,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 978,
@@ -4830,7 +4938,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 979,
@@ -5865,7 +5983,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 980,
@@ -6163,7 +6291,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 981,
@@ -6461,7 +6599,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 982,
@@ -6764,7 +6912,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 983,
@@ -7062,7 +7220,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 984,
@@ -7360,7 +7528,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 985,
@@ -7664,7 +7842,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 986,
@@ -7962,7 +8150,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 987,
@@ -8430,7 +8628,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 988,
@@ -8735,7 +8943,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 989,
@@ -9038,7 +9256,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 990,
@@ -9341,7 +9569,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 991,
@@ -9640,7 +9878,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 992,
@@ -9943,7 +10191,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 993,
@@ -10246,7 +10504,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 994,
@@ -10544,7 +10812,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 995,
@@ -11375,7 +11653,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 996,
@@ -11678,7 +11966,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 997,
@@ -11981,7 +12279,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 998,
@@ -12284,7 +12592,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 999,
@@ -12582,7 +12900,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1000,
@@ -12886,7 +13214,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1001,
@@ -13717,7 +14055,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1002,
@@ -14028,7 +14376,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1003,
@@ -14331,7 +14689,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1004,
@@ -14635,7 +15003,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1005,
@@ -14939,7 +15317,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Line integrals",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-2-line-integrals"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1006,
@@ -15242,7 +15630,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1007,
@@ -15545,7 +15943,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1008,
@@ -15868,7 +16276,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1009,
@@ -16709,7 +17127,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1010,
@@ -17012,7 +17440,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1011,
@@ -17559,7 +17997,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1012,
@@ -18594,7 +19042,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1013,
@@ -19694,7 +20152,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1014,
@@ -20794,7 +21262,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1015,
@@ -21341,7 +21819,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1016,
@@ -22132,7 +22620,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1017,
@@ -22973,7 +23471,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1018,
@@ -24073,7 +24581,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1019,
@@ -24396,7 +24914,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1020,
@@ -25187,7 +25715,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1021,
@@ -25769,7 +26307,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1022,
@@ -26351,7 +26899,17 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   },
   {
     "id": 1023,
@@ -26819,6 +27377,16 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Green’s theorem",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-4-greens-theorem"
+      }
+    ],
+    "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
+    "verification": {
+      "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
+    }
   }
 ]

@@ -26,7 +26,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 870,
@@ -50,7 +58,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 871,
@@ -79,7 +95,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 872,
@@ -109,7 +133,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 873,
@@ -143,7 +175,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 874,
@@ -172,7 +212,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 875,
@@ -202,7 +250,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 876,
@@ -243,7 +299,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 877,
@@ -282,7 +346,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 878,
@@ -321,7 +393,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 879,
@@ -360,7 +440,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 880,
@@ -399,7 +487,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 881,
@@ -438,7 +534,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 882,
@@ -477,7 +581,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 883,
@@ -512,7 +624,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 884,
@@ -546,7 +666,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 885,
@@ -585,7 +713,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 886,
@@ -624,7 +760,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 887,
@@ -663,7 +807,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 888,
@@ -703,7 +855,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 889,
@@ -738,7 +898,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 890,
@@ -772,7 +940,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 891,
@@ -811,7 +987,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 892,
@@ -835,7 +1019,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 893,
@@ -869,7 +1061,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 894,
@@ -903,7 +1103,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 895,
@@ -932,7 +1140,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 896,
@@ -971,7 +1187,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 897,
@@ -1001,7 +1225,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 898,
@@ -1040,7 +1272,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 899,
@@ -1069,7 +1309,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 900,
@@ -1108,7 +1356,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 901,
@@ -1152,7 +1408,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 902,
@@ -1191,7 +1455,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 903,
@@ -1230,7 +1502,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 904,
@@ -1274,7 +1554,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 905,
@@ -1303,7 +1591,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 906,
@@ -1342,7 +1638,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 907,
@@ -1381,7 +1685,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 908,
@@ -1420,7 +1732,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 909,
@@ -1459,7 +1779,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 910,
@@ -1498,7 +1826,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 911,
@@ -1537,7 +1873,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 912,
@@ -1576,7 +1920,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 913,
@@ -1615,7 +1967,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 914,
@@ -1654,7 +2014,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 915,
@@ -1705,7 +2073,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 916,
@@ -1744,7 +2120,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 917,
@@ -1793,7 +2177,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 918,
@@ -1832,7 +2224,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 919,
@@ -1871,7 +2271,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 920,
@@ -1905,7 +2313,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 921,
@@ -1939,7 +2355,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 922,
@@ -1973,7 +2397,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 923,
@@ -1997,7 +2429,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 924,
@@ -2021,7 +2461,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 925,
@@ -2045,7 +2493,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 926,
@@ -2080,7 +2536,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 927,
@@ -2109,7 +2573,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 928,
@@ -2138,7 +2610,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 929,
@@ -2167,7 +2647,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 930,
@@ -2211,7 +2699,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 931,
@@ -2235,7 +2731,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 932,
@@ -2279,7 +2783,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 933,
@@ -2308,7 +2820,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 934,
@@ -2353,7 +2873,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 935,
@@ -2383,7 +2911,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 936,
@@ -2423,7 +2959,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 937,
@@ -2452,7 +2996,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 938,
@@ -2481,7 +3033,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 939,
@@ -2515,7 +3075,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 940,
@@ -2550,7 +3118,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 941,
@@ -2584,7 +3160,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Vector fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-1-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 942,
@@ -2614,7 +3198,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 943,
@@ -2644,7 +3236,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 944,
@@ -2674,7 +3274,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 945,
@@ -2704,7 +3312,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 946,
@@ -2734,7 +3350,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 947,
@@ -2763,7 +3387,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 948,
@@ -2793,7 +3425,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 949,
@@ -2822,7 +3462,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 950,
@@ -2857,7 +3505,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 951,
@@ -2901,7 +3557,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 952,
@@ -2935,7 +3599,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 953,
@@ -2985,7 +3657,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 954,
@@ -3034,7 +3714,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 955,
@@ -3075,7 +3763,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 956,
@@ -3119,7 +3815,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 957,
@@ -3153,7 +3857,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 958,
@@ -3188,7 +3900,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 959,
@@ -3237,7 +3957,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 960,
@@ -3286,7 +4014,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 961,
@@ -3335,7 +4071,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 962,
@@ -3384,7 +4128,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 963,
@@ -3433,7 +4185,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 964,
@@ -3482,7 +4242,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 965,
@@ -3531,7 +4299,15 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   },
   {
     "id": 966,
@@ -3580,6 +4356,14 @@
         "width": 1624,
         "pageHeight": 2382
       }
-    ]
+    ],
+    "references": [
+      {
+        "title": "OpenStax · Conservative fields",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields"
+      }
+    ],
+    "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
+    "verification": null
   }
 ]

@@ -30,8 +30,16 @@ def corrdata(i,x,y,question=None,reg=False,rank=False,notes=None):
  if reg and not rank:
   steps += [('Find both regression lines','Use the common point (x̄,ȳ). The slopes are bᵧₓ=Σdxdy/Σdx² and bₓᵧ=Σdxdy/Σdy².',line(data,data[7],data[6],'y')+'; '+line(data,data[7],data[6],'x')),('Check the correlation','For regression coefficients, r has their common sign and r²=bᵧₓbₓᵧ.',f'bᵧₓ={f(data[6])}; bₓᵧ={f(data[7])}; r={f(rho)}')]
  a=f(rho)
- if reg and not rank:a+='; bᵧₓ='+f(data[6])+'; bₓᵧ='+f(data[7])
+ if reg and not rank:a+='; '+line(data,data[7],data[6],'y')+'; '+line(data,data[7],data[6],'x')
  add(i,a,*steps,note=notes,question=question)
+ vx=np.asarray(rx if rank else x,float);vy=np.asarray(ry if rank else y,float)
+ dx=vx-vx.mean();dy=vy-vy.mean()
+ if rank:
+  differences=vx-vy
+  Q[i]['workingTable']={'headers':['Pair','x','y','Rₓ','Rᵧ','d','d²'],'rows':[[str(j+1),f(x[j]),f(y[j]),f(vx[j]),f(vy[j]),f(differences[j]),f(differences[j]**2)] for j in range(n)]+[['Total','—','—',f(vx.sum()),f(vy.sum()),f(differences.sum()),f(differences@differences)]]}
+  Q[i]['steps'].insert(1,{'title':'Check the rank totals and ties','text':'Each rank column totals n(n+1)/2. Use the no-ties shortcut only when neither column has repeated values.','formula':f'ΣRₓ=ΣRᵧ={n*(n+1)/2:g}; Σd²={f(differences@differences)}; Sxx={f(data[2])}; Syy={f(data[3])}; Sxy={f(data[4])}'})
+ else:
+  Q[i]['workingTable']={'headers':['Pair','x','y','dx','dy','dx²','dy²','dxdy'],'rows':[[str(j+1),f(x[j]),f(y[j]),f(dx[j]),f(dy[j]),f(dx[j]**2),f(dy[j]**2),f(dx[j]*dy[j])] for j in range(n)]+[['Total',f(vx.sum()),f(vy.sum()),'0','0',f(data[2]),f(data[3]),f(data[4])]]}
  return data
 # Short conceptual questions, derived from the definitions.
 add(281,'σᵧ = 18.75',('Use r = covariance/(σₓσᵧ)','Rearrange to isolate σᵧ.','σᵧ = 36/(0.48×4) = 18.75'))
@@ -40,7 +48,7 @@ add(283,'[−1, 1]',('Use the correlation bound','Correlation is a normalized co
 add(284,'1.2',('Check the correlation bound','A valid correlation cannot exceed 1 in magnitude.','|1.2| > 1; impossible'))
 corrdata(285,[6,5,4,3,2,1],[1,2,3,4,5,6],rank=True)
 corrdata(286,[1,2,3,4,5],[5,4,3,2,1],rank=True)
-add(287,'0.4',('Apply Spearman’s formula','n=6 and Σd²=21.','ρ = 1 − 6Σd²/[n(n²−1)] = 1 − 126/(6×35) = 0.4'))
+add(287,'0.4 (formal textbook calculation)',('Apply the supplied shortcut','Using the stated n=6 and Σd²=21 gives the printed MCQ value.','ρ = 1 − 6Σd²/[n(n²−1)] = 1 − 126/(6×35) = 0.4'),note='Source inconsistency: for two untied integer rank permutations, Σd=0 and Σd² is even. The odd sum 21 is impossible. If ties are intended, actual average-rank variances are needed; the no-ties shortcut is not justified. The value 0.4 is the expected formal MCQ calculation, not a verified dataset coefficient.')
 add(288,'σᵧ = 4',('Identify the regression coefficients','The first line, y=0.8x−6.6, is y on x, so bᵧₓ=0.8. Rewrite the second as x=0.45y+5.35, so bₓᵧ=0.45.','r²=bᵧₓbₓᵧ=0.36 ⇒ r=0.6'),('Relate r and the standard deviations','The slopes are positive, hence r is positive. Also r=bᵧₓσₓ/σᵧ.',f'σᵧ=bᵧₓσₓ/r=0.8×3/0.6 = 4'),note='The two regression lines share the same positive intersection; the x-on-y slope comes from solving the second line for x.')
 add(289,'(−3, −2)',('Find the intersection','A pair of regression lines intersects at the sample means. Solve y=x+1 and y=2x+4.','x+1=2x+4 ⇒ x=−3; y=−2'))
 for i,a,b in [(290,-.1,-.9),(291,-.4,-.9),(292,-.8,-.2)]:add(i,f'r = {f(-math.sqrt(a*b))}',('Use the regression coefficient identity','r²=bₓᵧbᵧₓ; r has the coefficients’ common sign.',f'r = −√({f(a)}×{f(b)}) = {f(-math.sqrt(a*b))}'))
@@ -51,7 +59,7 @@ add(296,'x̄ = 3; ȳ = 0.5',('Solve the regression lines','Their intersection is
 add(297,'x on y: 20x−9y−107=0',('Read the slope for each direction','The x-on-y line, solved for x, has slope 9/20=0.45. The y-on-x line, solved for y, has slope 4/5=0.8.','bₓᵧ=9/20; bᵧₓ=4/5; product = 0.36 ≤ 1'))
 corrdata(298,[6,2,10,4,8],[9,11,5,8,7],question='From the following paired data, calculate the regression coefficient bᵧₓ.',reg=False)
 Q[298]['answer']='bᵧₓ = '+f(corr([6,2,10,4,8],[9,11,5,8,7])[6]);Q[298]['steps']=[s for s in Q[298]['steps'] if s['title']!='Calculate Pearson correlation']
-add(299,'−0.1 (none of the listed choices)',('Find Σd²','The four rank differences are 2.5, 0.5, −1.5, −1.5.','Σd² = 2.5²+0.5²+1.5²+1.5²=11'),('Apply Spearman’s formula','','ρ=1−6×11/[4(4²−1)]=−0.1'))
+add(299,'ρ = −1/√3 ≈ −0.577350; none of these',('Recognize tied ranks','Fractional differences imply average ranks. The shortcut 1−6Σd²/[n(n²−1)] assumes no ties and is not valid here.','Σd²=11'),('Recover an admissible pair of average-rank lists','For four observations, these ranks give exactly the stated differences. Exhaustive enumeration of all average-rank patterns gives this pair or the equivalent swapped tie pattern.','Rₓ=(4,2,2,2), Rᵧ=(1.5,1.5,3.5,3.5); Rₓ−Rᵧ=(2.5,0.5,−1.5,−1.5)'),('Use Pearson correlation of average ranks','Both mean ranks are 2.5.','Sxx=3, Syy=4, Sxy=−2; ρ=−2/√(3×4)=−1/√3'),('Select the MCQ choice','The choices are 0.23, 0.1, −0.1, and none of these.','Correct choice: none of these'),note='The old −0.1 result came from applying a no-ties shortcut to tied ranks. Under the standard average-rank convention, the consistent rank patterns yield −1/√3.')
 corrdata(300,[6,2,10,4,8],[9,11,5,8,7],reg=True)
 corrdata(301,[1.53,1.78,2.60,2.95,3.42],[33.5,36.3,40.0,45.8,53.5],question='Find the line of regression of y on x.',reg=True)
 corrdata(302,list(range(1,10)),[9,8,10,12,11,13,14,16,15],reg=True)
@@ -60,21 +68,21 @@ corrdata(304,[54,57,55,57,56,52,59],[36,35,32,34,36,38,35])
 add(305,'Means (4,7); r=−0.5; σₓ=2/3',('Find the means','Regression lines intersect at the means.', 'Solve 3x+2y=26 and 6x+y=31: x̄=4, ȳ=7'),('Identify the two slopes','Write one line as y on x and the other as x on y.','y=13−1.5x ⇒ bᵧₓ=−1.5; x=31/6−y/6 ⇒ bₓᵧ=−1/6'),('Calculate r and σₓ','','r=−√(1/4)=−0.5; σₓ=rσᵧ/bᵧₓ=(−0.5×2)/(−1.5)=2/3'))
 corrdata(306,[7,8,9,11,10,13,12],[1,2,3,4,5,6,7])
 add(307,'r ≈ 0.19713',('Use the population-SD definition','The reported sum is Σ(x−x̄)(y−ȳ)=66 over n=10 pairs.', 'r = Σdxdy/[nσₓσᵧ] = 66/[10×5.4×6.2] ≈ 0.19713'))
-add(308,'ρ ≈ 0.25758',('Undo the error in Σd²','Changing one difference from 3 to 7 adds 7²−3²=40.','For n=10, old ρ=0.5 ⇒ old Σd²=10×99×(1−0.5)/6=82.5'),('Recalculate the coefficient','','New Σd²=122.5; ρ=1−6×122.5/(10×99)≈0.25758'),note='The printed “difference” need not be an integer-compatible dataset after this correction; apply the standard textbook formula to the supplied coefficient.')
+add(308,'ρ ≈ 0.25758',('Undo the error in Σd²','Changing one difference from 3 to 7 adds 7²−3²=40.','For n=10, old ρ=0.5 ⇒ old Σd²=10×99×(1−0.5)/6=82.5'),('Recalculate the coefficient','','New Σd²=122.5; ρ=1−6×122.5/(10×99)≈0.25758'),note='The calculation assumes the textbook no-ties shortcut and treats the reported 0.5 as exact. But it implies Σd²=82.5, impossible for untied integer ranks. If 0.5 was rounded or ties existed, the exact corrected coefficient cannot be recovered without the original ranks. The displayed value is conditional arithmetic.')
 corrdata(309,[100,98,78,85,110,93,80],[85,90,70,72,95,81,74])
 # Summary statistics about shifted origins.
 add(310,'r ≈ 0.9150',('Recover centred sums','The listed sums are measured from 10 and 15. Here x̄=14 and ȳ=15.', 'Σdx²=180−10(14−10)²=20; Σdy²=215'),('Recover the cross-product','','Σdxdy=60−10(14−10)(15−15)=60'),('Calculate correlation','','r=60/√(20×215)≈0.9150'))
 corrdata(311,[8,3,9,2,7,10,4,6,1,5],[9,5,10,1,8,7,3,4,2,6],rank=True)
 corrdata(312,[14.2,16.4,11.9,15.2,18.5,22.1,19.4,25.1,23.4,18.1,22.6,17.2],[215,325,185,332,406,522,412,614,544,421,445,408],question='Find the correlation between temperature (°C) and ice-cream sales ($).')
 corrdata(313,[17,19,21,26,20,28,26,27],[23,27,25,26,27,25,30,33])
-corrdata(314,[1,2,3,4,5],[160,180,140,180,200],question='Find the regression coefficient of y on x.',reg=False);Q[314]['answer']='bᵧₓ = '+f(corr([1,2,3,4,5],[160,180,140,180,200])[6]);Q[314]['steps']=Q[314]['steps'][:2]
-corrdata(315,[10,11,12,13,14,15,16,1,2,3,4,5,6,7,8,9],[10,11,13,14,12,16,15,9,3,4,5,7,2,6,8,9],rank=True,notes='The PDF table digits for this 16-student question are wrapped across narrow cells. Verify the transcribed second row against the original before relying on this numerical coefficient.')
+corrdata(314,[1,2,3,4,5],[160,180,140,180,200],question='Find the regression coefficient of y on x.',reg=False);Q[314]['answer']='bᵧₓ = '+f(corr([1,2,3,4,5],[160,180,140,180,200])[6]);Q[314]['steps']=Q[314]['steps'][:2]+[{'title':'Calculate the requested slope','text':'Divide the cross-product sum by the x sum of squares.','formula':'bᵧₓ=Σdxdy/Σdx²=80/10=8'}]
+corrdata(315,list(range(1,17)),[1,10,3,4,5,7,2,6,8,11,15,9,14,12,16,13],rank=True,notes='Both rows were re-read from the original page 26. MOS ranks are a permutation of 1–16, without ties; Σd²=136.')
 corrdata(316,[58,64,51,74,88,91],[12,18,15,41,46,52])
 corrdata(317,[40,46,54,60,70,80,82,85,85,90,95],[45,45,50,43,40,75,55,72,65,42,70],rank=True,notes='The source table contains repeated scores, so average ranks are used. Read wrapped two-digit scores carefully when matching your question-paper copy.')
 # cell counts by hour from the photographed source table
 corrdata(318,list(range(10)),[43,46,82,98,123,167,199,213,245,272],reg=True,question='Fit both regression lines for cell count y and hour x, then estimate y after 15 hours.')
 data=corr(list(range(10)),[43,46,82,98,123,167,199,213,245,272]);Q[318]['steps'].append({'title':'Estimate after 15 hours','text':'Substitute x=15 into the y-on-x regression line.','formula':f'ŷ = {f(data[1])} + {f(data[6])}(15−{f(data[0])}) = {f(data[1]+data[6]*(15-data[0]))}'})
-corrdata(319,[106,86,100,101,99,103,97,113,112,110],[7,0,27,50,8,29,20,12,6,17],rank=True,notes='The scan breaks the IQ digits between lines; this reconstruction combines the digits into whole IQ scores. Check the values against a clear copy if any differ.')
+corrdata(319,[106,86,100,101,99,103,97,113,112,110],[7,0,27,50,28,29,20,12,6,17],rank=True,notes='The scan breaks the IQ digits between lines; this reconstruction combines the digits into whole IQ scores. Check the values against a clear copy if any differ.')
 corrdata(320,[10,12,10,15,13,12,10],[14,13,12,10,13,12,11],rank=True)
 corrdata(321,[35,40,25,55,85,90,65,55,45,50],[100,100,110,140,150,130,100,100,140,110],rank=True,notes='The PDF breaks each two- or three-digit score across table rows. The values are reconstructed by joining those printed digits; verify against your copy.')
 corrdata(322,[1,6,2,7,3,8,4,9,5],[5,2,6,8,7,1,3,9,4],rank=True)
@@ -85,7 +93,7 @@ data=corr([57,58,59,59,60,61,62,64],[67,68,65,68,72,72,69,71]);corrdata(326,[57,
 corrdata(327,[60,34,40,50,45,41,22,43],[75,32,34,40,45,33,12,30],reg=True)
 corrdata(328,[25,28,35,32,31,36,29,38,34,32],[43,46,49,41,36,32,31,30,33,39],reg=True)
 corrdata(329,[190,240,250,300,310,335,300],[5,10,15,20,20,30,30],reg=True)
-corrdata(330,[42,36,55,58,35,65,60,50,48,51],[98,93,110,85,108,102,82,102,118,99],reg=True,notes='The blood-pressure digits are split across narrow PDF table cells; transcribe them from a clear copy if any joined value differs.')
+corrdata(330,[42,36,55,58,35,65,60,50,48,51],[98,93,110,85,105,108,82,102,118,99],reg=True,notes='Re-read from the original page 28: E has BP 105 and F has BP 108. The paired columns remain in A–J order.')
 add(331,'Production at 70% utilization ≈ 24.269 lakh units',('Use the regression of production on utilization','x=utilization (mean 84.8, SD 8.5); y=production (mean 35.6, SD 10.5).','bᵧₓ = rσᵧ/σₓ = 0.62×10.5/8.5 ≈ 0.76588'),('Predict at x=70','','ŷ=35.6+0.76588(70−84.8)≈24.269'))
 add(332,'Yield at 29 cm ≈ 518.0 kg; rainfall at 600 kg ≈ 32.615 cm',('Find the regression slopes','x=rainfall, y=yield.','bᵧₓ=0.52×36.8/4.6=4.16; bₓᵧ=0.52×4.6/36.8=0.065'),('Estimate yield from 29 cm','','ŷ=508.4+4.16(29−26.7)=517.968 kg'),('Estimate rainfall for 600 kg','','x̂=26.7+0.065(600−508.4)=32.654 cm'))
 Q[332]['answer']='Yield ≈ 517.968 kg; rainfall ≈ 32.654 cm'
@@ -93,8 +101,8 @@ add(333,'r = 2/3',('Correct the totals','Replace wrong pairs (6,14),(8,6) with (
 corrdata(334,[15,20,28,12,40,60,20,80],[40,30,50,30,20,10,30,60],rank=True)
 add(335,'ρ ≈ 0.89091',('Correct Σd²','For 10 students the original ρ=.6 gives Σd²=66. Correcting d=7 to d=1 reduces this sum by 48.','Σd²(new)=66−(49−1)=18'),('Recompute Spearman correlation','','ρ=1−6×18/[10(10²−1)]≈0.89091'))
 corrdata(336,[80,56,50,48,50,62,60],[90,75,75,65,65,50,65],rank=True)
-add(337,'x̄ = 13; ȳ = 17; σᵧ = 4; r = 0.6',('Find the common intersection','From the lines y=0.8x+6.6 and x=0.45y+5.35, solve their intersection.','x̄=13; ȳ=17'),('Identify regression slopes','','bᵧₓ=0.8; bₓᵧ=0.45; r=+√(0.36)=0.6'),('Recover σᵧ','Given σₓ=3 and r=bᵧₓσₓ/σᵧ.','σᵧ=0.8×3/0.6=4'),note='Check: substitute (−5,2.6) in both lines; it satisfies the printed pair.')
-corrdata(338,[105,104,102,101,100,99,98,96,93,92],[101,103,100,98,95,96,104,102,97,94])
+add(337,'x̄ = 13; ȳ = 17; σᵧ = 4; r = 0.6',('Find the common intersection','From the lines y=0.8x+6.6 and x=0.45y+5.35, solve their intersection.','x̄=13; ȳ=17'),('Identify regression slopes','','bᵧₓ=0.8; bₓᵧ=0.45; r=+√(0.36)=0.6'),('Recover σᵧ','Given σₓ=3 and r=bᵧₓσₓ/σᵧ.','σᵧ=0.8×3/0.6=4'),note='Check the means directly: 8×13−10×17+66=0 and 40×13−18×17=214. Both printed equations are satisfied.')
+corrdata(338,[105,104,102,101,100,99,98,96,93,92],[101,103,100,98,95,96,104,92,97,94])
 corrdata(339,[3,5,8,4,7,10,2,1,6,9],[6,4,9,8,1,2,3,10,5,7],rank=True)
 corrdata(340,[12,9,8,10,11,13,7],[14,8,6,9,11,12,3])
 corrdata(341,[65,66,67,67,68,69,70,72],[67,68,65,68,72,72,69,71])
@@ -102,6 +110,7 @@ rankA=[1,6,5,10,3,2,4,9,7,8];rankB=[3,5,8,4,7,10,2,1,6,9];rankC=[6,4,9,8,1,2,3,1
 vals={f'{a} & {b}':corr(rankA if a=='A' else rankB if a=='B' else rankC,rankA if b=='A' else rankB if b=='B' else rankC)[5] for a,b in [('A','B'),('A','C'),('B','C')]};best=max(vals,key=vals.get);setdata(342,['A–B','A–C','B–C'],[['ρ',*[f(v) for v in vals.values()]]],headers=['Judge pair','A–B','A–C','B–C']);add(342,best,('Rank each judge pair','Compute Pearson correlation of the two rank lists. A higher positive coefficient means closer agreement.',', '.join(k+'='+f(v) for k,v in vals.items())),('Choose the nearest agreement','','Largest correlation: '+best))
 corrdata(343,[10,12,18,18,15,40],[12,18,25,25,50,25],rank=True)
 add(344,'x on y: 20x−9y−107=0; y on x: 4x−5y+30=0; r=0.6; σᵧ=4',('Identify each regression direction','Solve each equation for its dependent variable.','y=(4/5)x+6 ⇒ bᵧₓ=0.8; x=(9/20)y+107/20 ⇒ bₓᵧ=0.45'),('Find r and σᵧ','','r=+√(0.8×0.45)=0.6; σᵧ=bᵧₓσₓ/r=0.8×3/0.6=4'))
+for i in [318,326]:Q[i]['answer']+='; '+Q[i]['steps'][-1]['formula']
 assert set(Q)==set(range(281,345)),set(range(281,345))-set(Q)
 for i,q in Q.items():
  assert 'answer' in q and len(q['steps'])>=1,(i,q)

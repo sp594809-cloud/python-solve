@@ -25,7 +25,14 @@
         }
       ],
       "answer": "6 (empirical estimate)",
-      "note": "Mean and mode alone do not uniquely determine the exact median. The question expects the empirical relation."
+      "note": "Mean and mode alone do not uniquely determine the exact median. The question expects the empirical relation.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 206,
@@ -45,7 +52,14 @@
           "formula": "N = 8; median = (6 + 6) / 2 = 6"
         }
       ],
-      "answer": "6"
+      "answer": "6",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 207,
@@ -65,7 +79,14 @@
           "formula": "54 = 51 + x ⇒ x = 3"
         }
       ],
-      "answer": "3"
+      "answer": "3",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 208,
@@ -85,7 +106,14 @@
           "formula": "18 = (16 + x)/2 ⇒ x = 36 − 16 = 20"
         }
       ],
-      "answer": "20"
+      "answer": "20",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 209,
@@ -105,7 +133,14 @@
           "formula": "N = 6; median = (3 + 6) / 2 = 4.5"
         }
       ],
-      "answer": "4.5"
+      "answer": "4.5",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 210,
@@ -125,7 +160,14 @@
           "formula": "N = 9; median = 4"
         }
       ],
-      "answer": "4"
+      "answer": "4",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 211,
@@ -146,7 +188,14 @@
         }
       ],
       "answer": "48 (empirical estimate)",
-      "note": "This uses the empirical mean–median–mode relation, not an exact identity."
+      "note": "This uses the empirical mean–median–mode relation, not an exact identity.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 212,
@@ -166,7 +215,14 @@
           "formula": "x + 6 = 15 ⇒ x = 9"
         }
       ],
-      "answer": "9"
+      "answer": "9",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 213,
@@ -232,7 +288,14 @@
         ]
       },
       "answer": "Median = 343/6 (≈ 57.1667)",
-      "note": "The calculation is 57.1666…, which rounds to 57.17. The printed key 57.16 appears to truncate."
+      "note": "The calculation is 57.1666…, which rounds to 57.17. The printed key 57.16 appears to truncate.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 214,
@@ -252,7 +315,14 @@
           "formula": "18 = (16 + x)/2 ⇒ x = 20"
         }
       ],
-      "answer": "20"
+      "answer": "20",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 215,
@@ -272,7 +342,14 @@
           "formula": "21 = p + 3 ⇒ p = 18"
         }
       ],
-      "answer": "18"
+      "answer": "18",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 216,
@@ -292,7 +369,14 @@
           "formula": "N = 11; median = 58"
         }
       ],
-      "answer": "58"
+      "answer": "58",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 217,
@@ -312,7 +396,14 @@
           "formula": "[(x+3) + (x+4)]/2 = x + 3.5"
         }
       ],
-      "answer": "x + 3.5"
+      "answer": "x + 3.5",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 218,
@@ -332,7 +423,14 @@
           "formula": "New median = 20.5"
         }
       ],
-      "answer": "20.5 (unchanged)"
+      "answer": "20.5 (unchanged)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 219,
@@ -379,7 +477,14 @@
           ]
         ]
       },
-      "answer": "x = 9; y = 16"
+      "answer": "x = 9; y = 16",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 220,
@@ -448,7 +553,14 @@
           ]
         ]
       },
-      "answer": "Mode = 65"
+      "answer": "Mode = 65",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 221,
@@ -493,7 +605,14 @@
           ]
         ]
       },
-      "answer": "16.540859"
+      "answer": "16.540859",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 222,
@@ -542,7 +661,14 @@
           ]
         ]
       },
-      "answer": "f = 10"
+      "answer": "f = 10",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 223,
@@ -562,7 +688,14 @@
           "formula": "Mode = 5"
         }
       ],
-      "answer": "5"
+      "answer": "5",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 224,
@@ -582,7 +715,14 @@
           "formula": "(25 − 26)/5 = −0.2"
         }
       ],
-      "answer": "−0.2"
+      "answer": "−0.2",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 225,
@@ -603,7 +743,14 @@
         }
       ],
       "answer": "2",
-      "note": "The exact Pearson kurtosis is 2. Excess kurtosis is 2−3=−1."
+      "note": "The exact Pearson kurtosis is 2. Excess kurtosis is 2−3=−1.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 226,
@@ -623,7 +770,14 @@
           "formula": "Each observation increases by 10, so the new SD remains k."
         }
       ],
-      "answer": "k"
+      "answer": "k",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 227,
@@ -643,7 +797,14 @@
           "formula": "New mean = 2×4 = 8; new variance = 4×2 = 8"
         }
       ],
-      "answer": "Mean = 8; variance = 8"
+      "answer": "Mean = 8; variance = 8",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 228,
@@ -689,7 +850,14 @@
         ]
       },
       "answer": "25.799225",
-      "note": "The calculated value is 25.7992…, which rounds to 25.80. The printed key 25.79 truncates it."
+      "note": "The calculated value is 25.7992…, which rounds to 25.80. The printed key 25.79 truncates it.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 229,
@@ -734,7 +902,14 @@
           ]
         ]
       },
-      "answer": "2.2803509"
+      "answer": "2.2803509",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 230,
@@ -754,7 +929,14 @@
           "formula": "μ₃ = 10 − 3×4×1 + 2×1³ = 0"
         }
       ],
-      "answer": "0"
+      "answer": "0",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 231,
@@ -775,7 +957,14 @@
         }
       ],
       "answer": "2.25",
-      "note": "The numerical result follows the supplied values, but 2.25 is unusually large for the description “moderately skewed”."
+      "note": "The numerical result follows the supplied values, but 2.25 is unusually large for the description “moderately skewed”.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 232,
@@ -822,7 +1011,14 @@
             "48.83"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 233,
@@ -842,7 +1038,14 @@
           "formula": "6.53 = 7.3−1.1p ⇒ p = 0.77/1.1 = 0.7"
         }
       ],
-      "answer": "Males: 70%; females: 30%"
+      "answer": "Males: 70%; females: 30%",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 234,
@@ -884,7 +1087,14 @@
           ]
         ]
       },
-      "answer": "649/12 (≈ 54.0833)"
+      "answer": "649/12 (≈ 54.0833)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 235,
@@ -924,7 +1134,14 @@
           ]
         ]
       },
-      "answer": "308"
+      "answer": "308",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 236,
@@ -984,7 +1201,14 @@
           ]
         ]
       },
-      "answer": "Mean = 141/5 (≈ 28.2)"
+      "answer": "Mean = 141/5 (≈ 28.2)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 237,
@@ -1028,7 +1252,14 @@
           ]
         ]
       },
-      "answer": "6808/35 (≈ 194.514)"
+      "answer": "6808/35 (≈ 194.514)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 238,
@@ -1088,7 +1319,14 @@
           ]
         ]
       },
-      "answer": "Mean = 1956/77 (≈ 25.4026)"
+      "answer": "Mean = 1956/77 (≈ 25.4026)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 239,
@@ -1175,7 +1413,14 @@
             "53"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 240,
@@ -1262,7 +1507,14 @@
             "60"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 241,
@@ -1282,7 +1534,14 @@
           "formula": "N = 10; median = (8 + 8) / 2 = 8"
         }
       ],
-      "answer": "8"
+      "answer": "8",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 242,
@@ -1342,7 +1601,14 @@
           ]
         ]
       },
-      "answer": "5"
+      "answer": "5",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 243,
@@ -1403,7 +1669,14 @@
           ]
         ]
       },
-      "answer": "Median = 480/13 (≈ 36.9231)"
+      "answer": "Median = 480/13 (≈ 36.9231)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 244,
@@ -1468,7 +1741,14 @@
           ]
         ]
       },
-      "answer": "Median = 740/27 (≈ 27.4074)"
+      "answer": "Median = 740/27 (≈ 27.4074)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 245,
@@ -1513,7 +1793,14 @@
           ]
         ]
       },
-      "answer": "x = 25"
+      "answer": "x = 25",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 246,
@@ -1586,7 +1873,14 @@
           ]
         ]
       },
-      "answer": "Median = 59/2 (≈ 29.5)"
+      "answer": "Median = 59/2 (≈ 29.5)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 247,
@@ -1631,7 +1925,14 @@
           ]
         ]
       },
-      "answer": "40–50: 145; 60–70: 250"
+      "answer": "40–50: 145; 60–70: 250",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 248,
@@ -1681,7 +1982,14 @@
         ]
       },
       "answer": "X = 33.5; Y = 45.5 (inconsistent as counts)",
-      "note": "Literal grouped-data interpolation gives fractional frequencies, which cannot be counts. The printed data contain an inconsistency. Using the alternative (N+1)/2 convention gives X=34,Y=45, but that is not the usual grouped-median formula."
+      "note": "Literal grouped-data interpolation gives fractional frequencies, which cannot be counts. The printed data contain an inconsistency. Using the alternative (N+1)/2 convention gives X=34,Y=45, but that is not the usual grouped-median formula.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 249,
@@ -1751,7 +2059,14 @@
           ]
         ]
       },
-      "answer": "Mean = 1755/19 (≈ 92.3684); Median = 95"
+      "answer": "Mean = 1755/19 (≈ 92.3684); Median = 95",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 250,
@@ -1789,7 +2104,14 @@
             "8"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 251,
@@ -1851,7 +2173,14 @@
         ]
       },
       "answer": "Mode = 45/7 (≈ 6.42857)",
-      "note": "The modal class is at the edge. The interpolated mode uses a zero frequency for the absent neighbouring class; it is an estimate under that convention."
+      "note": "The modal class is at the edge. The interpolated mode uses a zero frequency for the absent neighbouring class; it is an estimate under that convention.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 252,
@@ -1920,7 +2249,14 @@
           ]
         ]
       },
-      "answer": "Mode = 93/2 (≈ 46.5)"
+      "answer": "Mode = 93/2 (≈ 46.5)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 253,
@@ -1971,7 +2307,14 @@
           ]
         ]
       },
-      "answer": "x = 80; y = 68"
+      "answer": "x = 80; y = 68",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 254,
@@ -2040,7 +2383,14 @@
           ]
         ]
       },
-      "answer": "Mode = 95/2 (≈ 47.5)"
+      "answer": "Mode = 95/2 (≈ 47.5)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 255,
@@ -2102,7 +2452,14 @@
           ]
         ]
       },
-      "answer": "Mean = 949/300 (≈ 3.16333); median = 3; mode = 3"
+      "answer": "Mean = 949/300 (≈ 3.16333); median = 3; mode = 3",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 256,
@@ -2182,7 +2539,14 @@
           ]
         ]
       },
-      "answer": "Mean = 61/2 (≈ 30.5); Median = 63/2 (≈ 31.5); Mode = 69/2 (≈ 34.5)"
+      "answer": "Mean = 61/2 (≈ 30.5); Median = 63/2 (≈ 31.5); Mode = 69/2 (≈ 34.5)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 257,
@@ -2262,7 +2626,14 @@
           ]
         ]
       },
-      "answer": "Mean = 40; Median = 685/17 (≈ 40.2941); Mode = 42"
+      "answer": "Mean = 40; Median = 685/17 (≈ 40.2941); Mode = 42",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 258,
@@ -2343,7 +2714,14 @@
         ]
       },
       "answer": "Mean = 647/100 (≈ 6.47); Median = 469/75 (≈ 6.25333); Mode = 341/57 (≈ 5.98246)",
-      "note": "Amounts are in thousand rupees, so the reported mean, median and mode use the same unit."
+      "note": "Amounts are in thousand rupees, so the reported mean, median and mode use the same unit.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 259,
@@ -2411,7 +2789,14 @@
           ]
         ]
       },
-      "answer": "Mean = 22/5 (≈ 4.4); median = 4; mode = 4"
+      "answer": "Mean = 22/5 (≈ 4.4); median = 4; mode = 4",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 260,
@@ -2503,7 +2888,14 @@
             "50"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 261,
@@ -2613,7 +3005,14 @@
             "655"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 262,
@@ -2705,7 +3104,14 @@
           ]
         ]
       },
-      "answer": "Mean = 4711/74 (≈ 63.6622); Median = 763/12 (≈ 63.5833); Mode = 443/7 (≈ 63.2857)"
+      "answer": "Mean = 4711/74 (≈ 63.6622); Median = 763/12 (≈ 63.5833); Mode = 443/7 (≈ 63.2857)",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 263,
@@ -2750,7 +3156,14 @@
           ]
         ]
       },
-      "answer": "7.3484692"
+      "answer": "7.3484692",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 264,
@@ -2793,7 +3206,14 @@
           ]
         ]
       },
-      "answer": "2.7495454"
+      "answer": "2.7495454",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 265,
@@ -2906,7 +3326,14 @@
             "148170"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 266,
@@ -3006,7 +3433,14 @@
             "7459557/625 (≈ 11935.3)"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 267,
@@ -3157,7 +3591,14 @@
             "2816"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 268,
@@ -3264,7 +3705,14 @@
             "108280"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 269,
@@ -3380,7 +3828,14 @@
             "2120000"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 270,
@@ -3541,7 +3996,14 @@
             "4700"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 271,
@@ -3674,7 +4136,14 @@
             "7548559248537/10000000 (≈ 754856)"
           ]
         ]
-      }
+      },
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 272,
@@ -3776,7 +4245,14 @@
         ]
       },
       "answer": "-0.91090357",
-      "note": "The highest frequency is in the last class, so interpolation of its mode needs a convention. Taking the following frequency as zero gives the coefficient shown. The median-based Pearson estimate is also displayed."
+      "note": "The highest frequency is in the last class, so interpolation of its mode needs a convention. Taking the following frequency as zero gives the coefficient shown. The median-based Pearson estimate is also displayed.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 273,
@@ -3829,7 +4305,14 @@
           ]
         ]
       },
-      "answer": "0.4494121"
+      "answer": "0.4494121",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 274,
@@ -3905,7 +4388,14 @@
           ]
         ]
       },
-      "answer": "-0.11353073"
+      "answer": "-0.11353073",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 275,
@@ -3989,7 +4479,14 @@
           ]
         ]
       },
-      "answer": "-0.50395841"
+      "answer": "-0.50395841",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 276,
@@ -4014,7 +4511,14 @@
           "formula": "μ₃ = m₃−3m₂m₁+2m₁³ = −40−3×16×1+2×1³ = −86"
         }
       ],
-      "answer": "Mean = 3; variance = 15; μ₃ = −86"
+      "answer": "Mean = 3; variance = 15; μ₃ = −86",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 277,
@@ -4044,7 +4548,14 @@
           "formula": "γ₁ = μ₃/μ₂^(3/2) ≈ -0.31650483; β₁ = μ₃²/μ₂³ = 400/3993 (≈ 0.100175)"
         }
       ],
-      "answer": "μ₁=0; μ₂=132; μ₃=-480; μ₄=40656; γ₁≈-0.31650483"
+      "answer": "μ₁=0; μ₂=132; μ₃=-480; μ₄=40656; γ₁≈-0.31650483",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 278,
@@ -4069,7 +4580,14 @@
           "formula": "m₃(4) = 150−3×70+3×2−1 = −55"
         }
       ],
-      "answer": "Moments about 4: 1, 67, −55"
+      "answer": "Moments about 4: 1, 67, −55",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 279,
@@ -4095,7 +4613,14 @@
         }
       ],
       "answer": "Mode ≈ 80; CV ≈ 38.4615%",
-      "note": "The mode is an empirical estimate, because the distribution itself is not supplied."
+      "note": "The mode is an empirical estimate, because the distribution itself is not supplied.",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     },
     {
       "id": 280,
@@ -4115,7 +4640,14 @@
           "formula": "Mean=452/10=45.2; σ²=24270/10−45.2²=9599/25 (≈ 383.96); σ=19.594897; Sk=(45.2−43.7)/σ=0.076550542"
         }
       ],
-      "answer": "0.076550542"
+      "answer": "0.076550542",
+      "references": [
+        {
+          "title": "NIST · Skewness and kurtosis",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
+        }
+      ],
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
     }
   ]
 }

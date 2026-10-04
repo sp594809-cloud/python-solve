@@ -282,7 +282,7 @@ var SEM3_UNIT_6 = {
       "question": "Write a python program to search for a string in text files.",
       "marks": 7.0,
       "sourcePage": 37,
-      "solution": "from pathlib import Path\nquery = input('Search string: ')\nfor path in Path(input('Directory: ')).glob('*.txt'):\n    with path.open(encoding='utf-8') as f:\n        for number, line in enumerate(f, 1):\n            if query in line: print(path.name, number, line.rstrip())",
+      "solution": "from pathlib import Path\nquery = input('Search string: ')\nfor path in sorted(Path(input('Directory: ')).glob('*.txt')):\n    with path.open(encoding='utf-8') as f:\n        for number, line in enumerate(f, 1):\n            if query in line: print(path.name, number, line.rstrip())",
       "explanation": "Search every .txt file in the chosen directory, reporting each matching line.",
       "topic": "File handling",
       "starterCode": "",

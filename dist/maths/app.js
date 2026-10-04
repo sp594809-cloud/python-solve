@@ -49,7 +49,7 @@
  }
  function render(id,updateUrl=true){
   const q=byId.get(Number(id));if(!q){$('jump-message').textContent='Enter a whole question number from 643 to 1023.';return false;}
-  current=q;if(window.StudyTools)window.StudyTools.mount($('math-study-tools'),'maths:'+q.id);if(unit!==q.unit||!$('question-select').options.length)browse(q.unit);
+  current=q;if(window.SolutionGuidance)window.SolutionGuidance.render(q);if(window.StudyTools)window.StudyTools.mount($('math-study-tools'),'maths:'+q.id);if(unit!==q.unit||!$('question-select').options.length)browse(q.unit);
   $('question-number').value=q.id;$('question-select').value=q.id;$('question-title').textContent=`Q${q.id} · Unit ${q.unit}`;$('solution-title').textContent=`Q${q.id} — Solution`;
   source(q);$('source-link').href=`practice-book.pdf#page=${q.page}`;$('book-viewer').src=`practice-book.pdf#page=${q.page}&zoom=page-width`;
   $('steps').replaceChildren();q.steps.forEach((s,j)=>{const block=el('div',null,'step');block.append(el('h4',`${j+1}. ${s.title}`));if(s.text)block.append(el('p',s.text));if(s.math){const f=el('div');formula(s.math,f);block.append(f);}$('steps').append(block);});

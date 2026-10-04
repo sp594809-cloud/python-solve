@@ -29,8 +29,10 @@ for book,units in books.items():
     runner="import builtins,sys,matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nplt.show=lambda:None\nvalues=iter("+repr(fixture['inputs'])+")\nbuiltins.input=lambda prompt='':next(values)\n"+program
     run=subprocess.run([sys.executable,'-c',runner],cwd=directory,env={**os.environ,'MPLBACKEND':'Agg','PYTHONPATH':directory},capture_output=True,text=True,timeout=20)
     assert run.returncode==0,(key,run.stderr)
-    # Normalize whitespace only; compare all printed values and messages.
-    assert ' '.join(run.stdout.split())==' '.join(fixture['output'].split()),(key,run.stdout,fixture['output'])
+    # Normalize only the random temporary directory, then compare printed values.
+    actual=run.stdout.replace(directory,'<WORKDIR>')
+    expected=re.sub(r'/tmp/python-question-[A-Za-z0-9_-]+','<WORKDIR>',fixture['output'])
+    assert ' '.join(actual.split())==' '.join(expected.split()),(key,actual,expected)
     executed+=1
 print(f'Coverage: 210 + 734 questions. Syntax: {count} programs. Sample executions: {executed}.')
 if args.execute:print('Streamlit programs are syntax checked here; run them with streamlit run app.py.')

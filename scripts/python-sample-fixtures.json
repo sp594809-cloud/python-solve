@@ -28,7 +28,7 @@
       "inputs": [
         "0"
       ],
-      "output": "0.0\u00b0C = 32.0\u00b0F\n"
+      "output": "0.0°C = 32.0°F\n"
     },
     "sem1:26": {
       "inputs": [
@@ -1247,7 +1247,7 @@
         "Friends",
         "."
       ],
-      "output": "friends.txt 1 Friends are crazy, Friends are naughty !\nfriends.txt 2 Friends are honest, Friends are best !\nfriends.txt 3 Friends are like keygen, friends are like license key !\npython1.txt 1 Friends are honest\nfile1.txt 1 Friends are crazy, Friends are naughty !\nfile1.txt 2 Friends are honest, Friends are best !\npython2.txt 1 Friends 6re honest\n"
+      "output": "file1.txt 1 Friends are crazy, Friends are naughty !\nfile1.txt 2 Friends are honest, Friends are best !\nfriends.txt 1 Friends are crazy, Friends are naughty !\nfriends.txt 2 Friends are honest, Friends are best !\nfriends.txt 3 Friends are like keygen, friends are like license key !\npython1.txt 1 Friends are honest\npython2.txt 1 Friends 6re honest\n"
     },
     "sem3:480": {
       "inputs": [
