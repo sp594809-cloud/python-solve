@@ -3,8 +3,7 @@
 // Cloud sync is debounced so we never hammer the DB on every MCQ.
 const SUPABASE_CONFIG = {
   url: "https://hyrhnhnwykfmtycfpjcz.supabase.co",
-  anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh5cmhuaG53eWtmbXR5Y2ZwamN6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMwODM2NTMsImV4cCI6MjA5ODY1OTY1M30.lNzQLiJ0vm8iCtz6oSPii14yplhsXQHuWKV3qSa8zCI",
-  serviceKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh5cmhuaG53eWtmbXR5Y2ZwamN6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4MzA4MzY1MywiZXhwIjoyMDk4NjU5NjUzfQ.l4id9N2aV56xo0uT2C086FakRLq1pU-aivVMRaw1MC4"
+  anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh5cmhuaG53eWtmbXR5Y2ZwamN6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMwODM2NTMsImV4cCI6MjA5ODY1OTY1M30.lNzQLiJ0vm8iCtz6oSPii14yplhsXQHuWKV3qSa8zCI"
 };
 
 let supabaseClient = null;
@@ -12,7 +11,7 @@ let _syncTimer = null;
 const SYNC_DEBOUNCE_MS = 4000; // wait 4s of quiet before writing to Supabase
 
 function initSupabase() {
-  const activeKey = SUPABASE_CONFIG.serviceKey || SUPABASE_CONFIG.anonKey;
+  const activeKey = SUPABASE_CONFIG.anonKey;
   if (typeof supabase !== "undefined" && SUPABASE_CONFIG.url && activeKey) {
     try {
       supabaseClient = supabase.createClient(SUPABASE_CONFIG.url, activeKey, {

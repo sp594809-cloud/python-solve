@@ -1,6 +1,6 @@
 const fs=require('fs'),path=require('path'),assert=require('assert'),{JSDOM}=require('jsdom');
 const read=f=>fs.readFileSync(f,'utf8');
-function page(file,url){const dom=new JSDOM(read(file),{url,runScripts:'outside-only'});const w=dom.window;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.open=()=>null;for(const file of ['js/study-catalogue.js','js/study-tools.js','js/solution-guidance.js'])w.eval(read(file));return dom;}
+function page(file,url){const dom=new JSDOM(read(file),{url,runScripts:'outside-only'});const w=dom.window;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.open=()=>null;for(const file of ['js/study-catalogue.js','js/study-tools.js','js/solution-guidance.js','js/question-access.js'])w.eval(read(file));return dom;}
 const home=page('index.html','https://test.local/'),w=home.window,d=w.document;w.eval(read('js/study-dashboard.js'));d.dispatchEvent(new w.Event('DOMContentLoaded'));
 assert.equal(d.querySelectorAll('.subject-card').length,6);
 d.querySelector('[data-semester="1"]').click();assert.equal(d.querySelectorAll('.subject-card').length,3);

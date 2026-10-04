@@ -166,6 +166,7 @@ async function handleStudentLogin(e) {
     updateTopNavStudentInfo();
     const modal = document.getElementById("studentLoginModal");
     if (modal) modal.style.display = "none";
+    window.dispatchEvent(new Event("student-login"));
     const ptsMsg = currentStudent.points > 0 ? ` Restored ${currentStudent.points} points from previous device.` : '';
     const idMsg = currentStudent.accountId ? ` Account ID: ${currentStudent.accountId}` : '';
     showToast(`Welcome ${currentStudent.name}!${idMsg}${ptsMsg} 🎉`);
@@ -184,6 +185,7 @@ async function handleStudentLogin(e) {
     updateTopNavStudentInfo();
     const modal = document.getElementById("studentLoginModal");
     if (modal) modal.style.display = "none";
+    window.dispatchEvent(new Event("student-login"));
   } finally {
     if (btn) { btn.disabled = false; btn.innerHTML = originalBtnText; }
   }

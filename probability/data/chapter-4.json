@@ -26,7 +26,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 23,
+          "top": 1065.73603515625,
+          "bottom": 1113.7760498046875
+        }
+      ],
+      "shareImage": "share/q281.jpg",
+      "shareImageSize": [
+        1358,
+        233
+      ]
     },
     {
       "id": 282,
@@ -160,7 +172,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 139.7400634765625,
+          "bottom": 203.7400390625
+        }
+      ],
+      "shareImage": "share/q282.jpg",
+      "shareImageSize": [
+        1358,
+        265
+      ]
     },
     {
       "id": 283,
@@ -182,7 +206,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 203.82001953125,
+          "bottom": 235.90001220703124
+        }
+      ],
+      "shareImage": "share/q283.jpg",
+      "shareImageSize": [
+        1358,
+        201
+      ]
     },
     {
       "id": 284,
@@ -204,7 +240,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 235.97999267578126,
+          "bottom": 273.460009765625
+        }
+      ],
+      "shareImage": "share/q284.jpg",
+      "shareImageSize": [
+        1358,
+        212
+      ]
     },
     {
       "id": 285,
@@ -343,7 +391,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 273.539990234375,
+          "bottom": 368.25999755859374
+        }
+      ],
+      "shareImage": "share/q285.jpg",
+      "shareImageSize": [
+        1358,
+        326
+      ]
     },
     {
       "id": 286,
@@ -470,7 +530,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 368.350048828125,
+          "bottom": 489.4900390625
+        }
+      ],
+      "shareImage": "share/q286.jpg",
+      "shareImageSize": [
+        1358,
+        379
+      ]
     },
     {
       "id": 287,
@@ -493,7 +565,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 489.57001953125,
+          "bottom": 539.0500366210938
+        }
+      ],
+      "shareImage": "share/q287.jpg",
+      "shareImageSize": [
+        1358,
+        236
+      ]
     },
     {
       "id": 288,
@@ -521,7 +605,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 539.1300170898437,
+          "bottom": 589.3300048828125
+        }
+      ],
+      "shareImage": "share/q288.jpg",
+      "shareImageSize": [
+        1358,
+        237
+      ]
     },
     {
       "id": 289,
@@ -543,7 +639,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 589.4100463867187,
+          "bottom": 638.0500366210938
+        }
+      ],
+      "shareImage": "share/q289.jpg",
+      "shareImageSize": [
+        1358,
+        235
+      ]
     },
     {
       "id": 290,
@@ -565,7 +673,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 638.1260498046875,
+          "bottom": 670.230029296875
+        }
+      ],
+      "shareImage": "share/q290.jpg",
+      "shareImageSize": [
+        1358,
+        201
+      ]
     },
     {
       "id": 291,
@@ -587,7 +707,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 670.310009765625,
+          "bottom": 702.51005859375
+        }
+      ],
+      "shareImage": "share/q291.jpg",
+      "shareImageSize": [
+        1358,
+        202
+      ]
     },
     {
       "id": 292,
@@ -609,7 +741,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 702.5900390625,
+          "bottom": 750.6300537109375
+        }
+      ],
+      "shareImage": "share/q292.jpg",
+      "shareImageSize": [
+        1358,
+        233
+      ]
     },
     {
       "id": 293,
@@ -631,7 +775,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 750.7100341796875,
+          "bottom": 799.3500244140625
+        }
+      ],
+      "shareImage": "share/q293.jpg",
+      "shareImageSize": [
+        1358,
+        234
+      ]
     },
     {
       "id": 294,
@@ -653,7 +809,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 799.4300048828125,
+          "bottom": 831.6300537109375
+        }
+      ],
+      "shareImage": "share/q294.jpg",
+      "shareImageSize": [
+        1358,
+        202
+      ]
     },
     {
       "id": 295,
@@ -675,7 +843,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 831.7100341796875,
+          "bottom": 848.3099853515625
+        }
+      ],
+      "shareImage": "share/q295.jpg",
+      "shareImageSize": [
+        1358,
+        170
+      ]
     },
     {
       "id": 296,
@@ -697,7 +877,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 848.3900268554687,
+          "bottom": 881.0699951171875
+        }
+      ],
+      "shareImage": "share/q296.jpg",
+      "shareImageSize": [
+        1358,
+        203
+      ]
     },
     {
       "id": 297,
@@ -719,7 +911,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 881.1560180664062,
+          "bottom": 937.8600341796875
+        }
+      ],
+      "shareImage": "share/q297.jpg",
+      "shareImageSize": [
+        1358,
+        250
+      ]
     },
     {
       "id": 298,
@@ -848,7 +1052,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 937.9400146484375,
+          "bottom": 1010.460009765625
+        }
+      ],
+      "shareImage": "share/q298.jpg",
+      "shareImageSize": [
+        1358,
+        282
+      ]
     },
     {
       "id": 299,
@@ -886,7 +1102,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 24,
+          "top": 1010.539990234375,
+          "bottom": 1080.5399658203125
+        }
+      ],
+      "shareImage": "share/q299.jpg",
+      "shareImageSize": [
+        1358,
+        277
+      ]
     },
     {
       "id": 300,
@@ -1030,7 +1258,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 139.7400634765625,
+          "bottom": 209.7400390625
+        }
+      ],
+      "shareImage": "share/q300.jpg",
+      "shareImageSize": [
+        760,
+        277
+      ]
     },
     {
       "id": 301,
@@ -1174,7 +1414,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 209.82001953125,
+          "bottom": 269.8600341796875
+        }
+      ],
+      "shareImage": "share/q301.jpg",
+      "shareImageSize": [
+        760,
+        257
+      ]
     },
     {
       "id": 302,
@@ -1370,7 +1622,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 269.9400146484375,
+          "bottom": 336.1000244140625
+        }
+      ],
+      "shareImage": "share/q302.jpg",
+      "shareImageSize": [
+        760,
+        270
+      ]
     },
     {
       "id": 303,
@@ -1530,7 +1794,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 336.185986328125,
+          "bottom": 406.45
+        }
+      ],
+      "shareImage": "share/q303.jpg",
+      "shareImageSize": [
+        760,
+        277
+      ]
     },
     {
       "id": 304,
@@ -1690,7 +1966,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 406.53004150390626,
+          "bottom": 486.97001953125
+        }
+      ],
+      "shareImage": "share/q304.jpg",
+      "shareImageSize": [
+        760,
+        297
+      ]
     },
     {
       "id": 305,
@@ -1722,7 +2010,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 487.05006103515626,
+          "bottom": 550.9300415039063
+        }
+      ],
+      "shareImage": "share/q305.jpg",
+      "shareImageSize": [
+        760,
+        264
+      ]
     },
     {
       "id": 306,
@@ -1882,7 +2182,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 551.0100219726562,
+          "bottom": 599.0500366210938
+        }
+      ],
+      "shareImage": "share/q306.jpg",
+      "shareImageSize": [
+        760,
+        233
+      ]
     },
     {
       "id": 307,
@@ -1904,7 +2216,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 599.1300170898437,
+          "bottom": 647.4100219726563
+        }
+      ],
+      "shareImage": "share/q307.jpg",
+      "shareImageSize": [
+        760,
+        233
+      ]
     },
     {
       "id": 308,
@@ -1932,7 +2256,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 647.4900024414062,
+          "bottom": 759.0300170898438
+        }
+      ],
+      "shareImage": "share/q308.jpg",
+      "shareImageSize": [
+        760,
+        361
+      ]
     },
     {
       "id": 309,
@@ -2092,7 +2428,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 759.1099975585937,
+          "bottom": 827.3099853515625
+        }
+      ],
+      "shareImage": "share/q309.jpg",
+      "shareImageSize": [
+        760,
+        273
+      ]
     },
     {
       "id": 310,
@@ -2124,7 +2472,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 827.3900268554687,
+          "bottom": 908.189990234375
+        }
+      ],
+      "shareImage": "share/q310.jpg",
+      "shareImageSize": [
+        760,
+        299
+      ]
     },
     {
       "id": 311,
@@ -2311,7 +2671,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 25,
+          "top": 908.27998046875,
+          "bottom": 1053.0599853515625
+        }
+      ],
+      "shareImage": "share/q311.jpg",
+      "shareImageSize": [
+        760,
+        427
+      ]
     },
     {
       "id": 312,
@@ -2536,7 +2908,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 26,
+          "top": 139.7400634765625,
+          "bottom": 312.22001953125
+        }
+      ],
+      "shareImage": "share/q312.jpg",
+      "shareImageSize": [
+        760,
+        482
+      ]
     },
     {
       "id": 313,
@@ -2709,7 +3093,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 26,
+          "top": 312.3,
+          "bottom": 385.66002197265624
+        }
+      ],
+      "shareImage": "share/q313.jpg",
+      "shareImageSize": [
+        760,
+        284
+      ]
     },
     {
       "id": 314,
@@ -2843,7 +3239,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 26,
+          "top": 385.746044921875,
+          "bottom": 456.4900390625
+        }
+      ],
+      "shareImage": "share/q314.jpg",
+      "shareImageSize": [
+        760,
+        278
+      ]
     },
     {
       "id": 315,
@@ -3103,7 +3511,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 26,
+          "top": 456.57001953125,
+          "bottom": 585.3700439453125
+        }
+      ],
+      "shareImage": "share/q315.jpg",
+      "shareImageSize": [
+        760,
+        394
+      ]
     },
     {
       "id": 316,
@@ -3250,7 +3670,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 26,
+          "top": 585.4500244140625,
+          "bottom": 653.0500366210938
+        }
+      ],
+      "shareImage": "share/q316.jpg",
+      "shareImageSize": [
+        760,
+        273
+      ]
     },
     {
       "id": 317,
@@ -3450,7 +3882,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 26,
+          "top": 653.1300170898437,
+          "bottom": 773.42998046875
+        }
+      ],
+      "shareImage": "share/q317.jpg",
+      "shareImageSize": [
+        760,
+        377
+      ]
     },
     {
       "id": 318,
@@ -3664,7 +4108,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 26,
+          "top": 773.5100219726562,
+          "bottom": 910.3500244140625
+        }
+      ],
+      "shareImage": "share/q318.jpg",
+      "shareImageSize": [
+        760,
+        410
+      ]
     },
     {
       "id": 319,
@@ -3852,7 +4308,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 26,
+          "top": 910.4400146484375,
+          "bottom": 1055.8199951171875
+        }
+      ],
+      "shareImage": "share/q319.jpg",
+      "shareImageSize": [
+        760,
+        428
+      ]
     },
     {
       "id": 320,
@@ -4003,7 +4471,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 26,
+          "top": 1055.8960693359375,
+          "bottom": 1121.936083984375
+        }
+      ],
+      "shareImage": "share/q320.jpg",
+      "shareImageSize": [
+        760,
+        269
+      ]
     },
     {
       "id": 321,
@@ -4191,7 +4671,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 27,
+          "top": 139.7400634765625,
+          "bottom": 284.500048828125
+        }
+      ],
+      "shareImage": "share/q321.jpg",
+      "shareImageSize": [
+        760,
+        426
+      ]
     },
     {
       "id": 322,
@@ -4366,7 +4858,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 27,
+          "top": 284.5900390625,
+          "bottom": 404.65001220703124
+        }
+      ],
+      "shareImage": "share/q322.jpg",
+      "shareImageSize": [
+        760,
+        377
+      ]
     },
     {
       "id": 323,
@@ -4565,7 +5069,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 27,
+          "top": 404.7300537109375,
+          "bottom": 510.730029296875
+        }
+      ],
+      "shareImage": "share/q323.jpg",
+      "shareImageSize": [
+        760,
+        349
+      ]
     },
     {
       "id": 324,
@@ -4735,7 +5251,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 27,
+          "top": 510.810009765625,
+          "bottom": 782.5499755859375
+        }
+      ],
+      "shareImage": "share/q324.jpg",
+      "shareImageSize": [
+        760,
+        681
+      ]
     },
     {
       "id": 325,
@@ -4882,7 +5410,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 27,
+          "top": 782.6300170898437,
+          "bottom": 865.1100341796875
+        }
+      ],
+      "shareImage": "share/q325.jpg",
+      "shareImageSize": [
+        760,
+        302
+      ]
     },
     {
       "id": 326,
@@ -5070,7 +5610,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 27,
+          "top": 865.19599609375,
+          "bottom": 952.2599975585938
+        }
+      ],
+      "shareImage": "share/q326.jpg",
+      "shareImageSize": [
+        760,
+        311
+      ]
     },
     {
       "id": 327,
@@ -5253,7 +5805,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 27,
+          "top": 952.3400390625,
+          "bottom": 1028.7
+        }
+      ],
+      "shareImage": "share/q327.jpg",
+      "shareImageSize": [
+        760,
+        290
+      ]
     },
     {
       "id": 328,
@@ -5462,7 +6026,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 27,
+          "top": 1028.77607421875,
+          "bottom": 1105.616015625
+        }
+      ],
+      "shareImage": "share/q328.jpg",
+      "shareImageSize": [
+        760,
+        291
+      ]
     },
     {
       "id": 329,
@@ -5632,7 +6208,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 28,
+          "top": 139.7400634765625,
+          "bottom": 340.66002197265624
+        }
+      ],
+      "shareImage": "share/q329.jpg",
+      "shareImageSize": [
+        760,
+        539
+      ]
     },
     {
       "id": 330,
@@ -5842,7 +6430,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 28,
+          "top": 340.7500732421875,
+          "bottom": 600.730029296875
+        }
+      ],
+      "shareImage": "share/q330.jpg",
+      "shareImageSize": [
+        760,
+        657
+      ]
     },
     {
       "id": 331,
@@ -5869,7 +6469,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 28,
+          "top": 600.810009765625,
+          "bottom": 825.8700439453125
+        }
+      ],
+      "shareImage": "share/q331.jpg",
+      "shareImageSize": [
+        760,
+        587
+      ]
     },
     {
       "id": 332,
@@ -5901,7 +6513,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 28,
+          "top": 825.9600341796875,
+          "bottom": 1012.7400390625
+        }
+      ],
+      "shareImage": "share/q332.jpg",
+      "shareImageSize": [
+        760,
+        511
+      ]
     },
     {
       "id": 333,
@@ -5933,7 +6557,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 28,
+          "top": 1012.8159912109375,
+          "bottom": 1109.936083984375
+        }
+      ],
+      "shareImage": "share/q333.jpg",
+      "shareImageSize": [
+        760,
+        331
+      ]
     },
     {
       "id": 334,
@@ -6096,7 +6732,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 29,
+          "top": 139.7400634765625,
+          "bottom": 261.22001953125
+        }
+      ],
+      "shareImage": "share/q334.jpg",
+      "shareImageSize": [
+        760,
+        380
+      ]
     },
     {
       "id": 335,
@@ -6123,7 +6771,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 29,
+          "top": 261.3,
+          "bottom": 372.7
+        }
+      ],
+      "shareImage": "share/q335.jpg",
+      "shareImageSize": [
+        760,
+        360
+      ]
     },
     {
       "id": 336,
@@ -6274,7 +6934,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 29,
+          "top": 372.789990234375,
+          "bottom": 567.1299926757813
+        }
+      ],
+      "shareImage": "share/q336.jpg",
+      "shareImageSize": [
+        760,
+        526
+      ]
     },
     {
       "id": 337,
@@ -6307,7 +6979,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 29,
+          "top": 567.2100341796875,
+          "bottom": 703.8300048828125
+        }
+      ],
+      "shareImage": "share/q337.jpg",
+      "shareImageSize": [
+        760,
+        410
+      ]
     },
     {
       "id": 338,
@@ -6506,7 +7190,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 29,
+          "top": 703.9099853515625,
+          "bottom": 921.9900390625
+        }
+      ],
+      "shareImage": "share/q338.jpg",
+      "shareImageSize": [
+        760,
+        573
+      ]
     },
     {
       "id": 339,
@@ -6693,7 +7389,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 29,
+          "top": 922.080029296875,
+          "bottom": 1067.8199951171875
+        }
+      ],
+      "shareImage": "share/q339.jpg",
+      "shareImageSize": [
+        760,
+        428
+      ]
     },
     {
       "id": 340,
@@ -6853,7 +7561,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 30,
+          "top": 139.7400634765625,
+          "bottom": 210.22001953125
+        }
+      ],
+      "shareImage": "share/q340.jpg",
+      "shareImageSize": [
+        760,
+        278
+      ]
     },
     {
       "id": 341,
@@ -7026,7 +7746,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 30,
+          "top": 210.30006103515626,
+          "bottom": 347.6200439453125
+        }
+      ],
+      "shareImage": "share/q341.jpg",
+      "shareImageSize": [
+        760,
+        412
+      ]
     },
     {
       "id": 342,
@@ -7069,7 +7801,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 30,
+          "top": 347.7000244140625,
+          "bottom": 715.1100341796875
+        }
+      ],
+      "shareImage": "share/q342.jpg",
+      "shareImageSize": [
+        760,
+        872
+      ]
     },
     {
       "id": 343,
@@ -7208,7 +7952,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/spearmanr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties."
+      "strategy": "Keep each x,y pair together. Give tied scores average ranks and correlate those ranks; the shortcut 1−6Σd²/[n(n²−1)] requires no ties.",
+      "sourceRows": [
+        {
+          "page": 30,
+          "top": 715.1900146484375,
+          "bottom": 781.95
+        }
+      ],
+      "shareImage": "share/q343.jpg",
+      "shareImageSize": [
+        760,
+        270
+      ]
     },
     {
       "id": 344,
@@ -7235,7 +7991,19 @@
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats/pearsonr.html"
         }
       ],
-      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately."
+      "strategy": "Keep each x,y pair together. Centre the values around their means. For y-on-x use Sxy/Sxx; for x-on-y use Sxy/Syy. These two lines are fitted separately.",
+      "sourceRows": [
+        {
+          "page": 30,
+          "top": 782.02998046875,
+          "bottom": 848.5499755859375
+        }
+      ],
+      "shareImage": "share/q344.jpg",
+      "shareImageSize": [
+        760,
+        270
+      ]
     }
   ]
 }

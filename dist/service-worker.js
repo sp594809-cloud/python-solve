@@ -1,10 +1,12 @@
-const CACHE_NAME = "ljiet-study-semester-menu-20261004-v4";
+const CACHE_NAME = "ljiet-study-question-sharing-20261004-v5";
 const ASSETS = [
   "./assets/study-buddies.svg",
   "./css/study-experience.css",
   "./js/study-catalogue.js",
   "./js/study-tools.js",
   "./js/solution-guidance.js",
+  "./js/question-access.js",
+  "./js/question-share.js",
   "./js/study-dashboard.js",
   "./study/",
   "./study/app.js",

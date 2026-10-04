@@ -34,7 +34,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q869.jpg",
+    "shareImageSize": [
+      1397,
+      223
+    ]
   },
   {
     "id": 870,
@@ -66,7 +71,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q870.jpg",
+    "shareImageSize": [
+      1397,
+      190
+    ]
   },
   {
     "id": 871,
@@ -103,7 +113,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q871.jpg",
+    "shareImageSize": [
+      1397,
+      190
+    ]
   },
   {
     "id": 872,
@@ -141,7 +156,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q872.jpg",
+    "shareImageSize": [
+      1397,
+      190
+    ]
   },
   {
     "id": 873,
@@ -183,7 +203,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q873.jpg",
+    "shareImageSize": [
+      1397,
+      229
+    ]
   },
   {
     "id": 874,
@@ -220,7 +245,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q874.jpg",
+    "shareImageSize": [
+      760,
+      196
+    ]
   },
   {
     "id": 875,
@@ -258,7 +288,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q875.jpg",
+    "shareImageSize": [
+      760,
+      222
+    ]
   },
   {
     "id": 876,
@@ -307,7 +342,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q876.jpg",
+    "shareImageSize": [
+      760,
+      296
+    ]
   },
   {
     "id": 877,
@@ -354,7 +394,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q877.jpg",
+    "shareImageSize": [
+      760,
+      194
+    ]
   },
   {
     "id": 878,
@@ -401,7 +446,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q878.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 879,
@@ -448,7 +498,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q879.jpg",
+    "shareImageSize": [
+      760,
+      204
+    ]
   },
   {
     "id": 880,
@@ -495,7 +550,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q880.jpg",
+    "shareImageSize": [
+      760,
+      224
+    ]
   },
   {
     "id": 881,
@@ -542,7 +602,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q881.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 882,
@@ -589,7 +654,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q882.jpg",
+    "shareImageSize": [
+      1397,
+      194
+    ]
   },
   {
     "id": 883,
@@ -632,7 +702,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q883.jpg",
+    "shareImageSize": [
+      1397,
+      247
+    ]
   },
   {
     "id": 884,
@@ -674,7 +749,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q884.jpg",
+    "shareImageSize": [
+      1397,
+      205
+    ]
   },
   {
     "id": 885,
@@ -721,7 +801,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q885.jpg",
+    "shareImageSize": [
+      1397,
+      195
+    ]
   },
   {
     "id": 886,
@@ -768,7 +853,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q886.jpg",
+    "shareImageSize": [
+      1397,
+      209
+    ]
   },
   {
     "id": 887,
@@ -815,7 +905,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q887.jpg",
+    "shareImageSize": [
+      1397,
+      195
+    ]
   },
   {
     "id": 888,
@@ -863,7 +958,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q888.jpg",
+    "shareImageSize": [
+      760,
+      224
+    ]
   },
   {
     "id": 889,
@@ -906,7 +1006,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q889.jpg",
+    "shareImageSize": [
+      760,
+      202
+    ]
   },
   {
     "id": 890,
@@ -948,7 +1053,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q890.jpg",
+    "shareImageSize": [
+      760,
+      223
+    ]
   },
   {
     "id": 891,
@@ -995,7 +1105,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q891.jpg",
+    "shareImageSize": [
+      760,
+      223
+    ]
   },
   {
     "id": 892,
@@ -1027,7 +1142,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q892.jpg",
+    "shareImageSize": [
+      760,
+      235
+    ]
   },
   {
     "id": 893,
@@ -1069,7 +1189,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q893.jpg",
+    "shareImageSize": [
+      760,
+      223
+    ]
   },
   {
     "id": 894,
@@ -1111,7 +1236,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q894.jpg",
+    "shareImageSize": [
+      760,
+      255
+    ]
   },
   {
     "id": 895,
@@ -1148,7 +1278,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q895.jpg",
+    "shareImageSize": [
+      760,
+      270
+    ]
   },
   {
     "id": 896,
@@ -1195,7 +1330,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q896.jpg",
+    "shareImageSize": [
+      760,
+      194
+    ]
   },
   {
     "id": 897,
@@ -1233,7 +1373,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q897.jpg",
+    "shareImageSize": [
+      760,
+      222
+    ]
   },
   {
     "id": 898,
@@ -1280,7 +1425,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q898.jpg",
+    "shareImageSize": [
+      1397,
+      233
+    ]
   },
   {
     "id": 899,
@@ -1317,7 +1467,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q899.jpg",
+    "shareImageSize": [
+      1397,
+      221
+    ]
   },
   {
     "id": 900,
@@ -1364,7 +1519,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q900.jpg",
+    "shareImageSize": [
+      760,
+      253
+    ]
   },
   {
     "id": 901,
@@ -1416,7 +1576,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q901.jpg",
+    "shareImageSize": [
+      760,
+      284
+    ]
   },
   {
     "id": 902,
@@ -1463,7 +1628,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q902.jpg",
+    "shareImageSize": [
+      760,
+      311
+    ]
   },
   {
     "id": 903,
@@ -1510,7 +1680,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q903.jpg",
+    "shareImageSize": [
+      760,
+      253
+    ]
   },
   {
     "id": 904,
@@ -1562,7 +1737,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q904.jpg",
+    "shareImageSize": [
+      760,
+      281
+    ]
   },
   {
     "id": 905,
@@ -1599,7 +1779,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q905.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 906,
@@ -1646,7 +1831,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q906.jpg",
+    "shareImageSize": [
+      760,
+      223
+    ]
   },
   {
     "id": 907,
@@ -1693,7 +1883,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q907.jpg",
+    "shareImageSize": [
+      760,
+      238
+    ]
   },
   {
     "id": 908,
@@ -1740,7 +1935,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q908.jpg",
+    "shareImageSize": [
+      760,
+      221
+    ]
   },
   {
     "id": 909,
@@ -1787,7 +1987,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q909.jpg",
+    "shareImageSize": [
+      760,
+      224
+    ]
   },
   {
     "id": 910,
@@ -1834,7 +2039,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q910.jpg",
+    "shareImageSize": [
+      760,
+      283
+    ]
   },
   {
     "id": 911,
@@ -1881,7 +2091,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q911.jpg",
+    "shareImageSize": [
+      760,
+      250
+    ]
   },
   {
     "id": 912,
@@ -1928,7 +2143,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q912.jpg",
+    "shareImageSize": [
+      760,
+      222
+    ]
   },
   {
     "id": 913,
@@ -1975,7 +2195,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q913.jpg",
+    "shareImageSize": [
+      760,
+      224
+    ]
   },
   {
     "id": 914,
@@ -2022,7 +2247,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q914.jpg",
+    "shareImageSize": [
+      760,
+      250
+    ]
   },
   {
     "id": 915,
@@ -2081,7 +2311,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q915.jpg",
+    "shareImageSize": [
+      760,
+      389
+    ]
   },
   {
     "id": 916,
@@ -2128,7 +2363,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q916.jpg",
+    "shareImageSize": [
+      760,
+      298
+    ]
   },
   {
     "id": 917,
@@ -2185,7 +2425,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q917.jpg",
+    "shareImageSize": [
+      760,
+      337
+    ]
   },
   {
     "id": 918,
@@ -2232,7 +2477,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q918.jpg",
+    "shareImageSize": [
+      760,
+      326
+    ]
   },
   {
     "id": 919,
@@ -2279,7 +2529,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q919.jpg",
+    "shareImageSize": [
+      760,
+      297
+    ]
   },
   {
     "id": 920,
@@ -2321,7 +2576,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q920.jpg",
+    "shareImageSize": [
+      1397,
+      200
+    ]
   },
   {
     "id": 921,
@@ -2363,7 +2623,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q921.jpg",
+    "shareImageSize": [
+      1397,
+      255
+    ]
   },
   {
     "id": 922,
@@ -2405,7 +2670,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q922.jpg",
+    "shareImageSize": [
+      1397,
+      223
+    ]
   },
   {
     "id": 923,
@@ -2437,7 +2707,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q923.jpg",
+    "shareImageSize": [
+      1397,
+      203
+    ]
   },
   {
     "id": 924,
@@ -2469,7 +2744,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q924.jpg",
+    "shareImageSize": [
+      1397,
+      206
+    ]
   },
   {
     "id": 925,
@@ -2501,7 +2781,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q925.jpg",
+    "shareImageSize": [
+      1397,
+      202
+    ]
   },
   {
     "id": 926,
@@ -2544,7 +2829,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q926.jpg",
+    "shareImageSize": [
+      1397,
+      190
+    ]
   },
   {
     "id": 927,
@@ -2581,7 +2871,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q927.jpg",
+    "shareImageSize": [
+      1397,
+      237
+    ]
   },
   {
     "id": 928,
@@ -2618,7 +2913,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q928.jpg",
+    "shareImageSize": [
+      1397,
+      238
+    ]
   },
   {
     "id": 929,
@@ -2655,7 +2955,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q929.jpg",
+    "shareImageSize": [
+      1397,
+      203
+    ]
   },
   {
     "id": 930,
@@ -2707,7 +3012,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q930.jpg",
+    "shareImageSize": [
+      1397,
+      205
+    ]
   },
   {
     "id": 931,
@@ -2739,7 +3049,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q931.jpg",
+    "shareImageSize": [
+      1397,
+      190
+    ]
   },
   {
     "id": 932,
@@ -2791,7 +3106,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q932.jpg",
+    "shareImageSize": [
+      760,
+      203
+    ]
   },
   {
     "id": 933,
@@ -2828,7 +3148,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q933.jpg",
+    "shareImageSize": [
+      760,
+      269
+    ]
   },
   {
     "id": 934,
@@ -2881,7 +3206,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q934.jpg",
+    "shareImageSize": [
+      760,
+      205
+    ]
   },
   {
     "id": 935,
@@ -2919,7 +3249,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q935.jpg",
+    "shareImageSize": [
+      760,
+      220
+    ]
   },
   {
     "id": 936,
@@ -2967,7 +3302,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q936.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 937,
@@ -3004,7 +3344,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q937.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 938,
@@ -3041,7 +3386,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q938.jpg",
+    "shareImageSize": [
+      760,
+      317
+    ]
   },
   {
     "id": 939,
@@ -3083,7 +3433,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q939.jpg",
+    "shareImageSize": [
+      760,
+      190
+    ]
   },
   {
     "id": 940,
@@ -3126,7 +3481,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q940.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 941,
@@ -3168,7 +3528,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q941.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 942,
@@ -3206,7 +3571,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q942.jpg",
+    "shareImageSize": [
+      1397,
+      213
+    ]
   },
   {
     "id": 943,
@@ -3244,7 +3614,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q943.jpg",
+    "shareImageSize": [
+      1397,
+      222
+    ]
   },
   {
     "id": 944,
@@ -3282,7 +3657,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q944.jpg",
+    "shareImageSize": [
+      1397,
+      213
+    ]
   },
   {
     "id": 945,
@@ -3320,7 +3700,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q945.jpg",
+    "shareImageSize": [
+      1397,
+      190
+    ]
   },
   {
     "id": 946,
@@ -3358,7 +3743,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q946.jpg",
+    "shareImageSize": [
+      1397,
+      214
+    ]
   },
   {
     "id": 947,
@@ -3395,7 +3785,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q947.jpg",
+    "shareImageSize": [
+      1397,
+      240
+    ]
   },
   {
     "id": 948,
@@ -3433,7 +3828,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q948.jpg",
+    "shareImageSize": [
+      1397,
+      213
+    ]
   },
   {
     "id": 949,
@@ -3470,7 +3870,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q949.jpg",
+    "shareImageSize": [
+      1397,
+      273
+    ]
   },
   {
     "id": 950,
@@ -3513,7 +3918,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q950.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 951,
@@ -3565,7 +3975,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q951.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 952,
@@ -3607,7 +4022,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q952.jpg",
+    "shareImageSize": [
+      760,
+      241
+    ]
   },
   {
     "id": 953,
@@ -3665,7 +4085,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q953.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 954,
@@ -3722,7 +4147,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q954.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 955,
@@ -3771,7 +4201,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q955.jpg",
+    "shareImageSize": [
+      760,
+      285
+    ]
   },
   {
     "id": 956,
@@ -3823,7 +4258,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q956.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 957,
@@ -3865,7 +4305,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q957.jpg",
+    "shareImageSize": [
+      760,
+      272
+    ]
   },
   {
     "id": 958,
@@ -3908,7 +4353,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q958.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 959,
@@ -3965,7 +4415,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q959.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 960,
@@ -4022,7 +4477,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q960.jpg",
+    "shareImageSize": [
+      760,
+      268
+    ]
   },
   {
     "id": 961,
@@ -4079,7 +4539,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q961.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 962,
@@ -4136,7 +4601,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q962.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 963,
@@ -4193,7 +4663,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q963.jpg",
+    "shareImageSize": [
+      760,
+      274
+    ]
   },
   {
     "id": 964,
@@ -4250,7 +4725,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q964.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 965,
@@ -4307,7 +4787,12 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q965.jpg",
+    "shareImageSize": [
+      760,
+      294
+    ]
   },
   {
     "id": 966,
@@ -4364,6 +4849,11 @@
       }
     ],
     "strategy": "Distinguish the scalar function from the vector field. Apply the requested gradient, divergence or curl before substituting the point. For a directional derivative, normalize the direction vector first.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q966.jpg",
+    "shareImageSize": [
+      760,
+      241
+    ]
   }
 ]

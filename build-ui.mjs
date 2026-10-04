@@ -14,3 +14,6 @@ mkdirSync('dist/maths/data',{recursive:true});
 for(const file of ['index.html','app.js','styles.css','practice-book.pdf','coverage.json','pages'])cpSync('maths/'+file,'dist/maths/'+file,{recursive:true});
 cpSync('maths/data/solutions.js','dist/maths/data/solutions.js');
 console.log('Built Mathematics I Chapters 6–8 reader');
+
+cpSync('maths/share','dist/maths/share',{recursive:true});
+cpSync('probability/share','dist/probability/share',{recursive:true});

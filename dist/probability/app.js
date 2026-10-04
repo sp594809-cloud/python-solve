@@ -21,7 +21,7 @@
  }
  function show(id,focus=false){
   const q=byId.get(id);if(!q)return;
-  current=id;if(window.SolutionGuidance)window.SolutionGuidance.render(q);if(window.StudyTools&&$('prob-study-tools'))window.StudyTools.mount($('prob-study-tools'),'ps:'+id); const index=ids.indexOf(id);
+  current=id;if(window.QuestionShare)window.QuestionShare.mount(q,'ps');if(window.SolutionGuidance)window.SolutionGuidance.render(q);if(window.StudyTools&&$('prob-study-tools'))window.StudyTools.mount($('prob-study-tools'),'ps:'+id); const index=ids.indexOf(id);
   $('question-title').textContent='Question '+id;
   $('question-text').textContent=q.question;
   $('position').textContent='Question '+(index+1)+' of '+ids.length;
@@ -42,10 +42,11 @@
  }
  function navigate(id){location.hash='q'+id;}
  function route(){const match=location.hash.match(/^#q(\d+)$/);const id=match?Number(match[1]):ids[0];const valid=byId.has(id)?id:ids[0];if(id!==valid)history.replaceState(null,'','#q'+valid);show(valid);}
- $('show-solution').addEventListener('click',()=>{const open=$('solution').hidden;$('solution').hidden=!open;$('show-solution').setAttribute('aria-expanded',String(open));$('show-solution').textContent=open?'Hide solution':'Show solution';$('announcement').textContent=open?'Solution shown for question '+current:'Solution hidden';});
+ function reveal(){$('solution').hidden=false;$('show-solution').setAttribute('aria-expanded','true');$('show-solution').textContent='Hide solution';$('announcement').textContent='Solution shown for question '+current;}
+ $('show-solution').addEventListener('click',()=>{if(!$('solution').hidden){$('solution').hidden=true;$('show-solution').setAttribute('aria-expanded','false');$('show-solution').textContent='Show solution';return;}const id=current;const action=()=>{if(current===id)reveal();};if(window.QuestionAccess)window.QuestionAccess.require(action);else window.StudyTools?.notice('Login could not load. Reload this page to see the solution.');});
  $('previous').addEventListener('click',()=>navigate(ids[ids.indexOf(current)-1]));
  $('next').addEventListener('click',()=>navigate(ids[ids.indexOf(current)+1]));
  selector.addEventListener('change',()=>navigate(Number(selector.value)));
  window.addEventListener('hashchange',()=>{route();$('question-title').focus({preventScroll:true});$('main-content').scrollIntoView({block:'start',behavior:'instant'});});
- route();
+ route();if(window.QuestionAccess)window.QuestionAccess.resumeSolution(reveal);
 })();

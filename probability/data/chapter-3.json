@@ -32,7 +32,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 289.9800537109375,
+          "bottom": 322.18004150390624
+        }
+      ],
+      "shareImage": "share/q205.jpg",
+      "shareImageSize": [
+        1358,
+        202
+      ]
     },
     {
       "id": 206,
@@ -59,7 +71,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 322.26002197265626,
+          "bottom": 358.18004150390624
+        }
+      ],
+      "shareImage": "share/q206.jpg",
+      "shareImageSize": [
+        1358,
+        209
+      ]
     },
     {
       "id": 207,
@@ -86,7 +110,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 358.26600341796876,
+          "bottom": 394.3300048828125
+        }
+      ],
+      "shareImage": "share/q207.jpg",
+      "shareImageSize": [
+        1358,
+        209
+      ]
     },
     {
       "id": 208,
@@ -113,7 +149,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 394.4099853515625,
+          "bottom": 430.45
+        }
+      ],
+      "shareImage": "share/q208.jpg",
+      "shareImageSize": [
+        1358,
+        209
+      ]
     },
     {
       "id": 209,
@@ -140,7 +188,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 430.52998046875,
+          "bottom": 447.12999267578124
+        }
+      ],
+      "shareImage": "share/q209.jpg",
+      "shareImageSize": [
+        1358,
+        170
+      ]
     },
     {
       "id": 210,
@@ -167,7 +227,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 447.2100341796875,
+          "bottom": 483.8500244140625
+        }
+      ],
+      "shareImage": "share/q210.jpg",
+      "shareImageSize": [
+        1358,
+        210
+      ]
     },
     {
       "id": 211,
@@ -195,7 +267,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 483.9300048828125,
+          "bottom": 516.0099975585938
+        }
+      ],
+      "shareImage": "share/q211.jpg",
+      "shareImageSize": [
+        1358,
+        202
+      ]
     },
     {
       "id": 212,
@@ -222,7 +306,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 516.0899780273437,
+          "bottom": 580.3300048828125
+        }
+      ],
+      "shareImage": "share/q212.jpg",
+      "shareImageSize": [
+        1358,
+        265
+      ]
     },
     {
       "id": 213,
@@ -295,7 +391,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 580.4099853515625,
+          "bottom": 725.189990234375
+        }
+      ],
+      "shareImage": "share/q213.jpg",
+      "shareImageSize": [
+        1358,
+        427
+      ]
     },
     {
       "id": 214,
@@ -322,7 +430,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 725.2700317382812,
+          "bottom": 757.47001953125
+        }
+      ],
+      "shareImage": "share/q214.jpg",
+      "shareImageSize": [
+        1358,
+        201
+      ]
     },
     {
       "id": 215,
@@ -349,7 +469,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 757.55,
+          "bottom": 789.6300537109375
+        }
+      ],
+      "shareImage": "share/q215.jpg",
+      "shareImageSize": [
+        1358,
+        201
+      ]
     },
     {
       "id": 216,
@@ -376,7 +508,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 789.7100341796875,
+          "bottom": 853.5900146484375
+        }
+      ],
+      "shareImage": "share/q216.jpg",
+      "shareImageSize": [
+        1358,
+        265
+      ]
     },
     {
       "id": 217,
@@ -403,7 +547,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 853.6699951171875,
+          "bottom": 886.47001953125
+        }
+      ],
+      "shareImage": "share/q217.jpg",
+      "shareImageSize": [
+        1358,
+        202
+      ]
     },
     {
       "id": 218,
@@ -430,7 +586,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 886.5559814453125,
+          "bottom": 934.6200439453125
+        }
+      ],
+      "shareImage": "share/q218.jpg",
+      "shareImageSize": [
+        1358,
+        233
+      ]
     },
     {
       "id": 219,
@@ -484,7 +652,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 16,
+          "top": 934.7000244140625,
+          "bottom": 1079.8199951171875
+        }
+      ],
+      "shareImage": "share/q219.jpg",
+      "shareImageSize": [
+        1358,
+        427
+      ]
     },
     {
       "id": 220,
@@ -560,7 +740,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 139.7400634765625,
+          "bottom": 231.3400146484375
+        }
+      ],
+      "shareImage": "share/q220.jpg",
+      "shareImageSize": [
+        1358,
+        320
+      ]
     },
     {
       "id": 221,
@@ -612,7 +804,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 231.42005615234376,
+          "bottom": 263.6200439453125
+        }
+      ],
+      "shareImage": "share/q221.jpg",
+      "shareImageSize": [
+        1358,
+        202
+      ]
     },
     {
       "id": 222,
@@ -668,7 +872,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 263.7000244140625,
+          "bottom": 344.980029296875
+        }
+      ],
+      "shareImage": "share/q222.jpg",
+      "shareImageSize": [
+        1358,
+        299
+      ]
     },
     {
       "id": 223,
@@ -695,7 +911,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 345.060009765625,
+          "bottom": 377.14000244140624
+        }
+      ],
+      "shareImage": "share/q223.jpg",
+      "shareImageSize": [
+        1358,
+        201
+      ]
     },
     {
       "id": 224,
@@ -722,7 +950,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 377.226025390625,
+          "bottom": 425.29002685546874
+        }
+      ],
+      "shareImage": "share/q224.jpg",
+      "shareImageSize": [
+        1358,
+        233
+      ]
     },
     {
       "id": 225,
@@ -750,7 +990,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 425.37000732421876,
+          "bottom": 457.5699951171875
+        }
+      ],
+      "shareImage": "share/q225.jpg",
+      "shareImageSize": [
+        1358,
+        202
+      ]
     },
     {
       "id": 226,
@@ -777,7 +1029,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 457.6499755859375,
+          "bottom": 505.689990234375
+        }
+      ],
+      "shareImage": "share/q226.jpg",
+      "shareImageSize": [
+        1358,
+        233
+      ]
     },
     {
       "id": 227,
@@ -804,7 +1068,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 505.77003173828126,
+          "bottom": 569.6500122070313
+        }
+      ],
+      "shareImage": "share/q227.jpg",
+      "shareImageSize": [
+        1358,
+        265
+      ]
     },
     {
       "id": 228,
@@ -857,7 +1133,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 569.7299926757812,
+          "bottom": 617.7700073242188
+        }
+      ],
+      "shareImage": "share/q228.jpg",
+      "shareImageSize": [
+        1358,
+        233
+      ]
     },
     {
       "id": 229,
@@ -909,7 +1197,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 617.8499877929687,
+          "bottom": 634.0900146484375
+        }
+      ],
+      "shareImage": "share/q229.jpg",
+      "shareImageSize": [
+        1358,
+        170
+      ]
     },
     {
       "id": 230,
@@ -936,7 +1236,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 634.1660278320312,
+          "bottom": 682.5900146484375
+        }
+      ],
+      "shareImage": "share/q230.jpg",
+      "shareImageSize": [
+        1358,
+        234
+      ]
     },
     {
       "id": 231,
@@ -964,7 +1276,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 682.6699951171875,
+          "bottom": 762.9900390625
+        }
+      ],
+      "shareImage": "share/q231.jpg",
+      "shareImageSize": [
+        1358,
+        297
+      ]
     },
     {
       "id": 232,
@@ -1018,7 +1342,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 763.07001953125,
+          "bottom": 928.230029296875
+        }
+      ],
+      "shareImage": "share/q232.jpg",
+      "shareImageSize": [
+        760,
+        467
+      ]
     },
     {
       "id": 233,
@@ -1045,7 +1381,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 928.3159912109375,
+          "bottom": 992.22001953125
+        }
+      ],
+      "shareImage": "share/q233.jpg",
+      "shareImageSize": [
+        760,
+        265
+      ]
     },
     {
       "id": 234,
@@ -1094,7 +1442,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 17,
+          "top": 992.3,
+          "bottom": 1041.899951171875
+        }
+      ],
+      "shareImage": "share/q234.jpg",
+      "shareImageSize": [
+        760,
+        236
+      ]
     },
     {
       "id": 235,
@@ -1141,7 +1501,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 18,
+          "top": 139.7400634765625,
+          "bottom": 252.22001953125
+        }
+      ],
+      "shareImage": "share/q235.jpg",
+      "shareImageSize": [
+        760,
+        362
+      ]
     },
     {
       "id": 236,
@@ -1208,7 +1580,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 18,
+          "top": 252.3,
+          "bottom": 383.25999755859374
+        }
+      ],
+      "shareImage": "share/q236.jpg",
+      "shareImageSize": [
+        760,
+        399
+      ]
     },
     {
       "id": 237,
@@ -1259,7 +1643,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 18,
+          "top": 383.350048828125,
+          "bottom": 522.8500244140625
+        }
+      ],
+      "shareImage": "share/q237.jpg",
+      "shareImageSize": [
+        760,
+        416
+      ]
     },
     {
       "id": 238,
@@ -1326,7 +1722,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 18,
+          "top": 522.9300048828125,
+          "bottom": 641.4100219726563
+        }
+      ],
+      "shareImage": "share/q238.jpg",
+      "shareImageSize": [
+        760,
+        374
+      ]
     },
     {
       "id": 239,
@@ -1420,7 +1828,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 18,
+          "top": 641.4900024414062,
+          "bottom": 825.9900390625
+        }
+      ],
+      "shareImage": "share/q239.jpg",
+      "shareImageSize": [
+        760,
+        506
+      ]
     },
     {
       "id": 240,
@@ -1514,7 +1934,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 18,
+          "top": 826.080029296875,
+          "bottom": 1008.5400268554688
+        }
+      ],
+      "shareImage": "share/q240.jpg",
+      "shareImageSize": [
+        760,
+        502
+      ]
     },
     {
       "id": 241,
@@ -1541,7 +1973,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 18,
+          "top": 1008.6200073242187,
+          "bottom": 1040.8199951171875
+        }
+      ],
+      "shareImage": "share/q241.jpg",
+      "shareImageSize": [
+        760,
+        201
+      ]
     },
     {
       "id": 242,
@@ -1608,7 +2052,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 18,
+          "top": 1040.8960693359375,
+          "bottom": 1099.616015625
+        }
+      ],
+      "shareImage": "share/q242.jpg",
+      "shareImageSize": [
+        760,
+        255
+      ]
     },
     {
       "id": 243,
@@ -1676,7 +2132,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 19,
+          "top": 139.73994140625,
+          "bottom": 288.460009765625
+        }
+      ],
+      "shareImage": "share/q243.jpg",
+      "shareImageSize": [
+        760,
+        434
+      ]
     },
     {
       "id": 244,
@@ -1748,7 +2216,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 19,
+          "top": 288.55,
+          "bottom": 454.5699951171875
+        }
+      ],
+      "shareImage": "share/q244.jpg",
+      "shareImageSize": [
+        760,
+        469
+      ]
     },
     {
       "id": 245,
@@ -1800,7 +2280,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 19,
+          "top": 454.65003662109376,
+          "bottom": 546.730029296875
+        }
+      ],
+      "shareImage": "share/q245.jpg",
+      "shareImageSize": [
+        760,
+        321
+      ]
     },
     {
       "id": 246,
@@ -1880,7 +2372,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 19,
+          "top": 546.810009765625,
+          "bottom": 691.710009765625
+        }
+      ],
+      "shareImage": "share/q246.jpg",
+      "shareImageSize": [
+        760,
+        427
+      ]
     },
     {
       "id": 247,
@@ -1932,7 +2436,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 19,
+          "top": 691.7900512695312,
+          "bottom": 886.230029296875
+        }
+      ],
+      "shareImage": "share/q247.jpg",
+      "shareImageSize": [
+        760,
+        526
+      ]
     },
     {
       "id": 248,
@@ -1989,7 +2505,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 19,
+          "top": 886.32001953125,
+          "bottom": 1000.0200073242188
+        }
+      ],
+      "shareImage": "share/q248.jpg",
+      "shareImageSize": [
+        760,
+        365
+      ]
     },
     {
       "id": 249,
@@ -2066,7 +2594,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 19,
+          "top": 1000.100048828125,
+          "bottom": 1074.6599609375
+        }
+      ],
+      "shareImage": "share/q249.jpg",
+      "shareImageSize": [
+        760,
+        286
+      ]
     },
     {
       "id": 250,
@@ -2111,7 +2651,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 20,
+          "top": 139.7400634765625,
+          "bottom": 213.1000244140625
+        }
+      ],
+      "shareImage": "share/q250.jpg",
+      "shareImageSize": [
+        760,
+        284
+      ]
     },
     {
       "id": 251,
@@ -2180,7 +2732,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 20,
+          "top": 213.1800048828125,
+          "bottom": 312.22001953125
+        }
+      ],
+      "shareImage": "share/q251.jpg",
+      "shareImageSize": [
+        760,
+        335
+      ]
     },
     {
       "id": 252,
@@ -2256,7 +2820,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 20,
+          "top": 312.3,
+          "bottom": 383.14000244140624
+        }
+      ],
+      "shareImage": "share/q252.jpg",
+      "shareImageSize": [
+        760,
+        279
+      ]
     },
     {
       "id": 253,
@@ -2314,7 +2890,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 20,
+          "top": 383.2300537109375,
+          "bottom": 543.8500244140625
+        }
+      ],
+      "shareImage": "share/q253.jpg",
+      "shareImageSize": [
+        760,
+        458
+      ]
     },
     {
       "id": 254,
@@ -2390,7 +2978,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 20,
+          "top": 543.9300048828125,
+          "bottom": 681.0300170898438
+        }
+      ],
+      "shareImage": "share/q254.jpg",
+      "shareImageSize": [
+        760,
+        412
+      ]
     },
     {
       "id": 255,
@@ -2459,7 +3059,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 20,
+          "top": 681.1200073242187,
+          "bottom": 1032.17998046875
+        }
+      ],
+      "shareImage": "share/q255.jpg",
+      "shareImageSize": [
+        760,
+        839
+      ]
     },
     {
       "id": 256,
@@ -2546,7 +3158,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 21,
+          "top": 139.73994140625,
+          "bottom": 255.5800048828125
+        }
+      ],
+      "shareImage": "share/q256.jpg",
+      "shareImageSize": [
+        760,
+        369
+      ]
     },
     {
       "id": 257,
@@ -2633,7 +3257,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 21,
+          "top": 255.66004638671876,
+          "bottom": 376.66002197265624
+        }
+      ],
+      "shareImage": "share/q257.jpg",
+      "shareImageSize": [
+        760,
+        379
+      ]
     },
     {
       "id": 258,
@@ -2721,7 +3357,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 21,
+          "top": 376.75001220703126,
+          "bottom": 513.8500244140625
+        }
+      ],
+      "shareImage": "share/q258.jpg",
+      "shareImageSize": [
+        760,
+        411
+      ]
     },
     {
       "id": 259,
@@ -2796,7 +3444,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 21,
+          "top": 513.9300048828125,
+          "bottom": 613.0900146484375
+        }
+      ],
+      "shareImage": "share/q259.jpg",
+      "shareImageSize": [
+        760,
+        336
+      ]
     },
     {
       "id": 260,
@@ -2895,7 +3555,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 21,
+          "top": 613.1699951171875,
+          "bottom": 766.230029296875
+        }
+      ],
+      "shareImage": "share/q260.jpg",
+      "shareImageSize": [
+        760,
+        443
+      ]
     },
     {
       "id": 261,
@@ -3012,7 +3684,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 21,
+          "top": 766.32001953125,
+          "bottom": 1006.3800537109375
+        }
+      ],
+      "shareImage": "share/q261.jpg",
+      "shareImageSize": [
+        760,
+        617
+      ]
     },
     {
       "id": 262,
@@ -3111,7 +3795,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 22,
+          "top": 139.7400634765625,
+          "bottom": 319.42003173828124
+        }
+      ],
+      "shareImage": "share/q262.jpg",
+      "shareImageSize": [
+        760,
+        496
+      ]
     },
     {
       "id": 263,
@@ -3163,7 +3859,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 22,
+          "top": 319.5000732421875,
+          "bottom": 371.500048828125
+        }
+      ],
+      "shareImage": "share/q263.jpg",
+      "shareImageSize": [
+        760,
+        240
+      ]
     },
     {
       "id": 264,
@@ -3213,7 +3921,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 22,
+          "top": 371.5860107421875,
+          "bottom": 452.29002685546874
+        }
+      ],
+      "shareImage": "share/q264.jpg",
+      "shareImageSize": [
+        760,
+        298
+      ]
     },
     {
       "id": 265,
@@ -3333,7 +4053,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 22,
+          "top": 452.37000732421876,
+          "bottom": 566.1700317382813
+        }
+      ],
+      "shareImage": "share/q265.jpg",
+      "shareImageSize": [
+        760,
+        365
+      ]
     },
     {
       "id": 266,
@@ -3440,7 +4172,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 22,
+          "top": 566.2500732421875,
+          "bottom": 637.8100463867188
+        }
+      ],
+      "shareImage": "share/q266.jpg",
+      "shareImageSize": [
+        760,
+        280
+      ]
     },
     {
       "id": 267,
@@ -3598,7 +4342,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 22,
+          "top": 637.8860595703125,
+          "bottom": 710.0699951171875
+        }
+      ],
+      "shareImage": "share/q267.jpg",
+      "shareImageSize": [
+        760,
+        282
+      ]
     },
     {
       "id": 268,
@@ -3712,7 +4468,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 22,
+          "top": 710.1500366210937,
+          "bottom": 780.51005859375
+        }
+      ],
+      "shareImage": "share/q268.jpg",
+      "shareImageSize": [
+        760,
+        278
+      ]
     },
     {
       "id": 269,
@@ -3835,7 +4603,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 22,
+          "top": 780.5900390625,
+          "bottom": 879.3900634765625
+        }
+      ],
+      "shareImage": "share/q269.jpg",
+      "shareImageSize": [
+        760,
+        334
+      ]
     },
     {
       "id": 270,
@@ -4003,7 +4783,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 22,
+          "top": 879.476025390625,
+          "bottom": 968.5800048828125
+        }
+      ],
+      "shareImage": "share/q270.jpg",
+      "shareImageSize": [
+        760,
+        316
+      ]
     },
     {
       "id": 271,
@@ -4143,7 +4935,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 22,
+          "top": 968.6599853515625,
+          "bottom": 1080.2999755859375
+        }
+      ],
+      "shareImage": "share/q271.jpg",
+      "shareImageSize": [
+        760,
+        360
+      ]
     },
     {
       "id": 272,
@@ -4252,7 +5056,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 23,
+          "top": 139.7400634765625,
+          "bottom": 283.90001220703124
+        }
+      ],
+      "shareImage": "share/q272.jpg",
+      "shareImageSize": [
+        760,
+        425
+      ]
     },
     {
       "id": 273,
@@ -4312,7 +5128,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 23,
+          "top": 283.99000244140626,
+          "bottom": 482.65001220703124
+        }
+      ],
+      "shareImage": "share/q273.jpg",
+      "shareImageSize": [
+        760,
+        535
+      ]
     },
     {
       "id": 274,
@@ -4395,7 +5223,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 23,
+          "top": 482.7300537109375,
+          "bottom": 566.0500366210938
+        }
+      ],
+      "shareImage": "share/q274.jpg",
+      "shareImageSize": [
+        760,
+        304
+      ]
     },
     {
       "id": 275,
@@ -4486,7 +5326,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 23,
+          "top": 566.1300170898437,
+          "bottom": 821.9100219726563
+        }
+      ],
+      "shareImage": "share/q275.jpg",
+      "shareImageSize": [
+        760,
+        648
+      ]
     },
     {
       "id": 276,
@@ -4518,7 +5370,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 23,
+          "top": 821.9900634765625,
+          "bottom": 870.6300537109375
+        }
+      ],
+      "shareImage": "share/q276.jpg",
+      "shareImageSize": [
+        760,
+        235
+      ]
     },
     {
       "id": 277,
@@ -4555,7 +5419,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 23,
+          "top": 870.7100341796875,
+          "bottom": 919.1100341796875
+        }
+      ],
+      "shareImage": "share/q277.jpg",
+      "shareImageSize": [
+        760,
+        234
+      ]
     },
     {
       "id": 278,
@@ -4587,7 +5463,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 23,
+          "top": 919.19599609375,
+          "bottom": 968.1000244140625
+        }
+      ],
+      "shareImage": "share/q278.jpg",
+      "shareImageSize": [
+        760,
+        235
+      ]
     },
     {
       "id": 279,
@@ -4620,7 +5508,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 23,
+          "top": 968.1800048828125,
+          "bottom": 1016.8199951171875
+        }
+      ],
+      "shareImage": "share/q279.jpg",
+      "shareImageSize": [
+        760,
+        234
+      ]
     },
     {
       "id": 280,
@@ -4647,7 +5547,19 @@
           "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm"
         }
       ],
-      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment."
+      "strategy": "Identify whether values are raw observations, frequencies or class intervals. Keep full precision until the final answer. Check whether the question asks for a raw moment or a central moment.",
+      "sourceRows": [
+        {
+          "page": 23,
+          "top": 1016.9000366210937,
+          "bottom": 1065.6599609375
+        }
+      ],
+      "shareImage": "share/q280.jpg",
+      "shareImageSize": [
+        760,
+        235
+      ]
     }
   ]
 }

@@ -49,7 +49,7 @@
  }
  function render(id,updateUrl=true){
   const q=byId.get(Number(id));if(!q){$('jump-message').textContent='Enter a whole question number from 643 to 1023.';return false;}
-  current=q;if(window.SolutionGuidance)window.SolutionGuidance.render(q);if(window.StudyTools)window.StudyTools.mount($('math-study-tools'),'maths:'+q.id);if(unit!==q.unit||!$('question-select').options.length)browse(q.unit);
+  current=q;if(window.QuestionShare)window.QuestionShare.mount(q,'maths');if(window.SolutionGuidance)window.SolutionGuidance.render(q);if(window.StudyTools)window.StudyTools.mount($('math-study-tools'),'maths:'+q.id);if(unit!==q.unit||!$('question-select').options.length)browse(q.unit);
   $('question-number').value=q.id;$('question-select').value=q.id;$('question-title').textContent=`Q${q.id} · Unit ${q.unit}`;$('solution-title').textContent=`Q${q.id} — Solution`;
   source(q);$('source-link').href=`practice-book.pdf#page=${q.page}`;$('book-viewer').src=`practice-book.pdf#page=${q.page}&zoom=page-width`;
   $('steps').replaceChildren();q.steps.forEach((s,j)=>{const block=el('div',null,'step');block.append(el('h4',`${j+1}. ${s.title}`));if(s.text)block.append(el('p',s.text));if(s.math){const f=el('div');formula(s.math,f);block.append(f);}$('steps').append(block);});
@@ -64,8 +64,9 @@
  document.querySelectorAll('[data-unit]').forEach(b=>b.addEventListener('click',()=>render(questions.find(q=>q.unit===Number(b.dataset.unit)).id)));
  $('previous-question').addEventListener('click',()=>render(current.id-1));$('next-question').addEventListener('click',()=>render(current.id+1));
  $('random-question').addEventListener('click',()=>{const list=questions.filter(q=>q.unit===unit);render(list[Math.floor(Math.random()*list.length)].id);});
- $('show-solution').addEventListener('click',()=>{const open=$('solution').hidden;$('solution').hidden=!open;$('show-solution').setAttribute('aria-expanded',String(open));$('show-solution').textContent=open?'Hide solution':'Show solution';});
- $('print-solution').addEventListener('click',()=>{$('solution').hidden=false;$('show-solution').setAttribute('aria-expanded','true');$('show-solution').textContent='Hide solution';window.print();});
+ function reveal(){ $('solution').hidden=false;$('show-solution').setAttribute('aria-expanded','true');$('show-solution').textContent='Hide solution'; }
+ $('show-solution').addEventListener('click',()=>{if(!$('solution').hidden){$('solution').hidden=true;$('show-solution').setAttribute('aria-expanded','false');$('show-solution').textContent='Show solution';return;}const id=current.id;const action=()=>{if(current.id===id)reveal();};if(window.QuestionAccess)window.QuestionAccess.require(action);else window.StudyTools?.notice('Login could not load. Reload this page to see the solution.');});
+ $('print-solution').addEventListener('click',()=>{const id=current.id;const action=()=>{if(current.id===id){reveal();window.print();}};if(window.QuestionAccess)window.QuestionAccess.require(action);else window.StudyTools?.notice('Login could not load. Reload this page to see the solution.');});
  window.addEventListener('hashchange',()=>{const m=location.hash.match(/^#q(\d+)$/);if(m)render(Number(m[1]),false);});
- const initial=location.hash.match(/^#q(\d+)$/);render(initial&&byId.has(Number(initial[1]))?Number(initial[1]):643,false);
+ const initial=location.hash.match(/^#q(\d+)$/);render(initial&&byId.has(Number(initial[1]))?Number(initial[1]):643,false);if(window.QuestionAccess)window.QuestionAccess.resumeSolution(reveal);
 })();

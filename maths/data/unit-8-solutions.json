@@ -35,7 +35,12 @@
       }
     ],
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
-    "verification": null
+    "verification": null,
+    "shareImage": "share/q967.jpg",
+    "shareImageSize": [
+      1397,
+      213
+    ]
   },
   {
     "id": 968,
@@ -348,7 +353,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q968.jpg",
+    "shareImageSize": [
+      1397,
+      240
+    ]
   },
   {
     "id": 969,
@@ -661,7 +671,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q969.jpg",
+    "shareImageSize": [
+      1397,
+      243
+    ]
   },
   {
     "id": 970,
@@ -974,7 +989,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q970.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 971,
@@ -1282,7 +1302,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q971.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 972,
@@ -2083,7 +2108,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q972.jpg",
+    "shareImageSize": [
+      760,
+      242
+    ]
   },
   {
     "id": 973,
@@ -2396,7 +2426,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q973.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 974,
@@ -2974,7 +3009,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q974.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 975,
@@ -4019,7 +4059,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q975.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 976,
@@ -4327,7 +4372,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q976.jpg",
+    "shareImageSize": [
+      760,
+      241
+    ]
   },
   {
     "id": 977,
@@ -4640,7 +4690,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q977.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 978,
@@ -4948,7 +5003,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q978.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 979,
@@ -5993,7 +6053,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q979.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 980,
@@ -6301,7 +6366,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q980.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 981,
@@ -6609,7 +6679,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q981.jpg",
+    "shareImageSize": [
+      760,
+      295
+    ]
   },
   {
     "id": 982,
@@ -6922,7 +6997,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q982.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 983,
@@ -7230,7 +7310,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q983.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 984,
@@ -7538,7 +7623,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q984.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 985,
@@ -7852,7 +7942,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q985.jpg",
+    "shareImageSize": [
+      760,
+      241
+    ]
   },
   {
     "id": 986,
@@ -8160,7 +8255,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q986.jpg",
+    "shareImageSize": [
+      760,
+      364
+    ]
   },
   {
     "id": 987,
@@ -8638,7 +8738,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q987.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 988,
@@ -8953,7 +9058,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q988.jpg",
+    "shareImageSize": [
+      760,
+      286
+    ]
   },
   {
     "id": 989,
@@ -9266,7 +9376,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q989.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 990,
@@ -9579,7 +9694,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q990.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 991,
@@ -9888,7 +10008,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q991.jpg",
+    "shareImageSize": [
+      760,
+      294
+    ]
   },
   {
     "id": 992,
@@ -10201,7 +10326,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q992.jpg",
+    "shareImageSize": [
+      760,
+      241
+    ]
   },
   {
     "id": 993,
@@ -10514,7 +10644,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q993.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 994,
@@ -10822,7 +10957,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q994.jpg",
+    "shareImageSize": [
+      760,
+      294
+    ]
   },
   {
     "id": 995,
@@ -11663,7 +11803,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q995.jpg",
+    "shareImageSize": [
+      760,
+      302
+    ]
   },
   {
     "id": 996,
@@ -11976,7 +12121,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q996.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 997,
@@ -12289,7 +12439,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q997.jpg",
+    "shareImageSize": [
+      760,
+      294
+    ]
   },
   {
     "id": 998,
@@ -12602,7 +12757,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q998.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 999,
@@ -12910,7 +13070,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q999.jpg",
+    "shareImageSize": [
+      760,
+      322
+    ]
   },
   {
     "id": 1000,
@@ -13224,7 +13389,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1000.jpg",
+    "shareImageSize": [
+      760,
+      268
+    ]
   },
   {
     "id": 1001,
@@ -14065,7 +14235,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1001.jpg",
+    "shareImageSize": [
+      760,
+      294
+    ]
   },
   {
     "id": 1002,
@@ -14386,7 +14561,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1002.jpg",
+    "shareImageSize": [
+      1397,
+      302
+    ]
   },
   {
     "id": 1003,
@@ -14699,7 +14879,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1003.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 1004,
@@ -15013,7 +15198,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1004.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 1005,
@@ -15327,7 +15517,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1005.jpg",
+    "shareImageSize": [
+      760,
+      241
+    ]
   },
   {
     "id": 1006,
@@ -15640,7 +15835,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1006.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 1007,
@@ -15953,7 +16153,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1007.jpg",
+    "shareImageSize": [
+      760,
+      213
+    ]
   },
   {
     "id": 1008,
@@ -16286,7 +16491,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1008.jpg",
+    "shareImageSize": [
+      760,
+      273
+    ]
   },
   {
     "id": 1009,
@@ -17137,7 +17347,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1009.jpg",
+    "shareImageSize": [
+      760,
+      267
+    ]
   },
   {
     "id": 1010,
@@ -17450,7 +17665,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1010.jpg",
+    "shareImageSize": [
+      760,
+      241
+    ]
   },
   {
     "id": 1011,
@@ -18007,7 +18227,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1011.jpg",
+    "shareImageSize": [
+      760,
+      240
+    ]
   },
   {
     "id": 1012,
@@ -19052,7 +19277,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1012.jpg",
+    "shareImageSize": [
+      760,
+      241
+    ]
   },
   {
     "id": 1013,
@@ -20162,7 +20392,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1013.jpg",
+    "shareImageSize": [
+      760,
+      239
+    ]
   },
   {
     "id": 1014,
@@ -21272,7 +21507,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1014.jpg",
+    "shareImageSize": [
+      760,
+      271
+    ]
   },
   {
     "id": 1015,
@@ -21829,7 +22069,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1015.jpg",
+    "shareImageSize": [
+      760,
+      330
+    ]
   },
   {
     "id": 1016,
@@ -22630,7 +22875,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1016.jpg",
+    "shareImageSize": [
+      760,
+      268
+    ]
   },
   {
     "id": 1017,
@@ -23481,7 +23731,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1017.jpg",
+    "shareImageSize": [
+      760,
+      286
+    ]
   },
   {
     "id": 1018,
@@ -24591,7 +24846,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1018.jpg",
+    "shareImageSize": [
+      760,
+      273
+    ]
   },
   {
     "id": 1019,
@@ -24924,7 +25184,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1019.jpg",
+    "shareImageSize": [
+      760,
+      409
+    ]
   },
   {
     "id": 1020,
@@ -25725,7 +25990,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1020.jpg",
+    "shareImageSize": [
+      760,
+      279
+    ]
   },
   {
     "id": 1021,
@@ -26317,7 +26587,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1021.jpg",
+    "shareImageSize": [
+      760,
+      252
+    ]
   },
   {
     "id": 1022,
@@ -26909,7 +27184,12 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1022.jpg",
+    "shareImageSize": [
+      760,
+      252
+    ]
   },
   {
     "id": 1023,
@@ -27387,6 +27667,11 @@
     "strategy": "Write the path orientation and the correct integral type first. Work uses F·r′; a scalar line integral uses |r′|; flux needs a chosen normal. Add all oriented segments.",
     "verification": {
       "text": "Checked by numerical differentiation or quadrature at sample values. This checks the calculation, not every source transcription or all parameter cases."
-    }
+    },
+    "shareImage": "share/q1023.jpg",
+    "shareImageSize": [
+      760,
+      269
+    ]
   }
 ]
