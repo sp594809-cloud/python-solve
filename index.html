@@ -15,6 +15,7 @@
   <script src="js/theme-switcher.js"></script>
   <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="css/study-experience.css">
 </head>
 <body>
   <a class="skip-link" href="#mainContent">Skip to study content</a>
@@ -39,10 +40,10 @@
         <li data-view="home" class="active"><button type="button" onclick="openWelcomeScreen();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">⌂</span>Overview</button></li>
         <li data-view="sem1"><button type="button" onclick="openSem1PracticeBook();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">Py</span>Python · Semester I</button></li>
         <li data-view="sem3"><button type="button" onclick="openSem3PracticeBook();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">Py</span>Python · Semester III</button></li>
-        <li data-view="fsd1"><button type="button" onclick="openFsd1PracticeBook();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">JS</span>Full stack development</button></li>
+        <li data-view="fsd1"><a href="study/?subject=fsd"><span class="nav-symbol" aria-hidden="true">JS</span>Full stack development</a></li>
         <li data-view="maths"><a href="maths/"><span class="nav-symbol" aria-hidden="true">∫</span>Mathematics I · Units 6–8</a></li>
         <li data-view="ps"><a href="probability/"><span class="nav-symbol" aria-hidden="true">∑</span>Probability & statistics</a></li>
-        <li data-view="se"><button type="button" onclick="openSEPracticeBook();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">SE</span>Software engineering</button></li>
+        <li data-view="se"><a href="study/?subject=se"><span class="nav-symbol" aria-hidden="true">SE</span>Software engineering</a></li>
         <li data-view="quiz"><button type="button" onclick="startUnitQuiz('sem1','all',10);closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">✓</span>Quick quiz</button></li>
         <li data-view="rank"><button type="button" onclick="openLeaderboardScreen();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">▥</span>Leaderboard</button></li>
         <li data-view="learn"><button type="button" onclick="openLearningPathNav();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">&lt;&gt;</span>Learning path</button></li>
@@ -53,33 +54,15 @@
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <main class="main-content" id="mainContent" tabindex="-1">
       <section id="welcomeScreen" class="screen active" aria-label="Study overview">
-        <div class="bw-home">
-          <div class="bw-header">
-            <div><div class="eyebrow">YOUR WORKSPACE</div><h1>What will you learn today?</h1><div class="sub">Choose a subject and pick up your practice.</div></div>
-            <button class="bw-avatar" id="bwAvatar" type="button" onclick="openStudentProfileModal()" aria-label="Open your student profile">?</button>
-          </div>
-          <div class="bw-challenge">
-            <div><span class="tag">10 QUESTIONS · PYTHON I</span><h2>A little practice, every day.</h2><p>Test your understanding with a quick quiz.</p></div>
-            <button type="button" class="bw-play" onclick="startUnitQuiz('sem1','all',10)">Start quiz</button>
-          </div>
-          <h2 class="bw-section-title">Your subjects</h2>
-          <div class="bw-cats">
-            <button type="button" class="bw-cat python" onclick="openSem1PracticeBook()"><span class="icon" aria-hidden="true">Py</span><span>Python · Semester I</span><small>Units 1–3 · 210 questions</small></button>
-            <button type="button" class="bw-cat sem3" onclick="openSem3PracticeBook()"><span class="icon" aria-hidden="true">Py</span><span>Python · Semester III</span><small>FCSP-1 · Units 1–10 · 734 questions</small></button>
-            <a class="bw-cat maths" href="maths/" style="text-decoration:none;color:inherit"><span class="icon" aria-hidden="true">∫</span><span>Mathematics · Semester I</span><small>Units 6–8 · 381 worked solutions</small></a>
-            <button type="button" class="bw-cat fsd" onclick="openFsd1PracticeBook()"><span class="icon" aria-hidden="true">JS</span><span>Full stack development</span><small>FSD-1 · Units 1–10</small></button>
-            <a class="bw-cat ps" href="probability/"><span class="icon" aria-hidden="true">∑</span><span>Probability &amp; statistics</span><small>Chapters 3–4 · 140 worked solutions</small></a>
-            <button type="button" class="bw-cat se" onclick="openSEPracticeBook()"><span class="icon" aria-hidden="true">SE</span><span>Software engineering</span><small>Practice book · MCQs</small></button>
-            <button type="button" class="bw-cat learn" onclick="openLearningPathNav()"><span class="icon" aria-hidden="true">&lt;&gt;</span><span>Learn Python</span><small>Concepts · Interactive exercises</small></button>
-          </div>
-          <h2 class="bw-section-title">Practice your way</h2>
-          <div class="bw-unit-list">
-            <a class="bw-unit" href="probability/"><span class="bw-unit-icon" aria-hidden="true">∑</span><span class="bw-unit-body"><strong>Chapter 3 worked solutions</strong><span class="bw-unit-meta" style="display:block">Statistics &amp; moments · Q205–Q280</span></span><span class="bw-score">Open</span></a>
-            <button type="button" class="bw-unit" onclick="startUnitQuiz('sem1','all',15)"><span class="bw-unit-icon" aria-hidden="true">✓</span><span class="bw-unit-body"><strong>Timed Python quiz</strong><span class="bw-unit-meta" style="display:block">15 questions · Score &amp; review</span></span><span class="bw-score">Start</span></button>
-            <button type="button" class="bw-unit" onclick="openSem1PracticeBook()"><span class="bw-unit-icon" aria-hidden="true">Py</span><span class="bw-unit-body"><strong>Python coding practice</strong><span class="bw-unit-meta" style="display:block">Read, write and run your code</span></span><span class="bw-score">Open</span></button>
-            <button type="button" class="bw-unit" onclick="openLeaderboardScreen()"><span class="bw-unit-icon" aria-hidden="true">▥</span><span class="bw-unit-body"><strong>Your class leaderboard</strong><span class="bw-unit-meta" style="display:block">Check points &amp; class rankings</span></span><span class="bw-score">View</span></button>
-          </div>
-          <p class="home-profile"><span id="bwUserName">Student</span> · <strong id="bwPoints">0</strong> points</p>
+        <div class="study-dashboard">
+          <section class="study-hero"><div><div class="eyebrow">A LITTLE PRACTICE. A BIG DIFFERENCE.</div><h1>Your next “I get it!”<br>starts here.</h1><p>Your Semester 1 &amp; 3 study space. Find a question, understand the steps, and make it yours.</p><button type="button" id="hero-start" class="study-primary">Let’s learn something →</button></div><img src="assets/study-buddies.svg" alt="A student and a friendly owl studying together"></section>
+          <div class="study-stats" aria-label="Your study progress"><div class="study-stat"><strong id="stat-done">0</strong><span>Questions marked done</span></div><div class="study-stat"><strong id="stat-revise">0</strong><span>To revise or ask about</span></div><div class="study-stat"><strong id="stat-saved">0</strong><span>Saved for later</span></div></div>
+          <div class="study-topline"><h2 class="study-section-title">Pick your next chapter</h2><div class="study-semesters" aria-label="Filter semester"><button type="button" data-semester="all" aria-pressed="true">All</button><button type="button" data-semester="1" aria-pressed="false">Semester 1</button><button type="button" data-semester="3" aria-pressed="false">Semester 3</button></div></div>
+          <div class="study-grid" id="study-subjects"></div>
+          <section id="study-search" class="study-search-zone"><h2 class="study-section-title">What are you working on?</h2><p class="study-small">Search question numbers, topics, and keywords across every available subject.</p><div class="study-search-line"><input id="global-search" type="search" placeholder="Try Q643, loops, or integration…" aria-label="Search across all subjects"><select id="search-subject" aria-label="Search subject"></select></div><p id="search-count" class="study-small" role="status"></p><div id="global-results" class="search-results"></div></section>
+          <div class="study-bottom-grid"><section class="study-panel"><h2>Your little revision corner</h2><p>Keep the tricky ones close. Come back when you’re ready.</p><div class="saved-tabs" aria-label="Saved question filters"><button type="button" data-saved-filter="bookmark" aria-pressed="true">★ Saved</button><button type="button" data-saved-filter="revise" aria-pressed="false">↻ Revise</button><button type="button" data-saved-filter="doubt" aria-pressed="false">? Doubts</button><button type="button" data-saved-filter="done" aria-pressed="false">✓ Done</button></div><div id="saved-results" class="search-results"></div><p class="study-small">Your progress and report drafts are saved on this device.</p></section><section class="study-panel"><h2>Give your brain a small challenge</h2><p>Try first. Check the answers after you submit.</p><label>Subject<select id="practice-subject"></select></label><label>Chapter<select id="practice-chapter"></select></label><label>Session length<select id="practice-count"><option value="5">5 questions · a quick start</option><option value="10">10 questions · a deeper dive</option></select></label><button type="button" id="practice-start" class="study-primary">Start practice →</button><p class="study-small">MCQs are scored. Written answers are self-checked.</p></section></div>
+          <div class="focus-strip"><div><strong>A calm 15-minute session</strong><br><span>One chapter. A few questions. Your own pace.</span></div><div><strong id="focus-time">15:00</strong> <button type="button" id="focus-start">Start</button></div></div>
+          <p class="study-small">Study aid built by students. Available chapters are labelled above. Faculty review is pending.</p><div class="home-profile"><span id="bwUserName">Student</span> · <strong id="bwPoints">0</strong> class points <span id="bwAvatar" hidden>?</span></div>
         </div>
       </section>
       <section id="conceptScreen" class="screen">
@@ -137,6 +120,9 @@
   <script src="js/app-se.js"></script>
   <script src="js/python-books-route.js"></script>
   <script src="js/navigation-ui.js"></script>
+  <script src="js/study-catalogue.js"></script>
+  <script src="js/study-tools.js"></script>
+  <script src="js/study-dashboard.js"></script>
   <script>
   (function(){
     function boot(){

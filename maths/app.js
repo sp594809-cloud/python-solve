@@ -22,7 +22,7 @@
   const root=$('question-source');root.replaceChildren();
   (q.sourceCrops||[]).forEach(c=>{
    const svg=svgEl('svg',{viewBox:`0 ${c.y} ${c.width} ${c.height}`,class:'source-crop',role:'img','aria-label':`Original practice-book question ${q.id}${q.sourceCrops.length>1?' (continued)':''}`});
-   svg.append(svgEl('image',{href:c.image,width:c.width,height:c.pageHeight}));root.append(svg);
+   svg.append(svgEl('image',{href:c.image,width:c.width,height:c.pageHeight}));const scroll=el('div',null,'source-scroll');scroll.append(svg);root.append(scroll);
   });
   if(!(q.sourceCrops||[]).length)mixed(q.question||q.sourceText,$('question-text'));else $('question-text').replaceChildren();
  }
@@ -49,7 +49,7 @@
  }
  function render(id,updateUrl=true){
   const q=byId.get(Number(id));if(!q){$('jump-message').textContent='Enter a whole question number from 643 to 1023.';return false;}
-  current=q;if(unit!==q.unit||!$('question-select').options.length)browse(q.unit);
+  current=q;if(window.StudyTools)window.StudyTools.mount($('math-study-tools'),'maths:'+q.id);if(unit!==q.unit||!$('question-select').options.length)browse(q.unit);
   $('question-number').value=q.id;$('question-select').value=q.id;$('question-title').textContent=`Q${q.id} · Unit ${q.unit}`;$('solution-title').textContent=`Q${q.id} — Solution`;
   source(q);$('source-link').href=`practice-book.pdf#page=${q.page}`;$('book-viewer').src=`practice-book.pdf#page=${q.page}&zoom=page-width`;
   $('steps').replaceChildren();q.steps.forEach((s,j)=>{const block=el('div',null,'step');block.append(el('h4',`${j+1}. ${s.title}`));if(s.text)block.append(el('p',s.text));if(s.math){const f=el('div');formula(s.math,f);block.append(f);}$('steps').append(block);});
@@ -58,6 +58,7 @@
   $('previous-question').disabled=q.id===643;$('next-question').disabled=q.id===1023;$('jump-message').textContent=`Q${q.id} · ${questions.filter(v=>v.unit===q.unit).length} solved questions in this chapter.`;
   if(updateUrl)history.replaceState(null,'',`#q${q.id}`);return true;
  }
+ $('expand-source').addEventListener('click',()=>{const d=window.StudyTools.modal('Original PDF · Q'+current.id,'<p class="study-small">The complete original page. Zoom in to read the question and all options.</p><label>Page zoom<select id="source-zoom"><option value="100">Fit width</option><option value="150">150%</option><option value="200">200%</option></select></label><div class="source-scroll" id="full-source-pages"></div>');const host=d.querySelector('#full-source-pages');for(const c of current.sourceCrops){const img=el('img');img.src=c.image;img.alt='Original practice-book page for Q'+current.id;img.className='full-source';host.append(img);}d.querySelector('#source-zoom').onchange=e=>host.querySelectorAll('img').forEach(img=>{img.style.width=e.target.value+'%';img.style.maxWidth='none';});});
  $('jump-form').addEventListener('submit',event=>{event.preventDefault();render(Number($('question-number').value));});
  $('question-select').addEventListener('change',()=>render($('question-select').value));
  document.querySelectorAll('[data-unit]').forEach(b=>b.addEventListener('click',()=>render(questions.find(q=>q.unit===Number(b.dataset.unit)).id)));

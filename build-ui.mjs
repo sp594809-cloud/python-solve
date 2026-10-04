@@ -1,7 +1,9 @@
 // Build the static distribution from the current source; omit authoring data/tools.
 import {cpSync,rmSync,mkdirSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+execFileSync(process.execPath,['scripts/build-study-index.cjs'],{stdio:'inherit'});
 rmSync('dist',{recursive:true,force:true});mkdirSync('dist');
-for(const file of ['index.html','loops-adventure.html','service-worker.js','manifest.json','css','js','icons','python'])cpSync(file,'dist/'+file,{recursive:true});
+for(const file of ['index.html','loops-adventure.html','service-worker.js','manifest.json','css','js','icons','python','assets','study'])cpSync(file,'dist/'+file,{recursive:true});
 mkdirSync('dist/probability/data',{recursive:true});
 for(const file of ['index.html','app.js','styles.css','practice-book.pdf','chapter-4.html'])cpSync('probability/'+file,'dist/probability/'+file);
 cpSync('probability/data/chapter-3.js','dist/probability/data/chapter-3.js');
