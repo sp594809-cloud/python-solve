@@ -1,0 +1,42 @@
+/* Last layer: a single theme across dashboard, books, forms and course. */
+:root{--action:#4947cf;--action-text:#fff;--code-bg:#edf1f8;--code-text:#23334a;--hero-bg:#eeedff;--hero-border:#dcd9f6;--gold-bg:#fff5dc;--mint-bg:#e7f2eb;--mint-text:#146b5b}
+html[data-theme=dark]{--action:#aaa5ff;--action-text:#171526;--code-bg:#111727;--code-text:#e5edff;--hero-bg:#302e50;--hero-border:#4a456a;--gold-bg:#3d3423;--mint-bg:#213d34;--mint-text:#8cdab8}
+html[data-theme] body{background:var(--bg);color:var(--text);--ink:var(--text);--muted:var(--text-muted);--line:var(--border);--paper:var(--bg);--soft:var(--bg-elevated);--accent:var(--primary);--green:var(--action);--lavender:var(--primary-soft);--gold:var(--gold-bg);--study-ink:var(--text);--study-muted:var(--text-muted);--study-blue:var(--action);--study-paper:var(--card);--study-line:var(--border);--study-bg:var(--bg)}
+html[data-theme] :is(.topbar,.reader-topbar,.math-header,.unit-nav,.question,.quick-tools,.question-card,.reader-section,.study-guide,.progress>div,.lesson,.video-card,.guided-lab,.notebook-section,.study-dialog,.study-stat,.subject-card,.study-search-zone,.study-panel,.study-semesters){background:var(--card);color:var(--text);border-color:var(--border)}
+html[data-theme] :is(.reader-topbar a,.math-header a,.book-switch button,.unit-button,.outline,.question-heading a,.question-navigation button,.study-actions button,.study-state select,.original-pb-preview summary){color:var(--primary)}
+html[data-theme] :is(.intro,.hero,.reader-hero,.reader-heading,.study-hero,.lesson-title,.checkpoint){background:var(--hero-bg);color:var(--text);border-color:var(--hero-border)}
+html[data-theme] :is(.study-hero .eyebrow,.maths-hero>div>p,.book-heading p,.source-note,.quick-tools p,.quick-tools label,.chapter-tabs span,.review-state,.study-state,.study-dialog #share-status){color:var(--muted)}
+html[data-theme] :is(input,select,textarea){background:var(--card);color:var(--text);border-color:var(--border)}
+html[data-theme] :is(button,.file-button,.outline){border-color:var(--border)}
+html[data-theme] :is(.primary,.study-primary,.study-dashboard .study-primary,.solution-toggle,.layout #show-solution,.book-switch button[aria-pressed=true],.step-tab.active,.pb-filter-btn.active,.study-semesters button[aria-pressed=true],nav button.active){background:var(--action);color:var(--action-text);border-color:var(--action)}
+html[data-theme] :is(button,.file-button):hover:not(:disabled){filter:brightness(.94)}
+html[data-theme=dark] :is(.primary,.study-primary,.solution-toggle):hover{filter:brightness(1.1)}
+html[data-theme] :is(.saved-tabs button,.prediction-options button,.pills button,.lesson-picker button,.actions button,.help button,.editor-tools button,.chapter-tabs button,.quick-tools button,.question-navigation button,.file-button){background:var(--card);color:var(--text);border-color:var(--border)}
+html[data-theme] :is(.pills button[aria-pressed=true],.chapter-tabs button[aria-current=true],.saved-tabs button[aria-pressed=true],.lesson-picker .primary,.actions .primary){background:var(--action);color:var(--action-text);border-color:var(--action)}
+html[data-theme] :is(.study-actions button[aria-pressed=true],.mistake-card,.project){background:var(--gold-bg);color:var(--text);border-color:var(--border)}
+html[data-theme] :is(.method-hint,.internship-promo,.share-question-button,.share-secondary){background:var(--mint-bg);color:var(--mint-text);border-color:var(--border)}
+html[data-theme] :is(.solution-references,.prerequisite,#error-help,.notebook-section details){background:var(--bg-elevated);color:var(--text);border-color:var(--border)}
+html[data-theme] .solution-references a{color:var(--primary)}
+html[data-theme] :is(.learn pre,.practice pre,.question pre,#guided-editor,#editor,.jl-input,.jl-output){background:var(--code-bg);color:var(--code-text);border-color:var(--border)}
+html[data-theme] #output:empty::before{color:var(--muted)}
+html[data-theme] #results .pass{color:var(--success)}html[data-theme] #results .fail{color:var(--danger)}
+html[data-theme] :is(.study-dialog #share-question-link,.dialog-close,.dialog-buttons button){background:var(--card);color:var(--text);border-color:var(--border)}
+html[data-theme] .study-dialog :is(input,textarea,select){color:var(--text);background:var(--card)}
+html[data-theme] .subject-card{box-shadow:var(--shadow)}
+html[data-theme=dark] .subject-card{--tone:#b1baff;--soft:#2a3151}html[data-theme=dark] .subject-card[data-subject=maths]{--tone:#ffd18b;--soft:#443523}html[data-theme=dark] .subject-card[data-subject=py3]{--tone:#cbb0ff;--soft:#382c51}html[data-theme=dark] .subject-card[data-subject=fsd]{--tone:#86d9be;--soft:#203e36}html[data-theme=dark] .subject-card[data-subject=se]{--tone:#f6a8c8;--soft:#442b3a}html[data-theme=dark] .subject-card[data-subject=ps]{--tone:#a4ccff;--soft:#263951}
+html[data-theme] .subject-card :is(.subject-symbol,.chapter-links a){color:var(--tone);background:var(--soft)}
+html[data-theme] .subject-card :is(.coverage-pill,.subject-open){color:var(--tone)}
+html[data-theme] .internship-promo .study-primary{background:var(--action);color:var(--action-text)}
+html[data-theme] .layout .sidebar{background:var(--card)}
+/* Printed questions and handwritten answer sheets preserve their original ink. */
+html[data-theme] :is(.handwritten-solution,.layout #solution,.question .solution,.source-scroll,.share-preview,.source-crop,.original-pb-preview img){background:#fff;color:#171717;color-scheme:light}
+html[data-theme] .handwritten-solution :is(.math-formula,.katex){color:#171717}
+html[data-theme] :is(.handwritten-solution,.layout #solution,.question .solution) :is(.formula,.final-answer,.solution-note,.method-hint,.solution-references){background:#f3f5fa;color:#171717;border-color:#cbd3df}
+html[data-theme] :is(.handwritten-solution,.layout #solution,.question .solution) a{color:#334fa0}
+html[data-theme] .handwritten-solution .solution-references a{color:#334fa0}
+.theme-toggle{white-space:nowrap;flex-shrink:0}.topbar,.reader-topbar,.math-header{gap:10px;flex-wrap:wrap;height:auto;min-height:64px}.topbar #themeToggleBtn{width:auto}
+html[data-theme] :is(button,input,textarea,select){min-height:44px}html[data-theme] input:is([type=checkbox],[type=radio]){min-height:0}
+@media(max-width:500px){.reader-topbar{padding:12px}.reader-topbar>a{font-size:12px}.topbar{padding:12px;gap:8px}.topbar .brand{font-size:13px}.topbar #themeToggleBtn{font-size:12px;padding:8px}.topbar>span{display:none}.study-stats{grid-template-columns:repeat(3,minmax(0,1fr))}.study-stat{min-width:0;overflow-wrap:anywhere}.lesson-picker #lesson-select{min-width:0;width:100%;flex-basis:100%}}
+@media print{html[data-theme] body{background:#fff;color:#111}.theme-toggle{display:none!important}html[data-theme] :is(.question,.question-card,.lesson){background:#fff;color:#111}}
+html[data-theme] :is(.handwritten-solution,.layout #solution,.question .solution) :is(.final-answer>div,thead,caption){color:#33425c;background:#edf1f8}
+html[data-theme] .bw-cat .icon{color:var(--action-text)}

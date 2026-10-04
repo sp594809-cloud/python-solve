@@ -1,18 +1,6 @@
-/* Shared preference for the hub and its practice books. */
-(() => {
- const key='ljiet_theme';
- function applyTheme(theme) {
-  theme=theme==='dark'?'dark':'light';
-  document.documentElement.dataset.theme=theme;
-  if(document.body)document.body.dataset.theme=theme;
-  try{localStorage.setItem(key,theme);}catch(_){}
-  const button=document.getElementById('themeToggleBtn');
-  if(button){button.textContent=theme==='dark'?'Light mode':'Dark mode';button.setAttribute('aria-label','Switch to '+(theme==='dark'?'light':'dark')+' mode');button.setAttribute('aria-pressed',String(theme==='dark'));}
- }
- window.applyTheme=applyTheme;
- window.toggleTheme=()=>applyTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
- let saved;try{saved=localStorage.getItem(key);}catch(_){}
- applyTheme(saved);
- document.addEventListener('DOMContentLoaded',()=>applyTheme(document.documentElement.dataset.theme));
- window.addEventListener('storage',event=>{if(event.key===key)applyTheme(event.newValue);});
-})();
+/* One persisted preference for every hub page, with system fallback. */
+(()=>{'use strict';const key='ljiet_theme',system=window.matchMedia?.('(prefers-color-scheme: dark)');let preference;
+try{preference=localStorage.getItem(key);}catch{}
+function apply(theme,persist=true){theme=theme==='dark'?'dark':'light';document.documentElement.dataset.theme=theme;if(document.body)document.body.dataset.theme=theme;if(persist){preference=theme;try{localStorage.setItem(key,theme);}catch{}}const button=document.getElementById('themeToggleBtn');if(button){button.textContent=theme==='dark'?'Light mode':'Dark mode';button.setAttribute('aria-label','Switch to '+(theme==='dark'?'light':'dark')+' mode');button.setAttribute('aria-pressed',String(theme==='dark'));}const meta=document.querySelector('meta[name="theme-color"]');if(meta)meta.content=theme==='dark'?'#111322':'#f6f7ff';window.dispatchEvent(new CustomEvent('hub-theme-change',{detail:{theme}}));}
+window.applyTheme=theme=>apply(theme);window.toggleTheme=()=>apply(document.documentElement.dataset.theme==='dark'?'light':'dark');apply(['dark','light'].includes(preference)?preference:(system?.matches?'dark':'light'),false);
+document.addEventListener('DOMContentLoaded',()=>apply(document.documentElement.dataset.theme,false));window.addEventListener('storage',e=>{if(e.key===key){preference=e.newValue;apply(['dark','light'].includes(preference)?preference:(system?.matches?'dark':'light'),false);}});system?.addEventListener?.('change',e=>{if(!['dark','light'].includes(preference))apply(e.matches?'dark':'light',false);});})();

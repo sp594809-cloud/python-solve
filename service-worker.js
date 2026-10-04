@@ -1,4 +1,4 @@
-const CACHE_NAME = "ljiet-study-python-foundations-notebooks-20261004-v7";
+const CACHE_NAME = "ljiet-study-theme-surfaces-20261004-v8";
 const ASSETS = [
   "./internship/",
   "./internship/index.html",
@@ -9,6 +9,7 @@ const ASSETS = [
   "./internship/curriculum.js",
   "./assets/study-buddies.svg",
   "./css/study-experience.css",
+  "./css/theme-surfaces.css",
   "./js/study-catalogue.js",
   "./js/study-tools.js",
   "./js/solution-guidance.js",
