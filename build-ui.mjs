@@ -17,3 +17,8 @@ console.log('Built Mathematics I Chapters 6–8 reader');
 
 cpSync('maths/share','dist/maths/share',{recursive:true});
 cpSync('probability/share','dist/probability/share',{recursive:true});
+
+mkdirSync("dist/internship/projects",{recursive:true});
+for(const file of ["index.html","styles.css","app.js","worker.js","curriculum.js"])cpSync("internship/"+file,"dist/internship/"+file);
+cpSync("internship/projects","dist/internship/projects",{recursive:true});
+console.log("Built Python for Internship: 16 weeks, 48 lessons, 16 project kits");

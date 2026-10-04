@@ -1,5 +1,11 @@
-const CACHE_NAME = "ljiet-study-question-sharing-20261004-v5";
+const CACHE_NAME = "ljiet-study-python-internship-20261004-v6";
 const ASSETS = [
+  "./internship/",
+  "./internship/index.html",
+  "./internship/styles.css",
+  "./internship/app.js",
+  "./internship/worker.js",
+  "./internship/curriculum.js",
   "./assets/study-buddies.svg",
   "./css/study-experience.css",
   "./js/study-catalogue.js",

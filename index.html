@@ -38,6 +38,7 @@
       <div class="sidebar-header"><span>Study workspace</span><button type="button" onclick="closeSidebarOnMobile()" aria-label="Close navigation">×</button></div>
       <div class="phase-header">WORKSPACE</div>
       <ul class="concept-list">
+        <li><a href="internship/"><span class="nav-symbol" aria-hidden="true">Py</span>Python for Internship</a></li>
         <li data-view="home" class="active"><button type="button" onclick="openWelcomeScreen();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">⌂</span>Overview</button></li>
       </ul>
       <div class="semester-navigation" aria-label="Subjects by semester">
@@ -72,6 +73,7 @@
       <section id="welcomeScreen" class="screen active" aria-label="Study overview">
         <div class="study-dashboard">
           <section class="study-hero"><div><div class="eyebrow">A LITTLE PRACTICE. A BIG DIFFERENCE.</div><h1>Your next “I get it!”<br>starts here.</h1><p>Your Semester 1 &amp; 3 study space. Find a question, understand the steps, and make it yours.</p><button type="button" id="hero-start" class="study-primary">Let’s learn something →</button></div><img src="assets/study-buddies.svg" alt="A student and a friendly owl studying together"></section>
+          <section class="internship-promo"><div><span class="eyebrow">BUILD SKILLS BEYOND THE PRACTICE BOOK</span><h2>Python for Internship</h2><p>16 weeks. Editable exercises, weekly projects, webpages and a small AI model.</p></div><a href="internship/" class="study-primary">Start building →</a></section>
           <div class="study-stats" aria-label="Your study progress"><div class="study-stat"><strong id="stat-done">0</strong><span>Questions marked done</span></div><div class="study-stat"><strong id="stat-revise">0</strong><span>To revise or ask about</span></div><div class="study-stat"><strong id="stat-saved">0</strong><span>Saved for later</span></div></div>
           <div class="study-topline"><h2 class="study-section-title">Pick your next chapter</h2><div class="study-semesters" aria-label="Filter semester"><button type="button" data-semester="all" aria-pressed="true">All</button><button type="button" data-semester="1" aria-pressed="false">Semester 1</button><button type="button" data-semester="3" aria-pressed="false">Semester 3</button></div></div>
           <div class="study-grid" id="study-subjects"></div>
