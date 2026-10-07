@@ -1,4 +1,4 @@
-const CACHE_NAME = "ljiet-study-auth-return-20261007-v9";
+const CACHE_NAME = "ljiet-study-auth-return-20261007-v10";
 const ASSETS = [
   "./internship/",
   "./internship/index.html",
