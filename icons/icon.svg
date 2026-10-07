@@ -1,5 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect width="512" height="512" rx="96" fill="#4f46e5"/>
-  <circle cx="256" cy="220" r="100" fill="#facc15"/>
-  <text x="256" y="400" font-size="120" text-anchor="middle" font-family="system-ui,sans-serif" fill="#ffffff" font-weight="700">Python</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#635bff"/><stop offset="1" stop-color="#312e81"/></linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e8eaff"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="398" cy="112" r="42" fill="#ffd166"/>
+  <path d="M398 83l8 21 22 8-22 8-8 22-8-22-22-8 22-8z" fill="#fff3c4"/>
+  <path d="M88 167c53-18 108-12 168 22v177c-60-34-115-40-168-22z" fill="url(#page)" stroke="#d8dcff" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M424 167c-53-18-108-12-168 22v177c60-34 115-40 168-22z" fill="url(#page)" stroke="#d8dcff" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M256 189v177" fill="none" stroke="#8f91d8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M122 219c39-9 79-4 115 13M122 254c39-9 79-4 115 13M275 232c37-17 77-22 115-13M275 267c37-17 77-22 115-13" fill="none" stroke="#aeb3e8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M241 101h30v78l-15-12-15 12z" fill="#ffd166"/>
+  <path d="M151 399h210" fill="none" stroke="#ffd166" stroke-width="14" stroke-linecap="round"/>
 </svg>
