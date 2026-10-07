@@ -6,13 +6,32 @@
 
 let currentStudent = null;
 
+function normalizedStudentEnrollment(value) {
+  let digits = String(value == null ? "" : value).replace(/\D/g, "");
+  if (digits.length === 12 && digits.startsWith("91")) digits = digits.slice(2);
+  return /^\d{10}$/.test(digits) ? digits : "";
+}
+
+function normalizeStoredStudentProfile(student) {
+  if (!student || typeof student !== "object") return null;
+  const enrollment = normalizedStudentEnrollment(student.enrollment != null ? student.enrollment : student.mobile);
+  const name = typeof student.name === "string" ? student.name.trim() : "";
+  if (!enrollment || !name) return null;
+  return Object.assign({}, student, { enrollment, name });
+}
+
 async function initStudentSession() {
-  // Always start from localStorage (source of truth for this device)
-  currentStudent = getLocalStudentData();
+  // Always start from localStorage (source of truth for this device).
+  // Normalize legacy profiles so the home page and solution gate agree on login state.
+  const storedStudent = getLocalStudentData();
+  currentStudent = normalizeStoredStudentProfile(storedStudent);
 
   if (!currentStudent) {
     showLoginModal();
     return;
+  }
+  if (!storedStudent || storedStudent.enrollment !== currentStudent.enrollment || storedStudent.name !== currentStudent.name) {
+    saveLocalStudentData(currentStudent);
   }
 
   try {
@@ -120,6 +139,7 @@ async function handleStudentLogin(e) {
   if (btn) { btn.disabled = true; btn.innerHTML = '⏳ Restoring progress…'; }
   try {
     const localExisting = getLocalStudentData();
+    const localEnrollment = normalizedStudentEnrollment(localExisting && (localExisting.enrollment != null ? localExisting.enrollment : localExisting.mobile));
     const cloudExisting = await fetchStudentFromCloud(mobile);
     let base = {
       enrollment: mobile,
@@ -134,7 +154,7 @@ async function handleStudentLogin(e) {
       lastStreakDate: null,
       longestStreak: 0
     };
-    if (localExisting && localExisting.enrollment === mobile) {
+    if (localExisting && localEnrollment === mobile) {
       base.points = localExisting.points || 0;
       base.mcqsSolved = localExisting.mcqsSolved || 0;
       base.codeCompleted = localExisting.codeCompleted || 0;
