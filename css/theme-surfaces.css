@@ -55,3 +55,4 @@ html[data-theme] .flowchart svg{color:var(--text)}
 /* Keep the selected Mathematics chapter label and count readable in both themes. */
 html[data-theme] .chapter-tabs button[aria-current=true]{background:var(--action);color:var(--action-text);border-color:var(--action)}
 html[data-theme] .chapter-tabs button[aria-current=true] span{color:var(--action-text)}
+html[data-theme] .chapter-tabs button[aria-current="true"] span{color:var(--action-text)!important;opacity:1!important}
