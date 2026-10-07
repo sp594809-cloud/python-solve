@@ -19,12 +19,14 @@ Mathematics I Chapters 6–8 are at `maths/`: all 381 questions (Q643–Q1023), 
 
 ## Study experience
 
-The dashboard indexes 1,742 questions in six available subject collections, with semester and chapter navigation, cross-subject search, saved questions, Done/Revise/Doubt status, and five- or ten-question practice sessions. MCQs are scored after submission; written questions are self-checked. Progress, report drafts and recent practice results are stored only on the current device. Reporters can open a prefilled GitHub issue and submit it themselves.
+The dashboard indexes 1,946 questions in seven available subject collections, with semester and chapter navigation, cross-subject search, saved questions, Done/Revise/Doubt status, and five- or ten-question practice sessions. MCQs are scored after submission; written questions are self-checked. Progress, report drafts and recent practice results are stored only on the current device. Reporters can open a prefilled GitHub issue and submit it themselves.
 
 Mathematics source images now retain the full PDF table width, actual row borders and continuation fragments. Small screens can scroll the complete row; a full-page viewer offers 150% and 200% zoom. Rebuild these assets with `python3 maths/tools/build_source_images.py` (PyMuPDF and Pillow). This command preserves all mathematical answers and steps.
 
-Coverage labels reflect the loaded banks: Python I available bank, Python III Chapters 1–10, Mathematics I Chapters 6–8, FSD Chapters 1–2, Software Engineering MCQs Chapters 1–5, and Probability Chapters 3–4. Other chapters are not claimed complete.
+Coverage labels reflect the loaded banks: Python I available bank, Python III Chapters 1–10, Mathematics I Chapters 6–8, FSD Chapters 1–2, Software Engineering MCQs Chapters 1–5, Probability Chapters 3–4, and Digital Electronics Chapters 4–5. Other chapters are not claimed complete.
 
 Faculty review records are maintained in `study/faculty-reviews.json`. Leave it empty until a faculty member has actually checked a question. Each accepted record needs `questionKey`, `facultyName`, ISO `date`, and an HTTPS `evidenceUrl` linking to the documented review. The build validates records and displays review attribution only for matching questions.
 
 Run `node build-ui.mjs` to rebuild the catalogue and distribution. With jsdom installed, run `node scripts/verify-study-experience.cjs` for navigation, saved progress, practice, reporting, reader and packaged-asset checks. Functional checks passed; browser layout QA was unavailable in the managed environment.
+
+Digital Electronics Chapters 4–5 are at `de/`: 204 worked solutions (Q334–Q537), original PDF rows, K-maps, PI charts, truth tables, universal-gate circuits and BCD examples. Rebuild and verification instructions are in `de/README.md`.
