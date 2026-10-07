@@ -2,9 +2,9 @@ const fs=require('fs'),path=require('path'),assert=require('assert'),{JSDOM}=req
 const read=f=>fs.readFileSync(f,'utf8');
 function page(file,url){const dom=new JSDOM(read(file),{url,runScripts:'outside-only'});const w=dom.window;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.open=()=>null;for(const file of ['js/study-catalogue.js','js/study-tools.js','js/solution-guidance.js','js/question-access.js'])w.eval(read(file));return dom;}
 const home=page('index.html','https://test.local/'),w=home.window,d=w.document;w.eval(read('js/study-dashboard.js'));d.dispatchEvent(new w.Event('DOMContentLoaded'));
-assert.equal(d.querySelectorAll('.subject-card').length,6);
+assert.equal(d.querySelectorAll('.subject-card').length,7);
 d.querySelector('[data-semester="1"]').click();assert.equal(d.querySelectorAll('.subject-card').length,3);
-d.querySelector('[data-semester="3"]').click();assert.equal(d.querySelectorAll('.subject-card').length,3);
+d.querySelector('[data-semester="3"]').click();assert.equal(d.querySelectorAll('.subject-card').length,4);
 d.getElementById('global-search').value='Q643';d.getElementById('global-search').dispatchEvent(new w.Event('input'));assert([...d.querySelectorAll('#global-results a')].some(a=>a.href.endsWith('/maths/#q643')));
 w.StudyTools.set('maths:643',{bookmark:true,status:'revise'});assert.equal(d.getElementById('stat-saved').textContent,'1');assert.equal(d.getElementById('stat-revise').textContent,'1');assert(d.getElementById('saved-results').textContent.includes('Q643'));
 const persist=JSON.parse(w.localStorage.getItem('ljiet-study-v2'));assert(persist.items['maths:643'].bookmark);
@@ -16,10 +16,10 @@ const py=page('python/index.html','https://test.local/python/?book=sem1&q=1'),py
 w.eval(read('js/navigation-ui.js'));
 assert(!d.querySelector('#mobileBottomNav a[href="probability/"]'));
 assert.deepEqual([...d.querySelectorAll('[data-menu-semester="1"] li')].map(n=>n.dataset.view),['sem1','maths','se']);
-assert.deepEqual([...d.querySelectorAll('[data-menu-semester="3"] li')].map(n=>n.dataset.view),['sem3','fsd1','ps']);
+assert.deepEqual([...d.querySelectorAll('[data-menu-semester="3"] li')].map(n=>n.dataset.view),['sem3','fsd1','de','ps']);
 w.openSubjectsMenu();assert(d.body.classList.contains('sidebar-open'));assert.equal(d.querySelector('#subjects-nav').getAttribute('aria-expanded'),'true');assert.equal(d.activeElement,d.querySelector('#semester-menu-1 summary'));
 d.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape'}));assert(!d.body.classList.contains('sidebar-open'));assert.equal(d.querySelector('#subjects-nav').getAttribute('aria-expanded'),'false');
 const catalog=w.STUDY_CATALOGUE;assert.equal(catalog.subjects.find(s=>s.id==='se').semester,1);assert.equal(new Set(catalog.questions.map(q=>q.key)).size,catalog.questions.length);for(const q of catalog.questions){const f=q.href.split('?')[0].split('#')[0];assert(fs.existsSync(f.endsWith('/')?f+'index.html':f));if(q.options?.length&&q.answerIndex!==null)assert(q.answerIndex>=0&&q.answerIndex<q.options.length);}
 // Every hosted HTML relative asset must be present.
-for(const f of ['dist/index.html','dist/maths/index.html','dist/python/index.html','dist/probability/index.html','dist/probability/chapter-4.html','dist/study/index.html']){const dom=new JSDOM(read(f));for(const n of dom.window.document.querySelectorAll('script[src],link[rel=stylesheet],img[src]')){const src=n.getAttribute('src')||n.getAttribute('href');if(src&&!/^(https?:|data:)/.test(src))assert(fs.existsSync(path.resolve(path.dirname(f),src)),`${f}: missing ${src}`);}}
-console.log('PASS: semester filters, cross-subject search, saved progress, delayed practice answers, report drafts, full maths rows, all readers, 1742 unique links and packaged assets.');for(const dom of [home,math,collection,py])dom.window.close();
+for(const f of ['dist/index.html','dist/maths/index.html','dist/python/index.html','dist/probability/index.html','dist/probability/chapter-4.html','dist/study/index.html','dist/de/index.html']){const dom=new JSDOM(read(f));for(const n of dom.window.document.querySelectorAll('script[src],link[rel=stylesheet],img[src]')){const src=n.getAttribute('src')||n.getAttribute('href');if(src&&!/^(https?:|data:)/.test(src))assert(fs.existsSync(path.resolve(path.dirname(f),src)),`${f}: missing ${src}`);}}
+console.log('PASS: semester filters, cross-subject search, saved progress, delayed practice answers, report drafts, full maths rows, all readers, 1946 unique links and packaged assets.');for(const dom of [home,math,collection,py])dom.window.close();

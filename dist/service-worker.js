@@ -1,5 +1,10 @@
-const CACHE_NAME = "ljiet-study-auth-return-20261007-v9";
+const CACHE_NAME = "ljiet-study-de-ch45-20261007-v12";
 const ASSETS = [
+  "./de/",
+  "./de/index.html",
+  "./de/styles.css",
+  "./de/app.js",
+  "./de/data/solutions.js",
   "./internship/",
   "./internship/index.html",
   "./internship/styles.css",
@@ -71,7 +76,11 @@ const ASSETS = [
   "./js/app-se.js",
   "./js/se-practice-book.js",
   "./manifest.json",
-  "./icons/icon.svg"
+  "./css/pwa-install.css",
+  "./js/pwa-install.js",
+  "./icons/icon.svg",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png"
 ];
 
 self.addEventListener("install", (event) => {

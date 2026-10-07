@@ -1,0 +1,4694 @@
+[
+  {
+    "id": 334,
+    "unit": 4,
+    "page": 12,
+    "question": "The Sum of all Minterm is ______",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      950.88,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 335,
+    "unit": 4,
+    "page": 12,
+    "question": "The Product of all Maxterm is ________",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      962.52,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 336,
+    "unit": 4,
+    "page": 12,
+    "question": "The minterm related to F(w,x,y,z)= m6 is",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "w'xyz'",
+      "wxyz",
+      "wx'y'z",
+      "wx'yz"
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      974.16,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 337,
+    "unit": 4,
+    "page": 12,
+    "question": "The Maxterm related to F(w,x,y,z)= M7 is",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "w+x'+y'+z'",
+      "w'+x+y+z",
+      "w+x+y+z",
+      "w'+x+y'+z"
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      985.8,
+      755,
+      12.6400000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 338,
+    "unit": 4,
+    "page": 12,
+    "question": "Convert SOP into POS : F(A,B,C)= ∑m( 1,3,7)",
+    "key": "D",
+    "marks": "1",
+    "options": [
+      "π M(0,2,4,6)",
+      "π M(2,4,5,6)",
+      "π M(0,2,4)",
+      "π M(0,2,4,5,6)"
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      997.44,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 339,
+    "unit": 4,
+    "page": 12,
+    "question": "Convert POS into SOP: F(w,x,y,z) = πM( 0,1,2,6,10,12,14,15)",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "∑m( 3,4,5,7,8,9,11,13,16)",
+      "∑m( ∑ 0,3,4,5,7,8,9,11,13)",
+      "∑m( 3,4,5,7,8,9,11,13)",
+      "∑m( 3,4,5,8,9,11,13)"
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      1009.08,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 340,
+    "unit": 4,
+    "page": 12,
+    "question": "Express the boolean function F= A + B'C in sum of minterm",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      1031.4,
+      755,
+      12.639999999999873
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 341,
+    "unit": 4,
+    "page": 12,
+    "question": "Express the Boolean function F = AB + A’C in a product of maxterm.",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      1043.04,
+      755,
+      12.6400000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 342,
+    "unit": 4,
+    "page": 12,
+    "question": "Convert into Product-of-Maxterms: A(A’+B)(C’)",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      1054.68,
+      755,
+      12.639999999999873
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 343,
+    "unit": 4,
+    "page": 12,
+    "question": "Convert into Sum-of-Minterms: A’ + B + CA",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      1066.32,
+      755,
+      12.6400000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 344,
+    "unit": 4,
+    "page": 12,
+    "question": "Express Function in Product of Maxterms F(x,y,z) = ( xy + z ) ( y + xz )",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      1077.96,
+      755,
+      12.639999999999873
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 345,
+    "unit": 4,
+    "page": 12,
+    "question": "Express the Boolean function in sum of minterms F (A,B,C)=(A'+B)(B'+C)",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      1089.6,
+      755,
+      12.6400000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 346,
+    "unit": 4,
+    "page": 12,
+    "question": "Express the Boolean function in sum of minterms F (A,B,C,D)= D(A'+B)+B'D",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      1101.24,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 347,
+    "unit": 4,
+    "page": 12,
+    "question": "Express the Boolean function in sum of minterms and product of max terms. F (A,B,C,D)= (A+B'+C)(A+B')(A+C'+D')(A'+B+C+D')(B+C'+D')",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-12.webp",
+    "crop": [
+      84,
+      1123.56,
+      755,
+      34.36000000000013
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 348,
+    "unit": 4,
+    "page": 13,
+    "question": "Express the Boolean function in sum of minterms and product of max terms. F (X,Y,Z) = (XY+Z)(Y+XZ)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      67.32,
+      755,
+      34.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 349,
+    "unit": 4,
+    "page": 13,
+    "question": "Express the Boolean function in sum of minterms and product of max terms. F (X,Y,Z) = 1",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      100.68,
+      755,
+      28.11999999999999
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 350,
+    "unit": 4,
+    "page": 13,
+    "question": "Express the Boolean function in sum of minterms and product of max terms. F (W,X,Y,Z) = Y'Z+WXY'+WXZ'+ W'X'Z",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      127.8,
+      755,
+      29.08
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 351,
+    "unit": 4,
+    "page": 13,
+    "question": "Expand A'+ B' to minterm and maxterm",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      155.88,
+      755,
+      12.640000000000015
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 352,
+    "unit": 4,
+    "page": 13,
+    "question": "Expand A+BC'+ABD'+ABCD to minterm and maxterm",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      167.52,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 353,
+    "unit": 4,
+    "page": 13,
+    "question": "Convert the following Boolean function in product of maxterms and sum of minterms: F(m,n,o,p) = n'o'p+nop+mop'+m'n'o+m'no'p",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      179.16,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 354,
+    "unit": 4,
+    "page": 13,
+    "question": "Expand A(A'+B)(A'+B+C') to minterm and maxterm",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      201.48,
+      755,
+      12.640000000000015
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 355,
+    "unit": 4,
+    "page": 13,
+    "question": "Convert the following to other canonical form F( x,y,z) = ∑( 1,3,7)",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      213.12,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 356,
+    "unit": 4,
+    "page": 13,
+    "question": "Convert the following to other canonical form F( A,B,C,D) = ∑( 0,2,6,11,13,14)",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      224.76,
+      755,
+      30.52000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 357,
+    "unit": 4,
+    "page": 13,
+    "question": "Convert the following to other canonical form F( X,Y,Z) = π (0,3,6,7)",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      254.28,
+      755,
+      12.640000000000015
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 358,
+    "unit": 4,
+    "page": 13,
+    "question": "Convert the following to other canonical form F( A,B,C,D) = π (0,1,2,3,4,6,12)",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      265.92,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 359,
+    "unit": 4,
+    "page": 13,
+    "question": "A Karnaugh map is an abstract form of _______ diagram organized as a matrix of squares",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "Venn",
+      "Cycle",
+      "Point",
+      "Block"
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      288.24,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 360,
+    "unit": 4,
+    "page": 13,
+    "question": "Which of the following code is employed by K-Map for simplification of Boolean Expression?",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "XS-3",
+      "Gray",
+      "BCD",
+      "Parity"
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      310.56,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 361,
+    "unit": 4,
+    "page": 13,
+    "question": "The 3-variable Karnaugh Map (K-Map) has _______ cells for min or max terms",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "3",
+      "6",
+      "8",
+      "2"
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      332.88,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 362,
+    "unit": 4,
+    "page": 13,
+    "question": "Which of the following is NOT considered for forming groups in K-map?",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "Diagonal",
+      "Rolling",
+      "Vertical",
+      "Horizontal"
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      355.2,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 363,
+    "unit": 4,
+    "page": 13,
+    "question": "There are 3 Variable in the boolean function and the value of the function is 1. Find the number of cells in the K-Map which will contain a 1 when SOP expression is used",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "3",
+      "8",
+      "1",
+      "0"
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      366.84,
+      755,
+      34.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 364,
+    "unit": 4,
+    "page": 13,
+    "question": "There are 3 Variable in the boolean function and the value of the function is 1. Find the number of cells in the K-Map which will contain a 0 when SOP expression is used _____",
+    "key": "D",
+    "marks": "1",
+    "options": [
+      "3",
+      "8",
+      "1",
+      "0"
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      400.2,
+      755,
+      34.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 365,
+    "unit": 4,
+    "page": 13,
+    "question": "Given F(A, B, C, D) = ∑ m(0, 1, 2, 6, 8, 9, 10, 11) + ∑ d(3, 7, 14, 15) is a Boolean function, where m represents min-terms and d represents don’t cares. The minimized logical fuction F is _____",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "Independent of variables",
+      "Depedent on 2 variable",
+      "Depedent on 3 variable",
+      "Depedent on 4 variable"
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      433.56,
+      755,
+      34.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 366,
+    "unit": 4,
+    "page": 13,
+    "question": "In simplification of a Boolean function of n variables, a group of 2^m adjacent 1s leads to a term with",
+    "key": "D",
+    "marks": "1",
+    "options": [
+      "m – 1 literals less than the total number of variables",
+      "m + 1 literals less than the total number of variables",
+      "n + m literals",
+      "n – m literals"
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      466.92,
+      755,
+      34.35999999999996
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 367,
+    "unit": 4,
+    "page": 13,
+    "question": "Looping on a K-map always results in the elimination of _________",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "Variables within the loop that appear only in their complemented form",
+      "Variables that remain unchanged within the loop",
+      "Variables within the loop that appear in both complemented and uncomplemented form",
+      "Variables within the loop that appear only in their uncomplemented form"
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      500.28,
+      755,
+      56.56000000000006
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 368,
+    "unit": 4,
+    "page": 13,
+    "question": "Digital input signals A, B, C with A as the MSB and C as the LSB are used to realize the Boolean function F = m0 + m2 + m3 + m5 + m7, where mi denotes the ith minterm. In addition, F has a don’t care for m1 + m4 + m6. The simplified expression for F is given by:",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "1",
+      "(A + C) (A' +C')",
+      "A'C' + AC",
+      "A'C + AC'"
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      555.84,
+      755,
+      60.879999999999995
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 369,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify the Boolean function using K-Map: F(w,x,y,z) = Σ(0,1,2,4,5,6,8,9,12,13,14)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      615.72,
+      755,
+      34.24000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 370,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify the Boolean function using K-Map: F(w,x,y) = Σ (0,1,3,4,5,7)",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      648.96,
+      755,
+      17.43999999999994
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 371,
+    "unit": 4,
+    "page": 13,
+    "question": "Obtain the simplified expression using K-Map in sum of product for the Boolean functions F= Σ(0,1,4,5,10,11,12,14).",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      665.4,
+      755,
+      40.120000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 372,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify the Boolean function F(x,y,z)= ∑m(0,1,2,3,4,5,6) using K- map.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      704.52,
+      755,
+      20.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 373,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify the following Boolean function using K-map F( w,x,y,z) = Σ( 1, 3, 7 , 11 , 15 )",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      723.84,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 374,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify the following Boolean function using K-Map. F=A′B′C′+B′CD′+A′BCD′+AB′C.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      746.16,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 375,
+    "unit": 4,
+    "page": 13,
+    "question": "Obtain the simplified expressions in sum of products using K-map: F= x’z + w’xy’ + w(x’y + xy’)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      768.48,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 376,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify following boolean function using K-Map: Y = Σm(1, 5, 7, 9, 11, 13, 15)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      790.8,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 377,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify following boolean function using K-Map: Y = Σm(0, 2, 3, 5)",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      813.12,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 378,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify following boolean function using K-Map: Y = Σm(1, 3, 5, 9, 11,13)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      824.76,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 379,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify following boolean function using K-Map: Y = Σm(0, 2, 5, 6, 7, 8, 10, 13, 15)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      836.4,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 380,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify following boolean function using K-Map: Y = Σm(1, 5, 6, 7, 11, 12, 13, 15)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      858.72,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 381,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify following boolean function using K-Map: Y = Σm(1, 3, 4, 5, 7, 9, 11, 13, 15)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      881.04,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 382,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify Boolean function using K-Map: F( w,x,y,z) = ∑( 1,3,5,8,9,11,15)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      903.36,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 383,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify the Boolean Function with Karnaugh map: F(w,x,y,z) = Σ(0,1,2,4,5,6,8,9,12,13,14,15)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      915.0,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 384,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify the Boolean Function with Karnaugh map: F = A’B’C’+B’CD’+A’BCD’+AB’C’",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      937.32,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 385,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify the Boolean function F(x,y,z)= Σ (0,2,4,5,6) using K- map.Explain groups.",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      959.64,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 386,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify following boolean function using K-Map: Y = AB'C'D' + AB'C'D + AB'CD + AB'CD'",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      981.96,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 387,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify using K-map F= AB'C + AB'C'D + ABC'D + ABC",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      1004.28,
+      755,
+      16.120000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 388,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify using K-map F= A'B'C + A'BC + ABC + ABC'",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      1019.4,
+      755,
+      16.120000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 389,
+    "unit": 4,
+    "page": 13,
+    "question": "Minimize following Boolean function using K-map: X(A,B,C,D) = Σ m(0, 1, 2, 3, 5, 7, 8, 9, 11, 15)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      1034.52,
+      755,
+      30.039999999999964
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 390,
+    "unit": 4,
+    "page": 13,
+    "question": "Simplify the Boolean function, F=Σm(0,1,2,5,8,9,10)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      1063.56,
+      755,
+      12.6400000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 391,
+    "unit": 4,
+    "page": 13,
+    "question": "Minimize following Boolean function using K-map F = Σ m(1, 2, 4, 6, 7, 11, 15) + Σ d(0, 3)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      1075.2,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 392,
+    "unit": 4,
+    "page": 13,
+    "question": "Minimize the following function using K-Map F = Σm(0,2,6,10,11,12,13) + d(3,4,5,14,15)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      1097.52,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 393,
+    "unit": 4,
+    "page": 13,
+    "question": "Simply the Boolean Function using K-map : F(W,X,Y,Z) = ∑(1, 3, 7, 11, 15) with don’t care conditions d(W,X,Y,Z) = ∑(0, 2, 5)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      1119.84,
+      755,
+      40.12000000000012
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 394,
+    "unit": 4,
+    "page": 13,
+    "question": "Reduce the given function using K-map F(A,B,C,D ) = Σm (0,1,3,7,11,15) + Σd ( 2,4)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-13.webp",
+    "crop": [
+      84,
+      1158.96,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 395,
+    "unit": 4,
+    "page": 14,
+    "question": "Minimize the following logic function using K-maps F(A,B,C,D) =∑m(1,3,5,8,9,11,15) + d(2,13)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      67.32,
+      755,
+      27.64
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 396,
+    "unit": 4,
+    "page": 14,
+    "question": "Minimize the following function using K-map F (w,x,y,z) = Σm (0,1,2,3,6,7,13,14) + Σd (8,9,10,12)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      93.96,
+      755,
+      23.320000000000007
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 397,
+    "unit": 4,
+    "page": 14,
+    "question": "Minimize the following functions using K Map F =ΠM(0,4,9,10,11,14,15)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      116.28,
+      755,
+      17.919999999999987
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 398,
+    "unit": 4,
+    "page": 14,
+    "question": "Minimize the logic function F (A,B,C,D) = π M (1, 2, 3, 8, 9, 10, 11, 14) . d (7, 15) Use Karnaugh map. Draw the logic circuit for simplified function using NOR gates only.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      133.2,
+      755,
+      40.24000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 399,
+    "unit": 4,
+    "page": 14,
+    "question": "Simplify Boolean function F (w,x,y,z ) = Σ (0,1,2,4,5,6,8,9,12,13,14 ) using K- map and Implement it using NAND gates only",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      172.44,
+      755,
+      31.24000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 400,
+    "unit": 4,
+    "page": 14,
+    "question": "Solve the following Boolean functions by using K-Map. Implement the simplified function by using logic gates F =(w,x,y,z) =∑(0,1,4,5,6,8,9,10,12,13,14)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      202.68,
+      755,
+      34.359999999999985
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 401,
+    "unit": 4,
+    "page": 14,
+    "question": "Reduce the expression F = ∑m(0,2,3,4,5,6) using K-map and implement using NAND gates only.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      236.04,
+      755,
+      23.32000000000002
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 402,
+    "unit": 4,
+    "page": 14,
+    "question": "Implement the function F=∑(0,6) with NAND gates only.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      258.36,
+      755,
+      15.519999999999982
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 403,
+    "unit": 4,
+    "page": 14,
+    "question": "Implement the function F=∑(0,6) with NOR gates only",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      272.88,
+      755,
+      16.120000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 404,
+    "unit": 4,
+    "page": 14,
+    "question": "Obtain the simplified expressions in SOP for the following Boolean function using K-Map method. And implement it using NAND gate. F(A,B,C,D) = ABC+AB’C+BCD’+A’CD",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      288.0,
+      755,
+      34.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 405,
+    "unit": 4,
+    "page": 14,
+    "question": "Reduce using mapping the expression ∑m(0, 1, 2, 3, 5, 7, 8, 9, 10, 12. 13) and implement it with any universal logic.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      321.36,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 406,
+    "unit": 4,
+    "page": 14,
+    "question": "Reduce using mapping the expression πM(2, 8, 9, 10, 1, 12, 14) and implement it with any universal logic",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      343.68,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 407,
+    "unit": 4,
+    "page": 14,
+    "question": "Reduce using mapping the expression ∑m(1, 5, 6, 12,13, 14)+ d(2,4) and implement it in universal logic.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      366.0,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 408,
+    "unit": 4,
+    "page": 14,
+    "question": "Reduce using mapping the expression ∑m(0,1, 3, 5, 6, 12,13, 14)+ d(2,7,8,15) and implement it in universal logic.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      388.32,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 409,
+    "unit": 4,
+    "page": 14,
+    "question": "Reduce using mapping the expression ∑m(0, 1, 4, 7, 13, 14) + d(5, 8, 15) and implement it in universal logic.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      410.64,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 410,
+    "unit": 4,
+    "page": 14,
+    "question": "Reduce using mapping the expression πM(0,1 ,3 4, 5, 7, 10, 13, 14, 15)and implement it in universal logic.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      432.96,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 411,
+    "unit": 4,
+    "page": 14,
+    "question": "Reduce using mapping the expression πM(2, 4, 6, 8, 10, 12, 15) and implement it in universal logic.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      455.28,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 412,
+    "unit": 4,
+    "page": 14,
+    "question": "Reduce using mapping the expression πM(0, 1, 4, 6, 8, 9, 11) and d(2, 7, 13) and implement it in universal logic.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      477.6,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 413,
+    "unit": 4,
+    "page": 14,
+    "question": "Reduce using mapping the expression πM(2, ,4 ,5 7, 9, 12) and d(0, 1, 6) and implement it in universal logic.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      499.92,
+      755,
+      33.04000000000002
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 414,
+    "unit": 4,
+    "page": 14,
+    "question": "The inputs to a computer circuit are the 4 bits of the binary number A3A2A1A0 The circuit is required to produce a 1 if any of the following conditions hold. 1. The MSB is 1 and all other bits are 0. 2. A2 is a 1 and the all other bits are 0. 3. All of the 4 bits are 0. 4. A1 and A0 is 1 and other bits are 0 Obtain a minimal expression using K-map and implement it with NAND gate",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      531.96,
+      755,
+      92.43999999999994
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 415,
+    "unit": 4,
+    "page": 14,
+    "question": "A8A4A2A1 is an Binary input to a logic circuit whose output is a 1 when A8=0, A4=0 and A2=1,or when A8=0 and A4=1.Design the simplest possible logic circuit with NAND gate only using K-map in SOP form.",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      623.4,
+      755,
+      39.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 416,
+    "unit": 4,
+    "page": 14,
+    "question": "The ________ is a very useful and convenient tool for simplification of Boolean functions for large numbers of variables.",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "Quine McCluskey tabulation method",
+      "K-map",
+      "SOP K-map",
+      "POS k-map"
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      662.04,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 417,
+    "unit": 4,
+    "page": 14,
+    "question": "The implicants which will definitely occur in the final expression are called",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "Prime implicant",
+      "Non-prime implicant",
+      "Essential Prime implicant",
+      "implicant"
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      684.36,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 418,
+    "unit": 4,
+    "page": 14,
+    "question": "_________ is a group of minterms which can’t be combined with any other groups.",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "Odd implicant",
+      "Even implicant",
+      "Prime implicant",
+      "Non-prime implicant"
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      706.68,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 419,
+    "unit": 4,
+    "page": 14,
+    "question": "In the Quine-McClusky method of minimization of the function f(A, B, C, D) the PI corresponding to -1 1- is",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "BC",
+      "AD",
+      "B'C'",
+      "A'D'"
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      729.0,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 420,
+    "unit": 4,
+    "page": 14,
+    "question": "In the Quine-McClusky method of minimization of the function f(A, B, C, D) the PI corresponding to -1 -0 is",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "BD'",
+      "B'D",
+      "AC",
+      "A'C'"
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      751.32,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 421,
+    "unit": 4,
+    "page": 14,
+    "question": "Unchecked terms in the PI table forms are called________",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "Prime implicant",
+      "Non-prime implicant",
+      "Essential Prime implicant",
+      "implicant"
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      773.64,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 422,
+    "unit": 4,
+    "page": 14,
+    "question": "Simplify following Boolean function by using the tabulation method F=∑( 0,1,3,7,8,9,11,15 )",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      795.96,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 423,
+    "unit": 4,
+    "page": 14,
+    "question": "Simplify the following Boolean expression by means of the Tabulation method. F(A,B,C,D) = ∑m (1,2,3,5,6,7,8,9,12,13,15).",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      818.28,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 424,
+    "unit": 4,
+    "page": 14,
+    "question": "Simplify the following boolean function using tabulation method and draw logic diagram using AND-OR-NOT gates. F(w, x, y, z) = Σ(0, 1, 2, 8, 10, 11, 14, 15)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      840.6,
+      755,
+      34.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 425,
+    "unit": 4,
+    "page": 14,
+    "question": "Obtain the set of prime implicants for Σ m (0, 1, 6, 7, 8, 9, 13, 14, 15)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      873.96,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 426,
+    "unit": 4,
+    "page": 14,
+    "question": "Obtain the set of prime implicants for Σ m (0,1 ,3, 4, 5, 7, 10, 11, 13, 14, 15)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      885.6,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 427,
+    "unit": 4,
+    "page": 14,
+    "question": "Obtain the set of prime implicants for Σ m (0,1, 2 ,3 6, 7, 8, 10, 11, 12, 15)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      907.92,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 428,
+    "unit": 4,
+    "page": 14,
+    "question": "Obtain the set of prime implicants for Σ m(5, 6, 12, 13, 14)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      919.56,
+      755,
+      12.6400000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 429,
+    "unit": 4,
+    "page": 14,
+    "question": "Simplify Boolean function by using the tabulation method F = ∑m( 1,2 ,5 6, 8, 9, 10,11,12,15)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      931.2,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 430,
+    "unit": 4,
+    "page": 14,
+    "question": "Simplify Boolean function by using the tabulation method F = ∑m( 0, 1, 2,4, 6,7, 8, 9, 11,13)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      953.52,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 431,
+    "unit": 4,
+    "page": 14,
+    "question": "Simplify Boolean function by using the tabulation method F = ∑m(0,1,2,4,5,6, 7,9,12)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      975.84,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 432,
+    "unit": 4,
+    "page": 14,
+    "question": "Find Essential Prime Implicants of F = ∑m(1,2,3,5,7,10,11,14,15)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      998.16,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 433,
+    "unit": 4,
+    "page": 14,
+    "question": "Design Prime Implicant chart and calculate essential Prime Implicants for the function F = ∑m(0,1,4,5,7,8,13,14,15)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      1009.8,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 434,
+    "unit": 4,
+    "page": 14,
+    "question": "Calculate number of essential prime implicants for F = ∑m(3,4,5,9,10,11,14)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      1032.12,
+      755,
+      23.320000000000164
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 435,
+    "unit": 4,
+    "page": 14,
+    "question": "Simplify the following Boolean function F(W,X,Y,Z)=∑m(2,6,8,9,10,11,14,15) using Quine-McClukey tabular method.",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      1054.44,
+      755,
+      37.24000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 436,
+    "unit": 4,
+    "page": 14,
+    "question": "Using the tabular method of simplification, find all equally minimal solutions for the function F(A,B,C,D) = (1,4,5,10,12,14)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      1090.68,
+      755,
+      28.839999999999918
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 437,
+    "unit": 4,
+    "page": 14,
+    "question": "Obtain the simplified Boolean expression for the following Boolean function with don’t care condition and implement the simplified function with NOR gates only. F (w, x, y, z) = w ̅y ̅x ̅z ̅+w ̅x ̅yz ̅+x ̅yz ̅w+yzwx ̅+wy ̅z ̅x+wzxy ̅+ywxz ̅+wxyz d (w, x, y, z) = w ̅x ̅yz+ zw ̅xy+y ̅z ̅wx ̅+y ̅zwx",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-14.webp",
+    "crop": [
+      84,
+      1118.52,
+      755,
+      61.960000000000036
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 438,
+    "unit": 4,
+    "page": 15,
+    "question": "Convert the following Boolean function in product of maxterms and sum of minterms: F(m,n,o,p)=n ̅o ̅p+nop+mop ̅+m ̅n ̅o+m ̅no ̅p",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      67.32,
+      755,
+      27.64
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 439,
+    "unit": 4,
+    "page": 15,
+    "question": "Consider the function f(A, B, C, D) = (0,1,2,3,5,7,8,10,12,13,15) and its prime implicants are A'B' from pair (0,1,2,3) , B'D' from (0,2,8,10) , A'D from",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      93.96,
+      755,
+      26.320000000000007
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 440,
+    "unit": 4,
+    "page": 15,
+    "question": "Calculate essential prime implicants using Prime implicant chart and also obtain simplified logical expression for F= (3,4,5,6,7,10,11,12,13,15)",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      119.28,
+      755,
+      30.52000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 441,
+    "unit": 4,
+    "page": 15,
+    "question": "Simplify the following boolean function F(w, x, y, z) = ∑m(6, 7, 8, 9, 10, 11, 12, 13, 14, 15) using Quine-McCluskey method.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      148.8,
+      755,
+      28.119999999999976
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 442,
+    "unit": 4,
+    "page": 15,
+    "question": "Which Boolean function the following Karnaugh map represent?",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "A + C",
+      "A' + C",
+      "A + C'",
+      "A + CA'"
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      175.92,
+      755,
+      98.32000000000002
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 443,
+    "unit": 4,
+    "page": 15,
+    "question": "𝐴̅𝐵+ 𝐶𝐷 is the simplified version of the Boolean expression F only if there were a ‘don’t care’ entry. What is that don’t care term ? F = 𝐴𝐵𝐶𝐷+ 𝐴̅𝐵ത𝐶𝐷+ 𝐴̅𝐵",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "AB'CD",
+      "AB'C'D",
+      "A'BCD",
+      "A'BC'D"
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      273.24,
+      755,
+      49.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 444,
+    "unit": 4,
+    "page": 15,
+    "question": "There are 4 variables P, Q, R and S in Boolean function and the value of the function is 0. Find the number of cells in the K-map which will contain 0 when POS expression is used.",
+    "key": "D",
+    "marks": "1",
+    "options": [
+      "15",
+      "1",
+      "0",
+      "16"
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      321.6,
+      755,
+      34.35999999999996
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 445,
+    "unit": 4,
+    "page": 15,
+    "question": "Convert the following Boolean function in product of max terms and sum of minterms: F(p,q,r,s) = (p' + q + r) (q' + r + s) (p + s’)",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      354.96,
+      755,
+      45.400000000000034
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 446,
+    "unit": 4,
+    "page": 15,
+    "question": "Obtain the simplified Boolean expression for the following Boolean function with don’t care condition and implement the simplified function with NOR gates only. F (w, x, y, z) = w'y'x'z' + w'x'yz' + x'yz'w + yzwx' + wy'z'x + wzxy' + ywxz' + wxyz d (w, x, y, z) = w'x'yz + zw'xy + y'z'wx' + y'zwx'",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      399.36,
+      755,
+      67.71999999999997
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 447,
+    "unit": 4,
+    "page": 15,
+    "question": "Obtain the simplified boolean expression for the following boolean function with don’t care condition and implement the simplified function with two input NAND gates only. F(w,x,y,z) = w′ x z + w′ y z + x′ z′ y + w y′ x z d = w y z",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      466.08,
+      755,
+      56.56
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 448,
+    "unit": 4,
+    "page": 15,
+    "question": "Simplify Boolean function F (W, X, Y, Z) = Σ (0, 1, 2, 4, 5, 6, 8, 9, 10, 12,13) using K-map and implement it using NAND gates only.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      521.64,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 449,
+    "unit": 4,
+    "page": 15,
+    "question": "Simplify Boolean function using the tabulation method F (A, B, C, D) = ∑m (0, 1, 2, 3, 5, 6, 8, 9, 10, 12, 13, 14, 15)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      543.96,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 450,
+    "unit": 4,
+    "page": 15,
+    "question": "Express the Boolean function F (X, Y) = 1 in canonical form.",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "x'y' + x'y + xy' + xy",
+      "xy",
+      "x + y",
+      "X’Y’ + XY + XY’ + XY"
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      566.28,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 451,
+    "unit": 4,
+    "page": 15,
+    "question": "Given F(A, B, C, D) = ∑ m(2, 6, 8, 9, 10, 11) + ∑ d(3, 7, 14, 15) is a Boolean function, where m represents min-terms and d represents don’t cares. The minimized logical function F is",
+    "key": "",
+    "marks": "1",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      588.6,
+      755,
+      34.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 452,
+    "unit": 4,
+    "page": 15,
+    "question": "Express the Boolean function in sum of minterms and product of max terms. F (W,X,Y,Z) = YZ+WXY+WXZ+ WXZ",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      621.96,
+      755,
+      28.59999999999991
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 453,
+    "unit": 4,
+    "page": 15,
+    "question": "Minimize the logic function F(A,B,C,D) = πM(1, 2, 3, 8, 9, 10, 11, 14).d (7, 15) Use Karnaugh map. Draw the logic circuit for simplified function using NOR gates only.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      649.56,
+      755,
+      44.440000000000055
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 454,
+    "unit": 4,
+    "page": 15,
+    "question": "Simplify Boolean function by using the tabulation method F(A,B,C,D)=∑m(2,3,6,7,8,9,10,11,12,13,14,15)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      693.0,
+      755,
+      30.519999999999982
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 455,
+    "unit": 4,
+    "page": 15,
+    "question": "F=∑ m (1,3,4,5,7,9,13) is a simplified version of the Boolean expression D+A'.B only if there were a ‘don’t care’ entry. What is that don’t care term?",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "6,11,15",
+      "6,11,14",
+      "6,10,15",
+      "7,9,15"
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      722.52,
+      755,
+      32.440000000000055
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 456,
+    "unit": 4,
+    "page": 15,
+    "question": "Which Boolean function does the following k-map represent?",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "XNOR",
+      "AND",
+      "OR",
+      "NAND"
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      753.96,
+      755,
+      123.15999999999997
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 457,
+    "unit": 4,
+    "page": 15,
+    "question": "Implement the following functions using the don’t-care conditions. F = A′B′C′ + AB′D + A′B′CD′ d = ABC + AB′D′ Also implement the simplified expression using NAND gates only.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      876.12,
+      755,
+      54.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 458,
+    "unit": 4,
+    "page": 15,
+    "question": "Implement the following functions using the don’t-care conditions. F = A′B′C′ + AB′D + A′CD′ d = ABC + AB′D′ Also implement the simplified expression using NOR gates only.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      929.76,
+      755,
+      49.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 459,
+    "unit": 4,
+    "page": 15,
+    "question": "Given the Boolean function F in three variables R, S and T as F=R’ST’+RS’T+RST (a) Express F in the minimum product-of-sums form. (b) Assuming that both true and complement forms of the input variables are available, draw a circuit to implement F using the minimum number of 2 input NOR gates only",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      978.12,
+      755,
+      74.56000000000006
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 460,
+    "unit": 4,
+    "page": 15,
+    "question": "Simplify the following function using Tabulation method: Show all steps along with PI chart and EPI terms. F(W,X,Y,Z)=∑m( 0, 2, 3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      1051.68,
+      755,
+      56.559999999999945
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 461,
+    "unit": 4,
+    "page": 15,
+    "question": "Simplify the following function using Tabulation method: F(W,X,Y,Z)=∑m( 0,1,2,5,6,7,8,9,10,14)",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      1107.24,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 462,
+    "unit": 4,
+    "page": 15,
+    "question": "Express Function in Maxterms and Minterms: F(x,y,z) = ( xy + z ) ( y + xz )",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-15.webp",
+    "crop": [
+      84,
+      1129.56,
+      755,
+      12.6400000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 463,
+    "unit": 4,
+    "page": 16,
+    "question": "In certain application, four inputs A, B, C, D (both true and complement forms available) are fed to logic circuit, producing an output F which operates a relay. The relay turns on when F(ABCD)=1 for the following states of the inputs (ABCD):'0000','0010' ,’0101',’0110','1101' and '1110'. States '1000' and '1001' do not occur, and for the remaining states, the relay is off. Remaining states, the relay is off. Minimize F with the help of a Karnaugh map and realize it using a minimum number of 3- input NAND gates.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      67.32,
+      755,
+      90.04000000000002
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 464,
+    "unit": 5,
+    "page": 16,
+    "question": "A digital system consists of _____ types of circuits",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      156.36,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 465,
+    "unit": 5,
+    "page": 16,
+    "question": "Half-adders have a major limitation in that they cannot __________",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "Accept a carry bit from a present stage",
+      "Accept a carry bit from a next stage",
+      "Accept a carry bit from a previous stage",
+      "Accept a carry bit from the following stages"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      168.0,
+      755,
+      34.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 466,
+    "unit": 5,
+    "page": 16,
+    "question": "If A, B and C are the inputs of a full adder then the carry is given by __________",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "A AND B OR (A OR B) AND C",
+      "A AND B OR (A XOR B) AND C",
+      "(A AND B) OR (A AND B)C",
+      "A XOR B XOR (A XOR B) AND C"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      201.36,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 467,
+    "unit": 5,
+    "page": 16,
+    "question": "How many minimum AND, OR and EXOR gates are required for the basic configuration of full adder?",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "1, 2, 2",
+      "2, 1, 2",
+      "3, 1, 2",
+      "4, 0, 1"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      223.68,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 468,
+    "unit": 5,
+    "page": 16,
+    "question": "In a combinational circuit, the output at any time depends only on the _______ at that time.",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "Voltage",
+      "Intermediate values",
+      "Input values",
+      "Clock pulses"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      246.0,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 469,
+    "unit": 5,
+    "page": 16,
+    "question": "Procedure for the design of combinational circuits are: A. From the word description of the problem, identify the inputs and outputs and draw a block diagram. B. Draw the truth table such that it completely describes the operation of the circuit for different combinations of inputs. C. Simplify the switching expression(s) for the output(s). D. Implement the simplified expression using logic gates. E. Write down the switching expression(s) for the output(s).",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "B, C, D, E, A",
+      "A, D, E, B, C",
+      "A, B, E, C, D",
+      "B, A, E, C, D"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      268.32,
+      755,
+      96.75999999999999
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 470,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of half adder using AOI gate.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      364.08,
+      755,
+      12.640000000000043
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 471,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of half adder using NAND logic gates.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      375.72,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 472,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of half adder using NOR logic gates.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      387.36,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 473,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of full adder using only 2- input NAND logic gates.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      399.0,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 474,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of full adder using only 2- input NOR logic gates.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      421.32,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 475,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of full adder using AOI gates.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      443.64,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 476,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of half subtractor using AOI gates.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      455.28,
+      755,
+      12.640000000000043
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 477,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of half subtractor using NAND logic gates.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      466.92,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 478,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of half subtractor using NOR logic gates.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      489.24,
+      755,
+      12.639999999999986
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 479,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of full subtractor using only 2- input NAND logic gates.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      500.88,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 480,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of full subtractor using only 2- input NOR logic gates.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      523.2,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 481,
+    "unit": 5,
+    "page": 16,
+    "question": "Implement a combinational circuit of full subtractor using AOI gates.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      545.52,
+      755,
+      16.600000000000023
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 482,
+    "unit": 5,
+    "page": 16,
+    "question": "Show how a full-adder can be converted to a full-subtractor with the addition of inverter circuit.",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      561.12,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 483,
+    "unit": 5,
+    "page": 16,
+    "question": "With logic circuit describe the function of: Full adder,write the simplified Boolean functions for its outputs.",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      583.44,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 484,
+    "unit": 5,
+    "page": 16,
+    "question": "Design the truth table of full adder and write the simplified Boolean function for its outputs.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      605.76,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 485,
+    "unit": 5,
+    "page": 16,
+    "question": "Design a full adder circuit using two half adders and gates.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      628.08,
+      755,
+      14.919999999999959
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 486,
+    "unit": 5,
+    "page": 16,
+    "question": "Differentiate between serial and parallel adders.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      642.0,
+      755,
+      18.519999999999982
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 487,
+    "unit": 5,
+    "page": 16,
+    "question": "In a half-subtractor circuit with X and Y as inputs, the Borrow (M) and Difference (N = X - Y) are given by",
+    "key": "M=X'Y,N=X⨁Y",
+    "marks": "1",
+    "options": [
+      "M=X⨁Y,N=XY",
+      "M=XY,N=X⨁Y",
+      "M=X'Y,N=X⨁Y",
+      "M=X'Y,N=(X⨁Y)'"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      659.52,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 488,
+    "unit": 5,
+    "page": 16,
+    "question": "A combinational logic circuit has memory characteristics that \"remember\" the inputs after they have been removed.",
+    "key": "False",
+    "marks": "1",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      681.84,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 489,
+    "unit": 5,
+    "page": 16,
+    "question": "To implement the full-adder sum functions, two exclusive-OR gates can be used.",
+    "key": "True",
+    "marks": "1",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      704.16,
+      755,
+      25.24000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 490,
+    "unit": 5,
+    "page": 16,
+    "question": "A half-adder does not have ________.",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "carry in",
+      "carry out",
+      "two inputs",
+      "all of the above"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      728.4,
+      755,
+      16.120000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 491,
+    "unit": 5,
+    "page": 16,
+    "question": "Which of the statements below best describes the given figure?",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "Half-carry adder; Sum = 0, Carry = 1",
+      "Half-carry adder; F Sum = 1, Carry = 0",
+      "Full-carry adder; Sum = 1, Carry = 0",
+      "Full-carry adder; Sum = 1, Carry = 1"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      743.52,
+      755,
+      96.51999999999998
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 492,
+    "unit": 5,
+    "page": 16,
+    "question": "A full-adder adds ________.",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "two single bits and one carry bit",
+      "two 2-bit binary numbers",
+      "two 4-bit binary numbers",
+      "two 2-bit numbers and one carry bit"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      839.04,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 493,
+    "unit": 5,
+    "page": 16,
+    "question": "The carry propagation delay in 4-bit full-adder circuits:",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "is cumulative for each stage and limits the speed at which arithmetic operations are performed",
+      "is normally not a consideration because the delays are usually in the nanosecond range",
+      "decreases in direct ratio to the total number of full-adder stages",
+      "increases in direct ratio to the total number of full-adder stages, but is not a factor in limiting the speed of arithmetic operations"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      861.36,
+      755,
+      78.88
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 494,
+    "unit": 5,
+    "page": 16,
+    "question": "Two 4-bit binary numbers (1011 and 1111) are applied to a 4-bit parallel adder. The carry input is 1. What are the values for the sum and carry output?",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "∑4 ∑3 ∑2 ∑1=0111, Cout = 0",
+      "∑4 ∑3 ∑2 ∑1 = 1111, Cout = 1",
+      "∑4 ∑3 ∑2 ∑1= 1011, Cout = 1",
+      "∑4 ∑3 ∑2 ∑1= 1100, Cout = 1"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      939.24,
+      755,
+      40.24000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 495,
+    "unit": 5,
+    "page": 16,
+    "question": "A full-adder has a Cin = 0. What are the sum and the carry (Cout) when A = 1 and B = 1?",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "∑= 0, Cout = 0",
+      "∑ = 0, Cout = 1",
+      "∑= 1, Cout = 0",
+      "∑= 1, Cout = 1"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      978.48,
+      755,
+      25.24000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 496,
+    "unit": 5,
+    "page": 16,
+    "question": "An adder in which bits of the operand are added one after another__________",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "Half adder",
+      "Half subtractor",
+      "Serial Adder",
+      "parallel Adder"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      1002.72,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 497,
+    "unit": 5,
+    "page": 16,
+    "question": "What is the major difference between half-adders and full-adders?",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "Full-adders are made up of two half-adders",
+      "Full adders can handle double-digit numbers",
+      "Full adders have a carry input capability",
+      "Half adders can handle only single- digit numbers"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      1025.04,
+      755,
+      42.6400000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 498,
+    "unit": 5,
+    "page": 16,
+    "question": "A combinational circuit calculates the arithmetic sum in a parallel way. What is the name of the adder?",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "Sequential Adder",
+      "Parallel Adder",
+      "Serial Adder",
+      "Both 1) & 2)"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      1066.68,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 499,
+    "unit": 5,
+    "page": 16,
+    "question": "To implement a half adder and half subtractor ,the no. of basic(AND,OR,NOT) gates required is____ and ____ respectively.",
+    "key": "6,5",
+    "marks": "1",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      1089.0,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 500,
+    "unit": 5,
+    "page": 16,
+    "question": "A binary half-subtractor having two inputs A and B, the correct set of logical outputs D(=A minus B) and X(=borrow) are 1.The difference output D=A'B+AB' 2.The borrow output B=AB' Which of the above is/are correct?",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "1 Only",
+      "2 Only",
+      "none",
+      "Both 1 and 2"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      1111.32,
+      755,
+      56.56000000000017
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 501,
+    "unit": 5,
+    "page": 16,
+    "question": "The number of full and half-adders required to add 16-bit numbers is",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "8half-adders, 8 full- adders",
+      "1 half-adder,15 full- adders",
+      "16 half-adders, 0 full- adders",
+      "4 half-adders, 12 full- adder"
+    ],
+    "image": "pages/page-16.webp",
+    "crop": [
+      84,
+      1166.88,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 502,
+    "unit": 5,
+    "page": 17,
+    "question": "How Serial Adder differ from Parallel Adders?",
+    "key": "a serial adder processes bits one pair at a time sequentially over multiple clock cycles, while a parallel adder processes all bits simultaneously in a single clock cycle.",
+    "marks": "1",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      67.32,
+      755,
+      90.04000000000002
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 503,
+    "unit": 5,
+    "page": 17,
+    "question": "The half-adder can be implemented from which of the following equation?",
+    "key": "D",
+    "marks": "1",
+    "options": [
+      "S = xy′ + x′y C = xy",
+      "S = (x + y) (x′ + y′) C = x y",
+      "S = (C + x′y′)′ C = xy",
+      "All of above"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      156.36,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 504,
+    "unit": 5,
+    "page": 17,
+    "question": "Full adder has____",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "3 inputs",
+      "8 inputs",
+      "4 inputs",
+      "10 inputs"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      178.68,
+      755,
+      17.919999999999987
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 505,
+    "unit": 5,
+    "page": 17,
+    "question": "half adder is an example of-",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "Combinational circuit",
+      "Sequential circuit",
+      "Asynchronous circuit",
+      "None of these"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      195.6,
+      755,
+      33.640000000000015
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 506,
+    "unit": 5,
+    "page": 17,
+    "question": "How many full adders are needed to add two 4-bit numbers with a parallel adders?",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "2",
+      "4",
+      "16",
+      "8"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      228.24,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 507,
+    "unit": 5,
+    "page": 17,
+    "question": "The logic diagram shown in the figure performs the function of building block",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "Half adder",
+      "Full adder",
+      "Half substractor",
+      "Multiplier"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      250.56,
+      755,
+      112.95999999999998
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 508,
+    "unit": 5,
+    "page": 17,
+    "question": "Two binary digits are applied to input of two input Ex-or gate. The output of the logic can generate",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "Sum output",
+      "Difference output",
+      "Either sum or difference output",
+      "Carry output of a half adder"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      362.52,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 509,
+    "unit": 5,
+    "page": 17,
+    "question": "Two binary digits are applied to the input of two input AND gate. The output of the logic can generate",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "Borrow out of half substractor",
+      "Carry out of half adder",
+      "Sum output of half adder",
+      "Difference output of half adder"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      384.84,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 510,
+    "unit": 5,
+    "page": 17,
+    "question": "Number of half and full adder required to construct a sixty four bit binary adder would be",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "One half adder and 63 full adders",
+      "64 full adders",
+      "64 half adders",
+      "one full adder and 63 half adder"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      407.16,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 511,
+    "unit": 5,
+    "page": 17,
+    "question": "A full substractor can be constructed from two half substractor and one _____________",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "Two input OR gate",
+      "Two input AND gate",
+      "Two input Ex-or gate",
+      "Three input OR gate"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      429.48,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 512,
+    "unit": 5,
+    "page": 17,
+    "question": "A full adder can be constructed from two half adder and one ______",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "Two input OR gate",
+      "Two input AND gate",
+      "Two input Ex-or gate",
+      "Three input OR gate"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      451.8,
+      755,
+      23.319999999999993
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 513,
+    "unit": 5,
+    "page": 17,
+    "question": "What are the advantages of parallel adders over serial adders? Two 4-bit binary numbers (1011 and 1111) are applied to a 4-bit parallel adder. The carry input is 1. What are the values for the sum and carry output?",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      474.12,
+      755,
+      59.08000000000004
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 514,
+    "unit": 5,
+    "page": 17,
+    "question": "Design Truth Table and give Boolean function for Full-Subtractor circuit and implement it using half subtractor and gates.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      532.2,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 515,
+    "unit": 5,
+    "page": 17,
+    "question": "Which of the following statements is/are not correct? 1) A half-adder is an arithmetic circuit that adds two binary digits. 2) A half-subtractor is an arithmetic circuit that subtracts two binary digits. 3) A full-subtractor is an arithmetic circuit that subtracts two binary digits along with borrow bit. 4) A full-adder is an arithmetic circuit that adds one binary digit and carry bit.",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "Only 1",
+      "Only 4",
+      "Only 3",
+      "Only 2"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      554.52,
+      755,
+      85.72000000000003
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 516,
+    "unit": 5,
+    "page": 17,
+    "question": "Which of the following is correct Boolean function of sum and carry of Full adder, the inputs are A, B and C (internal carry)?",
+    "key": "C",
+    "marks": "1",
+    "options": [
+      "S = A xor B xor C, Cout = AB + BC’ +AC",
+      "S = A xnor B xor C, Cout = AB + BC +AC",
+      "S = A xor B xor C, Cout = AB + (A xor B).C",
+      "S = A xor B xor C, Cout = AB + (A xor B’).C"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      639.24,
+      755,
+      49.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 517,
+    "unit": 5,
+    "page": 17,
+    "question": "Which of the following Boolean function of difference and borrow out (Bout) of full subtractor circuit, if the inputs are A, B and C (previous borrow)?",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "D = A XOR B XOR C, Bout = A’B + AC + B’C’",
+      "D = A XOR B XOR C, Bout = A’B + A’C + BC",
+      "D = A XOR B XOR C, Bout = A’B + A’C + B’C",
+      "D = A XOR B XOR C, Bout = AB + AC + BC"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      687.6,
+      755,
+      34.360000000000014
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 518,
+    "unit": 5,
+    "page": 17,
+    "question": "The logic diagram shown in the following figure performs the function of a very common arithmetic building block. Identify the logic function.",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "Half subtractor",
+      "Full adder",
+      "Full subtractor",
+      "Half adder"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      720.96,
+      755,
+      102.51999999999998
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 519,
+    "unit": 5,
+    "page": 17,
+    "question": "In BCD addition, 0110 is required to be added to the sum for getting the correct result, if -",
+    "key": "D",
+    "marks": "1",
+    "options": [
+      "The sum of two BCD numbers is not a valid BCD number",
+      "The sum of two BCD number is greater than (1010)BCD only",
+      "a carry is produced",
+      "Both A and C"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      822.48,
+      755,
+      45.39999999999998
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 520,
+    "unit": 5,
+    "page": 17,
+    "question": "Design the digital circuit that adds (8)BCD with (7)BCD in parallel and produces a sum digit also in BCD format. Show the appropriate circuit diagram and steps that describe the BCD addition process.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      866.88,
+      755,
+      36.27999999999997
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 521,
+    "unit": 5,
+    "page": 17,
+    "question": "Design Binary Parallel Adder for addition of two binary numbers A= 1010 and B= 1110",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      902.16,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 522,
+    "unit": 5,
+    "page": 17,
+    "question": "Design 4-Bit BCD adder which perform BCD addition of two decimal number 5 and 7.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      924.48,
+      755,
+      23.319999999999936
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 523,
+    "unit": 5,
+    "page": 17,
+    "question": "Design Logic diagram of Full adder and Full Subtractor with the help of truth table and logical equation.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      946.8,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 524,
+    "unit": 5,
+    "page": 17,
+    "question": "How many full adders are needed to add 4-bit numbers A and B with a Serial adder?",
+    "key": "A",
+    "marks": "1",
+    "options": [
+      "1",
+      "8",
+      "16",
+      "4"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      969.12,
+      755,
+      23.32000000000005
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 525,
+    "unit": 5,
+    "page": 17,
+    "question": "which of the following statement/s are true , I) In combinational circuits, memory are used for store the previous input so output of combinational circuits is depends on present as well as previous inputs. II) for n bit additions of binary number, number of full adder required for these is (n-1)n III) In full adder & full subtractor , there is similarity of sum bit (s) in case of full adder & borrow bit (bin) in case of full subtractor. IV) In output of BCD adder has range for sum output in 00000 to 10001.",
+    "key": "D",
+    "marks": "1",
+    "options": [
+      "i, ii, iii, iv",
+      "i, ii, iii",
+      "i, iii, iv",
+      "none of the above"
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      991.44,
+      755,
+      118.96000000000004
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 526,
+    "unit": 5,
+    "page": 17,
+    "question": "Illustrate the adder circuit which adds two 4 bit numbers which are (3)BCD & (9)BCD through BCD addition & obtain the answer in BCD form.",
+    "key": "",
+    "marks": "5",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      1109.4,
+      755,
+      38.679999999999836
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 527,
+    "unit": 5,
+    "page": 17,
+    "question": "Design truth table and give Boolean function for Full Subtractor. Write the simplified Boolean functions for its outputs and implement it with NOR gates only.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-17.webp",
+    "crop": [
+      84,
+      1147.08,
+      755,
+      38.680000000000064
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 528,
+    "unit": 5,
+    "page": 18,
+    "question": "Illustrate the Addition of (15)10 & (7)10 By using binary adders of which requires an n-full adder for n-bit addition. (with logic diagram)",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-18.webp",
+    "crop": [
+      84,
+      67.32,
+      755,
+      38.68000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 529,
+    "unit": 5,
+    "page": 18,
+    "question": "Illustrate the combinational circuits that subtracts one bit from another one bit, when already there is a borrow from this column for subtraction in preceding column, and outputs the difference bit and borrow bit along with truth table, Boolean function & logic circuit diagram.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-18.webp",
+    "crop": [
+      84,
+      105.0,
+      755,
+      63.879999999999995
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 530,
+    "unit": 5,
+    "page": 18,
+    "question": "Which statement/s is/are true? 1) A half adder is also known as XNOR gate because XNOR is applied to both inputs to produce the sum. 2) Half adder can add only two bits (A and B) and has nothing to do with the carry. 3) If the input to a half adder has a carry, then it will neglect it and adds only the A and B bits that means the binary addition process is not complete and that’s way it is called a half adder. 4) A half adder is a two input and two output combinational circuit.",
+    "key": "B",
+    "marks": "1",
+    "options": [
+      "both 1 and 2",
+      "Three 2, 3 and 4",
+      "Three 1,3 and 4",
+      "All of the above"
+    ],
+    "image": "pages/page-18.webp",
+    "crop": [
+      84,
+      167.88,
+      755,
+      117.75999999999999
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 531,
+    "unit": 5,
+    "page": 18,
+    "question": "Design the digital circuit that adds (8)BCD digit with (5)BCD digit in parallel and produces a sum digit also in BCD.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-18.webp",
+    "crop": [
+      84,
+      284.64,
+      755,
+      26.19999999999999
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 532,
+    "unit": 5,
+    "page": 18,
+    "question": "Design the digital circuit that adds (7)BCD with (7)BCD in parallel and produces a sum digit also in BCD format. Show the appropriate circuit diagram and steps that describe the BCD addition process",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-18.webp",
+    "crop": [
+      84,
+      309.84,
+      755,
+      38.68000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 533,
+    "unit": 5,
+    "page": 18,
+    "question": "Design a 4-bit parallel adder to find the sum and output carry for the addition of the following two 4-bit numbers which are A0A1A2A3 = 1011 and B0B1B2B3 = 1111 and the input carry (C0) is 0. List bitwise sum and output carry for the 4-bit parallel adder.",
+    "key": "",
+    "marks": "2",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-18.webp",
+    "crop": [
+      84,
+      347.52,
+      755,
+      51.28000000000003
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 534,
+    "unit": 5,
+    "page": 18,
+    "question": "Design the digital circuit that adds (7)BCD with (9)BCD in parallel and produces a sum digit also in BCD format. Show the appropriate circuit diagram and steps that describe the BCD addition process.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-18.webp",
+    "crop": [
+      84,
+      397.8,
+      755,
+      38.68000000000001
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 535,
+    "unit": 5,
+    "page": 18,
+    "question": "Design a combinational circuit that generates BCD sum of (3)BCD and (9)BCD number with necessary equations and truth table.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-18.webp",
+    "crop": [
+      84,
+      435.48,
+      755,
+      26.19999999999999
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 536,
+    "unit": 5,
+    "page": 18,
+    "question": "Design a combinational circuit that add (9)BCD and (8)BCD number with necessary equations.",
+    "key": "",
+    "marks": "4",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-18.webp",
+    "crop": [
+      84,
+      460.68,
+      755,
+      25.71999999999997
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  },
+  {
+    "id": 537,
+    "unit": 5,
+    "page": 18,
+    "question": "Prove that a full adder can be obtained by two half adder and an OR gate.",
+    "key": "",
+    "marks": "3",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "image": "pages/page-18.webp",
+    "crop": [
+      84,
+      485.4,
+      755,
+      26.200000000000045
+    ],
+    "pageWidth": 841.9200439453125,
+    "pageHeight": 1190.52001953125
+  }
+]

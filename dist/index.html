@@ -7,6 +7,8 @@
   <meta name="description" content="LJIET study workspace: Python, full stack development, software engineering and probability practice books." />
   <title>LJIET Learning Hub</title>
   <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="css/pwa-install.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/playgrounds.css" />
   <link rel="stylesheet" href="css/quiz-mode.css" />
@@ -51,11 +53,12 @@
           </ul>
         </details>
         <details class="semester-menu" id="semester-menu-3" data-menu-semester="3">
-          <summary><span class="semester-badge">03</span><span>Semester 3<small>3 available subjects</small></span></summary>
+          <summary><span class="semester-badge">03</span><span>Semester 3<small>4 available subjects</small></span></summary>
           <ul class="concept-list semester-subjects">
             <li data-view="sem3"><a href="python/?book=sem3"><span class="nav-symbol" aria-hidden="true">Py</span>Python III</a></li>
             <li data-view="fsd1"><a href="study/?subject=fsd"><span class="nav-symbol" aria-hidden="true">JS</span>Full stack development</a></li>
-            <li data-view="ps"><a href="probability/"><span class="nav-symbol" aria-hidden="true">∑</span>Probability &amp; statistics</a></li>
+            <li data-view="de"><a href="de/"><span class="nav-symbol" aria-hidden="true">01</span>Digital Electronics</a></li>
+            <li data-view="ps"><a href="probability/"><span class="nav-symbol" aria-hidden="true">∑</span>Probability & statistics</a></li>
           </ul>
         </details>
       </div>
@@ -63,7 +66,7 @@
       <ul class="concept-list">
         <li data-view="quiz"><button type="button" onclick="startUnitQuiz('sem1','all',10);closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">✓</span>Quick quiz</button></li>
         <li data-view="rank"><button type="button" onclick="openLeaderboardScreen();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">▥</span>Leaderboard</button></li>
-        <li data-view="learn"><button type="button" onclick="openLearningPathNav();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true">&lt;&gt;</span>Learning path</button></li>
+        <li data-view="learn"><button type="button" onclick="openLearningPathNav();closeSidebarOnMobile()"><span class="nav-symbol" aria-hidden="true"><></span>Learning path</button></li>
       </ul>
       <ul class="concept-list" id="conceptList" hidden aria-hidden="true"></ul>
       <div class="sidebar-footer">L.J. Institute<br>Practice. Understand. Repeat.</div>
@@ -72,7 +75,7 @@
     <main class="main-content" id="mainContent" tabindex="-1">
       <section id="welcomeScreen" class="screen active" aria-label="Study overview">
         <div class="study-dashboard">
-          <section class="study-hero"><div><div class="eyebrow">A LITTLE PRACTICE. A BIG DIFFERENCE.</div><h1>Your next “I get it!”<br>starts here.</h1><p>Your Semester 1 &amp; 3 study space. Find a question, understand the steps, and make it yours.</p><button type="button" id="hero-start" class="study-primary">Let’s learn something →</button></div><img src="assets/study-buddies.svg" alt="A student and a friendly owl studying together"></section>
+          <section class="study-hero"><div><div class="eyebrow">A LITTLE PRACTICE. A BIG DIFFERENCE.</div><h1>Your next “I get it!”<br>starts here.</h1><p>Your Semester 1 & 3 study space. Find a question, understand the steps, and make it yours.</p><button type="button" id="hero-start" class="study-primary">Let’s learn something →</button></div><img src="assets/study-buddies.svg" alt="A student and a friendly owl studying together"></section>
           <section class="internship-promo"><div><span class="eyebrow">BUILD SKILLS BEYOND THE PRACTICE BOOK</span><h2>Python for Internship</h2><p>16 weeks. Editable exercises, weekly projects, webpages and a small AI model.</p></div><a href="internship/" class="study-primary">Start building →</a></section>
           <div class="study-stats" aria-label="Your study progress"><div class="study-stat"><strong id="stat-done">0</strong><span>Questions marked done</span></div><div class="study-stat"><strong id="stat-revise">0</strong><span>To revise or ask about</span></div><div class="study-stat"><strong id="stat-saved">0</strong><span>Saved for later</span></div></div>
           <div class="study-topline"><h2 class="study-section-title">Pick your next chapter</h2><div class="study-semesters" aria-label="Filter semester"><button type="button" data-semester="all" aria-pressed="true">All</button><button type="button" data-semester="1" aria-pressed="false">Semester 1</button><button type="button" data-semester="3" aria-pressed="false">Semester 3</button></div></div>
@@ -89,7 +92,7 @@
             <span id="conceptNumber" class="concept-number">01</span>
             <h2 id="conceptTitle" class="concept-title">Loading...</h2>
           </div>
-          <div class="concept-progress-bar"><div id="conceptProgressFill" class="concept-progress-fill"></div></div>
+          <div class="concept-progress-bar"><div id="conceptProgressFill" class="concept-progress-fill"></div>
         </div>
         <div id="stepTabs" class="step-tabs"></div>
         <div id="stepContent" class="step-content"></div>
@@ -141,6 +144,7 @@
   <script src="js/study-catalogue.js"></script>
   <script src="js/study-tools.js"></script>
   <script src="js/study-dashboard.js"></script>
+  <script src="js/pwa-install.js"></script>
   <script>
   (function(){
     function boot(){
