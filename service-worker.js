@@ -1,4 +1,4 @@
-const CACHE_NAME = "ljiet-study-auth-return-20261007-v11";
+const CACHE_NAME = "ljiet-study-pwa-install-20261007-v12";
 const ASSETS = [
   "./internship/",
   "./internship/index.html",
@@ -71,6 +71,8 @@ const ASSETS = [
   "./js/app-se.js",
   "./js/se-practice-book.js",
   "./manifest.json",
+  "./css/pwa-install.css",
+  "./js/pwa-install.js",
   "./icons/icon.svg"
 ];
 
