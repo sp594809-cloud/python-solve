@@ -51,3 +51,7 @@ html[data-theme] .option.correct{background:var(--success-soft);border-color:var
 html[data-theme] .option.wrong{background:var(--danger-soft);border-color:var(--danger);color:var(--text)}
 html[data-theme] .output{padding:12px}
 html[data-theme] .flowchart svg{color:var(--text)}
+
+/* Keep the selected Mathematics chapter label and count readable in both themes. */
+html[data-theme] .chapter-tabs button[aria-current=true]{background:var(--action);color:var(--action-text);border-color:var(--action)}
+html[data-theme] .chapter-tabs button[aria-current=true] span{color:var(--action-text)}
