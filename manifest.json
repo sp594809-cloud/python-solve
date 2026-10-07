@@ -1,24 +1,16 @@
 {
   "name": "LJIET Learning Hub",
   "short_name": "LJIET Hub",
-  "description": "LJIET Learning Hub \u2013 Python & SE Practice Books, Leaderboard",
+  "description": "Study and practise with the LJIET Learning Hub.",
   "start_url": "./index.html",
   "scope": "./",
   "id": "./index.html",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "any",
   "background_color": "#f5f7fb",
-  "theme_color": "#3159d7",
-  "categories": [
-    "education",
-    "productivity"
-  ],
-  "icons": [
-    {
-      "src": "./icons/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    }
-  ]
+  "theme_color": "#4f46e5",
+  "categories": ["education", "productivity"],
+  "prefer_related_applications": false,
+  "icons": [{"src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]
 }
