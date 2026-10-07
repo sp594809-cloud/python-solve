@@ -2,3 +2,13 @@
 
 /* Full original rows retain their aspect ratio and scroll rather than clipping. */
 .question-source{max-width:none;width:100%}.source-scroll .source-crop{max-width:none}.maths-page{background:#f6f7fc}.math-header{color:#4256cf}.chapter-tabs button[aria-current=true]{background:#eeedff;border-color:#4256cf;color:#3545a6}.solution-toggle{background:#4256cf;border-radius:12px}.question-card,.quick-tools{border-radius:20px;border-color:#dfe5ee}.maths-hero>div>p{color:#56657b}.maths-hero.reader-hero{margin-top:0}.maths-hero h1{font-size:clamp(28px,4vw,42px)}.handwritten-solution{background:#fff;color:#171717}.question-navigation button{border-radius:10px;color:#34425c}.reader-section{background:#fff;padding:10px 20px;border:1px solid #dfe5ee;border-radius:16px}@media(max-width:650px){.chapter-tabs{grid-template-columns:1fr}.maths-hero.reader-hero img{width:85px}.maths-hero.reader-hero{padding:20px 16px}.question-heading{flex-wrap:wrap}.question-card{padding:18px 14px}}
+
+
+/* Match the chapter rail used by the Python, FSD and SE practice books. */
+.maths-shell{display:grid;grid-template-columns:220px minmax(0,1fr);gap:18px 32px}
+.maths-shell>.maths-hero{grid-column:1/-1}
+.chapter-tabs{grid-column:1;grid-row:2 / span 5;display:flex;flex-direction:column;align-self:start;position:sticky;top:20px;margin:0}
+.chapter-tabs button{width:100%;background:#fff;border:1px solid #d6d3cb;border-radius:8px;padding:12px;text-align:left}
+.quick-tools,.question-card,.reader-section,.source-note{grid-column:2}
+.maths-shell>.source-note{grid-column:1/-1}
+@media(max-width:650px){.maths-shell{display:block;padding:24px 18px 40px}.chapter-tabs{position:static;display:flex;flex-direction:row;overflow:auto;gap:8px;margin:22px 0 16px;padding-bottom:5px}.chapter-tabs button{flex:0 0 155px;width:auto}.quick-tools,.question-card,.reader-section,.source-note{width:100%}}
