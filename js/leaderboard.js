@@ -27,7 +27,7 @@ async function initStudentSession() {
   currentStudent = normalizeStoredStudentProfile(storedStudent);
 
   if (!currentStudent) {
-    showLoginModal();
+    // Keep study content available to visitors; prompt for an account only when saving progress.
     return;
   }
   if (!storedStudent || storedStudent.enrollment !== currentStudent.enrollment || storedStudent.name !== currentStudent.name) {
