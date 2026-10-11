@@ -27,6 +27,6 @@ cpSync("internship/notebook-content","dist/internship/notebook-content",{recursi
 cpSync("internship/notebooks","dist/internship/notebooks",{recursive:true});
 
 mkdirSync("dist/de/data",{recursive:true});
-for(const file of ["index.html","app.js","styles.css","practice-book.pdf","pages"])cpSync("de/"+file,"dist/de/"+file,{recursive:true});
+for(const file of ["index.html","revision.html","app.js","styles.css","practice-book.pdf","pages"])cpSync("de/"+file,"dist/de/"+file,{recursive:true});
 cpSync("de/data/solutions.js","dist/de/data/solutions.js");
 console.log("Built Digital Electronics Chapters 4–5: 204 worked solutions");

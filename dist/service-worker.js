@@ -1,7 +1,8 @@
-const CACHE_NAME = "ljiet-study-open-solutions-20261007-v13";
+const CACHE_NAME = "ljiet-study-de-exam-20261011-v14";
 const ASSETS = [
   "./de/",
   "./de/index.html",
+  "./de/revision.html",
   "./de/styles.css",
   "./de/app.js",
   "./de/data/solutions.js",

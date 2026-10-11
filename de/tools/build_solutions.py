@@ -2,6 +2,7 @@
 from pathlib import Path
 import json,re,itertools,html
 import sympy as sp
+from exam_style import connected_svg, grouped_map, finish, half_blocks, bcd_svg
 from sympy.logic.boolalg import SOPform,POSform,And,Or,Not
 R=Path(__file__).resolve().parents[1]; qs=json.loads((R/'data/source.json').read_text()); Q={q['id']:q for q in qs};checks=0
 E=lambda x:html.escape(str(x))
@@ -86,20 +87,9 @@ class Network:
    v=[env[a] for a in args];env[name]={'AND':lambda:all(v),'NAND':lambda:not all(v),'OR':lambda:any(v),'NOR':lambda:not any(v),'NOT':lambda:not v[0],'XOR':lambda:sum(v)%2==1}[op]()
   return {k:int(env[v]) for k,v in self.outputs.items()}
  def show(self):
-  # IEC rectangular logic symbols. Each card lists its named input wires; names link cards exactly.
-  rows=[]
-  for name,op,args in self.nodes:rows.append([name,op,', '.join(args)])
-  out=table(['Wire','Gate','Input wire(s)'],rows)+p('Output connections: '+', '.join(k+' = '+v for k,v in self.outputs.items()))
-  h=96*len(self.nodes)+30
-  svg=f'<svg class="circuit" viewBox="0 0 640 {h}" role="img" aria-label="Circuit diagram with named input and output wires">'
-  for j,(name,op,args) in enumerate(self.nodes):
-   y=20+j*96
-   svg+=f'<rect x="260" y="{y}" width="150" height="60" rx="3" fill="white" stroke="black"/><text x="335" y="{y+35}" text-anchor="middle">{op}</text>'
-   for k,a in enumerate(args):
-    yy=y+(k+1)*60/(len(args)+1);svg+=f'<path d="M 200 {yy} H 260" stroke="black"/><text x="192" y="{yy+4}" text-anchor="end">{E(a)}</text>'
-   svg+=f'<path d="M 410 {y+30} H 475" stroke="black"/><text x="487" y="{y+35}">{E(name)}</text>'
-  svg+='</svg>'
-  return p('IEC gate diagram: matching wire names are electrically connected. Read from g1 downward; a tied-input NAND/NOR acts as an inverter.')+svg+out
+  rows=[[name,op,', '.join(args)] for name,op,args in self.nodes]
+  return connected_svg(self)+'<details class="wire-check"><summary>Check the exact wire connections</summary>'+table(['Wire','Gate','Input wire(s)'],rows)+p('Outputs: '+', '.join(k+' = '+v for k,v in self.outputs.items()))+'</details>'
+
  def verify(self,expected):
   global checks
   for bits in itertools.product([0,1],repeat=len(self.inputs)):
@@ -130,6 +120,7 @@ def expr_network(e,names,kind='NAND',two=False):
 
 def solve(i,names='ABCD',on=None,zero=None,dc=None,expr=None,mode='map',kind=None,two=False,note=''):
  vs=sp.symbols(' '.join(names));n=len(vs);dc=sorted(set(dc or []))
+ Q[i].update(method=mode,expression=expr,gateKind=kind)
  if expr is not None:on=values(parse(expr,vs),vs)
  if zero is not None:on=sorted(set(range(2**n))-set(zero)-set(dc))
  on=sorted(set(on));dc=sorted(set(dc)-set(on));off=sorted(set(range(2**n))-set(on)-set(dc));sop=SOPform(vs,on,dc);pos=POSform(vs,on,dc)
@@ -147,10 +138,11 @@ def solve(i,names='ABCD',on=None,zero=None,dc=None,expr=None,mode='map',kind=Non
   body+=section('3. Write both canonical forms',p('For each row with F=1, include that minterm. For each row with F=0, include that maxterm. In a minterm, 0 means a complemented literal; in a maxterm, 1 means a complemented literal.')+p(answer))
  else:
   usepos=zero is not None or kind=='NOR' or i==459;target=off if usepos else on;pr,ess,covers,stages=qm(target,dc,n);chosen=covers[0]
+  Q[i]['grouping']={'patterns':list(chosen),'pos':usepos}
   reduced=''.join('('+term(c,vs,True)+')' for c in chosen) if usepos else ' + '.join(term(c,vs) for c in chosen)
   answer='F = '+(reduced or ('1' if usepos else '0'))
   if mode=='tab':
-   body+=section('2. Quine–McCluskey combinations',p('Start in groups with the same number of 1s. Combine terms differing in exactly one fixed bit; replace that bit by –. A dash position must match before combining. Uncombined terms become prime implicants.')+''.join('<h4>Round '+str(k)+'</h4>'+table(['Binary pattern','Covered indices'],[[c,', '.join(map(str,sorted(cover(c))))] for c in sorted(stage,key=lambda s:(s.count('1'),s))]) for k,stage in enumerate(stages)))
+   body+=section('2. Quine–McCluskey combinations',p('Start in groups with the same number of 1s. Combine terms differing in exactly one fixed bit; replace that bit by –. A dash position must match before combining. Uncombined terms become prime implicants.')+''.join('<h4>Round '+str(k)+'</h4>'+table(['Number of 1s','Binary pattern','Covered indices','Status'],[[c.count('1'),c,', '.join(map(str,sorted(cover(c)))),'✓ combined' if k+1<len(stages) and any(cover(c)<=cover(d) for d in stages[k+1]) else 'Prime' if c in pr else 'Don’t-care only'] for c in sorted(stage,key=lambda s:(s.count('1'),s))]) for k,stage in enumerate(stages)))
   else:
    rbits=n//2;cbits=n-rbits;gray=lambda k:[j^(j>>1) for j in range(2**k)];rows=[]
    for r in gray(rbits):
@@ -166,7 +158,7 @@ def solve(i,names='ABCD',on=None,zero=None,dc=None,expr=None,mode='map',kind=Non
   if i in [425,426,427,428]:answer='Prime implicants: '+', '.join(term(c,vs) for c in pr)
   if i in [432,433,434]:answer='Essential prime implicants: '+(', '.join(term(c,vs) for c in ess) or 'none')+'; count = '+str(len(ess))
   if kind:
-   net=expr_network(pos if kind=='NOR' else sop,vs,kind,two)
+   net=expr_network(parse(reduced,vs),vs,kind,two)
    for j,bits in enumerate(itertools.product([0,1],repeat=n)):
     if j not in dc:assert net.evaluate(bits)['F']==int(j in on);checks+=1
    body+=section('5. Gate implementation',p('Use '+kind+' gates. De Morgan’s law turns '+('an SOP into NAND–NAND' if kind=='NAND' else 'a POS into NOR–NOR')+'.'+(' Every gate below has two inputs.' if two else ' Multi-input gates are allowed here.'))+net.show())
@@ -178,7 +170,7 @@ def solve(i,names='ABCD',on=None,zero=None,dc=None,expr=None,mode='map',kind=Non
      if cache[x] is None:cache[x]=net.inv(x)
      return cache[x]
     return str(a)
-   terms=sop.args if isinstance(sop,Or) else [sop];w=[]
+   selected=parse(reduced,vs);terms=selected.args if isinstance(selected,Or) else [selected];w=[]
    for t in terms:w.append(net.logical('AND',[lit(a) for a in (t.args if isinstance(t,And) else [t])]))
    net.outputs={'F':net.logical('OR',w)};body+=section('5. AND–OR–NOT implementation',net.show())
  Q[i]['boolean']={'variables':list(names),'ones':on,'zeros':off,'dontCares':dc,'sop':fmt(sop),'pos':fmt(pos)}
@@ -228,10 +220,18 @@ def arith_net(full=False,sub=False,kind=None):
  def XOR(a,b):
   if kind:return net.xor(a,b,kind)
   return OR(AND(inv(a),b),AND(a,inv(b)))
- x=XOR('A','B');c1=AND(inv('A') if sub else 'A','B')
- if full:
-  d=XOR(x,'C');c2=AND(inv(x) if sub else x,'C');carry=OR(c1,c2)
- else:d=x;carry=c1
+ x=XOR('A','B')
+ if kind=='NAND' and not sub:
+  # Reuse the complement wires inside each four-NAND XOR: compact 5/9-gate HA/FA.
+  ab_bar=net.nodes[0][0]
+  if full:
+   d=XOR(x,'C');xc_bar=net.nodes[4][0];carry=net.gate('NAND',ab_bar,xc_bar)
+  else:d=x;carry=net.inv(ab_bar,'NAND')
+ else:
+  c1=AND(inv('A') if sub else 'A','B')
+  if full:
+   d=XOR(x,'C');c2=AND(inv(x) if sub else x,'C');carry=OR(c1,c2)
+  else:d=x;carry=c1
  net.outputs={'Difference' if sub else 'Sum':d,'Borrow' if sub else 'Carry':carry}
  net.verify(lambda b:{'Difference' if sub else 'Sum':(b[0]-sum(b[1:]) if sub else sum(b))%2,'Borrow' if sub else 'Carry':int(b[0]<sum(b[1:])) if sub else int(sum(b)>1)})
  return net
@@ -247,10 +247,13 @@ def arithmetic(i,full=False,sub=False,kind=None):
   body+=section('2. Derive the output equations',p(out[0]+' = Σm('+','.join(map(str,ons1))+'); '+out[1]+' = Σm('+','.join(map(str,ons2))+').')+p(equation))
   body+=section('3. Two half-circuit construction',p(('Half subtractor 1: d1=A⊕B, b1=A\'B. Half subtractor 2: D=d1⊕C, b2=d1\'C. OR the borrows: Bout=b1+b2=A\'B+A\'C+BC.' if sub else 'Half adder 1: s1=A⊕B, c1=AB. Half adder 2: S=s1⊕C, c2=s1C. OR the carries: Cout=c1+c2=AB+(A⊕B)C=AB+AC+BC.')))
  else:body+=section('2. Derive the output equations',p(equation)+p('The first output is 1 for inputs 01 and 10, so XOR = A\'B+AB\'. The second output is 1 only for '+('01.' if sub else '11.')))
+ if full:body+=half_blocks(sub)
  net=arith_net(full,sub,kind)
  body+=section('4. '+(kind+'-only circuit' if kind else 'AND–OR–NOT circuit'),p('All gates are two-input '+kind+' gates; tied inputs implement inversion.' if kind else 'AOI is interpreted here as AND–OR–INVERT (basic AND, OR and NOT gates). XOR is expanded into these basic gates.')+net.show())
  body+=p('Check: '+('A−B'+('−C' if full else '')+' = D−2Bout.' if sub else 'A+B'+('+C' if full else '')+' = S+2Cout.')+' Every truth-table row satisfies this identity.')
+ body+=section('Output K-map derivation',''.join('<h4>'+name+'</h4>'+grouped_map(inputs,ons,[],qm(ons,[],len(inputs))[2][0],label=name) for name,ons in [(out[0],[j for j,r in enumerate(rows) if r[-2]]),(out[1],[j for j,r in enumerate(rows) if r[-1]])]))
  put(i,equation,body)
+ Q[i]['arithmetic']={'full':full,'subtractor':sub,'gateKind':kind}
 for i,f,s,k in [(470,0,0,None),(471,0,0,'NAND'),(472,0,0,'NOR'),(473,1,0,'NAND'),(474,1,0,'NOR'),(475,1,0,None),(476,0,1,None),(477,0,1,'NAND'),(478,0,1,'NOR'),(479,1,1,'NAND'),(480,1,1,'NOR'),(481,1,1,None),(483,1,0,None),(484,1,0,None),(485,1,0,None),(514,1,1,None),(527,1,1,'NOR'),(529,1,1,None),(537,1,0,None)]:arithmetic(i,bool(f),bool(s),k)
 # Full adder to full subtractor: invert A before the FA and its sum afterward.
 put(482,"D=(A'⊕B⊕Bin)' = A⊕B⊕Bin; Bout=A'B+A'Bin+BBin",section('1. Reuse a full adder',p("Apply A', B and Bin to a full adder. Its carry becomes A'B+A'Bin+BBin, exactly the borrow equation."))+section('2. Correct the difference output',p("The full adder produces S_FA=A'⊕B⊕Bin=(A⊕B⊕Bin)'. Add a NOT gate after S_FA, giving D=S_FA'. Two additional inverters are required: one on A and one on the sum output."))+table(['A','B','Bin','A′ to FA','S_FA','D','Bout'],[[a,b,c,1-a,(1-a)^b^c,a^b^c,int(a<b+c)] for a,b,c in itertools.product([0,1],repeat=3)])+'<svg viewBox="0 0 700 220" class="circuit" role="img" aria-label="Full adder converted to full subtractor"><g fill="white" stroke="black"><rect x="90" y="20" width="80" height="40"/><rect x="280" y="20" width="130" height="155"/><rect x="480" y="35" width="80" height="40"/><path d="M30 40H90 M170 40H280 M30 100H280 M30 150H280 M410 55H480 M560 55H640 M410 150H640"/></g><g font-size="18"><text x="15" y="30">A</text><text x="107" y="46">NOT</text><text x="15" y="90">B</text><text x="15" y="140">Bin</text><text x="300" y="95">Full adder</text><text x="495" y="61">NOT</text><text x="650" y="60">D</text><text x="644" y="155">Bout</text></g></svg>')
@@ -264,12 +267,21 @@ def blocksvg(labels):
  for j,(left,box,right) in enumerate(labels):
   y=20+j*105;s+=f'<rect x="255" y="{y}" width="215" height="65" fill="white" stroke="black"/><path d="M215 {y+32}H255 M470 {y+32}H510" stroke="black"/><text x="205" y="{y+37}" text-anchor="end">{E(left)}</text><text x="362" y="{y+37}" text-anchor="middle">{E(box)}</text><text x="520" y="{y+37}">{E(right)}</text>'
  return s+'</svg>'
+def ripple_svg():
+ s='<div class="circuit-scroll"><svg class="circuit" viewBox="0 0 850 250" role="img" aria-label="Four full adders linked by ripple carry"><rect width="850" height="250" fill="white"/><g stroke="black" fill="white">'
+ for i in range(4):
+  x=70+i*195;s+=f'<rect x="{x}" y="90" width="110" height="80"/><path d="M{x+25} 45V90 M{x+85} 45V90 M{x+55} 170V210 M{x-(55 if i==0 else 85)} 130H{x}"/>'
+ s+='<path d="M765 130H810"/></g><g font-size="17" font-family="system-ui,sans-serif" fill="black">'
+ for i in range(4):
+  x=70+i*195;s+=f'<text x="{x+15}" y="35">A{i}</text><text x="{x+75}" y="35">B{i}</text><text x="{x+25}" y="137">FA {i}</text><text x="{x+45}" y="234">S{i}</text><text x="{x-48}" y="119">C{i}</text>'
+ return s+'<text x="795" y="119">C4</text><text x="70" y="20" font-size="13">LSB</text><text x="660" y="20" font-size="13">MSB</text></g></svg></div>'
+
 def binary_body(a,b,cin=0):
  carry=cin;rows=[]
  for k in range(4):
   ai=(a>>k)&1;bi=(b>>k)&1;t=ai+bi+carry;rows.append([k,ai,bi,carry,t%2,t//2]);carry=t//2
  total=a+b+cin;ans=f'S3S2S1S0={total%16:04b}; C4={total//16} (total {total:05b}₂ = {total}₁₀)'
- body=p(f'{a:04b}₂ + {b:04b}₂ + {cin} = {total:05b}₂.')+p('Stage i computes Si=Ai⊕Bi⊕Ci and Ci+1=AiBi+(Ai⊕Bi)Ci. Connect each carry-out to the next more significant carry-in.')+table(['Bit i (LSB first)','Ai','Bi','Carry in Ci','Sum Si','Carry out Ci+1'],rows)+blocksvg([(f'A{i}, B{i}, C{i}',f'Full adder {i}',f'S{i}, C{i+1}') for i in range(4)])+p(ans)
+ body=p(f'{a:04b}₂ + {b:04b}₂ + {cin} = {total:05b}₂.')+p('Stage i computes Si=Ai⊕Bi⊕Ci and Ci+1=AiBi+(Ai⊕Bi)Ci. Connect each carry-out to the next more significant carry-in.')+table(['Bit i (LSB first)','Ai','Bi','Carry in Ci','Sum Si','Carry out Ci+1'],rows)+ripple_svg()+p(ans)
  return ans,body
 for i,a,b,c in [(513,11,15,1),(521,10,14,0),(528,15,7,0)]:
  ans,body=binary_body(a,b,c);put(i,ans,section('Four-bit parallel adder',body)+(section('Why parallel is faster',compare) if i==513 else ''))
@@ -286,7 +298,7 @@ def bcd(i,a,b):
  body=section('1. First binary addition',p(f'A={a:04b}, B={b:04b}, Cin=0. Raw five-bit sum = {raw:05b}. C4={c4}, Z3Z2Z1Z0={z:04b}.'))
  body+=section('2. Detect an invalid BCD result',p('K = C4 + Z3Z2 + Z3Z1. Correction is required if the raw digit is 1010–1111 or the first adder has a carry. Use K as the decimal carry to the next digit.')+p(f'Here K={k}. The second adder adds 0KK0 = {6*k:04b}.'))
  body+=section('3. Add the correction',p(f'{z:04b} + {6*k:04b} = {corrected:05b}. Keep the low four bits {digit:04b} as the units digit; decimal carry is K={k}.')+p(answer)+p('For raw sums 16–19, the first adder already carries; the second adder may not carry. Therefore take decimal carry from K, not only from the second adder.'))
- body+=section('4. BCD adder circuit',blocksvg([('A, B, Cin','4-bit adder 1','Z3..Z0, C4'),('Z3,Z2,Z1,C4','K=C4+Z3Z2+Z3Z1','K (decimal carry)'),('Z3..Z0, 0KK0','4-bit adder 2','Units digit')]))
+ body+=section('4. BCD adder circuit',bcd_svg())
  body+=section('5. Correction truth table (valid BCD inputs)',p('The two input digits are 0–9; with carry-in 0 or 1, the raw sum ranges from 0 to 19.')+table(['Raw sum','C4','Z','K','Z+6K','Correct BCD'],rows))
  put(i,answer,body)
 for i,a,b in [(520,8,7),(522,5,7),(526,3,9),(531,8,5),(532,7,7),(534,7,9),(535,3,9),(536,9,8)]:bcd(i,a,b)
@@ -294,6 +306,7 @@ for a,b,c in itertools.product(range(10),range(10),range(2)):
  t=a+b+c;z=t%16;k=int(t//16 or z>9);assert (z+6*k)%16==t%10 and k==t//10;checks+=1
 # Keep source key only as provenance; reader answers use independently derived results.
 assert all(q.get('answer') and q.get('solution') for q in qs),[q['id'] for q in qs if not q.get('solution')]
+finish(qs,globals())
 book={'title':'Digital Electronics — Chapters 4 & 5','questions':qs,'verification':{'exhaustiveCases':checks,'questions':len(qs)}}
 (R/'data/solutions.json').write_text(json.dumps(book,ensure_ascii=False,separators=(',',':')))
 (R/'data/solutions.js').write_text('window.DE_BOOK='+json.dumps(book,ensure_ascii=False,separators=(',',':'))+';\n')
