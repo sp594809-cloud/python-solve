@@ -6,7 +6,7 @@ Open the Probability & Stochastic Processes practice book: Chapter 3 (Q205–Q28
 Python practice books are at `python/?book=sem1` and `python/?book=sem3`.
 
 - Semester III: all 734 questions from the supplied 2026 FCSP-1 PDF, across 10 units (511 MCQs and 223 coding questions).
-- Semester I: all 210 entries from the existing repository bank (151 MCQs and 59 code/algorithm questions). No Semester I source PDF was supplied.
+- Semester I: 308 entries (249 MCQs and 59 code/algorithm questions). Original Units 1–3 retain their 210 entries. All 98 MCQs from `Updated_PB_Python_T2.pdf` are added: Unit 4 Q1–30 and Unit 5 Q44–111. T2 numbering is preserved with distinct IDs and unit-qualified links. The 39 T2 coding exercises are outside this MCQ update. Units 1–3 still await their source PDF. T2 Q106 explains the printed Id/ld typo and uses the actual Python error answer, while recording the source key.
 - White pages, black text, searchable question numbers, expandable explanations, original figures, algorithms/flowcharts, copy/download controls, multiple-file ZIPs and locally saved study progress.
 - The optional Python runner uses a disposable Pyodide Web Worker. First use needs an internet connection; NumPy and Matplotlib load as needed. Streamlit apps are downloaded and run locally.
 
@@ -19,11 +19,11 @@ Mathematics I Chapters 6–8 are at `maths/`: all 381 questions (Q643–Q1023), 
 
 ## Study experience
 
-The dashboard indexes 1,946 questions in seven available subject collections, with semester and chapter navigation, cross-subject search, saved questions, Done/Revise/Doubt status, and five- or ten-question practice sessions. MCQs are scored after submission; written questions are self-checked. Progress, report drafts and recent practice results are stored only on the current device. Reporters can open a prefilled GitHub issue and submit it themselves.
+The dashboard indexes 2,044 questions in seven available subject collections, with semester and chapter navigation, cross-subject search, saved questions, Done/Revise/Doubt status, and five- or ten-question practice sessions. MCQs are scored after submission; written questions are self-checked. Progress, report drafts and recent practice results are stored only on the current device. Reporters can open a prefilled GitHub issue and submit it themselves.
 
 Mathematics source images now retain the full PDF table width, actual row borders and continuation fragments. Small screens can scroll the complete row; a full-page viewer offers 150% and 200% zoom. Rebuild these assets with `python3 maths/tools/build_source_images.py` (PyMuPDF and Pillow). This command preserves all mathematical answers and steps.
 
-Coverage labels reflect the loaded banks: Python I available bank, Python III Chapters 1–10, Mathematics I Chapters 6–8, FSD Chapters 1–2, Software Engineering MCQs Chapters 1–5, Probability Chapters 3–4, and Digital Electronics Chapters 4–5. Other chapters are not claimed complete.
+Coverage labels reflect the loaded banks: Python I Units 1–3 plus Units 4–5 T2 MCQs, Python III Chapters 1–10, Mathematics I Chapters 6–8, FSD Chapters 1–2, Software Engineering MCQs Chapters 1–5, Probability Chapters 3–4, and Digital Electronics Chapters 4–5. Other chapters are not claimed complete.
 
 Faculty review records are maintained in `study/faculty-reviews.json`. Leave it empty until a faculty member has actually checked a question. Each accepted record needs `questionKey`, `facultyName`, ISO `date`, and an HTTPS `evidenceUrl` linking to the documented review. The build validates records and displays review attribution only for matching questions.
 

@@ -8,8 +8,14 @@ fixtures=json.loads((root/'scripts/python-sample-fixtures.json').read_text())
 count=0;executed=0
 for book,units in books.items():
  questions=[q for u in units.values() for q in u['mcqs']+u['coding']]
- expected=734 if book=='sem3' else 210
- assert sorted(q['srNo'] for q in questions)==list(range(1,expected+1)),f'{book} coverage'
+ expected=734 if book=='sem3' else 308
+ if book=='sem3':
+  assert sorted(q['srNo'] for q in questions)==list(range(1,735)),f'{book} coverage'
+ else:
+  original=[q for q in questions if not q['id'].startswith('PB-T2-')]
+  assert sorted(q['srNo'] for q in original)==list(range(1,211))
+  assert [q['srNo'] for q in units['unit4']['mcqs']]==list(range(1,31))
+  assert [q['srNo'] for q in units['unit5']['mcqs']]==list(range(44,112))
  assert len({q['id'] for q in questions})==expected,f'{book} duplicate IDs'
  for u in units.values():
   for q in u['mcqs']:
@@ -34,5 +40,5 @@ for book,units in books.items():
     expected=re.sub(r'/tmp/python-question-[A-Za-z0-9_-]+','<WORKDIR>',fixture['output'])
     assert ' '.join(actual.split())==' '.join(expected.split()),(key,actual,expected)
     executed+=1
-print(f'Coverage: 210 + 734 questions. Syntax: {count} programs. Sample executions: {executed}.')
+print(f'Coverage: 308 + 734 questions. Syntax: {count} programs. Sample executions: {executed}.')
 if args.execute:print('Streamlit programs are syntax checked here; run them with streamlit run app.py.')

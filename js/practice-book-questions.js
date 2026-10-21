@@ -1,4 +1,4 @@
-// Existing SEM I bank, with corrected coding solutions and algorithms.
+// Semester I: original Units 1–3 and source-numbered T2 MCQs from Units 4–5.
 const PRACTICE_BOOK = {
   "unit1": {
     "unit": 1,
@@ -3315,6 +3315,2212 @@ const PRACTICE_BOOK = {
         "exampleOutput": "Even max, min, average: 6 2 4.0\nOdd max, min, average: 9 -5 1.0"
       }
     ]
+  },
+  "unit4": {
+    "unit": 4,
+    "title": "UNIT 4 - Functions, Scoping and Abstraction (T2 MCQs)",
+    "mcqs": [
+      {
+        "id": "PB-T2-001",
+        "srNo": 1,
+        "question": "What is the output of the following function call?\ndef fun1(name, age=20):\n    print(name, age)\nfun1('Emma', 25)",
+        "options": [
+          "Emma 25",
+          "Emma 20",
+          "Emma, 25",
+          "Emma, 20"
+        ],
+        "answer": "A",
+        "correct": "Emma 25",
+        "explanation": "The supplied age 25 overrides the default 20. print separates name and age with a space.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 1,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "def fun1(name, age=20):\n    print(name, age)\nfun1('Emma', 25)",
+          "output": "Emma 25"
+        }
+      },
+      {
+        "id": "PB-T2-002",
+        "srNo": 2,
+        "question": "What will be the output of the following Python code?\na=10\nb=20\ndef change():\n    global b\n    a=45\n    b=56\nchange()\nprint(a)\nprint(b)",
+        "options": [
+          "10\n56",
+          "45\n56",
+          "10\n20",
+          "Syntax Error"
+        ],
+        "answer": "A",
+        "correct": "10\n56",
+        "explanation": "a=45 is local to change(), so global a stays 10. global b makes b=56 update the global value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 1,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "a=10\nb=20\ndef change():\n    global b\n    a=45\n    b=56\nchange()\nprint(a)\nprint(b)",
+          "output": "10\n56"
+        }
+      },
+      {
+        "id": "PB-T2-003",
+        "srNo": 3,
+        "question": "What will be the output of the following Python code?\ndef display(b, n):\n    while n > 0:\n        print(b,end=\"\")\n        n=n-1\ndisplay('z',3)",
+        "options": [
+          "zzz",
+          "zz",
+          "An exception is executed",
+          "Infinite Loop"
+        ],
+        "answer": "A",
+        "correct": "zzz",
+        "explanation": "The loop runs for n=3, 2, 1. Each iteration prints z without a newline, giving zzz.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 1,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "def display(b, n):\n    while n > 0:\n        print(b,end=\"\")\n        n=n-1\ndisplay('z',3)",
+          "output": "zzz"
+        }
+      },
+      {
+        "id": "PB-T2-004",
+        "srNo": 4,
+        "question": "What will be the output of the following Python code?\ndef fun(x,y,z):\n    return x + y + z\nprint(fun(2,30,400))",
+        "options": [
+          "432",
+          "24000",
+          "430",
+          "No output"
+        ],
+        "answer": "A",
+        "correct": "432",
+        "explanation": "The function returns 2 + 30 + 400 = 432.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 1,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "def fun(x,y,z):\n    return x + y + z\nprint(fun(2,30,400))",
+          "output": "432"
+        }
+      },
+      {
+        "id": "PB-T2-005",
+        "srNo": 5,
+        "question": "What will be the output of the following Python code?\ndef func():\n    global value\n    value = \"Local\"\nvalue = \"Global\"\nfunc()\nprint(value)",
+        "options": [
+          "Local",
+          "Global",
+          "None",
+          "Error"
+        ],
+        "answer": "A",
+        "correct": "Local",
+        "explanation": "global value makes the assignment inside func change the global string to Local.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 1,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "def func():\n    global value\n    value = \"Local\"\nvalue = \"Global\"\nfunc()\nprint(value)",
+          "output": "Local"
+        }
+      },
+      {
+        "id": "PB-T2-006",
+        "srNo": 6,
+        "question": "What will be the output of the following Python code?\ndef say(message, times = 1):\n    print(message * times)\nsay('Hello')\nsay('World', 5)",
+        "options": [
+          "Hello\nWorldWorldWorldWorldWorld",
+          "Hello\nWorld 5",
+          "Hello\nWorld,World,World,World,World",
+          "Hello HelloHelloHelloHelloHello"
+        ],
+        "answer": "A",
+        "correct": "Hello\nWorldWorldWorldWorldWorld",
+        "explanation": "The first call uses times=1. The second repeats World five times without separators.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 1,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "def say(message, times = 1):\n    print(message * times)\nsay('Hello')\nsay('World', 5)",
+          "output": "Hello\nWorldWorldWorldWorldWorld"
+        }
+      },
+      {
+        "id": "PB-T2-007",
+        "srNo": 7,
+        "question": "What will be the output of the following Python code?\ndef sub(a,b):\n    print(a-b)\nsub(100,200)\nsub(200,100)",
+        "options": [
+          "-100\n100",
+          "100\n100",
+          "100\n-100",
+          "-100\n-100"
+        ],
+        "answer": "A",
+        "correct": "-100\n100",
+        "explanation": "100−200 is −100; 200−100 is 100. Each call prints on a separate line.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 1,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "def sub(a,b):\n    print(a-b)\nsub(100,200)\nsub(200,100)",
+          "output": "-100\n100"
+        }
+      },
+      {
+        "id": "PB-T2-008",
+        "srNo": 8,
+        "question": "What will be the output of the following Python code?\nx = 50\ndef func(x):\n    print('x is', x)\n    x = 2\n    print('Changed local x to', x)\nfunc(x)\nprint('x is now', x)",
+        "options": [
+          "x is 50\nChanged local x to 2\nx is now 50",
+          "x is 50\nChanged local x to 2\nx is now 2",
+          "x is 50\nChanged local x to 2\nx is now 100",
+          "None of the mentioned"
+        ],
+        "answer": "A",
+        "correct": "x is 50\nChanged local x to 2\nx is now 50",
+        "explanation": "The parameter x is local. Assigning 2 changes only that local variable; the outer x remains 50.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 1,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "x = 50\ndef func(x):\n    print('x is', x)\n    x = 2\n    print('Changed local x to', x)\nfunc(x)\nprint('x is now', x)",
+          "output": "x is 50\nChanged local x to 2\nx is now 50"
+        }
+      },
+      {
+        "id": "PB-T2-009",
+        "srNo": 9,
+        "question": "What will be the output of the following Python code?\ndef C2F(c):\n    return c * 9/5 + 32\nprint(C2F(100))\nprint(C2F(0))",
+        "options": [
+          "212\n32",
+          "212.0\n32.0",
+          "567\n98",
+          "None of the mentioned"
+        ],
+        "answer": "B",
+        "correct": "212.0\n32.0",
+        "explanation": "The / operator produces a float: 100×9/5+32 = 212.0 and 0×9/5+32 = 32.0.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 1,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "def C2F(c):\n    return c * 9/5 + 32\nprint(C2F(100))\nprint(C2F(0))",
+          "output": "212.0\n32.0"
+        }
+      },
+      {
+        "id": "PB-T2-010",
+        "srNo": 10,
+        "question": "What will be the output of the following Python code?\ndef function1(var1=5, var2=7):\n    var2=9\n    var1=3\n    print (var1, \" \", var2)\nfunction1(10,12)",
+        "options": [
+          "5 7",
+          "3 9",
+          "10 12",
+          "Error"
+        ],
+        "answer": "B",
+        "correct": "3 9",
+        "explanation": "The body overwrites both supplied arguments with 3 and 9. Option B shows the values; the literal space plus print separators actually produce three spaces between them.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 2,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "def function1(var1=5, var2=7):\n    var2=9\n    var1=3\n    print (var1, \" \", var2)\nfunction1(10,12)",
+          "output": "3   9"
+        }
+      },
+      {
+        "id": "PB-T2-011",
+        "srNo": 11,
+        "question": "What will be the output of the following Python code?\ndef maximum(x, y):\n    if x > y:\n        return x\n    elif x == y:\n        return 'The numbers are equal'\n    else:\n        return y\nprint(maximum(2, 3))",
+        "options": [
+          "2",
+          "3",
+          "The numbers are equal",
+          "None of the mentioned"
+        ],
+        "answer": "B",
+        "correct": "3",
+        "explanation": "2 is smaller than 3, so the else branch returns y, which is 3.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 2,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "def maximum(x, y):\n    if x > y:\n        return x\n    elif x == y:\n        return 'The numbers are equal'\n    else:\n        return y\nprint(maximum(2, 3))",
+          "output": "3"
+        }
+      },
+      {
+        "id": "PB-T2-012",
+        "srNo": 12,
+        "question": "What will be the output of the following Python code?\ndef power(x, y=2):\n    r = 1\n    for i in range(y):\n        r = r * x\n    return r\nprint(power(3))\nprint(power(3,3))",
+        "options": [
+          "212\n32",
+          "9\n27",
+          "567\n98",
+          "None of the mentioned"
+        ],
+        "answer": "B",
+        "correct": "9\n27",
+        "explanation": "With default y=2, the loop multiplies by 3 twice to give 9. With y=3, it gives 27.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 2,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "def power(x, y=2):\n    r = 1\n    for i in range(y):\n        r = r * x\n    return r\nprint(power(3))\nprint(power(3,3))",
+          "output": "9\n27"
+        }
+      },
+      {
+        "id": "PB-T2-013",
+        "srNo": 13,
+        "question": "What will be the output of the following Python code?\nx = 50\ndef func():\n    global x\n    print('x is', x)\n    x = 2\n    print('Changed global x to', x)\nfunc()\nprint('Value of x is', x)",
+        "options": [
+          "x is 50\nChanged global x to 2\nValue of x is 50",
+          "x is 50\nChanged global x to 2\nValue of x is 2",
+          "x is 50\nChanged global x to 50\nValue of x is 50",
+          "None of the mentioned"
+        ],
+        "answer": "B",
+        "correct": "x is 50\nChanged global x to 2\nValue of x is 2",
+        "explanation": "global x makes the assignment update the outer x. Both subsequent messages therefore use 2.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 2,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "x = 50\ndef func():\n    global x\n    print('x is', x)\n    x = 2\n    print('Changed global x to', x)\nfunc()\nprint('Value of x is', x)",
+          "output": "x is 50\nChanged global x to 2\nValue of x is 2"
+        }
+      },
+      {
+        "id": "PB-T2-014",
+        "srNo": 14,
+        "question": "What is the output of the add() function call?\ndef add(a, b):\n    return a+5, b+5\nresult = add(3, 2)\nprint(result)",
+        "options": [
+          "15",
+          "8",
+          "(8,7)",
+          "Syntax Error"
+        ],
+        "answer": "C",
+        "correct": "(8,7)",
+        "explanation": "Returning two comma-separated values packs them into a tuple: (3+5, 2+5) = (8, 7).",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 2,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "def add(a, b):\n    return a+5, b+5\nresult = add(3, 2)\nprint(result)",
+          "output": "(8, 7)"
+        }
+      },
+      {
+        "id": "PB-T2-015",
+        "srNo": 15,
+        "question": "What will be the output of the following Python code?\ndef change(i = 1, j = 2):\n    i = i + j\n    j = j + 1\n    print(i, j)\nchange(j = 1, i = 2)",
+        "options": [
+          "1 2",
+          "3 3",
+          "3 2",
+          "An exception is thrown because\nof conflicting values"
+        ],
+        "answer": "C",
+        "correct": "3 2",
+        "explanation": "Keyword arguments set i=2 and j=1. Then i becomes 3 and j becomes 2.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 2,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "def change(i = 1, j = 2):\n    i = i + j\n    j = j + 1\n    print(i, j)\nchange(j = 1, i = 2)",
+          "output": "3 2"
+        }
+      },
+      {
+        "id": "PB-T2-016",
+        "srNo": 16,
+        "question": "What will be the output of the following Python code?\ndef cube(x):\n    return x*x*x\nx = cube(3)\nprint(x)",
+        "options": [
+          "9",
+          "3",
+          "27",
+          "30"
+        ],
+        "answer": "C",
+        "correct": "27",
+        "explanation": "cube(3) returns 3×3×3 = 27.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 2,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "def cube(x):\n    return x*x*x\nx = cube(3)\nprint(x)",
+          "output": "27"
+        }
+      },
+      {
+        "id": "PB-T2-017",
+        "srNo": 17,
+        "question": "What will be the output of the following Python code?\ndef func(a, b=5, c=10):\n    print('a is', a, 'and b is', b, 'and c is', c)\nfunc(3, 7)\nfunc(25, c = 24)\nfunc(c = 50, a = 100)",
+        "options": [
+          "a is 7 and b is 3 and c is 10\na is 25 and b is 5 and c is 24\na is 5 and b is 100 and c is 50",
+          "a is 3 and b is 7 and c is 10\na is 5 and b is 25 and c is 24\na is 50 and b is 100 and c is 5",
+          "a is 3 and b is 7 and c is 10\na is 25 and b is 5 and c is 24\na is 100 and b is 5 and c is 50",
+          "None of the mentioned"
+        ],
+        "answer": "C",
+        "correct": "a is 3 and b is 7 and c is 10\na is 25 and b is 5 and c is 24\na is 100 and b is 5 and c is 50",
+        "explanation": "Positional arguments bind left to right; named arguments bind by name. Unspecified b and c retain defaults 5 and 10.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 2,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "def func(a, b=5, c=10):\n    print('a is', a, 'and b is', b, 'and c is', c)\nfunc(3, 7)\nfunc(25, c = 24)\nfunc(c = 50, a = 100)",
+          "output": "a is 3 and b is 7 and c is 10\na is 25 and b is 5 and c is 24\na is 100 and b is 5 and c is 50"
+        }
+      },
+      {
+        "id": "PB-T2-018",
+        "srNo": 18,
+        "question": "What will be the output of the following Python code?\ndef function1(var1,var2=5):\n    var1=2\n    var3=var1*var2\n    return var3\nvar1=3\nprint(function1(var1,var2))",
+        "options": [
+          "10",
+          "15",
+          "Error as var2 is not defined while\ncalling the function",
+          "Does not give any error as var2 is\na default argument"
+        ],
+        "answer": "C",
+        "correct": "Error as var2 is not defined while\ncalling the function",
+        "explanation": "Arguments are evaluated in the caller before the call. var2 is undefined there; a default parameter does not create a global variable.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 2,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "def function1(var1,var2=5):\n    var1=2\n    var3=var1*var2\n    return var3\nvar1=3\nprint(function1(var1,var2))",
+          "output": "",
+          "error": "NameError: name 'var2' is not defined."
+        }
+      },
+      {
+        "id": "PB-T2-019",
+        "srNo": 19,
+        "question": "What will be the output of the following Python code?\ndef printMax(a, b):\n    if a > b:\n        print(a, 'is maximum')\n    elif a == b:\n        print(a, 'is equal to', b)\n    else:\n        print(b, 'is maximum')\nprintMax(3, 4)",
+        "options": [
+          "3",
+          "4",
+          "4 is maximum",
+          "None of the mentioned"
+        ],
+        "answer": "C",
+        "correct": "4 is maximum",
+        "explanation": "3 < 4, so the else branch prints 4 is maximum.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 3,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "def printMax(a, b):\n    if a > b:\n        print(a, 'is maximum')\n    elif a == b:\n        print(a, 'is equal to', b)\n    else:\n        print(b, 'is maximum')\nprintMax(3, 4)",
+          "output": "4 is maximum"
+        }
+      },
+      {
+        "id": "PB-T2-020",
+        "srNo": 20,
+        "question": "What will be the output of the following Python code?\ni=0\ndef change(i):\n    i=i+1\n    return i\nchange(1)\nprint(i)",
+        "options": [
+          "1",
+          "Nothing is displayed",
+          "0",
+          "An exception is thrown"
+        ],
+        "answer": "C",
+        "correct": "0",
+        "explanation": "change modifies its local parameter and returns 2, but that return value is ignored. Global i stays 0.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 3,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "i=0\ndef change(i):\n    i=i+1\n    return i\nchange(1)\nprint(i)",
+          "output": "0"
+        }
+      },
+      {
+        "id": "PB-T2-021",
+        "srNo": 21,
+        "question": "What is the output of the following function call?\ndef fun1(num):\n    return num + 25\nfun1(5)\nprint(num)",
+        "options": [
+          "25",
+          "5",
+          "30",
+          "NameError"
+        ],
+        "answer": "D",
+        "correct": "NameError",
+        "explanation": "num exists only as a parameter inside fun1. Referencing it outside the function raises NameError.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 3,
+        "sourceAnswer": "D",
+        "marks": 1.0,
+        "trace": {
+          "code": "def fun1(num):\n    return num + 25\nfun1(5)\nprint(num)",
+          "output": "",
+          "error": "NameError: name 'num' is not defined."
+        }
+      },
+      {
+        "id": "PB-T2-022",
+        "srNo": 22,
+        "question": "What will be the last line of the output of the following Python code if test_fib(6) is called?\ndef fib(x):\n    global num_fib_calls\n    num_fib_calls += 1\n    if x == 0 or x == 1:\n        return 1\n    else:\n        return fib(x-1) + fib(x-2)\ndef test_fib(n):\n    for i in range(n+1):\n        global num_fib_calls\n        num_fib_calls = 0\n        print('fib of', i, '=', fib(i))\n    print('fib called', num_fib_calls, 'times.')",
+        "options": [
+          "fib called 5 times",
+          "fib called 10 times",
+          "fib called 20 times",
+          "fib called 25 times"
+        ],
+        "answer": "D",
+        "correct": "fib called 25 times",
+        "explanation": "Count every call, including the initial one: C(0)=C(1)=1 and C(n)=1+C(n−1)+C(n−2). Thus C(6)=25. The counter resets before each new Fibonacci calculation. The trace explicitly calls test_fib(6), as requested.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 3,
+        "sourceAnswer": "D",
+        "marks": 1.0,
+        "trace": {
+          "code": "def fib(x):\n    global num_fib_calls\n    num_fib_calls += 1\n    if x == 0 or x == 1:\n        return 1\n    else:\n        return fib(x-1) + fib(x-2)\ndef test_fib(n):\n    for i in range(n+1):\n        global num_fib_calls\n        num_fib_calls = 0\n        print('fib of', i, '=', fib(i))\n    print('fib called', num_fib_calls, 'times.')\ntest_fib(6)",
+          "output": "fib of 0 = 1\nfib of 1 = 1\nfib of 2 = 2\nfib of 3 = 3\nfib of 4 = 5\nfib of 5 = 8\nfib of 6 = 13\nfib called 25 times."
+        }
+      },
+      {
+        "id": "PB-T2-023",
+        "srNo": 23,
+        "question": "What will be the output of the following Python code?\ndef f(p, q, r):\n    global s\n    p = 10\n    q = 20\n    r = 30\n    s = 40\n    print(p,q,r,s)\np,q,r,s = 1,2,3,4\nf(5,10,15)",
+        "options": [
+          "10 20 30 40",
+          "10 20 30 4",
+          "1 2 3 40",
+          "1 2 3 4"
+        ],
+        "answer": "A",
+        "correct": "10 20 30 40",
+        "explanation": "p, q and r are local parameters overwritten with 10, 20 and 30. global s updates s to 40, and the function prints all four values.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 3,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "def f(p, q, r):\n    global s\n    p = 10\n    q = 20\n    r = 30\n    s = 40\n    print(p,q,r,s)\np,q,r,s = 1,2,3,4\nf(5,10,15)",
+          "output": "10 20 30 40"
+        }
+      },
+      {
+        "id": "PB-T2-024",
+        "srNo": 24,
+        "question": "If number of arguments in function definition and function call does not match, then which type\nof error is returned?",
+        "options": [
+          "NameError",
+          "ImportError",
+          "funError",
+          "TypeError"
+        ],
+        "answer": "D",
+        "correct": "TypeError",
+        "explanation": "A call that supplies too many arguments or omits required arguments raises TypeError. Defaults and variable-length parameters can allow different argument counts.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 3,
+        "sourceAnswer": "D",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-025",
+        "srNo": 25,
+        "question": "What will be the output of the following Python code?\ndef power(x, y=3):\n    r = 1\n    for i in range(y):\n        r = r * x\n    return r\nprint(power(3),end=\"\")\nprint(power(3,3))",
+        "options": [
+          "33",
+          "99",
+          "2727",
+          "927"
+        ],
+        "answer": "C",
+        "correct": "2727",
+        "explanation": "Both calls calculate 3 cubed, which is 27. end=\"\" joins the outputs into 2727.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 3,
+        "sourceAnswer": "C",
+        "marks": 0.5,
+        "trace": {
+          "code": "def power(x, y=3):\n    r = 1\n    for i in range(y):\n        r = r * x\n    return r\nprint(power(3),end=\"\")\nprint(power(3,3))",
+          "output": "2727"
+        }
+      },
+      {
+        "id": "PB-T2-026",
+        "srNo": 26,
+        "question": "Select which is true for Python function:\ni) A function is a code block that only executes when called and always returns a value.\nii) A function only executes when it is called and we can reuse it in a program.\niii) Python doesn’t support nested function",
+        "options": [
+          "only i",
+          "only ii",
+          "I & ii",
+          "I & iii"
+        ],
+        "answer": "C",
+        "correct": "I & ii",
+        "explanation": "Ordinary function bodies run when called and can be reused. A function without an explicit return returns None. Nested functions are supported, so statement iii is false.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 3,
+        "sourceAnswer": "C",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-027",
+        "srNo": 27,
+        "question": "What will be the output of the following Python code?\ndef function1(var1=7,var2=5):\n    var1=2\n    var3=var1*var2\n    return var3\nvar2=6\nvar1=3\nprint(function1(var1,var2))",
+        "options": [
+          "12",
+          "10",
+          "18",
+          "25"
+        ],
+        "answer": "A",
+        "correct": "12",
+        "explanation": "The passed var2 is 6. The function replaces var1 with 2 and returns 2×6 = 12.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 4,
+        "sourceAnswer": "A",
+        "marks": 0.5,
+        "trace": {
+          "code": "def function1(var1=7,var2=5):\n    var1=2\n    var3=var1*var2\n    return var3\nvar2=6\nvar1=3\nprint(function1(var1,var2))",
+          "output": "12"
+        }
+      },
+      {
+        "id": "PB-T2-028",
+        "srNo": 28,
+        "question": "What will be the output of the following Python code?\ndef fun(a=5,b=10,c):\n    print(a**2,b//a,c**1)\nfun(20,c=30)",
+        "options": [
+          "400 1 5",
+          "25 2 5",
+          "400 2 30",
+          "Error"
+        ],
+        "answer": "D",
+        "correct": "Error",
+        "explanation": "A required positional parameter c cannot follow parameters with defaults. The function definition raises SyntaxError before it can be called.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 4,
+        "sourceAnswer": "D",
+        "marks": 0.5,
+        "trace": {
+          "code": "def fun(a=5,b=10,c):\n    print(a**2,b//a,c**1)\nfun(20,c=30)",
+          "output": "",
+          "error": "SyntaxError: parameter without a default follows parameter with a default"
+        }
+      },
+      {
+        "id": "PB-T2-029",
+        "srNo": 29,
+        "question": "What will be the output of the following python code?\ncar=20\nbike=10\ncycle=30\ndef new_Pur():\n    global bike,cycle\n    car=30\n    bike=20\n    cycle=50\nnew_Pur()\nprint(car+10,\" \",bike+5,\" \",cycle+5)",
+        "options": [
+          "30 15 35",
+          "30 25 55",
+          "30 25 35",
+          "20 25 55"
+        ],
+        "answer": "B",
+        "correct": "30 25 55",
+        "explanation": "car is assigned locally, leaving global car=20. Global bike and cycle become 20 and 50. The printed values are 30, 25 and 55; the explicit spaces add extra spacing.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 4,
+        "sourceAnswer": "B",
+        "marks": 0.5,
+        "trace": {
+          "code": "car=20\nbike=10\ncycle=30\ndef new_Pur():\n    global bike,cycle\n    car=30\n    bike=20\n    cycle=50\nnew_Pur()\nprint(car+10,\" \",bike+5,\" \",cycle+5)",
+          "output": "30   25   55"
+        }
+      },
+      {
+        "id": "PB-T2-030",
+        "srNo": 30,
+        "question": "What will be the output of the following Python code?\ndef f():\n    print(x,end=\" \")\n    return y\ndef f():\n    print(y,end=\" \")\n    return\nx=5\ny=4\nprint(f())",
+        "options": [
+          "4 None",
+          "54",
+          "45",
+          "5"
+        ],
+        "answer": "A",
+        "correct": "4 None",
+        "explanation": "The second definition replaces the first f. It prints y=4 and its bare return produces None, which the outer print displays.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 4,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "def f():\n    print(x,end=\" \")\n    return y\ndef f():\n    print(y,end=\" \")\n    return\nx=5\ny=4\nprint(f())",
+          "output": "4 None"
+        }
+      }
+    ],
+    "coding": []
+  },
+  "unit5": {
+    "unit": 5,
+    "title": "UNIT 5 - Strings and Tuples (T2 MCQs)",
+    "mcqs": [
+      {
+        "id": "PB-T2-044",
+        "srNo": 44,
+        "question": "What arithmetic operators cannot be used with strings?",
+        "options": [
+          "-",
+          "+",
+          "*",
+          "All of the mentioned"
+        ],
+        "answer": "A",
+        "correct": "-",
+        "explanation": "Strings support concatenation with + and repetition with an integer using *. Subtraction with - is not supported.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 4,
+        "sourceAnswer": "A",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-045",
+        "srNo": 45,
+        "question": "Name the function which is used to find length of string.",
+        "options": [
+          "length( )",
+          "len( )",
+          "slen( )",
+          "strlen( )"
+        ],
+        "answer": "B",
+        "correct": "len( )",
+        "explanation": "len(string) returns the number of characters in the string.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 4,
+        "sourceAnswer": "B",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-046",
+        "srNo": 46,
+        "question": "What will be the output of above Python code?\nstr1=\"6/4\"\nprint(\"str1\")",
+        "options": [
+          "1",
+          "6/4",
+          "str1",
+          "1.5"
+        ],
+        "answer": "C",
+        "correct": "str1",
+        "explanation": "Quotes make \"str1\" a literal string. The variable value 6/4 is never printed or evaluated.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "str1=\"6/4\"\nprint(\"str1\")",
+          "output": "str1"
+        }
+      },
+      {
+        "id": "PB-T2-047",
+        "srNo": 47,
+        "question": "What will be the output of below Python code?\nstr1=\"Programming\"\nprint(str1[3:8])",
+        "options": [
+          "ogram",
+          "gramm",
+          "rammin",
+          "ogramming"
+        ],
+        "answer": "B",
+        "correct": "gramm",
+        "explanation": "The slice includes indices 3 through 7 of Programming, producing gramm. The stop index 8 is excluded.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "str1=\"Programming\"\nprint(str1[3:8])",
+          "output": "gramm"
+        }
+      },
+      {
+        "id": "PB-T2-048",
+        "srNo": 48,
+        "question": "What will the below Python code will return?\nstr1=\"save paper,save trees\"\nstr1.find(\"save\")",
+        "options": [
+          "It returns the first index position\nof the last occurance of \"save\" in\nthe given\nstring str1.",
+          "It returns the first index position\nof the first occurance of \"save\" in\nthe given string str1.",
+          "It returns the last index position of\nthe last occurance of \"save\" in the\ngiven string str1.",
+          "It returns the last index position\nof the first occurance of \"save\" in\nthe given\nstring str1."
+        ],
+        "answer": "B",
+        "correct": "It returns the first index position\nof the first occurance of \"save\" in\nthe given string str1.",
+        "explanation": "find returns the start index of the first matching substring, or −1 if absent. Here the first save starts at index 0. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "str1 = 'save paper,save trees'\nprint(str1.find('save'))",
+          "output": "0"
+        }
+      },
+      {
+        "id": "PB-T2-049",
+        "srNo": 49,
+        "question": "Which of the following will give \"Aryan\" as output?\nstr1=\"Vishv,Aryan,Devarsh\"",
+        "options": [
+          "print(str1[-9:-12])",
+          "print(str1[-12:-7])",
+          "print(str1[-13:-6])",
+          "print(str1[-13:-8])"
+        ],
+        "answer": "D",
+        "correct": "print(str1[-13:-8])",
+        "explanation": "The string has 18 characters. Negative indices −13 and −8 map to indices 5 and 10, so the slice is Aryan.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "D",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-050",
+        "srNo": 50,
+        "question": "What will following Python code return?\nstr1=\"LJ University\"\nprint(len(str1))",
+        "options": [
+          "13",
+          "12",
+          "11",
+          "14"
+        ],
+        "answer": "A",
+        "correct": "13",
+        "explanation": "LJ has 2 characters, the space counts as 1, and University has 10: total 13.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "str1=\"LJ University\"\nprint(len(str1))",
+          "output": "13"
+        }
+      },
+      {
+        "id": "PB-T2-051",
+        "srNo": 51,
+        "question": "What will be the output of the following Python statement?\n\"abcdef\"[2:8]",
+        "options": [
+          "cde",
+          "cdef",
+          "bcdef",
+          "def"
+        ],
+        "answer": "B",
+        "correct": "cdef",
+        "explanation": "The slice starts at index 2. A stop beyond the string length is clipped, so the value is cdef. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "print('abcdef'[2:8])",
+          "output": "cdef"
+        }
+      },
+      {
+        "id": "PB-T2-052",
+        "srNo": 52,
+        "question": "What will be the output of the following Python statement?\nprint('new'  'line')",
+        "options": [
+          "Error",
+          "Output equivalent to print\n‘new\\nline’",
+          "new line",
+          "newline"
+        ],
+        "answer": "D",
+        "correct": "newline",
+        "explanation": "Adjacent string literals are concatenated by Python, with no inserted space or newline.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "D",
+        "marks": 1.0,
+        "trace": {
+          "code": "print('new'  'line')",
+          "output": "newline"
+        }
+      },
+      {
+        "id": "PB-T2-053",
+        "srNo": 53,
+        "question": "What will be the output of the following Python code?\nstr1=\"hello world\"\nstr1[::-1]",
+        "options": [
+          "hello",
+          "world",
+          "dlrow olleh",
+          "hello world"
+        ],
+        "answer": "C",
+        "correct": "dlrow olleh",
+        "explanation": "A slice with step −1 reverses the entire string. In a script, a bare expression needs print to display its value. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "str1 = 'hello world'\nprint(str1[::-1])",
+          "output": "dlrow olleh"
+        }
+      },
+      {
+        "id": "PB-T2-054",
+        "srNo": 54,
+        "question": "What will be the output of the following Python code?\nx = 'abcd'\nfor i in range(len(x)):\n    i.upper()\nprint (x)",
+        "options": [
+          "a b c d",
+          "0 1 2 3",
+          "error",
+          "None of mentioned"
+        ],
+        "answer": "C",
+        "correct": "error",
+        "explanation": "range(len(x)) produces integers. The first integer has no upper method, so AttributeError occurs before print.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "x = 'abcd'\nfor i in range(len(x)):\n    i.upper()\nprint (x)",
+          "output": "",
+          "error": "AttributeError: 'int' object has no attribute 'upper'"
+        }
+      },
+      {
+        "id": "PB-T2-055",
+        "srNo": 55,
+        "question": "What will be the output of the following Python code?\nprint('abcd1234'.isalnum())",
+        "options": [
+          "True",
+          "False",
+          "None",
+          "Error"
+        ],
+        "answer": "A",
+        "correct": "True",
+        "explanation": "Every character is a letter or digit and the string is nonempty, so isalnum() returns True.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "print('abcd1234'.isalnum())",
+          "output": "True"
+        }
+      },
+      {
+        "id": "PB-T2-056",
+        "srNo": 56,
+        "question": "Select the correct output of the following String operations.\nstr1 = \"my isname isisis jameis isis bond\"\nsub = \"is\"\nprint(str1.count(sub, 5))",
+        "options": [
+          "5",
+          "7",
+          "6",
+          "4"
+        ],
+        "answer": "C",
+        "correct": "6",
+        "explanation": "count searches from index 5 to the end and counts non-overlapping occurrences. Six occurrences of is remain.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "str1 = \"my isname isisis jameis isis bond\"\nsub = \"is\"\nprint(str1.count(sub, 5))",
+          "output": "6"
+        }
+      },
+      {
+        "id": "PB-T2-057",
+        "srNo": 57,
+        "question": "What is the output of the following string comparison.\nprint(\"John\" > \"Jhon\")\nprint(\"Emma\" < \"Emm\")",
+        "options": [
+          "True\nTrue",
+          "True\nFalse",
+          "False\nTrue",
+          "False\nFalse"
+        ],
+        "answer": "B",
+        "correct": "True\nFalse",
+        "explanation": "Comparison is lexicographic: o is greater than h, so John > Jhon. Emm is a prefix of Emma, making the longer string greater, not smaller.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "print(\"John\" > \"Jhon\")\nprint(\"Emma\" < \"Emm\")",
+          "output": "True\nFalse"
+        }
+      },
+      {
+        "id": "PB-T2-058",
+        "srNo": 58,
+        "question": "Select the correct output of the following String operations.\nstr1 = 'Welcome'\nprint (str1[:6] + 'LJIET')",
+        "options": [
+          "WelcoLJIET",
+          "Welcome LJIET",
+          "WelcomeLJIET",
+          "WelcomLJIET"
+        ],
+        "answer": "D",
+        "correct": "WelcomLJIET",
+        "explanation": "str1[:6] is Welcom. Concatenating LJIET gives WelcomLJIET without a space.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "D",
+        "marks": 1.0,
+        "trace": {
+          "code": "str1 = 'Welcome'\nprint (str1[:6] + 'LJIET')",
+          "output": "WelcomLJIET"
+        }
+      },
+      {
+        "id": "PB-T2-059",
+        "srNo": 59,
+        "question": "Guess the correct output of the following code?\nstr1 = \"LJIET\"\nprint(str1[1:4], str1[:5], str1[4:], str1[0:-1], str1[:-1])",
+        "options": [
+          "JIE LJIET T LJIE LJIE",
+          "JIE LJIET T LJI LJI",
+          "JIE LJIET T LJIET LJIET",
+          "JIE LJIET T LJIE LJI"
+        ],
+        "answer": "A",
+        "correct": "JIE LJIET T LJIE LJIE",
+        "explanation": "The five slices are JIE, LJIET, T, LJIE and LJIE. print separates them with spaces.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "str1 = \"LJIET\"\nprint(str1[1:4], str1[:5], str1[4:], str1[0:-1], str1[:-1])",
+          "output": "JIE LJIET T LJIE LJIE"
+        }
+      },
+      {
+        "id": "PB-T2-060",
+        "srNo": 60,
+        "question": "Which of the following is a Python tuple?",
+        "options": [
+          "[1, 2, 3]",
+          "(1, 2, 3)",
+          "{1, 2, 3}",
+          "{}"
+        ],
+        "answer": "B",
+        "correct": "(1, 2, 3)",
+        "explanation": "Comma-separated values in parentheses create a tuple. The other options are a list, a set and an empty dictionary.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "B",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-061",
+        "srNo": 61,
+        "question": "Which of the following creates a tuple?",
+        "options": [
+          "tuple1=(5)*2",
+          "tuple1=(\"a\",\"b\")",
+          "tuple1[2]=(\"a\",\"b\")",
+          "None of the above"
+        ],
+        "answer": "B",
+        "correct": "tuple1=(\"a\",\"b\")",
+        "explanation": "(\"a\", \"b\") creates a two-element tuple. Parentheses around the integer 5 do not make it a tuple.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "B",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-062",
+        "srNo": 62,
+        "question": "What type will be printed when the following code executes?\naTuple = (\"Orange\")\nprint (type(aTuple))",
+        "options": [
+          "list",
+          "tuple",
+          "array",
+          "str"
+        ],
+        "answer": "D",
+        "correct": "str",
+        "explanation": "Parentheses alone do not create a tuple. A one-element tuple needs a trailing comma, such as (\"Orange\",). The printed type is <class 'str'>.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "D",
+        "marks": 1.0,
+        "trace": {
+          "code": "aTuple = (\"Orange\")\nprint (type(aTuple))",
+          "output": "<class 'str'>"
+        }
+      },
+      {
+        "id": "PB-T2-063",
+        "srNo": 63,
+        "question": "What will the following code return?\ndef practice(tup):\n    a, b, c = tup\n    return b\naTuple = \"Orange\", 30, \"White\"\npractice(aTuple)",
+        "options": [
+          "Orange",
+          "30",
+          "White",
+          "(\"Orange\", 30, \"White\")"
+        ],
+        "answer": "B",
+        "correct": "30",
+        "explanation": "Unpacking assigns Orange to a, 30 to b and White to c. The function returns b, so the value is 30. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "def practice(tup):\n    a, b, c = tup\n    return b\naTuple = ('Orange', 30, 'White')\nprint(practice(aTuple))",
+          "output": "30"
+        }
+      },
+      {
+        "id": "PB-T2-064",
+        "srNo": 64,
+        "question": "Suppose t = (1, 2, 4, 3), which of the following is incorrect?",
+        "options": [
+          "print(t[3])",
+          "t[3] = 45",
+          "print(max(t))",
+          "print(len(t))"
+        ],
+        "answer": "B",
+        "correct": "t[3] = 45",
+        "explanation": "Tuples are immutable, so assigning to t[3] raises TypeError. Indexing, max and len are valid.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "B",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-065",
+        "srNo": 65,
+        "question": "What will be the output of the following Python code?\nt=(1,2,4,3)\nt[1:3]",
+        "options": [
+          "(1, 2)",
+          "(1, 2, 4)",
+          "(2, 4)",
+          "(2, 4, 3)"
+        ],
+        "answer": "C",
+        "correct": "(2, 4)",
+        "explanation": "Indices 1 and 2 contain 2 and 4. The stop index 3 is excluded. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "t = (1, 2, 4, 3)\nprint(t[1:3])",
+          "output": "(2, 4)"
+        }
+      },
+      {
+        "id": "PB-T2-066",
+        "srNo": 66,
+        "question": "What will be the output of the following Python code?\nt=(1,2,4,3)\nt[1:-1]",
+        "options": [
+          "(1, 2)",
+          "(1, 2, 4)",
+          "(2, 4)",
+          "(2, 4, 3)"
+        ],
+        "answer": "C",
+        "correct": "(2, 4)",
+        "explanation": "Stop −1 refers to the final element, which is excluded. The middle two elements are (2, 4). The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "t = (1, 2, 4, 3)\nprint(t[1:-1])",
+          "output": "(2, 4)"
+        }
+      },
+      {
+        "id": "PB-T2-067",
+        "srNo": 67,
+        "question": "What will be the output of the following Python code?\nt = (4,6)\n2*t",
+        "options": [
+          "(4,6, 4, 6)",
+          "[4,6,4,6]",
+          "(4,4,6,6)",
+          "[4,4,6,6]"
+        ],
+        "answer": "A",
+        "correct": "(4,6, 4, 6)",
+        "explanation": "Multiplication repeats the tuple as a sequence; it does not multiply each element. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 5,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "t = (4, 6)\nprint(2 * t)",
+          "output": "(4, 6, 4, 6)"
+        }
+      },
+      {
+        "id": "PB-T2-068",
+        "srNo": 68,
+        "question": "What will be the output of the following Python code?\ntuple1=(2,3,4)\ntuple3=tuple1*2\nprint(tuple3)",
+        "options": [
+          "(4,6,8)",
+          "(2,3,4,2,3,4)",
+          "(2,2,3,3,4,4)",
+          "Error"
+        ],
+        "answer": "B",
+        "correct": "(2,3,4,2,3,4)",
+        "explanation": "Repeating (2, 3, 4) twice produces (2, 3, 4, 2, 3, 4).",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "tuple1=(2,3,4)\ntuple3=tuple1*2\nprint(tuple3)",
+          "output": "(2, 3, 4, 2, 3, 4)"
+        }
+      },
+      {
+        "id": "PB-T2-069",
+        "srNo": 69,
+        "question": "What will be the output of the following Python code?\nt1 = (1, 2, 4, 3)\nt2 = (1, 2, 3, 4)\nt1 < t2",
+        "options": [
+          "True",
+          "False",
+          "Error",
+          "None"
+        ],
+        "answer": "B",
+        "correct": "False",
+        "explanation": "The first differing elements are 4 and 3. Since 4 > 3, t1 < t2 is False. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "t1 = (1, 2, 4, 3)\nt2 = (1, 2, 3, 4)\nprint(t1 < t2)",
+          "output": "False"
+        }
+      },
+      {
+        "id": "PB-T2-070",
+        "srNo": 70,
+        "question": "What will be the output of the following Python code?\nmy_tuple = (1, 2, 3, 4)\nmy_tuple.append( (1,2,3) )\nprint len(my_tuple)",
+        "options": [
+          "1",
+          "2",
+          "5",
+          "Error"
+        ],
+        "answer": "D",
+        "correct": "Error",
+        "explanation": "As printed, print len(...) is invalid Python 3 syntax. Even after adding parentheses, tuple.append would raise AttributeError because tuples have no append method.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "D",
+        "marks": 1.0,
+        "trace": {
+          "code": "my_tuple = (1, 2, 3, 4)\nmy_tuple.append( (1,2,3) )\nprint len(my_tuple)",
+          "output": "",
+          "error": "SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?"
+        }
+      },
+      {
+        "id": "PB-T2-071",
+        "srNo": 71,
+        "question": "What is the data type of (1)?",
+        "options": [
+          "Tuple",
+          "Integer",
+          "List",
+          "Both tuple and integer"
+        ],
+        "answer": "B",
+        "correct": "Integer",
+        "explanation": "(1) is simply the integer 1 in parentheses. (1,) would be a tuple.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "B",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-072",
+        "srNo": 72,
+        "question": "If a=(1,2,3,4), a[1:-1] is",
+        "options": [
+          "Error, tuple slicing doesn’t exist",
+          "[2,3]",
+          "(2,3,4)",
+          "(2,3)"
+        ],
+        "answer": "D",
+        "correct": "(2,3)",
+        "explanation": "The slice starts at index 1 and excludes the final element, producing (2, 3).",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "D",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-073",
+        "srNo": 73,
+        "question": "What will be the output of the following Python code?\na=(1,2,(4,5))\nb=(1,2,(3,4))\na<b",
+        "options": [
+          "False",
+          "True",
+          "Error, < operator is not valid for\ntuples",
+          "Error, < operator is valid for\ntuples but not if there are sub-\ntuples"
+        ],
+        "answer": "A",
+        "correct": "False",
+        "explanation": "Tuple comparisons proceed element by element, including nested tuples. At the first difference, 4 > 3, so a < b is False. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "a = (1, 2, (4, 5))\nb = (1, 2, (3, 4))\nprint(a < b)",
+          "output": "False"
+        }
+      },
+      {
+        "id": "PB-T2-074",
+        "srNo": 74,
+        "question": "What will be the output of the following Python code?\na=(\"Check\")*3\na",
+        "options": [
+          "(‘Check’,’Check’,’Check’)",
+          "* Operator not valid for tuples",
+          "‘CheckCheckCheck’",
+          "Syntax error"
+        ],
+        "answer": "C",
+        "correct": "‘CheckCheckCheck’",
+        "explanation": "(\"Check\") is a string, not a tuple. Multiplying by 3 repeats the string three times. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "a = 'Check' * 3\nprint(a)",
+          "output": "CheckCheckCheck"
+        }
+      },
+      {
+        "id": "PB-T2-075",
+        "srNo": 75,
+        "question": "Is the following Python code valid?\na=(1,2,3,4)\ndel a",
+        "options": [
+          "No because tuple is immutable",
+          "Yes, first element in the tuple is\ndeleted",
+          "Yes, the entire tuple is deleted",
+          "No, invalid syntax for del method"
+        ],
+        "answer": "C",
+        "correct": "Yes, the entire tuple is deleted",
+        "explanation": "del a removes the name a; it does not mutate tuple elements. The tuple object may remain alive if another name refers to it. Option C is the intended shorthand.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "a=(1,2,3,4)\ndel a",
+          "output": ""
+        }
+      },
+      {
+        "id": "PB-T2-076",
+        "srNo": 76,
+        "question": "What will be the output of the following Python code?\na=(0,1,2,3,4)\nb=slice(0,2)\na[b]",
+        "options": [
+          "Invalid syntax for slicing",
+          "[0,2]",
+          "(0,1)",
+          "(0,2)"
+        ],
+        "answer": "C",
+        "correct": "(0,1)",
+        "explanation": "slice(0,2) selects indices 0 and 1, giving the tuple (0, 1). The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "a = (0, 1, 2, 3, 4)\nb = slice(0, 2)\nprint(a[b])",
+          "output": "(0, 1)"
+        }
+      },
+      {
+        "id": "PB-T2-077",
+        "srNo": 77,
+        "question": "Choose the correct option for Tuple.",
+        "options": [
+          "In Python, a tuple can contain\nonly integers as its elements.",
+          "In Python, a tuple can contain\nonly strings as its elements.",
+          "In Python, a tuple can contain both\nintegers and strings as its elements.",
+          "In Python, a tuple can contain\neither string or integer but not\nboth at a time."
+        ],
+        "answer": "C",
+        "correct": "In Python, a tuple can contain both\nintegers and strings as its elements.",
+        "explanation": "A tuple can hold values of different types, including both integers and strings.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "C",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-078",
+        "srNo": 78,
+        "question": "What will be the output of below Python code?\ntupl=(\"annie\",\"hena\",\"sid\")\nprint(tupl[-3:0])",
+        "options": [
+          "(\"annie\")",
+          "()",
+          "None",
+          "Error as slicing is not possible in\ntuple."
+        ],
+        "answer": "B",
+        "correct": "()",
+        "explanation": "For a three-element tuple, −3 resolves to 0. The slice [0:0] has no elements, so it returns ().",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "tupl=(\"annie\",\"hena\",\"sid\")\nprint(tupl[-3:0])",
+          "output": "()"
+        }
+      },
+      {
+        "id": "PB-T2-079",
+        "srNo": 79,
+        "question": "Which of the following options will not result in an error when performed on tuples in Python\nwhere tupl=(5,2,7,0,3)?",
+        "options": [
+          "tupl[1]=2",
+          "tupl.append(2)",
+          "tupl1=tupl+tupl",
+          "tupl.sort()"
+        ],
+        "answer": "C",
+        "correct": "tupl1=tupl+tupl",
+        "explanation": "Tuple concatenation is valid and creates a new tuple. Item assignment, append and sort are not supported on tuples.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "C",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-080",
+        "srNo": 80,
+        "question": "Which of the following options will result in an error when performed on tuples in Python where\ntupl=(1, 21 , 17,50, 33)?",
+        "options": [
+          "tupl.append(2)",
+          "tupl.pop(1)",
+          "tupl.remove(21)",
+          "All of the mentioned"
+        ],
+        "answer": "D",
+        "correct": "All of the mentioned",
+        "explanation": "Tuples have no append, pop or remove methods. Each of the three calls raises AttributeError.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "D",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-081",
+        "srNo": 81,
+        "question": "What will be the output of below Python code?\ntupl=()\ntupl1=tupl*2\nprint(len(tupl1))",
+        "options": [
+          "0",
+          "2",
+          "1",
+          "Error as tuple object has no\nattribute to len"
+        ],
+        "answer": "A",
+        "correct": "0",
+        "explanation": "Repeating an empty tuple still gives an empty tuple, whose length is 0.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "tupl=()\ntupl1=tupl*2\nprint(len(tupl1))",
+          "output": "0"
+        }
+      },
+      {
+        "id": "PB-T2-082",
+        "srNo": 82,
+        "question": "What will be the output of below Python code?\ntupl=([2,3],\"abc\",0,9)\ntupl[0][1]=1\nprint(tupl)",
+        "options": [
+          "([2,3],\"abc\",0,9)",
+          "([1,3],\"abc\",0,9)",
+          "([2,1],\"abc\",0,9)",
+          "Error"
+        ],
+        "answer": "C",
+        "correct": "([2,1],\"abc\",0,9)",
+        "explanation": "The tuple keeps the same list object, but the list itself is mutable. Updating its index 1 changes [2,3] to [2,1].",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "tupl=([2,3],\"abc\",0,9)\ntupl[0][1]=1\nprint(tupl)",
+          "output": "([2, 1], 'abc', 0, 9)"
+        }
+      },
+      {
+        "id": "PB-T2-083",
+        "srNo": 83,
+        "question": "Which of the following two Python codes will give same output?\n(i) print(tupl[:-1])\n(ii) print(tupl[0:5])\n(iii) print(tupl[0:4])\n(iv) print(tupl[-4:])\nIf tupl=(5,3,1,9,0)",
+        "options": [
+          "i, ii",
+          "ii, iv",
+          "i, iv",
+          "i, iii"
+        ],
+        "answer": "D",
+        "correct": "i, iii",
+        "explanation": "For five elements, [:-1] and [0:4] both select the first four. [0:5] selects all five, while [-4:] selects the last four.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "D",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-084",
+        "srNo": 84,
+        "question": "Which of the following would complete statement to set val to 20 by slicing aTuple.\naTuple = (\"Orange\", (10, 20, 30), (5, 15, 25))\nval =__________",
+        "options": [
+          "aTuple[1][1]",
+          "aTuple[1:2](1)",
+          "aTuple[2][1]",
+          "aTuple[1:2][1]"
+        ],
+        "answer": "A",
+        "correct": "aTuple[1][1]",
+        "explanation": "aTuple[1] selects (10,20,30), then [1] selects 20. This is nested indexing rather than slicing.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "A",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-085",
+        "srNo": 85,
+        "question": "What is the output of the following.\naTuple = (10, 20, 30, 40, 50, 60, 70, 80)\nprint(aTuple[2:5], aTuple[:4], aTuple[3:])",
+        "options": [
+          "(30, 40, 50) (10, 20, 30, 40) (40,\n50, 60,\n70)",
+          "(30, 40, 50) (10, 20, 30) (40, 50,\n60)",
+          "(30, 40, 50) (10, 20, 30, 40) (40, 50,\n60, 70,\n80)",
+          "None of the these"
+        ],
+        "answer": "C",
+        "correct": "(30, 40, 50) (10, 20, 30, 40) (40, 50,\n60, 70,\n80)",
+        "explanation": "[2:5] selects indices 2–4; [:4] selects 0–3; [3:] selects index 3 to the end, including 80.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "aTuple = (10, 20, 30, 40, 50, 60, 70, 80)\nprint(aTuple[2:5], aTuple[:4], aTuple[3:])",
+          "output": "(30, 40, 50) (10, 20, 30, 40) (40, 50, 60, 70, 80)"
+        }
+      },
+      {
+        "id": "PB-T2-086",
+        "srNo": 86,
+        "question": "What will be the output of the following Python code?\nt = (1, 2, 4, 3, 8, 9)\nfor i in range(0, len(t), 2):\n   print(t[i],end=\" \")",
+        "options": [
+          "1 4 9",
+          "2 3 9",
+          "1 2 4",
+          "1 4 8"
+        ],
+        "answer": "D",
+        "correct": "1 4 8",
+        "explanation": "range(0,6,2) visits indices 0, 2 and 4, whose values are 1, 4 and 8.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 6,
+        "sourceAnswer": "D",
+        "marks": 1.0,
+        "trace": {
+          "code": "t = (1, 2, 4, 3, 8, 9)\nfor i in range(0, len(t), 2):\n   print(t[i],end=\" \")",
+          "output": "1 4 8"
+        }
+      },
+      {
+        "id": "PB-T2-087",
+        "srNo": 87,
+        "question": "Find the output of the given Python program\nt1 = (1,2)\nt2 = (2,1)\nx = (t1 == t2)\nprint(x)",
+        "options": [
+          "False",
+          "True",
+          "Error",
+          "None"
+        ],
+        "answer": "A",
+        "correct": "False",
+        "explanation": "Tuple equality considers order. The first elements differ, so (1,2) and (2,1) are not equal.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "t1 = (1,2)\nt2 = (2,1)\nx = (t1 == t2)\nprint(x)",
+          "output": "False"
+        }
+      },
+      {
+        "id": "PB-T2-088",
+        "srNo": 88,
+        "question": "What will be the output of the following python code?\nstr1=\"Hello World! Hello Hello\"\nstr1.count(\"Hello\",12,25)",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": "B",
+        "correct": "2",
+        "explanation": "Between indices 12 and 25, Hello starts at indices 13 and 19. Both occurrences are counted. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "str1 = 'Hello World! Hello Hello'\nprint(str1.count('Hello', 12, 25))",
+          "output": "2"
+        }
+      },
+      {
+        "id": "PB-T2-089",
+        "srNo": 89,
+        "question": "What is the output of the following code?\na=\"Hello Welcome to the Python\"\nprint(a.find(\"z\"))\nprint(a.index(\"z\"))",
+        "options": [
+          "Value Error\n-1",
+          "-1\nValue Error",
+          "1\nSyntax Error",
+          "Syntax Error 1"
+        ],
+        "answer": "B",
+        "correct": "-1\nValue Error",
+        "explanation": "find returns −1 when z is absent; index raises ValueError for the same missing substring. The first result is printed before the error.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "a=\"Hello Welcome to the Python\"\nprint(a.find(\"z\"))\nprint(a.index(\"z\"))",
+          "output": "-1",
+          "error": "ValueError: substring not found"
+        }
+      },
+      {
+        "id": "PB-T2-090",
+        "srNo": 90,
+        "question": "S = \"1234567890\"\nS = S[-3] + S[2:4] + S[-2:-5] + S[ : -4:-2] + S[1: :2]\nprint(S[ : : 3] * 2)",
+        "options": [
+          "80408040",
+          "86068606",
+          "14701470",
+          "None"
+        ],
+        "answer": "A",
+        "correct": "80408040",
+        "explanation": "The concatenation builds 834082460. Taking every third character gives 8040; repeating that string twice gives 80408040.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "S = \"1234567890\"\nS = S[-3] + S[2:4] + S[-2:-5] + S[ : -4:-2] + S[1: :2]\nprint(S[ : : 3] * 2)",
+          "output": "80408040"
+        }
+      },
+      {
+        "id": "PB-T2-091",
+        "srNo": 91,
+        "question": "What will be the output of the following code?\nt1=(1,2,3,4,5,6,7)\nprint(t1[t1[1]+t1[-4]])",
+        "options": [
+          "1",
+          "2",
+          "7",
+          "4"
+        ],
+        "answer": "C",
+        "correct": "7",
+        "explanation": "t1[1] is 2 and t1[-4] is 4. Their sum is index 6, whose value is 7.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "t1=(1,2,3,4,5,6,7)\nprint(t1[t1[1]+t1[-4]])",
+          "output": "7"
+        }
+      },
+      {
+        "id": "PB-T2-092",
+        "srNo": 92,
+        "question": "What will be the output of the following piece of code?\ndef check(s):\n    if len(s) <= 1:\n        return True\n    else:\n        return s[0] == s[-1] and check(s[1:-1])\nprint(check('saippuakivkauppias'))",
+        "options": [
+          "True",
+          "False",
+          "s",
+          "k"
+        ],
+        "answer": "B",
+        "correct": "False",
+        "explanation": "The function recursively compares matching outer characters. The supplied spelling has a mismatched inner pair, so it returns False.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "def check(s):\n    if len(s) <= 1:\n        return True\n    else:\n        return s[0] == s[-1] and check(s[1:-1])\nprint(check('saippuakivkauppias'))",
+          "output": "False"
+        }
+      },
+      {
+        "id": "PB-T2-093",
+        "srNo": 93,
+        "question": "What will be the output of below Python code?\nt=()\nt1=t*10\nprint(len(t1))",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "answer": "A",
+        "correct": "0",
+        "explanation": "Multiplying an empty tuple by 10 keeps it empty; its length is 0.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "t=()\nt1=t*10\nprint(len(t1))",
+          "output": "0"
+        }
+      },
+      {
+        "id": "PB-T2-094",
+        "srNo": 94,
+        "question": "What will be the output of the following Python code?\ndef tup(T):\n    print(T[T.index(5)], end = \" \")\n    print(T[T[T[6]-3]-6])\nT = (1, 2, 3, 4, 5, 6, 7, 8)\ntup(T)",
+        "options": [
+          "5 Index Error",
+          "4 0",
+          "5 8",
+          "Syntax Error"
+        ],
+        "answer": "C",
+        "correct": "5 8",
+        "explanation": "T.index(5) is 4, so the first value is 5. Next T[6]=7, T[7−3]=5, and T[5−6]=T[-1]=8.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "def tup(T):\n    print(T[T.index(5)], end = \" \")\n    print(T[T[T[6]-3]-6])\nT = (1, 2, 3, 4, 5, 6, 7, 8)\ntup(T)",
+          "output": "5 8"
+        }
+      },
+      {
+        "id": "PB-T2-095",
+        "srNo": 95,
+        "question": "What will be the output of the following Python code?\ns=\"Th*is is$ nothi&&ng b#ut excerc(is)e\"\nchange=str.maketrans(\"(\",\",\",\"@#$%^&*_-)\")\ns.translate(change)\nprint(s)",
+        "options": [
+          "Th*is is$ nothi&&ng b#ut\nexcerc(is)e",
+          "This is nothing but excerc,ise",
+          "This is nothing but exercise",
+          "NameError: name ‘str’ not\ndefined"
+        ],
+        "answer": "A",
+        "correct": "Th*is is$ nothi&&ng b#ut\nexcerc(is)e",
+        "explanation": "Strings are immutable. translate returns a new string, but its result is not assigned, so printing s shows the unchanged original.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "s=\"Th*is is$ nothi&&ng b#ut excerc(is)e\"\nchange=str.maketrans(\"(\",\",\",\"@#$%^&*_-)\")\ns.translate(change)\nprint(s)",
+          "output": "Th*is is$ nothi&&ng b#ut excerc(is)e"
+        }
+      },
+      {
+        "id": "PB-T2-096",
+        "srNo": 96,
+        "question": "Which of the following will give \"Simon\" as output?\nstr1=\"John,Simon,Aryan\"",
+        "options": [
+          "print(str1[-11:-6])",
+          "print(str1[-7:-12])",
+          "print(str1[-11:-7])",
+          "print(str1[-11:-5])"
+        ],
+        "answer": "A",
+        "correct": "print(str1[-11:-6])",
+        "explanation": "The string has 16 characters. Indices −11 and −6 correspond to 5 and 10, selecting Simon without commas.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "A",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-097",
+        "srNo": 97,
+        "question": "What will be the output of the following program?\ns = \"ball\"\nr = \"\"\nfor i in s:\n    r = i.upper() + r\nprint(r)",
+        "options": [
+          "LLB",
+          "BALL",
+          "Error",
+          "LLAB"
+        ],
+        "answer": "D",
+        "correct": "LLAB",
+        "explanation": "Each uppercase character is prepended to r, reversing the order: B, AB, LAB, LLAB.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "D",
+        "marks": 1.0,
+        "trace": {
+          "code": "s = \"ball\"\nr = \"\"\nfor i in s:\n    r = i.upper() + r\nprint(r)",
+          "output": "LLAB"
+        }
+      },
+      {
+        "id": "PB-T2-098",
+        "srNo": 98,
+        "question": "What will be the output of the following program?\ns = 'I love my INDIA'\nprint(s[-1]+s[3:4]+s[7:9]+s[-3:-1]+s[-1:-3:-1]+s[5:9]+s[10:] )",
+        "options": [
+          "AomyDIAIe myINDIA",
+          "AomyDIIe myINDIA",
+          "AomyDIAIe myINDI",
+          "AomyDAIe myINDIA"
+        ],
+        "answer": "A",
+        "correct": "AomyDIAIe myINDIA",
+        "explanation": "The slices give A, o, my, DI, AI, e my and INDIA. Joining them yields AomyDIAIe myINDIA.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "A",
+        "marks": 1.0,
+        "trace": {
+          "code": "s = 'I love my INDIA'\nprint(s[-1]+s[3:4]+s[7:9]+s[-3:-1]+s[-1:-3:-1]+s[5:9]+s[10:] )",
+          "output": "AomyDIAIe myINDIA"
+        }
+      },
+      {
+        "id": "PB-T2-099",
+        "srNo": 99,
+        "question": "When using find(), If str is not present in string then what is returned?",
+        "options": [
+          "0",
+          "1",
+          "-1",
+          "NameError"
+        ],
+        "answer": "C",
+        "correct": "-1",
+        "explanation": "find returns −1 when the substring is absent. Unlike index, it does not raise ValueError for that case.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "C",
+        "marks": 1.0
+      },
+      {
+        "id": "PB-T2-100",
+        "srNo": 100,
+        "question": "What is the output for following code:\ns=\"blog\"\nfor i in range(-1,-len(s),-1):\n   print(s[i],end=\"$\")",
+        "options": [
+          "g$o$l$b",
+          "g$o$l$b$",
+          "g$o$l$",
+          "glob"
+        ],
+        "answer": "C",
+        "correct": "g$o$l$",
+        "explanation": "range(-1,-4,-1) gives −1, −2 and −3, excluding −4. The characters g, o and l each print with a trailing dollar sign.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "s=\"blog\"\nfor i in range(-1,-len(s),-1):\n   print(s[i],end=\"$\")",
+          "output": "g$o$l$"
+        }
+      },
+      {
+        "id": "PB-T2-101",
+        "srNo": 101,
+        "question": "What is the output for following code:\nprint(\"A#B#C#D#E\".split(\"#\",2))",
+        "options": [
+          "['A', 'B', 'C', 'D', 'E']",
+          "['A', 'B', 'C#D#E']",
+          "['A#', 'B#', 'C#', 'D#', 'E']",
+          "Error"
+        ],
+        "answer": "B",
+        "correct": "['A', 'B', 'C#D#E']",
+        "explanation": "maxsplit=2 allows only two splits. The remaining C#D#E stays together as the final list item.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "print(\"A#B#C#D#E\".split(\"#\",2))",
+          "output": "['A', 'B', 'C#D#E']"
+        }
+      },
+      {
+        "id": "PB-T2-102",
+        "srNo": 102,
+        "question": "What is the output for following code:\nfor i in range (len(\"python\"),12,2):\n   print(\"python\"[i-6],end=\"\")",
+        "options": [
+          "python",
+          "pto",
+          "yhn",
+          "pyth"
+        ],
+        "answer": "B",
+        "correct": "pto",
+        "explanation": "The loop uses i=6,8,10. Indices i−6 are 0,2,4, producing p, t and o.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "for i in range (len(\"python\"),12,2):\n   print(\"python\"[i-6],end=\"\")",
+          "output": "pto"
+        }
+      },
+      {
+        "id": "PB-T2-103",
+        "srNo": 103,
+        "question": "What will be the output of the following Python code?\nx = 'abcd'\nfor i in x:\n    i.isupper()\nprint (x)",
+        "options": [
+          "abcd",
+          "0 1 2 3",
+          "ABCD",
+          "Error"
+        ],
+        "answer": "A",
+        "correct": "abcd",
+        "explanation": "isupper only tests each character and its return value is ignored. It does not change x, which remains abcd.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 7,
+        "sourceAnswer": "A",
+        "marks": 0.5,
+        "trace": {
+          "code": "x = 'abcd'\nfor i in x:\n    i.isupper()\nprint (x)",
+          "output": "abcd"
+        }
+      },
+      {
+        "id": "PB-T2-104",
+        "srNo": 104,
+        "question": "What will be the output of the following Python code?\nt=(1,2,4,3,6,8,4)\nt[1:-1:-1]",
+        "options": [
+          "(2,4,3,6,8)",
+          "(2,1)",
+          "()",
+          "(4,8)"
+        ],
+        "answer": "C",
+        "correct": "()",
+        "explanation": "With a negative step, the slice must move toward a smaller stop. Here −1 resolves to index 6, beyond start 1, so the slice is empty. The trace uses print to display the final expression value.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 8,
+        "sourceAnswer": "C",
+        "marks": 0.5,
+        "trace": {
+          "code": "t = (1, 2, 4, 3, 6, 8, 4)\nprint(t[1:-1:-1])",
+          "output": "()"
+        }
+      },
+      {
+        "id": "PB-T2-105",
+        "srNo": 105,
+        "question": "What will be the output of the following Python code?\nmy_tuple = (1, 2, 3, 4)\nmy_tuple.append( (1,2,3) )\nprint (len(my_tuple))",
+        "options": [
+          "4",
+          "7",
+          "5",
+          "Error"
+        ],
+        "answer": "D",
+        "correct": "Error",
+        "explanation": "Tuples have no append method. AttributeError occurs before the length can be printed.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 8,
+        "sourceAnswer": "D",
+        "marks": 0.5,
+        "trace": {
+          "code": "my_tuple = (1, 2, 3, 4)\nmy_tuple.append( (1,2,3) )\nprint (len(my_tuple))",
+          "output": "",
+          "error": "AttributeError: 'tuple' object has no attribute 'append'"
+        }
+      },
+      {
+        "id": "PB-T2-106",
+        "srNo": 106,
+        "question": "What will be the output of the following Python code?\ndef enc(st):\n    encoded=\"\"\n    c,Id=1,st[0]\n    for i in range (1,len(st)):\n        if ld==st[i]:\n            c=c+1\n        else:\n            encoded=encoded+str(c)+ld\n            c,Id=0,st[i]\n            c=c+1\n    encoded=encoded+str(c)+ld\n    return encoded\nprint(enc(\"AAABBACCAA\"))",
+        "options": [
+          "A3B2A1C2A2",
+          "3A2B1A2C2A",
+          "10",
+          "Error"
+        ],
+        "answer": "D",
+        "correct": "Error",
+        "explanation": "Source correction: the printed code assigns Id (capital I) but reads ld (lowercase l). These are different names, so the code raises NameError and option D is correct as printed. The PDF key B is the intended run-length encoding result, 3A2B1A2C2A, if both assignments are changed to ld.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 8,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "def enc(st):\n    encoded=\"\"\n    c,Id=1,st[0]\n    for i in range (1,len(st)):\n        if ld==st[i]:\n            c=c+1\n        else:\n            encoded=encoded+str(c)+ld\n            c,Id=0,st[i]\n            c=c+1\n    encoded=encoded+str(c)+ld\n    return encoded\nprint(enc(\"AAABBACCAA\"))",
+          "output": "",
+          "error": "NameError: name 'ld' is not defined."
+        }
+      },
+      {
+        "id": "PB-T2-107",
+        "srNo": 107,
+        "question": "What will be the output of the following Python code?\ns=\"aa\"\ns.strip(\"a\")\nprint(s)",
+        "options": [
+          "aa",
+          "a",
+          "error",
+          "True"
+        ],
+        "answer": "A",
+        "correct": "aa",
+        "explanation": "strip returns a new string. Since the return value is discarded, s remains aa.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 8,
+        "sourceAnswer": "A",
+        "trace": {
+          "code": "s=\"aa\"\ns.strip(\"a\")\nprint(s)",
+          "output": "aa"
+        }
+      },
+      {
+        "id": "PB-T2-108",
+        "srNo": 108,
+        "question": "What will be the output of the following Python code?\ns=\"1234ABCvhghbbv\"\nv=s.maketrans(\"abc\",\"vvv\")\nprint(s.translate(v))",
+        "options": [
+          "vvv",
+          "1234vhghvvv",
+          "1234vhg",
+          "1234ABCvhghvvv"
+        ],
+        "answer": "D",
+        "correct": "1234ABCvhghvvv",
+        "explanation": "The mapping changes lowercase a, b and c to v and is case-sensitive. Uppercase ABC remains; the ending bbv becomes vvv.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 8,
+        "sourceAnswer": "D",
+        "trace": {
+          "code": "s=\"1234ABCvhghbbv\"\nv=s.maketrans(\"abc\",\"vvv\")\nprint(s.translate(v))",
+          "output": "1234ABCvhghvvv"
+        }
+      },
+      {
+        "id": "PB-T2-109",
+        "srNo": 109,
+        "question": "What is returned by the following function?\nshift=1\nn=12345\ns=str(n)\nx=s[shift:]+s[:shift]\nprint(x)",
+        "options": [
+          "12345",
+          "23451",
+          "34512",
+          "54321"
+        ],
+        "answer": "B",
+        "correct": "23451",
+        "explanation": "s[1:] gives 2345 and s[:1] gives 1, so their concatenation is 23451.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 8,
+        "sourceAnswer": "B",
+        "marks": 1.0,
+        "trace": {
+          "code": "shift=1\nn=12345\ns=str(n)\nx=s[shift:]+s[:shift]\nprint(x)",
+          "output": "23451"
+        }
+      },
+      {
+        "id": "PB-T2-110",
+        "srNo": 110,
+        "question": "What will following Python code return?\nstr1=\"LJ’University\"\nprint(len(str1))",
+        "options": [
+          "13",
+          "12",
+          "15",
+          "2"
+        ],
+        "answer": "A",
+        "correct": "13",
+        "explanation": "LJ contributes 2 characters, the apostrophe contributes 1, and University contributes 10: total 13.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 8,
+        "sourceAnswer": "A",
+        "marks": 0.5,
+        "trace": {
+          "code": "str1=\"LJ’University\"\nprint(len(str1))",
+          "output": "13"
+        }
+      },
+      {
+        "id": "PB-T2-111",
+        "srNo": 111,
+        "question": "What will be the output of the following program on execution?\nA=(5,3,2)\nB=(5,3,2)\nprint(len(A+B*3))",
+        "options": [
+          "6",
+          "9",
+          "12",
+          "3"
+        ],
+        "answer": "C",
+        "correct": "12",
+        "explanation": "B*3 has 9 elements. Concatenating the 3 elements of A makes 12 elements in total.",
+        "source": "Updated_PB_Python_T2.pdf",
+        "sourceSet": "T2",
+        "sourcePage": 8,
+        "sourceAnswer": "C",
+        "marks": 1.0,
+        "trace": {
+          "code": "A=(5,3,2)\nB=(5,3,2)\nprint(len(A+B*3))",
+          "output": "12"
+        }
+      }
+    ],
+    "coding": []
   }
 };
 function getPracticeBookUnit(n) { return PRACTICE_BOOK["unit" + n] || null; }

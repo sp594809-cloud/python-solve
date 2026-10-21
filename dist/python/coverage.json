@@ -1,8 +1,23 @@
 {
   "sem1": {
-    "questions": 210,
-    "source": "Existing repository bank; no Semester I PDF supplied",
-    "units": 3
+    "questions": 308,
+    "mcqs": 249,
+    "coding": 59,
+    "units": 5,
+    "source": "Units 1\u20133: existing bank, source verification pending. Units 4\u20135: Updated_PB_Python_T2.pdf, all 98 MCQs.",
+    "t2": {
+      "mcqs": 98,
+      "unit4Range": [
+        1,
+        30
+      ],
+      "unit5Range": [
+        44,
+        111
+      ],
+      "codingNotIncluded": 39,
+      "numbering": "Original T2 numbering; IDs use PB-T2- prefix."
+    }
   },
   "sem3": {
     "questions": 734,
