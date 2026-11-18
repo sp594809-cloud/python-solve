@@ -1,4 +1,4 @@
-const CACHE_NAME = "ljiet-python-t2-20261021-v15";
+const CACHE_NAME = "ljiet-ps-chapters-20261118-v16";
 const ASSETS = [
   "./de/",
   "./de/index.html",
@@ -57,6 +57,10 @@ const ASSETS = [
   "./probability/data/chapter-3.js",
   "./probability/chapter-4.html",
   "./probability/data/chapter-4.js",
+  "./probability/chapter-5.html",
+  "./probability/data/chapter-5.js",
+  "./probability/chapter-6.html",
+  "./probability/data/chapter-6.js",
   "./css/main.css",
   "./css/design-system.css",
   "./css/app-ui.css",

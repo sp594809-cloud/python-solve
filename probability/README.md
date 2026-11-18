@@ -15,4 +15,6 @@ python3 probability/tools/verify_chapter3.py
 
 After regeneration, update `data/chapter-3.js` from `data/chapter-3.json` with the `window.PROBABILITY_CHAPTER_3 = ...;` wrapper.
 
-Chapter 3 is completed first as requested. Other chapters are not yet published as solved. The extracted full-book source is preserved in `data/questions-source.json` for subsequent chapters.
+Chapters 4–6 are also available: Chapter 4 covers correlation and regression (Q281–Q344), Chapter 5 covers binomial and Poisson distributions (Q345–Q429), and Chapter 6 covers normal and exponential distributions (Q430–Q507).
+
+Regenerate Chapters 5–6 and their share images with `python3 probability/tools/build_chapters5_6.py` (PyMuPDF and Pillow). Run `node build-ui.mjs` after regenerating to update the dashboard and distribution.

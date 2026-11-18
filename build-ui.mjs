@@ -5,10 +5,12 @@ execFileSync(process.execPath,['scripts/build-study-index.cjs'],{stdio:'inherit'
 rmSync('dist',{recursive:true,force:true});mkdirSync('dist');
 for(const file of ['index.html','loops-adventure.html','service-worker.js','manifest.json','css','js','icons','python','assets','study'])cpSync(file,'dist/'+file,{recursive:true});
 mkdirSync('dist/probability/data',{recursive:true});
-for(const file of ['index.html','app.js','styles.css','practice-book.pdf','chapter-4.html'])cpSync('probability/'+file,'dist/probability/'+file);
-cpSync('probability/data/chapter-3.js','dist/probability/data/chapter-3.js');
-console.log('Built shared UI and Chapter 3 reader');
-cpSync('probability/data/chapter-4.js','dist/probability/data/chapter-4.js');
+for(const file of ['index.html','app.js','styles.css','practice-book.pdf','chapter-4.html','chapter-5.html','chapter-6.html'])cpSync('probability/'+file,'dist/probability/'+file);
+for (const chapter of [3, 4, 5, 6]) {
+  const file = `probability/data/chapter-${chapter}.js`;
+  cpSync(file, `dist/${file}`);
+}
+console.log('Built Probability Chapters 3–6');
 
 mkdirSync('dist/maths/data',{recursive:true});
 for(const file of ['index.html','app.js','styles.css','practice-book.pdf','coverage.json','pages'])cpSync('maths/'+file,'dist/maths/'+file,{recursive:true});

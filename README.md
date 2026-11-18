@@ -1,6 +1,6 @@
 LJIET learning site.
 
-Open the Probability & Stochastic Processes practice book: Chapter 3 (Q205–Q280) at `probability/`, then Chapter 4 (Q281–Q344) at `probability/chapter-4.html`. Both chapters have white backgrounds, black text, worked steps and navigation.
+The Probability & Stochastic Processes practice book includes Chapters 3–6 (Q205–Q507), with original PDF questions and worked solutions. Open `probability/` and choose a chapter.
 
 
 Python practice books are at `python/?book=sem1` and `python/?book=sem3`.
@@ -19,11 +19,11 @@ Mathematics I Chapters 6–8 are at `maths/`: all 381 questions (Q643–Q1023), 
 
 ## Study experience
 
-The dashboard indexes 2,044 questions in seven available subject collections, with semester and chapter navigation, cross-subject search, saved questions, Done/Revise/Doubt status, and five- or ten-question practice sessions. MCQs are scored after submission; written questions are self-checked. Progress, report drafts and recent practice results are stored only on the current device. Reporters can open a prefilled GitHub issue and submit it themselves.
+The dashboard indexes 2,207 questions in seven available subject collections, with semester and chapter navigation, cross-subject search, saved questions, Done/Revise/Doubt status, and five- or ten-question practice sessions. MCQs are scored after submission; written questions are self-checked. Progress, report drafts and recent practice results are stored only on the current device. Reporters can open a prefilled GitHub issue and submit it themselves.
 
 Mathematics source images now retain the full PDF table width, actual row borders and continuation fragments. Small screens can scroll the complete row; a full-page viewer offers 150% and 200% zoom. Rebuild these assets with `python3 maths/tools/build_source_images.py` (PyMuPDF and Pillow). This command preserves all mathematical answers and steps.
 
-Coverage labels reflect the loaded banks: Python I Units 1–3 plus Units 4–5 T2 MCQs, Python III Chapters 1–10, Mathematics I Chapters 6–8, FSD Chapters 1–2, Software Engineering MCQs Chapters 1–5, Probability Chapters 3–4, and Digital Electronics Chapters 4–5. Other chapters are not claimed complete.
+Coverage labels reflect the loaded banks: Python I Units 1–3 plus Units 4–5 T2 MCQs, Python III Chapters 1–10, Mathematics I Chapters 6–8, FSD Chapters 1–2, Software Engineering MCQs Chapters 1–5, Probability Chapters 3–6, and Digital Electronics Chapters 4–5. Other chapters are not claimed complete.
 
 Faculty review records are maintained in `study/faculty-reviews.json`. Leave it empty until a faculty member has actually checked a question. Each accepted record needs `questionKey`, `facultyName`, ISO `date`, and an HTTPS `evidenceUrl` linking to the documented review. The build validates records and displays review attribution only for matching questions.
 
