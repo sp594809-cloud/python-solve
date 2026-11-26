@@ -19,7 +19,7 @@
   function filterQuestions() {
     const query = state.search.trim().toLowerCase();
     const number = /^(?:q\s*)?(\d+)$/.exec(query);
-    return questions().filter(q => (state.unit==='all' || q.unit===Number(state.unit)) && (state.type==='all' || q.type===state.type) && (!state.studied || studied.has(studiedKey(q))) && (!query || (number ? q.srNo===Number(number[1]) : `${q.question} ${q.topic||''} ${q.id}`.toLowerCase().includes(query))));
+    return questions().filter(q => (state.unit==='all' || q.unit===Number(state.unit)) && (state.type==='all' || q.type===state.type) && (!state.studied || studied.has(studiedKey(q))) && (!query || (number ? q.srNo===Number(number[1]) : `${q.question} ${q.topic||''} ${q.sourceSet||''} ${q.id}`.toLowerCase().includes(query))));
   }
   function renderUnits() {
     const units = Object.values(books[state.book]);

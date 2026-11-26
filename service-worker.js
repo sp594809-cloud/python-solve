@@ -1,4 +1,4 @@
-const CACHE_NAME = "ljiet-ps-chapters-20261118-v16";
+const CACHE_NAME = "ljiet-practice-mcqs-20261126-v17";
 const ASSETS = [
   "./de/",
   "./de/index.html",

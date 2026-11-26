@@ -311,7 +311,11 @@ const PRACTICE_BOOK = {
         "answer": "D",
         "correct": "(A-6)(B-3)(C-1)",
         "explanation": "Parallelogram = Input/Output (6), Oval = Start/End (3), Rectangle = Process (1)."
-      }
+      },
+      {"id": "PY1-PRACTICE-211", "srNo": 211, "sourceSet": "Extra practice", "topic": "Algorithm tracing", "question": "An algorithm starts with total = 0 and adds 4, then adds 7, then subtracts 2. What value should its output step display?", "options": ["7", "9", "11", "13"], "answer": "B", "correct": "9", "explanation": "The running total is 4, then 11, then 9."},
+      {"id": "PY1-PRACTICE-212", "srNo": 212, "sourceSet": "Extra practice", "topic": "Flowchart branching", "question": "A flowchart asks whether a number is divisible by 2. Which two branches should leave the decision symbol?", "options": ["Read and print", "Start and stop", "Yes and no", "Input and storage"], "answer": "C", "correct": "Yes and no", "explanation": "The decision tests a condition. Its two branches represent the true and false results."},
+      {"id": "PY1-PRACTICE-213", "srNo": 213, "sourceSet": "Extra practice", "topic": "Boundary cases", "question": "An algorithm accepts a score when score is at least 40. Which pair best checks the boundary between rejection and acceptance?", "options": ["39 and 40", "0 and 100", "41 and 42", "38 and 39"], "answer": "A", "correct": "39 and 40", "explanation": "A score of 39 should be rejected and 40 should be accepted. These are the closest values on opposite sides of the rule."},
+      {"id": "PY1-PRACTICE-214", "srNo": 214, "sourceSet": "Extra practice", "topic": "Pseudocode", "question": "An algorithm reads length and width, sets area to length × width, and displays area. Which step changes an internal value without reading or displaying anything?", "options": ["Reading length", "Reading width", "Displaying area", "Assigning length × width to area"], "answer": "D", "correct": "Assigning length × width to area", "explanation": "The assignment computes and stores an intermediate result. Reading and displaying are input and output operations."}
     ],
     "coding": [
       {
@@ -1562,7 +1566,11 @@ const PRACTICE_BOOK = {
         "answer": "C",
         "correct": "a == b or a == 5",
         "explanation": "Correct Python equality logic with OR operator."
-      }
+      },
+      {"id": "PY1-PRACTICE-215", "srNo": 215, "sourceSet": "Extra practice", "topic": "Input and types", "question": "If the user types 7, what does print(input() * 2) display?", "options": ["14", "77", "7 7", "TypeError"], "answer": "B", "correct": "77", "explanation": "input() returns the string '7'. Multiplying it by 2 repeats the text."},
+      {"id": "PY1-PRACTICE-216", "srNo": 216, "sourceSet": "Extra practice", "topic": "Arithmetic operators", "question": "What does print(17 // 5, 17 % 5) display?", "options": ["3.4 2", "2 3", "3 0", "3 2"], "answer": "D", "correct": "3 2", "explanation": "Floor division gives 3 and the remainder is 2, since 17 = 3 × 5 + 2."},
+      {"id": "PY1-PRACTICE-217", "srNo": 217, "sourceSet": "Extra practice", "topic": "Jupyter state", "question": "In a fresh Jupyter kernel, cell A assigns x = 10 and cell B prints x. You run A and B, restart the kernel, then run only B. What happens?", "options": ["It prints 0", "It prints 10", "It raises NameError", "It automatically reruns cell A"], "answer": "C", "correct": "It raises NameError", "explanation": "Restarting the kernel clears variables. Cell A must run in the new session before cell B can use x."},
+      {"id": "PY1-PRACTICE-218", "srNo": 218, "sourceSet": "Extra practice", "topic": "Assignment", "question": "After a = 4, b = a, and a = 9 run in that order, what does print(a, b) display?", "options": ["9 4", "9 9", "4 4", "4 9"], "answer": "A", "correct": "9 4", "explanation": "b was assigned the value 4. Reassigning a to 9 leaves b at 4."}
     ],
     "coding": [
       {
@@ -2807,7 +2815,11 @@ const PRACTICE_BOOK = {
         "answer": "A",
         "correct": "11 5",
         "explanation": "Prints 11 5."
-      }
+      },
+      {"id": "PY1-PRACTICE-219", "srNo": 219, "sourceSet": "Extra practice", "topic": "Loop tracing", "question": "What does this code print?\n\ns = 0\nfor n in range(1, 7, 2):\n    s += n\nprint(s)", "options": ["12", "16", "6", "9"], "answer": "D", "correct": "9", "explanation": "The loop visits 1, 3 and 5. Their sum is 9."},
+      {"id": "PY1-PRACTICE-220", "srNo": 220, "sourceSet": "Extra practice", "topic": "Conditional branches", "question": "What does this code print?\n\nx = 8\nif x > 5:\n    print('A')\nelif x > 7:\n    print('B')\nelse:\n    print('C')", "options": ["A only", "B only", "A followed by B", "C only"], "answer": "A", "correct": "A only", "explanation": "The first condition is true. Python runs that block and skips the remaining branches."},
+      {"id": "PY1-PRACTICE-221", "srNo": 221, "sourceSet": "Extra practice", "topic": "Continue", "question": "What does this code print?\n\ns = 0\nfor n in range(1, 5):\n    if n == 3:\n        continue\n    s += n\nprint(s)", "options": ["6", "7", "10", "3"], "answer": "B", "correct": "7", "explanation": "continue skips the addition for 3. The result is 1 + 2 + 4 = 7."},
+      {"id": "PY1-PRACTICE-222", "srNo": 222, "sourceSet": "Extra practice", "topic": "While loops", "question": "What does this code print?\n\nn = 20\nsteps = 0\nwhile n > 3:\n    n //= 2\n    steps += 1\nprint(steps)", "options": ["2", "4", "3", "5"], "answer": "C", "correct": "3", "explanation": "The values after each pass are 10, 5 and 2. The condition fails after three passes."}
     ],
     "coding": [
       {
@@ -4004,7 +4016,11 @@ const PRACTICE_BOOK = {
           "code": "def f():\n    print(x,end=\" \")\n    return y\ndef f():\n    print(y,end=\" \")\n    return\nx=5\ny=4\nprint(f())",
           "output": "4 None"
         }
-      }
+      },
+      {"id": "PY1-PRACTICE-223", "srNo": 223, "sourceSet": "Extra practice", "topic": "Local scope", "question": "What does this code print?\n\nx = 5\ndef show():\n    x = 9\n    return x\nprint(show(), x)", "options": ["9 5", "5 9", "9 9", "5 5"], "answer": "A", "correct": "9 5", "explanation": "The x inside show is local, so the function returns 9 and the module-level x stays 5."},
+      {"id": "PY1-PRACTICE-224", "srNo": 224, "sourceSet": "Extra practice", "topic": "Default arguments", "question": "What does this code print?\n\ndef cost(qty, rate=4):\n    return qty * rate\nprint(cost(3), cost(3, 5))", "options": ["7 8", "12 12", "15 12", "12 15"], "answer": "D", "correct": "12 15", "explanation": "The first call uses the default rate of 4. The second call supplies 5 explicitly."},
+      {"id": "PY1-PRACTICE-225", "srNo": 225, "sourceSet": "Extra practice", "topic": "Return values", "question": "What does this code print?\n\ndef first_positive(n):\n    if n > 0:\n        return n\nprint(first_positive(0))", "options": ["0", "None", "False", "NameError"], "answer": "B", "correct": "None", "explanation": "Zero fails the condition. When a function reaches the end without a return value, Python returns None."},
+      {"id": "PY1-PRACTICE-226", "srNo": 226, "sourceSet": "Extra practice", "topic": "Keyword arguments", "question": "What does this code print?\n\ndef difference(left, right):\n    return left - right\nprint(difference(right=3, left=10))", "options": ["-7", "13", "7", "TypeError"], "answer": "C", "correct": "7", "explanation": "Keyword arguments match by parameter name. The subtraction is 10 - 3."}
     ],
     "coding": []
   },
@@ -5518,7 +5534,11 @@ const PRACTICE_BOOK = {
           "code": "A=(5,3,2)\nB=(5,3,2)\nprint(len(A+B*3))",
           "output": "12"
         }
-      }
+      },
+      {"id": "PY1-PRACTICE-227", "srNo": 227, "sourceSet": "Extra practice", "topic": "String slicing", "question": "What does print('PYTHON'[1:5:2]) display?", "options": ["YH", "YTO", "TH", "YT"], "answer": "A", "correct": "YH", "explanation": "The slice takes indices 1 and 3 before reaching the exclusive stop index 5. Those letters are Y and H."},
+      {"id": "PY1-PRACTICE-228", "srNo": 228, "sourceSet": "Extra practice", "topic": "Singleton tuples", "question": "Which expression creates a tuple containing just the integer 8?", "options": ["(8)", "[8]", "{8}", "(8,)"], "answer": "D", "correct": "(8,)", "explanation": "The comma makes it a one-element tuple. Parentheses around 8 by themselves simply group an integer."},
+      {"id": "PY1-PRACTICE-229", "srNo": 229, "sourceSet": "Extra practice", "topic": "Negative indexing", "question": "What does print(('red', 'green', 'blue', 'white')[-2]) display?", "options": ["white", "blue", "green", "red"], "answer": "B", "correct": "blue", "explanation": "Index -1 is the last item and -2 is the second-last. That item is 'blue'."},
+      {"id": "PY1-PRACTICE-230", "srNo": 230, "sourceSet": "Extra practice", "topic": "String methods", "question": "What does this code print?\n\nword = '  hello  '\nword.strip()\nprint(len(word))", "options": ["5", "7", "9", "11"], "answer": "C", "correct": "9", "explanation": "strip() returns a new string. Since the result is unused, word still contains five letters and four spaces."}
     ],
     "coding": []
   }
