@@ -3,7 +3,7 @@ import json
 import runpy
 
 import fitz
-from math import comb, exp, factorial, sqrt
+from math import comb, copysign, exp, factorial, sqrt
 from pathlib import Path
 from statistics import NormalDist
 
@@ -31,34 +31,50 @@ def add(i, answer, *steps, question=None, note=None, tables=None):
     solutions[i] = record
 
 def calc(i, answer, setup, work, **kwargs):
-    add(i, fmt(answer), step("Set up the calculation", setup),
-        step("Calculate", work), **kwargs)
+    add(i, fmt(answer), step("Given and formula", setup),
+        step("Substitution and result", work), **kwargs)
 
-def discrete(i, mean, events, *, binomial=None, count=None, **kwargs):
+def discrete(i, mean, events, *, binomial=None, count=None, setup=None, **kwargs):
+    steps = []
+    if setup:
+        steps.append(step("Given and parameter calculation", setup))
     if binomial is not None:
         n, p = binomial
-        model = f"X ~ Bin({n}, {fmt(p)}). Use P(X = k) = C({n}, k) × {fmt(p)}^k × {fmt(1-p)}^({n}−k)."
-        pmf = lambda k: comb(n, k) * p**k * (1-p)**(n-k)
+        q = 1 - p
+        model = (f"n = {n}, p = {fmt(p)}, q = 1 − p = {fmt(q)}.\n"
+                 f"P(X = x) = ⁿCₓ pˣ qⁿ⁻ˣ, for x = 0, 1, …, {n}.")
+        pmf = lambda k: comb(n, k) * p**k * q**(n-k)
+        term = lambda k: f"C({n},{k})({fmt(p)})^{k}({fmt(q)})^{n-k}"
+        general = f"Σ C({n},x)({fmt(p)})^x({fmt(q)})^({n}−x)"
     else:
-        model = f"X ~ Pois({fmt(mean)}). Use P(X = k) = e^(−{fmt(mean)}) × {fmt(mean)}^k / k!."
+        model = (f"λ = {fmt(mean)}.\n"
+                 "P(X = x) = e^(−λ) λˣ/x!, for x = 0, 1, 2, … .")
         pmf = lambda k: exp(-mean) * mean**k / factorial(k)
-    steps = [step("Choose the distribution", model)]
+        term = lambda k: f"e^(−{fmt(mean)})({fmt(mean)})^{k}/{k}!"
+        general = f"Σ e^(−{fmt(mean)})({fmt(mean)})^x/x!"
+    steps.append(step("Given and probability formula" if not setup else "Probability formula", model))
     answers = []
-    for index, (label, indices, complement) in enumerate(events, 1):
+    for label, indices, complement in events:
         indices = list(indices)
         value = sum(pmf(k) for k in indices)
-        formula = " + ".join(f"P(X = {k})" for k in indices)
+        if len(indices) > 5 and indices == list(range(indices[0], indices[-1] + 1)):
+            formula = f"P({indices[0]} ≤ X ≤ {indices[-1]})"
+            substituted = f"{general}, x = {indices[0]}, …, {indices[-1]}"
+        else:
+            formula = " + ".join(f"P(X = {k})" for k in indices)
+            substituted = " + ".join(term(k) for k in indices)
         if complement:
             value = 1-value
             formula = f"1 − ({formula})"
-        result = f"{label} ≈ {fmt(value)}"
+            substituted = f"1 − [{substituted}]"
+        work = f"{formula}\n= {substituted}\n≈ {fmt(value)}"
         if count:
             expected = value * count
-            steps.append(step(label, f"{formula} ≈ {fmt(value)}. Expected count = {count} × {fmt(value)} ≈ {fmt(expected)}."))
+            work += f"\nExpected frequency = N × P(event) = {count} × {fmt(value)} ≈ {fmt(expected)}."
             answers.append(f"{label}: {fmt(expected)} expected (about {int(expected+0.5)})")
         else:
-            steps.append(step(label, f"{formula} ≈ {fmt(value)}"))
-            answers.append(result)
+            answers.append(f"{label} ≈ {fmt(value)}")
+        steps.append(step(label, work))
     add(i, " · ".join(answers), *steps, **kwargs)
 
 def event(label, *indices, complement=False):
@@ -75,28 +91,35 @@ def fit(i, xs, fs, kind, *, n=None, question=None, tail=False, note=None):
     mean = sum(x*f for x,f in zip(xs,fs))/total
     if kind == "Binomial":
         p = mean/n
-        model = f"Estimate p = x̄/{n} = {fmt(p)}. Use P(X = k) = C({n},k)p^k(1−p)^({n}−k)."
+        model = f"p = x̄/n = {fmt(mean)}/{n} = {fmt(p)}.\nq = 1 − p = {fmt(1-p)}.\nP(X = x) = ⁿCₓ pˣ qⁿ⁻ˣ."
         probabilities = [comb(n,x)*p**x*(1-p)**(n-x) for x in xs]
     else:
-        model = f"Estimate λ = x̄ = {fmt(mean)}. Use P(X = k) = e^(−λ)λ^k/k!."
+        model = f"λ = x̄ = {fmt(mean)}.\nP(X = x) = e^(−λ)λˣ/x!."
         probabilities = [exp(-mean)*mean**x/factorial(x) for x in xs]
     expected = [fmt(total*p) for p in probabilities]
-    rows = [[x, f, e] for x,f,e in zip(xs,fs,expected)]
+    rows = [[x, f, x*f, fmt(prob), e] for x, f, prob, e in zip(xs, fs, probabilities, expected)]
     if tail:
-        rows.append([f"{xs[-1]+1} and above", 0, fmt(total*(1-sum(probabilities)))])
+        remaining = 1 - sum(probabilities)
+        rows.append([f"{xs[-1]+1} and above", 0, 0, fmt(remaining), fmt(total*remaining)])
     given = dict(headers=["x", "Frequency"], rows=list(map(list,zip(xs,fs))))
-    working = dict(headers=["x", "Observed", "Expected"], rows=rows)
+    working = dict(headers=["x", "Observed f", "fx", "P(X = x) or tail", "Expected N × P"], rows=rows)
     add(i, f"{kind} fit. Expected frequencies for x = {xs[0]} to {xs[-1]}: {', '.join(expected)}.",
-        step("Find the sample mean", f"Σf = {total}, Σfx = {sum(x*f for x,f in zip(xs,fs))}, x̄ = {fmt(mean)}."),
+        step("Find the sample mean", f"Σf = {total}, Σfx = {sum(x*f for x,f in zip(xs,fs))}.\n"
+             f"x̄ = Σfx/Σf = {sum(x*f for x,f in zip(xs,fs))}/{total} ≈ {fmt(mean)}."),
         step("Estimate the parameter", model),
-        step("Find expected frequencies", f"Multiply each fitted probability by {total}."),
+        step("Find expected frequencies", f"Expected frequency = NP(X = x).\nFor x = {xs[0]}: {total} × {fmt(probabilities[0])} ≈ {expected[0]}."),
         question=question, note=note, tables=(given,working))
 
 calc(345,"√(npq)","For X ~ Bin(n,p), Var(X) = np(1−p) = npq.","Take the square root: SD(X) = √(npq).")
 calc(346,"m","For a Poisson variable, the mean equals its rate.","Var(X) = rate = m.")
 calc(347,"e^(−λ)","Use P(X = k) = e^(−λ)λ^k/k!.","Set k = 0 and use λ⁰ = 0! = 1.")
 P(348,1,event("P(X = 1)",1))
-calc(349,3,"P(X = 1) = (2/3)P(X = 2). Hence P(X = 2)/P(X = 1) = 3/2.","For a positive Poisson rate, the ratio is λ/2. Thus λ = 3 and Var(X) = 3.",question="For a Poisson variable X with P(X = 1) = (2/3)P(X = 2), find the variance.")
+calc(349,3,
+     "P(X = x) = e^(−λ)λˣ/x! and Var(X) = λ.",
+     "Given P(X = 1) = (2/3)P(X = 2).\n"
+     "e^(−λ)λ = (2/3)e^(−λ)λ²/2!\n"
+     "Dividing by e^(−λ)λ for λ > 0 gives 1 = λ/3.\n∴ λ = 3 and Var(X) = 3.",
+     question="For a Poisson variable X with P(X = 1) = (2/3)P(X = 2), find the variance.")
 P(350,3,event("P(|X − 3| < 1) = P(X = 3)",3))
 B(351,10,.1,event("Exactly two defectives",2))
 calc(352,45,"np = 15 and np(1−p) = 10.","1−p = 10/15 = 2/3, so p = 1/3 and n = 15/(1/3) = 45.")
@@ -124,7 +147,10 @@ calc(373,16,"A Poisson variable has variance equal to its mean.","Var(X) = 16.")
 calc(374,6,"Each guess has probability 1/3 of being right after eliminating one choice.","E[X] = 18 × (1/3) = 6.")
 B(375,5,.7,event("At least four passes",4,5))
 calc(376,"X ~ Bin(20, 0.5)","np = 10 and np(1−p) = 5.","1−p = 5/10, so p = 0.5 and n = 20. P(X = k) = C(20,k)/2²⁰ for k = 0,…,20.")
-B(377,32,.25,event("At least two successes",0,1,complement=True),note="Derive p = 1−6/8 = 1/4 and n = 8/p = 32.")
+B(377,32,.25,event("At least two successes",0,1,complement=True),
+  setup="Mean: np = 8   (1)\nVariance: npq = 6   (2)\n"
+        "Divide (2) by (1): q = 6/8 = 3/4.\n"
+        "∴ p = 1 − q = 1/4. From (1), n = 8/(1/4) = 32.")
 B(378,8,.8,event("Exactly three recoveries",3))
 B(379,6,.6,event("At least four passes",4,5,6))
 B(380,3,.25,event("Exactly one without a licence",1),note="The question requests a binomial model with p = 3/12. Sampling without replacement would give a hypergeometric probability of 108/220.")
@@ -145,7 +171,10 @@ fit(389,list(range(8)),[7,6,19,35,30,23,7,1],"Binomial",n=7,question="Seven unbi
 B(390,10,.2,event("Everyone completed homework",0),event("At most two did not complete it",0,1,2),event("At least one did not complete it",0,complement=True))
 fit(391,list(range(5)),[12,66,109,59,10],"Binomial",n=4,question="Fit a binomial distribution to the observed frequencies below.")
 calc(392,"X ~ Bin(15, 1/3)","Use t² − (25/3)t + 50/3 = 0 for the mean and variance. The larger root is the mean.","Roots (25 ± 5)/6 are 5 and 10/3. Then q = (10/3)/5 = 2/3, p = 1/3 and n = 15.",question="The sum and product of the mean and variance of a binomial distribution are 25/3 and 50/3. Determine the distribution.")
-B(393,5,.6,event("P(X < 4)",4,5,complement=True),note="From np = 3 and np(1−p) = 1.2, p = 0.6 and n = 5.")
+B(393,5,.6,event("P(X < 4)",4,5,complement=True),
+  setup="Mean: np = 3   (1)\nVariance: npq = 1.2   (2)\n"
+        "Divide (2) by (1): q = 1.2/3 = 0.4.\n"
+        "∴ p = 0.6 and n = 3/0.6 = 5.")
 B(394,400,.005,event("Exactly one page with errors",1),event("At most three pages with errors",0,1,2,3))
 B(395,6,1/15,event("Not more than three busy",0,1,2,3),event("At least three busy",0,1,2,complement=True))
 calc(396,"Mean = 8/3. SD = 4/3.","A 5 or 6 occurs with probability 2/6 = 1/3, so X ~ Bin(8,1/3).","E[X] = 8/3. Var(X) = 8(1/3)(2/3) = 16/9, so SD = 4/3.")
@@ -163,7 +192,13 @@ P(407,1.5,event("Neither car used",0),event("Some demand refused",0,1,2,compleme
 calc(408,f"(i) {fmt(exp(-1.2)*1.2**2/2)}. (ii) {fmt((.6*exp(-.6))**2)}.","Use λ = 1.2 for the whole cable and λ = 0.6 per half.","(i) e^(−1.2) × 1.2²/2!. (ii) Independent halves give [e^(−0.6) × 0.6]².")
 P(409,10,event("At most four potholes",0,1,2,3,4))
 P(410,1.8,event("P(X > 1)",0,1,complement=True),event("P(X = 5)",5),event("P(0 < X < 5)",1,2,3,4))
-P(411,2,event("P(X ≤ 2)",0,1,2),question="If 3P(X = 4) = (1/2)P(X = 2) + P(X = 0) for a Poisson variable, find its mean and P(X ≤ 2).",note="Cancel e^(−λ): λ⁴/8 = λ²/4 + 1. Solve λ⁴ − 2λ² − 8 = 0 to get λ² = 4, so the mean is 2.")
+P(411,2,event("P(X ≤ 2)",0,1,2),
+  question="If 3P(X = 4) = (1/2)P(X = 2) + P(X = 0) for a Poisson variable, find its mean and P(X ≤ 2).",
+  setup="Substitute P(X = x) = e^(−λ)λˣ/x! in the given equation.\n"
+        "3e^(−λ)λ⁴/4! = (1/2)e^(−λ)λ²/2! + e^(−λ).\n"
+        "Cancel e^(−λ): λ⁴/8 = λ²/4 + 1.\n"
+        "∴ λ⁴ − 2λ² − 8 = (λ² − 4)(λ² + 2) = 0.\n"
+        "Since λ > 0, λ = 2. Thus the mean is 2.")
 P(412,.4,event("More than three claims",0,1,2,3,complement=True))
 P(413,200/2400,event("At least one fatal accident",0,complement=True))
 P(414,43*10/585,event("No typographical errors",0))
@@ -176,74 +211,137 @@ P(420,1,*[event(f"P(X = {k})",k) for k in range(6)],note="The equation P(1) = P(
 P(421,3,event("Two diamonds at least three times",0,1,2,complement=True),note="Each draw of two cards has probability (13/52)(12/51) = 1/17 of two diamonds. Assume the deck is reset between trials, giving Poisson rate 51/17 = 3.")
 B(422,100,.05,event("More than ten defective blades",*range(11),complement=True))
 P(423,.4,event("No crashes in ten years",0))
-P(424,2,event("P(X = 4)",4),event("P(X ≥ 1)",0,complement=True),event("P(1 < X < 4)",2,3),note="For a positive rate, P(2)/P(1) = λ/2 = 1, so the mean is 2.")
+P(424,2,event("P(X = 4)",4),event("P(X ≥ 1)",0,complement=True),event("P(1 < X < 4)",2,3),
+  setup="Given P(X = 2) = P(X = 1).\n"
+        "e^(−λ)λ²/2! = e^(−λ)λ.\n∴ λ/2 = 1 for λ > 0, so the mean is λ = 2.")
 P(425,1,event("P(X < 2)",0,1),event("P(X > 4)",0,1,2,3,4,complement=True),event("P(X ≥ 1)",0,complement=True),note="For λ > 0, cancel e^(−λ)λ² and multiply by 8: 4 = 3λ² + λ⁴. Hence λ² = 1 and both mean and variance equal 1.")
 B(426,2000,.001,event("Exactly three reactions",3),event("More than two reactions",0,1,2,complement=True))
 P(427,4,event("Fewer than four accidents",0,1,2,3))
 P(428,4,event("Demand exceeds six lights",*range(7),complement=True))
 P(429,.5,event("No defective bottles",0),event("At least two defective bottles",0,1,complement=True),count=100)
 
+def central_area(z):
+    return normal.cdf(abs(z)) - .5
+
+def table_area(z):
+    return f"P(0 ≤ Z ≤ {fmt(abs(z))})"
+
+def normal_interval(low, high, area=table_area):
+    if low is None:
+        return f"0.5 {'+' if high >= 0 else '−'} {area(high)}", normal.cdf(high)
+    if high is None:
+        return f"0.5 {'−' if low >= 0 else '+'} {area(low)}", 1 - normal.cdf(low)
+    if low >= 0:
+        expression = f"{area(high)} − {area(low)}"
+    elif high <= 0:
+        expression = f"{area(low)} − {area(high)}"
+    else:
+        expression = f"{area(low)} + {area(high)}"
+    return expression, normal.cdf(high) - normal.cdf(low)
+
+def normal_work(mu, sd, low, high):
+    zl = None if low is None else (low-mu)/sd
+    zh = None if high is None else (high-mu)/sd
+    lines = [f"When X = {fmt(x)}, z = ({fmt(x)} − {fmt(mu)})/{fmt(sd)} ≈ {fmt(z)}."
+             for x, z in ((low, zl), (high, zh)) if x is not None]
+    if zl is None:
+        event_text = f"P(Z ≤ {fmt(zh)})"
+    elif zh is None:
+        event_text = f"P(Z ≥ {fmt(zl)})"
+    else:
+        event_text = f"P({fmt(zl)} ≤ Z ≤ {fmt(zh)})"
+    expression, value = normal_interval(zl, zh)
+    def printed_area(z):
+        return f"{central_area(round(z, 2)):.4f}"
+
+    table_values = list(dict.fromkeys(round(abs(z), 2) for z in (zl, zh) if z is not None))
+    lookup = ", ".join(f"{table_area(z)} ≈ {printed_area(z)}" for z in table_values)
+    table_expression, _ = normal_interval(zl, zh, printed_area)
+    lower_table = 0 if zl is None else .5 + copysign(float(printed_area(zl)), zl)
+    upper_table = 1 if zh is None else .5 + copysign(float(printed_area(zh)), zh)
+    lines += [f"{event_text} = {expression}  (by symmetry about 0)",
+              f"Normal table (z to 2 decimal places): {lookup}.",
+              f"Using the table: {table_expression} = {upper_table-lower_table:.4f}.",
+              f"∴ {event_text} ≈ {fmt(value)} (using unrounded values)."]
+    return "\n".join(lines), value
+
 def N(i, mu, sd, *events, count=None, **kwargs):
-    steps = [step("Standardize X", f"Use Z = (X − {fmt(mu)})/{fmt(sd)}, with Φ(z) = P(Z ≤ z).")]
+    steps = [step("Given and standardization",
+                  f"μ = {fmt(mu)}, σ = {fmt(sd)}.\nZ = (X − μ)/σ = (X − {fmt(mu)})/{fmt(sd)}.")]
     answers = []
     for label, low, high in events:
-        zl = None if low is None else (low-mu)/sd
-        zh = None if high is None else (high-mu)/sd
-        expression = (f"Φ({fmt(zh)})" if zl is None else
-                      f"1 − Φ({fmt(zl)})" if zh is None else
-                      f"Φ({fmt(zh)}) − Φ({fmt(zl)})")
-        value = (1 if zh is None else normal.cdf(zh))-(0 if zl is None else normal.cdf(zl))
+        work, value = normal_work(mu, sd, low, high)
         if count:
-            steps.append(step(label, f"{expression} ≈ {fmt(value)}. Multiply by {count}."))
+            work += f"\nExpected number = {count} × {fmt(value)} ≈ {fmt(count*value)}."
             answers.append(f"{label}: about {int(count*value+0.5)} out of {count}")
         else:
-            steps.append(step(label, f"{expression} ≈ {fmt(value)}."))
             answers.append(f"{label}: {fmt(value)}")
+        steps.append(step(label, work))
     add(i, " · ".join(answers), *steps, **kwargs)
 
-def E(i, rate, *events, extra=(), **kwargs):
-    steps = [step("Use the exponential survival function",
-                  f"λ = {fmt(rate)}. For t ≥ 0, P(X > t) = e^(−λt).")]
+def E(i, rate, *events, extra=(), setup=None, **kwargs):
+    steps = []
+    if setup:
+        steps.append(step("Given and preliminary calculation", setup))
+    steps.append(step("Given and probability density",
+                      f"λ = {fmt(rate)}.\nf(x) = λe^(−λx) = {fmt(rate)}e^(−{fmt(rate)}x), x > 0."))
     answers = []
     for label, low, high in events:
         a, b = rate*low, None if high is None else rate*high
         value = exp(-a)-(0 if b is None else exp(-b))
-        expression = f"e^(−{fmt(a)})" if b is None else f"e^(−{fmt(a)}) − e^(−{fmt(b)})"
-        steps.append(step(label, f"{expression} ≈ {fmt(value)}."))
+        expression = "1" if a == 0 else f"e^(−{fmt(a)})"
+        if b is not None:
+            expression += f" − e^(−{fmt(b)})"
+        upper = "∞" if high is None else fmt(high)
+        bounds = f"from {fmt(low)} to {upper}"
+        steps.append(step(label, f"Integrate f(x) {bounds}.\n"
+                          f"∫ ({fmt(rate)})e^(−{fmt(rate)}x) dx  [{bounds}]\n"
+                          f"= [−e^(−{fmt(rate)}x)]  [{bounds}]\n"
+                          f"= {expression} ≈ {fmt(value)}."))
         answers.append(f"{label}: {fmt(value)}")
     for title, formula, answer in extra:
         steps.append(step(title, formula))
         answers.append(answer)
     add(i, " · ".join(answers), *steps, **kwargs)
 
+def z_from_left_tail(p):
+    z = normal.inv_cdf(p)
+    sign = "negative" if p < .5 else "positive" if p > .5 else "zero"
+    return z, (f"P(Z ≤ z) = {fmt(p)}.\n"
+               f"P(0 ≤ Z ≤ |z|) = |{fmt(p)} − 0.5| = {fmt(abs(p-.5))}.\n"
+               f"Use the {sign} z-score: z ≈ {fmt(z)}.")
+
 def quantile(i, mu, sd, *events):
-    steps = []
+    steps = [step("Given and standardization",
+                  f"μ = {fmt(mu)}, σ = {fmt(sd)}.\nZ = (X − μ)/σ.")]
     answers = []
-    for label,p in events:
-        z = normal.inv_cdf(p)
-        x = mu+sd*z
-        steps.append(step(label, f"Use left-tail probability {fmt(p)}. z = Φ⁻¹({fmt(p)}) ≈ {fmt(z)}. x = μ + σz = {fmt(mu)} + {fmt(sd)} × ({fmt(z)}) ≈ {fmt(x)}."))
+    for label, p in events:
+        z, work = z_from_left_tail(p)
+        x = mu + sd*z
+        steps.append(step(label, work + f"\n∴ x = μ + σz = {fmt(mu)} + {fmt(sd)}({fmt(z)}) ≈ {fmt(x)}."))
         answers.append(f"{label}: {fmt(x)}")
     add(i, " · ".join(answers), *steps)
 
 def unknown_normal(i, x1, p1, x2, p2, extra=None):
-    z1,z2 = normal.inv_cdf(p1),normal.inv_cdf(p2)
+    z1, work1 = z_from_left_tail(p1)
+    z2, work2 = z_from_left_tail(p2)
     sd = (x2-x1)/(z2-z1)
     mu = x1 - sd*z1
-    steps = [step("Convert both probabilities to z-scores",
-                  f"Φ⁻¹({fmt(p1)}) = {fmt(z1)} and Φ⁻¹({fmt(p2)}) = {fmt(z2)}."),
-             step("Solve the two equations",
-                  f"{x1} = μ + ({fmt(z1)})σ and {x2} = μ + ({fmt(z2)})σ. Subtract to get σ ≈ {fmt(sd)}, then substitute to get μ ≈ {fmt(mu)}.")]
+    steps = [step(f"Standardize X = {x1}", work1 + f"\n∴ {x1} − μ ≈ ({fmt(z1)})σ   (1)"),
+             step(f"Standardize X = {x2}", work2 + f"\n∴ {x2} − μ ≈ ({fmt(z2)})σ   (2)"),
+             step("Subtract equation (1) from equation (2)",
+                  f"{x2-x1} ≈ [({fmt(z2)}) − ({fmt(z1)})]σ.\n"
+                  f"∴ σ ≈ {fmt(sd)}.\n"
+                  f"Substitute in (1): μ = {x1} − ({fmt(z1)})({fmt(sd)}) ≈ {fmt(mu)}.")]
     answer = f"Mean ≈ {fmt(mu)}. SD ≈ {fmt(sd)}."
     if extra:
-        low,high,count,label = extra
-        zl = (low-mu)/sd
-        zh = None if high is None else (high-mu)/sd
-        expression = f"1 − Φ({fmt(zl)})" if zh is None else f"Φ({fmt(zh)}) − Φ({fmt(zl)})"
-        prob = (1 if zh is None else normal.cdf(zh))-normal.cdf(zl)
-        steps.append(step(label, f"{expression} ≈ {fmt(prob)}." + (f" Multiply by {count}." if count else "")))
+        low, high, count, label = extra
+        work, prob = normal_work(mu, sd, low, high)
+        if count:
+            work += f"\nExpected number = {count} × {fmt(prob)} ≈ {fmt(count*prob)}."
+        steps.append(step(label, work))
         answer += f" {label}: " + (f"about {int(count*prob+0.5)}." if count else f"{fmt(100*prob)}%.")
-    add(i,answer,*steps)
+    add(i, answer, *steps)
 
 def fit_normal(i, bounds, fs, mu=None, sd=None, *, discrete=False):
     total = sum(fs)
@@ -262,23 +360,34 @@ def fit_normal(i, bounds, fs, mu=None, sd=None, *, discrete=False):
         edges[0] -= .5
         edges[-1] += .5
     values = [total*(model.cdf(b)-model.cdf(a)) for a,b in zip(edges,edges[1:])]
-    rows = [[label,f,fmt(value)] for label,f,value in zip(labels,fs,values)]
-    rows.insert(0,[f"Below {fmt(edges[0])}","",fmt(total*model.cdf(edges[0]))])
-    rows.append([f"Above {fmt(edges[-1])}","",fmt(total*(1-model.cdf(edges[-1])))])
+    rows = [[label, f, fmt((a-mu)/sd), fmt((b-mu)/sd), fmt(value/total), fmt(value)]
+            for label, f, a, b, value in zip(labels, fs, edges, edges[1:], values)]
+    lower = model.cdf(edges[0])
+    upper = 1 - model.cdf(edges[-1])
+    rows.insert(0, [f"Below {fmt(edges[0])}", "", "−∞", fmt((edges[0]-mu)/sd), fmt(lower), fmt(total*lower)])
+    rows.append([f"Above {fmt(edges[-1])}", "", fmt((edges[-1]-mu)/sd), "∞", fmt(upper), fmt(total*upper)])
     given = dict(headers=["Class or value","Frequency"],rows=list(map(list,zip(labels,fs))))
-    working = dict(headers=["Class or value","Observed","Expected"],rows=rows)
+    working = dict(headers=["Class or value","Observed","Lower z","Upper z","Class probability","Expected N × P"],rows=rows)
     why = "Use the given mean and standard deviation." if supplied else "Use class midpoints m. Compute μ = Σfm/N and σ = √[Σf(m−μ)²/N]."
     add(i,"Expected frequencies in the printed classes: "+", ".join(map(fmt,values))+".",
-        step("Set the parameters",f"{why} N = {total}, μ ≈ {fmt(mu)}, σ ≈ {fmt(sd)}."),
+        step("Given and distribution parameters",
+             f"{why}\nN = {total}, μ ≈ {fmt(mu)}, σ ≈ {fmt(sd)}."),
         step("Find the class boundaries", "Boundaries: "+", ".join(map(fmt,edges))+". Use the midpoint between adjacent values or between the ends of adjacent classes."),
-        step("Calculate the expected frequencies",f"For each interval (a,b), calculate {total} × [Φ((b−μ)/σ) − Φ((a−μ)/σ)]. The two tails account for the fitted mass outside the listed classes."),
+        step("Calculate the expected frequencies",
+             f"For each interval (a,b), first find z₁ = (a − μ)/σ and z₂ = (b − μ)/σ.\n"
+             f"Use areas measured from 0 and symmetry to calculate P(z₁ ≤ Z ≤ z₂).\n"
+             f"Expected frequency = {total} × P(z₁ ≤ Z ≤ z₂)."),
         question="Fit a normal distribution to the data below."+ (f" Use μ = {mu} and σ = {sd}." if supplied else ""),
         tables=(given,working))
 
 E(430,1/3,("More than five minutes",5,None),question="A mobile conversation lasts X minutes, with density f(x) = (1/3)e^(−x/3) for x ≥ 0. Find P(X > 5).")
 E(431,3,("P(X ≥ 2)",2,None))
 calc(432,"Mean = 1/2. Variance = 1/4.","The density 2e^(−2x) has rate λ = 2.","Use E[X] = 1/λ and Var(X) = 1/λ².")
-calc(433,"1/(ln 2)²","P(X ≤ 1) = P(X > 1), so each probability equals 1/2.","e^(−λ) = 1/2 gives λ = ln 2. Therefore Var(X) = 1/(ln 2)².")
+calc(433,"1/(ln 2)²",
+     "P(X ≤ 1) = P(X > 1). The probabilities sum to 1, so P(X > 1) = 1/2.",
+     "P(X > 1) = ∫ λe^(−λx) dx  [from 1 to ∞]\n"
+     "= [−e^(−λx)]  [from 1 to ∞]\n"
+     "= e^(−λ) = 1/2.\n∴ λ = ln 2 and Var(X) = 1/λ² = 1/(ln 2)².")
 N(434,1000,200,("More than 1200 mm",1200,None),note="The practice book option is “less than 50%”. The calculated chance is about 15.87%.")
 calc(435,.5,"The two sides of a normal curve about μ have equal area.","The total area is 1 and the point X = μ has probability zero, so each side has area 0.5.")
 calc(436,"(−∞, ∞)","A normal density is positive at every real x.","Its support extends over all real numbers.")
@@ -307,7 +416,13 @@ calc(460,260-60*normal.inv_cdf(.1131),"P(X < 260) = 0.1131 gives z = Φ⁻¹(0.1
 calc(461,"(14, 26)","A central normal interval of roughly 99.73% is μ ± 3σ.","Here μ = 20 and σ = √4 = 2, so the endpoints are 20 ± 6.")
 quantile(462,2,3,("x",.9115))
 N(463,30,5,("Between 26 and 40",26,40),("At least 45",45,None))
-calc(464,2*normal.cdf(-.1),"The distances from mean 2 are ±0.01, giving z = ±0.1.","Add the two tails: 2Φ(−0.1) ≈ 0.92034.")
+calc(464,2*normal.cdf(-.1),
+     "μ = 2, σ = 0.1.\nZ = (X − 2)/0.1.\n"
+     "|X − 2| < 0.01 means 1.99 < X < 2.01.\n"
+     "At X = 1.99, z = −0.1. At X = 2.01, z = 0.1.",
+     f"P(|X − 2| ≥ 0.01) = 1 − P(−0.1 < Z < 0.1)\n"
+     f"= 1 − 2P(0 ≤ Z ≤ 0.1)  (by symmetry)\n"
+     f"≈ 1 − 2({fmt(central_area(.1))}) ≈ {fmt(2*normal.cdf(-.1))}.")
 N(465,68.22,sqrt(10.8),("Over 72 inches",72,None),count=1000,note="Convert six feet to 72 inches and take the square root of the given variance.")
 calc(466,1-normal.cdf(2)**3,"A student scores at most 75 with probability Φ((75−65)/5) = Φ(2).","Assuming independent selections, P(at least one above 75) = 1 − [Φ(2)]³.")
 N(467,4,4,("Between 5 and 10",5,10),("At least 15",15,None),("Between 10 and 15",10,15),("At most 5",None,5))
@@ -318,7 +433,7 @@ add(468,f"(i) {fmt(normal.cdf(2.5))}. (ii) {fmt(normal.cdf(-1)-normal.cdf(-2))}.
     step("Find the strength exceeded by 95%","The left tail is 5%, so z = Φ⁻¹(0.05) ≈ −1.64485. Convert back using x = 6000 + 100z."))
 N(469,16.28,.12,("Between 16.00 and 16.50 seconds",16,16.5),("At least 16.20 seconds",16.2,None),("At most 16.35 seconds",None,16.35))
 N(470,95,7.5,("Between 100 and 110 lb",100,110),count=500)
-E(471,.2,("P(X > 5)",5,None),("P(3 ≤ X ≤ 6)",3,6),extra=(("Find mean and variance","E[X] = 1/λ and Var(X) = 1/λ².","Mean = 5, variance = 25"),),question="Let X have density f(x) = (1/5)e^(−x/5) for x > 0, and 0 otherwise. Find (i) P(X > 5), (ii) P(3 ≤ X ≤ 6), (iii) its mean and (iv) its variance.")
+E(471,.2,("P(X > 5)",5,None),("P(3 ≤ X ≤ 6)",3,6),extra=(("Find mean and variance","E[X] = 1/λ = 1/(1/5) = 5.\nVar(X) = 1/λ² = 1/(1/5)² = 25.","Mean = 5, variance = 25"),),question="Let X have density f(x) = (1/5)e^(−x/5) for x > 0, and 0 otherwise. Find (i) P(X > 5), (ii) P(3 ≤ X ≤ 6), (iii) its mean and (iv) its variance.")
 N(472,68,3,("Above 72 kg",72,None),("At most 64 kg",None,64),("65 to 71 kg",65,71),count=300)
 N(473,0,1,("Greater than 1.09",1.09,None),("Less than −1.65",None,-1.65),("Between −1 and 1.96",-1,1.96),("Between 1.25 and 2.75",1.25,2.75))
 N(474,0,1,("(a)",None,1.3),("(b)",1.3,None),("(c)",-1.3,None),("(d)",None,-1.3),("(e)",-1.37,2.01),("(f)",-.5,.5),("(g)",-1.79,-.54))
@@ -351,18 +466,29 @@ quantile(491,25,5,("Lower 1% cutoff",.01))
 quantile(492,30,6,("Lower 5% cutoff",.05))
 fit_normal(493,[(a,a+5) for a in range(60,96,5)],[3,21,150,335,326,135,26,4])
 unknown_normal(494,40,.10,75,.95,(50,60,None,"Second division"))
-E(495,2,("(i) P(X > 2)",2,None),("(ii) P(X < 1/c)",0,.5),question="Let X have density f(x) = ce^(−2x) for x > 0. Find (i) P(X > 2) and (ii) P(X < 1/c).",note="Normalize first: ∫₀∞ ce^(−2x) dx = c/2 = 1, so c = 2 and 1/c = 1/2.")
+E(495,2,("(i) P(X > 2)",2,None),("(ii) P(X < 1/c)",0,.5),
+  question="Let X have density f(x) = ce^(−2x) for x > 0. Find (i) P(X > 2) and (ii) P(X < 1/c).",
+  setup="A density has total area 1.\n"
+        "∫ ce^(−2x) dx  [from 0 to ∞] = [−(c/2)e^(−2x)]  [from 0 to ∞] = c/2.\n"
+        "Therefore c/2 = 1, giving c = 2 and 1/c = 1/2.")
 E(496,1/4000,("At least 2000 km",2000,None),("At most 3000 km",0,3000))
 E(497,1/6,("Under two minutes",0,2),("Four to five minutes",4,5),("More than ten minutes",10,None))
 calc(498,exp(-10),"Stock is insufficient when the excess over 20,000 gallons exceeds 15,000 gallons.","One day: e^(−15000/3000) = e⁻⁵. For two independent days, square it: e⁻¹⁰.",question="Daily milk consumption above 20,000 gallons is exponential with rate 1/3000. The daily stock is 35,000 gallons. Find the probability that the stock is insufficient on both of two randomly selected days.")
 E(499,.05,("Between 10 and 15 hours",10,15),("Over 20 hours",20,None),extra=(("Find mean and SD","For an exponential lifetime, both are 1/λ = 1/0.05 = 20 hours.","Mean = SD = 20 hours"),))
 E(500,1/17,("Breakdown within 15 days",0,15))
-E(501,.5,("Repair time exceeds two hours",2,None),("At least 11 hours given over eight hours",3,None),question="Machine repair time X is exponential with rate 1/2 per hour. Find (i) P(X > 2) and (ii) P(X ≥ 11 | X > 8).",note="The exponential distribution is memoryless. Conditional on already taking eight hours, the chance of taking at least three more hours is P(X ≥ 3).")
+E(501,.5,("Repair time exceeds two hours",2,None),("At least 11 hours given over eight hours",3,None),
+  question="Machine repair time X is exponential with rate 1/2 per hour. Find (i) P(X > 2) and (ii) P(X ≥ 11 | X > 8).",
+  setup="By the memoryless property, P(X ≥ 11 | X > 8) = P(X ≥ 11 − 8) = P(X ≥ 3).")
 cost502=[base+50*(1-exp(-200/mean)) for base,mean in [(10,100),(20,150)]]
 calc(502,f"Process I. Expected costs: Rs. {cost502[0]:.2f} and Rs. {cost502[1]:.2f}.","For mean m, the chance of a warranty loss is P(X < 200) = 1 − e^(−200/m).","Process I: 10 + 50(1 − e⁻²). Process II: 20 + 50(1 − e^(−200/150)). Choose the smaller expected cost.")
 E(503,2,("More than three minutes",3,None),("At least one more minute given two elapsed",1,None),note="The exponential distribution is memoryless, so the second event uses the one-minute survival probability.")
 E(504,.25,("Replaced under warranty",0,3),("Within two standard deviations of the mean",0,12),note="Mean and SD both equal four years. The interval [4−8, 4+8] meets the support in [0,12].")
-calc(505,"k = ln((1+a)/a)/λ for a > 0","Use e^(−λk) = a(1 − e^(−λk)) for k ≥ 0.","Rearrange to e^(−λk) = a/(1+a), then take logs. For a = 0 there is no finite solution.")
+calc(505,"k = ln((1+a)/a)/λ for a > 0",
+     "P(X > k) = aP(X ≤ k) = a[1 − P(X > k)].\n"
+     "∴ (1 + a)P(X > k) = a.",
+     "P(X > k) = ∫ λe^(−λx) dx  [from k to ∞] = e^(−λk).\n"
+     "∴ e^(−λk) = a/(1+a).\n"
+     "Taking logs gives k = ln((1+a)/a)/λ for a > 0. For a = 0 there is no finite solution.")
 E(506,.1,("Time exceeds 20 hours",20,None),extra=(("Find the expected cost","E[X] = 10 and E[X²] = Var(X) + E[X]² = 100 + 100 = 200. Therefore E[C] = 4 + 2(10) + 4(200) = 824.","E[C] = 824"),))
 life507=1000+200*normal.inv_cdf(.1)
 add(507,f"(i) About {round(2000*normal.cdf(-1.5))} lamps. (ii) About {life507:.2f} hours.",
